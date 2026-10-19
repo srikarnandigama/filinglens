@@ -1,0 +1,463 @@
+{
+  "verification_status": "pending_user_verification",
+  "snapshot": "2026-10-19-v1",
+  "cutoff": "2026-10-19",
+  "companies": [
+    {
+      "cik": "0000320193",
+      "ticker": "AAPL",
+      "name": "Apple Inc.",
+      "fiscal_year_end": "0926",
+      "calendar": {
+        "year": 2025,
+        "start": "2024-09-29",
+        "end": "2025-09-27",
+        "quarter_ends": [
+          "2024-12-28",
+          "2025-03-29",
+          "2025-06-28",
+          "2025-09-27"
+        ]
+      },
+      "sources": {
+        "Q1": {
+          "accession": "0000320193-25-000008",
+          "cik": "0000320193",
+          "form": "10-Q",
+          "filing_date": "2025-01-31",
+          "report_date": "2024-12-28",
+          "fiscal_year": 2025,
+          "fiscal_period": "Q1",
+          "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000008/aapl-20241228.htm",
+          "sha256": "5d0eb2dfaf1c1b99e698abe01a1b9c3b98178b8415328b488c54fa455c1b46ca",
+          "cached_file": "data\\raw\\2026-10-19-v1\\0f2236e4d843a369e588ca0b88e4c5e03d8c89d66eb4e2bc5eba34ea6ba20023.body"
+        },
+        "Q2": {
+          "accession": "0000320193-25-000057",
+          "cik": "0000320193",
+          "form": "10-Q",
+          "filing_date": "2025-05-02",
+          "report_date": "2025-03-29",
+          "fiscal_year": 2025,
+          "fiscal_period": "Q2",
+          "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000057/aapl-20250329.htm",
+          "sha256": "38cbc267f38dc01e421b8b982760d7fcd89bb9062f7ceed258965ca719f1c23a",
+          "cached_file": "data\\raw\\2026-10-19-v1\\0c054b46e6de81f1a6c2d0c15480d9b8ce8ca16c6a6272f34e897bfdb3ce9e06.body"
+        },
+        "Q3": {
+          "accession": "0000320193-25-000073",
+          "cik": "0000320193",
+          "form": "10-Q",
+          "filing_date": "2025-08-01",
+          "report_date": "2025-06-28",
+          "fiscal_year": 2025,
+          "fiscal_period": "Q3",
+          "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000073/aapl-20250628.htm",
+          "sha256": "b0fa919cfea50e205e4b313a4e6f7b339e0e2712b89c72a1f5264940d5f86323",
+          "cached_file": "data\\raw\\2026-10-19-v1\\47a68347b452e4bf22d1637505c5104d630e82068059c6b718b2803b3209657d.body"
+        },
+        "FY": {
+          "accession": "0000320193-25-000079",
+          "cik": "0000320193",
+          "form": "10-K",
+          "filing_date": "2025-10-31",
+          "report_date": "2025-09-27",
+          "fiscal_year": 2025,
+          "fiscal_period": "FY",
+          "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm",
+          "sha256": "265e9c086a1a681766c287aa6dc5dd76368c3a6b8bca33a12976b5e915c22b9e",
+          "cached_file": "data\\raw\\2026-10-19-v1\\9a1590d0917107a7b31cc7b82b144987885c7c2fac68bc1d8c58fc81a10e3731.body"
+        }
+      },
+      "companyfacts_fixture": "aapl_revenue_companyfacts.json",
+      "expected": [
+        {
+          "fiscal_year": 2025,
+          "fiscal_period": "Q1",
+          "start_date": "2024-09-29",
+          "end_date": "2024-12-28",
+          "value": "124300000000",
+          "unit": "USD",
+          "inputs": [
+            {
+              "value": "124300000000",
+              "concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+              "context": "c-1",
+              "displayed": "124,300",
+              "scale": "6",
+              "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000008/aapl-20241228.htm"
+            }
+          ]
+        },
+        {
+          "fiscal_year": 2025,
+          "fiscal_period": "Q2",
+          "start_date": "2024-12-29",
+          "end_date": "2025-03-29",
+          "value": "95359000000",
+          "unit": "USD",
+          "inputs": [
+            {
+              "value": "95359000000",
+              "concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+              "context": "c-20",
+              "displayed": "95,359",
+              "scale": "6",
+              "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000057/aapl-20250329.htm"
+            }
+          ]
+        },
+        {
+          "fiscal_year": 2025,
+          "fiscal_period": "Q3",
+          "start_date": "2025-03-30",
+          "end_date": "2025-06-28",
+          "value": "94036000000",
+          "unit": "USD",
+          "inputs": [
+            {
+              "value": "94036000000",
+              "concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+              "context": "c-19",
+              "displayed": "94,036",
+              "scale": "6",
+              "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000073/aapl-20250628.htm"
+            }
+          ]
+        },
+        {
+          "fiscal_year": 2025,
+          "fiscal_period": "Q4",
+          "start_date": "2025-06-29",
+          "end_date": "2025-09-27",
+          "value": "102466000000",
+          "unit": "USD",
+          "inputs": [
+            {
+              "value": "416161000000",
+              "concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+              "context": "c-1",
+              "displayed": "416,161",
+              "scale": "6",
+              "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm",
+              "coefficient": 1
+            },
+            {
+              "value": "313695000000",
+              "concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+              "context": "c-1",
+              "displayed": "313,695",
+              "scale": "6",
+              "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000073/aapl-20250628.htm",
+              "coefficient": -1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cik": "0000789019",
+      "ticker": "MSFT",
+      "name": "MICROSOFT CORP",
+      "fiscal_year_end": "0630",
+      "calendar": {
+        "year": 2025,
+        "start": "2024-07-01",
+        "end": "2025-06-30",
+        "quarter_ends": [
+          "2024-09-30",
+          "2024-12-31",
+          "2025-03-31",
+          "2025-06-30"
+        ]
+      },
+      "sources": {
+        "Q1": {
+          "accession": "0000950170-24-118967",
+          "cik": "0000789019",
+          "form": "10-Q",
+          "filing_date": "2024-10-30",
+          "report_date": "2024-09-30",
+          "fiscal_year": 2025,
+          "fiscal_period": "Q1",
+          "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017024118967/msft-20240930.htm",
+          "sha256": "345ec4e898a87260ef273fcc74a4fb25491c643bf0f7e57ba17890ef2fe161c9",
+          "cached_file": "data\\raw\\2026-10-19-v1\\7d60477d3d004774b1eb1324286618b8d7449653a86de3be94a419be8d7e5181.body"
+        },
+        "Q2": {
+          "accession": "0000950170-25-010491",
+          "cik": "0000789019",
+          "form": "10-Q",
+          "filing_date": "2025-01-29",
+          "report_date": "2024-12-31",
+          "fiscal_year": 2025,
+          "fiscal_period": "Q2",
+          "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017025010491/msft-20241231.htm",
+          "sha256": "16b921b9f39a97d3ca7edf01cf0b6bb0a59d98ad724c9e5e740fc89a5e1f7849",
+          "cached_file": "data\\raw\\2026-10-19-v1\\7c05b82e6e5d5ee4715559fdc300624d8fa679bc5e2f74c2e1e13ed32fcce1fd.body"
+        },
+        "Q3": {
+          "accession": "0000950170-25-061046",
+          "cik": "0000789019",
+          "form": "10-Q",
+          "filing_date": "2025-04-30",
+          "report_date": "2025-03-31",
+          "fiscal_year": 2025,
+          "fiscal_period": "Q3",
+          "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017025061046/msft-20250331.htm",
+          "sha256": "dac4bb14cbbc2f38c77cf0420f85a9f2578c6d177a1427377a9d08ad38941fa3",
+          "cached_file": "data\\raw\\2026-10-19-v1\\0d06f336f676c7fa20ca3a4cf5150dad1811f23edee92d51ac0daea4701e7e13.body"
+        },
+        "FY": {
+          "accession": "0000950170-25-100235",
+          "cik": "0000789019",
+          "form": "10-K",
+          "filing_date": "2025-07-30",
+          "report_date": "2025-06-30",
+          "fiscal_year": 2025,
+          "fiscal_period": "FY",
+          "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017025100235/msft-20250630.htm",
+          "sha256": "00b94f8d597be644b11898030f92a6fea9a40613fe9766204ec8ee3709926f7e",
+          "cached_file": "data\\raw\\2026-10-19-v1\\683d5643b173c7fd1129e9371e5862c96c227924f4563da34b70e491cb6dca2f.body"
+        }
+      },
+      "companyfacts_fixture": "msft_revenue_companyfacts.json",
+      "expected": [
+        {
+          "fiscal_year": 2025,
+          "fiscal_period": "Q1",
+          "start_date": "2024-07-01",
+          "end_date": "2024-09-30",
+          "value": "65585000000",
+          "unit": "USD",
+          "inputs": [
+            {
+              "value": "65585000000",
+              "concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+              "context": "C_d3ddc11e-6dbd-479e-bbe6-c539e2f4c163",
+              "displayed": "65,585",
+              "scale": "6",
+              "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017024118967/msft-20240930.htm"
+            }
+          ]
+        },
+        {
+          "fiscal_year": 2025,
+          "fiscal_period": "Q2",
+          "start_date": "2024-10-01",
+          "end_date": "2024-12-31",
+          "value": "69632000000",
+          "unit": "USD",
+          "inputs": [
+            {
+              "value": "69632000000",
+              "concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+              "context": "C_260c7ff0-ff30-4842-9c1d-bb65f8e57f70",
+              "displayed": "69,632",
+              "scale": "6",
+              "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017025010491/msft-20241231.htm"
+            }
+          ]
+        },
+        {
+          "fiscal_year": 2025,
+          "fiscal_period": "Q3",
+          "start_date": "2025-01-01",
+          "end_date": "2025-03-31",
+          "value": "70066000000",
+          "unit": "USD",
+          "inputs": [
+            {
+              "value": "70066000000",
+              "concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+              "context": "C_f5d91e16-4fa6-44d0-96d4-472f3551cf38",
+              "displayed": "70,066",
+              "scale": "6",
+              "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017025061046/msft-20250331.htm"
+            }
+          ]
+        },
+        {
+          "fiscal_year": 2025,
+          "fiscal_period": "Q4",
+          "start_date": "2025-04-01",
+          "end_date": "2025-06-30",
+          "value": "76441000000",
+          "unit": "USD",
+          "inputs": [
+            {
+              "value": "281724000000",
+              "concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+              "context": "C_7102029d-8d6c-44c5-b166-04cf41443b1e",
+              "displayed": "281,724",
+              "scale": "6",
+              "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017025100235/msft-20250630.htm",
+              "coefficient": 1
+            },
+            {
+              "value": "205283000000",
+              "concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+              "context": "C_d3bd9e88-a02c-41b2-9d3d-eeb55d3a1689",
+              "displayed": "205,283",
+              "scale": "6",
+              "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017025061046/msft-20250331.htm",
+              "coefficient": -1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cik": "0001045810",
+      "ticker": "NVDA",
+      "name": "NVIDIA CORP",
+      "fiscal_year_end": "0131",
+      "calendar": {
+        "year": 2025,
+        "start": "2024-01-29",
+        "end": "2025-01-26",
+        "quarter_ends": [
+          "2024-04-28",
+          "2024-07-28",
+          "2024-10-27",
+          "2025-01-26"
+        ]
+      },
+      "sources": {
+        "Q1": {
+          "accession": "0001045810-24-000124",
+          "cik": "0001045810",
+          "form": "10-Q",
+          "filing_date": "2024-05-29",
+          "report_date": "2024-04-28",
+          "fiscal_year": 2025,
+          "fiscal_period": "Q1",
+          "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581024000124/nvda-20240428.htm",
+          "sha256": "1403df27494bb5248bcf51d106bc522b7e9e3273a4a517535f3e5c3d2f85df37",
+          "cached_file": "data\\raw\\2026-10-19-v1\\1f6a1b6f504ce4d0bdc126389e688b2d04790e5cd5243bef2e42a0233444605e.body"
+        },
+        "Q2": {
+          "accession": "0001045810-24-000264",
+          "cik": "0001045810",
+          "form": "10-Q",
+          "filing_date": "2024-08-28",
+          "report_date": "2024-07-28",
+          "fiscal_year": 2025,
+          "fiscal_period": "Q2",
+          "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581024000264/nvda-20240728.htm",
+          "sha256": "1a2135219a9184301ce8d06f5ff954db017f6a2f53e4ec5f7170ca602736ce1c",
+          "cached_file": "data\\raw\\2026-10-19-v1\\d4bd4b372f4289fd974508839b2c21efc83b8a50e5073ea21ae96e69099c4715.body"
+        },
+        "Q3": {
+          "accession": "0001045810-24-000316",
+          "cik": "0001045810",
+          "form": "10-Q",
+          "filing_date": "2024-11-20",
+          "report_date": "2024-10-27",
+          "fiscal_year": 2025,
+          "fiscal_period": "Q3",
+          "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581024000316/nvda-20241027.htm",
+          "sha256": "b04d91b8319b50f419ff947dae876c257f7ecc43ff6714fa128e1d9748ba71df",
+          "cached_file": "data\\raw\\2026-10-19-v1\\b9f44200304af7ae59e5c2c8ab3b61ef5e6a5dbf06de6f71c2b49b6bd02b66b1.body"
+        },
+        "FY": {
+          "accession": "0001045810-25-000023",
+          "cik": "0001045810",
+          "form": "10-K",
+          "filing_date": "2025-02-26",
+          "report_date": "2025-01-26",
+          "fiscal_year": 2025,
+          "fiscal_period": "FY",
+          "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581025000023/nvda-20250126.htm",
+          "sha256": "1493a74bd587701ed8039d680eb91aafc9ea747eef6a325ee189953dd4dce517",
+          "cached_file": "data\\raw\\2026-10-19-v1\\9aba0ab993736d1e53a56368f361f04c694204a74b1b1a06e822cecf98e59492.body"
+        }
+      },
+      "companyfacts_fixture": "nvda_revenue_companyfacts.json",
+      "expected": [
+        {
+          "fiscal_year": 2025,
+          "fiscal_period": "Q1",
+          "start_date": "2024-01-29",
+          "end_date": "2024-04-28",
+          "value": "26044000000",
+          "unit": "USD",
+          "inputs": [
+            {
+              "value": "26044000000",
+              "concept": "us-gaap:Revenues",
+              "context": "c-1",
+              "displayed": "26,044",
+              "scale": "6",
+              "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581024000124/nvda-20240428.htm"
+            }
+          ]
+        },
+        {
+          "fiscal_year": 2025,
+          "fiscal_period": "Q2",
+          "start_date": "2024-04-29",
+          "end_date": "2024-07-28",
+          "value": "30040000000",
+          "unit": "USD",
+          "inputs": [
+            {
+              "value": "30040000000",
+              "concept": "us-gaap:Revenues",
+              "context": "c-3",
+              "displayed": "30,040",
+              "scale": "6",
+              "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581024000264/nvda-20240728.htm"
+            }
+          ]
+        },
+        {
+          "fiscal_year": 2025,
+          "fiscal_period": "Q3",
+          "start_date": "2024-07-29",
+          "end_date": "2024-10-27",
+          "value": "35082000000",
+          "unit": "USD",
+          "inputs": [
+            {
+              "value": "35082000000",
+              "concept": "us-gaap:Revenues",
+              "context": "c-3",
+              "displayed": "35,082",
+              "scale": "6",
+              "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581024000316/nvda-20241027.htm"
+            }
+          ]
+        },
+        {
+          "fiscal_year": 2025,
+          "fiscal_period": "Q4",
+          "start_date": "2024-10-28",
+          "end_date": "2025-01-26",
+          "value": "39331000000",
+          "unit": "USD",
+          "inputs": [
+            {
+              "value": "130497000000",
+              "concept": "us-gaap:Revenues",
+              "context": "c-1",
+              "displayed": "130,497",
+              "scale": "6",
+              "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581025000023/nvda-20250126.htm",
+              "coefficient": 1
+            },
+            {
+              "value": "91166000000",
+              "concept": "us-gaap:Revenues",
+              "context": "c-1",
+              "displayed": "91,166",
+              "scale": "6",
+              "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581024000316/nvda-20241027.htm",
+              "coefficient": -1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -4,7 +4,11 @@ from collections.abc import AsyncIterator
 from contextlib import asynccontextmanager
 
 from psycopg.conninfo import conninfo_to_dict
+from psycopg.rows import tuple_row
 from psycopg_pool import AsyncConnectionPool
+
+INGESTION_LOCK = "SELECT pg_try_advisory_lock(hashtextextended(current_schema() || ':ingestion',0))"
+INGESTION_UNLOCK = "SELECT pg_advisory_unlock(hashtextextended(current_schema() || ':ingestion',0))"
 
 
 def connection_options(url: str) -> dict[str, object]:
@@ -16,8 +20,12 @@ def connection_options(url: str) -> dict[str, object]:
 
 @asynccontextmanager
 async def pool_for(url: str) -> AsyncIterator[AsyncConnectionPool]:
+    async def reset(conn) -> None:
+        # Row factories are client-side state and survive returning a connection to the pool.
+        conn.row_factory = tuple_row
+
     pool = AsyncConnectionPool(
-        url, open=False, min_size=1, max_size=4, kwargs=connection_options(url)
+        url, open=False, min_size=1, max_size=4, kwargs=connection_options(url), reset=reset
     )
     await pool.open()
     try:

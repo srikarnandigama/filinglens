@@ -10,14 +10,14 @@ from datetime import date
 from psycopg.types.json import Jsonb
 
 from filinglens.config import Settings
-from filinglens.db import pool_for
+from filinglens.db import INGESTION_LOCK, INGESTION_UNLOCK, pool_for
 from filinglens.edgar.client import EdgarClient
 from filinglens.edgar.filings import fiscal_calendar, selected_filings, submission_history
 from filinglens.edgar.tickers import UNIVERSE, resolve_tickers
 from filinglens.edgar.xbrl import INSTANT, METRICS, normalized_facts
 
 
-async def ingest(settings: Settings, tickers: list[str], years: int = 3) -> dict[str, int]:
+async def _ingest(settings: Settings, tickers: list[str], years: int = 3) -> dict[str, int]:
     totals = {"companies": 0, "filings": 0, "facts": 0}
     async with EdgarClient(settings) as client, pool_for(settings.database_url) as pool:
         companies = await resolve_tickers(client, tickers)
@@ -126,9 +126,30 @@ async def ingest(settings: Settings, tickers: list[str], years: int = 3) -> dict
     return totals
 
 
+async def ingest(settings: Settings, tickers: list[str], years: int = 3) -> dict[str, int]:
+    async with pool_for(settings.database_url) as pool, pool.connection() as conn:
+        if not (await (await conn.execute(INGESTION_LOCK)).fetchone())[0]:
+            raise RuntimeError("Another ingestion process is active")
+        try:
+            return await _ingest(settings, tickers, years)
+        finally:
+            await conn.execute(INGESTION_UNLOCK)
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--stage", choices=["facts"], default="facts")
+    parser.add_argument(
+        "--stage", choices=["facts", "filings", "parse", "embed", "all"], default="facts"
+    )
+    parser.add_argument("--corpus", help="Explicit corpus for --stage embed")
+    parser.add_argument(
+        "--full-embed",
+        action="store_true",
+        help="Full embeddings only after approval of measured sample runtime",
+    )
+    parser.add_argument(
+        "--force", action="store_true", help="Recompute cached parsing to verify IDs"
+    )
     parser.add_argument("--tickers", default="all", help="all or comma-separated tickers")
     parser.add_argument("--years", type=int, default=3)
     parser.add_argument(
@@ -148,7 +169,35 @@ def main() -> None:
     )
     if sys.platform == "win32":
         asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
-    print(json.dumps(asyncio.run(ingest(Settings(**overrides), tickers, args.years)), indent=2))
+
+    async def m2_stages() -> dict:
+        from filinglens.ingest.corpus import prepare_corpus
+        from filinglens.ingest.embed import run_embeddings
+
+        settings = Settings(**overrides)
+        if args.stage in {"filings", "parse"}:
+            return await prepare_corpus(settings, tickers, stage=args.stage, force=args.force)
+        if args.stage == "embed":
+            if not args.corpus:
+                parser.error("--stage embed requires --corpus")
+            return await run_embeddings(settings, args.corpus, benchmark=not args.full_embed)
+        results = {"facts": await ingest(settings, tickers, args.years)}
+        for stage in ("filings", "parse"):
+            results[stage] = await prepare_corpus(settings, tickers, stage=stage, force=args.force)
+            if results[stage]["failed"]:
+                raise RuntimeError(f"{stage} incomplete: {results[stage]['failed']}")
+        results["embed"] = await run_embeddings(
+            settings, results["parse"]["corpus_id"], benchmark=not args.full_embed
+        )
+        return results
+
+    if args.stage == "facts":
+        result = asyncio.run(ingest(Settings(**overrides), tickers, args.years))
+    else:
+        result = asyncio.run(m2_stages())
+    print(json.dumps(result, indent=2))
+    if result.get("failed"):
+        raise SystemExit(1)
 
 
 if __name__ == "__main__":

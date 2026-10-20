@@ -1,0 +1,26 @@
+{
+  "corpus_id": "corpus_2fb48958e274daed46c19e3fbf2583213e308b1eebaa16a04cfdc8052eea82e7",
+  "benchmark": true,
+  "embedding_fingerprint": "c88cc1d72cdc200e5a6c6bca7d22436cce704e8982887a0b7417105ded413627",
+  "total_chunks": 23441,
+  "sample_chunks": 192,
+  "sample_oversized_rows": 0,
+  "total_oversized_rows": 0,
+  "cpu_threads": 4,
+  "batch_size": 16,
+  "sample_forms": [
+    "10-K",
+    "10-Q"
+  ],
+  "sample_companies": 20,
+  "sample_mean_tokens": 346.4895833333333,
+  "corpus_mean_tokens": 344.16432746043256,
+  "model_load_seconds": 6.1789378999965265,
+  "warmup_seconds": 0.13803560001542792,
+  "seconds": 22.86824099998921,
+  "chunks_per_second": 8.395923411865853,
+  "projected_total_seconds": 2791.950194170558,
+  "remaining_before_sample": 23441,
+  "remaining_after_sample": 23249,
+  "projected_remaining_seconds": 2769.081953170569
+}

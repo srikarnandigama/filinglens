@@ -1,0 +1,13 @@
+{
+  "corpus_id": "corpus_2fb48958e274daed46c19e3fbf2583213e308b1eebaa16a04cfdc8052eea82e7",
+  "chunks": 23441,
+  "sections": 708,
+  "oversized_rows": 0,
+  "maxima": {
+    "embedding_input": 460,
+    "typical_reranker_pair": 478,
+    "reranker_pair_with_48_token_query": 512
+  },
+  "all_ids_valid": true,
+  "all_source_blocks_covered": true
+}

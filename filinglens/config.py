@@ -19,6 +19,7 @@ class Settings(BaseSettings):
     raw_dir: Path = ROOT / "data" / "raw"
     sec_requests_per_second: float = Field(default=8, gt=0, le=8)
     sec_max_attempts: int = Field(default=5, ge=1, le=10)
+    retrieval_corpus: str = ""
 
     @field_validator("sec_user_agent")
     @classmethod

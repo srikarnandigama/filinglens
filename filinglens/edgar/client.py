@@ -73,11 +73,28 @@ class EdgarClient:
                     pass
         return min(delay, 120)
 
-    async def get(self, url: str, *, expect_json: bool = False) -> bytes:
-        async with self._url_locks.setdefault(url, asyncio.Lock()):
-            return await self._get_locked(url, expect_json=expect_json)
+    @staticmethod
+    def validate_filing(body: bytes) -> None:
+        lower = body.lower()
+        if b"<html" not in lower or any(
+            marker in lower
+            for marker in (
+                b"your request originates from an undeclared automated tool",
+                b"request rate threshold exceeded",
+                b"sec.gov | request blocked",
+            )
+        ):
+            raise ValueError("Response is not a valid filing HTML document")
 
-    async def _get_locked(self, url: str, *, expect_json: bool = False) -> bytes:
+    async def get(
+        self, url: str, *, expect_json: bool = False, expect_filing: bool = False
+    ) -> bytes:
+        async with self._url_locks.setdefault(url, asyncio.Lock()):
+            return await self._get_locked(url, expect_json=expect_json, expect_filing=expect_filing)
+
+    async def _get_locked(
+        self, url: str, *, expect_json: bool = False, expect_filing: bool = False
+    ) -> bytes:
         parsed = httpx.URL(url)
         if parsed.scheme != "https" or parsed.host not in {"www.sec.gov", "data.sec.gov"}:
             raise ValueError("Only HTTPS SEC URLs are allowed")
@@ -88,6 +105,8 @@ class EdgarClient:
             if meta["url"] != url or meta["sha256"] != hashlib.sha256(body).hexdigest():
                 raise ValueError(f"Corrupt snapshot response for {url}; create a new snapshot")
             self.cache_hits += 1
+            if expect_filing:
+                self.validate_filing(body)
             return body
         for attempt in range(self.settings.sec_max_attempts):
             await self._pace()
@@ -99,6 +118,8 @@ class EdgarClient:
                 if expect_json:
                     json.loads(response.content)
                 body = response.content
+                if expect_filing:
+                    self.validate_filing(body)
                 meta = {
                     "url": url,
                     "sha256": hashlib.sha256(body).hexdigest(),

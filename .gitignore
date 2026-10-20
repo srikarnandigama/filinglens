@@ -12,3 +12,6 @@ __pycache__/
 data/
 evals/results/*
 !evals/results/report.md
+!evals/results/retrieval.md
+evals/*.draft.json
+evals/*.tmp

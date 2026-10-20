@@ -1,0 +1,15 @@
+{
+  "corpus_id": "corpus_2fb48958e274daed46c19e3fbf2583213e308b1eebaa16a04cfdc8052eea82e7",
+  "filings": 275,
+  "completed": 275,
+  "skipped": 0,
+  "failed": [],
+  "chunks": 23441,
+  "seconds": 403.7339991000481,
+  "network_requests": 0,
+  "cache_hits": 275,
+  "verified_chunks": 23441,
+  "before_hash": "30a193940c46095c10669beae6d17841ff21e58cc4b6772b1af11fbdca02a629",
+  "after_hash": "30a193940c46095c10669beae6d17841ff21e58cc4b6772b1af11fbdca02a629",
+  "all_ids_unchanged": true
+}

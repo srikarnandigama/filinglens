@@ -14,7 +14,7 @@ This project is specified in SPEC.md. Read it before doing anything.
 - Ask before adding dependencies not listed in SPEC.md Section 3.
 
 ## Progress
-- [ ] M1 Foundation + data
+- [x] M1 Foundation + data
 - [ ] M2 Parsing, chunking, embeddings, retrieval
 - [ ] M3 MCP servers
 - [ ] M4 Agent runtime
@@ -24,15 +24,47 @@ This project is specified in SPEC.md. Read it before doing anything.
 - [ ] M8 Deploy + publish (optional)
 
 ## Notes for the next session
-(Updated at the end of each milestone: what was built, known issues,
-anything the next milestone needs to know.)
 
-M1 implementation is built and locally verified: 37 tests pass, Ruff checks pass,
-and the database contains 20 companies, 275 filings, and 2,715 facts (563 derived).
-The network-blocked full cache replay preserves fact values, provenance, and IDs.
-See docs/M1_STATUS.md and docs/DECISIONS.md (D001–D016).
+M1 is accepted: the student manually verified all 12 FY2025 revenue fixture
+values against the source filings and confirmed they match. The last M1 checks
+passed: 37 tests, Ruff lint/format, and a network-blocked full cache replay that
+preserves fact values, provenance, and IDs. The database contains 20 companies,
+275 filings, and 2,715 facts (563 derived).
 
-M1 is intentionally still unchecked: the student must review the 12 revenue
-values in docs/M1_REVENUE_REVIEW.md and explicitly confirm acceptance. The fixture
-is marked pending_user_verification. Do not start M2 until that confirmation.
-System Python was not changed; use the project-local Python 3.12.15 environment.
+- Ingestion cutoff: 2026-10-19, inclusive by filing date (America/New_York).
+- Snapshot: 2026-10-19-v1, stored at data/raw/2026-10-19-v1/. Bodies are keyed
+  by URL SHA-256 with companion metadata; ingestion_snapshots holds the manifest.
+  Reuse this immutable snapshot; refresh only under a new snapshot ID.
+- Window: three completed fiscal years with available annual reports, plus
+  available subsequent quarters. An ended year without a filed annual report
+  is not yet a complete annual dataset.
+- Known gaps: missing standard-taxonomy metrics remain unavailable, never zero
+  or automatically not_applicable. Custom-taxonomy facts are not extracted;
+  EPS quarters are unavailable when no direct value exists (never derive EPS).
+  Gross profit is not synthesized from revenue and costs. metric_availability
+  records period-specific availability and reasons.
+- Fiscal calendars use actual report dates, not XBRL fy/fp or fixed month/day
+  arithmetic. Preserve 52/53-week behavior and Costco's 12/12/12/16-week quarters.
+  XOM uses reporting CIK 0000034088 following the documented successor mapping.
+  Year-end instant facts are stored once as Q4; the future metric interface
+  must resolve FY to that same instant.
+- M2 has not started. Its scope is filing downloads/parsing, section splitting,
+  chunking, embeddings, four retrieval modes, and retrieval evaluation (SPEC.md
+  Sections 7.2-8 and 16). Only the fixture source filings have been downloaded;
+  the full filing-document corpus still needs downloading. sections and chunks
+  tables/indexes exist but parsing, embeddings, and retrieval are not implemented.
+- Reuse the SEC client's cache, identifying User-Agent, shared rate limit, and
+  retries; run one ingestion process at a time. Retain stable chunk IDs once
+  gold retrieval labels are assigned. Test table-of-contents heading ambiguity,
+  preserve table rows when chunking, and evaluate filtered HNSW recall with
+  pgvector 0.8.7 (iterative scans or exact search as appropriate).
+- Schema is finalized for M1: ask before subsequent schema changes or unlisted
+  dependencies. M2 dependencies listed in SPEC.md are not installed yet; YAML
+  support remains deferred. Record new non-obvious decisions in DECISIONS.md.
+- Use project-local uv (.tools/uv/bin/uv.exe) and Python 3.12.15
+  (.venv/Scripts/python.exe); system Python remains 3.14.0. The CLI uses the
+  Windows selector event loop for Psycopg and an IPv4 hint for localhost.
+- See docs/DECISIONS.md (D001-D016), docs/M1_REVENUE_REVIEW.md, and
+  tests/fixtures/revenue_expected.json for provenance. Their earlier pending
+  verification wording and docs/M1_STATUS.md predate the student's acceptance;
+  the acceptance recorded here supersedes those pending labels.

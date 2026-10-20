@@ -1,0 +1,318 @@
+{
+  "corpus_id": "corpus_2fb48958e274daed46c19e3fbf2583213e308b1eebaa16a04cfdc8052eea82e7",
+  "corpus_hash": "048cd70c9ea01cf49cd50ea18b74e6738298597a7ab89026a3c6d04fb824f51f",
+  "counts": {
+    "total_chunks": 23441,
+    "missing_embeddings": 0,
+    "wrong_model": 0,
+    "wrong_dimensions": 0,
+    "invalid_norms": 0
+  },
+  "failures": 0,
+  "input_hashes_verified": true,
+  "ids_and_text_unchanged": true,
+  "identity_hash": "30a193940c46095c10669beae6d17841ff21e58cc4b6772b1af11fbdca02a629",
+  "frozen_for_labeling": true,
+  "hnsw_index": {
+    "name": "chunks_embedding_hnsw",
+    "method": "hnsw",
+    "valid": true,
+    "ready": true,
+    "size_bytes": 48021504,
+    "definition": "CREATE INDEX chunks_embedding_hnsw ON public.chunks USING hnsw (embedding vector_cosine_ops)"
+  },
+  "hnsw_plan_used": true,
+  "hnsw_explain": {
+    "QUERY PLAN": [
+      {
+        "Plan": {
+          "Node Type": "Limit",
+          "Parallel Aware": false,
+          "Async Capable": false,
+          "Startup Cost": 228.69,
+          "Total Cost": 240.33,
+          "Plan Rows": 3,
+          "Plan Width": 77,
+          "Actual Startup Time": 1.378,
+          "Actual Total Time": 1.416,
+          "Actual Rows": 3,
+          "Actual Loops": 1,
+          "Shared Hit Blocks": 151,
+          "Shared Read Blocks": 127,
+          "Shared Dirtied Blocks": 0,
+          "Shared Written Blocks": 0,
+          "Local Hit Blocks": 0,
+          "Local Read Blocks": 0,
+          "Local Dirtied Blocks": 0,
+          "Local Written Blocks": 0,
+          "Temp Read Blocks": 0,
+          "Temp Written Blocks": 0,
+          "Plans": [
+            {
+              "Node Type": "Index Scan",
+              "Parent Relationship": "Outer",
+              "Parallel Aware": false,
+              "Async Capable": false,
+              "Scan Direction": "Forward",
+              "Index Name": "chunks_embedding_hnsw",
+              "Relation Name": "chunks",
+              "Alias": "chunks",
+              "Startup Cost": 228.69,
+              "Total Cost": 91484.54,
+              "Plan Rows": 23516,
+              "Plan Width": 77,
+              "Actual Startup Time": 1.376,
+              "Actual Total Time": 1.413,
+              "Actual Rows": 3,
+              "Actual Loops": 1,
+              "Order By": "(embedding <=> '[-0.020837061,-0.09894357,-0.03469344,-0.008969644,0.028337076,0.027576642,-0.044642657,0.021865843,-0.018023841,0.106740266,0.057279002,0.003385924,0.016666105,-0.009556748,0.0039536776,0.010163399,0.008396665,-0.06198668,-0.10477965,-0.0010176044,0.037725825,-0.030740669,-0.019132169,-0.06404054,0.02225837,-0.02869076,-0.050690725,-0.028639855,-0.017450806,-0.14247905,-0.060281042,-0.02026511,0.07588944,-0.012141444,0.025526918,-0.0069978614,0.017104547,-0.0071503473,0.03292436,0.030599762,0.02686698,0.007808105,-0.04481133,-0.015875524,0.019065954,-0.06131567,-0.022589851,0.018778713,-0.0791781,0.01838804,0.024479503,-0.08583015,-0.021690128,0.026717229,-0.038906403,-0.017754814,-0.003315179,0.066024296,0.002620449,-0.010158438,-0.011051162,0.02679789,-0.19271423,0.020158527,0.013065862,0.0052636373,-0.04126516,-0.032840542,-0.01568808,0.07776301,0.012616955,-0.014628129,-0.019797279,0.09141265,0.041615736,0.04064907,0.036295272,0.04633931,0.010988074,0.0093751205,0.033815257,0.0496363,-0.05561216,0.04554815,-0.04618683,-0.013688866,0.014622336,-0.02390903,0.046164196,-6.640499e-05,0.014776195,0.02820029,-0.048501465,0.01949347,-0.048440397,-0.04347706,0.00039865053,-0.02047094,0.018874936,0.32125226,0.020818358,0.014431331,-0.011159926,-0.07257871,-0.0007240943,-0.033619884,0.024436513,0.06350291,0.030124903,0.02297051,-0.01858609,-0.018234778,-0.002639197,-0.04350102,-0.039489564,0.030205263,-0.048450973,0.06610698,-0.043834724,-0.02122054,0.032282908,0.073668,0.063180424,0.0372678,-0.0045665307,0.080081806,0.054189038,0.13923128,-0.009095261,-0.0077075507,-0.021412127,0.023524592,-0.07804589,-0.06766094,0.013358433,0.010655278,-0.028392797,-0.010419619,-0.00027919572,0.08582116,-0.025690418,0.07745522,0.007157775,-0.028681235,-0.018309714,0.10225045,0.020252198,-0.0075816773,-0.015914004,-0.029490434,0.027005265,0.07850017,0.025748055,-0.043292105,0.03498083,-0.001967379,0.043139577,0.03715433,0.020639235,-0.0524911,0.00033131536,0.01248855,-0.016277486,0.09016035,-0.030653931,-0.100628965,0.01135792,-0.0028926604,-0.0013547677,-0.00013045856,-0.044764902,0.0013907097,-0.03179646,-0.009539343,0.046657015,-0.12136773,-0.05803867,-0.0146661885,-0.033915836,0.07470762,0.0132157,-0.019979691,0.00815833,0.008654714,-0.027427388,-0.030704962,0.045713466,0.016475393,0.0004207218,-0.008792926,-0.109696835,0.029966138,-0.12373939,-0.0015999149,0.068455815,0.0055977153,-0.020956744,0.020691585,0.06551183,0.003974839,0.059618745,0.03789941,-0.048443824,-0.048202977,-0.0025504872,0.017693682,0.034220334,0.008440554,-0.0026995365,-0.0039760284,-0.02551588,-0.0021896984,-0.02590302,0.008781325,-0.013815225,0.08543328,0.0059345323,0.041379575,-0.06789663,-0.007911158,0.02805203,-0.011621684,-0.027802385,-0.24236232,0.02594779,-0.044831082,-0.017471483,0.05226728,0.00015645075,0.04262911,0.07009174,-0.00712221,-0.0022610452,0.04971944,-0.025890062,0.027891723,-0.068707116,-0.010398065,-0.06289201,-0.029489854,0.0008648356,0.019035734,0.020731289,0.010847164,-0.016662428,0.015360654,-0.08680913,0.024012549,-0.017557517,0.11691511,-0.09904815,0.044885658,-0.044484198,0.042240497,0.04687686,-0.049420755,-0.12888771,0.03842278,-0.012296629,0.043765735,0.018529635,-0.118788086,0.006549418,-0.048306476,0.013378116,-0.06868233,-0.0083785895,0.03517503,0.0343701,-0.010240195,0.013694745,0.0132076135,-0.010238225,-0.07320132,-0.048299566,0.053090475,-0.032777898,0.020026403,-0.06189345,-0.057705067,-0.022343224,0.023153422,0.023268614,0.037526716,-0.033348076,-0.02706038,-0.004455787,0.050894294,-0.07717658,-0.014112705,0.032474365,-0.013033859,0.016657561,0.011470492,0.10748512,-0.07035712,0.044964977,0.07947606,-0.009322345,0.030345468,-0.061935812,-0.068966344,0.008181883,0.036495965,-0.03422538,0.0722263,0.0080508,0.018524026,-0.01853746,-0.018027661,0.02054869,-0.018662417,-0.04851699,-0.022861604,-0.049720187,-0.037979882,-0.08576981,0.055428173,0.04188371,-0.21645029,0.027188277,-0.029267613,-0.048173875,0.0031636197,0.06389665,0.031545877,0.070769995,0.067055486,0.027008489,-0.00049099216,0.040306386,-0.03377076,-0.018376818,0.04556317,0.016832454,0.05507204,-0.029532157,-0.009624524,0.026269661,0.017357461,-0.054852717,0.1552457,0.006376442,-0.011987791,-0.014242577,-0.011783559,0.0657621,0.064662114,-0.026542293,-0.024521733,0.025647672,0.06260407,0.015726259,-0.0020546052,0.04296862,-0.0052673686,0.029184707,0.035382755,-0.002355042,0.02818034,0.019167347,0.0042046024,0.029588467,0.03211742,0.0485934,0.055084,-0.07017591,0.013462181,0.053707264,-0.03558338,-0.056385767,0.031682525,0.07035073,0.024639783,0.09057196,-0.014535715,-0.033358395,0.0054218606,-0.05036325,0.0010074337,-0.051279366,-0.070226975,-0.020864958,0.031776078]'::vector)",
+              "Filter": "(embedding IS NOT NULL)",
+              "Rows Removed by Filter": 0,
+              "Shared Hit Blocks": 151,
+              "Shared Read Blocks": 127,
+              "Shared Dirtied Blocks": 0,
+              "Shared Written Blocks": 0,
+              "Local Hit Blocks": 0,
+              "Local Read Blocks": 0,
+              "Local Dirtied Blocks": 0,
+              "Local Written Blocks": 0,
+              "Temp Read Blocks": 0,
+              "Temp Written Blocks": 0
+            }
+          ]
+        },
+        "Planning": {
+          "Shared Hit Blocks": 13,
+          "Shared Read Blocks": 2,
+          "Shared Dirtied Blocks": 0,
+          "Shared Written Blocks": 0,
+          "Local Hit Blocks": 0,
+          "Local Read Blocks": 0,
+          "Local Dirtied Blocks": 0,
+          "Local Written Blocks": 0,
+          "Temp Read Blocks": 0,
+          "Temp Written Blocks": 0
+        },
+        "Planning Time": 0.207,
+        "Triggers": [],
+        "Execution Time": 1.447
+      }
+    ]
+  },
+  "filtered_vector_k10_returned": 10,
+  "query": "cloud revenue growth",
+  "filters": {
+    "ticker": "MSFT",
+    "fiscal_year": 2025,
+    "fiscal_period": "Q3",
+    "items": [
+      "P1-2"
+    ]
+  },
+  "modes": {
+    "vector": {
+      "seconds": 5.876495000033174,
+      "hits": [
+        {
+          "chunk_id": "chk_cb634655c5931596698a86f3cc320868b11f380deb071bdce3a05cdb0850d2c2",
+          "ticker": "MSFT",
+          "form": "10-Q",
+          "fiscal_year": 2025,
+          "fiscal_period": "Q3",
+          "item": "P1-2",
+          "text": "Microsoft 365 Consumer products and cloud services revenue increased $173 million or 10%. Microsoft 365 Consumer cloud revenue grew 10% driven by Microsoft 365 Consumer subscriber growth of 9% to 87.7 million, as well as growth in revenue per user from the price increase announced in January 2025, offset in part by continued mix shift to Microsoft 365 Basic.\n\n•\n\nLinkedIn revenue increased $298 million or 7% with growth across all lines of business.\n\n•\n\nDynamics products and cloud services revenue increased $189 million or 11% driven by growth in Dynamics 365, offset in part by a decline in Dynamics on-premises products. Dynamics 365 revenue grew 16% with growth across all workloads.\n\nOperating income increased $2.2 billion or 15%.\n\n•\n\nGross margin increased $2.3 billion or 10% driven by growth in Microsoft 365 Commercial cloud. Gross margin percentage was relatively unchanged inclusive of the impact of scaling our AI infrastructure.\n\n•\n\nOperating expenses increased $53 million or 1% primarily driven by investments in cloud and AI engineering.\n\nRevenue, gross margin, and operating income each included an unfavorable foreign currency impact of 3%.\n\nIntelligent Cloud\n\nRevenue increased $4.6 billion or 21%.\n\n•\n\nServer products and cloud services revenue increased $4.5 billion or 22% driven by Azure and other cloud services. Azure and other cloud services revenue grew 33% driven by demand for our portfolio of services, including 16 points from our AI services. Server products revenue decreased 6% primarily driven by a decrease in transactional purchasing with continued customer shift to cloud offerings.\n\n•\n\nEnterprise and partner services revenue increased $85 million or 5% driven by growth in Enterprise Support Services, offset in part by a decline in Industry Solutions.\n\nOperating income increased $1.6 billion or 17%.\n\n•\n\nGross margin increased $1.9 billion or 13% driven by growth in Azure. Gross margin percentage decreased driven by the impact of scaling our AI infrastructure.",
+          "score": 0.7809122931413489,
+          "accession": "0000950170-25-061046",
+          "title": "Management's Discussion and Analysis",
+          "report_date": "2025-03-31",
+          "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017025061046/msft-20250331.htm",
+          "oversized_row": false
+        },
+        {
+          "chunk_id": "chk_dd16fcea6db4027497ad84f155c7c2fa15087544368d08ba1460a25afbecd503",
+          "ticker": "MSFT",
+          "form": "10-Q",
+          "fiscal_year": 2025,
+          "fiscal_period": "Q3",
+          "item": "P1-2",
+          "text": "•\n\nLinkedIn revenue increased $1.1 billion or 9% with growth across all lines of business.\n\n•\n\nDynamics products and cloud services revenue increased $666 million or 13% driven by growth in Dynamics 365, offset in part by a decline in Dynamics on-premises products. Dynamics 365 revenue grew 18% with growth across all workloads.\n\nOperating income increased $6.8 billion or 16%.\n\n•\n\nGross margin increased $7.4 billion or 12% driven by growth in Microsoft 365 Commercial cloud. Gross margin percentage decreased slightly driven by the impact of scaling our AI infrastructure.\n\n•\n\nOperating expenses increased $544 million or 3% driven by investments in cloud and AI engineering and commercial sales.\n\nIntelligent Cloud\n\nRevenue increased $12.7 billion or 20%.\n\n•\n\nServer products and cloud services revenue increased $12.6 billion or 22% driven by Azure and other cloud services. Azure and other cloud services revenue grew 32% driven by demand for our portfolio of services, including 14 points from our AI services. Server products revenue decreased 4% driven by a decrease in transactional purchasing.\n\n•\n\nEnterprise and partner services revenue increased slightly driven by growth in Enterprise Support Services, offset in part by a decline in Industry Solutions.\n\nOperating income increased $4.5 billion or 16%.\n\n•\n\nGross margin increased $5.6 billion or 13% driven by growth in Azure. Gross margin percentage decreased driven by the impact of scaling our AI infrastructure.\n\n•\n\nOperating expenses increased $1.2 billion or 8% driven by investments in cloud and AI engineering.\n\nMore Personal Computing\n\nRevenue increased $2.7 billion or 7%.\n\n•\n\nWindows and Devices revenue increased $184 million or 1%. Windows OEM and Devices revenue increased 3% driven by growth in Windows OEM, offset in part by a decline in Devices.",
+          "score": 0.7710691690444946,
+          "accession": "0000950170-25-061046",
+          "title": "Management's Discussion and Analysis",
+          "report_date": "2025-03-31",
+          "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017025061046/msft-20250331.htm",
+          "oversized_row": false
+        },
+        {
+          "chunk_id": "chk_13fbb010660562b99693b6f18cc536e4d5b5f6948de8efac36a72b660e8a94a6",
+          "ticker": "MSFT",
+          "form": "10-Q",
+          "fiscal_year": 2025,
+          "fiscal_period": "Q3",
+          "item": "P1-2",
+          "text": "•\n\nLinkedIn revenue increased 7%.\n\n•\n\nDynamics products and cloud services revenue increased 11% driven by Dynamics 365 revenue growth of 16%.\n\n•\n\nServer products and cloud services revenue increased 22% driven by Azure and other cloud services revenue growth of 33%.\n\n•\n\nWindows OEM and Devices revenue increased 3%.\n\n•\n\nXbox content and services revenue increased 8%.\n\n•\n\nSearch and news advertising revenue excluding traffic acquisition costs increased 21%.\n\n32\n\nPART I\n\nItem 2\n\nIndustry Trends\n\nOur industry is dynamic and highly competitive, with frequent changes in both technologies and business models. Each industry shift is an opportunity to conceive new products, new technologies, or new ideas that can further transform the industry and our business. At Microsoft, we push the boundaries of what is possible through a broad range of research and development activities that seek to identify and address the changing demands of customers and users, industry trends, and competitive forces.\n\nEconomic Conditions, Challenges, and Risks\n\nThe markets for software, devices, and cloud-based services are dynamic and highly competitive. Our competitors are developing new software and devices, while also deploying competing cloud-based services for consumers and businesses. The devices and form factors customers prefer evolve rapidly, influencing how users access services in the cloud and, in some cases, the user’s choice of which suite of cloud-based services to use. Aggregate demand for our software, services, and devices is also correlated to global macroeconomic and geopolitical factors, which remain dynamic. We must continue to evolve and adapt over an extended time in pace with this changing environment.",
+          "score": 0.7672930955886841,
+          "accession": "0000950170-25-061046",
+          "title": "Management's Discussion and Analysis",
+          "report_date": "2025-03-31",
+          "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017025061046/msft-20250331.htm",
+          "oversized_row": false
+        }
+      ]
+    },
+    "keyword": {
+      "seconds": 0.0208371999906376,
+      "hits": [
+        {
+          "chunk_id": "chk_36335e61a80c56db523f1a7bde0d7c661b5ac1e5ddfb5d100a94265317fc1397",
+          "ticker": "MSFT",
+          "form": "10-Q",
+          "fiscal_year": 2025,
+          "fiscal_period": "Q3",
+          "item": "P1-2",
+          "text": "Commercial remaining performance obligation |  | Commercial portion of revenue allocated to remaining performance obligations, which includes unearned revenue and amounts that will be invoiced and recognized as revenue in future periods\n\nMicrosoft Cloud revenue and revenue growth |  | Revenue from Microsoft 365 Commercial cloud, Azure and other cloud services, the commercial portion of LinkedIn, and Dynamics 365\n\nMicrosoft Cloud gross margin percentage |  | Gross margin percentage for our Microsoft Cloud business\n\n34\n\nPART I\n\nItem 2\n\nProductivity and Business Processes and Intelligent Cloud\n\nMetrics related to our Productivity and Business Processes and Intelligent Cloud segments assess the health of our core businesses within these segments. The metrics primarily reflect growth across our cloud services.\n\nMicrosoft 365 Commercial cloud revenue growth |  | Revenue from Microsoft 365 Commercial subscriptions, comprising Microsoft 365 Commercial, Enterprise Mobility + Security, the cloud portion of Windows Commercial, the per-user portion of Power BI, Exchange, SharePoint, Microsoft Teams, Microsoft 365 Security and Compliance, Microsoft Viva, and Microsoft 365 Copilot\n\nMicrosoft 365 Commercial seat growth |  | The number of Microsoft 365 Commercial seats at end of period where seats are paid users covered by a Microsoft 365 Commercial subscription\n\nMicrosoft 365 Consumer cloud revenue growth |  | Revenue from Microsoft 365 Consumer subscriptions and other consumer services\n\nMicrosoft 365 Consumer subscribers |  | The number of Microsoft 365 Consumer subscribers at end of period\n\nLinkedIn revenue growth |  | Revenue from LinkedIn, including Talent Solutions, Marketing Solutions, Premium Subscriptions, and Sales Solutions\n\nDynamics 365 revenue growth |  | Revenue from Dynamics 365, including a set of intelligent, cloud-based applications across ERP, CRM, Power Apps, and Power Automate\n\nAzure and other cloud services revenue growth |  | Revenue from Azure and other cloud services, including cloud and AI consumption-based services, GitHub cloud services, Nuance Healthcare cloud services, virtual desktop offerings, and other cloud services",
+          "score": 0.378917,
+          "accession": "0000950170-25-061046",
+          "title": "Management's Discussion and Analysis",
+          "report_date": "2025-03-31",
+          "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017025061046/msft-20250331.htm",
+          "oversized_row": false
+        },
+        {
+          "chunk_id": "chk_0a49dde7f1559642f56c2434f4163ba01140632503236a5bbc50b03ab27ee7ad",
+          "ticker": "MSFT",
+          "form": "10-Q",
+          "fiscal_year": 2025,
+          "fiscal_period": "Q3",
+          "item": "P1-2",
+          "text": "The following Management’s Discussion and Analysis of Financial Condition and Results of Operations (“MD&A”) is intended to help the reader understand the results of operations and financial condition of Microsoft Corporation. MD&A is provided as a supplement to, and should be read in conjunction with, our Annual Report on Form 10-K for the year ended June 30, 2024, our Form 8-K filed on December 3, 2024, and our consolidated financial statements and the accompanying Notes to Financial Statements (Part I, Item 1 of this Form 10-Q).\n\nOVERVIEW\n\nMicrosoft is a technology company committed to making digital technology and artificial intelligence (“AI”) available broadly and doing so responsibly, with a mission to empower every person and every organization on the planet to achieve more. We create platforms and tools, powered by AI, that deliver innovative solutions that meet the evolving needs of our customers.\n\nWe generate revenue by offering a wide range of cloud-based solutions, content, and other services to people and businesses; licensing and supporting an array of software products; delivering relevant online advertising to a global audience; and designing and selling devices. Our most significant expenses are related to compensating employees; supporting and investing in our cloud-based services, including datacenter operations; designing, manufacturing, marketing, and selling our other products and services; and income taxes.\n\nHighlights from the third quarter of fiscal year 2025 compared with the third quarter of fiscal year 2024 included:\n\n•\n\nMicrosoft Cloud revenue increased 20% to $42.4 billion.\n\n•\n\nMicrosoft 365 Commercial products and cloud services revenue increased 11% driven by Microsoft 365 Commercial cloud revenue growth of 12%.\n\n•\n\nMicrosoft 365 Consumer products and cloud services revenue increased 10% driven by Microsoft 365 Consumer cloud revenue growth of 10%.",
+          "score": 0.22361112,
+          "accession": "0000950170-25-061046",
+          "title": "Management's Discussion and Analysis",
+          "report_date": "2025-03-31",
+          "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017025061046/msft-20250331.htm",
+          "oversized_row": false
+        },
+        {
+          "chunk_id": "chk_834b9657e9d3f63f1fbf4ac043e649a260f1322175f68202bdc2fadb845865e3",
+          "ticker": "MSFT",
+          "form": "10-Q",
+          "fiscal_year": 2025,
+          "fiscal_period": "Q3",
+          "item": "P1-2",
+          "text": "Metrics\n\nWe use metrics in assessing the performance of our business and to make informed decisions regarding the allocation of resources. We disclose metrics to enable investors to evaluate progress against our ambitions, provide transparency into performance trends, and reflect the continued evolution of our products and services. Our commercial and other business metrics are fundamentally connected based on how customers use our products and services. The metrics are disclosed in the MD&A or the Notes to Financial Statements (Part I, Item 1 of this Form 10-Q). Financial metrics are calculated based on financial results prepared in accordance with accounting principles generally accepted in the United States of America (“GAAP”), and growth comparisons relate to the corresponding period of last fiscal year.\n\nIn the first quarter of fiscal year 2025, we made updates to our metrics in connection with the segment changes described above. These changes align our metrics with how we manage and monitor certain businesses. The key change was bringing the commercial components of Microsoft 365 together and creating a new Microsoft 365 Commercial cloud revenue growth metric. Other changes include combining Windows OEM and Devices into a single revenue growth metric that brings revenue from PC market-driven businesses together, as well as elevating our cloud revenue growth metrics to align to our strategic focus on cloud growth.\n\nCommercial\n\nOur commercial business primarily consists of Server products and cloud services, Microsoft 365 Commercial products and cloud services, the commercial portion of LinkedIn, Enterprise and partner services, and Dynamics products and cloud services. Our commercial metrics allow management and investors to assess the overall health of our commercial business and include leading indicators of future performance.\n\nCommercial remaining performance obligation |  | Commercial portion of revenue allocated to remaining performance obligations, which includes unearned revenue and amounts that will be invoiced and recognized as revenue in future periods",
+          "score": 0.22051248,
+          "accession": "0000950170-25-061046",
+          "title": "Management's Discussion and Analysis",
+          "report_date": "2025-03-31",
+          "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017025061046/msft-20250331.htm",
+          "oversized_row": false
+        }
+      ]
+    },
+    "hybrid": {
+      "seconds": 0.03098640003008768,
+      "hits": [
+        {
+          "chunk_id": "chk_36335e61a80c56db523f1a7bde0d7c661b5ac1e5ddfb5d100a94265317fc1397",
+          "ticker": "MSFT",
+          "form": "10-Q",
+          "fiscal_year": 2025,
+          "fiscal_period": "Q3",
+          "item": "P1-2",
+          "text": "Commercial remaining performance obligation |  | Commercial portion of revenue allocated to remaining performance obligations, which includes unearned revenue and amounts that will be invoiced and recognized as revenue in future periods\n\nMicrosoft Cloud revenue and revenue growth |  | Revenue from Microsoft 365 Commercial cloud, Azure and other cloud services, the commercial portion of LinkedIn, and Dynamics 365\n\nMicrosoft Cloud gross margin percentage |  | Gross margin percentage for our Microsoft Cloud business\n\n34\n\nPART I\n\nItem 2\n\nProductivity and Business Processes and Intelligent Cloud\n\nMetrics related to our Productivity and Business Processes and Intelligent Cloud segments assess the health of our core businesses within these segments. The metrics primarily reflect growth across our cloud services.\n\nMicrosoft 365 Commercial cloud revenue growth |  | Revenue from Microsoft 365 Commercial subscriptions, comprising Microsoft 365 Commercial, Enterprise Mobility + Security, the cloud portion of Windows Commercial, the per-user portion of Power BI, Exchange, SharePoint, Microsoft Teams, Microsoft 365 Security and Compliance, Microsoft Viva, and Microsoft 365 Copilot\n\nMicrosoft 365 Commercial seat growth |  | The number of Microsoft 365 Commercial seats at end of period where seats are paid users covered by a Microsoft 365 Commercial subscription\n\nMicrosoft 365 Consumer cloud revenue growth |  | Revenue from Microsoft 365 Consumer subscriptions and other consumer services\n\nMicrosoft 365 Consumer subscribers |  | The number of Microsoft 365 Consumer subscribers at end of period\n\nLinkedIn revenue growth |  | Revenue from LinkedIn, including Talent Solutions, Marketing Solutions, Premium Subscriptions, and Sales Solutions\n\nDynamics 365 revenue growth |  | Revenue from Dynamics 365, including a set of intelligent, cloud-based applications across ERP, CRM, Power Apps, and Power Automate\n\nAzure and other cloud services revenue growth |  | Revenue from Azure and other cloud services, including cloud and AI consumption-based services, GitHub cloud services, Nuance Healthcare cloud services, virtual desktop offerings, and other cloud services",
+          "score": 0.032018442622950824,
+          "accession": "0000950170-25-061046",
+          "title": "Management's Discussion and Analysis",
+          "report_date": "2025-03-31",
+          "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017025061046/msft-20250331.htm",
+          "oversized_row": false
+        },
+        {
+          "chunk_id": "chk_cb634655c5931596698a86f3cc320868b11f380deb071bdce3a05cdb0850d2c2",
+          "ticker": "MSFT",
+          "form": "10-Q",
+          "fiscal_year": 2025,
+          "fiscal_period": "Q3",
+          "item": "P1-2",
+          "text": "Microsoft 365 Consumer products and cloud services revenue increased $173 million or 10%. Microsoft 365 Consumer cloud revenue grew 10% driven by Microsoft 365 Consumer subscriber growth of 9% to 87.7 million, as well as growth in revenue per user from the price increase announced in January 2025, offset in part by continued mix shift to Microsoft 365 Basic.\n\n•\n\nLinkedIn revenue increased $298 million or 7% with growth across all lines of business.\n\n•\n\nDynamics products and cloud services revenue increased $189 million or 11% driven by growth in Dynamics 365, offset in part by a decline in Dynamics on-premises products. Dynamics 365 revenue grew 16% with growth across all workloads.\n\nOperating income increased $2.2 billion or 15%.\n\n•\n\nGross margin increased $2.3 billion or 10% driven by growth in Microsoft 365 Commercial cloud. Gross margin percentage was relatively unchanged inclusive of the impact of scaling our AI infrastructure.\n\n•\n\nOperating expenses increased $53 million or 1% primarily driven by investments in cloud and AI engineering.\n\nRevenue, gross margin, and operating income each included an unfavorable foreign currency impact of 3%.\n\nIntelligent Cloud\n\nRevenue increased $4.6 billion or 21%.\n\n•\n\nServer products and cloud services revenue increased $4.5 billion or 22% driven by Azure and other cloud services. Azure and other cloud services revenue grew 33% driven by demand for our portfolio of services, including 16 points from our AI services. Server products revenue decreased 6% primarily driven by a decrease in transactional purchasing with continued customer shift to cloud offerings.\n\n•\n\nEnterprise and partner services revenue increased $85 million or 5% driven by growth in Enterprise Support Services, offset in part by a decline in Industry Solutions.\n\nOperating income increased $1.6 billion or 17%.\n\n•\n\nGross margin increased $1.9 billion or 13% driven by growth in Azure. Gross margin percentage decreased driven by the impact of scaling our AI infrastructure.",
+          "score": 0.03177805800756621,
+          "accession": "0000950170-25-061046",
+          "title": "Management's Discussion and Analysis",
+          "report_date": "2025-03-31",
+          "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017025061046/msft-20250331.htm",
+          "oversized_row": false
+        },
+        {
+          "chunk_id": "chk_13fbb010660562b99693b6f18cc536e4d5b5f6948de8efac36a72b660e8a94a6",
+          "ticker": "MSFT",
+          "form": "10-Q",
+          "fiscal_year": 2025,
+          "fiscal_period": "Q3",
+          "item": "P1-2",
+          "text": "•\n\nLinkedIn revenue increased 7%.\n\n•\n\nDynamics products and cloud services revenue increased 11% driven by Dynamics 365 revenue growth of 16%.\n\n•\n\nServer products and cloud services revenue increased 22% driven by Azure and other cloud services revenue growth of 33%.\n\n•\n\nWindows OEM and Devices revenue increased 3%.\n\n•\n\nXbox content and services revenue increased 8%.\n\n•\n\nSearch and news advertising revenue excluding traffic acquisition costs increased 21%.\n\n32\n\nPART I\n\nItem 2\n\nIndustry Trends\n\nOur industry is dynamic and highly competitive, with frequent changes in both technologies and business models. Each industry shift is an opportunity to conceive new products, new technologies, or new ideas that can further transform the industry and our business. At Microsoft, we push the boundaries of what is possible through a broad range of research and development activities that seek to identify and address the changing demands of customers and users, industry trends, and competitive forces.\n\nEconomic Conditions, Challenges, and Risks\n\nThe markets for software, devices, and cloud-based services are dynamic and highly competitive. Our competitors are developing new software and devices, while also deploying competing cloud-based services for consumers and businesses. The devices and form factors customers prefer evolve rapidly, influencing how users access services in the cloud and, in some cases, the user’s choice of which suite of cloud-based services to use. Aggregate demand for our software, services, and devices is also correlated to global macroeconomic and geopolitical factors, which remain dynamic. We must continue to evolve and adapt over an extended time in pace with this changing environment.",
+          "score": 0.03149801587301587,
+          "accession": "0000950170-25-061046",
+          "title": "Management's Discussion and Analysis",
+          "report_date": "2025-03-31",
+          "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017025061046/msft-20250331.htm",
+          "oversized_row": false
+        }
+      ]
+    },
+    "hybrid_rerank": {
+      "seconds": 11.341515799984336,
+      "hits": [
+        {
+          "chunk_id": "chk_cb634655c5931596698a86f3cc320868b11f380deb071bdce3a05cdb0850d2c2",
+          "ticker": "MSFT",
+          "form": "10-Q",
+          "fiscal_year": 2025,
+          "fiscal_period": "Q3",
+          "item": "P1-2",
+          "text": "Microsoft 365 Consumer products and cloud services revenue increased $173 million or 10%. Microsoft 365 Consumer cloud revenue grew 10% driven by Microsoft 365 Consumer subscriber growth of 9% to 87.7 million, as well as growth in revenue per user from the price increase announced in January 2025, offset in part by continued mix shift to Microsoft 365 Basic.\n\n•\n\nLinkedIn revenue increased $298 million or 7% with growth across all lines of business.\n\n•\n\nDynamics products and cloud services revenue increased $189 million or 11% driven by growth in Dynamics 365, offset in part by a decline in Dynamics on-premises products. Dynamics 365 revenue grew 16% with growth across all workloads.\n\nOperating income increased $2.2 billion or 15%.\n\n•\n\nGross margin increased $2.3 billion or 10% driven by growth in Microsoft 365 Commercial cloud. Gross margin percentage was relatively unchanged inclusive of the impact of scaling our AI infrastructure.\n\n•\n\nOperating expenses increased $53 million or 1% primarily driven by investments in cloud and AI engineering.\n\nRevenue, gross margin, and operating income each included an unfavorable foreign currency impact of 3%.\n\nIntelligent Cloud\n\nRevenue increased $4.6 billion or 21%.\n\n•\n\nServer products and cloud services revenue increased $4.5 billion or 22% driven by Azure and other cloud services. Azure and other cloud services revenue grew 33% driven by demand for our portfolio of services, including 16 points from our AI services. Server products revenue decreased 6% primarily driven by a decrease in transactional purchasing with continued customer shift to cloud offerings.\n\n•\n\nEnterprise and partner services revenue increased $85 million or 5% driven by growth in Enterprise Support Services, offset in part by a decline in Industry Solutions.\n\nOperating income increased $1.6 billion or 17%.\n\n•\n\nGross margin increased $1.9 billion or 13% driven by growth in Azure. Gross margin percentage decreased driven by the impact of scaling our AI infrastructure.",
+          "score": 0.9947956204414368,
+          "accession": "0000950170-25-061046",
+          "title": "Management's Discussion and Analysis",
+          "report_date": "2025-03-31",
+          "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017025061046/msft-20250331.htm",
+          "oversized_row": false
+        },
+        {
+          "chunk_id": "chk_0a49dde7f1559642f56c2434f4163ba01140632503236a5bbc50b03ab27ee7ad",
+          "ticker": "MSFT",
+          "form": "10-Q",
+          "fiscal_year": 2025,
+          "fiscal_period": "Q3",
+          "item": "P1-2",
+          "text": "The following Management’s Discussion and Analysis of Financial Condition and Results of Operations (“MD&A”) is intended to help the reader understand the results of operations and financial condition of Microsoft Corporation. MD&A is provided as a supplement to, and should be read in conjunction with, our Annual Report on Form 10-K for the year ended June 30, 2024, our Form 8-K filed on December 3, 2024, and our consolidated financial statements and the accompanying Notes to Financial Statements (Part I, Item 1 of this Form 10-Q).\n\nOVERVIEW\n\nMicrosoft is a technology company committed to making digital technology and artificial intelligence (“AI”) available broadly and doing so responsibly, with a mission to empower every person and every organization on the planet to achieve more. We create platforms and tools, powered by AI, that deliver innovative solutions that meet the evolving needs of our customers.\n\nWe generate revenue by offering a wide range of cloud-based solutions, content, and other services to people and businesses; licensing and supporting an array of software products; delivering relevant online advertising to a global audience; and designing and selling devices. Our most significant expenses are related to compensating employees; supporting and investing in our cloud-based services, including datacenter operations; designing, manufacturing, marketing, and selling our other products and services; and income taxes.\n\nHighlights from the third quarter of fiscal year 2025 compared with the third quarter of fiscal year 2024 included:\n\n•\n\nMicrosoft Cloud revenue increased 20% to $42.4 billion.\n\n•\n\nMicrosoft 365 Commercial products and cloud services revenue increased 11% driven by Microsoft 365 Commercial cloud revenue growth of 12%.\n\n•\n\nMicrosoft 365 Consumer products and cloud services revenue increased 10% driven by Microsoft 365 Consumer cloud revenue growth of 10%.",
+          "score": 0.9942370653152466,
+          "accession": "0000950170-25-061046",
+          "title": "Management's Discussion and Analysis",
+          "report_date": "2025-03-31",
+          "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017025061046/msft-20250331.htm",
+          "oversized_row": false
+        },
+        {
+          "chunk_id": "chk_8f0b8b7f9e95a3bfea59ded584dd80d0c33c9580e912227816a69909c3e8ffa3",
+          "ticker": "MSFT",
+          "form": "10-Q",
+          "fiscal_year": 2025,
+          "fiscal_period": "Q3",
+          "item": "P1-2",
+          "text": "(In millions, except percentages and per share amounts) |  | Three Months Ended March 31, |  |  | Percentage Change |  |  | Nine Months Ended March 31, |  |  | Percentage Change | \n\nOperating income |  |  | 32,000 |  |  |  | 27,581 |  |  |  | 16% |  |  |  | 94,205 |  |  |  | 81,508 |  |  |  | 16% | \n\nNet income |  |  | 25,824 |  |  |  | 21,939 |  |  |  | 18% |  |  |  | 74,599 |  |  |  | 66,100 |  |  |  | 13% | \n\nDiluted earnings per share |  |  | 3.46 |  |  |  | 2.94 |  |  |  | 18% |  |  |  | 9.99 |  |  |  | 8.85 |  |  |  | 13% | \n\n35\n\nPART I\n\nItem 2\n\nThree Months Ended March 31, 2025 Compared with Three Months Ended March 31, 2024\n\nRevenue increased $8.2 billion or 13% with growth across each of our segments. Intelligent Cloud revenue increased driven by Azure. Productivity and Business Processes revenue increased driven by Microsoft 365 Commercial cloud. More Personal Computing revenue increased driven by Search and news advertising.\n\nCost of revenue increased $3.4 billion or 18% driven by growth in Microsoft Cloud.\n\nGross margin increased $4.8 billion or 11% with growth across each of our segments.\n\n•\n\nGross margin percentage decreased driven by Intelligent Cloud.\n\n•\n\nMicrosoft Cloud gross margin percentage decreased to 69% driven by the impact of scaling our AI infrastructure.\n\nOperating expenses increased $375 million or 2% driven by investments in cloud and AI engineering.\n\nOperating income increased $4.4 billion or 16% with growth across each of our segments.",
+          "score": 0.993794322013855,
+          "accession": "0000950170-25-061046",
+          "title": "Management's Discussion and Analysis",
+          "report_date": "2025-03-31",
+          "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017025061046/msft-20250331.htm",
+          "oversized_row": false
+        }
+      ]
+    }
+  },
+  "labels_created": false,
+  "cli_startup_verified": true,
+  "handwritten_file_created": false,
+  "draft_file_created": false
+}

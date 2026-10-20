@@ -13,6 +13,24 @@ URL = "https://data.sec.gov/submissions/CIK0000320193.json"
 
 
 @respx.mock
+async def test_success_status_sec_block_page_is_not_cached(settings):
+    url = "https://www.sec.gov/Archives/edgar/data/test.htm"
+    route = respx.get(url).mock(
+        return_value=httpx.Response(
+            200, text="<html>Your request originates from an undeclared automated tool</html>"
+        )
+    )
+    async with EdgarClient(settings) as client:
+        with pytest.raises(ValueError, match="valid filing"):
+            await client.get(url, expect_filing=True)
+        assert not client.paths(url)[0].exists()
+        route.mock(return_value=httpx.Response(200, text="<html><p>Source text</p></html>"))
+        await client.get(url, expect_filing=True)
+        await client.get(url, expect_filing=True)
+        assert route.call_count == 2
+
+
+@respx.mock
 async def test_headers_immutable_cache_and_integrity(settings):
     route = respx.get(URL).mock(return_value=httpx.Response(200, json={"ok": True}))
     async with EdgarClient(settings) as client:

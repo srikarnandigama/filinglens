@@ -14,7 +14,12 @@ from filinglens.edgar.client import EdgarClient
 from filinglens.ingest.chunk import CHUNKER_VERSION, MAXIMUM, OVERLAP, TARGET, chunk_section
 from filinglens.ingest.identity import digest, identity
 from filinglens.ingest.models import model_revision, tokenizer
-from filinglens.ingest.parse import PARSER_VERSION, parse_filing
+from filinglens.ingest.offline import OfflineSnapshot
+from filinglens.ingest.parse import PARSER_VERSION
+from filinglens.ingest.resolve import RESOLVER_VERSION, resolve_filing
+
+# Kept as the parse-stage hook for resume regression tests.
+parse_filing = resolve_filing
 
 
 def configuration() -> dict:
@@ -24,6 +29,7 @@ def configuration() -> dict:
 
     return {
         "parser": PARSER_VERSION,
+        "resolver": RESOLVER_VERSION,
         "chunker": CHUNKER_VERSION,
         "embed_tokenizer": model_revision("embed"),
         "rerank_tokenizer": model_revision("rerank"),
@@ -54,10 +60,18 @@ async def checkpoint(
 
 
 async def prepare_corpus(
-    settings: Settings, tickers: list[str], *, stage: str, force: bool = False
+    settings: Settings,
+    tickers: list[str],
+    *,
+    stage: str,
+    force: bool = False,
+    offline: bool = False,
 ) -> dict:
     started = time.perf_counter()
-    async with pool_for(settings.database_url) as pool, EdgarClient(settings) as client:
+    if offline and stage != "parse":
+        raise ValueError("Offline rebuild is only supported for the parse stage")
+    source = OfflineSnapshot(settings) if offline else EdgarClient(settings)
+    async with pool_for(settings.database_url) as pool, source as client:
         async with pool.connection() as lock_conn:
             locked = await (await lock_conn.execute(INGESTION_LOCK)).fetchone()
             if not locked[0]:
@@ -98,6 +112,14 @@ async def prepare_corpus(
                             "VALUES (%s,%s,%s) ON CONFLICT DO NOTHING",
                             (corpus_id, settings.snapshot_id, Jsonb(config)),
                         )
+                    async with pool.connection() as conn:
+                        frozen = await (
+                            await conn.execute(
+                                "SELECT frozen FROM retrieval_corpora WHERE id=%s", (corpus_id,)
+                            )
+                        ).fetchone()
+                        if frozen and frozen[0]:
+                            raise ValueError("Frozen corpora cannot be reparsed")
                 totals = {
                     "corpus_id": corpus_id,
                     "filings": len(filings),
@@ -123,23 +145,30 @@ async def prepare_corpus(
                                 continue
                         body = await client.get(filing["url"], expect_filing=True)
                         source_hash = hashlib.sha256(body).hexdigest()
-                        async with pool.connection() as conn:
-                            await checkpoint(
-                                conn,
-                                settings,
-                                accession,
-                                "primary-v1",
-                                "filings",
-                                "complete",
-                                {"source_hash": source_hash},
-                            )
-                            await conn.execute(
-                                "UPDATE ingestion_snapshots SET manifest=%s WHERE id=%s",
-                                (Jsonb(client.manifest()), settings.snapshot_id),
-                            )
+                        if not offline:
+                            async with pool.connection() as conn:
+                                await checkpoint(
+                                    conn,
+                                    settings,
+                                    accession,
+                                    "primary-v1",
+                                    "filings",
+                                    "complete",
+                                    {"source_hash": source_hash},
+                                )
+                                await conn.execute(
+                                    "UPDATE ingestion_snapshots SET manifest=%s WHERE id=%s",
+                                    (Jsonb(client.manifest()), settings.snapshot_id),
+                                )
                         if stage == "parse":
-                            sections, diagnostics = parse_filing(body, filing["form"])
-                            if diagnostics["ambiguous"] or not sections:
+                            sections, diagnostics = parse_filing(
+                                body, filing["form"], filing["ticker"]
+                            )
+                            if (
+                                diagnostics["ambiguous"]
+                                or diagnostics["unresolved_substantive"]
+                                or not sections
+                            ):
                                 raise ValueError(f"Unresolved sections: {diagnostics}")
                             # Missing items are visible diagnostics; do not fabricate content.
                             rows = []
@@ -179,54 +208,57 @@ async def prepare_corpus(
                                     raise ValueError(
                                         "Reparse changed IDs under the same fingerprint"
                                     )
-                                for sid, section, header, chunks in rows:
-                                    await conn.execute(
-                                        """INSERT INTO sections(id,accession,item,title,text,
-                                        source_hash,fingerprint,occurrence,blocks)
-                                        VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s)
-                                        ON CONFLICT(id) DO NOTHING""",
-                                        (
-                                            sid,
-                                            accession,
-                                            section.item,
-                                            section.title,
-                                            section.text,
-                                            source_hash,
-                                            fingerprint,
-                                            section.occurrence,
-                                            Jsonb(section.serialized_blocks()),
-                                        ),
-                                    )
-                                    for chunk in chunks:
-                                        params = (
-                                            asdict(chunk)
-                                            | filing
-                                            | {
-                                                "id": chunk.id,
-                                                "section_id": sid,
-                                                "item": section.item,
-                                                "source_hash": source_hash,
-                                                "fingerprint": fingerprint,
-                                                "context_header": header,
-                                            }
-                                        )
+                                if not existing:
+                                    for sid, section, header, chunks in rows:
                                         await conn.execute(
-                                            """INSERT INTO chunks(id,section_id,accession,cik,form,
-                                            fiscal_year,fiscal_period,item,ordinal,text,token_count,
-                                            source_hash,fingerprint,context_header,source_start,
-                                            source_end,oversized_row) VALUES (%(id)s,%(section_id)s,
-                                            %(accession)s,%(cik)s,%(form)s,%(fiscal_year)s,
-                                            %(fiscal_period)s,%(item)s,%(ordinal)s,%(text)s,
-                                            %(token_count)s,%(source_hash)s,%(fingerprint)s,
-                                            %(context_header)s,%(source_start)s,%(source_end)s,
-                                            %(oversized_row)s) ON CONFLICT(id) DO NOTHING""",
-                                            params,
+                                            """INSERT INTO sections(id,accession,item,title,text,
+                                            source_hash,fingerprint,occurrence,blocks)
+                                            VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s)
+                                            ON CONFLICT(id) DO NOTHING""",
+                                            (
+                                                sid,
+                                                accession,
+                                                section.item,
+                                                section.title,
+                                                section.text,
+                                                source_hash,
+                                                fingerprint,
+                                                section.occurrence,
+                                                Jsonb(section.serialized_blocks()),
+                                            ),
                                         )
-                                        await conn.execute(
-                                            "INSERT INTO corpus_chunks VALUES (%s,%s) "
-                                            "ON CONFLICT DO NOTHING",
-                                            (corpus_id, chunk.id),
-                                        )
+                                        for chunk in chunks:
+                                            params = (
+                                                asdict(chunk)
+                                                | filing
+                                                | {
+                                                    "id": chunk.id,
+                                                    "section_id": sid,
+                                                    "item": section.item,
+                                                    "source_hash": source_hash,
+                                                    "fingerprint": fingerprint,
+                                                    "context_header": header,
+                                                }
+                                            )
+                                            await conn.execute(
+                                                """INSERT INTO chunks(id,section_id,accession,
+                                                cik,form,
+                                                fiscal_year,fiscal_period,item,ordinal,text,token_count,
+                                                source_hash,fingerprint,context_header,source_start,
+                                                source_end,oversized_row)
+                                                VALUES (%(id)s,%(section_id)s,
+                                                %(accession)s,%(cik)s,%(form)s,%(fiscal_year)s,
+                                                %(fiscal_period)s,%(item)s,%(ordinal)s,%(text)s,
+                                                %(token_count)s,%(source_hash)s,%(fingerprint)s,
+                                                %(context_header)s,%(source_start)s,%(source_end)s,
+                                                %(oversized_row)s) ON CONFLICT(id) DO NOTHING""",
+                                                params,
+                                            )
+                                            await conn.execute(
+                                                "INSERT INTO corpus_chunks VALUES (%s,%s) "
+                                                "ON CONFLICT DO NOTHING",
+                                                (corpus_id, chunk.id),
+                                            )
                                 details = diagnostics | {
                                     "sections": len(rows),
                                     "chunks": len(expected),
@@ -252,6 +284,12 @@ async def prepare_corpus(
                     except Exception as error:
                         detail = {"error": str(error)}
                         async with pool.connection() as conn:
+                            if stage == "parse":
+                                await conn.execute(
+                                    "UPDATE corpus_documents SET status='error', "
+                                    "details=details || %s WHERE corpus_id=%s AND accession=%s",
+                                    (Jsonb(detail), corpus_id, accession),
+                                )
                             await checkpoint(
                                 conn, settings, accession, fingerprint, stage, "error", detail
                             )

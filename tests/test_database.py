@@ -111,8 +111,29 @@ def test_twelve_stored_values_and_provenance():
                     )
 
 
-def test_full_cached_rerun_preserves_values_and_fact_ids():
-    settings = Settings()
+def test_full_cached_rerun_preserves_values_and_fact_ids(test_database):
+    # Replay M1 in an isolated copy: corpus repair must never write public facts
+    # or the accepted snapshot manifest, even when running the full test suite.
+    url, _ = test_database
+    migrate(url)
+    with psycopg.connect(url, **connection_options(url)) as conn:
+        for table in (
+            "ingestion_snapshots",
+            "companies",
+            "filings",
+            "financial_facts",
+            "metric_availability",
+        ):
+            conn.execute(
+                sql.SQL("INSERT INTO {} SELECT * FROM public.{}").format(
+                    sql.Identifier(table), sql.Identifier(table)
+                )
+            )
+        conn.execute(
+            "SELECT setval(pg_get_serial_sequence('financial_facts','id'), "
+            "(SELECT max(id) FROM financial_facts))"
+        )
+    settings = Settings(database_url=url)
 
     def rows():
         with psycopg.connect(

@@ -1,0 +1,51 @@
+{
+  "financial_facts": {
+    "count": 2715,
+    "sha256": "6b3f44b03efc7d3054c3e3597bd66a81885dbea8b7f2f3ceddb577c1d105c13f"
+  },
+  "companies": {
+    "count": 20,
+    "sha256": "6f2f52bf832b43771e911dac224cf6207ce0c4a5468fad99eb54305469f0ea86"
+  },
+  "filings": {
+    "count": 275,
+    "sha256": "1a0075b9269401140f0d55b7f427d6058bf96f016a7c3df2396b892df41aaa6c"
+  },
+  "ingestion_snapshots": {
+    "count": 1,
+    "sha256": "2b0f1c77ddc6f39080e03937c5ab5fd27f5561ef12d8810c5cf88a1ab22ebc89"
+  },
+  "metric_availability": {
+    "count": 3565,
+    "sha256": "87c3085b6be16a4156898f7e766aeb94dd73207bc2e2ab11d7cedd8237a1407c"
+  },
+  "v1_chunks": {
+    "count": 23441,
+    "sha256": "b9081fa4d2fe10a0eddd1d65837ad19de13644e3166cf8e8b380dd69e7d694a7"
+  },
+  "v1_documents": {
+    "count": 275,
+    "sha256": "2d79ced11a763cb1a7ee30e49c9cb0dfd0937388c0c40f8216ab984723106808"
+  },
+  "v1_corpus": {
+    "count": 1,
+    "sha256": "12e16c148b8f07b0c24a0d4cb6c23d10e3bcfd88ac5268ca4b6eb992e35f4375"
+  },
+  "files": {
+    "evals\\handwritten.jsonl": "d7b364662b9aa97f5c8616079297ff81322a7179583e2cb663c3614640896f04",
+    "evals\\results\\retrieval.json": "2e32fa2f4eba809958a531954b4d123951a70821d8db4027bb2e9f1f159543ab",
+    "evals\\results\\retrieval.md": "b1fce44bef6ccac327f9763469fad7031e0fc5384d41aea50c3dcfe05e59f485",
+    "evals\\results\\retrieval_analyses.json": "7fceb06bb9677b864b482080dc6be67a1c3007af48c048132504d22729bc988b",
+    "evals\\results\\retrieval_pre_fix.json": "8714437e6d1c9a80d05a05df15323ccd25950aafd198257d8eb4176ba0cd2ae9",
+    "evals\\results\\retrieval_pre_fix.md": "2e78d91d3cf2e45a8318c78f09b67bed73d71a99e257036485668ecd91438dc7",
+    "docs\\M2_CHUNK_REPLAY.json": "87b1ebe7355febe29bf19b329a170009bd6d25c3a8763614714097299dbfb0c3",
+    "docs\\M2_CORPUS_AUDIT.json": "dc5d529f68a31b9d72e95705d32fad4064f758deec3eb74e6883e0b88f015b36",
+    "docs\\M2_EMBED_BENCHMARK.json": "76b27aa46892ea8723366722f6c464990919a00ba67f7ef82ae6fbfbad1422ed",
+    "docs\\M2_EMBED_FULL.json": "5071e8df973e8136aba285e84f72fb9c7157971339ee7a7440d78c2ccc0c8f4d",
+    "docs\\M2_EVALUATION_CHECKS.md": "0f301a282ec506bc385093f5eae814ac8096264d644995870355e9336f17ebd8",
+    "docs\\M2_LABELING.md": "7692df04622bed5f243b68190f7c2667a129b382b5e18b76f8102dd11837d3a0",
+    "docs\\M2_LABELING_READINESS.json": "7ed969daa703142552b093679ed88875fa473f5c221d3d3a3eaef6097fdb0a20",
+    "docs\\M2_LABELING_READINESS.md": "39dc9d90506bd62a3febe35c7a0fb9aa2a99e75f0b9d1d40ce53123870ddc3d5",
+    "docs\\M2_STATUS.md": "1a68535403dd54df2f1720a5db74a83f1053f5929f6320f5405e4fa801e3d646"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "corpus_id": "corpus_3f3c2a9affddcc6a29eca9e768c65bcbd3e2f131fb69595b24b9b92005738739",
+  "filings": 275,
+  "completed": 275,
+  "skipped": 0,
+  "failed": [],
+  "chunks": 32960,
+  "seconds": 560.0125109000364,
+  "network_requests": 0,
+  "cache_hits": 275
+}

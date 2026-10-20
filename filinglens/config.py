@@ -7,6 +7,7 @@ from pydantic import Field, field_validator
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 ROOT = Path(__file__).resolve().parents[1]
+ACTIVE_RETRIEVAL_CORPUS = "corpus_3f3c2a9affddcc6a29eca9e768c65bcbd3e2f131fb69595b24b9b92005738739"
 
 
 class Settings(BaseSettings):
@@ -19,7 +20,12 @@ class Settings(BaseSettings):
     raw_dir: Path = ROOT / "data" / "raw"
     sec_requests_per_second: float = Field(default=8, gt=0, le=8)
     sec_max_attempts: int = Field(default=5, ge=1, le=10)
-    retrieval_corpus: str = ""
+    retrieval_corpus: str = ACTIVE_RETRIEVAL_CORPUS
+
+    @field_validator("retrieval_corpus", mode="before")
+    @classmethod
+    def active_corpus_when_unset(cls, value: str | None) -> str:
+        return value if value and value.strip() else ACTIVE_RETRIEVAL_CORPUS
 
     @field_validator("sec_user_agent")
     @classmethod

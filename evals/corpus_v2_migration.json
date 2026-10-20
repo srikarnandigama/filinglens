@@ -1,0 +1,995 @@
+{
+  "v1": "corpus_2fb48958e274daed46c19e3fbf2583213e308b1eebaa16a04cfdc8052eea82e7",
+  "v2": "corpus_3f3c2a9affddcc6a29eca9e768c65bcbd3e2f131fb69595b24b9b92005738739",
+  "corpus_hash": "d6e2dd9856cdf645873078c0505a690615b680346a95d4d591adcf0b3a18809a",
+  "records": [
+    {
+      "id": "hq_05c3197fe2084357b5c9ca0582b713f2",
+      "question": "What restructuring plan did P&G announce in fiscal 2025, and why did it start it?",
+      "gold": [
+        {
+          "old_id": "chk_2e062e5f7cbb717597076801bebcb53efda3a26990da8ad66effe2e6a971bb13",
+          "accession": "0000080424-25-000076",
+          "item": "7",
+          "status": "unique exact match",
+          "new_ids": [
+            "chk_8434e8db3e29fe4c2375a878ee2c348c3adea6aa5645e5cefe470ba434ecb636"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hq_19ea90a4eeb84991845ef0f0a3c4d316",
+      "question": "Why did Microsoft's cloud profit margins shrink in fiscal 2025 while cloud sales grew?",
+      "gold": [
+        {
+          "old_id": "chk_6f7f4c81eb063f7262b7975e7d40e982e24e6b8b9255163ae88a5eb3fc51c116",
+          "accession": "0000950170-25-100235",
+          "item": "7",
+          "status": "unique exact match",
+          "new_ids": [
+            "chk_04946a6a76bc7182083c1c2e0ff49400660cfe29eeb7fcd2cebdea21bd1059ee"
+          ]
+        },
+        {
+          "old_id": "chk_e0355c67ed705f969ab8854f5b548a92ec2553db383579a14c1c0f439cce3f09",
+          "accession": "0000950170-25-100235",
+          "item": "7",
+          "status": "unique exact match",
+          "new_ids": [
+            "chk_307f0668d3dca56ac7741fe2819577ddd7bb561645e1fbe7a26390e6ebb23d0a"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hq_21f4a3b2e4e044129aee7a3fa547a79b",
+      "question": "Why did Nike's sales fall in fiscal 2025?",
+      "gold": [
+        {
+          "old_id": "chk_023887a401ea993ecfc1f415cac03a03a347637811f278813956b52f2f02586c",
+          "accession": "0000320187-25-000047",
+          "item": "7",
+          "status": "unique exact match",
+          "new_ids": [
+            "chk_128e864cd37a84838f19edff4d6d32175e80a6b1c8b3ce6989d889a3e038c450"
+          ]
+        },
+        {
+          "old_id": "chk_5b84d1958def7675c8c77023558f8edfc7a42f75913cc46209f97fcdbdd60b37",
+          "accession": "0000320187-25-000047",
+          "item": "7",
+          "status": "unique exact match",
+          "new_ids": [
+            "chk_473cb63d0f4095c8e322bb686d7ff662ffd98ff17e9a1346f347824d6c281a4d"
+          ]
+        },
+        {
+          "old_id": "chk_9e1f2699fee605551d5cbead42a48182581dd421e42cb9face2495f8771b0b30",
+          "accession": "0000320187-25-000047",
+          "item": "7",
+          "status": "unique exact match",
+          "new_ids": [
+            "chk_e8b1bb1233e87ef482518dcc93716d487207fe94256da7219e437cab27e9b493"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hq_24a3e4ca8e144f708dc1df755db10222",
+      "question": "How exposed is Amazon to swings in currency exchange rates?",
+      "gold": [
+        {
+          "old_id": "chk_f51e84a0e1cff1730801dbffcde5462e22f27ef0a40e64a63ae92aa4fa6b9f94",
+          "accession": "0001018724-25-000004",
+          "item": "7A",
+          "status": "unique exact match",
+          "new_ids": [
+            "chk_6550ef00bcfbef732df9f462f60a232421744a257b879ab3db8ebf90bf92a112"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hq_395269fb91c24e7aba645db4529fd483",
+      "question": "What liquidity risks does Bank of America describe related to deposit outflows?",
+      "gold": [
+        {
+          "old_id": "chk_10fd09ebaa8387a85b028c86e364090ce6324ade98c54b66e0d3073188eec318",
+          "accession": "0000070858-25-000139",
+          "item": "1A",
+          "status": "unique exact match",
+          "new_ids": [
+            "chk_aad21114aea03fd17884fd6c8bfbe308d7b884da34b5e40056295f50944e83c6"
+          ]
+        },
+        {
+          "old_id": "chk_4bb8db201f2f41c3950dc0176fd94fb3bacd1469a6512a58781f68cdf13a3627",
+          "accession": "0000070858-25-000139",
+          "item": "1A",
+          "status": "unique exact match",
+          "new_ids": [
+            "chk_9c6a339d820013ecf265b3b96c9b0abe0dbd572d67e1de99001bf3d8392f8956"
+          ]
+        },
+        {
+          "old_id": "chk_a0ba6ded36613cca127c26b96c49c445c8d7f70688bfc015ae81d9caeff511e3",
+          "accession": "0000070858-25-000139",
+          "item": "1A",
+          "status": "unique exact match",
+          "new_ids": [
+            "chk_2f8f85e9b14970d0242f52d8c7265b4475cc06b686a26173d1a83613d005ac24"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hq_3bc57255183d4bdeabdba814d9c2f4a7",
+      "question": "What does Apple's value-at-risk model estimate for its foreign currency exposure?",
+      "gold": [
+        {
+          "old_id": "chk_2f88f89788101aa5afc9b84110e500eac9b1827999e880895734fadffd41a5bd",
+          "accession": "0000320193-24-000123",
+          "item": "7A",
+          "status": "unique exact match",
+          "new_ids": [
+            "chk_104fe109b922a38782c5ec690e3c432a4264d29c24d90dc5aec2b74ecd8c0a93"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hq_3d27d3a6bc924f74ab4e2b4f2a914397",
+      "question": "Why did Pfizer's COVID vaccine and pill sales collapse in 2023?",
+      "gold": [
+        {
+          "old_id": "chk_98266548b91dd9aeec392e26c6d493747a5df45a0fe5e5ca87bbf8df11008258",
+          "accession": "0000078003-24-000039",
+          "item": "7",
+          "status": "unique exact match",
+          "new_ids": [
+            "chk_fcd076d7c017473505492cb8d10e320b3219e95d536afa56ade72013f5f7b60e"
+          ]
+        },
+        {
+          "old_id": "chk_d7740e62ee2db0e2a2f91c66f850abffcdd1a5a25c93ff82bc32aa3700e7c6ef",
+          "accession": "0000078003-24-000039",
+          "item": "7",
+          "status": "unique exact match",
+          "new_ids": [
+            "chk_0538f0ffa59db400f54d9113d160ab4f0b2363254d9b08d5c09d32cfb2125bc8"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hq_4d5d9efc06f34ddaa145f699ce2c2e4d",
+      "question": "How could Meta's heavy spending on virtual and augmented reality go wrong?",
+      "gold": [
+        {
+          "old_id": "chk_0b97a8cd228c326b9c607a304da1815ca0ec2fddbc1d4688195d8d7fb966956a",
+          "accession": "0001326801-25-000017",
+          "item": "1A",
+          "status": "unique exact match",
+          "new_ids": [
+            "chk_5b2f2afee06b5042f9f432d55269c087466f2177333df1244630a961bd4280f3"
+          ]
+        },
+        {
+          "old_id": "chk_87b9bca2642099efc9f738d55f7b37a9224206a5bee9514b3d0dc3ea1aa717a8",
+          "accession": "0001326801-25-000017",
+          "item": "1A",
+          "status": "unique exact match",
+          "new_ids": [
+            "chk_2912c9e18f4cca70357bf2e97c8b488129956c4e2570cef7630bb20083bc8344"
+          ]
+        },
+        {
+          "old_id": "chk_b138d59360fcd026b0c18cc8aa36370800519fc33126fc4166d8e0dd3c0b9e89",
+          "accession": "0001326801-25-000017",
+          "item": "1A",
+          "status": "unique exact match",
+          "new_ids": [
+            "chk_a4fffb357ec2a7c85f04c4cf925ff9d925d75ea7b941515a52bf2545b574c13d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hq_5404d74f74b4456e9c72c7def4c64227",
+      "question": "What factors drove the change in AWS segment operating income in 2024?",
+      "gold": [
+        {
+          "old_id": "chk_05580082e3efad88ff066a2624c7d922941ac0c210a730ca19c0265427916d00",
+          "accession": "0001018724-25-000004",
+          "item": "7",
+          "status": "unique exact match",
+          "new_ids": [
+            "chk_a34ecbf68c18a89852a3fd52867ef7e6de9eb7974b753125f4dada6ad9b824b1"
+          ]
+        },
+        {
+          "old_id": "chk_bc4b98afde024b83b09036b24d4d3fb537897e56fafcd269d00a92d164d63ce1",
+          "accession": "0001018724-25-000004",
+          "item": "7",
+          "status": "unique exact match",
+          "new_ids": [
+            "chk_3ad43ee91a72e374fa5ecd7f80ddf4139048adce12534cb53e14eed689878596"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hq_69c1bbc69ab243d29a5b85972d80828e",
+      "question": "Why did Tesla make less profit on its cars in 2024?",
+      "gold": [
+        {
+          "old_id": "chk_3780654474ba25103c3a48988d4413ca798bdcfcbe677d43b621d00cf7c78342",
+          "accession": "0001628280-25-003063",
+          "item": "7",
+          "status": "unique exact match",
+          "new_ids": [
+            "chk_6b373c4d5a9076d69b02f7390c55d4fc9009498c1e1402697980baaef0d4008e"
+          ]
+        },
+        {
+          "old_id": "chk_e1c5011471b69b1fbbbac50d061704a2061fe97848c6519251d309756cd651fe",
+          "accession": "0001628280-25-003063",
+          "item": "7",
+          "status": "unique exact match",
+          "new_ids": [
+            "chk_7bd5071fedebcecb4963053053dc0160c18af262b7f7cb6c77f7ad4c9affb275"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hq_74fd7fdce150403baad26a906223ba57",
+      "question": "What happens to Chevron if oil prices stay low for a long time?",
+      "gold": [
+        {
+          "old_id": "chk_dc80ed603ce7a1ea5b49ec8ae20d650217e889ea20bd6727880f3100f834de27",
+          "accession": "0000093410-25-000009",
+          "item": "1A",
+          "status": "unique exact match",
+          "new_ids": [
+            "chk_7d7b98d13ef26f263df30dcb6abec8c5f0b55983b5f42110685e369210527f13"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hq_804ee5491dee4faaa512e49ecdfc1dd0",
+      "question": "Why did NVIDIA write off billions in chip inventory in early fiscal 2026?",
+      "gold": [
+        {
+          "old_id": "chk_2f69cd24d8a7bea45d5bc30a34e99d4aa9450d59d61935af6efdb7f23bc0409f",
+          "accession": "0001045810-25-000116",
+          "item": "P1-2",
+          "status": "unique exact match",
+          "new_ids": [
+            "chk_c13905a4cc832fbf43b156896e55dddd779ad287cc3beaac75299853328f2012"
+          ]
+        },
+        {
+          "old_id": "chk_461af383f2e24b1933ac2969af21e60c647412adb1416db145c79893ad9ae4bd",
+          "accession": "0001045810-25-000116",
+          "item": "P1-2",
+          "status": "unique exact match",
+          "new_ids": [
+            "chk_e986c508a545cca6a0a249e22244c794ca0c5bd65cbcbbc59a5ed3e4000a8904"
+          ]
+        },
+        {
+          "old_id": "chk_9f38f2521621b9ba6f35ef9fd38452b266737044f705f5c3b39fc587288ce249",
+          "accession": "0001045810-25-000116",
+          "item": "P1-2",
+          "status": "unique exact match",
+          "new_ids": [
+            "chk_cf6f92d8e1a0bbdfe883537d1d1ae48d3f7da07d9b8cc6f9f2a3b1bb73dec4d2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hq_84c831be7d16420aae81eb2d9f98c8af",
+      "question": "How did the membership fee increase affect Costco's membership fee income in fiscal 2025?",
+      "gold": [
+        {
+          "old_id": "chk_ed87945ab4a025d36a72a98dbebcc9274bc4a7558a9311337815edfaac4c8d56",
+          "accession": "0000909832-25-000101",
+          "item": "7",
+          "status": "unique exact match",
+          "new_ids": [
+            "chk_127ccca98ec08b3cfc26a47b646003e4a62e604e4a34e41b80ebcc1359e4c57b"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hq_8c86cd7564ba43deb72940f9fe800767",
+      "question": "How did Disney explain the improvement in Direct-to-Consumer operating income in fiscal 2024?",
+      "gold": [
+        {
+          "old_id": "chk_05ff0c7b4928d6d1dbf24dfcceefe95f84d4ec1c0d42b87655813a63e6fd8591",
+          "accession": "0001744489-24-000276",
+          "item": "7",
+          "status": "unique exact match",
+          "new_ids": [
+            "chk_68e042a888c2a543e262d2e740d40b4717b56d583e1f92493371abb0788dc0ad"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hq_9244d7ed50884988a8b0fcc969655431",
+      "question": "How did Alphabet explain the increase in capital expenditures for technical infrastructure in 2024?",
+      "gold": [
+        {
+          "old_id": "chk_7b3ed56c082270dbfea46962e7fbd27ff1c03b7ae34d13d2a710111f0e196ecf",
+          "accession": "0001652044-25-000014",
+          "item": "7",
+          "status": "unique exact match",
+          "new_ids": [
+            "chk_c770f796c49a750187de21c6200b16d5f4a648d9d06486e0cf4a38defb92a3fc"
+          ]
+        },
+        {
+          "old_id": "chk_c6fef46e0602804822792afa134c0436f3ff1c22144ae3616a20b238e2a256fc",
+          "accession": "0001652044-25-000014",
+          "item": "7",
+          "status": "unique exact match",
+          "new_ids": [
+            "chk_493b7886f61155095b6f84313b6c2b851c366a1dcca5d88924dffe7b2ccbc58d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hq_9e6c0c0dbb5941589c85ed5a923d944e",
+      "question": "In fiscal 2025, how did NVIDIA describe the risk of U.S. export controls on sales to China?",
+      "gold": [
+        {
+          "old_id": "chk_18eba3a38d39530b629a0c57b33dd4969f659cba453388db66a7923d1c9f09a8",
+          "accession": "0001045810-25-000023",
+          "item": "1A",
+          "status": "unique exact match",
+          "new_ids": [
+            "chk_a8abfb23fd3a97dbf94ec40bcee72120226501f6d6585070e98350e1393b315e"
+          ]
+        },
+        {
+          "old_id": "chk_4786ba773a2ede7ffbff493f5c53e07aef92dc06c411d0c40f898fa4c9700e8c",
+          "accession": "0001045810-25-000023",
+          "item": "1A",
+          "status": "unique exact match",
+          "new_ids": [
+            "chk_1ec28c3d453e74bd23ce70331081319ca35e0f3316d0911f816f49b87c1ea340"
+          ]
+        },
+        {
+          "old_id": "chk_5859127ffbb190b30b171f3e9474755dd701a1151b158336141b1a533d1b0fee",
+          "accession": "0001045810-25-000023",
+          "item": "1A",
+          "status": "unique exact match",
+          "new_ids": [
+            "chk_9248f4410e4be27328a37aebbbd56effc72f9003f62ecb8b05eb7b85036233f2"
+          ]
+        },
+        {
+          "old_id": "chk_5e5d13f68679b38681add415ee5493219b030598121446c7e94141056aa5e31c",
+          "accession": "0001045810-25-000023",
+          "item": "1A",
+          "status": "unique exact match",
+          "new_ids": [
+            "chk_7ab05620e2fd4a2fff5db02c50c6427381877be744b52a6b9e2fb0e339ba7a0a"
+          ]
+        },
+        {
+          "old_id": "chk_a78329152109d66abd925b3224aa241189c07700d8579c4ef87236cceeb7ddf8",
+          "accession": "0001045810-25-000023",
+          "item": "1A",
+          "status": "unique exact match",
+          "new_ids": [
+            "chk_99ab0b427495b87b840404fbeb8e0386f3968a3a68e7b16b55482b30f82be95d"
+          ]
+        },
+        {
+          "old_id": "chk_c721eead2c55d84c74ae4e3b239bb9c0c86a79b18af0e87adb35ae8c99001840",
+          "accession": "0001045810-25-000023",
+          "item": "1A",
+          "status": "unique exact match",
+          "new_ids": [
+            "chk_13cf546845bf1334fd6bf04663ff4abc26a1a52e2ee20030d6ff97014bbd22e9"
+          ]
+        },
+        {
+          "old_id": "chk_d19430599838d968bc9fad6310f844a7e594d763f6f30410a5ebb57c3b6994a1",
+          "accession": "0001045810-25-000023",
+          "item": "1A",
+          "status": "unique exact match",
+          "new_ids": [
+            "chk_8863fe6f37e43efd3cc2102a12f9ac815c2348c8af02b775457e31c184d664e5"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hq_9f2123ab94e5409ba2375e444df03060",
+      "question": "How did buying Pioneer change Exxon's oil and gas production in 2024?",
+      "gold": [
+        {
+          "old_id": "chk_263ce8915acc0a4cb3b6b62271247b23c67f270a73c12744fb928fb948f43e13",
+          "accession": "0000034088-24-000050",
+          "item": "P1-2",
+          "status": "unique exact match",
+          "new_ids": [
+            "chk_c3f731b5916d3234d7f752718d429979624ecfa7e135e9263360bd33c7bb937e"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hq_af3da89ebdb6499f84b1103586988fcc",
+      "question": "How does Coca-Cola price the concentrate it sells to its bottlers?",
+      "gold": [
+        {
+          "old_id": "chk_2fb3dd5847f61364c777ec70c485ee9dd8fcb040b8c94bbba5287b68d35d5130",
+          "accession": "0000021344-25-000011",
+          "item": "1",
+          "status": "unique exact match",
+          "new_ids": [
+            "chk_c796caa21ba874fd126edd054efc1c63bccc3c93a80fb41d143389e4fe1cba06"
+          ]
+        },
+        {
+          "old_id": "chk_6e7da23fdc12f23378e86521275e5c87e4cdf182b0e38b94ca1f8d761df16376",
+          "accession": "0000021344-25-000011",
+          "item": "1",
+          "status": "unique exact match",
+          "new_ids": [
+            "chk_d4e5f1704f48fff743a91741e830c736f0af0f463f236e9c0d709f1b93e446fb"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hq_af3e0e0473af430b83dd4dc7e4bb1eef",
+      "question": "Why does JPMorgan Chase say it cannot guarantee absolute security against cyberattacks?",
+      "gold": [
+        {
+          "old_id": "chk_b918e8e86ee7ac31f176596e867dee6a99ebd2f4895fe564990ebe4e41cff167",
+          "accession": "0000019617-25-000270",
+          "item": "1A",
+          "status": "unique exact match",
+          "new_ids": [
+            "chk_cf83d5d10be6ec300b04ca6c122dfdb5cd6b4f9312eda399eb993d3cd0b1eb74"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hq_bbeba329b2724abcbbff1ea7869b3907",
+      "question": "What savings does Pfizer expect from its Cost Realignment Program?",
+      "gold": [
+        {
+          "old_id": "chk_ac1cab00dd5a2f5fe4d018026d0c740cfaafb68bbe5dddf8508e989f28bfeeec",
+          "accession": "0000078003-25-000054",
+          "item": "7",
+          "status": "unique exact match",
+          "new_ids": [
+            "chk_ae079441b122aa9c2fe4549aeb78f00e48b7255d4e88fe304b89d5e24aa2347a"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hq_beb86dbbb9224fdcade1fe13bd690a88",
+      "question": "How much did eCommerce contribute to Walmart U.S. comparable sales in fiscal 2025?",
+      "gold": [
+        {
+          "old_id": "chk_c4b8e725aa1d8e5ad2b67de3c9f62d3f3c95bc8df9463949a742f1dd3a3af928",
+          "accession": "0000104169-25-000021",
+          "item": "7",
+          "status": "unique exact match",
+          "new_ids": [
+            "chk_bb23dc3aa4e5ac1619a7200a3a4b25128dbabef43aa490386a9fb8ebc1f9834a"
+          ]
+        },
+        {
+          "old_id": "chk_c8fb917b1f3e0d5729be4599e8ae2a92f92a68d881bebba13532ef55be414898",
+          "accession": "0000104169-25-000021",
+          "item": "7",
+          "status": "unique exact match",
+          "new_ids": [
+            "chk_8b90f97a7ea190284f8abad9a2a21557acbec356a3468ce16c2201cc95721053"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hq_c65d4576350841669beea4c8dbea0a2b",
+      "question": "How does Coke protect itself against currency and commodity price swings?",
+      "gold": [
+        {
+          "old_id": "chk_60bca60f4f8e7f79fef2f3081261228db6744b79350f37c915fd1bf99f667a19",
+          "accession": "0000021344-25-000011",
+          "item": "7A",
+          "status": "unique exact match",
+          "new_ids": [
+            "chk_f7419c6a5ce2b7864228d2750a9794481a748e4ab327d989375da2bf79c25708"
+          ]
+        },
+        {
+          "old_id": "chk_9a9a5feae574463ad9a32a4512f6070e5c699f9215bafca710f095276a7853c7",
+          "accession": "0000021344-25-000011",
+          "item": "7A",
+          "status": "unique exact match",
+          "new_ids": [
+            "chk_55378a5aa11dfd22f8e959a0591561eff7928b0893aab49421ba9a01426b3fbf"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hq_cdeefd822cd94dd98c915d26380f37ed",
+      "question": "How did the 2024 hack of UnitedHealth's payment-processing unit affect the company?",
+      "gold": [
+        {
+          "old_id": "chk_107a4587bb0392263e4b2ed314f470f6000009dd2310f00c56639b921167d843",
+          "accession": "0000731766-25-000063",
+          "item": "7",
+          "status": "unique exact match",
+          "new_ids": [
+            "chk_588aa6e8bdf22b8611d5b30ef264459875e16eed4fcdcef5ad8b8309d275bc1b"
+          ]
+        },
+        {
+          "old_id": "chk_8f45230248a924379567099be9fc991d896c95ee610d310826a32aa996592ef3",
+          "accession": "0000731766-25-000063",
+          "item": "7",
+          "status": "unique exact match",
+          "new_ids": [
+            "chk_c509cda1a152b93275a3a43c5a2cd1ce6b342ff6dbe6a0331d946c90f7b6d6c1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hq_ce9809903d0b430eb90e3615603210f7",
+      "question": "How does Microsoft describe its Copilot and AI offerings in its business overview?",
+      "gold": [
+        {
+          "old_id": "chk_149d54b8501e04ac11094c3e37908e7e31319cfd802f6159664fb5ab13f94679",
+          "accession": "0000950170-24-087843",
+          "item": "1",
+          "status": "unique exact match",
+          "new_ids": [
+            "chk_cfb9a0ec9c1fc344ff75f8e21cbd9dd9b7c11e161917431e474300ebc1eab7de"
+          ]
+        },
+        {
+          "old_id": "chk_49dec3fc8acd7385852c861595aa8174a2cbca2bb852de1d6ad48d1d50b79026",
+          "accession": "0000950170-24-087843",
+          "item": "1",
+          "status": "unique exact match",
+          "new_ids": [
+            "chk_b4b5b2ee62cee3ba4075906aace9f817e4b7f95c2457ac49a2dfcad14221e3f5"
+          ]
+        },
+        {
+          "old_id": "chk_6d06d983e82a9051bc90afe2b6c5223be0295d5a0c633f9f4501a08b9926f096",
+          "accession": "0000950170-24-087843",
+          "item": "1",
+          "status": "unique exact match",
+          "new_ids": [
+            "chk_7737157868e4d2f60e5c07f1baba3658bb1c05142ba2a07d75738c36d8faf308"
+          ]
+        },
+        {
+          "old_id": "chk_7af078d6079c11bf7abd0a9bac5f61c9c458aa0680a10f5328ab6d111a8a515f",
+          "accession": "0000950170-24-087843",
+          "item": "1",
+          "status": "unique exact match",
+          "new_ids": [
+            "chk_b0f2a611b9dde048f2b2abd75a620ca0220258833823956a074ea5c78bf2417a"
+          ]
+        },
+        {
+          "old_id": "chk_b85ee8f6eee7c25a41e91377523da9908f8a9c1c5df98735804a71cda4e02717",
+          "accession": "0000950170-24-087843",
+          "item": "1",
+          "status": "unique exact match",
+          "new_ids": [
+            "chk_cb5f4e78ce0ccaf2aebd50a5f7d293e8c04a84b489983584e7cb7feba204fb3f"
+          ]
+        },
+        {
+          "old_id": "chk_d0995bcfc6207f80b93ef0090a70df7523236610bc66f999c34dbdf5c08e6a56",
+          "accession": "0000950170-24-087843",
+          "item": "1",
+          "status": "unique exact match",
+          "new_ids": [
+            "chk_4d0c9afd6340f04487aaa70d80e1d5f49c90eba6bca2226d2476f3adb9d491e3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hq_d2c0efbeda48446e88c1160406bc4452",
+      "question": "How were new tariffs hitting Apple's costs in mid-2025?",
+      "gold": [
+        {
+          "old_id": "chk_df59bf364019e2c306cef9f9cfe61edb2e534e66a4f1c986008399213ebb5041",
+          "accession": "0000320193-25-000073",
+          "item": "P1-2",
+          "status": "unique exact match",
+          "new_ids": [
+            "chk_33c2b63c80d1f29032ebbceaf0e67f5e001dbcebd6decaf389802039d0d365c5"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hq_e3dfcc6ccd02482fb791dc34596565e7",
+      "question": "How would Bank of America's net interest income change if interest rates suddenly fell 100 basis points?",
+      "gold": [
+        {
+          "old_id": "chk_7008d7206fc6daadb727b58ee668c6c2b14aeb8cc898d39a82e66598f743300f",
+          "accession": "0000070858-25-000139",
+          "item": "7",
+          "status": "unique exact match",
+          "new_ids": [
+            "chk_a2e6a8e7b5cc2ed96d32bd962621a9e1c538fdc5d99d3180cd4da36311209bae"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hq_e9bf3b51fc6948de9eaa071fdbdb0e46",
+      "question": "As of its fiscal 2024 10-K, what was the status of Chevron's Hess acquisition and the Stabroek arbitration?",
+      "gold": [
+        {
+          "old_id": "chk_2e42a141227b8454615289e6151bda550c82b80567b9409f9d3a4ce109038a6b",
+          "accession": "0000093410-25-000009",
+          "item": "1A",
+          "status": "unique exact match",
+          "new_ids": [
+            "chk_ca4f7131571fb6cc0e22097c6667054384e46bcb74a7ad38fa888d189c1dd93c"
+          ]
+        },
+        {
+          "old_id": "chk_ca165e98459a98074fcde33a1be6e4db5d9de086cb750596b4ccb301d0ea2fbd",
+          "accession": "0000093410-25-000009",
+          "item": "1A",
+          "status": "unique exact match",
+          "new_ids": [
+            "chk_858f588f39d4812454987d19efdfa89cd7c423b111d2e4ea500f043567ddf2ed"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hq_eead0b7f7e3f430589800660cafe8cb1",
+      "question": "Why were UnitedHealth's medical costs higher than expected in 2025?",
+      "gold": [
+        {
+          "old_id": "chk_330b61250e917bdd4843692d72e26f2c9159db1111a52834f4701aeaeea86967",
+          "accession": "0000731766-25-000236",
+          "item": "P1-2",
+          "status": "unique exact match",
+          "new_ids": [
+            "chk_affbfcfb1cb09fcb66eaabaa69589bc300f1791d17a3663fbee0c18a62aa23df"
+          ]
+        },
+        {
+          "old_id": "chk_55fd95ca4f61ce8f21db5f09bbbc8c9ef215161dfe19d13892757a5b059c3ad9",
+          "accession": "0000731766-25-000236",
+          "item": "P1-2",
+          "status": "unique exact match",
+          "new_ids": [
+            "chk_0846296d71b22a2817d1d3573fc905067cb38c778aac80f2be97a52ad7ad6bc8"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hq_efbdb0ea523543c699eddddde9b1e638",
+      "question": "How does ExxonMobil's 2024 10-K say greenhouse gas regulations could hurt its business?",
+      "gold": [
+        {
+          "old_id": "chk_1ea144a75680dadeb996edae28f608ef198c4ae2083cb74d96392b12b51d6726",
+          "accession": "0000034088-25-000010",
+          "item": "1A",
+          "status": "unique exact match",
+          "new_ids": [
+            "chk_8931ecaa4e0866f612f2b82f1dad2d6fc76de906ead397887c9c01f7230dc469"
+          ]
+        },
+        {
+          "old_id": "chk_812e34aefe833a28bedff5421948f44e74b61ca900c4e6358a1015c3c3c67472",
+          "accession": "0000034088-25-000010",
+          "item": "1A",
+          "status": "unique exact match",
+          "new_ids": [
+            "chk_9e6e81065a45435193fbe6753689a27db1e93b791ea40d5de1cea1e1e085af4b"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hq_f5d53183cdd04505b02cde17b599d44f",
+      "question": "What risks does Johnson & Johnson describe from Medicare drug price negotiation under the Inflation Reduction Act?",
+      "gold": [
+        {
+          "old_id": "chk_9290646f422795485738e395705ea75e0acfce65e8bf6b78285fe140d63a8533",
+          "accession": "0000200406-25-000038",
+          "item": "1A",
+          "status": "unique exact match",
+          "new_ids": [
+            "chk_f0f7d07364a979046bd455c019bbe2a1683d92079ef7f85ea9b63aed910b093c"
+          ]
+        }
+      ]
+    }
+  ],
+  "unmatched_or_ambiguous": [],
+  "review_questions": [
+    {
+      "id": "hq_74fd7fdce150403baad26a906223ba57",
+      "question": "What happens to Chevron if oil prices stay low for a long time?",
+      "filters": {
+        "ticker": "CVX",
+        "fiscal_year": 2024,
+        "fiscal_period": "FY"
+      },
+      "repaired_sections": [
+        {
+          "accession": "0000093410-25-000009",
+          "item": "7",
+          "fiscal_year": 2024,
+          "v1_chunks": 1,
+          "v2_chunks": 78
+        },
+        {
+          "accession": "0000093410-25-000009",
+          "item": "7A",
+          "fiscal_year": 2024,
+          "v1_chunks": 1,
+          "v2_chunks": 1
+        },
+        {
+          "accession": "0000093410-25-000009",
+          "item": "8",
+          "fiscal_year": 2024,
+          "v1_chunks": 1,
+          "v2_chunks": 219
+        }
+      ]
+    },
+    {
+      "id": "hq_8c86cd7564ba43deb72940f9fe800767",
+      "question": "How did Disney explain the improvement in Direct-to-Consumer operating income in fiscal 2024?",
+      "filters": {
+        "ticker": "DIS",
+        "fiscal_year": 2024,
+        "fiscal_period": "FY"
+      },
+      "repaired_sections": [
+        {
+          "accession": "0001744489-24-000276",
+          "item": "8",
+          "fiscal_year": 2024,
+          "v1_chunks": 1,
+          "v2_chunks": 143
+        }
+      ]
+    },
+    {
+      "id": "hq_9e6c0c0dbb5941589c85ed5a923d944e",
+      "question": "In fiscal 2025, how did NVIDIA describe the risk of U.S. export controls on sales to China?",
+      "filters": {
+        "ticker": "NVDA"
+      },
+      "repaired_sections": [
+        {
+          "accession": "0001045810-24-000029",
+          "item": "8",
+          "fiscal_year": 2024,
+          "v1_chunks": 1,
+          "v2_chunks": 81
+        },
+        {
+          "accession": "0001045810-25-000023",
+          "item": "8",
+          "fiscal_year": 2025,
+          "v1_chunks": 1,
+          "v2_chunks": 80
+        },
+        {
+          "accession": "0001045810-26-000021",
+          "item": "8",
+          "fiscal_year": 2026,
+          "v1_chunks": 1,
+          "v2_chunks": 76
+        }
+      ]
+    },
+    {
+      "id": "hq_af3e0e0473af430b83dd4dc7e4bb1eef",
+      "question": "Why does JPMorgan Chase say it cannot guarantee absolute security against cyberattacks?",
+      "filters": {
+        "ticker": "JPM",
+        "fiscal_year": 2024,
+        "fiscal_period": "FY"
+      },
+      "repaired_sections": [
+        {
+          "accession": "0000019617-25-000270",
+          "item": "7",
+          "fiscal_year": 2024,
+          "v1_chunks": 1,
+          "v2_chunks": 297
+        },
+        {
+          "accession": "0000019617-25-000270",
+          "item": "7A",
+          "fiscal_year": 2024,
+          "v1_chunks": 1,
+          "v2_chunks": 1
+        },
+        {
+          "accession": "0000019617-25-000270",
+          "item": "8",
+          "fiscal_year": 2024,
+          "v1_chunks": 1,
+          "v2_chunks": 507
+        }
+      ]
+    },
+    {
+      "id": "hq_e9bf3b51fc6948de9eaa071fdbdb0e46",
+      "question": "As of its fiscal 2024 10-K, what was the status of Chevron's Hess acquisition and the Stabroek arbitration?",
+      "filters": {
+        "ticker": "CVX"
+      },
+      "repaired_sections": [
+        {
+          "accession": "0000093410-24-000013",
+          "item": "7",
+          "fiscal_year": 2023,
+          "v1_chunks": 1,
+          "v2_chunks": 72
+        },
+        {
+          "accession": "0000093410-24-000013",
+          "item": "7A",
+          "fiscal_year": 2023,
+          "v1_chunks": 1,
+          "v2_chunks": 1
+        },
+        {
+          "accession": "0000093410-24-000013",
+          "item": "8",
+          "fiscal_year": 2023,
+          "v1_chunks": 1,
+          "v2_chunks": 214
+        },
+        {
+          "accession": "0000093410-25-000009",
+          "item": "7",
+          "fiscal_year": 2024,
+          "v1_chunks": 1,
+          "v2_chunks": 78
+        },
+        {
+          "accession": "0000093410-25-000009",
+          "item": "7A",
+          "fiscal_year": 2024,
+          "v1_chunks": 1,
+          "v2_chunks": 1
+        },
+        {
+          "accession": "0000093410-25-000009",
+          "item": "8",
+          "fiscal_year": 2024,
+          "v1_chunks": 1,
+          "v2_chunks": 219
+        },
+        {
+          "accession": "0000093410-26-000078",
+          "item": "7",
+          "fiscal_year": 2025,
+          "v1_chunks": 1,
+          "v2_chunks": 78
+        },
+        {
+          "accession": "0000093410-26-000078",
+          "item": "7A",
+          "fiscal_year": 2025,
+          "v1_chunks": 1,
+          "v2_chunks": 1
+        },
+        {
+          "accession": "0000093410-26-000078",
+          "item": "8",
+          "fiscal_year": 2025,
+          "v1_chunks": 1,
+          "v2_chunks": 224
+        }
+      ]
+    },
+    {
+      "id": "hq_efbdb0ea523543c699eddddde9b1e638",
+      "question": "How does ExxonMobil's 2024 10-K say greenhouse gas regulations could hurt its business?",
+      "filters": {
+        "ticker": "XOM"
+      },
+      "repaired_sections": [
+        {
+          "accession": "0000034088-24-000018",
+          "item": "7",
+          "fiscal_year": 2023,
+          "v1_chunks": 1,
+          "v2_chunks": 82
+        },
+        {
+          "accession": "0000034088-24-000018",
+          "item": "7A",
+          "fiscal_year": 2023,
+          "v1_chunks": 1,
+          "v2_chunks": 1
+        },
+        {
+          "accession": "0000034088-24-000018",
+          "item": "8",
+          "fiscal_year": 2023,
+          "v1_chunks": 1,
+          "v2_chunks": 190
+        },
+        {
+          "accession": "0000034088-25-000010",
+          "item": "7",
+          "fiscal_year": 2024,
+          "v1_chunks": 1,
+          "v2_chunks": 83
+        },
+        {
+          "accession": "0000034088-25-000010",
+          "item": "7A",
+          "fiscal_year": 2024,
+          "v1_chunks": 1,
+          "v2_chunks": 1
+        },
+        {
+          "accession": "0000034088-25-000010",
+          "item": "8",
+          "fiscal_year": 2024,
+          "v1_chunks": 1,
+          "v2_chunks": 202
+        },
+        {
+          "accession": "0000034088-26-000045",
+          "item": "7",
+          "fiscal_year": 2025,
+          "v1_chunks": 1,
+          "v2_chunks": 83
+        },
+        {
+          "accession": "0000034088-26-000045",
+          "item": "7A",
+          "fiscal_year": 2025,
+          "v1_chunks": 1,
+          "v2_chunks": 1
+        },
+        {
+          "accession": "0000034088-26-000045",
+          "item": "8",
+          "fiscal_year": 2025,
+          "v1_chunks": 1,
+          "v2_chunks": 174
+        }
+      ]
+    }
+  ]
+}

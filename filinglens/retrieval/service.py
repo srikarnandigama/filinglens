@@ -16,6 +16,7 @@ from filinglens.ingest.models import QUERY_PREFIX, embedder, model_revision, rer
 
 Mode = Literal["vector", "keyword", "hybrid", "hybrid_rerank"]
 MODES = ("vector", "keyword", "hybrid", "hybrid_rerank")
+RETRIEVAL_VERSION = "retrieval-v2-keyword-or"
 
 
 @dataclass(frozen=True)
@@ -164,14 +165,26 @@ class SearchService:
         where, params = self.filters(**filters)
         async with self.pool.connection() as conn:
             conn.row_factory = dict_row
+            lexemes = await (
+                await conn.execute(
+                    "SELECT tsvector_to_array(to_tsvector('english',%s)) AS lexemes", (query,)
+                )
+            ).fetchone()
+            if not lexemes["lexemes"]:
+                return []
+            # Quote each lexeme in tsquery syntax; the complete query remains a bound parameter.
+            terms = " | ".join(
+                "'" + word.replace("\\", "\\\\").replace("'", "''") + "'"
+                for word in lexemes["lexemes"]
+            )
             rows = await (
                 await conn.execute(
                     f"""SELECT c.*,co.ticker,s.title,f.report_date,f.url,
-                ts_rank_cd(c.tsv,websearch_to_tsquery('english',%s)) AS rank
+                ts_rank_cd(c.tsv,%s::tsquery) AS rank
                 {self.source} WHERE {where}
-                AND c.tsv @@ websearch_to_tsquery('english',%s)
+                AND c.tsv @@ %s::tsquery
                 ORDER BY rank DESC,c.id LIMIT %s""",
-                    [query, *params, query, limit],
+                    [terms, *params, terms, limit],
                 )
             ).fetchall()
         return [hit(row, float(row["rank"])) for row in rows]
@@ -249,7 +262,7 @@ class SearchService:
         )
         key = digest(
             [
-                "retrieval-v1",
+                RETRIEVAL_VERSION,
                 self.corpus_id,
                 query,
                 options,

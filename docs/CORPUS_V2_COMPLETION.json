@@ -1,0 +1,39 @@
+{
+  "corpus_id": "corpus_3f3c2a9affddcc6a29eca9e768c65bcbd3e2f131fb69595b24b9b92005738739",
+  "frozen": true,
+  "vectors": {
+    "total": 32960,
+    "missing": 0,
+    "wrong_model": 0,
+    "wrong_dimensions": 0,
+    "invalid_norms": 0
+  },
+  "hnsw": {
+    "name": "chunks_embedding_hnsw",
+    "method": "hnsw",
+    "valid": true,
+    "ready": true,
+    "size_bytes": 67624960
+  },
+  "exact_copied_vectors": 23395,
+  "shared_v1_v2_section_ids": 0,
+  "immutable_baseline_unchanged": true,
+  "cli_smoke": {
+    "question_id": "hq_74fd7fdce150403baad26a906223ba57",
+    "depth": 30,
+    "union_size": 49,
+    "counts_by_mode": {
+      "vector": 30,
+      "keyword": 30,
+      "hybrid": 30,
+      "hybrid_rerank": 30
+    }
+  },
+  "v2_labels_sha256_before_cli": "319241cec361b8cc703fa60499f3cf9a8dbc1c6ba2a3a7cfa7bbec5c8fc97bc9",
+  "v2_labels_sha256_after_cli": "319241cec361b8cc703fa60499f3cf9a8dbc1c6ba2a3a7cfa7bbec5c8fc97bc9",
+  "cli_draft_removed": true,
+  "tests": {
+    "passed": 89,
+    "skipped": 1
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "records": 30,
+  "unique_ids": 30,
+  "unique_questions": 30,
+  "gold_total": 64,
+  "corpus_id": "corpus_3f3c2a9affddcc6a29eca9e768c65bcbd3e2f131fb69595b24b9b92005738739",
+  "corpus_hash": "d6e2dd9856cdf645873078c0505a690615b680346a95d4d591adcf0b3a18809a",
+  "frozen": true,
+  "chunks": 32960,
+  "filings": 275,
+  "filters_unchanged": true,
+  "label_sha256": "6d120892242bb97e9131a0ee4cc2316793f06b837d6149fc5a06a622baea9233",
+  "corpus_content_hash": "2a877e4ef2ee5cadbcb812f0f592aebd9b3f9ec8f52555a9ffbe5bc74d4670e8",
+  "groups": {
+    "a": 28,
+    "b": 2
+  },
+  "ticker_only": [
+    "hq_19ea90a4eeb84991845ef0f0a3c4d316",
+    "hq_5404d74f74b4456e9c72c7def4c64227",
+    "hq_84c831be7d16420aae81eb2d9f98c8af",
+    "hq_9e6c0c0dbb5941589c85ed5a923d944e",
+    "hq_e9bf3b51fc6948de9eaa071fdbdb0e46",
+    "hq_efbdb0ea523543c699eddddde9b1e638"
+  ],
+  "item_filters": [],
+  "gold_sizes": {
+    "1": 11,
+    "2": 11,
+    "3": 6,
+    "6": 1,
+    "7": 1
+  },
+  "broad": [
+    {
+      "id": "hq_9e6c0c0dbb5941589c85ed5a923d944e",
+      "question": "In fiscal 2025, how did NVIDIA describe the risk of U.S. export controls on sales to China?",
+      "gold": 7
+    },
+    {
+      "id": "hq_ce9809903d0b430eb90e3615603210f7",
+      "question": "How does Microsoft describe its Copilot and AI offerings in its business overview?",
+      "gold": 6
+    }
+  ]
+}

@@ -141,6 +141,9 @@ def main() -> None:
     parser.add_argument(
         "--stage", choices=["facts", "filings", "parse", "embed", "all"], default="facts"
     )
+    parser.add_argument(
+        "--offline", action="store_true", help="Verified cache only; parse stage only"
+    )
     parser.add_argument("--corpus", help="Explicit corpus for --stage embed")
     parser.add_argument(
         "--full-embed",
@@ -157,6 +160,8 @@ def main() -> None:
     )
     parser.add_argument("--cutoff", type=date.fromisoformat)
     args = parser.parse_args()
+    if args.offline and args.stage != "parse":
+        parser.error("--offline requires --stage parse")
     if args.years < 1:
         parser.error("--years must be positive")
     overrides = {}
@@ -176,7 +181,9 @@ def main() -> None:
 
         settings = Settings(**overrides)
         if args.stage in {"filings", "parse"}:
-            return await prepare_corpus(settings, tickers, stage=args.stage, force=args.force)
+            return await prepare_corpus(
+                settings, tickers, stage=args.stage, force=args.force, offline=args.offline
+            )
         if args.stage == "embed":
             if not args.corpus:
                 parser.error("--stage embed requires --corpus")

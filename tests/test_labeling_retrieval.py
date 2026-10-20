@@ -6,7 +6,7 @@ from dataclasses import replace
 import pytest
 
 from evals.label_retrieval import atomic_json, candidates, display, load_records, save_record
-from evals.retrieval_eval import metrics
+from evals.retrieval_eval import first_gold_rank, metrics
 from filinglens.retrieval.service import ChunkHit, rrf
 
 
@@ -85,12 +85,61 @@ def test_ties_are_deterministic():
 
 def test_metrics_multiple_gold_and_missing_hits():
     values = metrics(["miss", "a", "b"], {"a", "b", "absent"})
-    assert values == {"recall@5": 2 / 3, "recall@10": 2 / 3, "MRR@30": 1 / 2}
-    assert metrics([], {"a"}) == {"recall@5": 0, "recall@10": 0, "MRR@30": 0}
+    assert values == {
+        "capped_recall@5": 2 / 3,
+        "capped_recall@10": 2 / 3,
+        "recall@5": 2 / 3,
+        "recall@10": 2 / 3,
+        "hit@5": 1,
+        "hit@10": 1,
+        "MRR@30": 1 / 2,
+    }
+    assert all(v == 0 for v in metrics([], {"a"}).values())
     with pytest.raises(ValueError):
         metrics(["a", "a"], {"a"})
     with pytest.raises(ValueError):
         metrics([], set())
+
+
+def test_metrics_broad_gold_and_rank_cutoffs():
+    gold = {f"g{i}" for i in range(7)}
+    values = metrics([f"g{i}" for i in range(5)] + ["miss", "g5"], gold)
+    assert values["capped_recall@5"] == 1
+    assert values["recall@5"] == 5 / 7
+    assert values["capped_recall@10"] == values["recall@10"] == 6 / 7
+    assert values["hit@5"] == values["hit@10"] == values["MRR@30"] == 1
+    values = metrics([f"miss{i}" for i in range(5)] + ["gold"], {"gold"})
+    assert values["hit@5"] == values["recall@5"] == values["capped_recall@5"] == 0
+    assert values["hit@10"] == values["recall@10"] == values["capped_recall@10"] == 1
+    assert values["MRR@30"] == 1 / 6
+    misses = [f"miss{i}" for i in range(30)]
+    assert metrics(misses[:29] + ["gold"], {"gold"})["MRR@30"] == 1 / 30
+    assert all(v == 0 for v in metrics(misses + ["gold"], {"gold"}).values())
+
+
+def test_first_gold_rank_and_all_thirty_reranker_candidates(monkeypatch):
+    from filinglens.retrieval import service
+
+    assert first_gold_rank(["miss", "a", "b"], {"a", "b"}) == 2
+    assert first_gold_rank(["miss"], {"a"}) is None
+    assert first_gold_rank([str(i) for i in range(31)], {"30"}) is None
+
+    class FakeTokenizer:
+        def encode(self, *args, **kwargs):
+            return [1, 2]
+
+    class FakeReranker:
+        def predict(self, pairs, **kwargs):
+            assert len(pairs) == 30
+            assert pairs[-1] == ("test query", "candidate 29")
+            return list(range(30))
+
+    monkeypatch.setattr(service, "tokenizer", lambda _: FakeTokenizer())
+    monkeypatch.setattr(service, "reranker", lambda: FakeReranker())
+    hits = [replace(passage(str(i)), text=f"candidate {i}") for i in range(30)]
+    ranked = service.rerank("test query", hits)
+    assert len(ranked) == 30
+    assert ranked[0].chunk_id == "29"
 
 
 @pytest.mark.asyncio

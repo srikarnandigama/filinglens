@@ -1,0 +1,29 @@
+{
+  "corpus_id": "corpus_3f3c2a9affddcc6a29eca9e768c65bcbd3e2f131fb69595b24b9b92005738739",
+  "benchmark": true,
+  "failures": 0,
+  "invalid_vectors": 0,
+  "embedding_fingerprint": "c88cc1d72cdc200e5a6c6bca7d22436cce704e8982887a0b7417105ded413627",
+  "total_chunks": 32960,
+  "sample_chunks": 196,
+  "sample_oversized_rows": 4,
+  "total_oversized_rows": 7,
+  "cpu_threads": 4,
+  "batch_size": 16,
+  "sample_forms": [
+    "10-K",
+    "10-Q"
+  ],
+  "sample_companies": 6,
+  "sample_mean_tokens": 355.4591836734694,
+  "corpus_mean_tokens": 346.6121966019418,
+  "model_load_seconds": 6.874410200049169,
+  "warmup_seconds": 0.08602900005644187,
+  "seconds": 15.36640980001539,
+  "chunks_per_second": 12.755093906177336,
+  "projected_total_seconds": 2584.065648002588,
+  "projected_new_seconds": 749.896478250751,
+  "remaining_before_sample": 9565,
+  "remaining_after_sample": 9369,
+  "projected_remaining_seconds": 734.5300684507356
+}

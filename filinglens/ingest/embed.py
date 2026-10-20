@@ -84,11 +84,14 @@ async def run_embeddings(
                     conn.row_factory = dict_row
                     corpus = await (
                         await conn.execute(
-                            "SELECT configuration FROM retrieval_corpora WHERE id=%s", (corpus_id,)
+                            "SELECT configuration,frozen FROM retrieval_corpora WHERE id=%s",
+                            (corpus_id,),
                         )
                     ).fetchone()
                     if corpus is None:
                         raise ValueError("Unknown corpus")
+                    if corpus["frozen"]:
+                        raise ValueError("Frozen corpora cannot be re-embedded")
                     expected = corpus["configuration"].get("filing_count")
                     completed = await (
                         await conn.execute(
@@ -116,10 +119,10 @@ async def run_embeddings(
                     or r["embedding_input_hash"] != input_fingerprint(r)
                 ]
                 if benchmark:
-                    # Evenly sample the full ordered corpus, rather than only the first filing.
-                    n = min(sample_size, len(rows))
-                    selected = [rows[i * len(rows) // n] for i in range(n)]
-                    extras = [r for r in rows if r["oversized_row"]][:4]
+                    # Evenly sample pending new inputs; never re-encode copied vectors.
+                    n = min(sample_size, len(pending))
+                    selected = [pending[i * len(pending) // n] for i in range(n)]
+                    extras = [r for r in pending if r["oversized_row"]][:4]
                     selected = list({r["id"]: r for r in [*selected, *extras]}.values())[:256]
                 else:
                     selected = pending
@@ -154,6 +157,8 @@ async def run_embeddings(
                 result = {
                     "corpus_id": corpus_id,
                     "benchmark": benchmark,
+                    "failures": 0,
+                    "invalid_vectors": 0,
                     "embedding_fingerprint": fp,
                     "total_chunks": len(rows),
                     "sample_chunks": len(selected),
@@ -172,6 +177,9 @@ async def run_embeddings(
                     "seconds": seconds,
                     "chunks_per_second": len(selected) / seconds if seconds else 0,
                     "projected_total_seconds": seconds * len(rows) / len(selected)
+                    if selected
+                    else 0,
+                    "projected_new_seconds": seconds * len(pending) / len(selected)
                     if selected
                     else 0,
                     "remaining_before_sample": len(pending),

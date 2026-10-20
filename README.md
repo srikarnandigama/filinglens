@@ -2,8 +2,34 @@
 
 FilingLens is a source-grounded SEC research assistant whose main deliverable is
 a reproducible comparison against single-prompt model baselines. M1 provides
-the database and audited facts ingestion; retrieval, agents, evaluations, and UI
-are later milestones and are not implemented yet.
+the database and audited facts ingestion; M2 provides frozen filing corpora,
+four retrieval modes and a student-labeled retrieval evaluation. MCP servers,
+the agent runtime and UI remain later milestones.
+
+## M2 retrieval results: corpus v2
+
+The active corpus for M3 onward is
+`corpus_3f3c2a9affddcc6a29eca9e768c65bcbd3e2f131fb69595b24b9b92005738739`
+(32,960 chunks, 275 filings). Settings uses it when RETRIEVAL_CORPUS is unset or
+blank; explicit corpus selection remains available for historical v1 work.
+V1 and its results are preserved. Corpus v2 and Phase C are accepted;
+M3 has not started.
+
+The 30 student-reviewed questions have 64 pooled gold labels. Primary capped
+recall and MRR@30 are:
+
+| Mode | Capped recall@5 | Capped recall@10 | MRR@30 |
+|---|---:|---:|---:|
+| vector | 0.6489 | 0.7333 | 0.6302 |
+| keyword | 0.4800 | 0.5881 | 0.5275 |
+| hybrid | 0.5867 | 0.7159 | 0.5965 |
+| hybrid_rerank | 0.6322 | 0.7492 | 0.5670 |
+
+See [the v2 report](evals/results/retrieval_v2.md) for metric definitions,
+cross-year/period-filtered subsets, comparisons with v1, label-change attribution
+and limitations. These are pooled, non-exhaustive judgments on a small set;
+they do not establish end-to-end answer quality. Reranking improves recall@10
+over hybrid but reduces MRR. Labels are in `evals/handwritten_v2.jsonl`.
 
 ## M1 setup (Windows PowerShell)
 

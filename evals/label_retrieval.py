@@ -99,6 +99,16 @@ async def freeze_ready_corpus(pool, corpus_id: str) -> tuple[set[str], str]:
         ).fetchone()
         if not corpus:
             raise ValueError("Unknown corpus")
+        if corpus[0].get("resolver"):
+            # Recheck actual rows, not a stale success flag from a one-off builder.
+            from evals.corpus_v2 import MANIFEST, audit
+
+            await audit(pool, corpus_id)
+            if not MANIFEST.exists():
+                raise ValueError("Exact gold-ID migration is required before v2 freezing")
+            manifest = json.loads(MANIFEST.read_text(encoding="utf-8"))
+            if manifest["v2"] != corpus_id or manifest["unmatched_or_ambiguous"]:
+                raise ValueError("v2 gold-ID migration has unresolved matches")
         docs = await (
             await conn.execute(
                 "SELECT accession,source_hash,status FROM corpus_documents WHERE corpus_id=%s "
@@ -124,8 +134,21 @@ async def freeze_ready_corpus(pool, corpus_id: str) -> tuple[set[str], str]:
             for r in rows
         ):
             raise ValueError("Full corpus embedding must finish before labeling")
+        invalid = await (
+            await conn.execute(
+                "SELECT count(*) FROM chunks c JOIN corpus_chunks cc ON cc.chunk_id=c.id "
+                "WHERE cc.corpus_id=%s AND (vector_dims(c.embedding)<>384 "
+                "OR abs(vector_norm(c.embedding)-1)>0.00001)",
+                (corpus_id,),
+            )
+        ).fetchone()
+        if invalid[0]:
+            raise ValueError("Corpus contains invalid vectors")
+        corpus_hash = digest([corpus[0], docs, [r[0] for r in rows]])
+        if corpus[0].get("resolver") and manifest["corpus_hash"] != corpus_hash:
+            raise ValueError("Migration manifest fingerprint does not match corpus")
         await conn.execute("UPDATE retrieval_corpora SET frozen=TRUE WHERE id=%s", (corpus_id,))
-        return {r[0] for r in rows}, digest([corpus[0], docs, [r[0] for r in rows]])
+        return {r[0] for r in rows}, corpus_hash
 
 
 async def interactive(args) -> None:

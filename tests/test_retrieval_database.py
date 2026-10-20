@@ -135,3 +135,66 @@ def test_filtered_full_k_and_hnsw_underfill_falls_back_to_exact(test_database):
     with patch("filinglens.retrieval.service.embedding_fingerprint", return_value="embedding-test"):
         with asyncio.Runner(loop_factory=asyncio.SelectorEventLoop) as runner:
             runner.run(exercise())
+
+
+def test_keyword_or_lexemes_partial_matches_stopwords_and_all_filters(test_database):
+    """Synthetic search passages exercise semantics without using evaluation questions."""
+    from filinglens.db import pool_for
+
+    url, _ = test_database
+    migrate(url)
+    with psycopg.connect(url, **connection_options(url)) as conn:
+        conn.execute("INSERT INTO ingestion_snapshots(id,cutoff_date) VALUES ('s','2026-10-19')")
+        conn.execute("INSERT INTO retrieval_corpora VALUES ('corpus','s','{}',false)")
+        conn.execute("INSERT INTO retrieval_corpora VALUES ('outside','s','{}',false)")
+        for cik in ("TARGET", "OTHER"):
+            conn.execute("INSERT INTO companies VALUES (%s,%s,'test','1231')", (cik, cik))
+        rows = [
+            ("match", "TARGET", 2024, "FY", "7", "solar panels", "corpus"),
+            ("other_item", "TARGET", 2024, "FY", "1A", "solar panels", "corpus"),
+            ("other_year", "TARGET", 2025, "FY", "7", "solar panels", "corpus"),
+            ("other_period", "TARGET", 2024, "Q1", "7", "solar panels", "corpus"),
+            ("other_company", "OTHER", 2024, "FY", "7", "solar panels", "corpus"),
+            ("other_corpus", "TARGET", 2024, "FY", "7", "solar panels", "outside"),
+            ("stopword_text", "TARGET", 2024, "FY", "7", "the and in", "corpus"),
+        ]
+        for key, cik, year, period, item, text, corpus in rows:
+            conn.execute(
+                "INSERT INTO filings VALUES (%s,%s,'10-K','2025-01-01',"
+                "'2024-12-31',%s,%s,'https://www.sec.gov/test')",
+                (key, cik, year, period),
+            )
+            conn.execute(
+                "INSERT INTO sections VALUES (%s,%s,%s,'test',%s,'hash','fp',0,'[]')",
+                (key, key, item, text),
+            )
+            conn.execute(
+                "INSERT INTO chunks(id,section_id,accession,cik,form,fiscal_year,fiscal_period,"
+                "item,ordinal,text,token_count,source_hash,fingerprint,context_header,"
+                "source_start,source_end) VALUES (%s,%s,%s,%s,'10-K',%s,%s,%s,0,%s,3,"
+                "'hash','fp','test',0,1)",
+                (key, key, key, cik, year, period, item, text),
+            )
+            conn.execute("INSERT INTO corpus_chunks VALUES (%s,%s)", (corpus, key))
+
+    async def exercise():
+        async with pool_for(url) as pool:
+            service = SearchService(pool, "corpus")
+            filters = dict(ticker="TARGET", fiscal_year=2024, fiscal_period="FY", items=["7"])
+            long_query = (
+                "Why did investment in solar batteries transform global electricity supply?"
+            )
+            hits = await service.keyword(long_query, 30, **filters)
+            assert [h.chunk_id for h in hits] == ["match"]
+            assert all(h.ticker == "TARGET" and h.item == "7" for h in hits)
+            base = await service.keyword("panel", 30, **filters)
+            with_stopwords = await service.keyword("the and in panels to of", 30, **filters)
+            assert [(h.chunk_id, h.score) for h in base] == [
+                (h.chunk_id, h.score) for h in with_stopwords
+            ]
+            for query in ("", "   ", "the and in to of"):
+                assert await service.keyword(query, 30, **filters) == []
+            assert len(await service.keyword("solar", 30, ticker="TARGET")) == 4
+
+    with asyncio.Runner(loop_factory=asyncio.SelectorEventLoop) as runner:
+        runner.run(exercise())

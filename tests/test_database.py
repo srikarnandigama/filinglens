@@ -47,7 +47,7 @@ def test_clean_migration_rerun_and_indexes(test_database):
     migrate(url)
     migrate(url)
     with psycopg.connect(url, **connection_options(url)) as conn:
-        assert conn.execute("SELECT count(*) FROM schema_migrations").fetchone()[0] == 3
+        assert conn.execute("SELECT count(*) FROM schema_migrations").fetchone()[0] == 4
         indexes = {
             row[0]
             for row in conn.execute(

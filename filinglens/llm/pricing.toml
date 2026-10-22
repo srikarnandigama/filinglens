@@ -1,0 +1,4 @@
+# FilingLens model prices in USD per million tokens (D060).
+# Fill in one [models."<exact model ID>"] table per configured model, from the
+# provider's official pricing page. See pricing.example.toml for the format.
+# Intentionally empty until the student adds verified prices.

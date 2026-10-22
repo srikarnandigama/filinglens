@@ -1,0 +1,16 @@
+# FilingLens model prices in USD per million tokens (D060).
+# Copy the entries you need into pricing.toml and fill them from the provider's
+# official pricing page. Values are decimal strings. The runtime refuses to start a
+# live run if any configured model (PLANNER_MODEL, WORKER_MODEL, VERIFIER_MODEL, or
+# OPEN_MODEL for the compatible provider) is missing from pricing.toml.
+# The table key must equal the model ID exactly as set in the environment.
+
+[models."example-large-model-id"]
+provider = "anthropic"
+input_per_mtok = "0.00"
+output_per_mtok = "0.00"
+# Optional; required only if a response reports cache tokens (caching is off in M4).
+cache_read_per_mtok = ""
+cache_write_per_mtok = ""
+source = "https://example.invalid/pricing"
+checked = 2026-10-22

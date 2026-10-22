@@ -11,6 +11,8 @@ dependencies = [
   "selectolax>=1.0.1",
   "sentence-transformers>=6.1.0",
   "mcp==2.3.0",
+  "anthropic==2.1.0",
+  "openai>=3.36,<3.37",
 ]
 
 [dependency-groups]
@@ -24,6 +26,8 @@ markers = ["integration: requires migrated local PostgreSQL"]
 [tool.ruff]
 target-version = "py312"
 line-length = 100
+# Approved design records stay exactly as approved (D066).
+extend-exclude = ["docs"]
 
 [tool.ruff.lint]
 select = ["E", "F", "I", "UP", "B"]

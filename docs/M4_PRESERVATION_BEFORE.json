@@ -1,0 +1,95 @@
+{
+  "tables": {
+    "companies": {
+      "count": 20,
+      "content_md5": "e386e2e695b2cb52598fb494e5e05b6e"
+    },
+    "filings": {
+      "count": 275,
+      "content_md5": "31d59b1eaa964556bcb140bea5fb1f50"
+    },
+    "financial_facts": {
+      "count": 2715,
+      "content_md5": "17d0eeb8623f6c780d95a2d4926eff65"
+    },
+    "metric_availability": {
+      "count": 3565,
+      "content_md5": "2757241aed405b04f3ee09b6a9432cdc"
+    },
+    "ingestion_snapshots": {
+      "count": 1,
+      "content_md5": "20cb4c76ed9facdb04707e15edaae9c0"
+    },
+    "retrieval_corpora": {
+      "count": 4,
+      "content_md5": "e92602f24a779c87b623c628dd470f6c"
+    },
+    "corpus_documents": {
+      "count": 1100,
+      "content_md5": "ab32c23d94b7f0cd67ea02595c2fc92e"
+    },
+    "corpus_chunks": {
+      "count": 103003,
+      "content_md5": "42f75e1922b53aa4c7b6c4e8dd4a7984"
+    },
+    "sections": {
+      "count": 2832,
+      "content_md5": "3d30f17cadaa13e6517279fd681d18cd"
+    },
+    "chunks": {
+      "count": 103003,
+      "content_md5": "65d01f10ad1b5b4024b8dfd1310894eb"
+    }
+  },
+  "migrations": {
+    "001_init.sql": "de8f32c856b1f5aa4fd43c80c5e9c1f6ab4d4b343dc6c527d10823edb8d9603d",
+    "002_retrieval.sql": "b4d132a8ed6f533b1b2eb803f2a5df32bd666a0a6515b74330ffe7912b64c117",
+    "003_embedding_input.sql": "6c7793c33d5e13d0aa7f40938553d80759199b47d96a600d55ec13bb59e9d8f1"
+  },
+  "files": {
+    "data/models/revisions.json": "25e9f7fa9e6f1b2d1d93c3d9c2dca36c4e4f25d16f5a6b0108b79cb859cd8b55",
+    "db/migrations/001_init.sql": "de8f32c856b1f5aa4fd43c80c5e9c1f6ab4d4b343dc6c527d10823edb8d9603d",
+    "db/migrations/002_retrieval.sql": "b4d132a8ed6f533b1b2eb803f2a5df32bd666a0a6515b74330ffe7912b64c117",
+    "db/migrations/003_embedding_input.sql": "6c7793c33d5e13d0aa7f40938553d80759199b47d96a600d55ec13bb59e9d8f1",
+    "evals/corpus_v2_migration.json": "7d0ebc396cc302a6fe37c72b14b017c5fde133ff7cb0f4f566c45f9cbbb4c439",
+    "evals/handwritten.jsonl": "d7b364662b9aa97f5c8616079297ff81322a7179583e2cb663c3614640896f04",
+    "evals/handwritten_v2.jsonl": "6d120892242bb97e9131a0ee4cc2316793f06b837d6149fc5a06a622baea9233",
+    "evals/results/retrieval.json": "2e32fa2f4eba809958a531954b4d123951a70821d8db4027bb2e9f1f159543ab",
+    "evals/results/retrieval.md": "b1fce44bef6ccac327f9763469fad7031e0fc5384d41aea50c3dcfe05e59f485",
+    "evals/results/retrieval_analyses.json": "7fceb06bb9677b864b482080dc6be67a1c3007af48c048132504d22729bc988b",
+    "evals/results/retrieval_pre_fix.json": "8714437e6d1c9a80d05a05df15323ccd25950aafd198257d8eb4176ba0cd2ae9",
+    "evals/results/retrieval_pre_fix.md": "2e78d91d3cf2e45a8318c78f09b67bed73d71a99e257036485668ecd91438dc7",
+    "evals/results/retrieval_v2.json": "c1c9d3bd7d80dc316412c6f229a061890eeeb4cd19e5c5fba5edb1d03657eb57",
+    "evals/results/retrieval_v2.md": "0e657e18a54e6c68c509d5d0ffe626ac9beefdca7f5a2087e36a401165a7f073",
+    "evals/results/retrieval_v2_analyses.json": "ee58cbc189ecb5d41cb241683def12ea34faac4df7bc540d71a43216b03f562e",
+    "evals/results/retrieval_v2_pool_inventory.json": "254d649219eec9ad299e83d584aa953690e90a5e45cd0ce87eb140722993fc8d",
+    "filinglens/ingest/__init__.py": "ef081a783289b1c53dbfdbe020fcef5e143c36f7ad80b282e98b75bfabf7628e",
+    "filinglens/ingest/chunk.py": "fc35b17161c764389902fd95aae503c716eb85f0f8bf1814ac66c5bc3edbf01f",
+    "filinglens/ingest/corpus.py": "e2af0b8684f022dd8bea8408cae2f75aa0059f586988f1a3c4b41bb068138d06",
+    "filinglens/ingest/embed.py": "d9acf1a28fe8ecfaed695bb33b1928d0d84be9a3145cb965609ccdc6de5454fc",
+    "filinglens/ingest/identity.py": "46e8e0ea3a917e447dcec4278392da700ff7d88a1329510b57178fd461484d2f",
+    "filinglens/ingest/models.py": "51440accc3b8441d730918aa7fb7a0782e089c2377bd9d5811701898c3d69b2e",
+    "filinglens/ingest/offline.py": "c4e8ed6fc6a708066d26b5d45a314c385a9cf2e144851a4d858302c211ec54dc",
+    "filinglens/ingest/parse.py": "b10b14493e8aba2d10da7f915bdb5647b13ea6cdf9f326275321c95861417214",
+    "filinglens/ingest/pipeline.py": "b2bd329b8aee98477ab3e221fe0e33fd5553ee1417db9704c06e2621df1d0e2f",
+    "filinglens/ingest/resolve.py": "1f5a8228ff029c886498130aaa611d5c24fea4c1f53493a4d81921170a38767b",
+    "filinglens/retrieval/__init__.py": "c18af4d2d8b56ac319ca2f92ae35abb2fc27ab1524f1dbb6633a2f079854633f",
+    "filinglens/retrieval/service.py": "28dcbb706a4698aeed74c7d1b5c543bbd37becc9e1f5c9b18228ef47250648d8",
+    "mcp_servers/__init__.py": "ada27e0c8843d652b2079d97e369ea3f7879d7af1a2b0bd504d4232ab551acb9",
+    "mcp_servers/decimal_math.py": "16f0bbbe58e3f86fe1c101c1c45a02a4b0c5cce7833add5f696e502d6fd24b47",
+    "mcp_servers/edgar_mcp/__init__.py": "c2aec22e4dcc6ce33ea5c61b8dcf13995c56794f5b1bd6a1918f691af5354259",
+    "mcp_servers/edgar_mcp/applicability.json": "24f9d1f0913f18630ad86d76699fd56e1472c88e7a6d814401d35165f793959d",
+    "mcp_servers/edgar_mcp/repository.py": "8ac5f894bffa911f59e6ceb0079c64760bc8669997a7e8a22c5ce7945a5de0dc",
+    "mcp_servers/edgar_mcp/server.py": "3d3a377021aba5adbe577c99723ceb402ab1f538a65749ae4d9c1ed4985c396c",
+    "mcp_servers/models.py": "89b0ecc5c57f597c09f1089fbf2a69c514154aab45894c109bb80ffc1e43113d",
+    "mcp_servers/quant_mcp/__init__.py": "346a447e680f93ca7256f48bca3b0f026445dbdd332dea0408619f3aea63325a",
+    "mcp_servers/quant_mcp/server.py": "9699c81e9bdd1939bba455a803a0bd0f72c89b786d158327f6741e3de4ab87e2",
+    "mcp_servers/runtime.py": "46215f51d5f27a44ad6e9cc76b6e9d25ac57ab5fdce93597c8e886e02651bf2c",
+    "tests/fixtures/aapl_normalization_inputs.json": "128d1b4861f3440d32cb293ff364e21093c48b6bb17522fe727fe458ae4616da",
+    "tests/fixtures/aapl_revenue_companyfacts.json": "08fe9313781a363ddb5092452b94624e6c748b4277b7d5a4507cb6437e3577d5",
+    "tests/fixtures/cost_revenue_calendar.json": "4fb73181d9193e2c4cf38e165116c2c7edef67a616de49e792cec089e7756f94",
+    "tests/fixtures/msft_revenue_companyfacts.json": "a3e6b07b975a5696f4cc81b01eb779edc23a65e9f0016e02c6710b3e44fbf714",
+    "tests/fixtures/nvda_revenue_companyfacts.json": "d50feda6e864bfd7ca6c4f2201a37291c4faff6d25067bd276e2fd57fcde974a",
+    "tests/fixtures/revenue_expected.json": "aeee5034084cc608930c82634c173a92b3aa65d10d9e80583f0c47c60493b709"
+  }
+}

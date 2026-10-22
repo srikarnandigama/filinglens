@@ -1,0 +1,137 @@
+{
+  "method": "Fresh real stdio subprocess per mode, same three queries/filters/k=8. First call loads required models; later uncached calls retain models. Cache state recorded; no existing cache entries removed. Entire stdout validated as JSON-RPC, including cold model loads. Legacy initialization includes process/import/database time. CPU-only pinned models, four Torch threads.",
+  "measurements": [
+    {
+      "mode": "vector",
+      "startup_to_initialize_s": 1.2097494000336155,
+      "protocol_version": "2025-11-25",
+      "calls": [
+        {
+          "query": "Explain share repurchase authorization.",
+          "ticker": "AAPL",
+          "fiscal_year": 2025,
+          "seconds": 8.490648800041527,
+          "cache_before": false,
+          "results": 8,
+          "ranked_ids": [
+            "chk_48f3a1680fe7782ef6563e82a806e26efd3b2b51293532a12a272a2cd49799eb",
+            "chk_2fb768e858beb6d6348b0347a5d014100e29dba11dfe56d51e5ff6368141315c",
+            "chk_f2045a9e71092a7436a711bb70bd43011603230c04bd53200a933397096ac8cf",
+            "chk_a1b38230d663e34249c27d25e0b4cd21467e051986b90053763c8ac3c761e8b6",
+            "chk_ed7bdfd574a070cd9ee81f0690c737e712f027d42cfa15ff5f728bb87a09937b",
+            "chk_fc55fd871a3df06d5e7a5fa9be520fdc99e623403b83c2a5957baddf4a3fac37",
+            "chk_8e2211b558452ce5878c31b16a8ac9fba3789ea2ff0e800713cdc215b084b47e",
+            "chk_0ca172f64d7898561d7ffdf3700c9a0ec3a5f0b9cea22d5728eff62fa65d24a9"
+          ]
+        },
+        {
+          "query": "How does Chevron describe acquisition accounting?",
+          "ticker": "CVX",
+          "fiscal_year": 2024,
+          "seconds": 0.08394659997429699,
+          "cache_before": false,
+          "results": 8,
+          "ranked_ids": [
+            "chk_e2b79990a70730d60a710f733be21fb9555c1a3bdcbdfcdeeb7d192ec1ded412",
+            "chk_884e4e785292cf33a2bebb1e14e3d66f9db0dd96924449662eae73f5488edea2",
+            "chk_8167b77bb23d18b1e238c32d7cd50ce6993b0b8ee1e8f13f670f4e605f7db4e7",
+            "chk_9c27ba587ff5f2e4843dd478aaf950b6586417c4a330707ab024f6e60fdcb15f",
+            "chk_85d1452fd4e39e64800ec3c2903690dc164aa397984b0d4772175a255abc420a",
+            "chk_a356233c10800cd9c35963d496cc5a34de1f08f5f3a9fe0e0f5db4be687680c0",
+            "chk_0ab0f4f952c0a28fd3340d562425a4d9fc57642773fdd8e274a8ee6daf764bb1",
+            "chk_2f156516008e3d17cb9272b9124b7547a75e12c7ab78a835133f6d4c185176f0"
+          ]
+        },
+        {
+          "query": "What does Microsoft say about cloud competition?",
+          "ticker": "MSFT",
+          "fiscal_year": 2025,
+          "seconds": 0.11244670010637492,
+          "cache_before": false,
+          "results": 8,
+          "ranked_ids": [
+            "chk_ba420a2db918dbd90a7f134d1825e4afdfb8172a65c82528c57a49270bbf83b0",
+            "chk_c6deeeaef1ac9df43ee2fa63ca74ed7248742d697788701ca26a4a186c2717e7",
+            "chk_43ecc59f26cb82fd7dc84ae049edee55725c7a93a44255771220b21d96eb5e71",
+            "chk_ec9778f9b21a2493ec701a506635362de67be890b3be4b7c46803d83edd03bbc",
+            "chk_5b1497f9e6c83e9c2d6bec044e11f00a8c4ddc6d0de03804fa385d13799cb9a0",
+            "chk_8a23696bd5272c4759d88f8df58a642036b6051c5584f1ac2a177cb96d519f86",
+            "chk_2de6a3617aaa688035e6dfd0407e9f795f6f292a98afc7cb998ce3dd030c921f",
+            "chk_2268de8a272c71d25db9a73c205a04e8a87afacd243072202bdd2c7005bd199c"
+          ]
+        }
+      ],
+      "cache_hit_s": 0.04840410000178963,
+      "valid_stdout_messages": 5
+    },
+    {
+      "mode": "hybrid_rerank",
+      "startup_to_initialize_s": 1.2158557999646291,
+      "protocol_version": "2025-11-25",
+      "calls": [
+        {
+          "query": "Explain share repurchase authorization.",
+          "ticker": "AAPL",
+          "fiscal_year": 2025,
+          "seconds": 25.343120499979705,
+          "cache_before": false,
+          "results": 8,
+          "ranked_ids": [
+            "chk_f2045a9e71092a7436a711bb70bd43011603230c04bd53200a933397096ac8cf",
+            "chk_48f3a1680fe7782ef6563e82a806e26efd3b2b51293532a12a272a2cd49799eb",
+            "chk_332862cc1b1d81d79de15bc3118bc3a634386026779a1bda37897286f47fe41d",
+            "chk_f21a4a68f9ed9aedb4061103bb94b59325f0d8b6cdd3b2157b40f944019b007a",
+            "chk_2fb768e858beb6d6348b0347a5d014100e29dba11dfe56d51e5ff6368141315c",
+            "chk_ed7bdfd574a070cd9ee81f0690c737e712f027d42cfa15ff5f728bb87a09937b",
+            "chk_fc55fd871a3df06d5e7a5fa9be520fdc99e623403b83c2a5957baddf4a3fac37",
+            "chk_15985741243054897f6f517b20b61af37815602553a3ad0ef72b2bc14543efb5"
+          ]
+        },
+        {
+          "query": "How does Chevron describe acquisition accounting?",
+          "ticker": "CVX",
+          "fiscal_year": 2024,
+          "seconds": 12.686296100029722,
+          "cache_before": false,
+          "results": 8,
+          "ranked_ids": [
+            "chk_854786554acfe4f41a4c23a322116e82f586de145197aadf28238e4acbd16506",
+            "chk_0ab0f4f952c0a28fd3340d562425a4d9fc57642773fdd8e274a8ee6daf764bb1",
+            "chk_884e4e785292cf33a2bebb1e14e3d66f9db0dd96924449662eae73f5488edea2",
+            "chk_9c27ba587ff5f2e4843dd478aaf950b6586417c4a330707ab024f6e60fdcb15f",
+            "chk_8167b77bb23d18b1e238c32d7cd50ce6993b0b8ee1e8f13f670f4e605f7db4e7",
+            "chk_17cb8a2dd62faf850829fc5aaced48bcd3dd2b96cb2c0f00093867c35e6478aa",
+            "chk_e2b79990a70730d60a710f733be21fb9555c1a3bdcbdfcdeeb7d192ec1ded412",
+            "chk_e68bfa9992e822286bcb9e8e101499f95ced6e9c6fff95094131043ec2eeda65"
+          ]
+        },
+        {
+          "query": "What does Microsoft say about cloud competition?",
+          "ticker": "MSFT",
+          "fiscal_year": 2025,
+          "seconds": 12.760029700002633,
+          "cache_before": false,
+          "results": 8,
+          "ranked_ids": [
+            "chk_b2f005c5a4039ad2715cacde60c543124e6304d128b9e072779a7b35649c1000",
+            "chk_c6deeeaef1ac9df43ee2fa63ca74ed7248742d697788701ca26a4a186c2717e7",
+            "chk_2268de8a272c71d25db9a73c205a04e8a87afacd243072202bdd2c7005bd199c",
+            "chk_ec9778f9b21a2493ec701a506635362de67be890b3be4b7c46803d83edd03bbc",
+            "chk_2de6a3617aaa688035e6dfd0407e9f795f6f292a98afc7cb998ce3dd030c921f",
+            "chk_c0c72c5e0c1d55197f184ee476c4f0c3cd964c64fc3228837d0195153a9081bc",
+            "chk_3afc13911e60eed4b92a183f639a091ab7020167e1bf2c1a9f381b6c4b034047",
+            "chk_43ecc59f26cb82fd7dc84ae049edee55725c7a93a44255771220b21d96eb5e71"
+          ]
+        }
+      ],
+      "cache_hit_s": 0.057315099984407425,
+      "valid_stdout_messages": 5
+    },
+    {
+      "server": "quant-mcp",
+      "startup_to_initialize_s": 1.1003218999831006,
+      "protocol_version": "2025-11-25",
+      "valid_stdout_messages": 2
+    }
+  ]
+}

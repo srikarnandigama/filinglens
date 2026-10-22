@@ -3,8 +3,9 @@
 FilingLens is a source-grounded SEC research assistant whose main deliverable is
 a reproducible comparison against single-prompt model baselines. M1 provides
 the database and audited facts ingestion; M2 provides frozen filing corpora,
-four retrieval modes and a student-labeled retrieval evaluation. MCP servers,
-the agent runtime and UI remain later milestones.
+four retrieval modes and a student-labeled retrieval evaluation. M3's two MCP
+servers are accepted following Inspector/Desktop verification; the agent runtime
+and UI remain later milestones. See [M3 handoff](docs/M3_HANDOFF.md).
 
 ## M2 retrieval results: corpus v2
 
@@ -13,7 +14,7 @@ The active corpus for M3 onward is
 (32,960 chunks, 275 filings). Settings uses it when RETRIEVAL_CORPUS is unset or
 blank; explicit corpus selection remains available for historical v1 work.
 V1 and its results are preserved. Corpus v2 and Phase C are accepted;
-M3 has not started.
+M3 is accepted after the student's Inspector and all five Desktop checks.
 
 The 30 student-reviewed questions have 64 pooled gold labels. Primary capped
 recall and MRR@30 are:

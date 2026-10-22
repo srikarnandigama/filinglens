@@ -335,6 +335,27 @@ Gold means the passage answers the question as a main point. Passing mentions an
 
 Saved filters resolve yearless questions in M2; a future text-only agent must resolve that ambiguity. PG ends June 30 and joins the non-December fiscal-calendar cases; add calendar-year-phrased planner questions in a later milestone. There is no held-out relevance set here, and no prompt or retrieval tuning was performed in Phase C.
 
+M3 acceptance checks exposed three additional limitations; these observations do
+not change the frozen corpus, labels, rankings or evaluation results:
+
+- **CVX FY2024 Item 7 boundary:** the resolved span ends slightly late, after
+  "Quarterly Results" (unaudited) and "Management's Responsibility for Financial
+  Statements", which are Item 8 material. Nothing is missing or duplicated, but
+  these passages are assigned to Item 7. Record the boundary issue for a future
+  corpus version; do not reparse frozen v2.
+- **Adjacent context:** the Apple FY2025 repurchase check retrieved a relevant
+  passage beginning mid-sentence without the preceding chunk. The predecessor may
+  contain the remaining-authorization figure, but that location is unverified;
+  the model correctly declined to invent the figure. The current tools have no
+  adjacent-chunk navigation other than reading the whole-section resource.
+  Returning previous/next IDs from get_passage is a candidate for M4/M6 review,
+  not an implemented feature or a change to this evaluation.
+- **Cross-year selection:** Microsoft's unfiltered search returned FY2026/FY2024
+  top hits without the requested FY2025 10-K. The model recovered by filtering to
+  FY2025 and answering only from that filing. M4's planner must resolve explicit
+  periods into filters before search; topical retrieval alone need not return
+  the requested filing within top k.
+
 ## Checks and handoff
 
-See [Phase C checks](../../docs/CORPUS_V2_PHASE_C_CHECKS.md) for exact commands, Ruff/pytest results and preservation hashes. Machine-readable results: [rankings/metrics](retrieval_v2.json), [analyses](retrieval_v2_analyses.json), [pre-evaluation pool inventory](retrieval_v2_pool_inventory.json). The original retrieval.md/JSON, v1 labels, Phase B reports and both frozen corpora remain unchanged. Phase C and corpus v2 are accepted following the student's conditional acceptance and successful read-only tie verification. M3 remains unstarted pending a separate task.
+See [Phase C checks](../../docs/CORPUS_V2_PHASE_C_CHECKS.md) for exact commands, Ruff/pytest results and preservation hashes. Machine-readable results: [rankings/metrics](retrieval_v2.json), [analyses](retrieval_v2_analyses.json), [pre-evaluation pool inventory](retrieval_v2_pool_inventory.json). The original retrieval.md/JSON, v1 labels, Phase B reports and both frozen corpora remain unchanged. Phase C and corpus v2 are accepted following the student's conditional acceptance and successful read-only tie verification. M3 was subsequently accepted after the student's Inspector/Desktop checks; see [M3 status](../../docs/M3_STATUS.md). No M4 work has started.

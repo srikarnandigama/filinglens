@@ -1,0 +1,110 @@
+{
+  "method": "Three fresh Python processes, offline pinned models, four uncached calls each via existing SearchService._search; DB default read-only; no retrieval-cache writes. CPU torch threads=4; cold includes model load, warm retains models. No MCP server exists yet.",
+  "results": [
+    {
+      "query": "Explain share repurchase authorization.",
+      "ticker": "AAPL",
+      "fiscal_year": 2025,
+      "mode": "hybrid_rerank",
+      "k": 8,
+      "corpus_id": "corpus_3f3c2a9affddcc6a29eca9e768c65bcbd3e2f131fb69595b24b9b92005738739",
+      "imports_db_s": 0.5210891000460833,
+      "model_load_s": 40.20285649993457,
+      "first_search_s": 12.874550599954091,
+      "cold_first_answer_s": 53.07740709988866,
+      "warm_search_s": [
+        12.648262300062925,
+        13.928535100072622,
+        13.78309529996477
+      ],
+      "counts": [
+        8,
+        8,
+        8,
+        8
+      ],
+      "stable_top_ids": true,
+      "top_ids": [
+        "chk_f2045a9e71092a7436a711bb70bd43011603230c04bd53200a933397096ac8cf",
+        "chk_48f3a1680fe7782ef6563e82a806e26efd3b2b51293532a12a272a2cd49799eb",
+        "chk_332862cc1b1d81d79de15bc3118bc3a634386026779a1bda37897286f47fe41d",
+        "chk_f21a4a68f9ed9aedb4061103bb94b59325f0d8b6cdd3b2157b40f944019b007a",
+        "chk_2fb768e858beb6d6348b0347a5d014100e29dba11dfe56d51e5ff6368141315c",
+        "chk_ed7bdfd574a070cd9ee81f0690c737e712f027d42cfa15ff5f728bb87a09937b",
+        "chk_fc55fd871a3df06d5e7a5fa9be520fdc99e623403b83c2a5957baddf4a3fac37",
+        "chk_15985741243054897f6f517b20b61af37815602553a3ad0ef72b2bc14543efb5"
+      ],
+      "subprocess_wall_s": 95.10075720003806
+    },
+    {
+      "query": "How does Chevron describe acquisition accounting?",
+      "ticker": "CVX",
+      "fiscal_year": 2024,
+      "mode": "hybrid_rerank",
+      "k": 8,
+      "corpus_id": "corpus_3f3c2a9affddcc6a29eca9e768c65bcbd3e2f131fb69595b24b9b92005738739",
+      "imports_db_s": 0.406561000039801,
+      "model_load_s": 10.634011999936774,
+      "first_search_s": 13.884331500041299,
+      "cold_first_answer_s": 24.518343499978073,
+      "warm_search_s": [
+        14.38708240003325,
+        13.863523700041696,
+        20.26677300001029
+      ],
+      "counts": [
+        8,
+        8,
+        8,
+        8
+      ],
+      "stable_top_ids": true,
+      "top_ids": [
+        "chk_854786554acfe4f41a4c23a322116e82f586de145197aadf28238e4acbd16506",
+        "chk_0ab0f4f952c0a28fd3340d562425a4d9fc57642773fdd8e274a8ee6daf764bb1",
+        "chk_884e4e785292cf33a2bebb1e14e3d66f9db0dd96924449662eae73f5488edea2",
+        "chk_9c27ba587ff5f2e4843dd478aaf950b6586417c4a330707ab024f6e60fdcb15f",
+        "chk_8167b77bb23d18b1e238c32d7cd50ce6993b0b8ee1e8f13f670f4e605f7db4e7",
+        "chk_17cb8a2dd62faf850829fc5aaced48bcd3dd2b96cb2c0f00093867c35e6478aa",
+        "chk_e2b79990a70730d60a710f733be21fb9555c1a3bdcbdfcdeeb7d192ec1ded412",
+        "chk_e68bfa9992e822286bcb9e8e101499f95ced6e9c6fff95094131043ec2eeda65"
+      ],
+      "subprocess_wall_s": 75.2523644999601
+    },
+    {
+      "query": "What does Microsoft say about cloud competition?",
+      "ticker": "MSFT",
+      "fiscal_year": 2025,
+      "mode": "hybrid_rerank",
+      "k": 8,
+      "corpus_id": "corpus_3f3c2a9affddcc6a29eca9e768c65bcbd3e2f131fb69595b24b9b92005738739",
+      "imports_db_s": 0.4764773999340832,
+      "model_load_s": 22.08971410000231,
+      "first_search_s": 24.599095699959435,
+      "cold_first_answer_s": 46.688809799961746,
+      "warm_search_s": [
+        24.501690099947155,
+        24.659008399932645,
+        24.4752086000517
+      ],
+      "counts": [
+        8,
+        8,
+        8,
+        8
+      ],
+      "stable_top_ids": true,
+      "top_ids": [
+        "chk_b2f005c5a4039ad2715cacde60c543124e6304d128b9e072779a7b35649c1000",
+        "chk_c6deeeaef1ac9df43ee2fa63ca74ed7248742d697788701ca26a4a186c2717e7",
+        "chk_2268de8a272c71d25db9a73c205a04e8a87afacd243072202bdd2c7005bd199c",
+        "chk_ec9778f9b21a2493ec701a506635362de67be890b3be4b7c46803d83edd03bbc",
+        "chk_2de6a3617aaa688035e6dfd0407e9f795f6f292a98afc7cb998ce3dd030c921f",
+        "chk_c0c72c5e0c1d55197f184ee476c4f0c3cd964c64fc3228837d0195153a9081bc",
+        "chk_3afc13911e60eed4b92a183f639a091ab7020167e1bf2c1a9f381b6c4b034047",
+        "chk_43ecc59f26cb82fd7dc84ae049edee55725c7a93a44255771220b21d96eb5e71"
+      ],
+      "subprocess_wall_s": 122.69784109992906
+    }
+  ]
+}

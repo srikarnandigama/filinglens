@@ -1,0 +1,32 @@
+{
+  "JPM": {
+    "policy_id": "bank-gross-profit-inapplicable-v1",
+    "accession": "0000019617-25-000270",
+    "explanation": "SPEC sections 5/17 banking applicability policy: gross profit is not applicable to this bank's net-interest/noninterest presentation; not inferred from absent XBRL tags. Stored M1 status is preserved.",
+    "passages": [
+      {
+        "chunk_id": "chk_ba6775b0b0964194bc9504e7190335d92582830d57d3c4765181c5db4a2a54ee",
+        "text_sha256": "2ccb5389d0e3d3e522735f959e1bbc11a6fc8584b2c483bfc8d106d522283130"
+      }
+    ]
+  },
+  "BAC": {
+    "policy_id": "bank-gross-profit-inapplicable-v1",
+    "accession": "0000070858-25-000139",
+    "explanation": "SPEC sections 5/17 banking applicability policy: gross profit is not applicable to this bank's net-interest/noninterest presentation; not inferred from absent XBRL tags. Stored M1 status is preserved.",
+    "passages": [
+      {
+        "chunk_id": "chk_0ad2bf319cba50bc166432a9aa39e04cdfccd6451908e097cf6c4ab63d25d468",
+        "text_sha256": "b63fbacc2aeff0739b4856155e33da910b8fb4c12423b88e2301227f2741a822"
+      },
+      {
+        "chunk_id": "chk_62b522c5bbfb368665cc718528092465121356acd133cb7c268bf45ea16a5070",
+        "text_sha256": "2dade399ffeb88088426c6c368834c489e88a433a67cb5d349a29b5b5d79e2f3"
+      },
+      {
+        "chunk_id": "chk_decc01b62e94958712a42615a7fcac0e037ea3c6b1fb5fda2db593d78161adff",
+        "text_sha256": "08b730bbda2f66e412fc93b161da95ce4e0c58b778130f51e4b7f7eb47556697"
+      }
+    ]
+  }
+}

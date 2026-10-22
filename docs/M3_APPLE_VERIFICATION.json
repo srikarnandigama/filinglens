@@ -1,0 +1,68 @@
+{
+  "snapshot": {
+    "snapshot_id": "2026-10-19-v1",
+    "cutoff_date": "2026-10-19"
+  },
+  "period": {
+    "fiscal_year": 2026,
+    "fiscal_period": "Q3"
+  },
+  "facts": {
+    "revenue": {
+      "fact_id": "18",
+      "metric": "revenue",
+      "fiscal_year": 2026,
+      "fiscal_period": "Q3",
+      "stored_fiscal_period": "Q3",
+      "period_type": "quarter",
+      "period_start": "2026-03-29",
+      "period_end": "2026-06-27",
+      "value": "109417000000",
+      "unit": "USD",
+      "status": "available",
+      "reason": null,
+      "derived": false,
+      "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+      "source_accession": "0000320193-26-000020",
+      "source_filed": "2026-07-31",
+      "source_filing_date": "2026-07-31",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm",
+      "derivation_inputs": [],
+      "stored_availability_status": "available",
+      "applicability_evidence": []
+    },
+    "gross_profit": {
+      "fact_id": "54",
+      "metric": "gross_profit",
+      "fiscal_year": 2026,
+      "fiscal_period": "Q3",
+      "stored_fiscal_period": "Q3",
+      "period_type": "quarter",
+      "period_start": "2026-03-29",
+      "period_end": "2026-06-27",
+      "value": "54770000000",
+      "unit": "USD",
+      "status": "available",
+      "reason": null,
+      "derived": false,
+      "concept": "GrossProfit",
+      "source_accession": "0000320193-26-000020",
+      "source_filed": "2026-07-31",
+      "source_filing_date": "2026-07-31",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm",
+      "derivation_inputs": [],
+      "stored_availability_status": "available",
+      "applicability_evidence": []
+    }
+  },
+  "quant_margin": {
+    "precision": {
+      "context_precision": 80,
+      "decimal_places": 12,
+      "rounding": "ROUND_HALF_EVEN"
+    },
+    "numerator": "54770000000",
+    "denominator": "109417000000",
+    "value_pct": "50.056206987945"
+  }
+}

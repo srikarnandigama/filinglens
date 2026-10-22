@@ -1,0 +1,3475 @@
+{
+  "resolve_company": {
+    "input": {
+      "additionalProperties": false,
+      "properties": {
+        "query": {
+          "maxLength": 200,
+          "minLength": 1,
+          "title": "Query",
+          "type": "string"
+        }
+      },
+      "required": [
+        "query"
+      ],
+      "title": "ResolveCompanyInput",
+      "type": "object"
+    },
+    "output": {
+      "$defs": {
+        "CompanyData": {
+          "additionalProperties": false,
+          "properties": {
+            "cik": {
+              "title": "Cik",
+              "type": "string"
+            },
+            "ticker": {
+              "title": "Ticker",
+              "type": "string"
+            },
+            "name": {
+              "title": "Name",
+              "type": "string"
+            },
+            "fiscal_year_end": {
+              "title": "Fiscal Year End",
+              "type": "string"
+            },
+            "snapshot": {
+              "$ref": "#/$defs/SnapshotInfo"
+            }
+          },
+          "required": [
+            "cik",
+            "ticker",
+            "name",
+            "fiscal_year_end",
+            "snapshot"
+          ],
+          "title": "CompanyData",
+          "type": "object"
+        },
+        "ErrorDetail": {
+          "additionalProperties": false,
+          "properties": {
+            "code": {
+              "enum": [
+                "INVALID_INPUT",
+                "COMPANY_NOT_FOUND",
+                "AMBIGUOUS_COMPANY",
+                "INVALID_FILTER",
+                "INVALID_METRIC",
+                "QUERY_TOO_LONG",
+                "PASSAGE_NOT_FOUND",
+                "FILING_NOT_FOUND",
+                "SECTION_NOT_FOUND",
+                "DATA_INTEGRITY",
+                "CORPUS_UNAVAILABLE",
+                "SNAPSHOT_UNAVAILABLE",
+                "DATABASE_UNAVAILABLE",
+                "MODEL_UNAVAILABLE",
+                "INTERNAL_ERROR",
+                "DIVISION_BY_ZERO",
+                "NON_POSITIVE_INPUT",
+                "INVALID_YEARS",
+                "INSUFFICIENT_DATA",
+                "DUPLICATE_LABEL",
+                "INVALID_EXPRESSION",
+                "EXPRESSION_LIMIT",
+                "NUMERIC_RANGE",
+                "UNKNOWN_TOOL"
+              ],
+              "title": "Code",
+              "type": "string"
+            },
+            "message": {
+              "title": "Message",
+              "type": "string"
+            }
+          },
+          "required": [
+            "code",
+            "message"
+          ],
+          "title": "ErrorDetail",
+          "type": "object"
+        },
+        "SnapshotInfo": {
+          "additionalProperties": false,
+          "properties": {
+            "snapshot_id": {
+              "title": "Snapshot Id",
+              "type": "string"
+            },
+            "cutoff_date": {
+              "format": "date",
+              "title": "Cutoff Date",
+              "type": "string"
+            }
+          },
+          "required": [
+            "snapshot_id",
+            "cutoff_date"
+          ],
+          "title": "SnapshotInfo",
+          "type": "object"
+        }
+      },
+      "additionalProperties": false,
+      "properties": {
+        "data": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/CompanyData"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "error": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/ErrorDetail"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        }
+      },
+      "title": "Response[CompanyData]",
+      "type": "object"
+    }
+  },
+  "list_filings": {
+    "input": {
+      "additionalProperties": false,
+      "properties": {
+        "ticker": {
+          "maxLength": 10,
+          "minLength": 1,
+          "pattern": "^[A-Za-z][A-Za-z0-9.-]*$",
+          "title": "Ticker",
+          "type": "string"
+        },
+        "form": {
+          "anyOf": [
+            {
+              "enum": [
+                "10-K",
+                "10-Q"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Form"
+        },
+        "fiscal_year": {
+          "anyOf": [
+            {
+              "maximum": 2200,
+              "minimum": 1900,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Fiscal Year"
+        }
+      },
+      "required": [
+        "ticker"
+      ],
+      "title": "ListFilingsInput",
+      "type": "object"
+    },
+    "output": {
+      "$defs": {
+        "CorpusInfo": {
+          "additionalProperties": false,
+          "properties": {
+            "snapshot_id": {
+              "title": "Snapshot Id",
+              "type": "string"
+            },
+            "cutoff_date": {
+              "format": "date",
+              "title": "Cutoff Date",
+              "type": "string"
+            },
+            "corpus_id": {
+              "title": "Corpus Id",
+              "type": "string"
+            }
+          },
+          "required": [
+            "snapshot_id",
+            "cutoff_date",
+            "corpus_id"
+          ],
+          "title": "CorpusInfo",
+          "type": "object"
+        },
+        "ErrorDetail": {
+          "additionalProperties": false,
+          "properties": {
+            "code": {
+              "enum": [
+                "INVALID_INPUT",
+                "COMPANY_NOT_FOUND",
+                "AMBIGUOUS_COMPANY",
+                "INVALID_FILTER",
+                "INVALID_METRIC",
+                "QUERY_TOO_LONG",
+                "PASSAGE_NOT_FOUND",
+                "FILING_NOT_FOUND",
+                "SECTION_NOT_FOUND",
+                "DATA_INTEGRITY",
+                "CORPUS_UNAVAILABLE",
+                "SNAPSHOT_UNAVAILABLE",
+                "DATABASE_UNAVAILABLE",
+                "MODEL_UNAVAILABLE",
+                "INTERNAL_ERROR",
+                "DIVISION_BY_ZERO",
+                "NON_POSITIVE_INPUT",
+                "INVALID_YEARS",
+                "INSUFFICIENT_DATA",
+                "DUPLICATE_LABEL",
+                "INVALID_EXPRESSION",
+                "EXPRESSION_LIMIT",
+                "NUMERIC_RANGE",
+                "UNKNOWN_TOOL"
+              ],
+              "title": "Code",
+              "type": "string"
+            },
+            "message": {
+              "title": "Message",
+              "type": "string"
+            }
+          },
+          "required": [
+            "code",
+            "message"
+          ],
+          "title": "ErrorDetail",
+          "type": "object"
+        },
+        "Filing": {
+          "additionalProperties": false,
+          "properties": {
+            "accession": {
+              "title": "Accession",
+              "type": "string"
+            },
+            "form": {
+              "enum": [
+                "10-K",
+                "10-Q"
+              ],
+              "title": "Form",
+              "type": "string"
+            },
+            "fiscal_year": {
+              "title": "Fiscal Year",
+              "type": "integer"
+            },
+            "fiscal_period": {
+              "enum": [
+                "Q1",
+                "Q2",
+                "Q3",
+                "Q4",
+                "FY"
+              ],
+              "title": "Fiscal Period",
+              "type": "string"
+            },
+            "filing_date": {
+              "format": "date",
+              "title": "Filing Date",
+              "type": "string"
+            },
+            "report_date": {
+              "format": "date",
+              "title": "Report Date",
+              "type": "string"
+            },
+            "url": {
+              "title": "Url",
+              "type": "string"
+            }
+          },
+          "required": [
+            "accession",
+            "form",
+            "fiscal_year",
+            "fiscal_period",
+            "filing_date",
+            "report_date",
+            "url"
+          ],
+          "title": "Filing",
+          "type": "object"
+        },
+        "FilingsData": {
+          "additionalProperties": false,
+          "properties": {
+            "ticker": {
+              "title": "Ticker",
+              "type": "string"
+            },
+            "corpus": {
+              "$ref": "#/$defs/CorpusInfo"
+            },
+            "filings": {
+              "items": {
+                "$ref": "#/$defs/Filing"
+              },
+              "title": "Filings",
+              "type": "array"
+            }
+          },
+          "required": [
+            "ticker",
+            "corpus",
+            "filings"
+          ],
+          "title": "FilingsData",
+          "type": "object"
+        }
+      },
+      "additionalProperties": false,
+      "properties": {
+        "data": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/FilingsData"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "error": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/ErrorDetail"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        }
+      },
+      "title": "Response[FilingsData]",
+      "type": "object"
+    }
+  },
+  "get_financial_metric": {
+    "input": {
+      "$defs": {
+        "Period": {
+          "additionalProperties": false,
+          "properties": {
+            "fiscal_year": {
+              "maximum": 2200,
+              "minimum": 1900,
+              "title": "Fiscal Year",
+              "type": "integer"
+            },
+            "fiscal_period": {
+              "enum": [
+                "Q1",
+                "Q2",
+                "Q3",
+                "Q4",
+                "FY"
+              ],
+              "title": "Fiscal Period",
+              "type": "string"
+            }
+          },
+          "required": [
+            "fiscal_year",
+            "fiscal_period"
+          ],
+          "title": "Period",
+          "type": "object"
+        }
+      },
+      "additionalProperties": false,
+      "properties": {
+        "ticker": {
+          "maxLength": 10,
+          "minLength": 1,
+          "pattern": "^[A-Za-z][A-Za-z0-9.-]*$",
+          "title": "Ticker",
+          "type": "string"
+        },
+        "metric": {
+          "enum": [
+            "revenue",
+            "cost_of_revenue",
+            "gross_profit",
+            "operating_income",
+            "net_income",
+            "eps_diluted",
+            "rnd_expense",
+            "operating_cash_flow",
+            "capex",
+            "total_assets",
+            "cash"
+          ],
+          "title": "Metric",
+          "type": "string"
+        },
+        "periods": {
+          "items": {
+            "$ref": "#/$defs/Period"
+          },
+          "maxItems": 40,
+          "minItems": 1,
+          "title": "Periods",
+          "type": "array"
+        }
+      },
+      "required": [
+        "ticker",
+        "metric",
+        "periods"
+      ],
+      "title": "GetFinancialMetricInput",
+      "type": "object"
+    },
+    "output": {
+      "$defs": {
+        "DerivationInput": {
+          "additionalProperties": false,
+          "properties": {
+            "coefficient": {
+              "enum": [
+                -1,
+                1
+              ],
+              "title": "Coefficient",
+              "type": "integer"
+            },
+            "value": {
+              "title": "Value",
+              "type": "string"
+            },
+            "unit": {
+              "title": "Unit",
+              "type": "string"
+            },
+            "concept": {
+              "title": "Concept",
+              "type": "string"
+            },
+            "start_date": {
+              "anyOf": [
+                {
+                  "format": "date",
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Start Date"
+            },
+            "end_date": {
+              "format": "date",
+              "title": "End Date",
+              "type": "string"
+            },
+            "source": {
+              "$ref": "#/$defs/Source"
+            }
+          },
+          "required": [
+            "coefficient",
+            "value",
+            "unit",
+            "concept",
+            "start_date",
+            "end_date",
+            "source"
+          ],
+          "title": "DerivationInput",
+          "type": "object"
+        },
+        "ErrorDetail": {
+          "additionalProperties": false,
+          "properties": {
+            "code": {
+              "enum": [
+                "INVALID_INPUT",
+                "COMPANY_NOT_FOUND",
+                "AMBIGUOUS_COMPANY",
+                "INVALID_FILTER",
+                "INVALID_METRIC",
+                "QUERY_TOO_LONG",
+                "PASSAGE_NOT_FOUND",
+                "FILING_NOT_FOUND",
+                "SECTION_NOT_FOUND",
+                "DATA_INTEGRITY",
+                "CORPUS_UNAVAILABLE",
+                "SNAPSHOT_UNAVAILABLE",
+                "DATABASE_UNAVAILABLE",
+                "MODEL_UNAVAILABLE",
+                "INTERNAL_ERROR",
+                "DIVISION_BY_ZERO",
+                "NON_POSITIVE_INPUT",
+                "INVALID_YEARS",
+                "INSUFFICIENT_DATA",
+                "DUPLICATE_LABEL",
+                "INVALID_EXPRESSION",
+                "EXPRESSION_LIMIT",
+                "NUMERIC_RANGE",
+                "UNKNOWN_TOOL"
+              ],
+              "title": "Code",
+              "type": "string"
+            },
+            "message": {
+              "title": "Message",
+              "type": "string"
+            }
+          },
+          "required": [
+            "code",
+            "message"
+          ],
+          "title": "ErrorDetail",
+          "type": "object"
+        },
+        "Evidence": {
+          "additionalProperties": false,
+          "properties": {
+            "policy_id": {
+              "title": "Policy Id",
+              "type": "string"
+            },
+            "source": {
+              "$ref": "#/$defs/Source"
+            },
+            "chunk_ids": {
+              "items": {
+                "type": "string"
+              },
+              "title": "Chunk Ids",
+              "type": "array"
+            },
+            "explanation": {
+              "title": "Explanation",
+              "type": "string"
+            }
+          },
+          "required": [
+            "policy_id",
+            "source",
+            "chunk_ids",
+            "explanation"
+          ],
+          "title": "Evidence",
+          "type": "object"
+        },
+        "FactsData": {
+          "additionalProperties": false,
+          "properties": {
+            "ticker": {
+              "title": "Ticker",
+              "type": "string"
+            },
+            "metric": {
+              "enum": [
+                "revenue",
+                "cost_of_revenue",
+                "gross_profit",
+                "operating_income",
+                "net_income",
+                "eps_diluted",
+                "rnd_expense",
+                "operating_cash_flow",
+                "capex",
+                "total_assets",
+                "cash"
+              ],
+              "title": "Metric",
+              "type": "string"
+            },
+            "snapshot": {
+              "$ref": "#/$defs/SnapshotInfo"
+            },
+            "facts": {
+              "items": {
+                "$ref": "#/$defs/MetricFact"
+              },
+              "title": "Facts",
+              "type": "array"
+            }
+          },
+          "required": [
+            "ticker",
+            "metric",
+            "snapshot",
+            "facts"
+          ],
+          "title": "FactsData",
+          "type": "object"
+        },
+        "MetricFact": {
+          "additionalProperties": false,
+          "properties": {
+            "fact_id": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "title": "Fact Id"
+            },
+            "metric": {
+              "enum": [
+                "revenue",
+                "cost_of_revenue",
+                "gross_profit",
+                "operating_income",
+                "net_income",
+                "eps_diluted",
+                "rnd_expense",
+                "operating_cash_flow",
+                "capex",
+                "total_assets",
+                "cash"
+              ],
+              "title": "Metric",
+              "type": "string"
+            },
+            "fiscal_year": {
+              "title": "Fiscal Year",
+              "type": "integer"
+            },
+            "fiscal_period": {
+              "enum": [
+                "Q1",
+                "Q2",
+                "Q3",
+                "Q4",
+                "FY"
+              ],
+              "title": "Fiscal Period",
+              "type": "string"
+            },
+            "stored_fiscal_period": {
+              "anyOf": [
+                {
+                  "enum": [
+                    "Q1",
+                    "Q2",
+                    "Q3",
+                    "Q4",
+                    "FY"
+                  ],
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "title": "Stored Fiscal Period"
+            },
+            "period_type": {
+              "anyOf": [
+                {
+                  "enum": [
+                    "quarter",
+                    "annual",
+                    "instant"
+                  ],
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "title": "Period Type"
+            },
+            "period_start": {
+              "anyOf": [
+                {
+                  "format": "date",
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "title": "Period Start"
+            },
+            "period_end": {
+              "anyOf": [
+                {
+                  "format": "date",
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "title": "Period End"
+            },
+            "value": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "title": "Value"
+            },
+            "unit": {
+              "enum": [
+                "USD",
+                "USD/shares"
+              ],
+              "title": "Unit",
+              "type": "string"
+            },
+            "status": {
+              "enum": [
+                "available",
+                "unavailable",
+                "not_applicable"
+              ],
+              "title": "Status",
+              "type": "string"
+            },
+            "reason": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "title": "Reason"
+            },
+            "derived": {
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "title": "Derived"
+            },
+            "concept": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "title": "Concept"
+            },
+            "source_accession": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "title": "Source Accession"
+            },
+            "source_filed": {
+              "anyOf": [
+                {
+                  "format": "date",
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "title": "Source Filed"
+            },
+            "source_filing_date": {
+              "anyOf": [
+                {
+                  "format": "date",
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "title": "Source Filing Date"
+            },
+            "source_url": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "title": "Source Url"
+            },
+            "derivation_inputs": {
+              "items": {
+                "$ref": "#/$defs/DerivationInput"
+              },
+              "title": "Derivation Inputs",
+              "type": "array"
+            },
+            "stored_availability_status": {
+              "anyOf": [
+                {
+                  "enum": [
+                    "available",
+                    "unavailable",
+                    "not_applicable"
+                  ],
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "title": "Stored Availability Status"
+            },
+            "applicability_evidence": {
+              "items": {
+                "$ref": "#/$defs/Evidence"
+              },
+              "title": "Applicability Evidence",
+              "type": "array"
+            }
+          },
+          "required": [
+            "metric",
+            "fiscal_year",
+            "fiscal_period",
+            "unit",
+            "status"
+          ],
+          "title": "MetricFact",
+          "type": "object"
+        },
+        "SnapshotInfo": {
+          "additionalProperties": false,
+          "properties": {
+            "snapshot_id": {
+              "title": "Snapshot Id",
+              "type": "string"
+            },
+            "cutoff_date": {
+              "format": "date",
+              "title": "Cutoff Date",
+              "type": "string"
+            }
+          },
+          "required": [
+            "snapshot_id",
+            "cutoff_date"
+          ],
+          "title": "SnapshotInfo",
+          "type": "object"
+        },
+        "Source": {
+          "additionalProperties": false,
+          "properties": {
+            "accession": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Accession"
+            },
+            "filed_date": {
+              "anyOf": [
+                {
+                  "format": "date",
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Filed Date"
+            },
+            "url": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Url"
+            }
+          },
+          "required": [
+            "accession",
+            "filed_date",
+            "url"
+          ],
+          "title": "Source",
+          "type": "object"
+        }
+      },
+      "additionalProperties": false,
+      "properties": {
+        "data": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/FactsData"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "error": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/ErrorDetail"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        }
+      },
+      "title": "Response[FactsData]",
+      "type": "object"
+    }
+  },
+  "list_available_metrics": {
+    "input": {
+      "additionalProperties": false,
+      "properties": {
+        "ticker": {
+          "maxLength": 10,
+          "minLength": 1,
+          "pattern": "^[A-Za-z][A-Za-z0-9.-]*$",
+          "title": "Ticker",
+          "type": "string"
+        }
+      },
+      "required": [
+        "ticker"
+      ],
+      "title": "ListAvailableMetricsInput",
+      "type": "object"
+    },
+    "output": {
+      "$defs": {
+        "AvailablePeriod": {
+          "additionalProperties": false,
+          "properties": {
+            "fiscal_year": {
+              "title": "Fiscal Year",
+              "type": "integer"
+            },
+            "fiscal_period": {
+              "enum": [
+                "Q1",
+                "Q2",
+                "Q3",
+                "Q4",
+                "FY"
+              ],
+              "title": "Fiscal Period",
+              "type": "string"
+            },
+            "period_start": {
+              "anyOf": [
+                {
+                  "format": "date",
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Period Start"
+            },
+            "period_end": {
+              "format": "date",
+              "title": "Period End",
+              "type": "string"
+            },
+            "period_type": {
+              "enum": [
+                "quarter",
+                "annual",
+                "instant"
+              ],
+              "title": "Period Type",
+              "type": "string"
+            },
+            "stored_fiscal_period": {
+              "enum": [
+                "Q1",
+                "Q2",
+                "Q3",
+                "Q4",
+                "FY"
+              ],
+              "title": "Stored Fiscal Period",
+              "type": "string"
+            }
+          },
+          "required": [
+            "fiscal_year",
+            "fiscal_period",
+            "period_start",
+            "period_end",
+            "period_type",
+            "stored_fiscal_period"
+          ],
+          "title": "AvailablePeriod",
+          "type": "object"
+        },
+        "ErrorDetail": {
+          "additionalProperties": false,
+          "properties": {
+            "code": {
+              "enum": [
+                "INVALID_INPUT",
+                "COMPANY_NOT_FOUND",
+                "AMBIGUOUS_COMPANY",
+                "INVALID_FILTER",
+                "INVALID_METRIC",
+                "QUERY_TOO_LONG",
+                "PASSAGE_NOT_FOUND",
+                "FILING_NOT_FOUND",
+                "SECTION_NOT_FOUND",
+                "DATA_INTEGRITY",
+                "CORPUS_UNAVAILABLE",
+                "SNAPSHOT_UNAVAILABLE",
+                "DATABASE_UNAVAILABLE",
+                "MODEL_UNAVAILABLE",
+                "INTERNAL_ERROR",
+                "DIVISION_BY_ZERO",
+                "NON_POSITIVE_INPUT",
+                "INVALID_YEARS",
+                "INSUFFICIENT_DATA",
+                "DUPLICATE_LABEL",
+                "INVALID_EXPRESSION",
+                "EXPRESSION_LIMIT",
+                "NUMERIC_RANGE",
+                "UNKNOWN_TOOL"
+              ],
+              "title": "Code",
+              "type": "string"
+            },
+            "message": {
+              "title": "Message",
+              "type": "string"
+            }
+          },
+          "required": [
+            "code",
+            "message"
+          ],
+          "title": "ErrorDetail",
+          "type": "object"
+        },
+        "Evidence": {
+          "additionalProperties": false,
+          "properties": {
+            "policy_id": {
+              "title": "Policy Id",
+              "type": "string"
+            },
+            "source": {
+              "$ref": "#/$defs/Source"
+            },
+            "chunk_ids": {
+              "items": {
+                "type": "string"
+              },
+              "title": "Chunk Ids",
+              "type": "array"
+            },
+            "explanation": {
+              "title": "Explanation",
+              "type": "string"
+            }
+          },
+          "required": [
+            "policy_id",
+            "source",
+            "chunk_ids",
+            "explanation"
+          ],
+          "title": "Evidence",
+          "type": "object"
+        },
+        "MetricAvailability": {
+          "additionalProperties": false,
+          "properties": {
+            "metric": {
+              "enum": [
+                "revenue",
+                "cost_of_revenue",
+                "gross_profit",
+                "operating_income",
+                "net_income",
+                "eps_diluted",
+                "rnd_expense",
+                "operating_cash_flow",
+                "capex",
+                "total_assets",
+                "cash"
+              ],
+              "title": "Metric",
+              "type": "string"
+            },
+            "unit": {
+              "enum": [
+                "USD",
+                "USD/shares"
+              ],
+              "title": "Unit",
+              "type": "string"
+            },
+            "status": {
+              "enum": [
+                "available",
+                "unavailable",
+                "not_applicable"
+              ],
+              "title": "Status",
+              "type": "string"
+            },
+            "reason": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Reason"
+            },
+            "available_periods": {
+              "items": {
+                "$ref": "#/$defs/AvailablePeriod"
+              },
+              "title": "Available Periods",
+              "type": "array"
+            },
+            "earliest": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/AvailablePeriod"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "latest": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/AvailablePeriod"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "latest_quarter": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/AvailablePeriod"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "latest_annual": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/AvailablePeriod"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "latest_year_end": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/AvailablePeriod"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "year_end_alias": {
+              "anyOf": [
+                {
+                  "const": "FY_to_Q4",
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Year End Alias"
+            },
+            "period_statuses": {
+              "items": {
+                "$ref": "#/$defs/PeriodStatus"
+              },
+              "title": "Period Statuses",
+              "type": "array"
+            },
+            "applicability_evidence": {
+              "items": {
+                "$ref": "#/$defs/Evidence"
+              },
+              "title": "Applicability Evidence",
+              "type": "array"
+            }
+          },
+          "required": [
+            "metric",
+            "unit",
+            "status",
+            "reason",
+            "available_periods",
+            "earliest",
+            "latest",
+            "latest_quarter",
+            "latest_annual",
+            "latest_year_end",
+            "year_end_alias",
+            "period_statuses",
+            "applicability_evidence"
+          ],
+          "title": "MetricAvailability",
+          "type": "object"
+        },
+        "MetricsData": {
+          "additionalProperties": false,
+          "properties": {
+            "ticker": {
+              "title": "Ticker",
+              "type": "string"
+            },
+            "snapshot": {
+              "$ref": "#/$defs/SnapshotInfo"
+            },
+            "metrics": {
+              "items": {
+                "$ref": "#/$defs/MetricAvailability"
+              },
+              "title": "Metrics",
+              "type": "array"
+            },
+            "latest_common_quarter": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/AvailablePeriod"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "latest_common_quarter_reason": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Latest Common Quarter Reason"
+            }
+          },
+          "required": [
+            "ticker",
+            "snapshot",
+            "metrics",
+            "latest_common_quarter",
+            "latest_common_quarter_reason"
+          ],
+          "title": "MetricsData",
+          "type": "object"
+        },
+        "PeriodStatus": {
+          "additionalProperties": false,
+          "properties": {
+            "fiscal_year": {
+              "title": "Fiscal Year",
+              "type": "integer"
+            },
+            "fiscal_period": {
+              "enum": [
+                "Q1",
+                "Q2",
+                "Q3",
+                "Q4",
+                "FY"
+              ],
+              "title": "Fiscal Period",
+              "type": "string"
+            },
+            "status": {
+              "enum": [
+                "available",
+                "unavailable",
+                "not_applicable"
+              ],
+              "title": "Status",
+              "type": "string"
+            },
+            "stored_status": {
+              "anyOf": [
+                {
+                  "enum": [
+                    "available",
+                    "unavailable",
+                    "not_applicable"
+                  ],
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Stored Status"
+            },
+            "reason": {
+              "title": "Reason",
+              "type": "string"
+            }
+          },
+          "required": [
+            "fiscal_year",
+            "fiscal_period",
+            "status",
+            "stored_status",
+            "reason"
+          ],
+          "title": "PeriodStatus",
+          "type": "object"
+        },
+        "SnapshotInfo": {
+          "additionalProperties": false,
+          "properties": {
+            "snapshot_id": {
+              "title": "Snapshot Id",
+              "type": "string"
+            },
+            "cutoff_date": {
+              "format": "date",
+              "title": "Cutoff Date",
+              "type": "string"
+            }
+          },
+          "required": [
+            "snapshot_id",
+            "cutoff_date"
+          ],
+          "title": "SnapshotInfo",
+          "type": "object"
+        },
+        "Source": {
+          "additionalProperties": false,
+          "properties": {
+            "accession": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Accession"
+            },
+            "filed_date": {
+              "anyOf": [
+                {
+                  "format": "date",
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Filed Date"
+            },
+            "url": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Url"
+            }
+          },
+          "required": [
+            "accession",
+            "filed_date",
+            "url"
+          ],
+          "title": "Source",
+          "type": "object"
+        }
+      },
+      "additionalProperties": false,
+      "properties": {
+        "data": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/MetricsData"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "error": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/ErrorDetail"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        }
+      },
+      "title": "Response[MetricsData]",
+      "type": "object"
+    }
+  },
+  "search_filings": {
+    "input": {
+      "additionalProperties": false,
+      "properties": {
+        "query": {
+          "maxLength": 2000,
+          "minLength": 1,
+          "title": "Query",
+          "type": "string"
+        },
+        "ticker": {
+          "anyOf": [
+            {
+              "maxLength": 10,
+              "minLength": 1,
+              "pattern": "^[A-Za-z][A-Za-z0-9.-]*$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Ticker"
+        },
+        "fiscal_year": {
+          "anyOf": [
+            {
+              "maximum": 2200,
+              "minimum": 1900,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Fiscal Year"
+        },
+        "fiscal_period": {
+          "anyOf": [
+            {
+              "enum": [
+                "Q1",
+                "Q2",
+                "Q3",
+                "Q4",
+                "FY"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Fiscal Period"
+        },
+        "items": {
+          "anyOf": [
+            {
+              "items": {
+                "enum": [
+                  "1",
+                  "1A",
+                  "7",
+                  "7A",
+                  "8",
+                  "P1-2",
+                  "P2-1A"
+                ],
+                "type": "string"
+              },
+              "maxItems": 7,
+              "minItems": 1,
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Items"
+        },
+        "k": {
+          "default": 8,
+          "maximum": 30,
+          "minimum": 1,
+          "title": "K",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "query"
+      ],
+      "title": "SearchFilingsInput",
+      "type": "object"
+    },
+    "output": {
+      "$defs": {
+        "CorpusInfo": {
+          "additionalProperties": false,
+          "properties": {
+            "snapshot_id": {
+              "title": "Snapshot Id",
+              "type": "string"
+            },
+            "cutoff_date": {
+              "format": "date",
+              "title": "Cutoff Date",
+              "type": "string"
+            },
+            "corpus_id": {
+              "title": "Corpus Id",
+              "type": "string"
+            }
+          },
+          "required": [
+            "snapshot_id",
+            "cutoff_date",
+            "corpus_id"
+          ],
+          "title": "CorpusInfo",
+          "type": "object"
+        },
+        "CoverageDiagnostic": {
+          "additionalProperties": false,
+          "properties": {
+            "code": {
+              "enum": [
+                "EXTRACTED",
+                "RESOLVED",
+                "REFERENCE_COVERED_ELSEWHERE",
+                "SOURCE_ABSENT",
+                "NOT_PARSED",
+                "NO_Q4_FILING"
+              ],
+              "title": "Code",
+              "type": "string"
+            },
+            "accession": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "title": "Accession"
+            },
+            "item": {
+              "anyOf": [
+                {
+                  "enum": [
+                    "1",
+                    "1A",
+                    "7",
+                    "7A",
+                    "8",
+                    "P1-2",
+                    "P2-1A"
+                  ],
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "title": "Item"
+            },
+            "reason": {
+              "title": "Reason",
+              "type": "string"
+            },
+            "target_resource": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "title": "Target Resource"
+            },
+            "source_url": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "title": "Source Url"
+            },
+            "source_hash": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "title": "Source Hash"
+            },
+            "method": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "title": "Method"
+            },
+            "evidence_text": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "title": "Evidence Text"
+            }
+          },
+          "required": [
+            "code",
+            "reason"
+          ],
+          "title": "CoverageDiagnostic",
+          "type": "object"
+        },
+        "ErrorDetail": {
+          "additionalProperties": false,
+          "properties": {
+            "code": {
+              "enum": [
+                "INVALID_INPUT",
+                "COMPANY_NOT_FOUND",
+                "AMBIGUOUS_COMPANY",
+                "INVALID_FILTER",
+                "INVALID_METRIC",
+                "QUERY_TOO_LONG",
+                "PASSAGE_NOT_FOUND",
+                "FILING_NOT_FOUND",
+                "SECTION_NOT_FOUND",
+                "DATA_INTEGRITY",
+                "CORPUS_UNAVAILABLE",
+                "SNAPSHOT_UNAVAILABLE",
+                "DATABASE_UNAVAILABLE",
+                "MODEL_UNAVAILABLE",
+                "INTERNAL_ERROR",
+                "DIVISION_BY_ZERO",
+                "NON_POSITIVE_INPUT",
+                "INVALID_YEARS",
+                "INSUFFICIENT_DATA",
+                "DUPLICATE_LABEL",
+                "INVALID_EXPRESSION",
+                "EXPRESSION_LIMIT",
+                "NUMERIC_RANGE",
+                "UNKNOWN_TOOL"
+              ],
+              "title": "Code",
+              "type": "string"
+            },
+            "message": {
+              "title": "Message",
+              "type": "string"
+            }
+          },
+          "required": [
+            "code",
+            "message"
+          ],
+          "title": "ErrorDetail",
+          "type": "object"
+        },
+        "PassageHit": {
+          "additionalProperties": false,
+          "properties": {
+            "chunk_id": {
+              "title": "Chunk Id",
+              "type": "string"
+            },
+            "ticker": {
+              "title": "Ticker",
+              "type": "string"
+            },
+            "form": {
+              "enum": [
+                "10-K",
+                "10-Q"
+              ],
+              "title": "Form",
+              "type": "string"
+            },
+            "fiscal_year": {
+              "title": "Fiscal Year",
+              "type": "integer"
+            },
+            "fiscal_period": {
+              "enum": [
+                "Q1",
+                "Q2",
+                "Q3",
+                "Q4",
+                "FY"
+              ],
+              "title": "Fiscal Period",
+              "type": "string"
+            },
+            "item": {
+              "enum": [
+                "1",
+                "1A",
+                "7",
+                "7A",
+                "8",
+                "P1-2",
+                "P2-1A"
+              ],
+              "title": "Item",
+              "type": "string"
+            },
+            "text": {
+              "title": "Text",
+              "type": "string"
+            },
+            "score": {
+              "anyOf": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Score"
+            },
+            "accession": {
+              "title": "Accession",
+              "type": "string"
+            },
+            "title": {
+              "title": "Title",
+              "type": "string"
+            },
+            "report_date": {
+              "format": "date",
+              "title": "Report Date",
+              "type": "string"
+            },
+            "url": {
+              "title": "Url",
+              "type": "string"
+            },
+            "oversized_row": {
+              "title": "Oversized Row",
+              "type": "boolean"
+            },
+            "text_truncated": {
+              "title": "Text Truncated",
+              "type": "boolean"
+            },
+            "full_text_characters": {
+              "title": "Full Text Characters",
+              "type": "integer"
+            },
+            "content_trust": {
+              "const": "untrusted_sec_text",
+              "default": "untrusted_sec_text",
+              "title": "Content Trust",
+              "type": "string"
+            },
+            "coverage_diagnostics": {
+              "items": {
+                "$ref": "#/$defs/CoverageDiagnostic"
+              },
+              "title": "Coverage Diagnostics",
+              "type": "array"
+            }
+          },
+          "required": [
+            "chunk_id",
+            "ticker",
+            "form",
+            "fiscal_year",
+            "fiscal_period",
+            "item",
+            "text",
+            "score",
+            "accession",
+            "title",
+            "report_date",
+            "url",
+            "oversized_row",
+            "text_truncated",
+            "full_text_characters",
+            "coverage_diagnostics"
+          ],
+          "title": "PassageHit",
+          "type": "object"
+        },
+        "SearchData": {
+          "additionalProperties": false,
+          "properties": {
+            "corpus": {
+              "$ref": "#/$defs/CorpusInfo"
+            },
+            "retrieval_mode": {
+              "enum": [
+                "vector",
+                "keyword",
+                "hybrid",
+                "hybrid_rerank"
+              ],
+              "title": "Retrieval Mode",
+              "type": "string"
+            },
+            "hits": {
+              "items": {
+                "$ref": "#/$defs/PassageHit"
+              },
+              "title": "Hits",
+              "type": "array"
+            },
+            "coverage_diagnostics": {
+              "items": {
+                "$ref": "#/$defs/CoverageDiagnostic"
+              },
+              "title": "Coverage Diagnostics",
+              "type": "array"
+            }
+          },
+          "required": [
+            "corpus",
+            "retrieval_mode",
+            "hits",
+            "coverage_diagnostics"
+          ],
+          "title": "SearchData",
+          "type": "object"
+        }
+      },
+      "additionalProperties": false,
+      "properties": {
+        "data": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/SearchData"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "error": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/ErrorDetail"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        }
+      },
+      "title": "Response[SearchData]",
+      "type": "object"
+    }
+  },
+  "get_passage": {
+    "input": {
+      "additionalProperties": false,
+      "properties": {
+        "chunk_id": {
+          "pattern": "^chk_[0-9a-f]{64}$",
+          "title": "Chunk Id",
+          "type": "string"
+        }
+      },
+      "required": [
+        "chunk_id"
+      ],
+      "title": "GetPassageInput",
+      "type": "object"
+    },
+    "output": {
+      "$defs": {
+        "CorpusInfo": {
+          "additionalProperties": false,
+          "properties": {
+            "snapshot_id": {
+              "title": "Snapshot Id",
+              "type": "string"
+            },
+            "cutoff_date": {
+              "format": "date",
+              "title": "Cutoff Date",
+              "type": "string"
+            },
+            "corpus_id": {
+              "title": "Corpus Id",
+              "type": "string"
+            }
+          },
+          "required": [
+            "snapshot_id",
+            "cutoff_date",
+            "corpus_id"
+          ],
+          "title": "CorpusInfo",
+          "type": "object"
+        },
+        "CoverageDiagnostic": {
+          "additionalProperties": false,
+          "properties": {
+            "code": {
+              "enum": [
+                "EXTRACTED",
+                "RESOLVED",
+                "REFERENCE_COVERED_ELSEWHERE",
+                "SOURCE_ABSENT",
+                "NOT_PARSED",
+                "NO_Q4_FILING"
+              ],
+              "title": "Code",
+              "type": "string"
+            },
+            "accession": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "title": "Accession"
+            },
+            "item": {
+              "anyOf": [
+                {
+                  "enum": [
+                    "1",
+                    "1A",
+                    "7",
+                    "7A",
+                    "8",
+                    "P1-2",
+                    "P2-1A"
+                  ],
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "title": "Item"
+            },
+            "reason": {
+              "title": "Reason",
+              "type": "string"
+            },
+            "target_resource": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "title": "Target Resource"
+            },
+            "source_url": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "title": "Source Url"
+            },
+            "source_hash": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "title": "Source Hash"
+            },
+            "method": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "title": "Method"
+            },
+            "evidence_text": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "title": "Evidence Text"
+            }
+          },
+          "required": [
+            "code",
+            "reason"
+          ],
+          "title": "CoverageDiagnostic",
+          "type": "object"
+        },
+        "ErrorDetail": {
+          "additionalProperties": false,
+          "properties": {
+            "code": {
+              "enum": [
+                "INVALID_INPUT",
+                "COMPANY_NOT_FOUND",
+                "AMBIGUOUS_COMPANY",
+                "INVALID_FILTER",
+                "INVALID_METRIC",
+                "QUERY_TOO_LONG",
+                "PASSAGE_NOT_FOUND",
+                "FILING_NOT_FOUND",
+                "SECTION_NOT_FOUND",
+                "DATA_INTEGRITY",
+                "CORPUS_UNAVAILABLE",
+                "SNAPSHOT_UNAVAILABLE",
+                "DATABASE_UNAVAILABLE",
+                "MODEL_UNAVAILABLE",
+                "INTERNAL_ERROR",
+                "DIVISION_BY_ZERO",
+                "NON_POSITIVE_INPUT",
+                "INVALID_YEARS",
+                "INSUFFICIENT_DATA",
+                "DUPLICATE_LABEL",
+                "INVALID_EXPRESSION",
+                "EXPRESSION_LIMIT",
+                "NUMERIC_RANGE",
+                "UNKNOWN_TOOL"
+              ],
+              "title": "Code",
+              "type": "string"
+            },
+            "message": {
+              "title": "Message",
+              "type": "string"
+            }
+          },
+          "required": [
+            "code",
+            "message"
+          ],
+          "title": "ErrorDetail",
+          "type": "object"
+        },
+        "PassageData": {
+          "additionalProperties": false,
+          "properties": {
+            "chunk_id": {
+              "title": "Chunk Id",
+              "type": "string"
+            },
+            "ticker": {
+              "title": "Ticker",
+              "type": "string"
+            },
+            "form": {
+              "enum": [
+                "10-K",
+                "10-Q"
+              ],
+              "title": "Form",
+              "type": "string"
+            },
+            "fiscal_year": {
+              "title": "Fiscal Year",
+              "type": "integer"
+            },
+            "fiscal_period": {
+              "enum": [
+                "Q1",
+                "Q2",
+                "Q3",
+                "Q4",
+                "FY"
+              ],
+              "title": "Fiscal Period",
+              "type": "string"
+            },
+            "item": {
+              "enum": [
+                "1",
+                "1A",
+                "7",
+                "7A",
+                "8",
+                "P1-2",
+                "P2-1A"
+              ],
+              "title": "Item",
+              "type": "string"
+            },
+            "text": {
+              "title": "Text",
+              "type": "string"
+            },
+            "score": {
+              "anyOf": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Score"
+            },
+            "accession": {
+              "title": "Accession",
+              "type": "string"
+            },
+            "title": {
+              "title": "Title",
+              "type": "string"
+            },
+            "report_date": {
+              "format": "date",
+              "title": "Report Date",
+              "type": "string"
+            },
+            "url": {
+              "title": "Url",
+              "type": "string"
+            },
+            "oversized_row": {
+              "title": "Oversized Row",
+              "type": "boolean"
+            },
+            "text_truncated": {
+              "title": "Text Truncated",
+              "type": "boolean"
+            },
+            "full_text_characters": {
+              "title": "Full Text Characters",
+              "type": "integer"
+            },
+            "content_trust": {
+              "const": "untrusted_sec_text",
+              "default": "untrusted_sec_text",
+              "title": "Content Trust",
+              "type": "string"
+            },
+            "coverage_diagnostics": {
+              "items": {
+                "$ref": "#/$defs/CoverageDiagnostic"
+              },
+              "title": "Coverage Diagnostics",
+              "type": "array"
+            },
+            "corpus": {
+              "$ref": "#/$defs/CorpusInfo"
+            },
+            "section_id": {
+              "title": "Section Id",
+              "type": "string"
+            },
+            "ordinal": {
+              "title": "Ordinal",
+              "type": "integer"
+            },
+            "token_count": {
+              "title": "Token Count",
+              "type": "integer"
+            }
+          },
+          "required": [
+            "chunk_id",
+            "ticker",
+            "form",
+            "fiscal_year",
+            "fiscal_period",
+            "item",
+            "text",
+            "score",
+            "accession",
+            "title",
+            "report_date",
+            "url",
+            "oversized_row",
+            "text_truncated",
+            "full_text_characters",
+            "coverage_diagnostics",
+            "corpus",
+            "section_id",
+            "ordinal",
+            "token_count"
+          ],
+          "title": "PassageData",
+          "type": "object"
+        }
+      },
+      "additionalProperties": false,
+      "properties": {
+        "data": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/PassageData"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "error": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/ErrorDetail"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        }
+      },
+      "title": "Response[PassageData]",
+      "type": "object"
+    }
+  },
+  "growth_rate": {
+    "input": {
+      "additionalProperties": false,
+      "properties": {
+        "old": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "title": "Old"
+        },
+        "new": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "title": "New"
+        }
+      },
+      "required": [
+        "old",
+        "new"
+      ],
+      "title": "GrowthRateInput",
+      "type": "object"
+    },
+    "output": {
+      "$defs": {
+        "ErrorDetail": {
+          "additionalProperties": false,
+          "properties": {
+            "code": {
+              "enum": [
+                "INVALID_INPUT",
+                "COMPANY_NOT_FOUND",
+                "AMBIGUOUS_COMPANY",
+                "INVALID_FILTER",
+                "INVALID_METRIC",
+                "QUERY_TOO_LONG",
+                "PASSAGE_NOT_FOUND",
+                "FILING_NOT_FOUND",
+                "SECTION_NOT_FOUND",
+                "DATA_INTEGRITY",
+                "CORPUS_UNAVAILABLE",
+                "SNAPSHOT_UNAVAILABLE",
+                "DATABASE_UNAVAILABLE",
+                "MODEL_UNAVAILABLE",
+                "INTERNAL_ERROR",
+                "DIVISION_BY_ZERO",
+                "NON_POSITIVE_INPUT",
+                "INVALID_YEARS",
+                "INSUFFICIENT_DATA",
+                "DUPLICATE_LABEL",
+                "INVALID_EXPRESSION",
+                "EXPRESSION_LIMIT",
+                "NUMERIC_RANGE",
+                "UNKNOWN_TOOL"
+              ],
+              "title": "Code",
+              "type": "string"
+            },
+            "message": {
+              "title": "Message",
+              "type": "string"
+            }
+          },
+          "required": [
+            "code",
+            "message"
+          ],
+          "title": "ErrorDetail",
+          "type": "object"
+        },
+        "GrowthData": {
+          "additionalProperties": false,
+          "properties": {
+            "precision": {
+              "$ref": "#/$defs/Precision"
+            },
+            "old": {
+              "title": "Old",
+              "type": "string"
+            },
+            "new": {
+              "title": "New",
+              "type": "string"
+            },
+            "value_pct": {
+              "title": "Value Pct",
+              "type": "string"
+            },
+            "base_convention": {
+              "const": "absolute_old",
+              "default": "absolute_old",
+              "title": "Base Convention",
+              "type": "string"
+            }
+          },
+          "required": [
+            "old",
+            "new",
+            "value_pct"
+          ],
+          "title": "GrowthData",
+          "type": "object"
+        },
+        "Precision": {
+          "additionalProperties": false,
+          "properties": {
+            "context_precision": {
+              "const": 80,
+              "default": 80,
+              "title": "Context Precision",
+              "type": "integer"
+            },
+            "decimal_places": {
+              "const": 12,
+              "default": 12,
+              "title": "Decimal Places",
+              "type": "integer"
+            },
+            "rounding": {
+              "const": "ROUND_HALF_EVEN",
+              "default": "ROUND_HALF_EVEN",
+              "title": "Rounding",
+              "type": "string"
+            }
+          },
+          "title": "Precision",
+          "type": "object"
+        }
+      },
+      "additionalProperties": false,
+      "properties": {
+        "data": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/GrowthData"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "error": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/ErrorDetail"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        }
+      },
+      "title": "Response[GrowthData]",
+      "type": "object"
+    }
+  },
+  "margin": {
+    "input": {
+      "additionalProperties": false,
+      "properties": {
+        "numerator": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "title": "Numerator"
+        },
+        "denominator": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "title": "Denominator"
+        }
+      },
+      "required": [
+        "numerator",
+        "denominator"
+      ],
+      "title": "MarginInput",
+      "type": "object"
+    },
+    "output": {
+      "$defs": {
+        "ErrorDetail": {
+          "additionalProperties": false,
+          "properties": {
+            "code": {
+              "enum": [
+                "INVALID_INPUT",
+                "COMPANY_NOT_FOUND",
+                "AMBIGUOUS_COMPANY",
+                "INVALID_FILTER",
+                "INVALID_METRIC",
+                "QUERY_TOO_LONG",
+                "PASSAGE_NOT_FOUND",
+                "FILING_NOT_FOUND",
+                "SECTION_NOT_FOUND",
+                "DATA_INTEGRITY",
+                "CORPUS_UNAVAILABLE",
+                "SNAPSHOT_UNAVAILABLE",
+                "DATABASE_UNAVAILABLE",
+                "MODEL_UNAVAILABLE",
+                "INTERNAL_ERROR",
+                "DIVISION_BY_ZERO",
+                "NON_POSITIVE_INPUT",
+                "INVALID_YEARS",
+                "INSUFFICIENT_DATA",
+                "DUPLICATE_LABEL",
+                "INVALID_EXPRESSION",
+                "EXPRESSION_LIMIT",
+                "NUMERIC_RANGE",
+                "UNKNOWN_TOOL"
+              ],
+              "title": "Code",
+              "type": "string"
+            },
+            "message": {
+              "title": "Message",
+              "type": "string"
+            }
+          },
+          "required": [
+            "code",
+            "message"
+          ],
+          "title": "ErrorDetail",
+          "type": "object"
+        },
+        "MarginData": {
+          "additionalProperties": false,
+          "properties": {
+            "precision": {
+              "$ref": "#/$defs/Precision"
+            },
+            "numerator": {
+              "title": "Numerator",
+              "type": "string"
+            },
+            "denominator": {
+              "title": "Denominator",
+              "type": "string"
+            },
+            "value_pct": {
+              "title": "Value Pct",
+              "type": "string"
+            }
+          },
+          "required": [
+            "numerator",
+            "denominator",
+            "value_pct"
+          ],
+          "title": "MarginData",
+          "type": "object"
+        },
+        "Precision": {
+          "additionalProperties": false,
+          "properties": {
+            "context_precision": {
+              "const": 80,
+              "default": 80,
+              "title": "Context Precision",
+              "type": "integer"
+            },
+            "decimal_places": {
+              "const": 12,
+              "default": 12,
+              "title": "Decimal Places",
+              "type": "integer"
+            },
+            "rounding": {
+              "const": "ROUND_HALF_EVEN",
+              "default": "ROUND_HALF_EVEN",
+              "title": "Rounding",
+              "type": "string"
+            }
+          },
+          "title": "Precision",
+          "type": "object"
+        }
+      },
+      "additionalProperties": false,
+      "properties": {
+        "data": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/MarginData"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "error": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/ErrorDetail"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        }
+      },
+      "title": "Response[MarginData]",
+      "type": "object"
+    }
+  },
+  "cagr": {
+    "input": {
+      "additionalProperties": false,
+      "properties": {
+        "start_value": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "title": "Start Value"
+        },
+        "end_value": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "title": "End Value"
+        },
+        "years": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "title": "Years"
+        }
+      },
+      "required": [
+        "start_value",
+        "end_value",
+        "years"
+      ],
+      "title": "CagrInput",
+      "type": "object"
+    },
+    "output": {
+      "$defs": {
+        "CagrData": {
+          "additionalProperties": false,
+          "properties": {
+            "precision": {
+              "$ref": "#/$defs/Precision"
+            },
+            "start_value": {
+              "title": "Start Value",
+              "type": "string"
+            },
+            "end_value": {
+              "title": "End Value",
+              "type": "string"
+            },
+            "years": {
+              "title": "Years",
+              "type": "string"
+            },
+            "value_pct": {
+              "title": "Value Pct",
+              "type": "string"
+            }
+          },
+          "required": [
+            "start_value",
+            "end_value",
+            "years",
+            "value_pct"
+          ],
+          "title": "CagrData",
+          "type": "object"
+        },
+        "ErrorDetail": {
+          "additionalProperties": false,
+          "properties": {
+            "code": {
+              "enum": [
+                "INVALID_INPUT",
+                "COMPANY_NOT_FOUND",
+                "AMBIGUOUS_COMPANY",
+                "INVALID_FILTER",
+                "INVALID_METRIC",
+                "QUERY_TOO_LONG",
+                "PASSAGE_NOT_FOUND",
+                "FILING_NOT_FOUND",
+                "SECTION_NOT_FOUND",
+                "DATA_INTEGRITY",
+                "CORPUS_UNAVAILABLE",
+                "SNAPSHOT_UNAVAILABLE",
+                "DATABASE_UNAVAILABLE",
+                "MODEL_UNAVAILABLE",
+                "INTERNAL_ERROR",
+                "DIVISION_BY_ZERO",
+                "NON_POSITIVE_INPUT",
+                "INVALID_YEARS",
+                "INSUFFICIENT_DATA",
+                "DUPLICATE_LABEL",
+                "INVALID_EXPRESSION",
+                "EXPRESSION_LIMIT",
+                "NUMERIC_RANGE",
+                "UNKNOWN_TOOL"
+              ],
+              "title": "Code",
+              "type": "string"
+            },
+            "message": {
+              "title": "Message",
+              "type": "string"
+            }
+          },
+          "required": [
+            "code",
+            "message"
+          ],
+          "title": "ErrorDetail",
+          "type": "object"
+        },
+        "Precision": {
+          "additionalProperties": false,
+          "properties": {
+            "context_precision": {
+              "const": 80,
+              "default": 80,
+              "title": "Context Precision",
+              "type": "integer"
+            },
+            "decimal_places": {
+              "const": 12,
+              "default": 12,
+              "title": "Decimal Places",
+              "type": "integer"
+            },
+            "rounding": {
+              "const": "ROUND_HALF_EVEN",
+              "default": "ROUND_HALF_EVEN",
+              "title": "Rounding",
+              "type": "string"
+            }
+          },
+          "title": "Precision",
+          "type": "object"
+        }
+      },
+      "additionalProperties": false,
+      "properties": {
+        "data": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/CagrData"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "error": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/ErrorDetail"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        }
+      },
+      "title": "Response[CagrData]",
+      "type": "object"
+    }
+  },
+  "yoy_series": {
+    "input": {
+      "$defs": {
+        "LabeledValue": {
+          "additionalProperties": false,
+          "properties": {
+            "label": {
+              "maxLength": 128,
+              "minLength": 1,
+              "title": "Label",
+              "type": "string"
+            },
+            "value": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "title": "Value"
+            }
+          },
+          "required": [
+            "label",
+            "value"
+          ],
+          "title": "LabeledValue",
+          "type": "object"
+        }
+      },
+      "additionalProperties": false,
+      "properties": {
+        "values": {
+          "items": {
+            "$ref": "#/$defs/LabeledValue"
+          },
+          "maxItems": 1000,
+          "minItems": 2,
+          "title": "Values",
+          "type": "array"
+        }
+      },
+      "required": [
+        "values"
+      ],
+      "title": "YoySeriesInput",
+      "type": "object"
+    },
+    "output": {
+      "$defs": {
+        "ChangePoint": {
+          "additionalProperties": false,
+          "properties": {
+            "label": {
+              "title": "Label",
+              "type": "string"
+            },
+            "value": {
+              "title": "Value",
+              "type": "string"
+            },
+            "change_pct": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Change Pct"
+            },
+            "reason": {
+              "anyOf": [
+                {
+                  "const": "first_observation",
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Reason"
+            }
+          },
+          "required": [
+            "label",
+            "value",
+            "change_pct",
+            "reason"
+          ],
+          "title": "ChangePoint",
+          "type": "object"
+        },
+        "ErrorDetail": {
+          "additionalProperties": false,
+          "properties": {
+            "code": {
+              "enum": [
+                "INVALID_INPUT",
+                "COMPANY_NOT_FOUND",
+                "AMBIGUOUS_COMPANY",
+                "INVALID_FILTER",
+                "INVALID_METRIC",
+                "QUERY_TOO_LONG",
+                "PASSAGE_NOT_FOUND",
+                "FILING_NOT_FOUND",
+                "SECTION_NOT_FOUND",
+                "DATA_INTEGRITY",
+                "CORPUS_UNAVAILABLE",
+                "SNAPSHOT_UNAVAILABLE",
+                "DATABASE_UNAVAILABLE",
+                "MODEL_UNAVAILABLE",
+                "INTERNAL_ERROR",
+                "DIVISION_BY_ZERO",
+                "NON_POSITIVE_INPUT",
+                "INVALID_YEARS",
+                "INSUFFICIENT_DATA",
+                "DUPLICATE_LABEL",
+                "INVALID_EXPRESSION",
+                "EXPRESSION_LIMIT",
+                "NUMERIC_RANGE",
+                "UNKNOWN_TOOL"
+              ],
+              "title": "Code",
+              "type": "string"
+            },
+            "message": {
+              "title": "Message",
+              "type": "string"
+            }
+          },
+          "required": [
+            "code",
+            "message"
+          ],
+          "title": "ErrorDetail",
+          "type": "object"
+        },
+        "Precision": {
+          "additionalProperties": false,
+          "properties": {
+            "context_precision": {
+              "const": 80,
+              "default": 80,
+              "title": "Context Precision",
+              "type": "integer"
+            },
+            "decimal_places": {
+              "const": 12,
+              "default": 12,
+              "title": "Decimal Places",
+              "type": "integer"
+            },
+            "rounding": {
+              "const": "ROUND_HALF_EVEN",
+              "default": "ROUND_HALF_EVEN",
+              "title": "Rounding",
+              "type": "string"
+            }
+          },
+          "title": "Precision",
+          "type": "object"
+        },
+        "YoyData": {
+          "additionalProperties": false,
+          "properties": {
+            "precision": {
+              "$ref": "#/$defs/Precision"
+            },
+            "points": {
+              "items": {
+                "$ref": "#/$defs/ChangePoint"
+              },
+              "title": "Points",
+              "type": "array"
+            },
+            "base_convention": {
+              "const": "absolute_old",
+              "default": "absolute_old",
+              "title": "Base Convention",
+              "type": "string"
+            }
+          },
+          "required": [
+            "points"
+          ],
+          "title": "YoyData",
+          "type": "object"
+        }
+      },
+      "additionalProperties": false,
+      "properties": {
+        "data": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/YoyData"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "error": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/ErrorDetail"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        }
+      },
+      "title": "Response[YoyData]",
+      "type": "object"
+    }
+  },
+  "summary_stats": {
+    "input": {
+      "additionalProperties": false,
+      "properties": {
+        "values": {
+          "items": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "integer"
+              },
+              {
+                "type": "number"
+              }
+            ]
+          },
+          "maxItems": 1000,
+          "minItems": 2,
+          "title": "Values",
+          "type": "array"
+        }
+      },
+      "required": [
+        "values"
+      ],
+      "title": "SummaryStatsInput",
+      "type": "object"
+    },
+    "output": {
+      "$defs": {
+        "ErrorDetail": {
+          "additionalProperties": false,
+          "properties": {
+            "code": {
+              "enum": [
+                "INVALID_INPUT",
+                "COMPANY_NOT_FOUND",
+                "AMBIGUOUS_COMPANY",
+                "INVALID_FILTER",
+                "INVALID_METRIC",
+                "QUERY_TOO_LONG",
+                "PASSAGE_NOT_FOUND",
+                "FILING_NOT_FOUND",
+                "SECTION_NOT_FOUND",
+                "DATA_INTEGRITY",
+                "CORPUS_UNAVAILABLE",
+                "SNAPSHOT_UNAVAILABLE",
+                "DATABASE_UNAVAILABLE",
+                "MODEL_UNAVAILABLE",
+                "INTERNAL_ERROR",
+                "DIVISION_BY_ZERO",
+                "NON_POSITIVE_INPUT",
+                "INVALID_YEARS",
+                "INSUFFICIENT_DATA",
+                "DUPLICATE_LABEL",
+                "INVALID_EXPRESSION",
+                "EXPRESSION_LIMIT",
+                "NUMERIC_RANGE",
+                "UNKNOWN_TOOL"
+              ],
+              "title": "Code",
+              "type": "string"
+            },
+            "message": {
+              "title": "Message",
+              "type": "string"
+            }
+          },
+          "required": [
+            "code",
+            "message"
+          ],
+          "title": "ErrorDetail",
+          "type": "object"
+        },
+        "Precision": {
+          "additionalProperties": false,
+          "properties": {
+            "context_precision": {
+              "const": 80,
+              "default": 80,
+              "title": "Context Precision",
+              "type": "integer"
+            },
+            "decimal_places": {
+              "const": 12,
+              "default": 12,
+              "title": "Decimal Places",
+              "type": "integer"
+            },
+            "rounding": {
+              "const": "ROUND_HALF_EVEN",
+              "default": "ROUND_HALF_EVEN",
+              "title": "Rounding",
+              "type": "string"
+            }
+          },
+          "title": "Precision",
+          "type": "object"
+        },
+        "StatsData": {
+          "additionalProperties": false,
+          "properties": {
+            "precision": {
+              "$ref": "#/$defs/Precision"
+            },
+            "values": {
+              "items": {
+                "type": "string"
+              },
+              "title": "Values",
+              "type": "array"
+            },
+            "count": {
+              "title": "Count",
+              "type": "integer"
+            },
+            "mean": {
+              "title": "Mean",
+              "type": "string"
+            },
+            "median": {
+              "title": "Median",
+              "type": "string"
+            },
+            "min": {
+              "title": "Min",
+              "type": "string"
+            },
+            "max": {
+              "title": "Max",
+              "type": "string"
+            },
+            "stdev": {
+              "title": "Stdev",
+              "type": "string"
+            },
+            "stdev_kind": {
+              "const": "sample",
+              "default": "sample",
+              "title": "Stdev Kind",
+              "type": "string"
+            }
+          },
+          "required": [
+            "values",
+            "count",
+            "mean",
+            "median",
+            "min",
+            "max",
+            "stdev"
+          ],
+          "title": "StatsData",
+          "type": "object"
+        }
+      },
+      "additionalProperties": false,
+      "properties": {
+        "data": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/StatsData"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "error": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/ErrorDetail"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        }
+      },
+      "title": "Response[StatsData]",
+      "type": "object"
+    }
+  },
+  "evaluate": {
+    "input": {
+      "additionalProperties": false,
+      "properties": {
+        "expression": {
+          "maxLength": 512,
+          "minLength": 1,
+          "title": "Expression",
+          "type": "string"
+        }
+      },
+      "required": [
+        "expression"
+      ],
+      "title": "EvaluateInput",
+      "type": "object"
+    },
+    "output": {
+      "$defs": {
+        "ErrorDetail": {
+          "additionalProperties": false,
+          "properties": {
+            "code": {
+              "enum": [
+                "INVALID_INPUT",
+                "COMPANY_NOT_FOUND",
+                "AMBIGUOUS_COMPANY",
+                "INVALID_FILTER",
+                "INVALID_METRIC",
+                "QUERY_TOO_LONG",
+                "PASSAGE_NOT_FOUND",
+                "FILING_NOT_FOUND",
+                "SECTION_NOT_FOUND",
+                "DATA_INTEGRITY",
+                "CORPUS_UNAVAILABLE",
+                "SNAPSHOT_UNAVAILABLE",
+                "DATABASE_UNAVAILABLE",
+                "MODEL_UNAVAILABLE",
+                "INTERNAL_ERROR",
+                "DIVISION_BY_ZERO",
+                "NON_POSITIVE_INPUT",
+                "INVALID_YEARS",
+                "INSUFFICIENT_DATA",
+                "DUPLICATE_LABEL",
+                "INVALID_EXPRESSION",
+                "EXPRESSION_LIMIT",
+                "NUMERIC_RANGE",
+                "UNKNOWN_TOOL"
+              ],
+              "title": "Code",
+              "type": "string"
+            },
+            "message": {
+              "title": "Message",
+              "type": "string"
+            }
+          },
+          "required": [
+            "code",
+            "message"
+          ],
+          "title": "ErrorDetail",
+          "type": "object"
+        },
+        "EvaluationData": {
+          "additionalProperties": false,
+          "properties": {
+            "precision": {
+              "$ref": "#/$defs/Precision"
+            },
+            "expression": {
+              "title": "Expression",
+              "type": "string"
+            },
+            "normalized_expression": {
+              "title": "Normalized Expression",
+              "type": "string"
+            },
+            "value": {
+              "title": "Value",
+              "type": "string"
+            }
+          },
+          "required": [
+            "expression",
+            "normalized_expression",
+            "value"
+          ],
+          "title": "EvaluationData",
+          "type": "object"
+        },
+        "Precision": {
+          "additionalProperties": false,
+          "properties": {
+            "context_precision": {
+              "const": 80,
+              "default": 80,
+              "title": "Context Precision",
+              "type": "integer"
+            },
+            "decimal_places": {
+              "const": 12,
+              "default": 12,
+              "title": "Decimal Places",
+              "type": "integer"
+            },
+            "rounding": {
+              "const": "ROUND_HALF_EVEN",
+              "default": "ROUND_HALF_EVEN",
+              "title": "Rounding",
+              "type": "string"
+            }
+          },
+          "title": "Precision",
+          "type": "object"
+        }
+      },
+      "additionalProperties": false,
+      "properties": {
+        "data": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/EvaluationData"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "error": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/ErrorDetail"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        }
+      },
+      "title": "Response[EvaluationData]",
+      "type": "object"
+    }
+  }
+}

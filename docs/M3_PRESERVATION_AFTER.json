@@ -1,0 +1,52 @@
+{
+  "tables": {
+    "companies": {
+      "count": 20,
+      "content_md5": "e386e2e695b2cb52598fb494e5e05b6e"
+    },
+    "filings": {
+      "count": 275,
+      "content_md5": "31d59b1eaa964556bcb140bea5fb1f50"
+    },
+    "financial_facts": {
+      "count": 2715,
+      "content_md5": "17d0eeb8623f6c780d95a2d4926eff65"
+    },
+    "metric_availability": {
+      "count": 3565,
+      "content_md5": "2757241aed405b04f3ee09b6a9432cdc"
+    },
+    "ingestion_snapshots": {
+      "count": 1,
+      "content_md5": "20cb4c76ed9facdb04707e15edaae9c0"
+    },
+    "retrieval_corpora": {
+      "count": 4,
+      "content_md5": "e92602f24a779c87b623c628dd470f6c"
+    },
+    "corpus_documents": {
+      "count": 1100,
+      "content_md5": "ab32c23d94b7f0cd67ea02595c2fc92e"
+    },
+    "corpus_chunks": {
+      "count": 103003,
+      "content_md5": "42f75e1922b53aa4c7b6c4e8dd4a7984"
+    },
+    "sections": {
+      "count": 2832,
+      "content_md5": "3d30f17cadaa13e6517279fd681d18cd"
+    },
+    "chunks": {
+      "count": 103003,
+      "content_md5": "65d01f10ad1b5b4024b8dfd1310894eb"
+    }
+  },
+  "files": {
+    "evals/handwritten.jsonl": "d7b364662b9aa97f5c8616079297ff81322a7179583e2cb663c3614640896f04",
+    "evals/handwritten_v2.jsonl": "6d120892242bb97e9131a0ee4cc2316793f06b837d6149fc5a06a622baea9233",
+    "evals/corpus_v2_migration.json": "7d0ebc396cc302a6fe37c72b14b017c5fde133ff7cb0f4f566c45f9cbbb4c439",
+    "filinglens/retrieval/service.py": "28dcbb706a4698aeed74c7d1b5c543bbd37becc9e1f5c9b18228ef47250648d8",
+    "filinglens/ingest/models.py": "51440accc3b8441d730918aa7fb7a0782e089c2377bd9d5811701898c3d69b2e",
+    "data/models/revisions.json": "25e9f7fa9e6f1b2d1d93c3d9c2dca36c4e4f25d16f5a6b0108b79cb859cd8b55"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "mcpServers": {
+    "edgar-mcp": {
+      "command": "C:\\Users\\ADMIN\\OneDrive - University of Maryland\\Desktop\\Finance App\\FilingLens\\.venv\\Scripts\\python.exe",
+      "args": [
+        "-m",
+        "mcp_servers.edgar_mcp.server"
+      ],
+      "env": {
+        "DATABASE_URL": "postgresql://filinglens:filinglens@localhost:5432/filinglens",
+        "RETRIEVAL_CORPUS": "corpus_3f3c2a9affddcc6a29eca9e768c65bcbd3e2f131fb69595b24b9b92005738739",
+        "SNAPSHOT_ID": "2026-10-19-v1",
+        "RETRIEVAL_MODE": "vector",
+        "HF_HUB_OFFLINE": "1",
+        "TRANSFORMERS_OFFLINE": "1",
+        "HF_HUB_DISABLE_PROGRESS_BARS": "1",
+        "SEC_USER_AGENT": "FilingLens <your-name> <your-real-contact-email>",
+        "PYTHONPATH": "C:\\Users\\ADMIN\\OneDrive - University of Maryland\\Desktop\\Finance App\\FilingLens"
+      }
+    },
+    "quant-mcp": {
+      "command": "C:\\Users\\ADMIN\\OneDrive - University of Maryland\\Desktop\\Finance App\\FilingLens\\.venv\\Scripts\\python.exe",
+      "args": [
+        "-m",
+        "mcp_servers.quant_mcp.server"
+      ],
+      "env": {
+        "DATABASE_URL": "postgresql://filinglens:filinglens@localhost:5432/filinglens",
+        "RETRIEVAL_CORPUS": "corpus_3f3c2a9affddcc6a29eca9e768c65bcbd3e2f131fb69595b24b9b92005738739",
+        "SNAPSHOT_ID": "2026-10-19-v1",
+        "RETRIEVAL_MODE": "vector",
+        "HF_HUB_OFFLINE": "1",
+        "TRANSFORMERS_OFFLINE": "1",
+        "HF_HUB_DISABLE_PROGRESS_BARS": "1",
+        "SEC_USER_AGENT": "FilingLens <your-name> <your-real-contact-email>",
+        "PYTHONPATH": "C:\\Users\\ADMIN\\OneDrive - University of Maryland\\Desktop\\Finance App\\FilingLens"
+      }
+    }
+  }
+}

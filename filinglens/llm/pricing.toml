@@ -2,3 +2,21 @@
 # Fill in one [models."<exact model ID>"] table per configured model, from the
 # provider's official pricing page. See pricing.example.toml for the format.
 # Intentionally empty until the student adds verified prices.
+
+[models."claude-sonnet-5-5"]
+provider = "anthropic"
+input_per_mtok = "2.00"
+output_per_mtok = "10.00"
+cache_read_per_mtok = ""
+cache_write_per_mtok = ""
+source = "<URL of the pricing page>"
+checked = 2026-10-22
+
+[models."claude-haiku-5-5"]
+provider = "anthropic"
+input_per_mtok = "0.10"
+output_per_mtok = "0.50"
+cache_read_per_mtok = ""
+cache_write_per_mtok = ""
+source = "<URL of the pricing page>"
+checked = 2026-10-22

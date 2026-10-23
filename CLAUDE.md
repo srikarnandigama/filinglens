@@ -81,9 +81,14 @@ Follow the student's M4 task: design first, then stop for approval.
   retries; run one ingestion process at a time.
 - Ask before schema changes or dependencies not listed in SPEC.md. YAML support
   remains deferred. Record new non-obvious decisions in DECISIONS.md.
+- The repo lives at C:\dev\FilingLens (no spaces). It moved out of OneDrive
+  on 2026-10-22; old OneDrive paths in frozen artifacts (e.g.
+  evals/results/retrieval_analyses.json) are provenance only, never read as paths.
 - Use project-local uv (.tools/uv/bin/uv.exe) and Python 3.12.15
-  (.venv/Scripts/python.exe); system Python remains 3.14.0. The CLI uses the
-  Windows selector event loop for Psycopg and an IPv4 hint for localhost.
-- See docs/DECISIONS.md (D001-D050) for design history. docs/M1_STATUS.md and
+  (.uv/python, used by .venv/Scripts/python.exe); system Python remains 3.14.0.
+  On this machine uv needs `--link-mode=copy` (e.g. `uv sync --frozen
+  --link-mode=copy`). The CLI uses the Windows selector event loop for Psycopg
+  and an IPv4 hint for localhost.
+- See docs/DECISIONS.md (D001-D066) for design history. docs/M1_STATUS.md and
   older pending-verification wording predate acceptance; the acceptances
   recorded here supersede them.

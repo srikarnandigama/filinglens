@@ -64,7 +64,8 @@ test_interactive_manual_mark_unmark_show_and_save` (M2 code, unchanged). The err
 inside pytest's temp directory under the OneDrive-synced `data/`. This looks like an
 OneDrive file lock, not a code fault: `evals/` is unchanged against HEAD, and the test
 passed 3/3 when run alone. The clean full rerun above passed with no failures. It may
-recur because the repository lives inside OneDrive.
+recur because the repository lives inside OneDrive. (2026-10-22: the repository has since
+moved to `C:\dev\FilingLens`, outside OneDrive.)
 
 ### New tests (41: 29 unit, 11 integration, 1 opt-in live)
 

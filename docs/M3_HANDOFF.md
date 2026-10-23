@@ -9,7 +9,7 @@ checks, including independent verification of the Apple values in the source
 Open PowerShell:
 
 ```powershell
-$m3Project = 'C:\Users\ADMIN\OneDrive - University of Maryland\Desktop\Finance App\FilingLens'
+$m3Project = 'C:\dev\FilingLens'
 Set-Location -LiteralPath $m3Project
 $m3Python = Join-Path $m3Project '.venv\Scripts\python.exe'
 docker compose up -d db
@@ -225,8 +225,9 @@ The example already uses this project's absolute `.venv` executable and PYTHONPA
 plus `-m` and a module name as **separate JSON arguments**. If moving the project,
 update both absolute paths for each server. Do not insert extra shell quotes
 inside JSON command/args, and do not rely on Desktop's working directory or a
-globally installed Python. Backslashes are JSON escaped; spaces in
-`OneDrive - University of Maryland` require no additional quoting within JSON strings.
+globally installed Python. Backslashes are JSON escaped; spaces in a path
+would require no additional quoting within JSON strings. (Paths updated on 2026-10-22
+when the repository moved from OneDrive to `C:\dev\FilingLens`.)
 
 Restart Claude Desktop after saving, then check that both servers and their
 tools are visible. If not, inspect Developer settings and the active installation's

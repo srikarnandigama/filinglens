@@ -1,7 +1,7 @@
 {
   "mcpServers": {
     "edgar-mcp": {
-      "command": "C:\\Users\\ADMIN\\OneDrive - University of Maryland\\Desktop\\Finance App\\FilingLens\\.venv\\Scripts\\python.exe",
+      "command": "C:\\dev\\FilingLens\\.venv\\Scripts\\python.exe",
       "args": [
         "-m",
         "mcp_servers.edgar_mcp.server"
@@ -15,11 +15,11 @@
         "TRANSFORMERS_OFFLINE": "1",
         "HF_HUB_DISABLE_PROGRESS_BARS": "1",
         "SEC_USER_AGENT": "FilingLens <your-name> <your-real-contact-email>",
-        "PYTHONPATH": "C:\\Users\\ADMIN\\OneDrive - University of Maryland\\Desktop\\Finance App\\FilingLens"
+        "PYTHONPATH": "C:\\dev\\FilingLens"
       }
     },
     "quant-mcp": {
-      "command": "C:\\Users\\ADMIN\\OneDrive - University of Maryland\\Desktop\\Finance App\\FilingLens\\.venv\\Scripts\\python.exe",
+      "command": "C:\\dev\\FilingLens\\.venv\\Scripts\\python.exe",
       "args": [
         "-m",
         "mcp_servers.quant_mcp.server"
@@ -33,7 +33,7 @@
         "TRANSFORMERS_OFFLINE": "1",
         "HF_HUB_DISABLE_PROGRESS_BARS": "1",
         "SEC_USER_AGENT": "FilingLens <your-name> <your-real-contact-email>",
-        "PYTHONPATH": "C:\\Users\\ADMIN\\OneDrive - University of Maryland\\Desktop\\Finance App\\FilingLens"
+        "PYTHONPATH": "C:\\dev\\FilingLens"
       }
     }
   }

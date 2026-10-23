@@ -44,8 +44,10 @@ python -m pip install --target .tools/uv uv
 $env:UV_PYTHON_INSTALL_DIR = Join-Path (Get-Location) '.uv/python'
 $env:UV_CACHE_DIR = Join-Path (Get-Location) '.uv/cache'
 & .tools/uv/bin/uv.exe python install 3.12 --no-bin --no-registry
-& .tools/uv/bin/uv.exe sync --locked
+& .tools/uv/bin/uv.exe sync --locked --link-mode=copy
 ```
+
+On this machine uv needs `--link-mode=copy` for every `uv sync`.
 
 Create `.env` from `.env.example` if it does not exist. Supply a real contact
 email in `SEC_USER_AGENT`; M1 requires no LLM keys. Do not overwrite an existing

@@ -1,7 +1,7 @@
 """Deterministic verification (D056) on a synthetic ledger; values are test data, not SEC facts."""
 
 from filinglens.agents.ledger import Ledger
-from filinglens.agents.orchestrator import RunConfig, _drop
+from filinglens.agents.orchestrator import RunConfig, _drop, removed_items
 from filinglens.agents.schemas import Answer
 from filinglens.agents.verifier import (
     check_claim,
@@ -303,9 +303,63 @@ def test_unsupported_caveats_are_dropped_like_claims():
         }
     )
     dropped = _drop(answer, {"caveat_2": ["verifier (unsupported): not in evidence"]})
+    assert dropped.caveats == ["kept", "1 caveat could not be verified and was removed."]
+    assert dropped.claims == answer.claims and dropped.status == "answered"
+    failures = {
+        "c1": ["verifier (unsupported): internal reason"],
+        "summary": ["verifier (needs_revision): internal reason"],
+        "caveat_2": ["verifier (unsupported): internal reason"],
+    }
+    dropped = _drop(answer, failures)
     assert dropped.caveats == [
         "kept",
-        "Removed unsupported caveat: unsupported statement "
-        "(verifier (unsupported): not in evidence)",
+        "1 caveat could not be verified and was removed.",
+        "1 claim could not be verified and was removed.",
+        "Summary rewritten from verified claims.",
+    ]  # D078: no verifier reasons in user-facing text
+    assert not any("internal reason" in c for c in dropped.caveats)
+    assert removed_items(answer, failures)["c1"]["reasons"] == failures["c1"]
+
+
+async def test_verifier_sees_every_claim_but_judges_only_unverified_ones():
+    verified = claim().model_dump(mode="json")
+    pending = {**verified, "id": "c2", "text": "Gross profit was 100.", "value": "100"}
+    pending["citations"] = [{"kind": "fact", "ref": "2"}]
+    answer = Answer.model_validate(
+        {
+            "status": "answered",
+            "summary": "Revenue was 400 and gross profit 100.",
+            "claims": [verified, pending],
+            "caveats": ["A caveat."],
+        }
+    )
+    summary = {"claim_id": "summary", "verdict": "supported", "reason": "ok"}
+    both = [
+        {"claim_id": "c1", "verdict": "supported", "reason": "ok"},
+        {"claim_id": "c2", "verdict": "supported", "reason": "ok"},
     ]
-    assert dropped.claims == answer.claims and dropped.status == "answered"
+    provider = Script(
+        final({"verdicts": both, "summary_verdict": summary}),  # c1 is not requested: retried
+        final({"verdicts": both[1:], "summary_verdict": summary}),
+    )
+    ctx, _ = make_context(FakeHub({}), provider)
+    ctx.ledger = ledger()
+    out = await run_verifier(
+        ctx,
+        RunConfig(),
+        {"verifier": "fake-large"},
+        {"verifier": ("You are the verifier for tests.", "x")},
+        question="q",
+        answer=answer,
+        claim_ids={"c2"},
+        round_no=1,
+    )
+    assert [v.claim_id for v in out.verdicts] == ["c2"]
+    draft, sources = (body for _, _, body in envelopes(provider.seen[0][:1])[:2])
+    assert [c["id"] for c in draft["claims"]] == ["c1", "c2"]  # the summary's full context
+    assert draft["caveats"] == {"caveat_1": "A caveat."}
+    assert set(sources["facts"]) == {"1", "2"}  # sources for every claim, not only c2
+    task = provider.seen[0][0].text
+    assert "claim ids: ['c2']; and these caveat ids: none" in task
+    assert "Claims ['c1'] were already verified" in task
+    assert "exactly one verdict per claim id ['c2']" in provider.seen[1][-1].text

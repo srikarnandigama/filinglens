@@ -17,7 +17,7 @@ from filinglens.agents.loop import (
 )
 from filinglens.agents.replay import ReplayGateway, ReplayHub
 from filinglens.agents.schemas import DataWorkerOutput, FilingSearchParams
-from filinglens.agents.toolbox import DUPLICATE_NOTE, Toolbox, envelope
+from filinglens.agents.toolbox import DUPLICATE_NOTE, Toolbox, argument_numbers, envelope
 from filinglens.agents.tracing import MemoryTraceStore, Recorder
 from filinglens.agents.workers import search_lock
 from filinglens.llm.base import LLMRequest, LLMResponse, Usage, canonical_sha256
@@ -334,3 +334,94 @@ def test_request_fingerprint_is_unchanged_without_tool_choice():
     legacy = {k: v for k, v in plain.model_dump(mode="json").items() if k != "tool_choice"}
     assert plain.fingerprint() == canonical_sha256(legacy)  # pre-D068 traces still replay
     assert LLMRequest(**base, tool_choice="none").fingerprint() != plain.fingerprint()
+
+
+async def test_quant_calls_must_use_a_value_from_the_evidence():
+    fake = FakeHub(  # outputs echo the real inputs, as the quant server does
+        {
+            "margin": lambda a: {
+                "data": {"numerator": "100", "denominator": "400", "value_pct": "25"}
+            },
+            "evaluate": lambda a: {"data": {"value": "100", "expression": a["expression"]}},
+        }
+    )
+    provider = Script(
+        calls(
+            ("margin", {"numerator": 1, "denominator": 1}),  # no traced value
+            ("evaluate", {"expression": "0"}),  # no traced value
+            ("margin", {"numerator": "100", "denominator": "400"}),  # both are facts
+        ),
+        calls(
+            ("evaluate", {"expression": "25 * 4"}),  # earlier output 25 with a small constant
+            ("evaluate", {"expression": "1"}),  # still untraced
+        ),
+        final(OK),
+    )
+    ctx, store = make_context(fake, provider)
+    ctx.ledger.register(
+        "get_financial_metric",
+        {},
+        {
+            "data": {
+                "ticker": "TEST",
+                "metric": "revenue",
+                "facts": [
+                    {
+                        "fact_id": "1",
+                        "metric": "revenue",
+                        "fiscal_year": 2025,
+                        "fiscal_period": "Q1",
+                        "value": "400",
+                        "unit": "USD",
+                        "status": "available",
+                    },
+                    {
+                        "fact_id": "2",
+                        "metric": "gross_profit",
+                        "fiscal_year": 2025,
+                        "fiscal_period": "Q1",
+                        "value": "100",
+                        "unit": "USD",
+                        "status": "available",
+                    },
+                ],
+            }
+        },
+        False,
+        None,
+    )
+    await run_agent(
+        ctx,
+        instance="analyst:r0",
+        system=DATA_SYSTEM,
+        task="go",
+        model="fake-large",
+        provider="anthropic",
+        output_model=DataWorkerOutput,
+        toolbox=Toolbox(ctx, "analyst:r0", tools=("margin", "evaluate"), traced_inputs=True),
+    )
+    assert [(c[1], c[2]) for c in fake.calls] == [
+        ("margin", {"numerator": "100", "denominator": "400"}),
+        ("evaluate", {"expression": "25 * 4"}),
+    ]
+    first, second = provider.seen[1][-1].tool_results, provider.seen[2][-1].tool_results
+    assert [p.is_error for p in first] == [True, True, False]
+    assert [p.is_error for p in second] == [False, True]
+    for part in (first[0], first[1], second[1]):
+        assert '"code": "UNTRACED_INPUTS"' in part.content
+        assert (
+            "This calculation uses no values from the evidence. If your calculations are "
+            "complete, return the Answer now." in part.content
+        )
+    rejected = [
+        e.payload["rejected"]
+        for e in store.events[ctx.recorder.run_id]
+        if e.event_type == "tool_call"
+    ]
+    assert rejected == ["UNTRACED_INPUTS", "UNTRACED_INPUTS", None, None, "UNTRACED_INPUTS"]
+    assert argument_numbers({"expression": "74.9 - 60.5", "k": [1, "2"]}) == [
+        Decimal("74.9"),
+        Decimal("60.5"),
+        Decimal("1"),
+        Decimal("2"),
+    ]

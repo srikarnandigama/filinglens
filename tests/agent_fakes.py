@@ -192,3 +192,14 @@ def make_context(
     )
     gateway = LiveGateway({"anthropic": provider}, budget, recorder)
     return RunContext(hub=hub, gateway=gateway, recorder=recorder, budget=budget), store
+
+
+def requested_ids(messages: list[Msg]) -> tuple[list[str], list[str]]:
+    """Claim and caveat ids a verifier task asks verdicts for (D077 task wording)."""
+    text = messages[0].text or ""
+    match = re.search(r"claim ids: (\[.*?\]|none); and these caveat ids: (\[.*?\]|none)", text)
+    assert match, "verifier task lists no requested ids"
+    claims, caveats = (
+        json.loads(g.replace("'", '"')) if g != "none" else [] for g in match.groups()
+    )
+    return claims, caveats

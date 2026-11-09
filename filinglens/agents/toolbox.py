@@ -3,7 +3,9 @@
 import asyncio
 import hashlib
 import json
+import re
 from collections.abc import Callable
+from decimal import Decimal
 from typing import Any
 
 from filinglens.agents.context import RunContext, role_of
@@ -27,6 +29,32 @@ TRUST = {
 }
 Lock = Callable[[dict[str, Any]], str | None]
 DUPLICATE_NOTE = "duplicate call: result already provided"
+UNTRACED_MESSAGE = (
+    "This calculation uses no values from the evidence. If your calculations are complete, "
+    "return the Answer now."
+)
+LITERAL = re.compile(r"\d+(?:\.\d+)?")
+
+
+def argument_numbers(node: Any, key: str | None = None) -> list[Decimal]:
+    """Every number a quant call consumes, including literals inside an expression."""
+    if isinstance(node, dict):
+        return [n for k, v in node.items() for n in argument_numbers(v, k)]
+    if isinstance(node, list):
+        return [n for v in node for n in argument_numbers(v, key)]
+    if isinstance(node, bool):
+        return []
+    if isinstance(node, int | float):
+        return [Decimal(str(node))]
+    if isinstance(node, str):
+        if key == "expression":
+            return [Decimal(x) for x in LITERAL.findall(node)]
+        try:
+            number = Decimal(node)
+        except ArithmeticError:
+            return []
+        return [number] if number.is_finite() else []
+    return []
 
 
 def envelope(tool: str, call_id: str, payload: Any, *, computation_id: str | None = None) -> str:
@@ -60,6 +88,7 @@ class Toolbox:
         locks: dict[str, Lock] | None = None,
         known_chunks_only: bool = False,
         limits: dict[str, int] | None = None,
+        traced_inputs: bool = False,
     ) -> None:
         self.ctx = ctx
         self.instance = instance
@@ -71,6 +100,8 @@ class Toolbox:
         # do not count, and orchestrator-issued calls are not limited.
         self.limits = limits or {}
         self.executed: dict[str, int] = {}
+        # D079: quant calls must consume at least one fact value or earlier computation output.
+        self.traced_inputs = traced_inputs
         # Model-issued successful calls of this agent instance, by (server, tool, canonical
         # args) -> (call_id, computation_id, outcome, part); repeats reuse them (D067).
         self.memo: dict[tuple[str, str, str], tuple[str, str | None, ToolOutcome, Any]] = {}
@@ -99,6 +130,10 @@ class Toolbox:
                 return _local_error(
                     "ARGUMENT_LOCKED", "Only chunk IDs returned earlier in this run may be fetched."
                 )
+        if self.traced_inputs and call.name in QUANT_TOOLS:
+            traced = {abs(v) for v in self.ctx.ledger.numeric_values()}
+            if not any(abs(n) in traced for n in argument_numbers(call.arguments)):
+                return _local_error("UNTRACED_INPUTS", UNTRACED_MESSAGE)
         return None
 
     async def call_many(self, calls: list[ToolCall]) -> list[ToolResultPart]:

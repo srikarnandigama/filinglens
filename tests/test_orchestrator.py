@@ -23,6 +23,7 @@ from tests.agent_fakes import (
     fake_prices,
     final,
     proactor_run,
+    requested_ids,
     tool_results,
 )
 
@@ -153,21 +154,23 @@ def filings_worker(step, messages, model):
 
 def verifier_all_supported(step, messages, model):
     draft = next(body for tag, _, body in envelopes(messages[:1]) if tag == "evidence")
+    claim_ids, caveat_ids = requested_ids(messages)
+    claims = {c["id"]: c for c in draft["claims"]}
     return final(
         {
             "verdicts": [
                 {
-                    "claim_id": c["id"],
+                    "claim_id": cid,
                     "verdict": "supported",
                     "reason": "matches",
-                    "citations_checked": [x["ref"] for x in c["citations"]],
+                    "citations_checked": [x["ref"] for x in claims[cid]["citations"]],
                 }
-                for c in draft["claims"]
+                for cid in claim_ids
             ],
             "summary_verdict": {"claim_id": "summary", "verdict": "supported", "reason": "ok"},
             "caveat_verdicts": [
                 {"claim_id": cid, "verdict": "supported", "reason": "matches the run evidence"}
-                for cid in draft["caveats"]
+                for cid in caveat_ids
             ],
         }
     )
@@ -594,7 +597,8 @@ def test_revision_fixes_or_drops_claims_and_verifier_off(tmp_path):
     )
     answer = result.answer
     assert [c.id for c in answer.claims] == ["c1"] and answer.status == "partially_answered"
-    assert answer.final_value is None and answer.caveats[0].startswith("Removed unsupported claim")
+    assert answer.final_value is None
+    assert answer.caveats == ["1 claim could not be verified and was removed."]
     assert sum(r["role"] == "analyst" and r["step"] == 0 for r in provider.requests) == 3
 
     result, provider = run(
@@ -712,10 +716,7 @@ def test_unsupported_caveat_is_revised_or_dropped(tmp_path):
         assert [c.id for c in result.answer.claims] == ["c1", "c2"]
         if keep:  # still flagged after every revision round: dropped like a claim
             assert len(rounds) == 3 and len(log) == 3
-            assert result.answer.caveats == [
-                "Removed unsupported caveat: This is the latest filing in the snapshot. "
-                "(verifier (unsupported): not in the run evidence)"
-            ]
+            assert result.answer.caveats == ["1 caveat could not be verified and was removed."]
         else:
             assert len(rounds) == 2 and log[-1]["failing"] == {}
             assert result.answer.caveats == []

@@ -269,25 +269,31 @@ async def run_verifier(
     run_evidence: dict | None = None,
 ) -> VerifierOutput:
     instance = f"verifier:r{round_no}"
+    all_ids = {c.id for c in answer.claims}
     prefetch = Toolbox(ctx, instance, tools=("get_passage",))
     for claim in answer.claims:
-        if claim.id in claim_ids:
-            for cit in claim.citations:
-                record = ctx.ledger.passages.get(cit.ref)
-                if cit.kind == "chunk" and (record is None or record.full_text is None):
-                    await prefetch.call("get_passage", {"chunk_id": cit.ref})
+        for cit in claim.citations:
+            record = ctx.ledger.passages.get(cit.ref)
+            if cit.kind == "chunk" and (record is None or record.full_text is None):
+                await prefetch.call("get_passage", {"chunk_id": cit.ref})
+    # D077: the whole current answer is context; verdicts are requested only for the listed
+    # ids, and the summary is always judged against every current claim.
     draft = answer.model_dump(mode="json")
-    draft["claims"] = [c for c in draft["claims"] if c["id"] in claim_ids]
-    draft["caveats"] = {cid: answer.caveats[caveat_index(cid)] for cid in sorted(caveat_ids)}
-    sources = wrap_evidence(sources_for(answer, claim_ids, ctx.ledger))
+    draft["caveats"] = {caveat_id(i): text for i, text in enumerate(answer.caveats)}
+    sources = wrap_evidence(sources_for(answer, all_ids, ctx.ledger))
+    already = sorted(all_ids - set(claim_ids))
     task = (
-        f"Question: {question}\n\nClaims to verify (and the summary):\n"
-        f"{wrap_evidence(draft)}\n\nCited sources:\n{sources}"
+        f"Question: {question}\n\nDraft answer (all current claims and caveats):\n"
+        f"{wrap_evidence(draft)}\n\nCited sources for every claim:\n{sources}\n\n"
+        f"Give verdicts for these claim ids: {sorted(claim_ids) or 'none'}; and these "
+        f"caveat ids: {sorted(caveat_ids) or 'none'}; and always the summary. Claims "
+        f"{already or 'none'} were already verified in their current form: use them as "
+        "context for the summary and do not give them verdicts."
     )
     if caveat_ids:
         task += (
-            "\n\nCaveats to verify (one caveat_verdict per caveat id) against this run's "
-            f"evidence:\n{wrap_evidence(run_evidence or {})}"
+            "\n\nCaveats are checked against this run's evidence:\n"
+            f"{wrap_evidence(run_evidence or {})}"
         )
 
     def validate(out: VerifierOutput) -> None:

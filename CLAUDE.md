@@ -27,7 +27,7 @@ This project is specified in SPEC.md. Read it before doing anything.
 - [x] M1 Foundation + data
 - [x] M2 Parsing, chunking, embeddings, retrieval
 - [x] M3 MCP servers
-- [ ] M4 Agent runtime
+- [x] M4 Agent runtime
 - [ ] M5 Eval harness + baselines
 - [ ] M6 Experiments + CI
 - [ ] M7 API, frontend, docs
@@ -35,11 +35,12 @@ This project is specified in SPEC.md. Read it before doing anything.
 
 ## Notes for the next session
 
-M1, M2 (including corpus v2 and Phase C), and M3 are accepted. M3 was accepted
-on 2026-10-22 after Inspector and all five Claude Desktop checks passed; the
-student independently confirmed the Apple FY2026 Q3 values in the source 10-Q.
-M4 is being started in Claude Code (prior milestones were built with Codex).
-Follow the student's M4 task: design first, then stop for approval.
+M1, M2 (including corpus v2 and Phase C), M3 and M4 are accepted. M3 was
+accepted on 2026-10-22 after Inspector and all five Claude Desktop checks passed;
+the student independently confirmed the Apple FY2026 Q3 values in the source 10-Q.
+M4 (built in Claude Code; M1-M3 were built with Codex) was accepted on 2026-11-09
+after its final acceptance run. M5 has not started; wait for the student's M5 task
+and design first, then stop for approval.
 - M1 data: 20 companies, 275 filings, 2,715 facts (563 derived). Ingestion
   cutoff 2026-10-19, inclusive by filing date (America/New_York). Snapshot
   2026-10-19-v1 at data/raw/2026-10-19-v1/ (bodies keyed by URL SHA-256;
@@ -73,10 +74,27 @@ Follow the student's M4 task: design first, then stop for approval.
   full run: 167 passed, 1 skipped; Ruff clean. See docs/M3_STATUS.md and
   docs/M3_HANDOFF.md (Inspector needs explicit -e env flags; Desktop is MSIX and
   never reads .env).
-- Open items for M4: the planner must resolve explicit fiscal periods into
-  search filters (unfiltered cross-year search can miss the requested filing).
-  Adjacent-chunk navigation from get_passage is an M4/M6 candidate only. CVX
-  FY2024 Item 7's boundary runs slightly late into Item 8 (documented, not fixed).
+- M4 agent runtime (accepted; see docs/M4_STATUS.md, docs/M4_ACCEPTANCE.md and
+  D051-D082): hand-written provider-neutral loop on anthropic 2.1.0 (API
+  2026-10-21, no sampling params), planner -> direct metric lookups + Haiku
+  filings workers -> analyst (quant tools) -> two-stage verifier (deterministic
+  Stage 1, LLM Stage 2 over all current claims, summary and caveats) with up to
+  two revisions. Run `.venv/Scripts/python.exe -m filinglens.cli ask "<question>"
+  --max-cost-usd 0.50` and `... -m filinglens.cli replay <run_id>` (prints
+  identical/DIVERGED; no LLM, servers or network). Models come only from
+  PLANNER_MODEL/WORKER_MODEL/VERIFIER_MODEL, prices only from
+  filinglens/llm/pricing.toml; MAX_RUN_TOKENS=200000. Guards: argument locks and
+  explicit fiscal-period search filters (the M3 cross-year lesson), duplicate-call
+  memo, final-step tool_choice none, untraced quant inputs rejected, 4 passage
+  reads per filings worker, revision budget reservation, and budget finalization
+  that keeps only verified content. Final run: 6/6 answers, 6/6 replays
+  identical, $0.98. Known limitations: Tesla explanatory run uses ~190K of 200K
+  tokens; passage-quoted figures cannot feed quant tools (D079 false positive);
+  cited facts may come from a later filing's comparative column (M1 rule); the
+  analyst still issues dependent calculations one per step. Deferred: D082 (M5
+  budget design; M6 quote-traced inputs and thinking display). Adjacent-chunk
+  navigation from get_passage remains an M6 candidate; CVX FY2024 Item 7's
+  boundary runs slightly late into Item 8 (documented, not fixed).
 - Reuse the SEC client's cache, identifying User-Agent, shared rate limit, and
   retries; run one ingestion process at a time.
 - Ask before schema changes or dependencies not listed in SPEC.md. YAML support
@@ -89,6 +107,6 @@ Follow the student's M4 task: design first, then stop for approval.
   On this machine uv needs `--link-mode=copy` (e.g. `uv sync --frozen
   --link-mode=copy`). The CLI uses the Windows selector event loop for Psycopg
   and an IPv4 hint for localhost.
-- See docs/DECISIONS.md (D001-D066) for design history. docs/M1_STATUS.md and
+- See docs/DECISIONS.md (D001-D082) for design history. docs/M1_STATUS.md and
   older pending-verification wording predate acceptance; the acceptances
   recorded here supersede them.

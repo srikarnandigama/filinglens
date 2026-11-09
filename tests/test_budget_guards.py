@@ -23,6 +23,7 @@ from tests.agent_fakes import (
     fake_prices,
     final,
     make_context,
+    requested_ids,
 )
 from tests.test_agent_units import discovery
 
@@ -124,20 +125,21 @@ def analyst(rounds: list[int], revision_usage: Usage):
 
 def verifier(step, messages, model):
     draft = next(body for tag, _, body in envelopes(messages[:1]) if tag == "evidence")
+    claim_ids, caveat_ids = requested_ids(messages)
+    texts = {c["id"]: c["text"] for c in draft["claims"]}
     return final(
         {
             "verdicts": [
                 {
-                    "claim_id": c["id"],
-                    "verdict": "needs_revision" if c["text"] == WEAK else "supported",
-                    "reason": "overstates the evidence" if c["text"] == WEAK else "ok",
+                    "claim_id": cid,
+                    "verdict": "needs_revision" if texts[cid] == WEAK else "supported",
+                    "reason": "overstates the evidence" if texts[cid] == WEAK else "ok",
                 }
-                for c in draft["claims"]
+                for cid in claim_ids
             ],
             "summary_verdict": {"claim_id": "summary", "verdict": "supported", "reason": "ok"},
             "caveat_verdicts": [
-                {"claim_id": cid, "verdict": "supported", "reason": "ok"}
-                for cid in draft["caveats"]
+                {"claim_id": cid, "verdict": "supported", "reason": "ok"} for cid in caveat_ids
             ],
         }
     )
@@ -178,9 +180,12 @@ async def test_revision_is_skipped_when_the_budget_cannot_cover_it():
     assert set(skipped["dropped"]) == {"c2"}
     answer = result.answer
     assert [c.id for c in answer.claims] == ["c1"] and answer.status == "partially_answered"
-    assert any(
-        c.startswith("Removed unsupported claim: Revenue grew strongly.") for c in answer.caveats
-    )
+    assert "1 claim could not be verified and was removed." in answer.caveats
+    assert not any("Revenue grew strongly" in c or "overstates" in c for c in answer.caveats)
+    assert skipped["removed"]["c2"] == {
+        "text": "Revenue grew strongly.",
+        "reasons": ["verifier (needs_revision): overstates the evidence"],
+    }  # full text and verifier reason stay in the trace (D078)
     assert not of_type(events, "budget_finalized")
 
     # With room for the estimate the revision runs and is verified normally.
@@ -207,12 +212,14 @@ async def test_budget_stop_after_a_draft_finalizes_only_verified_content_and_rep
     assert [c.id for c in answer.claims] == ["c1"]  # exact form passed Stage 1 and Stage 2
     assert answer.final_value == "400" and answer.summary == "TEST revenue was 400 USD."
     assert answer.caveats[0] == CAVEAT  # verified in round 0, unchanged in the revision
-    assert any(
-        c.startswith("Removed unverified claim: TEST revenue was reported") for c in answer.caveats
-    )
-    assert answer.caveats[-1].startswith("Verification was cut short by the run's token budget")
+    assert answer.caveats[1:] == [
+        "1 claim could not be verified and was removed.",
+        "Verification was cut short by the run's token budget (MAX_RUN_TOKENS); only claims "
+        "verified in both stages were kept.",
+    ]
     (event,) = of_type(events, "budget_finalized")
     assert event["kept"] == ["c1"] and set(event["dropped"]) == {"c2"}
+    assert event["removed"]["c2"]["text"] == "TEST revenue was reported for FY2025 Q1."
     assert not [p for p in of_type(events, "llm_call") if p["instance"] == "verifier:r1"]
 
     meta = {**store.runs[result.run_id], "question": "What was TEST revenue in FY2025 Q1?"}

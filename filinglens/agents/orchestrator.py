@@ -185,15 +185,40 @@ async def _execute_subtasks(
     return {r.subtask_id: r for r in results if r is not None}
 
 
-def _drop(answer: Answer, failures: dict[str, list[str]], label: str = "unsupported") -> Answer:
-    kept = [c for c in answer.claims if c.id not in failures]
-    caveats = [c for i, c in enumerate(answer.caveats) if caveat_id(i) not in failures]
+def _count(n: int, noun: str) -> str:
+    return (
+        f"1 {noun} could not be verified and was removed."
+        if n == 1
+        else (f"{n} {noun}s could not be verified and were removed.")
+    )
+
+
+def removed_items(answer: Answer, failures: dict[str, list[str]]) -> dict[str, dict]:
+    """Full text and verifier reasons of everything dropped; for the trace only (D078)."""
+    items = {
+        c.id: {"text": c.text, "reasons": failures[c.id]} for c in answer.claims if c.id in failures
+    }
     for i, text in enumerate(answer.caveats):
         if caveat_id(i) in failures:
-            caveats.append(f"Removed {label} caveat: {text} ({'; '.join(failures[caveat_id(i)])})")
-    for claim in answer.claims:
-        if claim.id in failures:
-            caveats.append(f"Removed {label} claim: {claim.text} ({'; '.join(failures[claim.id])})")
+            items[caveat_id(i)] = {"text": text, "reasons": failures[caveat_id(i)]}
+    for key in ("summary", "answer"):
+        if key in failures:
+            items[key] = {
+                "text": answer.summary if key == "summary" else None,
+                "reasons": failures[key],
+            }
+    return items
+
+
+def _drop(answer: Answer, failures: dict[str, list[str]]) -> Answer:
+    """Remove failing items. User-facing caveats stay neutral; reasons live in the trace (D078)."""
+    kept = [c for c in answer.claims if c.id not in failures]
+    caveats = [c for i, c in enumerate(answer.caveats) if caveat_id(i) not in failures]
+    dropped_caveats = sum(caveat_id(i) in failures for i in range(len(answer.caveats)))
+    if dropped_caveats:
+        caveats.append(_count(dropped_caveats, "caveat"))
+    if len(kept) < len(answer.claims):
+        caveats.append(_count(len(answer.claims) - len(kept), "claim"))
     final_value, final_unit, final_id = answer.final_value, answer.final_unit, answer.final_claim_id
     status = answer.status
     if final_id in failures or "answer" in failures:
@@ -204,7 +229,7 @@ def _drop(answer: Answer, failures: dict[str, list[str]], label: str = "unsuppor
         status = "not_available"
     summary = answer.summary
     if "summary" in failures:
-        caveats.append(f"Summary replaced after verification: {'; '.join(failures['summary'])}")
+        caveats.append("Summary rewritten from verified claims.")
         summary = " ".join(c.text for c in kept) or "No verified claims remain."
     return Answer(
         status=status,
@@ -262,7 +287,7 @@ def budget_finalize(
     for i, text in enumerate(answer.caveats):
         if text not in verified.caveats:
             failures[caveat_id(i)] = [unverified]
-    final = _drop(answer, failures, label="unverified")
+    final = _drop(answer, failures)
     final = final.model_copy(
         update={
             "status": "partially_answered" if final.claims else "not_available",
@@ -321,7 +346,7 @@ async def orchestrate(
             model=models["planner"],
             provider=cfg.provider,
             output_model=Answer,
-            toolbox=Toolbox(ctx, instance) if cfg.use_quant_tools else None,
+            toolbox=Toolbox(ctx, instance, traced_inputs=True) if cfg.use_quant_tools else None,
             max_steps=cfg.max_steps,
             max_tokens=cfg.max_tokens_per_call,
             effort=cfg.effort.get("analyst"),
@@ -351,8 +376,9 @@ async def orchestrate(
             verification_log,
         )
     except BudgetExceeded as exc:  # D073: never discard a draft; keep only verified content
+        draft = verified.draft
         answer, dropped = budget_finalize(
-            verified.draft, ctx.ledger, cfg.use_quant_tools, verified, exc.kind
+            draft, ctx.ledger, cfg.use_quant_tools, verified, exc.kind
         )
         ctx.budget_finalized = {
             "type": "BudgetExceeded",
@@ -363,7 +389,12 @@ async def orchestrate(
         await rec.emit(
             "orchestrator",
             "budget_finalized",
-            {**ctx.budget_finalized, "dropped": dropped, "kept": [c.id for c in answer.claims]},
+            {
+                **ctx.budget_finalized,
+                "dropped": dropped,
+                "removed": removed_items(draft, dropped),
+                "kept": [c.id for c in answer.claims],
+            },
         )
     await rec.emit("analyst", "final", _final_payload(answer))
     return answer, verification_log
@@ -450,11 +481,17 @@ async def _verify_and_revise(
         if not cfg.verifier or not failures:
             break
         if round_no == cfg.revision_rounds:
+            removed = removed_items(answer, failures)
             answer = _drop(answer, failures)
-            await rec.emit("verifier", "verification", {"round": round_no, "dropped": failures})
+            await rec.emit(
+                "verifier",
+                "verification",
+                {"round": round_no, "dropped": failures, "removed": removed},
+            )
             break
         needed, remaining = revision_estimate(ctx.budget), ctx.budget.remaining_tokens
         if needed > remaining:  # D072: a revision that cannot also be verified is not started
+            removed = removed_items(answer, failures)
             answer = _drop(answer, failures)
             await rec.emit(
                 "orchestrator",
@@ -464,6 +501,7 @@ async def _verify_and_revise(
                     "estimated_tokens": needed,
                     "remaining_tokens": remaining,
                     "dropped": failures,
+                    "removed": removed,
                 },
             )
             break

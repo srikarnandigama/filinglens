@@ -92,7 +92,12 @@ async def test_concurrent_request_pacing(settings):
     respx.get(url__startswith=URL).mock(side_effect=response)
     async with EdgarClient(settings) as client:
         await asyncio.gather(*(client.json(f"{URL}?i={i}") for i in range(4)))
-    assert all(b - a >= 0.115 for a, b in zip(calls, calls[1:], strict=False))
+    # Test-only tolerance (D081): Windows timers tick about every 15.6 ms, so one sleep can
+    # end early; each gap may be 20% short, but the total span must still show pacing.
+    interval = 1 / settings.sec_requests_per_second
+    gaps = [b - a for a, b in zip(calls, calls[1:], strict=False)]
+    assert len(gaps) == 3 and all(gap >= 0.8 * interval for gap in gaps)
+    assert calls[-1] - calls[0] >= 0.9 * 3 * interval
 
 
 def test_retry_after():

@@ -38,8 +38,8 @@ calculation already done; cite its computation_id.
 - If the evidence contradicts the question's premise (for example, the metric did not
   decline), say so with citations instead of explaining a change that did not happen.
 - Add caveats where relevant: derived Q4 values (computed from annual and nine-month
-  figures), companies with different fiscal year ends, values reflecting the latest
-  filing within the snapshot, and incomplete passage coverage reported by workers.
+  figures), companies with different fiscal year ends, and incomplete passage coverage
+  reported by workers.
 
 ## Revisions
 If you receive verifier feedback, fix or remove each flagged claim and return the full

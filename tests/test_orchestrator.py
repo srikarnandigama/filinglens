@@ -5,6 +5,7 @@ runtime, so these tests exercise period resolution, locks, the ledger and verifi
 embedding financial facts.
 """
 
+import json
 import os
 from decimal import Decimal
 
@@ -164,6 +165,10 @@ def verifier_all_supported(step, messages, model):
                 for c in draft["claims"]
             ],
             "summary_verdict": {"claim_id": "summary", "verdict": "supported", "reason": "ok"},
+            "caveat_verdicts": [
+                {"claim_id": cid, "verdict": "supported", "reason": "matches the run evidence"}
+                for cid in draft["caveats"]
+            ],
         }
     )
 
@@ -664,3 +669,53 @@ def test_no_quant_mode_and_not_available_plan(tmp_path):
     )
     assert result.answer.status == "not_available" and result.answer.claims == []
     assert {r["role"] for r in provider.requests} == {"planner"}
+
+
+def test_unsupported_caveat_is_revised_or_dropped(tmp_path):
+    def flag_caveats(step, messages, model):
+        response = json.loads(verifier_all_supported(step, messages, model).text)
+        for verdict in response["caveat_verdicts"]:
+            verdict.update(verdict="unsupported", reason="not in the run evidence")
+        return final(response)
+
+    def analyst(rounds, keep):
+        def handle(step, messages, model):
+            rounds.append(messages[0].text)
+            claims = two_claims(records(messages), bump_second=False)
+            caveats = ["This is the latest filing in the snapshot."]
+            return final(
+                {
+                    "status": "answered",
+                    "summary": "Two quarters.",
+                    "claims": claims,
+                    "caveats": caveats if keep or len(rounds) == 1 else [],
+                }
+            )
+
+        return handle
+
+    for keep in (False, True):
+        rounds: list[str] = []
+        result, provider = run(
+            "Apple revenue in fiscal Q1 and Q2 2025?",
+            {
+                "planner": planner(["AAPL"], aapl_plan),
+                "analyst": analyst(rounds, keep),
+                "verifier": flag_caveats,
+            },
+            tmp_path,
+        )
+        log = result.verification
+        assert log[0]["failing"].keys() == {"caveat_1"}
+        assert log[0]["llm"]["caveat_1"]["verdict"] == "unsupported"
+        assert "caveat_1" in rounds[1] and "caveat_N is the N-th entry" in rounds[1]
+        assert [c.id for c in result.answer.claims] == ["c1", "c2"]
+        if keep:  # still flagged after every revision round: dropped like a claim
+            assert len(rounds) == 3 and len(log) == 3
+            assert result.answer.caveats == [
+                "Removed unsupported caveat: This is the latest filing in the snapshot. "
+                "(verifier (unsupported): not in the run evidence)"
+            ]
+        else:
+            assert len(rounds) == 2 and log[-1]["failing"] == {}
+            assert result.answer.caveats == []

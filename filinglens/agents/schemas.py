@@ -105,6 +105,8 @@ class SubTask(Contract):
 class PeriodResolution(Contract):
     phrase: str
     ticker: Ticker | None = None
+    # Only for a phrase that applies to every company in the plan: list them all (D069).
+    tickers: list[Ticker] | None = None
     resolved: list[PeriodRef]
     basis: str
 
@@ -211,3 +213,4 @@ class ClaimVerdict(Contract):
 class VerifierOutput(Contract):
     verdicts: list[ClaimVerdict]
     summary_verdict: ClaimVerdict
+    caveat_verdicts: list[ClaimVerdict] = Field(default_factory=list)  # D070

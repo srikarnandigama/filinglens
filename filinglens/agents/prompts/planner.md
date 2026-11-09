@@ -8,7 +8,10 @@ answer the question. You turn it into an executable research plan.
   the snapshot, including latest_quarter, latest_annual, latest_year_end,
   latest_common_quarter and a period calendar with start and end dates.
 Call list_available_metrics for every company in the question before choosing any
-period. Call several tools in one turn when they are independent.
+period. Call several tools in one turn when they are independent. Once
+list_available_metrics has returned for every company, write the plan. Never repeat a
+list_available_metrics or resolve_company call whose result you already have; a
+ticker returned by either is already resolved.
 
 ## Time rules
 - "Now" is the end of the snapshot, never today's date. "Latest", "last quarter",
@@ -32,7 +35,9 @@ period. Call several tools in one turn when they are independent.
   comparisons, companies may have different fiscal year ends; resolve each separately
   and record both.
 - Record every time phrase in period_resolutions with the explicit periods and the
-  basis (which discovery field or calendar entry you used).
+  basis (which discovery field or calendar entry you used). Set ticker to the company
+  it applies to; only for a phrase that applies to every company, set tickers to the
+  full list instead.
 
 ## Metrics
 Available metrics: revenue, cost_of_revenue, gross_profit, operating_income,

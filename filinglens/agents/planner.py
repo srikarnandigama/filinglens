@@ -40,6 +40,7 @@ def plan_validator(ledger: Ledger) -> Callable[[Plan], None]:
         for ticker in sorted(tickers):
             if ticker not in ledger.discovery:
                 errors.append(f"Call list_available_metrics for {ticker} before planning.")
+        errors.extend(_resolution_errors(plan))
         for s in plan.subtasks:
             for dep in s.depends_on:
                 if dep not in ids:
@@ -71,6 +72,32 @@ def plan_validator(ledger: Ledger) -> Callable[[Plan], None]:
             raise SemanticError("\n".join(errors))
 
     return validate
+
+
+def _resolution_errors(plan: Plan) -> list[str]:
+    """Every period resolution names its company; a shared phrase lists all of them (D069)."""
+    if not plan.companies:
+        return []
+    companies = sorted(plan.companies)
+    errors = []
+    for r in plan.period_resolutions:
+        if r.ticker is not None and r.tickers is not None:
+            errors.append(f'period_resolutions "{r.phrase}": set ticker or tickers, not both.')
+        elif r.ticker is not None and r.ticker not in plan.companies:
+            errors.append(
+                f'period_resolutions "{r.phrase}": ticker {r.ticker} is not in companies.'
+            )
+        elif r.tickers is not None and sorted(set(r.tickers)) != companies:
+            errors.append(
+                f'period_resolutions "{r.phrase}": tickers must list every company '
+                f"{companies}; otherwise give one resolution per ticker."
+            )
+        elif r.ticker is None and r.tickers is None:
+            errors.append(
+                f'period_resolutions "{r.phrase}": ticker is null. Set the ticker it applies to, '
+                f"or, only if it applies to all companies, set tickers to {companies}."
+            )
+    return errors
 
 
 def _cycles(plan: Plan) -> list[str]:

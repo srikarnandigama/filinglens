@@ -74,9 +74,12 @@ class LLMRequest(BaseModel):
     max_tokens: int
     effort: str | None = None
     temperature: float | None = None
+    # "none" only on an agent's final step (D068); unset keeps pre-D068 fingerprints valid.
+    tool_choice: Literal["none"] | None = None
 
     def fingerprint(self) -> str:
-        return canonical_sha256(self.model_dump(mode="json"))
+        exclude = {"tool_choice"} if self.tool_choice is None else set()
+        return canonical_sha256(self.model_dump(mode="json", exclude=exclude))
 
 
 class Provider(Protocol):
@@ -92,6 +95,7 @@ class Provider(Protocol):
         max_tokens: int,
         temperature: float | None = None,
         effort: str | None = None,
+        tool_choice: Literal["none"] | None = None,
     ) -> LLMResponse: ...
 
 

@@ -4,6 +4,7 @@ import asyncio
 import importlib.metadata
 import subprocess
 import time
+from dataclasses import dataclass, field
 from decimal import Decimal
 from pathlib import Path
 from typing import Any, Literal
@@ -11,7 +12,7 @@ from uuid import UUID, uuid4
 
 from pydantic import BaseModel, Field
 
-from filinglens.agents.budget import RunBudget
+from filinglens.agents.budget import BudgetExceeded, RunBudget
 from filinglens.agents.context import LiveGateway, RunContext
 from filinglens.agents.ledger import Ledger
 from filinglens.agents.loop import run_agent
@@ -29,7 +30,13 @@ from filinglens.agents.schemas import (
 from filinglens.agents.settings import RuntimeSettings
 from filinglens.agents.toolbox import Toolbox, wrap_evidence
 from filinglens.agents.tracing import PostgresTraceStore, Recorder, RunTotals, TraceStore
-from filinglens.agents.verifier import CheckResult, deterministic_checks, run_verifier
+from filinglens.agents.verifier import (
+    CheckResult,
+    caveat_id,
+    caveat_index,
+    deterministic_checks,
+    run_verifier,
+)
 from filinglens.agents.views import DISCOVERY_VIEW_VERSION
 from filinglens.agents.workers import (
     SubtaskResult,
@@ -71,6 +78,7 @@ class RunConfig(BaseModel):
     temperature: float | None = None
     max_concurrency: int = 4
     revision_rounds: int = 2
+    max_passage_reads: int = 4  # get_passage calls per filings worker (D074)
 
 
 class RunResult(BaseModel):
@@ -143,7 +151,8 @@ def _revision_task(
         f"{base}\n\nYour previous answer:\n{wrap_evidence(answer.model_dump(mode='json'))}\n\n"
         f"Earlier computations you may cite by computation_id:\n{wrap_evidence(computations)}\n\n"
         f"Verifier feedback to address:\n{wrap_evidence(feedback)}\n\n"
-        "Fix or remove every flagged claim and return the full revised Answer JSON object."
+        "Fix or remove every flagged claim and caveat (caveat_N is the N-th entry of caveats) "
+        "and return the full revised Answer JSON object."
     )
 
 
@@ -176,14 +185,15 @@ async def _execute_subtasks(
     return {r.subtask_id: r for r in results if r is not None}
 
 
-def _drop(answer: Answer, failures: dict[str, list[str]]) -> Answer:
+def _drop(answer: Answer, failures: dict[str, list[str]], label: str = "unsupported") -> Answer:
     kept = [c for c in answer.claims if c.id not in failures]
-    caveats = list(answer.caveats)
+    caveats = [c for i, c in enumerate(answer.caveats) if caveat_id(i) not in failures]
+    for i, text in enumerate(answer.caveats):
+        if caveat_id(i) in failures:
+            caveats.append(f"Removed {label} caveat: {text} ({'; '.join(failures[caveat_id(i)])})")
     for claim in answer.claims:
         if claim.id in failures:
-            caveats.append(
-                f"Removed unsupported claim: {claim.text} ({'; '.join(failures[claim.id])})"
-            )
+            caveats.append(f"Removed {label} claim: {claim.text} ({'; '.join(failures[claim.id])})")
     final_value, final_unit, final_id = answer.final_value, answer.final_unit, answer.final_claim_id
     status = answer.status
     if final_id in failures or "answer" in failures:
@@ -205,6 +215,65 @@ def _drop(answer: Answer, failures: dict[str, list[str]]) -> Answer:
         final_claim_id=final_id,
         caveats=caveats,
     )
+
+
+REVISION_MARGIN = Decimal("1.5")
+BUDGET_LIMITS = {
+    "tokens": "the run's token budget (MAX_RUN_TOKENS)",
+    "cost": "the run's cost cap",
+    "steps": "an agent's step limit",
+}
+
+
+def revision_estimate(budget: RunBudget) -> int:
+    """Tokens one revision round needs: the largest analyst call plus the largest verifier
+    call measured in this run, times a 1.5 margin for the longer revision prompt (D072)."""
+    largest = budget.max_call_tokens.get("analyst", 0) + budget.max_call_tokens.get("verifier", 0)
+    return int(largest * REVISION_MARGIN)
+
+
+@dataclass
+class Verified:
+    """Exact forms that passed Stage 2 in this run, plus the latest complete draft."""
+
+    claims: set[str] = field(default_factory=set)  # claim keys (_claim_key)
+    summaries: set[str] = field(default_factory=set)
+    caveats: set[str] = field(default_factory=set)
+    draft: Answer | None = None
+
+
+def budget_finalize(
+    answer: Answer, ledger: Ledger, use_quant_tools: bool, verified: Verified, kind: str
+) -> tuple[Answer, dict[str, list[str]]]:
+    """Keep only what passes Stage 1 now and already passed Stage 2 in its exact form (D073)."""
+    checks = deterministic_checks(answer, ledger, use_quant_tools)
+    unverified = "not verified before the run stopped"
+    failures: dict[str, list[str]] = {}
+    for claim in answer.claims:
+        check = checks[claim.id]
+        if check.verdict != "supported":
+            failures[claim.id] = check.reasons or [check.verdict]
+        elif _claim_key(claim) not in verified.claims:
+            failures[claim.id] = [unverified]
+    if checks["summary"].verdict != "supported" or answer.summary not in verified.summaries:
+        failures["summary"] = checks["summary"].reasons or [unverified]
+    if "answer" in checks:
+        failures["answer"] = checks["answer"].reasons
+    for i, text in enumerate(answer.caveats):
+        if text not in verified.caveats:
+            failures[caveat_id(i)] = [unverified]
+    final = _drop(answer, failures, label="unverified")
+    final = final.model_copy(
+        update={
+            "status": "partially_answered" if final.claims else "not_available",
+            "caveats": [
+                *final.caveats,
+                f"Verification was cut short by {BUDGET_LIMITS.get(kind, kind)}; only claims "
+                "verified in both stages were kept.",
+            ],
+        }
+    )
+    return Answer.model_validate(final.model_dump()), failures
 
 
 async def orchestrate(
@@ -264,10 +333,59 @@ async def orchestrate(
             )
         return answer
 
-    answer = await analyst(0, base_task)
-    supported: set[str] = set()
-    supported_summaries: set[str] = set()
+    answer = await analyst(0, base_task)  # no draft yet: a budget stop here is a run error
+    verified = Verified(draft=answer)
     verification_log: list[dict] = []
+    try:
+        answer = await _verify_and_revise(
+            ctx,
+            cfg,
+            models,
+            prompts,
+            question,
+            evidence,
+            base_task,
+            answer,
+            analyst,
+            verified,
+            verification_log,
+        )
+    except BudgetExceeded as exc:  # D073: never discard a draft; keep only verified content
+        answer, dropped = budget_finalize(
+            verified.draft, ctx.ledger, cfg.use_quant_tools, verified, exc.kind
+        )
+        ctx.budget_finalized = {
+            "type": "BudgetExceeded",
+            "kind": exc.kind,
+            "message": str(exc),
+            "handled": "budget_finalized",
+        }
+        await rec.emit(
+            "orchestrator",
+            "budget_finalized",
+            {**ctx.budget_finalized, "dropped": dropped, "kept": [c.id for c in answer.claims]},
+        )
+    await rec.emit("analyst", "final", _final_payload(answer))
+    return answer, verification_log
+
+
+async def _verify_and_revise(
+    ctx,
+    cfg,
+    models,
+    prompts,
+    question,
+    evidence,
+    base_task,
+    answer,
+    analyst,
+    verified,
+    verification_log,
+) -> Answer:
+    """Verification rounds with revisions; `answer` always holds the latest complete draft."""
+    rec = ctx.recorder
+    supported, supported_summaries = verified.claims, verified.summaries
+    supported_caveats = verified.caveats
     for round_no in range(cfg.revision_rounds + 1):
         checks = deterministic_checks(answer, ctx.ledger, cfg.use_quant_tools)
         failures = {
@@ -285,7 +403,15 @@ async def orchestrate(
             summary_pending = (
                 answer.summary not in supported_summaries and "summary" not in failures
             )
-            if to_check or (summary_pending and not failures):
+            caveats_pending = {
+                caveat_id(i) for i, c in enumerate(answer.caveats) if c not in supported_caveats
+            }
+            if to_check or ((summary_pending or caveats_pending) and not failures):
+                computations = {
+                    cid: r.model_dump(mode="json")
+                    for cid, r in ctx.ledger.computations.items()
+                    if not r.is_error
+                }
                 out = await run_verifier(
                     ctx,
                     cfg,
@@ -295,8 +421,13 @@ async def orchestrate(
                     answer=answer,
                     claim_ids=to_check,
                     round_no=round_no,
+                    caveat_ids=caveats_pending,
+                    run_evidence={**evidence, "computations": computations},
                 )
-                for verdict in [*out.verdicts, out.summary_verdict]:
+                for verdict in out.caveat_verdicts:
+                    if verdict.verdict == "supported":
+                        supported_caveats.add(answer.caveats[caveat_index(verdict.claim_id)])
+                for verdict in [*out.verdicts, out.summary_verdict, *out.caveat_verdicts]:
                     llm_verdicts[verdict.claim_id] = verdict.model_dump(mode="json")
                     if verdict.verdict != "supported":
                         failures.setdefault(verdict.claim_id, []).append(
@@ -322,11 +453,25 @@ async def orchestrate(
             answer = _drop(answer, failures)
             await rec.emit("verifier", "verification", {"round": round_no, "dropped": failures})
             break
+        needed, remaining = revision_estimate(ctx.budget), ctx.budget.remaining_tokens
+        if needed > remaining:  # D072: a revision that cannot also be verified is not started
+            answer = _drop(answer, failures)
+            await rec.emit(
+                "orchestrator",
+                "revision_skipped",
+                {
+                    "round": round_no + 1,
+                    "estimated_tokens": needed,
+                    "remaining_tokens": remaining,
+                    "dropped": failures,
+                },
+            )
+            break
         answer = await analyst(
             round_no + 1, _revision_task(base_task, answer, failures, ctx.ledger)
         )
-    await rec.emit("analyst", "final", _final_payload(answer))
-    return answer, verification_log
+        verified.draft = answer
+    return answer
 
 
 def _final_payload(answer: Answer) -> dict:
@@ -472,6 +617,7 @@ async def _run(
     )
     try:
         answer, log = await orchestrate(ctx, question, cfg, models, prompts)
+        error = ctx.budget_finalized  # status stays "done"; the stop reason is kept (D073)
     except Exception as exc:  # recorded and reported; never swallowed silently
         status, error = "error", _error_payload(exc)
         await recorder.emit("orchestrator", "error", error)

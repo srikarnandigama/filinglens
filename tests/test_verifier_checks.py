@@ -1,8 +1,15 @@
 """Deterministic verification (D056) on a synthetic ledger; values are test data, not SEC facts."""
 
 from filinglens.agents.ledger import Ledger
+from filinglens.agents.orchestrator import RunConfig, _drop
 from filinglens.agents.schemas import Answer
-from filinglens.agents.verifier import check_claim, deterministic_checks, resolve_field
+from filinglens.agents.verifier import (
+    check_claim,
+    deterministic_checks,
+    resolve_field,
+    run_verifier,
+)
+from tests.agent_fakes import FakeHub, Script, envelopes, final, make_context
 
 CHUNK = "chk_" + "a" * 64
 
@@ -243,3 +250,62 @@ def test_summary_numbers_and_final_value():
     assert checks["c1"].verdict == "supported"
     assert checks["summary"].verdict == "needs_revision" and "31.5" in checks["summary"].reasons[0]
     assert checks["answer"].verdict == "needs_revision"
+
+
+async def test_verifier_reviews_caveats_against_run_evidence():
+    answer = Answer.model_validate(
+        {
+            "status": "answered",
+            "summary": "s",
+            "claims": [claim().model_dump(mode="json")],
+            "caveats": ["The Q4 value is derived.", "This is the latest filing in the snapshot."],
+        }
+    )
+    verdict = {"claim_id": "c1", "verdict": "supported", "reason": "ok"}
+    summary = {"claim_id": "summary", "verdict": "supported", "reason": "ok"}
+    caveats = [
+        {"claim_id": "caveat_1", "verdict": "supported", "reason": "derived flag set"},
+        {"claim_id": "caveat_2", "verdict": "unsupported", "reason": "no filing list in evidence"},
+    ]
+    provider = Script(
+        final({"verdicts": [verdict], "summary_verdict": summary}),  # caveats missing: retried
+        final({"verdicts": [verdict], "summary_verdict": summary, "caveat_verdicts": caveats}),
+    )
+    ctx, _ = make_context(FakeHub({}), provider)
+    ctx.ledger = ledger()
+    out = await run_verifier(
+        ctx,
+        RunConfig(),
+        {"verifier": "fake-large"},
+        {"verifier": ("You are the verifier for tests.", "x")},
+        question="q",
+        answer=answer,
+        claim_ids={"c1"},
+        round_no=0,
+        caveat_ids={"caveat_1", "caveat_2"},
+        run_evidence={"facts": [{"fact_id": "1", "derived": True}]},
+    )
+    assert [v.verdict for v in out.caveat_verdicts] == ["supported", "unsupported"]
+    task = provider.seen[0][0].text
+    assert "This is the latest filing in the snapshot." in task and '"derived": true' in task
+    draft = envelopes(provider.seen[0][:1])[0][2]
+    assert draft["caveats"] == {"caveat_1": answer.caveats[0], "caveat_2": answer.caveats[1]}
+    assert "caveat_verdict per caveat id ['caveat_1', 'caveat_2']" in provider.seen[1][-1].text
+
+
+def test_unsupported_caveats_are_dropped_like_claims():
+    answer = Answer.model_validate(
+        {
+            "status": "answered",
+            "summary": "s",
+            "claims": [claim().model_dump(mode="json")],
+            "caveats": ["kept", "unsupported statement"],
+        }
+    )
+    dropped = _drop(answer, {"caveat_2": ["verifier (unsupported): not in evidence"]})
+    assert dropped.caveats == [
+        "kept",
+        "Removed unsupported caveat: unsupported statement "
+        "(verifier (unsupported): not in evidence)",
+    ]
+    assert dropped.claims == answer.claims and dropped.status == "answered"

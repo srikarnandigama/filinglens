@@ -30,6 +30,8 @@ class FactRecord(BaseModel):
     source_accession: str | None = None
     source_url: str | None = None
     applicability_chunk_ids: list[str] = Field(default_factory=list)
+    # Derived values only: formula and signed inputs, so derivation caveats are checkable (D075).
+    derivation: dict[str, Any] | None = None
     synthetic_id: bool = False
 
 
@@ -125,10 +127,54 @@ class Ledger:
                 source_accession=fact.get("source_accession"),
                 source_url=fact.get("source_url"),
                 applicability_chunk_ids=evidence,
+                derivation=self._derivation(fact),
                 synthetic_id=fact.get("fact_id") is None,
             )
             ids.append(fid)
         return ids
+
+    def _derivation(self, fact: dict) -> dict[str, Any] | None:
+        inputs = fact.get("derivation_inputs") or []
+        if not fact.get("derived") or not inputs or fact.get("value") is None:
+            return None
+        rows, terms, total = [], [], Decimal(0)
+        for item in inputs:
+            coefficient, value = Decimal(str(item["coefficient"])), Decimal(item["value"])
+            total += coefficient * value
+            start, end = item.get("start_date"), item["end_date"]
+            period = f"{start} to {end}" if start else f"as of {end}"
+            source = item.get("source") or {}
+            match = next(
+                (
+                    f.fact_id
+                    for f in self.facts.values()
+                    if not f.synthetic_id
+                    and f.value is not None
+                    and (f.period_start, f.period_end) == (start, end)
+                    and Decimal(f.value) == value
+                ),
+                None,
+            )
+            rows.append(
+                {
+                    "coefficient": str(item["coefficient"]),
+                    "value": item["value"],
+                    "concept": item.get("concept"),
+                    "period": period,
+                    "source_accession": source.get("accession"),
+                    "fact_id": match,
+                }
+            )
+            sign = "-" if coefficient < 0 else "+"
+            magnitude = "" if abs(coefficient) == 1 else f"{abs(coefficient)} x "
+            terms.append(f"{sign} {magnitude}{item['value']} ({period})")
+        return {
+            "formula": f"{fact['value']} = " + " ".join(terms).removeprefix("+ "),
+            "inputs_reproduce_value": total == Decimal(fact["value"]),
+            "inputs": rows,
+            "note": "fact_id is null when an input is not a fact fetched in this run, for "
+            "example a year-to-date value from the cited filing.",
+        }
 
     def _passage(self, hit: dict, *, full: bool) -> None:
         existing = self.passages.get(hit["chunk_id"])

@@ -266,3 +266,20 @@ async def test_openai_compat_temperature_only_when_set_and_errors_wrapped():
 
 def test_tool_call_model_defaults():
     assert ToolCall(id="x", name="y").arguments == {}
+
+
+async def test_final_step_tool_choice_none_keeps_the_tool_list():
+    client = FakeAnthropicClient(anthropic_message([{"type": "text", "text": "{}"}], "end_turn"))
+    provider = AnthropicProvider(client)
+    user = [Msg(role="user", text="q")]
+    await provider.complete(
+        system="s", messages=user, tools=[SPEC], model="m", max_tokens=9, tool_choice="none"
+    )
+    assert client.params["tool_choice"] == {"type": "none"} and len(client.params["tools"]) == 1
+    await provider.complete(system="s", messages=user, tools=[SPEC], model="m", max_tokens=9)
+    assert "tool_choice" not in client.params
+    compat = FakeOpenAIClient(completion({"role": "assistant", "content": "{}"}, "stop"))
+    await OpenAICompatProvider(compat).complete(
+        system="s", messages=[], tools=[SPEC], model="m", max_tokens=5, tool_choice="none"
+    )
+    assert compat.params["tool_choice"] == "none" and len(compat.params["tools"]) == 1

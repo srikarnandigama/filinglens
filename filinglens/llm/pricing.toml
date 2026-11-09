@@ -9,7 +9,7 @@ input_per_mtok = "2.00"
 output_per_mtok = "10.00"
 cache_read_per_mtok = ""
 cache_write_per_mtok = ""
-source = "<URL of the pricing page>"
+source = "https://platform.claude.com/docs/en/models/overview"
 checked = 2026-10-22
 
 [models."claude-haiku-5-5"]
@@ -18,5 +18,5 @@ input_per_mtok = "0.10"
 output_per_mtok = "0.50"
 cache_read_per_mtok = ""
 cache_write_per_mtok = ""
-source = "<URL of the pricing page>"
+source = "https://platform.claude.com/docs/en/models/overview"
 checked = 2026-10-22

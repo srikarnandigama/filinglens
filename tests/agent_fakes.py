@@ -114,9 +114,11 @@ class Script:
     def __init__(self, *responses: LLMResponse) -> None:
         self.responses = list(responses)
         self.seen: list[list[Msg]] = []
+        self.requests: list[dict] = []
 
     async def complete(self, *, system, messages, tools, model, max_tokens, **kw):
         self.seen.append(list(messages))
+        self.requests.append({"tools": [t.name for t in tools or []], **kw})
         return self.responses.pop(0)
 
 

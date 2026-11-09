@@ -11,7 +11,14 @@ from filinglens.agents.loop import SemanticError
 from filinglens.agents.orchestrator import RunConfig, RunResult, resolve_models
 from filinglens.agents.planner import plan_validator
 from filinglens.agents.prompts import load_prompt
-from filinglens.agents.schemas import Answer, Claim, FilingSearchParams, Plan, SubTask
+from filinglens.agents.schemas import (
+    Answer,
+    Claim,
+    FilingSearchParams,
+    PeriodResolution,
+    Plan,
+    SubTask,
+)
 from filinglens.agents.settings import RuntimeSettings
 from filinglens.agents.tracing import RunTotals
 from filinglens.agents.views import discovery_view
@@ -393,3 +400,43 @@ def test_cli_preflight_reports_missing_models_and_prices(monkeypatch, capsys):
     monkeypatch.setattr(PriceTable, "load", classmethod(lambda cls: PriceTable({})))
     assert main(["ask", "q?"]) == 1
     assert "pricing.toml has no prices for: m-big, m-small" in capsys.readouterr().err
+
+
+def test_period_resolutions_must_name_their_companies():
+    led = Ledger()
+    led.discovery["TEST"] = discovery()
+    led.discovery["PEER"] = discovery()
+    validate = plan_validator(led)
+
+    def resolved(companies=("TEST",), **fields):
+        resolution = {
+            "phrase": "most recent fiscal year",
+            "resolved": [{"fiscal_year": 2024, "fiscal_period": "FY"}],
+            "basis": "latest_annual",
+            **fields,
+        }
+        return plan([lookup("s1", 2025, "Q1")], companies).model_copy(
+            update={"period_resolutions": [PeriodResolution.model_validate(resolution)]}
+        )
+
+    validate(resolved(ticker="TEST"))
+    with pytest.raises(SemanticError, match="ticker is null"):
+        validate(resolved())
+    with pytest.raises(SemanticError, match="ZZZ is not in companies"):
+        validate(resolved(ticker="ZZZ"))
+    both = ("TEST", "PEER")
+    validate(resolved(both, tickers=["PEER", "TEST"]))  # a phrase shared by every company
+    with pytest.raises(SemanticError, match="must list every company"):
+        validate(resolved(both, tickers=["TEST"]))
+    with pytest.raises(SemanticError, match="not both"):
+        validate(resolved(both, ticker="TEST", tickers=["PEER", "TEST"]))
+    not_available = Plan.model_validate(
+        {
+            "question_type": "lookup",
+            "companies": [],
+            "period_resolutions": [{"phrase": "2031", "resolved": [], "basis": "outside"}],
+            "answerability": "out_of_scope",
+            "answerability_reason": "no company",
+        }
+    )
+    validate(not_available)  # no companies: nothing to name

@@ -42,7 +42,9 @@ def describe_citation(kind: str, ref: str, field: str | None, ledger: Ledger) ->
 def render(result: RunResult) -> str:
     lines = [f"run_id: {result.run_id}", f"status: {result.status}"]
     answer: Answer | None = result.answer
-    if result.error:
+    if result.error and result.error.get("handled") == "budget_finalized":
+        lines.append(f"budget finalized (D073): {result.error['message']}")
+    elif result.error:
         lines.append(f"error: {result.error['type']}: {result.error['message']}")
     if answer:
         lines += ["", f"[{answer.status}] {answer.summary}", ""]

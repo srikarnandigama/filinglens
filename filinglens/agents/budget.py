@@ -23,6 +23,12 @@ class RunBudget:
         self.max_cost_usd = max_cost_usd
         self.prices = prices
         self.totals = RunTotals()
+        # Largest single-call usage (all token kinds) per role, for revision reservations (D072).
+        self.max_call_tokens: dict[str, int] = {}
+
+    @property
+    def remaining_tokens(self) -> int:
+        return self.max_tokens - self.used_tokens
 
     @property
     def used_tokens(self) -> int:
@@ -39,8 +45,10 @@ class RunBudget:
                 "cost", f"Run cost ${self.totals.cost_usd} reached the ${self.max_cost_usd} cap."
             )
 
-    def add(self, model: str, usage: Usage) -> Decimal:
+    def add(self, model: str, usage: Usage, role: str | None = None) -> Decimal:
         cost = self.prices.cost(model, usage)
+        if role is not None:
+            self.max_call_tokens[role] = max(self.max_call_tokens.get(role, 0), usage.total)
         t = self.totals
         t.input_tokens += usage.input_tokens
         t.output_tokens += usage.output_tokens

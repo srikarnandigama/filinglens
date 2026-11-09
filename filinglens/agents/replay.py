@@ -106,7 +106,7 @@ class ReplayGateway:
                 f"{instance} step {step}", self._explain(instance, request, recorded, new_messages)
             )
         response = LLMResponse.model_validate(recorded["response"])
-        self.budget.add(request.model, response.usage)
+        self.budget.add(request.model, response.usage, role_of(instance))
         await self.recorder.emit(
             role_of(instance),
             "llm_call",
@@ -136,6 +136,11 @@ class ReplayGateway:
 
 async def replay_run(database_url: str, run_id: UUID) -> ReplayReport:
     meta, events = load_run(database_url, run_id)
+    return await replay_loaded(run_id, meta, events)
+
+
+async def replay_loaded(run_id: UUID, meta: dict, events: list[TraceEvent]) -> ReplayReport:
+    """Replay a run already loaded (from PostgreSQL, or from a MemoryTraceStore in tests)."""
     config = meta["config"]
     cfg = RunConfig.model_validate(config["flags"])
     models = {role: config["models"][role]["id"] for role in ("planner", "worker", "verifier")}

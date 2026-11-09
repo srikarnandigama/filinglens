@@ -35,6 +35,7 @@ def llm_call_payload(
         "max_tokens": request.max_tokens,
         "effort": request.effort,
         "temperature": request.temperature,
+        "tool_choice": request.tool_choice,
         "response": response.model_dump(mode="json"),
     }
     if step == 0:
@@ -61,11 +62,12 @@ class LiveGateway:
                 max_tokens=request.max_tokens,
                 temperature=request.temperature,
                 effort=request.effort,
+                tool_choice=request.tool_choice,
             )
         except Exception as exc:
             exc.instance, exc.step = instance, step  # lets replay match the recorded failure
             raise
-        cost = self.budget.add(request.model, response.usage)
+        cost = self.budget.add(request.model, response.usage, role_of(instance))
         payload = llm_call_payload(instance, step, request, new_messages, response)
         payload["cost_usd"] = str(cost)
         await self.recorder.emit(
@@ -87,6 +89,8 @@ class RunContext:
     budget: RunBudget
     ledger: Ledger = field(default_factory=Ledger)
     tool_counters: dict[str, int] = field(default_factory=lambda: defaultdict(int))
+    # Set when a budget stop was turned into a finalized answer (D073); stored in runs.error.
+    budget_finalized: dict | None = None
 
     def next_call_id(self, instance: str) -> str:
         self.tool_counters[instance] += 1

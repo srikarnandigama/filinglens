@@ -13,6 +13,10 @@ from filinglens.llm.base import LLMRequest, Msg, ToolResultPart
 
 FENCE = re.compile(r"```(?:json)?\s*(\{.*\})\s*```", re.DOTALL)
 MAX_FEEDBACK_CHARS = 4000
+FINAL_STEP_GUARD = (
+    "This is your last step: tool calls are disabled. Do not call any tool. Reply now with "
+    "only the final JSON object, using the results you already have."
+)
 
 
 class AgentOutputError(RuntimeError):
@@ -65,6 +69,9 @@ async def run_agent[T: BaseModel](
     sent = 0
     retried = False
     for step in range(max_steps):
+        final_step = toolbox is not None and step == max_steps - 1
+        if final_step:  # D068: the last allowed step can only return the final output.
+            messages.append(Msg(role="user", text=FINAL_STEP_GUARD))
         request = LLMRequest(
             provider=provider,
             model=model,
@@ -74,6 +81,7 @@ async def run_agent[T: BaseModel](
             max_tokens=max_tokens,
             effort=effort,
             temperature=temperature,
+            tool_choice="none" if final_step else None,
         )
         new_messages, sent = messages[sent:], len(messages)
         response = await ctx.gateway.complete(instance, step, request, new_messages)

@@ -10,6 +10,11 @@ any numeric value exactly equals the cited fact or calculation. You check the te
 - Textual claims: the cited passages actually say what the claim says. Paraphrase is
   fine; extrapolation, added causes, wrong periods or wrong companies are not.
 - The summary must not say anything that the claims do not support.
+- Caveats: every factual statement in a caveat (about values, periods, filings or what
+  was retrieved) must be supported by this run's evidence; a limitation that is
+  consistent with the evidence is supported. Hedged speculation ("may", "might",
+  "could") about values or definitions that the evidence does not support is
+  unsupported, the same as an unhedged statement. Give one caveat_verdict per caveat id.
 
 The full text of cited passages and the cited facts and calculations are provided. Call
 get_passage or get_financial_metric only if a provided source is missing.

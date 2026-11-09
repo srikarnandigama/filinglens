@@ -231,6 +231,14 @@ def deterministic_checks(
     return results
 
 
+def caveat_id(index: int) -> str:
+    return f"caveat_{index + 1}"
+
+
+def caveat_index(cid: str) -> int:
+    return int(cid.removeprefix("caveat_")) - 1
+
+
 def sources_for(answer: Answer, claim_ids: set[str], ledger: Ledger) -> dict[str, Any]:
     facts, chunks, computations = {}, {}, {}
     for claim in answer.claims:
@@ -257,6 +265,8 @@ async def run_verifier(
     answer: Answer,
     claim_ids: set[str],
     round_no: int,
+    caveat_ids: set[str] | frozenset[str] = frozenset(),
+    run_evidence: dict | None = None,
 ) -> VerifierOutput:
     instance = f"verifier:r{round_no}"
     prefetch = Toolbox(ctx, instance, tools=("get_passage",))
@@ -268,11 +278,17 @@ async def run_verifier(
                     await prefetch.call("get_passage", {"chunk_id": cit.ref})
     draft = answer.model_dump(mode="json")
     draft["claims"] = [c for c in draft["claims"] if c["id"] in claim_ids]
+    draft["caveats"] = {cid: answer.caveats[caveat_index(cid)] for cid in sorted(caveat_ids)}
     sources = wrap_evidence(sources_for(answer, claim_ids, ctx.ledger))
     task = (
         f"Question: {question}\n\nClaims to verify (and the summary):\n"
         f"{wrap_evidence(draft)}\n\nCited sources:\n{sources}"
     )
+    if caveat_ids:
+        task += (
+            "\n\nCaveats to verify (one caveat_verdict per caveat id) against this run's "
+            f"evidence:\n{wrap_evidence(run_evidence or {})}"
+        )
 
     def validate(out: VerifierOutput) -> None:
         got = {v.claim_id for v in out.verdicts}
@@ -282,6 +298,12 @@ async def run_verifier(
             )
         if out.summary_verdict.claim_id != "summary":
             raise SemanticError('summary_verdict.claim_id must be "summary".')
+        got = {v.claim_id for v in out.caveat_verdicts}
+        if got != set(caveat_ids):
+            raise SemanticError(
+                f"Give exactly one caveat_verdict per caveat id {sorted(caveat_ids)}; "
+                f"got {sorted(got)}."
+            )
 
     return await run_agent(
         ctx,

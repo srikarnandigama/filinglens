@@ -106,6 +106,7 @@ class OpenAICompatProvider:
         max_tokens: int,
         temperature: float | None = None,
         effort: str | None = None,  # Anthropic-only; ignored here.
+        tool_choice: str | None = None,
     ) -> LLMResponse:
         params: dict[str, Any] = {
             "model": model,
@@ -114,6 +115,8 @@ class OpenAICompatProvider:
         }
         if tools:
             params["tools"] = [openai_tool(t) for t in tools]
+            if tool_choice == "none":
+                params["tool_choice"] = "none"
         if temperature is not None:
             params["temperature"] = temperature
         started = time.perf_counter()

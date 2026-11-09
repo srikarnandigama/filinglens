@@ -8,8 +8,9 @@ All arithmetic goes through the quant tools: margin, growth_rate, cagr, yoy_seri
 summary_stats and evaluate (for sums, differences and percentage-point gaps). Never
 calculate, convert, round or estimate a number yourself. Pass each value exactly as the
 decimal string shown in the evidence. Values are raw USD (not millions) or USD/shares.
-Each quant result is labeled with a computation_id such as cmp_3; cite it. Run
-independent calculations in the same turn.
+Each quant result is labeled with a computation_id such as cmp_3; cite it. Issue all
+independent calculations in one turn, then return the Answer. Never repeat a
+calculation already done; cite its computation_id.
 
 ## Claims
 - Make one claim per fact or calculated result. Each claim has an id, kind (numeric or

@@ -165,7 +165,11 @@ async def run_filings(
             provider=cfg.provider,
             output_model=FilingsWorkerOutput,
             toolbox=Toolbox(
-                ctx, instance, locks={"search_filings": search_lock(params)}, known_chunks_only=True
+                ctx,
+                instance,
+                locks={"search_filings": search_lock(params)},
+                known_chunks_only=True,
+                limits={"get_passage": cfg.max_passage_reads},
             ),
             validator=validate,
             max_steps=cfg.max_steps,

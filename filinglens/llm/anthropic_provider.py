@@ -97,6 +97,7 @@ class AnthropicProvider:
         max_tokens: int,
         temperature: float | None = None,
         effort: str | None = None,
+        tool_choice: str | None = None,
     ) -> LLMResponse:
         if temperature is not None:
             raise ValueError("API version 2026-10-21 rejects temperature; leave it unset.")
@@ -107,7 +108,10 @@ class AnthropicProvider:
             "max_tokens": max_tokens,
         }
         if tools:
+            # The tool list stays identical on every step; "none" only forbids new calls (D068).
             params["tools"] = [anthropic_tool(t) for t in tools]
+            if tool_choice == "none":
+                params["tool_choice"] = {"type": "none"}
         if effort:
             params["output_config"] = {"effort": effort}
         started = time.perf_counter()

@@ -1,0 +1,131 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 3,
+  "numeric_valid": 3,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.155392",
+ "error": null,
+ "finished_at": "2026-11-11T18:39:43.073965+00:00",
+ "latency_ms": 19245,
+ "prediction": {
+  "choice": "MSFT",
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percentage_points",
+  "value": "23.558094012737"
+ },
+ "question_id": "q_26859f7f306d78a5",
+ "question_sha": "1c28a3c9bc36c3f609ef1a47c4d106e643a5d0e13369b461437bea3b77ecb4f8",
+ "raw_output": {
+  "caveats": [
+   "The two companies have different fiscal year ends. Microsoft's FY2024 ended June 30, 2024, and Apple's ended September 28, 2024."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_1"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "224"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "194"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "Microsoft's FY2024 gross margin was about 69.76% (gross profit $171.008 billion on revenue $245.122 billion).",
+    "ticker": "MSFT",
+    "unit": "percent",
+    "value": "69.764443827971",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_2"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "46"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "10"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "Apple's FY2024 gross margin was about 46.21% (gross profit $180.683 billion on revenue $391.035 billion).",
+    "ticker": "AAPL",
+    "unit": "percent",
+    "value": "46.206349815234",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value",
+      "kind": "computation",
+      "ref": "cmp_3"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "Microsoft's gross margin exceeded Apple's by about 23.56 percentage points in fiscal 2024.",
+    "ticker": "MSFT",
+    "unit": "percentage_points",
+    "value": "23.558094012737",
+    "value_basis": "computation"
+   }
+  ],
+  "final_claim_id": "c3",
+  "final_unit": "percentage_points",
+  "final_value": "23.558094012737",
+  "status": "answered",
+  "summary": "Microsoft had the higher gross margin in fiscal 2024. Its margin was about 69.76%, against about 46.21% for Apple. That is a gap of about 23.56 percentage points."
+ },
+ "run_id": "29a7a7e7-3926-4310-8e9e-73129e821785",
+ "run_status": "done",
+ "split": "dev",
+ "started_at": "2026-11-11T18:39:23.781084+00:00",
+ "status": "done",
+ "system_config_hash": "2672337d37a1c4749e46b1640e2449249f4b9fce707f2424c3af28481dde7549",
+ "system_id": "system",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 63111,
+  "output_tokens": 2917
+ }
+}

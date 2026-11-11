@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.002488",
+ "finished_at": "2026-11-11T18:43:51.950565+00:00",
+ "latency_ms": 2145,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "983.25"
+ },
+ "question_id": "q_a3b73021b0b6fe35",
+ "question_sha": "bf7ec1f2a354777eec9e29e7171e35d8e16e49185927919fe2657b4b0c77d433",
+ "raw_output": "UnitedHealth Group's purchases of property, equipment and capitalized software in fiscal 2023 were $3,933 million (2022: $3,147 million). This figure is from memory of the 10-K, so treat it as approximate.\n\nAverage quarterly capex = 3,933 / 4 \u2248 $983 million.\n\n**Average quarterly capital expenditures in fiscal 2023: about $983 million (roughly $0.98 billion)**\n\n{\"value\": 983.25, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgwdkAZAZsYsQ3Suvz6tT"
+ ],
+ "split": "dev",
+ "started_at": "2026-11-11T18:43:49.805707+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 344,
+  "output_tokens": 180,
+  "web_searches": 0
+ }
+}

@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.00176",
+ "finished_at": "2026-11-11T18:44:26.546175+00:00",
+ "latency_ms": 1288,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "512163"
+ },
+ "question_id": "q_128ed8916a37fb02",
+ "question_sha": "195d4d148ea632626979acf1dcc870eb5fc916fbd90620f1b79efabcc2d31d3c",
+ "raw_output": "Microsoft's fiscal Q4 2024 ended June 30, 2024. Its balance sheet in the 10-K for fiscal 2024 reported total assets of $512,163 million, which is about $512.2 billion.\n\n{\"value\": 512163, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgwdnnAMT4XtzfZAvACVJ"
+ ],
+ "split": "dev",
+ "started_at": "2026-11-11T18:44:25.255456+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 340,
+  "output_tokens": 108,
+  "web_searches": 0
+ }
+}

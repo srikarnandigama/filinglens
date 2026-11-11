@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.021102",
+ "finished_at": "2026-11-11T18:44:34.800397+00:00",
+ "latency_ms": 14657,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "-38"
+ },
+ "question_id": "q_6aebeb0b5f23621c",
+ "question_sha": "cdb4752ee74b5943221d8ce73836e31adc370f976ee2f4625ba1cd8b0f666ae5",
+ "raw_output": "Disney does not report a single \"operating income\" line, so I used total segment operating income. These are figures I recalled from memory and could not verify, so the answer is a rough estimate.\n\n- Fiscal Q1 2023 total segment operating income: about $5.1 billion.\n- Fiscal Q4 2023 total segment operating income: about $3.1\u20133.2 billion.\n\nThe change is roughly (3.15 \u2212 5.1) / 5.1 \u2248 \u221238%.\n\n{\"value\": -38, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgwdnQLT33WEJNNfsHTnt"
+ ],
+ "split": "dev",
+ "started_at": "2026-11-11T18:44:20.155330+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 351,
+  "output_tokens": 2040,
+  "web_searches": 0
+ }
+}

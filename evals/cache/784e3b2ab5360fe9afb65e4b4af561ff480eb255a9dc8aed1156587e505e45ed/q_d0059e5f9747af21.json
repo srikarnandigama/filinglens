@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.005862",
+ "finished_at": "2026-11-11T18:43:55.131061+00:00",
+ "latency_ms": 4101,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "-33.9"
+ },
+ "question_id": "q_d0059e5f9747af21",
+ "question_sha": "80db7028fdda0cd2ecb5cdf4159ca2ff4b440dc4aa544f43098a5acd5b77ac2f",
+ "raw_output": "UnitedHealth's net cash provided by operating activities fell by about 34% from fiscal 2024 to fiscal 2025. This is a best estimate from memory, not a figure I could verify against the filings.\n\n- Fiscal 2024: about $24.2 billion.\n- Fiscal 2025: about $16.0 billion, as I recall from the company's January 2026 earnings release. I am less sure of this figure than the 2024 one.\n\nThe change is (16.0 \u2212 24.2) / 24.2 \u2248 \u221233.9%.\n\n{\"value\": -33.9, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgwdkFqAi46mqss3vQtqN"
+ ],
+ "split": "dev",
+ "started_at": "2026-11-11T18:43:51.032770+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 356,
+  "output_tokens": 515,
+  "web_searches": 0
+ }
+}

@@ -1,0 +1,23 @@
+# Abstention probe, reported outside the headline (D083).
+name = "m5-probe"
+split = "probe"
+sample = "all"
+seed = 20261109
+spend_cap_usd = "2.00"
+
+[[systems]]
+id = "system"
+kind = "system"
+max_cost_usd = "0.50"
+
+[[systems]]
+id = "b0-sonnet"
+kind = "b0"
+model_env = "BASELINE_MODELS"
+model_index = 0
+
+[[systems]]
+id = "b0-opus"
+kind = "b0"
+model_env = "BASELINE_MODELS"
+model_index = 1

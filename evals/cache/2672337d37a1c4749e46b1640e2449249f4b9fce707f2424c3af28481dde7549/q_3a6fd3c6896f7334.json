@@ -1,0 +1,131 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 3,
+  "numeric_valid": 3,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.218550",
+ "error": null,
+ "finished_at": "2026-11-11T18:36:07.648249+00:00",
+ "latency_ms": 24024,
+ "prediction": {
+  "choice": "XOM",
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percentage_points",
+  "value": "2.175387928821"
+ },
+ "question_id": "q_3a6fd3c6896f7334",
+ "question_sha": "f95d3c910b8c9713a5485708b628de594b13cc2ded274c29424061e1fa7a3595",
+ "raw_output": {
+  "caveats": [
+   "Net margin is net income (NetIncomeLoss) divided by reported Revenues for each company's fiscal year ended Dec 31, 2025. Both companies have the same fiscal year end, so the periods are directly comparable."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_1"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "2585"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "2569"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "ExxonMobil's FY2025 net margin was about 8.68% (net income $28.844 billion on revenue $332.238 billion).",
+    "ticker": "XOM",
+    "unit": "percent",
+    "value": "8.68172815873",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_2"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "2709"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "2675"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Chevron's FY2025 net margin was about 6.51% (net income $12.299 billion on revenue $189.031 billion).",
+    "ticker": "CVX",
+    "unit": "percent",
+    "value": "6.506340229909",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value",
+      "kind": "computation",
+      "ref": "cmp_3"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "ExxonMobil's FY2025 net margin was about 2.18 percentage points higher than Chevron's.",
+    "ticker": "XOM",
+    "unit": "percentage_points",
+    "value": "2.175387928821",
+    "value_basis": "computation"
+   }
+  ],
+  "final_claim_id": "c3",
+  "final_unit": "percentage_points",
+  "final_value": "2.175387928821",
+  "status": "answered",
+  "summary": "ExxonMobil had the higher fiscal 2025 net margin. It earned about 8.68% against Chevron's 6.51%, a gap of about 2.18 percentage points."
+ },
+ "run_id": "efbc3b21-0a59-4e50-935a-c7f606108f86",
+ "run_status": "done",
+ "split": "dev",
+ "started_at": "2026-11-11T18:35:43.587204+00:00",
+ "status": "done",
+ "system_config_hash": "2672337d37a1c4749e46b1640e2449249f4b9fce707f2424c3af28481dde7549",
+ "system_id": "system",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 93200,
+  "output_tokens": 3215
+ }
+}

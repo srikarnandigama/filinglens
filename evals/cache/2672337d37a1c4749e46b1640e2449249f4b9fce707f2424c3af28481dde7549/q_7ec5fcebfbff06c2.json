@@ -1,0 +1,72 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 1,
+  "numeric_valid": 1,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.087530",
+ "error": null,
+ "finished_at": "2026-11-11T18:39:01.087385+00:00",
+ "latency_ms": 12895,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD",
+  "value": "5518000000"
+ },
+ "question_id": "q_7ec5fcebfbff06c2",
+ "question_sha": "4dd0dbab784d51fc2c1370224fc508cdc9fe3f6ccae20e2dca0b7171c4911503",
+ "raw_output": {
+  "caveats": [
+   "The Q4 value is derived (annual figure less the nine-month year-to-date figure), not separately reported as a standalone quarter.",
+   "Disney's fiscal Q4 2024 runs from 2024-06-30 to 2024-09-28."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3935"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q4",
+     "fiscal_year": 2024
+    },
+    "text": "Disney's net cash provided by operating activities in fiscal Q4 2024 was $5.518 billion. It is derived as fiscal-year 2024 operating cash flow of $13.971 billion minus nine-month operating cash flow of $8.453 billion.",
+    "ticker": "DIS",
+    "unit": "USD",
+    "value": "5518000000",
+    "value_basis": "fact"
+   }
+  ],
+  "final_claim_id": "c1",
+  "final_unit": "USD",
+  "final_value": "5518000000",
+  "status": "answered",
+  "summary": "Disney's net cash provided by operating activities in fiscal Q4 2024 (2024-06-30 to 2024-09-28) was about $5.518 billion. This is a derived figure: full-year fiscal 2024 operating cash flow minus the first nine months."
+ },
+ "run_id": "c013f682-5adc-4c6b-be01-70483ea1c29c",
+ "run_status": "done",
+ "split": "dev",
+ "started_at": "2026-11-11T18:38:48.169678+00:00",
+ "status": "done",
+ "system_config_hash": "2672337d37a1c4749e46b1640e2449249f4b9fce707f2424c3af28481dde7549",
+ "system_id": "system",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 35250,
+  "output_tokens": 1703
+ }
+}

@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.006296",
+ "finished_at": "2026-11-11T18:44:34.851415+00:00",
+ "latency_ms": 4515,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "1361"
+ },
+ "question_id": "q_7277cf2ff74513ec",
+ "question_sha": "61acdb693f58fe1e4f16b7b79089f2654db552d9aa18464fb2cd0b5475042343",
+ "raw_output": "Costco's capital expenditures in fiscal Q1 2025 (the 12 weeks ended November 24, 2024) were about $1.36 billion. This is from memory of the cash flow statement line \"Additions to property and equipment,\" not a checked filing, so it may be slightly off.\n\n{\"value\": 1361, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011Cgwdo9s4wpcZTLDSb498M"
+ ],
+ "split": "dev",
+ "started_at": "2026-11-11T18:44:30.341911+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 338,
+  "output_tokens": 562,
+  "web_searches": 0
+ }
+}

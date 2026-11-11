@@ -1,0 +1,152 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 5,
+  "numeric_valid": 5,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.271078",
+ "error": null,
+ "finished_at": "2026-11-11T18:37:34.017750+00:00",
+ "latency_ms": 49025,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD",
+  "value": "75788500000"
+ },
+ "question_id": "q_46900184fdb25501",
+ "question_sha": "7a8c6e35c750049c76cc387cc06bf0edb4f36d12d38b5ea9aa2cbc775f7dc67c",
+ "raw_output": {
+  "caveats": [
+   "Q4 FY2026 revenue is derived (full-year less the first three quarters), not taken directly from a quarterly filing.",
+   "The fiscal Q4 period (2026-05-11 to 2026-08-30) covers a longer span than the Q1\u2013Q3 periods, and Q4 revenue is substantially larger than the other quarters. The mean is an unweighted average of the four periods and sits above the median of about $70.06 billion."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3339"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q1",
+     "fiscal_year": 2026
+    },
+    "text": "Q1 FY2026 revenue was $67.307 billion.",
+    "ticker": "COST",
+    "unit": "USD",
+    "value": "67307000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3340"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q2",
+     "fiscal_year": 2026
+    },
+    "text": "Q2 FY2026 revenue was $69.597 billion.",
+    "ticker": "COST",
+    "unit": "USD",
+    "value": "69597000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3341"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q3",
+     "fiscal_year": 2026
+    },
+    "text": "Q3 FY2026 revenue was $70.527 billion.",
+    "ticker": "COST",
+    "unit": "USD",
+    "value": "70527000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3342"
+     }
+    ],
+    "id": "c4",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q4",
+     "fiscal_year": 2026
+    },
+    "text": "Q4 FY2026 revenue was $95.723 billion. This is a derived figure: full-year revenue of $303.154 billion less the $207.431 billion for the first three quarters.",
+    "ticker": "COST",
+    "unit": "USD",
+    "value": "95723000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": "mean",
+      "kind": "computation",
+      "ref": "cmp_1"
+     }
+    ],
+    "id": "c5",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2026
+    },
+    "text": "The average quarterly total revenue across fiscal 2026 Q1\u2013Q4 was about $75.79 billion ($75,788,500,000).",
+    "ticker": "COST",
+    "unit": "USD",
+    "value": "75788500000",
+    "value_basis": "computation"
+   }
+  ],
+  "final_claim_id": "c5",
+  "final_unit": "USD",
+  "final_value": "75788500000",
+  "status": "answered",
+  "summary": "Costco's average quarterly total revenue over fiscal 2026 was about $75.79 billion. This is the mean of four quarters: Q1 $67.307 billion, Q2 $69.597 billion, Q3 $70.527 billion and a derived Q4 of $95.723 billion."
+ },
+ "run_id": "e15703c7-9deb-44df-8237-f24aec2053e9",
+ "run_status": "done",
+ "split": "dev",
+ "started_at": "2026-11-11T18:36:44.957497+00:00",
+ "status": "done",
+ "system_config_hash": "2672337d37a1c4749e46b1640e2449249f4b9fce707f2424c3af28481dde7549",
+ "system_id": "system",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 98319,
+  "output_tokens": 7444
+ }
+}

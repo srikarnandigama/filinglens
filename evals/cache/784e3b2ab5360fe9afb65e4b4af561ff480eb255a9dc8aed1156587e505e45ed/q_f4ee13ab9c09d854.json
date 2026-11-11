@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.010284",
+ "finished_at": "2026-11-11T18:44:12.358813+00:00",
+ "latency_ms": 8015,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "31"
+ },
+ "question_id": "q_f4ee13ab9c09d854",
+ "question_sha": "d7d23c393061aa90150b9df7c8b4e1905eaa312f2cc134cf39dd6704ef642a5c",
+ "raw_output": "Meta's research and development expense rose by roughly 31% from fiscal 2024 to fiscal 2025. This is a best estimate, because I am recalling the fiscal 2025 figures from memory rather than reading the filing.\n\n- **Fiscal 2024:** R&D was about $43.9 billion.\n- **Fiscal 2025:** R&D was about $57.4 billion. I put the quarters at roughly $12.15 billion, $12.20 billion, $15.15 billion and $17.9 billion. The fourth-quarter figure is the least certain.\n- **Change:** 57.4 / 43.9 \u2212 1 \u2248 31%.\n\n{\"value\": 31, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgwdmEovuSrNaAbubDVT3"
+ ],
+ "split": "dev",
+ "started_at": "2026-11-11T18:44:04.343819+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 347,
+  "output_tokens": 959,
+  "web_searches": 0
+ }
+}

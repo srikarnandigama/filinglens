@@ -1,0 +1,109 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 3,
+  "numeric_valid": 3,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.153752",
+ "error": null,
+ "finished_at": "2026-11-11T18:42:02.465663+00:00",
+ "latency_ms": 17638,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "7.351396765385"
+ },
+ "question_id": "q_29dcb9bb771787b1",
+ "question_sha": "f7221bb8ac521e80486dd89c45b2c9127a4dd12a7e4f7c6a6da8510f44285407",
+ "raw_output": {
+  "caveats": [],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "2705"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q1",
+     "fiscal_year": 2025
+    },
+    "text": "Chevron net income for fiscal Q1 2025 was $3.5 billion.",
+    "ticker": "CVX",
+    "unit": "USD",
+    "value": "3500000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "2671"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q1",
+     "fiscal_year": 2025
+    },
+    "text": "Chevron revenue for fiscal Q1 2025 was $47.61 billion.",
+    "ticker": "CVX",
+    "unit": "USD",
+    "value": "47610000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_1"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q1",
+     "fiscal_year": 2025
+    },
+    "text": "Chevron's net margin for fiscal Q1 2025 was about 7.35% (net income divided by revenue).",
+    "ticker": "CVX",
+    "unit": "percent",
+    "value": "7.351396765385",
+    "value_basis": "computation"
+   }
+  ],
+  "final_claim_id": "c3",
+  "final_unit": "percent",
+  "final_value": "7.351396765385",
+  "status": "answered",
+  "summary": "Chevron's net margin in fiscal Q1 2025 was about 7.35%, based on net income of $3.5 billion and revenue of $47.61 billion."
+ },
+ "run_id": "cd0a2122-1bc3-4b8d-b394-eb3c45524d7c",
+ "run_status": "done",
+ "split": "dev",
+ "started_at": "2026-11-11T18:41:44.788761+00:00",
+ "status": "done",
+ "system_config_hash": "2672337d37a1c4749e46b1640e2449249f4b9fce707f2424c3af28481dde7549",
+ "system_id": "system",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 65571,
+  "output_tokens": 2261
+ }
+}

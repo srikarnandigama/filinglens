@@ -1,0 +1,109 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 3,
+  "numeric_valid": 3,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.118950",
+ "error": null,
+ "finished_at": "2026-11-11T18:41:02.882034+00:00",
+ "latency_ms": 16135,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "90.689655172414"
+ },
+ "question_id": "q_e93dbbc022f405c5",
+ "question_sha": "71dab53727b834d812253921c9a1b0bbdd10824e431f0bc922e5766b254b2112",
+ "raw_output": {
+  "caveats": [],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "739"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2023
+    },
+    "text": "Amazon's diluted EPS for fiscal 2023 was $2.90.",
+    "ticker": "AMZN",
+    "unit": "USD/shares",
+    "value": "2.9",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "743"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "Amazon's diluted EPS for fiscal 2024 was $5.53.",
+    "ticker": "AMZN",
+    "unit": "USD/shares",
+    "value": "5.53",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_1"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "Diluted EPS increased by about 90.69% from fiscal 2023 to fiscal 2024.",
+    "ticker": "AMZN",
+    "unit": "percent",
+    "value": "90.689655172414",
+    "value_basis": "computation"
+   }
+  ],
+  "final_claim_id": "c3",
+  "final_unit": "percent",
+  "final_value": "90.689655172414",
+  "status": "answered",
+  "summary": "Amazon's diluted EPS rose from $2.90 in fiscal 2023 to $5.53 in fiscal 2024. That is an increase of about 90.69%."
+ },
+ "run_id": "b6830bb3-4367-47d0-b32c-28eb06990a1c",
+ "run_status": "done",
+ "split": "dev",
+ "started_at": "2026-11-11T18:40:46.724331+00:00",
+ "status": "done",
+ "system_config_hash": "2672337d37a1c4749e46b1640e2449249f4b9fce707f2424c3af28481dde7549",
+ "system_id": "system",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 50355,
+  "output_tokens": 1824
+ }
+}

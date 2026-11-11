@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.011378",
+ "finished_at": "2026-11-11T18:42:35.600191+00:00",
+ "latency_ms": 8615,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "39000"
+ },
+ "question_id": "q_3590cb9aad9a3d24",
+ "question_sha": "2248dbc2057355e1cb43d958bd07276033265e7cae5f975d1360b7393302535a",
+ "raw_output": "I estimate Chevron's Q4 2025 cost of revenue at about $39 billion. I could not recall the reported figures with confidence, so this is a rough reconstruction rather than a reported number.\n\nChevron does not report a single \"cost of revenue\" line. I built the estimate from the components that would normally make it up:\n\n- Purchased crude oil and products: about $29 billion.\n- Operating expenses: about $5 billion.\n- Depreciation, depletion and amortization: about $5 billion.\n\nI excluded SG&A, exploration expense, interest and income taxes. As a cross-check, Q4 revenues of about $47 billion less an estimated $4\u20135 billion of pretax income would imply total costs and deductions of roughly $42 billion. Removing the excluded items brings that down to roughly $39 billion.\n\n{\"value\": 39000, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011Cgwde4X7PDRJPRRYR7DsZ"
+ ],
+ "split": "dev",
+ "started_at": "2026-11-11T18:42:26.984433+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 339,
+  "output_tokens": 1070,
+  "web_searches": 0
+ }
+}

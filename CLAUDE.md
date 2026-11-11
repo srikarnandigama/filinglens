@@ -39,8 +39,22 @@ M1, M2 (including corpus v2 and Phase C), M3 and M4 are accepted. M3 was
 accepted on 2026-10-22 after Inspector and all five Claude Desktop checks passed;
 the student independently confirmed the Apple FY2026 Q3 values in the source 10-Q.
 M4 (built in Claude Code; M1-M3 were built with Codex) was accepted on 2026-11-09
-after its final acceptance run. M5 has not started; wait for the student's M5 task
-and design first, then stop for approval.
+after its final acceptance run.
+- NEXT SESSION, FIRST TURN: do not change, run or commit anything. Read CLAUDE.md,
+  docs/M5_PHASE_C.md and docs/DECISIONS.md D097-D103, summarize the M5 state and the
+  pending gate decision, and wait for the student's instructions.
+- M5 status (2026-11-11): Phases A and B approved (D083-D102; $100 hard limit, test run
+  $70, ceiling $90, account has $95). Question set FROZEN: evals/questions_v1.jsonl
+  SHA-256 4f270e35... (same-sector GICS comparisons, D101). Dev pilot done ($15.94):
+  system 100/100, B0 Sonnet 44/100; results, per-role costs and the test-run projection
+  in docs/M5_PHASE_C.md. Runner fixed after a shutdown hang (D103: one MCP hub per
+  invocation, clean exit, replay cache keys). Test run NOT started: projected $70.1,
+  $64.0 after cuts 2-4, over the $60 gate; waiting on the student to choose an option
+  (system on the 100 sample + a stratified subset, or other). Config caps in
+  evals/configs/ must be re-split for whichever option. No prompt/system changes from
+  dev results without approval (candidate: trend_avg summary numbers force revisions).
+  Nothing from M5 is committed yet. Last checks: ruff clean; full pytest
+  (FILINGLENS_TEST_DB=1) 265 passed, 2 skipped.
 - M1 data: 20 companies, 275 filings, 2,715 facts (563 derived). Ingestion
   cutoff 2026-10-19, inclusive by filing date (America/New_York). Snapshot
   2026-10-19-v1 at data/raw/2026-10-19-v1/ (bodies keyed by URL SHA-256;
@@ -107,6 +121,6 @@ and design first, then stop for approval.
   On this machine uv needs `--link-mode=copy` (e.g. `uv sync --frozen
   --link-mode=copy`). The CLI uses the Windows selector event loop for Psycopg
   and an IPv4 hint for localhost.
-- See docs/DECISIONS.md (D001-D082) for design history. docs/M1_STATUS.md and
+- See docs/DECISIONS.md (D001-D100) for design history. docs/M1_STATUS.md and
   older pending-verification wording predate acceptance; the acceptances
   recorded here supersede them.

@@ -1,0 +1,131 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 4,
+  "numeric_valid": 4,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.142966",
+ "error": null,
+ "finished_at": "2026-11-11T18:41:40.058007+00:00",
+ "latency_ms": 17104,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "14.386495338876"
+ },
+ "question_id": "q_dd1dc41e3efe74ee",
+ "question_sha": "acee6e86ae78ea9a4280655a9d889b76783d1e3aac7601e2211fa74d3d189ae9",
+ "raw_output": {
+  "caveats": [
+   "No filing passages were provided, so the answer does not explain why R&D expense changed."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "1059"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2023
+    },
+    "text": "Tesla's FY2023 R&D expense was $3.969 billion.",
+    "ticker": "TSLA",
+    "unit": "USD",
+    "value": "3969000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "1064"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "Tesla's FY2024 R&D expense was $4.54 billion.",
+    "ticker": "TSLA",
+    "unit": "USD",
+    "value": "4540000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": "value",
+      "kind": "computation",
+      "ref": "cmp_2"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "R&D expense increased by about $571 million from FY2023 to FY2024.",
+    "ticker": "TSLA",
+    "unit": "USD",
+    "value": "571000000",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_1"
+     }
+    ],
+    "id": "c4",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "R&D expense rose about 14.4% from FY2023 to FY2024.",
+    "ticker": "TSLA",
+    "unit": "percent",
+    "value": "14.386495338876",
+    "value_basis": "computation"
+   }
+  ],
+  "final_claim_id": "c4",
+  "final_unit": "percent",
+  "final_value": "14.386495338876",
+  "status": "answered",
+  "summary": "Tesla's R&D expense rose about 14.4% from fiscal 2023 ($3.969 billion) to fiscal 2024 ($4.54 billion), an increase of about $571 million."
+ },
+ "run_id": "bc76713a-800b-4b81-a0e3-be36f49b8ae2",
+ "run_status": "done",
+ "split": "dev",
+ "started_at": "2026-11-11T18:41:22.901208+00:00",
+ "status": "done",
+ "system_config_hash": "2672337d37a1c4749e46b1640e2449249f4b9fce707f2424c3af28481dde7549",
+ "system_id": "system",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 59623,
+  "output_tokens": 2372
+ }
+}

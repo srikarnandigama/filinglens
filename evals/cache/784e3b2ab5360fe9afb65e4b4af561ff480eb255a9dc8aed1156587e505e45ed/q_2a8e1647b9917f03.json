@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.013162",
+ "finished_at": "2026-11-11T18:43:01.864880+00:00",
+ "latency_ms": 9535,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "6"
+ },
+ "question_id": "q_2a8e1647b9917f03",
+ "question_sha": "e6a680647de6910b69e1c0c14dcc9ac4d86100c4a97a3f3ee355d7ce3385bf7e",
+ "raw_output": "Pfizer's cost of revenue rose by roughly 6% from fiscal Q1 2024 to fiscal Q4 2024. This is an estimate from memory, not figures I could verify.\n\n- Fiscal Q1 2024 cost of sales: about $4.9 billion (I recall roughly $4,886 million).\n- Fiscal Q4 2024 cost of sales: about $5.2 billion. I am less sure of this figure.\n\nThe change is (5.2 \u2212 4.886) / 4.886, or about +6%.\n\n{\"value\": 6, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011Cgwdfvnad735tgGVPArXx"
+ ],
+ "split": "dev",
+ "started_at": "2026-11-11T18:42:52.321369+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 356,
+  "output_tokens": 1245,
+  "web_searches": 0
+ }
+}

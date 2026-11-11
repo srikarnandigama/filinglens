@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.016732",
+ "finished_at": "2026-11-11T18:42:44.211571+00:00",
+ "latency_ms": 13631,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "10.0"
+ },
+ "question_id": "q_851faf1f3bed1406",
+ "question_sha": "6ffa9e52c726f1bc2f4f4df2cc311a35b4d4aed6e1813341b90fe4b07e5def34",
+ "raw_output": "Disney's fiscal Q1 2024 operating margin was roughly 10%. This is an estimate from memory, not a figure I could confirm.\n\nDisney does not report a GAAP operating income line, so I approximated it as revenue less costs and expenses and restructuring and impairment charges.\n\n- Fiscal Q1 2024 revenue was about $23.5 billion.\n- Pre-tax income was about $2.2 billion. I backed this out of GAAP EPS of roughly $0.72, so it is the least certain input.\n- Adding back net interest expense and equity income puts operating income at about $2.3\u20132.4 billion.\n\nThat gives roughly 10% of revenue.\n\nIf you instead mean Disney's total segment operating income of about $5.1 billion, the margin would be about 21.8%.\n\n{\"value\": 10.0, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgwdeKvoq7Nz5ueX2RZJT"
+ ],
+ "split": "dev",
+ "started_at": "2026-11-11T18:42:30.590562+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 336,
+  "output_tokens": 1606,
+  "web_searches": 0
+ }
+}

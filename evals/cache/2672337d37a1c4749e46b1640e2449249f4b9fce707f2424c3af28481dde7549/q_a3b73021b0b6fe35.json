@@ -1,0 +1,157 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 5,
+  "numeric_valid": 5,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.166000",
+ "error": null,
+ "finished_at": "2026-11-11T18:40:02.016153+00:00",
+ "latency_ms": 19304,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD",
+  "value": "846500000"
+ },
+ "question_id": "q_a3b73021b0b6fe35",
+ "question_sha": "bf7ec1f2a354777eec9e29e7171e35d8e16e49185927919fe2657b4b0c77d433",
+ "raw_output": {
+  "caveats": [
+   "Q2, Q3 and Q4 values are derived from year-to-date figures (each period's cumulative total less the prior one), not reported directly as quarterly figures.",
+   "The Q4 derivation uses a full-year total of $3,386 million taken from a later filing (accession 0000731766-26-000062)."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3140"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q1",
+     "fiscal_year": 2023
+    },
+    "text": "UNH Q1 2023 capex was $760 million.",
+    "ticker": "UNH",
+    "unit": "USD",
+    "value": "760000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3141"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q2",
+     "fiscal_year": 2023
+    },
+    "text": "UNH Q2 2023 capex was $829 million (derived from the six-month total less Q1).",
+    "ticker": "UNH",
+    "unit": "USD",
+    "value": "829000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3142"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q3",
+     "fiscal_year": 2023
+    },
+    "text": "UNH Q3 2023 capex was $838 million (derived from the nine-month total less the six-month total).",
+    "ticker": "UNH",
+    "unit": "USD",
+    "value": "838000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3143"
+     }
+    ],
+    "id": "c4",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q4",
+     "fiscal_year": 2023
+    },
+    "text": "UNH Q4 2023 capex was $959 million (derived from the full-year total less the nine-month total).",
+    "ticker": "UNH",
+    "unit": "USD",
+    "value": "959000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": "mean",
+      "kind": "computation",
+      "ref": "cmp_1"
+     },
+     {
+      "field": "value",
+      "kind": "computation",
+      "ref": "cmp_2"
+     }
+    ],
+    "id": "c5",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2023
+    },
+    "text": "The average quarterly capex across the four fiscal 2023 quarters was about $846.5 million.",
+    "ticker": "UNH",
+    "unit": "USD",
+    "value": "846500000",
+    "value_basis": "computation"
+   }
+  ],
+  "final_claim_id": "c5",
+  "final_unit": "USD",
+  "final_value": "846500000",
+  "status": "answered",
+  "summary": "UnitedHealth's average quarterly capital expenditures over fiscal 2023 were about $846.5 million. The four quarters were Q1 $760 million, Q2 $829 million, Q3 $838 million and Q4 $959 million."
+ },
+ "run_id": "c100c189-5064-42ec-bb53-c53893bfbc8d",
+ "run_status": "done",
+ "split": "dev",
+ "started_at": "2026-11-11T18:39:42.664972+00:00",
+ "status": "done",
+ "system_config_hash": "2672337d37a1c4749e46b1640e2449249f4b9fce707f2424c3af28481dde7549",
+ "system_id": "system",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 69390,
+  "output_tokens": 2722
+ }
+}

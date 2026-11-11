@@ -1,0 +1,132 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 4,
+  "numeric_valid": 4,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.173194",
+ "error": null,
+ "finished_at": "2026-11-11T18:38:16.991030+00:00",
+ "latency_ms": 22150,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "0.302114803625"
+ },
+ "question_id": "q_c8df38906175bd9b",
+ "question_sha": "506ad4ba75bce4fad4664a128d90ec1659783b55c847298184d0ef411980defe",
+ "raw_output": {
+  "caveats": [
+   "The fiscal Q4 2025 capex figure is derived from the full-year and nine-month year-to-date amounts, not reported directly as a quarterly figure.",
+   "No filing passages were provided, so this answer gives no management explanation for the change."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3701"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q1",
+     "fiscal_year": 2025
+    },
+    "text": "PG capital expenditures in fiscal Q1 2025 (July 1 to Sept 30, 2024) were $993 million.",
+    "ticker": "PG",
+    "unit": "USD",
+    "value": "993000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3704"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q4",
+     "fiscal_year": 2025
+    },
+    "text": "PG capital expenditures in fiscal Q4 2025 (April 1 to June 30, 2025) were $996 million. This is a derived value: full-year capex of $3,773 million minus nine-month capex of $2,777 million.",
+    "ticker": "PG",
+    "unit": "USD",
+    "value": "996000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": "value",
+      "kind": "computation",
+      "ref": "cmp_2"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q4",
+     "fiscal_year": 2025
+    },
+    "text": "Capex rose by $3 million from fiscal Q1 2025 to fiscal Q4 2025.",
+    "ticker": "PG",
+    "unit": "USD",
+    "value": "3000000",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_1"
+     }
+    ],
+    "id": "c4",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q4",
+     "fiscal_year": 2025
+    },
+    "text": "PG capex increased by about 0.30% from fiscal Q1 2025 to fiscal Q4 2025.",
+    "ticker": "PG",
+    "unit": "percent",
+    "value": "0.302114803625",
+    "value_basis": "computation"
+   }
+  ],
+  "final_claim_id": "c4",
+  "final_unit": "percent",
+  "final_value": "0.302114803625",
+  "status": "answered",
+  "summary": "Procter & Gamble's capital expenditures rose about 0.30% from fiscal Q1 2025 ($993 million) to fiscal Q4 2025 ($996 million), an increase of $3 million."
+ },
+ "run_id": "f9d91d39-a638-4494-8dcd-b0956888a32c",
+ "run_status": "done",
+ "split": "dev",
+ "started_at": "2026-11-11T18:37:54.818278+00:00",
+ "status": "done",
+ "system_config_hash": "2672337d37a1c4749e46b1640e2449249f4b9fce707f2424c3af28481dde7549",
+ "system_id": "system",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 74182,
+  "output_tokens": 2483
+ }
+}

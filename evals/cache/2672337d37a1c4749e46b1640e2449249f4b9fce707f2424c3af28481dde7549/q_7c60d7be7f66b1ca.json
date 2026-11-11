@@ -1,0 +1,152 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 5,
+  "numeric_valid": 5,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.303160",
+ "error": null,
+ "finished_at": "2026-11-11T18:39:06.148241+00:00",
+ "latency_ms": 35658,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD",
+  "value": "3153250000"
+ },
+ "question_id": "q_7c60d7be7f66b1ca",
+ "question_sha": "b06be423eeade8e80d958335af7e5be1c4b285f0bbc188097c9b28f5fd4aa7a9",
+ "raw_output": {
+  "caveats": [
+   "Q2, Q3 and Q4 values are derived by subtracting year-to-date figures. They are not reported directly as standalone quarters.",
+   "Quarterly operating cash flow swung widely, so the average is not representative of any single quarter."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "1257"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q1",
+     "fiscal_year": 2025
+    },
+    "text": "Q1 FY2025 net cash used in operating activities was -$2.184 billion.",
+    "ticker": "BAC",
+    "unit": "USD",
+    "value": "-2184000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "1258"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q2",
+     "fiscal_year": 2025
+    },
+    "text": "Q2 FY2025 net cash used in operating activities was -$9.132 billion (derived from the first-half and Q1 figures).",
+    "ticker": "BAC",
+    "unit": "USD",
+    "value": "-9132000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "1259"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q3",
+     "fiscal_year": 2025
+    },
+    "text": "Q3 FY2025 net cash provided by operating activities was $46.874 billion (derived from the nine-month and first-half figures).",
+    "ticker": "BAC",
+    "unit": "USD",
+    "value": "46874000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "1260"
+     }
+    ],
+    "id": "c4",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q4",
+     "fiscal_year": 2025
+    },
+    "text": "Q4 FY2025 net cash used in operating activities was -$22.945 billion (derived from the full-year and nine-month figures).",
+    "ticker": "BAC",
+    "unit": "USD",
+    "value": "-22945000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": "mean",
+      "kind": "computation",
+      "ref": "cmp_1"
+     }
+    ],
+    "id": "c5",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "The average (mean) quarterly net cash provided by operating activities across the four quarters of fiscal 2025 was about $3.153 billion.",
+    "ticker": "BAC",
+    "unit": "USD",
+    "value": "3153250000",
+    "value_basis": "computation"
+   }
+  ],
+  "final_claim_id": "c5",
+  "final_unit": "USD",
+  "final_value": "3153250000",
+  "status": "answered",
+  "summary": "Bank of America's average quarterly net cash provided by operating activities over fiscal 2025 was about $3.153 billion. The four quarterly values were Q1 -$2.184 billion, Q2 -$9.132 billion, Q3 $46.874 billion and Q4 -$22.945 billion. The quarters swung widely, so the average hides large variation."
+ },
+ "run_id": "7d9288ea-b69f-4509-9fa2-19f57b892ee0",
+ "run_status": "done",
+ "split": "dev",
+ "started_at": "2026-11-11T18:38:30.457121+00:00",
+ "status": "done",
+ "system_config_hash": "2672337d37a1c4749e46b1640e2449249f4b9fce707f2424c3af28481dde7549",
+ "system_id": "system",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 129115,
+  "output_tokens": 4493
+ }
+}

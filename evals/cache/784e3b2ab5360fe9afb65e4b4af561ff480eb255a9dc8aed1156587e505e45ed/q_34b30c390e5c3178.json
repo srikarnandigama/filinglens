@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.007644",
+ "finished_at": "2026-11-11T18:44:04.712185+00:00",
+ "latency_ms": 5097,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "-21.8"
+ },
+ "question_id": "q_34b30c390e5c3178",
+ "question_sha": "63e65878386516ceb700aec767c93a62dee7029fedbb57d0303b11c3ac0239ee",
+ "raw_output": "ExxonMobil's net cash provided by operating activities fell by about 21.8% from fiscal Q1 2025 to fiscal Q4 2025. This is an estimate from memory, not checked against the filings.\n\n- **Q1 2025:** about $14.7 billion.\n- **Q4 2025:** about $11.5 billion. I am less sure of this figure than the Q1 one.\n\nThe change is (11.5 \u2212 14.7) / 14.7 \u2248 \u221221.8%.\n\n{\"value\": -21.8, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgwdktU4oGjRwpZ9rWCh2"
+ ],
+ "split": "dev",
+ "started_at": "2026-11-11T18:43:59.613702+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 362,
+  "output_tokens": 692,
+  "web_searches": 0
+ }
+}

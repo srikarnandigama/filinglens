@@ -1,0 +1,131 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 4,
+  "numeric_valid": 4,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.194170",
+ "error": null,
+ "finished_at": "2026-11-11T18:40:03.664785+00:00",
+ "latency_ms": 20562,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "-18.620889109238"
+ },
+ "question_id": "q_d0059e5f9747af21",
+ "question_sha": "80db7028fdda0cd2ecb5cdf4159ca2ff4b440dc4aa544f43098a5acd5b77ac2f",
+ "raw_output": {
+  "caveats": [
+   "No filing passages were provided, so the answer does not explain the reasons for the change."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3132"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "UNH net cash provided by operating activities in FY2024 was $24.204 billion.",
+    "ticker": "UNH",
+    "unit": "USD",
+    "value": "24204000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3137"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "UNH net cash provided by operating activities in FY2025 was $19.697 billion.",
+    "ticker": "UNH",
+    "unit": "USD",
+    "value": "19697000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": "value",
+      "kind": "computation",
+      "ref": "cmp_2"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Operating cash flow changed by about -$4.507 billion from FY2024 to FY2025.",
+    "ticker": "UNH",
+    "unit": "USD",
+    "value": "-4507000000",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_1"
+     }
+    ],
+    "id": "c4",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Net cash provided by operating activities decreased by about 18.6% from FY2024 to FY2025.",
+    "ticker": "UNH",
+    "unit": "percent",
+    "value": "-18.620889109238",
+    "value_basis": "computation"
+   }
+  ],
+  "final_claim_id": "c4",
+  "final_unit": "percent",
+  "final_value": "-18.620889109238",
+  "status": "answered",
+  "summary": "UnitedHealth's net cash provided by operating activities fell about 18.6% from fiscal 2024 to fiscal 2025. It went from $24.204 billion to $19.697 billion, a drop of about $4.507 billion."
+ },
+ "run_id": "150c6116-5a61-4516-8087-ee7adc99d6fa",
+ "run_status": "done",
+ "split": "dev",
+ "started_at": "2026-11-11T18:39:43.075633+00:00",
+ "status": "done",
+ "system_config_hash": "2672337d37a1c4749e46b1640e2449249f4b9fce707f2424c3af28481dde7549",
+ "system_id": "system",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 84765,
+  "output_tokens": 2464
+ }
+}

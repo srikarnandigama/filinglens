@@ -1,0 +1,71 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 1,
+  "numeric_valid": 1,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.111966",
+ "error": null,
+ "finished_at": "2026-11-11T18:38:30.455777+00:00",
+ "latency_ms": 14619,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD",
+  "value": "6798000000"
+ },
+ "question_id": "q_9098a5c5e1013b89",
+ "question_sha": "0f6700d4f0a335d0a11cebc435ff3bef3f240467e2d972b795b5aa9689b3fb56",
+ "raw_output": {
+  "caveats": [
+   "The Q4 2023 value is derived (annual figure minus nine-month year-to-date figure), not directly reported as a standalone quarterly figure."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": "value",
+      "kind": "fact",
+      "ref": "2786"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q4",
+     "fiscal_year": 2023
+    },
+    "text": "JNJ's cost of revenue for fiscal Q4 2023 was $6,798,000,000 (about $6.80 billion). This is derived as full-year FY2023 cost of $26,553,000,000 minus nine-month cost of $19,755,000,000.",
+    "ticker": "JNJ",
+    "unit": "USD",
+    "value": "6798000000",
+    "value_basis": "fact"
+   }
+  ],
+  "final_claim_id": "c1",
+  "final_unit": "USD",
+  "final_value": "6798000000",
+  "status": "answered",
+  "summary": "Johnson & Johnson's cost of revenue in fiscal Q4 2023 (2023-10-02 to 2023-12-31) was $6,798,000,000 (about $6.80 billion). This figure is derived: it is full-year cost of revenue minus the nine-month year-to-date figure."
+ },
+ "run_id": "86600654-b845-4038-889e-d1d776ec2397",
+ "run_status": "done",
+ "split": "dev",
+ "started_at": "2026-11-11T18:38:15.788354+00:00",
+ "status": "done",
+ "system_config_hash": "2672337d37a1c4749e46b1640e2449249f4b9fce707f2424c3af28481dde7549",
+ "system_id": "system",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 46558,
+  "output_tokens": 1885
+ }
+}

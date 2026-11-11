@@ -1,0 +1,151 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 5,
+  "numeric_valid": 5,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.206460",
+ "error": null,
+ "finished_at": "2026-11-11T18:39:27.828574+00:00",
+ "latency_ms": 21656,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD",
+  "value": "11599500000"
+ },
+ "question_id": "q_3d27c0433d6c37bf",
+ "question_sha": "6a2f701245bf2247c0e034e23beb4e228c54f7cfc94a02dee307b736494ae58c",
+ "raw_output": {
+  "caveats": [
+   "Q4 FY2026 revenue is derived (annual $46.398 billion minus nine-month $35.426 billion), not directly reported as a quarterly figure."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3733"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q1",
+     "fiscal_year": 2026
+    },
+    "text": "Nike Q1 FY2026 revenue was $11.72 billion.",
+    "ticker": "NKE",
+    "unit": "USD",
+    "value": "11720000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3734"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q2",
+     "fiscal_year": 2026
+    },
+    "text": "Nike Q2 FY2026 revenue was $12.427 billion.",
+    "ticker": "NKE",
+    "unit": "USD",
+    "value": "12427000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3735"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q3",
+     "fiscal_year": 2026
+    },
+    "text": "Nike Q3 FY2026 revenue was $11.279 billion.",
+    "ticker": "NKE",
+    "unit": "USD",
+    "value": "11279000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3736"
+     }
+    ],
+    "id": "c4",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q4",
+     "fiscal_year": 2026
+    },
+    "text": "Nike Q4 FY2026 revenue was $10.972 billion (derived from full-year revenue less nine-month revenue).",
+    "ticker": "NKE",
+    "unit": "USD",
+    "value": "10972000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": "mean",
+      "kind": "computation",
+      "ref": "cmp_1"
+     }
+    ],
+    "id": "c5",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2026
+    },
+    "text": "The mean of Nike's four fiscal 2026 quarterly revenue values is about $11.60 billion ($11,599,500,000).",
+    "ticker": "NKE",
+    "unit": "USD",
+    "value": "11599500000",
+    "value_basis": "computation"
+   }
+  ],
+  "final_claim_id": "c5",
+  "final_unit": "USD",
+  "final_value": "11599500000",
+  "status": "answered",
+  "summary": "Nike's average quarterly total revenue over fiscal 2026 was about $11.60 billion. This is the mean of Q1 ($11.72 billion), Q2 ($12.427 billion), Q3 ($11.279 billion) and Q4 ($10.972 billion). Q4 is derived from annual and nine-month figures."
+ },
+ "run_id": "f36f30cb-7fdd-4dbe-b4f3-49e34d6ece03",
+ "run_status": "done",
+ "split": "dev",
+ "started_at": "2026-11-11T18:39:06.149401+00:00",
+ "status": "done",
+ "system_config_hash": "2672337d37a1c4749e46b1640e2449249f4b9fce707f2424c3af28481dde7549",
+ "system_id": "system",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 88540,
+  "output_tokens": 2938
+ }
+}

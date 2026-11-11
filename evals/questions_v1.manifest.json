@@ -1,0 +1,26 @@
+{
+  "b2_meta_sha256": "902e5a7a0c81e3f743e7c61e440dc7900eec11ef24b81fef3e06be28606f7846",
+  "counts": {
+    "abstention_probe:probe": 10,
+    "comparison:dev": 16,
+    "comparison:test": 39,
+    "derived_q4:dev": 16,
+    "derived_q4:test": 39,
+    "lookup:dev": 18,
+    "lookup:test": 42,
+    "margin:dev": 18,
+    "margin:test": 42,
+    "multi_step:dev": 16,
+    "multi_step:test": 39,
+    "trend_avg:dev": 16,
+    "trend_avg:test": 39,
+    "yoy_growth:dev": 18,
+    "yoy_growth:test": 42
+  },
+  "file": "questions_v1.jsonl",
+  "generator_version": "gen-v1",
+  "sample_100_sha256": "292582e3214ec807db85b9043020cfdb3360c47fe3c7019fd138a97c7e196049",
+  "seed": 20261109,
+  "sha256": "4f270e35634a4fa3aa86e9bf75e40933bacfa14169188ecf2c4634cb69e6b1cb",
+  "snapshot_id": "2026-10-19-v1"
+}

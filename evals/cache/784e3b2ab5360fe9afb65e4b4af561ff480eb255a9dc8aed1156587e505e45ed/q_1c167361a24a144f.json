@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.007132",
+ "finished_at": "2026-11-11T18:43:07.130895+00:00",
+ "latency_ms": 5269,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "-0.5"
+ },
+ "question_id": "q_1c167361a24a144f",
+ "question_sha": "9c01c3787a87925800a845939506ae217b8c22b7abfc6303cf07f6ab5bb5d655",
+ "raw_output": "I don't have Nike's reported fiscal 2026 results (the year ends May 31, 2026), so this is an estimate rather than a reported figure.\n\n- **Fiscal 2025 revenue:** about $46.3 billion.\n- **Fiscal 2026, first half:** Nike reported about $11.7 billion in Q1 and $12.4 billion in Q2, each up roughly 1% year over year.\n- **Fiscal 2026, second half (my assumption):** Nike guided Q3 revenue down 2\u20134%, which implies about $10.9 billion. I assumed Q4 is roughly flat at about $11.0 billion.\n\nThat adds up to roughly $46.0 billion for fiscal 2026, or about 0.5% below fiscal 2025.\n\n{\"value\": -0.5, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgwdgddDurikz1XrxB1RK"
+ ],
+ "split": "dev",
+ "started_at": "2026-11-11T18:43:01.866891+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 346,
+  "output_tokens": 644,
+  "web_searches": 0
+ }
+}

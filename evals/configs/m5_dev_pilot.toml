@@ -1,0 +1,18 @@
+# M5 Phase C dev pilot (SPEC §16: system + B0 on 100 dev questions). Cap $20 (D090).
+name = "m5-dev-pilot"
+split = "dev"
+sample = "100"            # stratified by template, seeded
+seed = 20261109
+concurrency = 4
+spend_cap_usd = "20.00"
+
+[[systems]]
+id = "system"
+kind = "system"
+max_cost_usd = "0.50"
+
+[[systems]]
+id = "b0-sonnet"
+kind = "b0"
+model_env = "BASELINE_MODELS"
+model_index = 0           # claude-sonnet-5-5

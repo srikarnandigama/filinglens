@@ -1,0 +1,21 @@
+# M5 Phase D: B1 and B2 (Sonnet 5.5, Batch API) on the frozen 100-question test sample (D088, D089).
+name = "m5-test-sample"
+split = "test"
+sample = "sample_100"
+seed = 20261109
+spend_cap_usd = "9.00"
+
+[[systems]]
+id = "b1-sonnet"
+kind = "b1"
+model_env = "BASELINE_MODELS"
+model_index = 0
+batch = true
+max_uses = 5
+
+[[systems]]
+id = "b2-sonnet"
+kind = "b2"
+model_env = "BASELINE_MODELS"
+model_index = 0
+batch = true

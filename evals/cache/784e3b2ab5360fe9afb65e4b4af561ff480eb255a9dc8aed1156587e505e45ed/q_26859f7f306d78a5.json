@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.003434",
+ "finished_at": "2026-11-11T18:43:48.136953+00:00",
+ "latency_ms": 2209,
+ "latency_note": null,
+ "prediction": {
+  "choice": "MSFT",
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percentage_points",
+  "value": "23.55"
+ },
+ "question_id": "q_26859f7f306d78a5",
+ "question_sha": "1c28a3c9bc36c3f609ef1a47c4d106e643a5d0e13369b461437bea3b77ecb4f8",
+ "raw_output": "Fiscal 2024 figures, from each company's 10-K:\n\n**Microsoft** (fiscal year ended June 30, 2024)\n- Revenue: $245,122M\n- Gross margin: $171,008M\n- Gross margin percentage: 171,008 / 245,122 = 69.76%\n\n**Apple** (fiscal year ended September 28, 2024)\n- Revenue: $391,035M\n- Gross margin: $180,683M\n- Gross margin percentage: 180,683 / 391,035 = 46.21%\n\n**Difference:** 69.76 \u2212 46.21 \u2248 23.55 percentage points.\n\nMicrosoft had the higher gross margin, by about 23.5 percentage points.\n\n{\"value\": 23.55, \"unit\": \"percentage_points\", \"choice\": \"MSFT\", \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011Cgwdjt1Vi2X7XfAmu46bQ"
+ ],
+ "split": "dev",
+ "started_at": "2026-11-11T18:43:45.935954+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 352,
+  "output_tokens": 273,
+  "web_searches": 0
+ }
+}

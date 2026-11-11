@@ -1,0 +1,133 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 3,
+  "numeric_valid": 3,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.222200",
+ "error": null,
+ "finished_at": "2026-11-11T18:42:06.988180+00:00",
+ "latency_ms": 30983,
+ "prediction": {
+  "choice": "JNJ",
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percentage_points",
+  "value": "35.256736596806"
+ },
+ "question_id": "q_c3a7af5a9ef432ad",
+ "question_sha": "3123f90147e6a8ef91575422c11d515129ac76f2745be69247415f52ade760ee",
+ "raw_output": {
+  "caveats": [
+   "Net margin is net income divided by reported revenue. UNH uses the 'Revenues' concept and JNJ uses 'RevenueFromContractWithCustomerExcludingAssessedTax'.",
+   "JNJ's fiscal year ran 2023-01-02 to 2023-12-31, while UNH's ran 2023-01-01 to 2023-12-31, so the periods differ by a day.",
+   "No filing passages were provided, so this answer does not explain what drove either company's net income."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_1"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3096"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3045"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2023
+    },
+    "text": "UnitedHealth's FY2023 net margin was about 6.02% (net income $22.381 billion on revenue $371.622 billion).",
+    "ticker": "UNH",
+    "unit": "percent",
+    "value": "6.022517504346",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_2"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "2821"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "2770"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2023
+    },
+    "text": "Johnson & Johnson's FY2023 net margin was about 41.28% (net income $35.153 billion on revenue $85.159 billion).",
+    "ticker": "JNJ",
+    "unit": "percent",
+    "value": "41.279254101152",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value",
+      "kind": "computation",
+      "ref": "cmp_3"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2023
+    },
+    "text": "Johnson & Johnson's net margin was about 35.26 percentage points higher than UnitedHealth's.",
+    "ticker": "JNJ",
+    "unit": "percentage_points",
+    "value": "35.256736596806",
+    "value_basis": "computation"
+   }
+  ],
+  "final_claim_id": "c3",
+  "final_unit": "percentage_points",
+  "final_value": "35.256736596806",
+  "status": "answered",
+  "summary": "Johnson & Johnson had the higher fiscal 2023 net margin, about 41.28% against about 6.02% for UnitedHealth. That is a gap of about 35.26 percentage points."
+ },
+ "run_id": "7471b11e-ba61-4b7b-8c78-a0835829e167",
+ "run_status": "done",
+ "split": "dev",
+ "started_at": "2026-11-11T18:41:35.958492+00:00",
+ "status": "done",
+ "system_config_hash": "2672337d37a1c4749e46b1640e2449249f4b9fce707f2424c3af28481dde7549",
+ "system_id": "system",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 89615,
+  "output_tokens": 4297
+ }
+}

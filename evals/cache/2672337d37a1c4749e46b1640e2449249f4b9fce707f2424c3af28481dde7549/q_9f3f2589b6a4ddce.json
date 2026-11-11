@@ -1,0 +1,132 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 4,
+  "numeric_valid": 4,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.135200",
+ "error": null,
+ "finished_at": "2026-11-11T18:42:05.676002+00:00",
+ "latency_ms": 18232,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "22.800815206089"
+ },
+ "question_id": "q_9f3f2589b6a4ddce",
+ "question_sha": "d983c42eb224b91fb5042b971e45ca5826cb3324ea57daa9c2a1078889b9656f",
+ "raw_output": {
+  "caveats": [
+   "The fiscal Q4 2026 cost of revenue is derived, not reported directly. It is full-year FY2026 minus the nine-month year-to-date figure.",
+   "No filing passages were provided, so the answer does not explain what drove the change."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "215"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q1",
+     "fiscal_year": 2026
+    },
+    "text": "Microsoft's cost of revenue in fiscal Q1 2026 (quarter ended 2025-09-30) was $24.043 billion.",
+    "ticker": "MSFT",
+    "unit": "USD",
+    "value": "24043000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "218"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q4",
+     "fiscal_year": 2026
+    },
+    "text": "Microsoft's cost of revenue in fiscal Q4 2026 (quarter ended 2026-06-30) was $29.525 billion. This is a derived value: full-year FY2026 of $106.374 billion minus the nine-month figure of $76.849 billion.",
+    "ticker": "MSFT",
+    "unit": "USD",
+    "value": "29525000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": "value",
+      "kind": "computation",
+      "ref": "cmp_2"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q4",
+     "fiscal_year": 2026
+    },
+    "text": "The absolute increase in cost of revenue from fiscal Q1 2026 to fiscal Q4 2026 was about $5.482 billion.",
+    "ticker": "MSFT",
+    "unit": "USD",
+    "value": "5482000000",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_1"
+     }
+    ],
+    "id": "c4",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q4",
+     "fiscal_year": 2026
+    },
+    "text": "Microsoft's cost of revenue rose about 22.8% from fiscal Q1 2026 to fiscal Q4 2026.",
+    "ticker": "MSFT",
+    "unit": "percent",
+    "value": "22.800815206089",
+    "value_basis": "computation"
+   }
+  ],
+  "final_claim_id": "c4",
+  "final_unit": "percent",
+  "final_value": "22.800815206089",
+  "status": "answered",
+  "summary": "Microsoft's cost of revenue rose about 22.8%, from $24.043 billion in fiscal Q1 2026 to $29.525 billion in fiscal Q4 2026. That is an increase of about $5.482 billion."
+ },
+ "run_id": "8ec4b4af-d8a0-489d-8068-eb9b4aace5d1",
+ "run_status": "done",
+ "split": "dev",
+ "started_at": "2026-11-11T18:41:47.409782+00:00",
+ "status": "done",
+ "system_config_hash": "2672337d37a1c4749e46b1640e2449249f4b9fce707f2424c3af28481dde7549",
+ "system_id": "system",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 54920,
+  "output_tokens": 2536
+ }
+}

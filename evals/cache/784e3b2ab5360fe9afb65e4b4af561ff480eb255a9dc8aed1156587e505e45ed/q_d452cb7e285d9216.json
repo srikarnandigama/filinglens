@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.004484",
+ "finished_at": "2026-11-11T18:42:26.984433+00:00",
+ "latency_ms": 2683,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "-5.59"
+ },
+ "question_id": "q_d452cb7e285d9216",
+ "question_sha": "b2f4be7a6eaae0f23938fb2a6d09416a3cd515b53fb177d3897f45528790bef6",
+ "raw_output": "Apple's gross profit fell about 5.6% from fiscal Q1 2023 to fiscal Q4 2023. The quarterly figures below are recalled from Apple's filings, not looked up.\n\n- Fiscal Q1 2023 (quarter ended Dec 31, 2022): gross profit of about $42,822 million.\n- Fiscal Q4 2023 (quarter ended Sep 30, 2023): gross profit of about $40,427 million.\n\nThe change is (40,427 \u2212 42,822) / 42,822 \u2248 \u22125.59%.\n\n{\"value\": -5.59, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011Cgwdds14CQXe6zkMmqZrx"
+ ],
+ "split": "dev",
+ "started_at": "2026-11-11T18:42:24.306056+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 352,
+  "output_tokens": 378,
+  "web_searches": 0
+ }
+}

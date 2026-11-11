@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.002992",
+ "finished_at": "2026-11-11T18:43:08.654489+00:00",
+ "latency_ms": 2054,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "41.8"
+ },
+ "question_id": "q_42b1a3f2a4a33b26",
+ "question_sha": "5262402a672398ba492e01706ab6db4a338e80bdad97bbffd6566e2b433326c3",
+ "raw_output": "Apple's fiscal Q2 2023 (quarter ended April 1, 2023): net sales were $94,836 million and gross margin was $39,636 million.\n\nGross margin percentage = 39,636 / 94,836 = 41.8%.\n\nThe question could mean the dollar gross margin or the percentage. Gross margin is most commonly stated as a percentage, so I give 41.8%. The dollar figure was $39.6 billion.\n\n**Apple's gross margin in fiscal Q2 2023 was about 41.8%** (gross profit of $39.6 billion on net sales of $94.8 billion).\n\n{\"value\": 41.8, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgwdgyrtxUh1eCi95FN1n"
+ ],
+ "split": "dev",
+ "started_at": "2026-11-11T18:43:06.594652+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 336,
+  "output_tokens": 232,
+  "web_searches": 0
+ }
+}

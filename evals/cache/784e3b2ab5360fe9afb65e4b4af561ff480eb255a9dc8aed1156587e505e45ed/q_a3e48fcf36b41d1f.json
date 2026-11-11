@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.002224",
+ "finished_at": "2026-11-11T18:42:57.638163+00:00",
+ "latency_ms": 1404,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "33.3"
+ },
+ "question_id": "q_a3e48fcf36b41d1f",
+ "question_sha": "569ebfc1df396e5d1b680dad7be2c89ec794931b34bf0289472f5c1df0002bbd",
+ "raw_output": "Alphabet's operating income was $84,293 million in fiscal 2023 and $112,390 million in fiscal 2024.\n\nChange = (112,390 \u2212 84,293) / 84,293 = 28,097 / 84,293 \u2248 33.33%\n\nAlphabet's operating income rose about 33.3% from fiscal 2023 to fiscal 2024.\n\n{\"value\": 33.3, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgwdgDW9qgWa5kR4TcLwP"
+ ],
+ "split": "dev",
+ "started_at": "2026-11-11T18:42:56.231404+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 347,
+  "output_tokens": 153,
+  "web_searches": 0
+ }
+}

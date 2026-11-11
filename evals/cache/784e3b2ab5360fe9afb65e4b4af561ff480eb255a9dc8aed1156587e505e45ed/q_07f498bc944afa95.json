@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.007444",
+ "finished_at": "2026-11-11T18:42:41.381228+00:00",
+ "latency_ms": 5807,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "-5"
+ },
+ "question_id": "q_07f498bc944afa95",
+ "question_sha": "ddef5e15528a05847ca57c0415f159b008f516218ecc28747cb8fa3c5c2f5110",
+ "raw_output": "ExxonMobil's capital expenditures fell by roughly 5% from fiscal 2024 to fiscal 2025. This is a best estimate from memory, not figures I could confirm against the filings.\n\nI used additions to property, plant and equipment from the cash flow statement. I recall about $29.7 billion for 2024 and about $28.2 billion for 2025. The 2025 figure is the less certain of the two.\n\nThe change is (28.2 \u2212 29.7) / 29.7, which is about \u22125%.\n\n{\"value\": -5, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011Cgwdeh9WkhuXzmjehqzjC"
+ ],
+ "split": "dev",
+ "started_at": "2026-11-11T18:42:35.567948+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 352,
+  "output_tokens": 674,
+  "web_searches": 0
+ }
+}

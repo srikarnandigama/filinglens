@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.002152",
+ "finished_at": "2026-11-11T18:44:36.362936+00:00",
+ "latency_ms": 3354,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "19.9"
+ },
+ "question_id": "q_48beb6bcd53a9d89",
+ "question_sha": "7f324abf5da1ebce869eee58e1e23866ff0ce7485ccbe5320c086af788086463",
+ "raw_output": "Meta's Q1 2023 (quarter ended March 31, 2023) results:\n- Revenue: $28,645 million\n- Income from operations: $5,709 million\n\nOperating margin = 5,709 / 28,645 \u2248 19.93%, which rounds to about 20%.\n\nMeta's Q1 2023 operating margin was about 20%.\n\n{\"value\": 19.9, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgwdoML9Mp5vgWoQeg2qL"
+ ],
+ "split": "dev",
+ "started_at": "2026-11-11T18:44:33.008642+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 336,
+  "output_tokens": 148,
+  "web_searches": 0
+ }
+}

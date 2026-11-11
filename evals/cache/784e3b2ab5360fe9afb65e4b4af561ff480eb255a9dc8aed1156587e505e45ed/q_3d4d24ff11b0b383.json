@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.003202",
+ "finished_at": "2026-11-11T18:42:58.904185+00:00",
+ "latency_ms": 2007,
+ "latency_note": null,
+ "prediction": {
+  "choice": "META",
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percentage_points",
+  "value": "4.97"
+ },
+ "question_id": "q_3d4d24ff11b0b383",
+ "question_sha": "a1be1b792114b69141e6326ed3d7c0968f1e9e3db31c0d49a0bb2e634b14b0b1",
+ "raw_output": "Alphabet FY2023: revenue $307.394B, net income $73.795B \u2192 24.0%.\nMeta FY2023: revenue $134.902B, net income $39.098B \u2192 28.98%.\n\nAlphabet: 73.795 / 307.394 = 0.24006 \u2192 24.01%.\nMeta: 39.098 / 134.902 = 0.28982 \u2192 28.98%.\n\nDifference: 28.98 \u2212 24.01 = 4.97 percentage points.\n\n**Meta** had the higher net margin in fiscal 2023, at about 29.0% versus Alphabet's 24.0%, a gap of about 4.97 percentage points.\n\n{\"value\": 4.97, \"unit\": \"percentage_points\", \"choice\": \"META\", \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgwdgGLKTgM57nSgNGgx6"
+ ],
+ "split": "dev",
+ "started_at": "2026-11-11T18:42:56.899562+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 351,
+  "output_tokens": 250,
+  "web_searches": 0
+ }
+}

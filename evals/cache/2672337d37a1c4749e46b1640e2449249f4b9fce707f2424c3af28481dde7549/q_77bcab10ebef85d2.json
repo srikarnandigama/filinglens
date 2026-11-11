@@ -1,0 +1,152 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 5,
+  "numeric_valid": 5,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.220584",
+ "error": null,
+ "finished_at": "2026-11-11T18:36:07.367951+00:00",
+ "latency_ms": 30913,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD",
+  "value": "10968000000"
+ },
+ "question_id": "q_77bcab10ebef85d2",
+ "question_sha": "127907eaafb4e0406266d14b9493558334500f7cc98a2ba545d25ae18fbe3246",
+ "raw_output": {
+  "caveats": [
+   "Q4 2024 R&D expense is derived (FY2024 total of $43.873B minus the nine-month total of $31.693B), not separately reported.",
+   "The four quarterly values sum to $43.872B (cmp_2), which is $1 million less than the $43.873B full-year figure used to derive Q4."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "882"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q1",
+     "fiscal_year": 2024
+    },
+    "text": "Q1 2024 R&D expense was $9.978 billion.",
+    "ticker": "META",
+    "unit": "USD",
+    "value": "9978000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "883"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q2",
+     "fiscal_year": 2024
+    },
+    "text": "Q2 2024 R&D expense was $10.537 billion.",
+    "ticker": "META",
+    "unit": "USD",
+    "value": "10537000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "884"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q3",
+     "fiscal_year": 2024
+    },
+    "text": "Q3 2024 R&D expense was $11.177 billion.",
+    "ticker": "META",
+    "unit": "USD",
+    "value": "11177000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "885"
+     }
+    ],
+    "id": "c4",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q4",
+     "fiscal_year": 2024
+    },
+    "text": "Q4 2024 R&D expense, derived as full-year minus nine-month figures, was $12.18 billion.",
+    "ticker": "META",
+    "unit": "USD",
+    "value": "12180000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": "mean",
+      "kind": "computation",
+      "ref": "cmp_1"
+     }
+    ],
+    "id": "c5",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "The average quarterly R&D expense across the four quarters of fiscal 2024 was about $10.968 billion.",
+    "ticker": "META",
+    "unit": "USD",
+    "value": "10968000000",
+    "value_basis": "computation"
+   }
+  ],
+  "final_claim_id": "c5",
+  "final_unit": "USD",
+  "final_value": "10968000000",
+  "status": "answered",
+  "summary": "Meta's average quarterly R&D expense over fiscal 2024 was about $10.968 billion. That is the mean of $9.978B, $10.537B, $11.177B and $12.18B. Expense rose each quarter."
+ },
+ "run_id": "76fe58ce-20b0-4c9f-aaa7-894530b51f06",
+ "run_status": "done",
+ "split": "dev",
+ "started_at": "2026-11-11T18:35:36.410510+00:00",
+ "status": "done",
+ "system_config_hash": "2672337d37a1c4749e46b1640e2449249f4b9fce707f2424c3af28481dde7549",
+ "system_id": "system",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 87817,
+  "output_tokens": 4495
+ }
+}

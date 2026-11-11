@@ -1,0 +1,132 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 4,
+  "numeric_valid": 4,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.178858",
+ "error": null,
+ "finished_at": "2026-11-11T18:35:26.305697+00:00",
+ "latency_ms": 22608,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "16.67078087715"
+ },
+ "question_id": "q_07f498bc944afa95",
+ "question_sha": "ddef5e15528a05847ca57c0415f159b008f516218ecc28747cb8fa3c5c2f5110",
+ "raw_output": {
+  "caveats": [
+   "Capital expenditures are measured as payments to acquire property, plant and equipment (PaymentsToAcquirePropertyPlantAndEquipment). This may differ from the capital and exploration expenditures figure that ExxonMobil reports in its own materials.",
+   "No filing passages were provided, so this answer does not explain why capital expenditures changed."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": "value",
+      "kind": "fact",
+      "ref": "2628"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "XOM capital expenditures in fiscal 2024 were $24.306 billion.",
+    "ticker": "XOM",
+    "unit": "USD",
+    "value": "24306000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": "value",
+      "kind": "fact",
+      "ref": "2633"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "XOM capital expenditures in fiscal 2025 were $28.358 billion.",
+    "ticker": "XOM",
+    "unit": "USD",
+    "value": "28358000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": "value",
+      "kind": "computation",
+      "ref": "cmp_2"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Capital expenditures increased by about $4.052 billion from fiscal 2024 to fiscal 2025.",
+    "ticker": "XOM",
+    "unit": "USD",
+    "value": "4052000000",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_1"
+     }
+    ],
+    "id": "c4",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "XOM capital expenditures increased by about 16.67% from fiscal 2024 to fiscal 2025.",
+    "ticker": "XOM",
+    "unit": "percent",
+    "value": "16.67078087715",
+    "value_basis": "computation"
+   }
+  ],
+  "final_claim_id": "c4",
+  "final_unit": "percent",
+  "final_value": "16.67078087715",
+  "status": "answered",
+  "summary": "ExxonMobil's capital expenditures (payments for property, plant and equipment) rose about 16.67%, from $24.306 billion in fiscal 2024 to $28.358 billion in fiscal 2025. That is an increase of about $4.052 billion."
+ },
+ "run_id": "b36303f6-5d0e-4acf-9a4d-12950ac92e04",
+ "run_status": "done",
+ "split": "dev",
+ "started_at": "2026-11-11T18:35:03.663810+00:00",
+ "status": "done",
+ "system_config_hash": "2672337d37a1c4749e46b1640e2449249f4b9fce707f2424c3af28481dde7549",
+ "system_id": "system",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 75714,
+  "output_tokens": 2743
+ }
+}

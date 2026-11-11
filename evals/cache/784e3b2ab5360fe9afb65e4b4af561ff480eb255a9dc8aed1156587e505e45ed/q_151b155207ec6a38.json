@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.005048",
+ "finished_at": "2026-11-11T18:44:15.871148+00:00",
+ "latency_ms": 3508,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "8432"
+ },
+ "question_id": "q_151b155207ec6a38",
+ "question_sha": "db3c0daf88edaf67e29a29d1b831fd3f6d7b3aec086ccfb3d1018693615fb627",
+ "raw_output": "Microsoft's research and development expense for fiscal Q2 2025 (the quarter ended December 31, 2024) was about $8.43 billion ($8,432 million). This figure is from memory of the 10-Q rather than checked against the filing, so treat it as my best estimate.\n\n{\"value\": 8432, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011Cgwdmq1UFpyQNAYa9GBdX"
+ ],
+ "split": "dev",
+ "started_at": "2026-11-11T18:44:12.358813+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 339,
+  "output_tokens": 437,
+  "web_searches": 0
+ }
+}

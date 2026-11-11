@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.011764",
+ "finished_at": "2026-11-11T18:42:43.618128+00:00",
+ "latency_ms": 8005,
+ "latency_note": null,
+ "prediction": {
+  "choice": "JNJ",
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percentage_points",
+  "value": "10.3"
+ },
+ "question_id": "q_e138e80314a99dcf",
+ "question_sha": "7900703644f34d163aedcb80c0e745b0d9335f547097ae7858f994cc21bd7a74",
+ "raw_output": "**Johnson & Johnson** had the higher net margin in fiscal 2025, by roughly 10 percentage points. This is an estimate from figures I recalled rather than looked up, so treat the Pfizer numbers in particular as approximate.\n\n- **Johnson & Johnson:** net earnings of about $26.8B on sales of about $94.2B, which is a net margin of about 28.4%.\n- **Pfizer:** net income of about $11.3B on revenue of about $62.6B, which is a net margin of about 18%.\n\nThe gap is about 28.4% \u2212 18.1% \u2248 10.3 percentage points.\n\n{\"value\": 10.3, \"unit\": \"percentage_points\", \"choice\": \"JNJ\", \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgwdehLfRCUzeZbBnXuBH"
+ ],
+ "split": "dev",
+ "started_at": "2026-11-11T18:42:35.600191+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 357,
+  "output_tokens": 1105,
+  "web_searches": 0
+ }
+}

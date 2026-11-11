@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.00848",
+ "finished_at": "2026-11-11T18:42:47.556671+00:00",
+ "latency_ms": 6185,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "4200"
+ },
+ "question_id": "q_baac18187113aac1",
+ "question_sha": "f7d4387b08bda1fb12f30ba258075f1367b42f456915243c1468e4f8274f82e2",
+ "raw_output": "I don't have Pfizer's reported Q1 2026 figures, so this is an estimate, not a reported number. I based it on my recollection of Pfizer's recent quarters, which is itself uncertain:\n\n- Quarterly revenue has been roughly $14 billion.\n- Reported cost of sales has been about 28\u201330% of revenue.\n- That share includes roughly $1 billion a quarter of amortization of intangible assets.\n\nApplying that share to about $14 billion of revenue gives roughly $4.2 billion for Q1 2026.\n\n{\"value\": 4200, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011Cgwdf81izkdbAf68FKKeu"
+ ],
+ "split": "dev",
+ "started_at": "2026-11-11T18:42:41.383243+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 340,
+  "output_tokens": 780,
+  "web_searches": 0
+ }
+}

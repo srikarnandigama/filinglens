@@ -1,0 +1,132 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 4,
+  "numeric_valid": 4,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.131468",
+ "error": null,
+ "finished_at": "2026-11-11T18:38:15.787181+00:00",
+ "latency_ms": 17837,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "15.417839464234"
+ },
+ "question_id": "q_0b550c55719ea51c",
+ "question_sha": "509c46851fb69eb9c8abc37d9a473de5c918eac889b0d48f7958f2923a5643c2",
+ "raw_output": {
+  "caveats": [
+   "Capex is measured as the XBRL concept PaymentsToAcquirePropertyPlantAndEquipment. Walmart's fiscal year ends January 31, so fiscal 2025 covers Feb 2024 to Jan 2025.",
+   "No filing passages were provided, so no management explanation for the change is included."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3288"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "Walmart's fiscal 2024 capital expenditures (payments to acquire property, plant and equipment) were $20.606 billion.",
+    "ticker": "WMT",
+    "unit": "USD",
+    "value": "20606000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3293"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Walmart's fiscal 2025 capital expenditures were $23.783 billion.",
+    "ticker": "WMT",
+    "unit": "USD",
+    "value": "23783000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": "value",
+      "kind": "computation",
+      "ref": "cmp_2"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "The dollar increase in capital expenditures from fiscal 2024 to fiscal 2025 was about $3.177 billion.",
+    "ticker": "WMT",
+    "unit": "USD",
+    "value": "3177000000",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_1"
+     }
+    ],
+    "id": "c4",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Walmart's capital expenditures increased by about 15.42% from fiscal 2024 to fiscal 2025.",
+    "ticker": "WMT",
+    "unit": "percent",
+    "value": "15.417839464234",
+    "value_basis": "computation"
+   }
+  ],
+  "final_claim_id": "c4",
+  "final_unit": "percent",
+  "final_value": "15.417839464234",
+  "status": "answered",
+  "summary": "Walmart's capital expenditures rose about 15.42% from fiscal 2024 to fiscal 2025. They went from $20.606 billion to $23.783 billion, an increase of about $3.177 billion."
+ },
+ "run_id": "2dffb644-a6fc-49dc-9ab5-142af2ad3b36",
+ "run_status": "done",
+ "split": "dev",
+ "started_at": "2026-11-11T18:37:57.927553+00:00",
+ "status": "done",
+ "system_config_hash": "2672337d37a1c4749e46b1640e2449249f4b9fce707f2424c3af28481dde7549",
+ "system_id": "system",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 53174,
+  "output_tokens": 2512
+ }
+}

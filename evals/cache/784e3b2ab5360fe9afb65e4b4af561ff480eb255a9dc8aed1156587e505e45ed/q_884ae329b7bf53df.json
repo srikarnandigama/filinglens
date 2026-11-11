@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.012568",
+ "finished_at": "2026-11-11T18:44:04.341807+00:00",
+ "latency_ms": 9205,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "91900"
+ },
+ "question_id": "q_884ae329b7bf53df",
+ "question_sha": "91beb68b22e1954521776207c44a7460043322a4c8c27c89a3e7935ed1ff6554",
+ "raw_output": "Amazon's cost of sales in fiscal Q4 2023 was about $91.9 billion, on net sales of roughly $170.0 billion. I'm recalling this figure from memory rather than from the filing, so treat it as an estimate.\n\n{\"value\": 91900, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgwdkZS5DnthH88sA1r4y"
+ ],
+ "split": "dev",
+ "started_at": "2026-11-11T18:43:55.131061+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 339,
+  "output_tokens": 1189,
+  "web_searches": 0
+ }
+}

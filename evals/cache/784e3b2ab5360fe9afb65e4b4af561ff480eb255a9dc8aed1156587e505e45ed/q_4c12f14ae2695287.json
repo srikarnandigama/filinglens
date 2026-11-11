@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.002476",
+ "finished_at": "2026-11-11T18:44:20.152376+00:00",
+ "latency_ms": 2267,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "6640"
+ },
+ "question_id": "q_4c12f14ae2695287",
+ "question_sha": "77c06c2c7a87ab473436b69dcf5e630badbeae9eca659617cf06cb7b6d85f2b7",
+ "raw_output": "Meta's cost of revenue in Q1 2024 (quarter ended March 31, 2024) was about $6.64 billion, which I am recalling from the 10-Q rather than checking against the filing.\n\nTotal revenue for the quarter was $36,455 million. Costs and expenses were $24,769 million, and income from operations was $13,818 million (a 38% margin).\n\nCost of revenue was $6,640 million, or about $6.64 billion.\n\n{\"value\": 6640, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgwdnEdYBWweCm9ET4car"
+ ],
+ "split": "dev",
+ "started_at": "2026-11-11T18:44:17.885490+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 338,
+  "output_tokens": 180,
+  "web_searches": 0
+ }
+}

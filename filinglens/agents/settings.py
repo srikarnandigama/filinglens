@@ -19,6 +19,7 @@ class RuntimeSettings(Settings):
     worker_model: str | None = None
     verifier_model: str | None = None
     open_model: str | None = None
+    baseline_models: str | None = None  # M5 baselines, comma-separated (index 0, 1, ...)
     max_run_tokens: int = Field(default=200_000, gt=0)
     max_run_cost_usd: Decimal | None = None
     retrieval_mode: str = "vector"
@@ -31,6 +32,7 @@ class RuntimeSettings(Settings):
         "worker_model",
         "verifier_model",
         "open_model",
+        "baseline_models",
         "max_run_cost_usd",
         mode="before",
     )

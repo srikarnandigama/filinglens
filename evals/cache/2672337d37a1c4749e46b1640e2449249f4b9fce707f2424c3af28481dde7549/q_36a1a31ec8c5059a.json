@@ -1,0 +1,69 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 1,
+  "numeric_valid": 1,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.116850",
+ "error": null,
+ "finished_at": "2026-11-11T18:39:10.779599+00:00",
+ "latency_ms": 16440,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD",
+  "value": "3367000000"
+ },
+ "question_id": "q_36a1a31ec8c5059a",
+ "question_sha": "a0210d85bfaed3edd1404f9c8c054396b5321fabc5d60ed845079a55d9a2847b",
+ "raw_output": {
+  "caveats": [],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": "value",
+      "kind": "fact",
+      "ref": "3503"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q1",
+     "fiscal_year": 2023
+    },
+    "text": "Coca-Cola (KO) reported operating income of about $3.367 billion ($3,367,000,000) for fiscal Q1 2023 (quarter ended 2023-03-31).",
+    "ticker": "KO",
+    "unit": "USD",
+    "value": "3367000000",
+    "value_basis": "fact"
+   }
+  ],
+  "final_claim_id": "c1",
+  "final_unit": "USD",
+  "final_value": "3367000000",
+  "status": "answered",
+  "summary": "Coca-Cola's operating income in fiscal Q1 2023 (January 1 to March 31, 2023) was $3.367 billion."
+ },
+ "run_id": "39c2910a-7194-4fd4-9c6f-8d801e8c6b1c",
+ "run_status": "done",
+ "split": "dev",
+ "started_at": "2026-11-11T18:38:54.302538+00:00",
+ "status": "done",
+ "system_config_hash": "2672337d37a1c4749e46b1640e2449249f4b9fce707f2424c3af28481dde7549",
+ "system_id": "system",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 48405,
+  "output_tokens": 2004
+ }
+}

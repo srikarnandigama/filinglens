@@ -1,0 +1,69 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 1,
+  "numeric_valid": 1,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.063942",
+ "error": null,
+ "finished_at": "2026-11-11T18:37:54.816996+00:00",
+ "latency_ms": 7970,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD",
+  "value": "58471000000"
+ },
+ "question_id": "q_ec5863361bd969ec",
+ "question_sha": "bdbd644f9eee140465928a417b2cf77acbd8391c729526dab734ef5fbd221e44",
+ "raw_output": {
+  "caveats": [],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "1146"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "JPMorgan Chase's net income for fiscal 2024 was about $58.47 billion ($58,471,000,000).",
+    "ticker": "JPM",
+    "unit": "USD",
+    "value": "58471000000",
+    "value_basis": "fact"
+   }
+  ],
+  "final_claim_id": "c1",
+  "final_unit": "USD",
+  "final_value": "58471000000",
+  "status": "answered",
+  "summary": "JPMorgan Chase reported net income of about $58.47 billion for fiscal 2024 (the calendar year ended December 31, 2024)."
+ },
+ "run_id": "6cf2496e-797f-4dc3-8416-2b87bce9e8c9",
+ "run_status": "done",
+ "split": "dev",
+ "started_at": "2026-11-11T18:37:46.824349+00:00",
+ "status": "done",
+ "system_config_hash": "2672337d37a1c4749e46b1640e2449249f4b9fce707f2424c3af28481dde7549",
+ "system_id": "system",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 27311,
+  "output_tokens": 932
+ }
+}

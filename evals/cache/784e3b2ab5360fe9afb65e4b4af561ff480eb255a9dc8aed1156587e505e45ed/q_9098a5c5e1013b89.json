@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.019958",
+ "finished_at": "2026-11-11T18:43:37.898220+00:00",
+ "latency_ms": 15196,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "6400"
+ },
+ "question_id": "q_9098a5c5e1013b89",
+ "question_sha": "0f6700d4f0a335d0a11cebc435ff3bef3f240467e2d972b795b5aa9689b3fb56",
+ "raw_output": "My best estimate of Johnson & Johnson's fiscal Q4 2023 cost of products sold is about $6.4 billion. This is an estimate from memory and ratios, not a figure I could confirm against the filing.\n\nI started from full-year 2023 cost of products sold of roughly $24.9 billion on sales of about $85.2 billion, which is about 29% of sales. I applied a slightly higher cost ratio of about 30% to Q4 sales of about $21.4 billion. That gives roughly $6.4 billion.\n\n{\"value\": 6400, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgwdiAhHotgQLUytyyEP8"
+ ],
+ "split": "dev",
+ "started_at": "2026-11-11T18:43:22.703208+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 344,
+  "output_tokens": 1927,
+  "web_searches": 0
+ }
+}

@@ -20,3 +20,22 @@ cache_read_per_mtok = ""
 cache_write_per_mtok = ""
 source = "https://platform.claude.com/docs/en/models/overview"
 checked = 2026-10-22
+
+[models."claude-opus-5-5"]
+provider = "anthropic"
+input_per_mtok = "4.00"
+output_per_mtok = "20.00"
+cache_read_per_mtok = ""
+cache_write_per_mtok = ""
+source = "<pricing page URL>"
+checked = 2026-11-11
+
+[tools.web_search]
+usd_per_1000 = "10.00"
+source = "<pricing page URL>"
+checked = 2026-11-11
+
+[eval]
+batch_multiplier = "0.50"
+source = "<pricing page URL>"
+checked = 2026-11-11

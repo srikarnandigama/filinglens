@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.00812",
+ "finished_at": "2026-11-11T18:42:33.064806+00:00",
+ "latency_ms": 6604,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "21.3"
+ },
+ "question_id": "q_c946f038129561dc",
+ "question_sha": "f51e3a429a4b5d6c0f98f9b80ec49c4eaf943cb7224a15d2f1bdc5529d3a0064",
+ "raw_output": "Disney's income statement has no single \"operating income\" line, so I used total segment operating income, which is the closest measure. I'm working from memory of the reported figures, so treat them as approximate.\n\n- Fiscal 2023: about $12.86 billion\n- Fiscal 2024: about $15.60 billion\n\nChange = (15.60 \u2212 12.86) / 12.86 \u2248 +21.3%\n\nDisney's operating income rose by roughly 21% from fiscal 2023 to fiscal 2024.\n\n{\"value\": 21.3, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011Cgwde2GAi4AAEiWzQXqnT"
+ ],
+ "split": "dev",
+ "started_at": "2026-11-11T18:42:26.453351+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 345,
+  "output_tokens": 743,
+  "web_searches": 0
+ }
+}

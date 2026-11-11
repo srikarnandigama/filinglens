@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.00463",
+ "finished_at": "2026-11-11T18:42:49.437557+00:00",
+ "latency_ms": 2999,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "74.0"
+ },
+ "question_id": "q_719c211db302d547",
+ "question_sha": "1fd8c972cfc54ae948928065103468c8a500a3c3b5932caa7fce330f5dbd77d8",
+ "raw_output": "Alphabet's capital expenditures rose by about 74% from fiscal 2024 to fiscal 2025.\n\n- **Fiscal 2024:** purchases of property and equipment were about $52.5 billion.\n- **Fiscal 2025:** capital expenditures were about $91.4 billion. This figure is from my recollection of Alphabet's reported results, not a checked filing, so treat it as an estimate.\n\nChange = 91.4 / 52.535 \u2212 1 \u2248 +74.0%.\n\n{\"value\": 74.0, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgwdfVck3Z1tnx3Nqk5nV"
+ ],
+ "split": "dev",
+ "started_at": "2026-11-11T18:42:46.426732+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 350,
+  "output_tokens": 393,
+  "web_searches": 0
+ }
+}

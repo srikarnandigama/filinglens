@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.02941",
+ "finished_at": "2026-11-11T18:44:10.043746+00:00",
+ "latency_ms": 22502,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "9000"
+ },
+ "question_id": "q_a0ce3b84e8357738",
+ "question_sha": "c1652f0f8700182db076e03d5b82bd837d72b8d789205de675cdeebc13c4d6fb",
+ "raw_output": "I could not recall Pfizer's reported Q4 2023 cost of sales with confidence, so this is a best estimate of about $9.0 billion. It rests on partial memory of the Q4 2023 results (revenue of about $14.25 billion, including inventory write-offs related to Paxlovid, Pfizer's COVID-19 treatment). A rough check against the quarter's net loss pointed to a somewhat lower figure, so the true value could be a few billion dollars off.\n\n{\"value\": 9000, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgwdjzsFaE9gNQ7rQyV9p"
+ ],
+ "split": "dev",
+ "started_at": "2026-11-11T18:43:47.542821+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 340,
+  "output_tokens": 2873,
+  "web_searches": 0
+ }
+}

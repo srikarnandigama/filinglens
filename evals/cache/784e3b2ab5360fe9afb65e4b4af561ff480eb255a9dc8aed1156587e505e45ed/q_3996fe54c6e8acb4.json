@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.011338",
+ "finished_at": "2026-11-11T18:42:51.561887+00:00",
+ "latency_ms": 7951,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "1.0"
+ },
+ "question_id": "q_3996fe54c6e8acb4",
+ "question_sha": "5a184d13b6b48068cb91b39d9d448955ac9f479d450b01ba95ef7a29865fcf1f",
+ "raw_output": "Disney's capital expenditures were roughly flat between fiscal Q1 2023 and fiscal Q4 2023, up about 1%. This is an estimate from figures I recalled rather than looked up, and I am not certain of them.\n\n- **Fiscal Q1 2023 (quarter ended Dec 31, 2022):** investments in parks, resorts and other property were about $1.31 billion.\n- **Fiscal Q4 2023 (quarter ended Sept 30, 2023):** I derived this as full-year capex of about $4.97 billion less the nine-month figure. The nine-month figure is the least certain input. It implies Q4 capex of about $1.32 billion.\n\nThe change is about (1.32 \u2212 1.31) / 1.31 \u2248 +1%.\n\n{\"value\": 1.0, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgwdfHaSaQtGrEx2ixE9o"
+ ],
+ "split": "dev",
+ "started_at": "2026-11-11T18:42:43.618128+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 354,
+  "output_tokens": 1063,
+  "web_searches": 0
+ }
+}

@@ -1,0 +1,23 @@
+# The 30 handwritten explanatory questions (frozen v2 labels) for the judge and retrieval recall.
+name = "m5-handwritten"
+split = "handwritten"
+sample = "all"
+seed = 20261109
+spend_cap_usd = "10.00"
+
+[[systems]]
+id = "system"
+kind = "system"
+max_cost_usd = "0.50"
+
+[[systems]]
+id = "b0-sonnet"
+kind = "b0"
+model_env = "BASELINE_MODELS"
+model_index = 0
+
+[[systems]]
+id = "b0-opus"
+kind = "b0"
+model_env = "BASELINE_MODELS"
+model_index = 1           # dropped first if the post-pilot gate needs savings (cut 2)

@@ -1,0 +1,132 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 4,
+  "numeric_valid": 4,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.265950",
+ "error": null,
+ "finished_at": "2026-11-11T18:40:30.528847+00:00",
+ "latency_ms": 25080,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "-2.115340075658"
+ },
+ "question_id": "q_34b30c390e5c3178",
+ "question_sha": "63e65878386516ceb700aec767c93a62dee7029fedbb57d0303b11c3ac0239ee",
+ "raw_output": {
+  "caveats": [
+   "The Q4 2025 value is derived, not reported directly. It is full-year 2025 operating cash flow ($51.970 billion) minus the nine-month figure ($39.291 billion).",
+   "No filing passages were provided, so this answer gives no management explanation for the change."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "2613"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q1",
+     "fiscal_year": 2025
+    },
+    "text": "ExxonMobil's net cash provided by operating activities in fiscal Q1 2025 was $12.953 billion.",
+    "ticker": "XOM",
+    "unit": "USD",
+    "value": "12953000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "2616"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q4",
+     "fiscal_year": 2025
+    },
+    "text": "ExxonMobil's net cash provided by operating activities in fiscal Q4 2025 was $12.679 billion. This is a derived value: full-year 2025 less the nine months ended 2025-09-30.",
+    "ticker": "XOM",
+    "unit": "USD",
+    "value": "12679000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_1"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q4",
+     "fiscal_year": 2025
+    },
+    "text": "Operating cash flow changed by about -2.1% from Q1 2025 to Q4 2025.",
+    "ticker": "XOM",
+    "unit": "percent",
+    "value": "-2.115340075658",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value",
+      "kind": "computation",
+      "ref": "cmp_2"
+     }
+    ],
+    "id": "c4",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q4",
+     "fiscal_year": 2025
+    },
+    "text": "The absolute change in operating cash flow was a decrease of $274 million.",
+    "ticker": "XOM",
+    "unit": "USD",
+    "value": "-274000000",
+    "value_basis": "computation"
+   }
+  ],
+  "final_claim_id": "c3",
+  "final_unit": "percent",
+  "final_value": "-2.115340075658",
+  "status": "answered",
+  "summary": "ExxonMobil's net cash provided by operating activities fell about 2.1% from fiscal Q1 2025 ($12.953 billion) to fiscal Q4 2025 ($12.679 billion). That is a drop of $274 million."
+ },
+ "run_id": "88fcc6b9-17b1-4fd8-9558-62bd77a70dfd",
+ "run_status": "done",
+ "split": "dev",
+ "started_at": "2026-11-11T18:40:05.405395+00:00",
+ "status": "done",
+ "system_config_hash": "2672337d37a1c4749e46b1640e2449249f4b9fce707f2424c3af28481dde7549",
+ "system_id": "system",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 118320,
+  "output_tokens": 2931
+ }
+}

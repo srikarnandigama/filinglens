@@ -1,0 +1,171 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 6,
+  "numeric_valid": 6,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.228418",
+ "error": null,
+ "finished_at": "2026-11-11T18:35:28.891988+00:00",
+ "latency_ms": 28581,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD",
+  "value": "4977750000"
+ },
+ "question_id": "q_c4a25f7d0b813cf1",
+ "question_sha": "9c123bb60088c494c0cf9b7f699e1588a2aaab121af13e3e280b520d96f05dfb",
+ "raw_output": {
+  "caveats": [
+   "Q4 FY2026 gross profit is derived (full-year gross profit minus nine-month year-to-date gross profit), not separately reported."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3765"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q1",
+     "fiscal_year": 2026
+    },
+    "text": "Nike's Q1 FY2026 gross profit was $4.943 billion.",
+    "ticker": "NKE",
+    "unit": "USD",
+    "value": "4943000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3766"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q2",
+     "fiscal_year": 2026
+    },
+    "text": "Nike's Q2 FY2026 gross profit was $5.045 billion.",
+    "ticker": "NKE",
+    "unit": "USD",
+    "value": "5045000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3767"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q3",
+     "fiscal_year": 2026
+    },
+    "text": "Nike's Q3 FY2026 gross profit was $4.53 billion.",
+    "ticker": "NKE",
+    "unit": "USD",
+    "value": "4530000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3768"
+     }
+    ],
+    "id": "c4",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q4",
+     "fiscal_year": 2026
+    },
+    "text": "Nike's Q4 FY2026 gross profit, derived from the annual figure less the nine-month figure, was $5.393 billion.",
+    "ticker": "NKE",
+    "unit": "USD",
+    "value": "5393000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": "value",
+      "kind": "computation",
+      "ref": "cmp_2"
+     }
+    ],
+    "id": "c5",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2026
+    },
+    "text": "The four fiscal 2026 quarters sum to $19.911 billion of gross profit.",
+    "ticker": "NKE",
+    "unit": "USD",
+    "value": "19911000000",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "mean",
+      "kind": "computation",
+      "ref": "cmp_1"
+     }
+    ],
+    "id": "c6",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2026
+    },
+    "text": "Nike's average quarterly gross profit over fiscal 2026 was about $4.98 billion ($4,977,750,000).",
+    "ticker": "NKE",
+    "unit": "USD",
+    "value": "4977750000",
+    "value_basis": "computation"
+   }
+  ],
+  "final_claim_id": "c6",
+  "final_unit": "USD",
+  "final_value": "4977750000",
+  "status": "answered",
+  "summary": "Nike's average quarterly gross profit over fiscal 2026 was about $4.98 billion ($4,977,750,000), based on quarterly gross profit of $4.943 billion in Q1, $5.045 billion in Q2, $4.53 billion in Q3 and $5.393 billion in Q4. The four quarters sum to $19.911 billion."
+ },
+ "run_id": "cca22775-c1d2-4920-822f-637ed02388af",
+ "run_status": "done",
+ "split": "dev",
+ "started_at": "2026-11-11T18:35:00.267020+00:00",
+ "status": "done",
+ "system_config_hash": "2672337d37a1c4749e46b1640e2449249f4b9fce707f2424c3af28481dde7549",
+ "system_id": "system",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 92679,
+  "output_tokens": 4306
+ }
+}

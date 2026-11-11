@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.002248",
+ "finished_at": "2026-11-11T18:43:39.656337+00:00",
+ "latency_ms": 1754,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "3665"
+ },
+ "question_id": "q_36a1a31ec8c5059a",
+ "question_sha": "a0210d85bfaed3edd1404f9c8c054396b5321fabc5d60ed845079a55d9a2847b",
+ "raw_output": "Coca-Cola's operating income in Q1 2023 (quarter ended March 31, 2023) was $3,665 million, as I recall it from the filing and have not checked it against the source.\n\nNet operating revenues were $11,129 million, and operating income was $3,665 million, which is an operating margin of about 32.9%. In Q1 2022, operating income was $3,224 million.\n\n{\"value\": 3665, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgwdjHh1FDNWozBX8Q3DL"
+ ],
+ "split": "dev",
+ "started_at": "2026-11-11T18:43:37.900239+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 339,
+  "output_tokens": 157,
+  "web_searches": 0
+ }
+}

@@ -1,0 +1,132 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 4,
+  "numeric_valid": 4,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.258512",
+ "error": null,
+ "finished_at": "2026-11-11T18:36:01.562865+00:00",
+ "latency_ms": 25221,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "16.342082980525"
+ },
+ "question_id": "q_3996fe54c6e8acb4",
+ "question_sha": "5a184d13b6b48068cb91b39d9d448955ac9f479d450b01ba95ef7a29865fcf1f",
+ "raw_output": {
+  "caveats": [
+   "The fiscal Q4 2023 capex figure is derived (full-year minus nine-month year-to-date), not directly reported as a quarterly value.",
+   "No filing passages were provided, so this answer gives no management explanation for the change."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3945"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q1",
+     "fiscal_year": 2023
+    },
+    "text": "Disney's capex in fiscal Q1 2023 (quarter ended 2022-12-31) was $1.181 billion.",
+    "ticker": "DIS",
+    "unit": "USD",
+    "value": "1181000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3948"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q4",
+     "fiscal_year": 2023
+    },
+    "text": "Disney's capex in fiscal Q4 2023 (quarter ended 2023-09-30) was $1.374 billion. This is a derived value: full-year capex of $4.969 billion minus nine-month capex of $3.595 billion.",
+    "ticker": "DIS",
+    "unit": "USD",
+    "value": "1374000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": "value",
+      "kind": "computation",
+      "ref": "cmp_2"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q4",
+     "fiscal_year": 2023
+    },
+    "text": "The capex increase from fiscal Q1 2023 to fiscal Q4 2023 was $193 million.",
+    "ticker": "DIS",
+    "unit": "USD",
+    "value": "193000000",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_1"
+     }
+    ],
+    "id": "c4",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q4",
+     "fiscal_year": 2023
+    },
+    "text": "Disney's capex increased by about 16.34% from fiscal Q1 2023 to fiscal Q4 2023.",
+    "ticker": "DIS",
+    "unit": "percent",
+    "value": "16.342082980525",
+    "value_basis": "computation"
+   }
+  ],
+  "final_claim_id": "c4",
+  "final_unit": "percent",
+  "final_value": "16.342082980525",
+  "status": "answered",
+  "summary": "Disney's capital expenditures rose about 16.34% from fiscal Q1 2023 ($1.181 billion) to fiscal Q4 2023 ($1.374 billion). That is an increase of $193 million. The Q4 figure is derived from annual and nine-month figures."
+ },
+ "run_id": "ae9a143b-90c2-464d-8a5b-03f6435e2ee5",
+ "run_status": "done",
+ "split": "dev",
+ "started_at": "2026-11-11T18:35:36.297245+00:00",
+ "status": "done",
+ "system_config_hash": "2672337d37a1c4749e46b1640e2449249f4b9fce707f2424c3af28481dde7549",
+ "system_id": "system",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 114126,
+  "output_tokens": 3026
+ }
+}

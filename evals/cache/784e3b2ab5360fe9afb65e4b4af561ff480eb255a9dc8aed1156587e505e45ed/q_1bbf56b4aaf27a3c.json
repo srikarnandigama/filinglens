@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.00449",
+ "finished_at": "2026-11-11T18:42:35.567948+00:00",
+ "latency_ms": 2738,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "31.5"
+ },
+ "question_id": "q_1bbf56b4aaf27a3c",
+ "question_sha": "7ae5fe985be06095d73024105e3d4bafe1cdb2800082ca75c8b47f1cba5bac8b",
+ "raw_output": "Nvidia's research and development expense rose about 31.5% from fiscal Q1 2024 to fiscal Q4 2024. I'm using R&D figures for the two quarters as I recall them from its filings, not looked up.\n\n- Fiscal Q1 2024 (quarter ended April 30, 2023): $1,875 million\n- Fiscal Q4 2024 (quarter ended January 28, 2024): $2,465 million\n\nChange = (2,465 \u2212 1,875) / 1,875 = 590 / 1,875 \u2248 31.5%\n\n{\"value\": 31.5, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgwdeVRp9gKz9zn81fFxd"
+ ],
+ "split": "dev",
+ "started_at": "2026-11-11T18:42:32.819542+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 355,
+  "output_tokens": 378,
+  "web_searches": 0
+ }
+}

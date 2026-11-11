@@ -1,0 +1,133 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 4,
+  "numeric_valid": 4,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.185928",
+ "error": null,
+ "finished_at": "2026-11-11T18:37:46.822988+00:00",
+ "latency_ms": 28779,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "14.348044828424"
+ },
+ "question_id": "q_03edb50e35c10d9d",
+ "question_sha": "f85919867f1fe0e008b6fd69b60f96aebf637d9982579baa0a4ccf6aa785a9a0",
+ "raw_output": {
+  "caveats": [
+   "The fiscal Q4 2024 cost of revenue is derived (annual minus nine-month year-to-date), not a directly reported quarterly figure.",
+   "The comparison is between two different fiscal quarters of the same year.",
+   "No filing passages were provided, so the answer does not explain the cause of the change."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3202"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q1",
+     "fiscal_year": 2024
+    },
+    "text": "Walmart's cost of revenue in fiscal Q1 2024 (quarter ended 2023-04-30) was $115.284 billion.",
+    "ticker": "WMT",
+    "unit": "USD",
+    "value": "115284000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3205"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q4",
+     "fiscal_year": 2024
+    },
+    "text": "Walmart's cost of revenue in fiscal Q4 2024 (quarter ended 2024-01-31) was $131.825 billion. This is derived as full-year cost of revenue of $490.142 billion minus the nine-month figure of $358.317 billion.",
+    "ticker": "WMT",
+    "unit": "USD",
+    "value": "131825000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": "value",
+      "kind": "computation",
+      "ref": "cmp_2"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q4",
+     "fiscal_year": 2024
+    },
+    "text": "The dollar increase in cost of revenue from fiscal Q1 2024 to fiscal Q4 2024 was about $16.541 billion.",
+    "ticker": "WMT",
+    "unit": "USD",
+    "value": "16541000000",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_1"
+     }
+    ],
+    "id": "c4",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q4",
+     "fiscal_year": 2024
+    },
+    "text": "Cost of revenue rose about 14.35% from fiscal Q1 2024 to fiscal Q4 2024.",
+    "ticker": "WMT",
+    "unit": "percent",
+    "value": "14.348044828424",
+    "value_basis": "computation"
+   }
+  ],
+  "final_claim_id": "c4",
+  "final_unit": "percent",
+  "final_value": "14.348044828424",
+  "status": "answered",
+  "summary": "Walmart's cost of revenue rose about 14.35% from fiscal Q1 2024 ($115.284 billion) to fiscal Q4 2024 ($131.825 billion). That is an increase of about $16.541 billion. The Q4 figure is derived."
+ },
+ "run_id": "0acfb6e9-e2db-4e78-a951-710f681dc7bf",
+ "run_status": "done",
+ "split": "dev",
+ "started_at": "2026-11-11T18:37:18.018908+00:00",
+ "status": "done",
+ "system_config_hash": "2672337d37a1c4749e46b1640e2449249f4b9fce707f2424c3af28481dde7549",
+ "system_id": "system",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 72014,
+  "output_tokens": 4190
+ }
+}

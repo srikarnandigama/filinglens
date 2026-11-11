@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.003272",
+ "finished_at": "2026-11-11T18:42:27.139579+00:00",
+ "latency_ms": 2651,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "7377.5"
+ },
+ "question_id": "q_4be70805a500b4fd",
+ "question_sha": "30f9a8be6a874cd2ba3372668d2c7a58814aa9140ef85e1e97022d6f7a6646f9",
+ "raw_output": "Microsoft's fiscal 2024 ended June 30, 2024. Reported R&D expense for the full year was $29,510 million.\n\nAverage quarterly R&D = 29,510 / 4 = 7,377.5 million.\n\nAs a check, the quarterly figures were roughly Q1 $7,065M, Q2 $7,918M, Q3 $7,653M and Q4 $7,246M (with Q2 and Q3 as originally reported). Those sum to about $29.9B, which doesn't tie to $29,510M, so I rely on the annual total divided by four.\n\n**Average quarterly R&D expense \u2248 $7.38 billion (about $7,377.5 million)**\n\n{\"value\": 7377.5, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgwddsnhLVqLRvU3Cui4h"
+ ],
+ "split": "dev",
+ "started_at": "2026-11-11T18:42:24.484533+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 341,
+  "output_tokens": 259,
+  "web_searches": 0
+ }
+}

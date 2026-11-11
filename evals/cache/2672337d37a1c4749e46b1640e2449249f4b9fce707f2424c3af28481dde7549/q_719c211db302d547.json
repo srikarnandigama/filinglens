@@ -1,0 +1,131 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 4,
+  "numeric_valid": 4,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.142600",
+ "error": null,
+ "finished_at": "2026-11-11T18:35:57.422615+00:00",
+ "latency_ms": 16719,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "74.068716094033"
+ },
+ "question_id": "q_719c211db302d547",
+ "question_sha": "1fd8c972cfc54ae948928065103468c8a500a3c3b5932caa7fce330f5dbd77d8",
+ "raw_output": {
+  "caveats": [
+   "Capex is measured as payments to acquire property, plant and equipment (PaymentsToAcquirePropertyPlantAndEquipment) as reported in the FY2025 filing."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "632"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "Alphabet's FY2024 capital expenditures (payments to acquire property, plant and equipment) were $52.535 billion.",
+    "ticker": "GOOGL",
+    "unit": "USD",
+    "value": "52535000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "637"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Alphabet's FY2025 capital expenditures were $91.447 billion.",
+    "ticker": "GOOGL",
+    "unit": "USD",
+    "value": "91447000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": "value",
+      "kind": "computation",
+      "ref": "cmp_2"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Capital expenditures increased by about $38.912 billion from FY2024 to FY2025.",
+    "ticker": "GOOGL",
+    "unit": "USD",
+    "value": "38912000000",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_1"
+     }
+    ],
+    "id": "c4",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Alphabet's capital expenditures rose about 74.07% from FY2024 to FY2025.",
+    "ticker": "GOOGL",
+    "unit": "percent",
+    "value": "74.068716094033",
+    "value_basis": "computation"
+   }
+  ],
+  "final_claim_id": "c4",
+  "final_unit": "percent",
+  "final_value": "74.068716094033",
+  "status": "answered",
+  "summary": "Alphabet's capital expenditures rose about 74.07% from fiscal 2024 ($52.535 billion) to fiscal 2025 ($91.447 billion), an increase of about $38.912 billion."
+ },
+ "run_id": "54936200-9670-42bb-90cf-4cbfe47929e6",
+ "run_status": "done",
+ "split": "dev",
+ "started_at": "2026-11-11T18:35:40.664481+00:00",
+ "status": "done",
+ "system_config_hash": "2672337d37a1c4749e46b1640e2449249f4b9fce707f2424c3af28481dde7549",
+ "system_id": "system",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 59670,
+  "output_tokens": 2326
+ }
+}

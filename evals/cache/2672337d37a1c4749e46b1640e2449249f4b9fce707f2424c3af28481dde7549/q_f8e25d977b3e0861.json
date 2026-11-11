@@ -1,0 +1,109 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 3,
+  "numeric_valid": 3,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.118976",
+ "error": null,
+ "finished_at": "2026-11-11T18:34:26.925841+00:00",
+ "latency_ms": 15551,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "16.307214895268"
+ },
+ "question_id": "q_f8e25d977b3e0861",
+ "question_sha": "e6ef822cb1ed3edec0ddec7b9fe894e7107a174cb47e7e6b66b81331a8c2680e",
+ "raw_output": {
+  "caveats": [],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "1000"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q1",
+     "fiscal_year": 2025
+    },
+    "text": "Tesla's Q1 2025 gross profit was $3.153 billion.",
+    "ticker": "TSLA",
+    "unit": "USD",
+    "value": "3153000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "966"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q1",
+     "fiscal_year": 2025
+    },
+    "text": "Tesla's Q1 2025 revenue was $19.335 billion.",
+    "ticker": "TSLA",
+    "unit": "USD",
+    "value": "19335000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_1"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q1",
+     "fiscal_year": 2025
+    },
+    "text": "Tesla's gross margin in fiscal Q1 2025 was about 16.3%.",
+    "ticker": "TSLA",
+    "unit": "percent",
+    "value": "16.307214895268",
+    "value_basis": "computation"
+   }
+  ],
+  "final_claim_id": "c3",
+  "final_unit": "percent",
+  "final_value": "16.307214895268",
+  "status": "answered",
+  "summary": "Tesla's gross margin in fiscal Q1 2025 was about 16.3%. That is gross profit of $3.153 billion divided by revenue of $19.335 billion."
+ },
+ "run_id": "0198429c-860a-4593-aaf2-fbe241305e8f",
+ "run_status": "done",
+ "split": "dev",
+ "started_at": "2026-11-11T18:34:08.782566+00:00",
+ "status": "done",
+ "system_config_hash": "2672337d37a1c4749e46b1640e2449249f4b9fce707f2424c3af28481dde7549",
+ "system_id": "system",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 49408,
+  "output_tokens": 2016
+ }
+}

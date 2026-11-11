@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.002572",
+ "finished_at": "2026-11-11T18:44:17.588241+00:00",
+ "latency_ms": 1561,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "90.7"
+ },
+ "question_id": "q_e93dbbc022f405c5",
+ "question_sha": "71dab53727b834d812253921c9a1b0bbdd10824e431f0bc922e5766b254b2112",
+ "raw_output": "Amazon's diluted EPS was $2.90 in fiscal 2023 (net income $30.4 billion). In fiscal 2024 it was $5.53 (net income $59.2 billion).\n\nPercent change = (5.53 \u2212 2.90) / 2.90 = 2.63 / 2.90 \u2248 0.9069, or about 90.7%.\n\n**Diluted EPS rose about 90.7% from fiscal 2023 to fiscal 2024.**\n\n{\"value\": 90.7, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011Cgwdn6e5ZS9u4aTJLVU69"
+ ],
+ "split": "dev",
+ "started_at": "2026-11-11T18:44:16.026193+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 351,
+  "output_tokens": 187,
+  "web_searches": 0
+ }
+}

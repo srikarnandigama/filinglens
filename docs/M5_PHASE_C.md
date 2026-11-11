@@ -1,8 +1,8 @@
 # M5 Phase C: preflight, dev pilot and the cost gate
 
-Status (2026-11-11): question set frozen; dev pilot done; **test run not started**, waiting on
-the student's gate decision (below). No prompt or system-behavior change has been made from dev
-results.
+Status (2026-11-11): question set and 180-question subset frozen; dev pilot done; scope and caps
+approved (Option C, D104-D106); **test run not started**, waiting on the student's go-ahead on
+the final projection (end of this file). No prompt or system-behavior change in M5.
 
 ## Frozen set
 
@@ -78,5 +78,24 @@ other 182 test questions, with cuts 2-4):
 | C | 180 (100 + 80) | $27.5 | $48.4 | ±7.3 pp | 98.0% |
 | Full 282 (no gate) | 282 | $43.1 | $64.0 | ±5.8 pp | 98.7% |
 
-Whatever is chosen, the per-config caps in `evals/configs/` must be re-split to match (the
-current `m5_test_full` cap of $46 is below system + both B0s on the full split, ≈ $49).
+## Approved scope and final projection (Option C, D105)
+
+Subset `evals/questions_v1.subset180.json`, ID-list SHA-256
+`242fbea020b2570040d5af4dfc7512be4e152763e673bb693319492c23f16e76`: the 100-question sample plus
+80 seeded test questions (comparison 25, derived_q4 25, lookup 27, margin 27, multi_step 25,
+trend_avg 25, yoy_growth 26). B1/B2 stay on the 100-question sample: on 180 the expected total
+($55.8) was under $60, but caps covering in-flight reservations and estimate error would sum
+to about $67.
+
+| Config | Systems and questions | Expected | Cap |
+|---|---|---:|---:|
+| m5_test_subset | system + B0 Sonnet, subset 180 | $28.79 | $32.00 |
+| m5_test_opus | B0 Opus, sample 100 | $1.45 | $2.25 |
+| m5_test_sample | B1 (max_uses 3) + B2, Sonnet batch, sample 100 | $7.99 | $9.75 |
+| m5_probe | system + B0 Sonnet + B0 Opus, 10 probes | $1.03 | $2.50 |
+| m5_handwritten | system + B0 Sonnet, 30 handwritten | $7.95 | $11.00 |
+| judges (runner still to build) | Opus rubric on system + B0 Sonnet (60) + text claims | $2.20 | $2.50 |
+| **Total** | | **$49.41** | **$60.00** |
+
+M5 total with the dev pilot: about $65.4 expected, $75.9 at every cap (account: $95).
+Measured: system and B0 Sonnet. Unmeasured: B1, B2, handwritten system cost, judges.

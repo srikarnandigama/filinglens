@@ -27,15 +27,15 @@ input_per_mtok = "4.00"
 output_per_mtok = "20.00"
 cache_read_per_mtok = ""
 cache_write_per_mtok = ""
-source = "<pricing page URL>"
+source = "https://docs.claude.com/en/docs/about-claude/pricing"
 checked = 2026-11-11
 
 [tools.web_search]
 usd_per_1000 = "10.00"
-source = "<pricing page URL>"
+source = "https://docs.claude.com/en/docs/about-claude/pricing"
 checked = 2026-11-11
 
 [eval]
 batch_multiplier = "0.50"
-source = "<pricing page URL>"
+source = "https://platform.claude.com/docs/en/build-with-claude/batch-processing"
 checked = 2026-11-11

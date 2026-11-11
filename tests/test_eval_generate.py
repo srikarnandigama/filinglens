@@ -360,3 +360,42 @@ def test_every_gold_matches_financial_facts_independently():
         assert g.fixed(expected, ratio) == r["gold_value"], r["id"]
         for item in r["computation"]["inputs"]:
             assert Decimal(item["value"]) == values[item["fact_id"]]
+
+
+def _test_records():
+    records = []
+    for t, n in (("lookup", 14), ("margin", 13), ("comparison", 9)):
+        for i in range(n):
+            records.append(
+                {"id": f"{t}_{i:02d}", "template": t, "split": "test", "sample_100": i < 4}
+            )
+    records.append({"id": "dev_0", "template": "lookup", "split": "dev", "sample_100": False})
+    return records
+
+
+def test_subset_keeps_the_sample_and_fills_templates_by_largest_remainder(tmp_path, monkeypatch):
+    records = _test_records()
+    ids = g.subset(records, size=18)
+    assert ids == g.subset(records, size=18)  # seeded and deterministic
+    assert {r["id"] for r in records if r["sample_100"]} <= set(ids)  # pairs with B1/B2/B0 Opus
+    assert all(not i.startswith("dev") for i in ids)
+    per = {t: sum(i.startswith(t) for i in ids) for t in ("lookup", "margin", "comparison")}
+    # 18 x 14/36 = 7, x 13/36 = 6.5, x 9/36 = 4.5: the remainders tie, so the name decides
+    assert per == {"lookup": 7, "margin": 6, "comparison": 5}
+    path = tmp_path / "subset.json"
+    path.write_text("{}", encoding="utf-8")
+    with pytest.raises(FileExistsError):
+        g.freeze_subset(path)  # never regenerated in place (D105)
+
+
+@pytest.mark.skipif(not g.SUBSET_PATH.exists(), reason="subset not frozen yet")
+def test_frozen_subset_matches_its_hash_and_the_frozen_set():
+    from evals import runner as r
+
+    ids = r.subset_ids()
+    data = json.loads(g.SUBSET_PATH.read_text(encoding="utf-8"))
+    assert len(ids) == 180 and data["questions_sha256"] == g.sha256_file(g.FROZEN_PATH)
+    records = g.load_frozen()
+    assert {x["id"] for x in records if x["sample_100"]} <= ids
+    with pytest.raises(ValueError, match="frozen hash"):
+        r.subset_ids(expected="0" * 64)

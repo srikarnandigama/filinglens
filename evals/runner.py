@@ -23,7 +23,15 @@ from decimal import Decimal
 from pathlib import Path
 from typing import Any
 
-from evals.generate import DRAFT_PATH, FROZEN_PATH, MANIFEST_PATH, load_frozen, sha256_file
+from evals.generate import (
+    DRAFT_PATH,
+    FROZEN_PATH,
+    MANIFEST_PATH,
+    SUBSET_PATH,
+    ids_sha256,
+    load_frozen,
+    sha256_file,
+)
 from filinglens.config import ROOT
 
 RUNNER_VERSION = "runner-v1"
@@ -34,6 +42,15 @@ B2_META = ROOT / "evals" / "b2_contexts_v1.meta.jsonl"
 RETRY_DELAYS = (2.0, 4.0, 8.0)
 # Per-question reservations for the spend cap (D090); the system uses its max_cost_usd.
 DEFAULT_RESERVE = {"b0": Decimal("0.10"), "b1": Decimal("0.40"), "b2": Decimal("0.20")}
+# The frozen Option C test subset (D105): the 100-question sample plus 80 stratified questions.
+SUBSET_180_SHA256 = "242fbea020b2570040d5af4dfc7512be4e152763e673bb693319492c23f16e76"
+
+
+def subset_ids(path: Path | None = None, expected: str = SUBSET_180_SHA256) -> set[str]:
+    data = json.loads((path or SUBSET_PATH).read_text(encoding="utf-8"))
+    if ids_sha256(data["ids"]) != expected:
+        raise ValueError("questions_v1.subset180.json does not match its frozen hash (D105)")
+    return set(data["ids"])
 
 
 class ReplayMiss(RuntimeError):
@@ -62,7 +79,7 @@ class SystemConfig:
 class EvalConfig:
     name: str
     split: str  # dev | test | probe | handwritten
-    sample: str  # "all" | "sample_100" | an integer
+    sample: str  # "all" | "sample_100" | "subset_180" | an integer
     systems: list[SystemConfig]
     spend_cap_usd: Decimal
     seed: int = 20261109
@@ -124,6 +141,11 @@ def load_questions(cfg: EvalConfig) -> list[dict[str, Any]]:
             raise ValueError("config ids are not all in the requested split")
     elif cfg.sample == "sample_100":
         chosen = [r for r in chosen if r["sample_100"]]
+    elif cfg.sample == "subset_180":
+        wanted = subset_ids()
+        chosen = [r for r in chosen if r["id"] in wanted]
+        if len(chosen) != len(wanted):
+            raise ValueError("subset_180 ids are not all in the requested split")
     elif cfg.sample != "all":
         chosen = stratified(chosen, int(cfg.sample), cfg.seed)
     return schedule(chosen, cfg.seed)
@@ -612,7 +634,13 @@ def preflight(
     return {
         "config": cfg.name,
         "questions": len(questions),
-        "question_set": "frozen, manifest hash ok" if cfg.questions == "frozen" else cfg.questions,
+        "question_set": (
+            "handwritten_v2 (frozen M2 labels)"
+            if cfg.split == "handwritten"
+            else "frozen, manifest hash ok"
+            if cfg.questions == "frozen"
+            else cfg.questions
+        ),
         "models": deps.models | deps.system_settings.get("models", {}),
         "accessible": accessible,
         "priced": sorted(models),

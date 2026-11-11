@@ -189,6 +189,22 @@ def test_report_headline_paired_and_render_on_synthetic_records(monkeypatch):
     p = paired(system, {"b0": b0})
     assert p[0][:4] == ["b0", "200", "40", "0"] and float(p[0][5]) < 0.001
     monkeypatch.setattr("evals.report.retrieval_table", lambda: "(retrieval)")
-    text = render({"test": {"system": system, "b0": b0}})
-    assert "## Headline (test split)" in text and "| b0 | 60.0% [" in text
+    sampled = {f"s{k}": v for k, v in _rows([True] * 3 + [False], sample=True).items()}
+    text = render(
+        {
+            "test": {
+                "system": system | sampled,
+                "b0": b0 | sampled,
+                "b1-sonnet": sampled,
+                "b2-sonnet": sampled,
+            }
+        }
+    )
+    head = text.split("## Headline")[1].split("## Larger")[0]
+    order = [line.split(" | ")[0] for line in head.splitlines() if line.startswith("| ")]
+    assert order[1:] == ["| system", "| b2-sonnet", "| b1-sonnet", "| b0"]  # equal access first
+    assert "| b2-sonnet | gold filings' statements in context | 75.0% [" in head
+    larger = text.split("## Larger")[1].split("## Paired")[0]
+    assert "| b0 | none (closed book) | 60.3% [" in larger and "b1-sonnet" not in larger
+    assert "not measure extraction" in text and "no discrepancies" in text  # D104, stated plainly
     assert "McNemar" in text and "_M6._" in text

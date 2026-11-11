@@ -584,3 +584,26 @@ def test_replay_deps_hit_the_live_runs_cache_without_clients(draft, tmp_path, mo
     assert r.replay_deps(config(B0), settings).models == {"BASELINE_MODELS[0]": "m"}
     with pytest.raises(r.ReplayMiss):  # an empty Deps cannot key the system's records
         run(config(SYSTEM), r.Deps(), cache, replay_only=True)
+
+
+def test_test_run_caps_fit_the_ceiling_and_cover_their_reservations():
+    from pathlib import Path
+
+    from evals.judge import JUDGE_SPEND_CAP_USD
+
+    configs = [
+        r.load_config(p)
+        for p in sorted(Path(r.ROOT / "evals" / "configs").glob("*.toml"))
+        if p.stem != "m5_dev_pilot"
+    ]
+    total = sum((c.spend_cap_usd for c in configs), JUDGE_SPEND_CAP_USD)
+    assert total <= Decimal("60.00")  # D105 test-run ceiling
+    sizes = {"subset_180": 180, "sample_100": 100}
+    for c in configs:
+        batch = [s for s in c.systems if s.batch]
+        if batch:  # all reserved up front: every question must fit, or the tail is skipped
+            n = sizes[c.sample]
+            assert sum(s.reserve() * n for s in batch) <= c.spend_cap_usd, c.name
+        realtime = [s for s in c.systems if not s.batch]
+        if realtime:
+            assert c.spend_cap_usd > max(s.reserve() for s in realtime) * c.concurrency, c.name

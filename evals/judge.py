@@ -6,11 +6,16 @@ agreement, within-1 agreement and quadratic-weighted kappa are reported. No call
 
 import hashlib
 import json
+from decimal import Decimal
 from pathlib import Path
 from typing import Any
 
 from evals.answers import OBJECT
 from evals.scorers import weighted_kappa
+
+# The judges' share of the $60 test-run ceiling (D105): rubric scoring of system and B0 Sonnet on
+# the 30 handwritten questions, plus text-claim support checks.
+JUDGE_SPEND_CAP_USD = Decimal("2.50")
 
 RUBRIC = """You grade an answer to a question about a company's SEC filings against a reference
 answer written by an analyst. Score 1-5:

@@ -41,20 +41,21 @@ the student independently confirmed the Apple FY2026 Q3 values in the source 10-
 M4 (built in Claude Code; M1-M3 were built with Codex) was accepted on 2026-11-09
 after its final acceptance run.
 - NEXT SESSION, FIRST TURN: do not change, run or commit anything. Read CLAUDE.md,
-  docs/M5_PHASE_C.md and docs/DECISIONS.md D097-D103, summarize the M5 state and the
-  pending gate decision, and wait for the student's instructions.
-- M5 status (2026-11-11): Phases A and B approved (D083-D102; $100 hard limit, test run
-  $70, ceiling $90, account has $95). Question set FROZEN: evals/questions_v1.jsonl
-  SHA-256 4f270e35... (same-sector GICS comparisons, D101). Dev pilot done ($15.94):
-  system 100/100, B0 Sonnet 44/100; results, per-role costs and the test-run projection
-  in docs/M5_PHASE_C.md. Runner fixed after a shutdown hang (D103: one MCP hub per
-  invocation, clean exit, replay cache keys). Test run NOT started: projected $70.1,
-  $64.0 after cuts 2-4, over the $60 gate; waiting on the student to choose an option
-  (system on the 100 sample + a stratified subset, or other). Config caps in
-  evals/configs/ must be re-split for whichever option. No prompt/system changes from
-  dev results without approval (candidate: trend_avg summary numbers force revisions).
-  Nothing from M5 is committed yet. Last checks: ruff clean; full pytest
-  (FILINGLENS_TEST_DB=1) 265 passed, 2 skipped.
+  docs/M5_PHASE_C.md and docs/DECISIONS.md D097-D106, summarize the M5 state, and wait
+  for the student's instructions.
+- M5 status (2026-11-11): Phases A and B approved (D083-D102; $100 hard limit, overall
+  test cap $70, test-run ceiling $60, account has $95). Question set FROZEN:
+  evals/questions_v1.jsonl SHA-256 4f270e35... (same-sector GICS comparisons, D101).
+  Dev pilot done ($15.94): system 100/100, B0 Sonnet 44/100 (docs/M5_PHASE_C.md).
+  D103 fixed the runner (one MCP hub, clean exit, replay keys). D104: system accuracy
+  measures reasoning over correct structured data, not extraction; the report headline
+  leads with B2/B1. D105 scope (Option C): system + B0 Sonnet on the frozen 180 subset
+  (evals/questions_v1.subset180.json, 242fbea0...), B0 Opus/B1/B2 on the 100 sample;
+  configs m5_test_subset/_opus/_sample, m5_probe, m5_handwritten; caps sum to $60
+  with judges. Expected $49.4. The judge runner (Opus rubric + text claims, batch,
+  cached, capped) is NOT built yet. Test run NOT started: waiting on the student's
+  go-ahead. No prompt/system changes in M5 (M6 candidates in D106). Nothing from M5
+  is committed yet.
 - M1 data: 20 companies, 275 filings, 2,715 facts (563 derived). Ingestion
   cutoff 2026-10-19, inclusive by filing date (America/New_York). Snapshot
   2026-10-19-v1 at data/raw/2026-10-19-v1/ (bodies keyed by URL SHA-256;

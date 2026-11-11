@@ -1,0 +1,14 @@
+# M5 test run (D105, cut 3): B0 Opus on the frozen 100-question test sample.
+# Expected $1.45 (2x B0 Sonnet's measured tokens) plus $0.40 reserved in flight.
+name = "m5-test-opus"
+split = "test"
+sample = "sample_100"
+seed = 20261109
+concurrency = 4
+spend_cap_usd = "2.25"
+
+[[systems]]
+id = "b0-opus"
+kind = "b0"
+model_env = "BASELINE_MODELS"
+model_index = 1           # claude-opus-5-5

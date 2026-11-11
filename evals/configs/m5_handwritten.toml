@@ -1,9 +1,12 @@
 # The 30 handwritten explanatory questions (frozen v2 labels) for the judge and retrieval recall.
+# System and B0 Sonnet only (cut 2; D105). Expected $7.95 (system unmeasured, ~$0.25/q from M4)
+# plus $2.00 reserved for 4 in-flight runs; covers a system average up to ~$0.28/q.
 name = "m5-handwritten"
 split = "handwritten"
 sample = "all"
 seed = 20261109
-spend_cap_usd = "10.00"
+concurrency = 4
+spend_cap_usd = "11.00"
 
 [[systems]]
 id = "system"
@@ -15,9 +18,3 @@ id = "b0-sonnet"
 kind = "b0"
 model_env = "BASELINE_MODELS"
 model_index = 0
-
-[[systems]]
-id = "b0-opus"
-kind = "b0"
-model_env = "BASELINE_MODELS"
-model_index = 1           # dropped first if the post-pilot gate needs savings (cut 2)

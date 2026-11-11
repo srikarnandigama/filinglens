@@ -1,9 +1,11 @@
-# Abstention probe, reported outside the headline (D083).
+# Abstention probe, reported outside the headline (D083). Expected $1.03; concurrency 2 keeps
+# the in-flight reservation at $1.00.
 name = "m5-probe"
 split = "probe"
 sample = "all"
 seed = 20261109
-spend_cap_usd = "2.00"
+concurrency = 2
+spend_cap_usd = "2.50"
 
 [[systems]]
 id = "system"

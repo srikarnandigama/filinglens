@@ -29,6 +29,8 @@ DRAFT_PATH = ROOT / "evals" / "questions_v1.draft.jsonl"
 FROZEN_PATH = ROOT / "evals" / "questions_v1.jsonl"
 MANIFEST_PATH = ROOT / "evals" / "questions_v1.manifest.json"
 B2_META_PATH = ROOT / "evals" / "b2_contexts_v1.meta.jsonl"
+SUBSET_PATH = ROOT / "evals" / "questions_v1.subset180.json"
+SUBSET_SIZE = 180
 TARGETS = {
     "lookup": 60,
     "yoy_growth": 60,
@@ -897,14 +899,66 @@ def load_frozen(path: Path = FROZEN_PATH, manifest: Path = MANIFEST_PATH) -> lis
     return [json.loads(line) for line in path.read_text(encoding="utf-8").splitlines()]
 
 
+def ids_sha256(ids: list[str]) -> str:
+    return hashlib.sha256("\n".join(sorted(ids)).encode()).hexdigest()
+
+
+def subset(records: list[dict[str, Any]], size: int = SUBSET_SIZE, seed: int = SEED) -> list[str]:
+    """The approved test subset (D105): the frozen 100-question sample plus a seeded share of
+    the other test questions, so that each template gets its largest-remainder share of size."""
+    test = [r for r in records if r["split"] == "test"]
+    counts = Counter(r["template"] for r in test)
+    quotas = {t: Decimal(size * n) / Decimal(len(test)) for t, n in counts.items()}
+    target = {t: int(q) for t, q in quotas.items()}
+    for t in sorted(quotas, key=lambda t: (-(quotas[t] - target[t]), t))[
+        : size - sum(target.values())
+    ]:
+        target[t] += 1
+    ids = [r["id"] for r in test if r["sample_100"]]
+    for t in sorted(counts):
+        have = sum(r["sample_100"] for r in test if r["template"] == t)
+        rest = sorted(
+            (r["id"] for r in test if r["template"] == t and not r["sample_100"]),
+            key=lambda i: _rank(seed, "subset", i),
+        )
+        if target[t] < have:
+            raise ValueError(f"{t}: the sample already exceeds its subset share")
+        ids += rest[: target[t] - have]
+    return sorted(ids)
+
+
+def freeze_subset(path: Path = SUBSET_PATH, size: int = SUBSET_SIZE) -> dict[str, Any]:
+    """Write the subset ID list once, tied to the frozen set's hash; never overwritten (D105)."""
+    if path.exists():
+        raise FileExistsError(f"{path.name} is frozen and is never regenerated in place")
+    records = load_frozen()
+    ids = subset(records, size)
+    by_id = {r["id"]: r for r in records}
+    info = {
+        "ids": ids,
+        "ids_sha256": ids_sha256(ids),
+        "size": len(ids),
+        "seed": SEED,
+        "includes_sample_100": True,
+        "per_template": dict(sorted(Counter(by_id[i]["template"] for i in ids).items())),
+        "questions_sha256": sha256_file(FROZEN_PATH),
+    }
+    path.write_text(json.dumps(info, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+    return info
+
+
 def main(argv: list[str] | None = None) -> None:
     from filinglens.config import Settings
 
     parser = argparse.ArgumentParser(description="Generate or freeze benchmark questions v1.")
-    parser.add_argument("command", choices=["draft", "b2meta", "freeze"])
+    parser.add_argument("command", choices=["draft", "b2meta", "freeze", "subset"])
     args = parser.parse_args(argv)
     if args.command == "freeze":
         print(json.dumps(freeze(), indent=2))
+        return
+    if args.command == "subset":
+        info = freeze_subset()
+        print(json.dumps({k: v for k, v in info.items() if k != "ids"}, indent=2))
         return
     settings = Settings()
     if args.command == "b2meta":  # B2 context metadata for the draft's 100-question sample

@@ -195,22 +195,64 @@ async def collect(config_paths: list[Path]) -> dict[str, Any]:
     return out
 
 
+METHODOLOGY = [
+    "## Methodology and limitations",
+    "",
+    "- **What system accuracy measures (D104).** Gold values are computed from the same "
+    "`financial_facts` table the system's `get_financial_metric` tool reads. System accuracy "
+    "therefore measures planning, fiscal-period mapping, arithmetic and answer formatting given "
+    "correct structured data. It does not measure extraction of numbers from filings.",
+    "- **How the gold was checked.** The student verified all 20 review-sample gold values "
+    "against the original SEC filings and/or the companies' earnings releases, with no "
+    "discrepancies. The other gold values rest on the same M1 extraction.",
+    "- **Comparisons with equal data access.** B2 (the gold filings' financial statements in "
+    "context) and B1 (open web search) can reach the same numbers as the system. They are the "
+    "fair comparisons and are listed first after the system. B0 (closed book) measures what "
+    "the model knows without any data.",
+    "- **Scope (D105).** The system and B0 Sonnet run on a frozen 180-question test subset (the "
+    "100-question sample plus 80 stratified questions). B0 Opus, B1 and B2 run on the "
+    "100-question sample, where every system answers the same questions and is paired with the "
+    "system.",
+    "- **Cutoff and sample notes.** The test split includes a 20% after-cutoff floor per "
+    "template (D086), except comparison at 14.5% (8 of 55): the same-sector pool has only 8 "
+    "after-cutoff pairs (D101). After-cutoff questions concentrate in companies whose fiscal "
+    "year ends mid-year (NKE, MSFT, PG, COST), so the cutoff breakdown is descriptive. "
+    "Comparisons pair same-sector companies only (GICS, D101). JPM has no question in the "
+    "100-question sample (seeded draw).",
+    "",
+]
+DATA_ACCESS = {
+    "system": "XBRL facts + filing passages (MCP tools)",
+    "b2": "gold filings' statements in context",
+    "b1": "open web search",
+    "b0": "none (closed book)",
+}
+ORDER = ("system", "b2", "b1", "b0")
+
+
+def access(name: str) -> str:
+    return next((v for k, v in DATA_ACCESS.items() if name.startswith(k)), "–")
+
+
+def ordered(systems: dict[str, Any]) -> list[str]:
+    """The system first, then the equal-data-access baselines (B2, B1), then B0 (D104)."""
+    rank = {k: i for i, k in enumerate(ORDER)}
+    return sorted(systems, key=lambda n: (next((rank[k] for k in ORDER if n.startswith(k)), 9), n))
+
+
 def render(data: dict[str, Any], system_id: str = "system") -> str:
     parts = [
         "# FilingLens benchmark report",
         "",
         "Generated from cached run records only (`python -m evals.report`). Accuracy cells: "
-        "accuracy [95% bootstrap CI] n; `*` marks n < 30 (descriptive). The test split "
-        "includes a 20% after-cutoff floor per template (D086), except comparison at 14.5% "
-        "(8 of 55): the same-sector pool has only 8 after-cutoff pairs (D101). After-cutoff "
-        "questions concentrate in mid-year fiscal-year companies (NKE, MSFT, PG, COST), so the "
-        "cutoff breakdown is descriptive. Comparisons pair same-sector companies only (GICS, "
-        "D101). JPM has no question in the 100-question B1/B2 sample (seeded draw).",
+        "accuracy [95% bootstrap CI] n; `*` marks n < 30 (descriptive).",
         "",
+        *METHODOLOGY,
     ]
     test = data.get("test", {})
     header = [
         "System",
+        "Data access",
         "Accuracy",
         *TEMPLATES,
         "Before cutoff",
@@ -222,20 +264,26 @@ def render(data: dict[str, Any], system_id: str = "system") -> str:
         "$/correct",
         "Latency p50/p95",
     ]
-    full = {k: v for k, v in test.items() if len(v) > 150}
     sample = {
         k: {q: x for q, x in v.items() if x["question"].get("sample_100")} for k, v in test.items()
     }
+
+    def rows_for(group: dict[str, dict[str, Any]]) -> list[list[str]]:
+        return [
+            [r[0], access(r[0]), *r[1:]]
+            for r in (headline_row(k, group[k]) for k in ordered(group) if group[k])
+        ]
+
     parts += [
-        "## Headline (test split)",
+        "## Headline: every system on the same frozen 100-question test sample",
         "",
-        table(header, [headline_row(k, v) for k, v in full.items()]),
+        "B2 and B1 have data access comparable to the system's; B0 has none (D104).",
         "",
-    ]
-    parts += [
-        "## B1/B2 comparisons (frozen 100-question test sample)",
+        table(header, rows_for(sample)),
         "",
-        table(header, [headline_row(k, v) for k, v in sample.items() if v]),
+        "## Larger test subset (system and B0 Sonnet, 180 questions, D105)",
+        "",
+        table(header, rows_for({k: v for k, v in test.items() if len(v) > len(sample[k])})),
         "",
     ]
     if system_id in test:

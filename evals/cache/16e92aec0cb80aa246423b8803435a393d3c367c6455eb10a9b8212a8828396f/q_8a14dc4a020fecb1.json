@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.048792",
+ "finished_at": "2026-11-12T02:06:36.014650+00:00",
+ "latency_ms": 13582,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "99.0"
+ },
+ "question_id": "q_8a14dc4a020fecb1",
+ "question_sha": "2b419136fbbcac5a4c936600edc7bf4b850fcf94f190f5582e16b6bb0c76a766",
+ "raw_output": "Johnson & Johnson's operating cash flow roughly doubled, rising about 99% from Q1 2024 to Q4 2024. This is a best estimate from recalled figures, not a lookup against the filings, and the nine-month figure in particular is uncertain.\n\n- Q1 2024 operating cash flow: about $3,656 million.\n- Full-year 2024 operating cash flow: about $24,266 million.\n- First nine months of 2024: about $16,989 million (the least certain figure).\n- Q4 2024, derived as full year minus nine months: about $7,277 million.\n\nChange: 7,277 / 3,656 \u2212 1 \u2248 99.0%.\n\n{\"value\": 99.0, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgxDVWF8P6GT9iCuTE16U"
+ ],
+ "split": "test",
+ "started_at": "2026-11-12T02:06:22.421373+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "16e92aec0cb80aa246423b8803435a393d3c367c6455eb10a9b8212a8828396f",
+ "system_id": "b0-fable",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 364,
+  "output_tokens": 1147,
+  "web_searches": 0
+ }
+}

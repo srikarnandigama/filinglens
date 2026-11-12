@@ -1,0 +1,16 @@
+# M5 test run (D089, D105): B2 (Sonnet 5.5, Batch API, statements in context) on the frozen
+# 100-question test sample, one batch. Expected $1.74 (12.0K-token mean context); each question
+# reserves $0.020 before submission.
+name = "m5-test-b2"
+split = "test"
+sample = "sample_100"
+seed = 20261109
+spend_cap_usd = "2.00"
+
+[[systems]]
+id = "b2-sonnet"
+kind = "b2"
+model_env = "BASELINE_MODELS"
+model_index = 0
+batch = true
+reserve_usd = "0.020"

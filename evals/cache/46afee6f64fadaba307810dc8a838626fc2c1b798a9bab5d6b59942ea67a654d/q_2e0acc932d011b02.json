@@ -1,0 +1,46 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": false,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0000080424-26-000103"
+  ],
+  "gold_visible": true,
+  "missing_values": [],
+  "question_id": "q_2e0acc932d011b02",
+  "text_sha256": "7899bc008eaa171bb0c1ad3b9d9ad5c49445c869b63d00dcb37d76802bde6f98",
+  "tokens_est": 2821
+ },
+ "cost_usd": "0.00779700",
+ "error": null,
+ "finished_at": "2026-11-11T21:43:32.988096+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "17817"
+ },
+ "question_id": "q_2e0acc932d011b02",
+ "question_sha": "80083906f344cc83e3c86f4aeb7c03533360d71b5cf61cd878a86765d0f52d86",
+ "raw_output": "Procter & Gamble's total operating activities cash flow for fiscal 2025 (year ended June 30, 2025) was $17,817 million, as shown in the Consolidated Statements of Cash Flows.\n\nThe filing notes that some prior-period amounts within operating activities were reclassified. It also states these reclassifications had no effect on the previously reported total, so the $17,817 million figure stands.\n\n{\"value\": 17817, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-11T21:41:30.293730+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 6982,
+  "output_tokens": 163,
+  "web_searches": 0
+ }
+}

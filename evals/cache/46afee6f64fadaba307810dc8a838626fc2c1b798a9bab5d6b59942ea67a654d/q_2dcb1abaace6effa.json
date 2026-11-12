@@ -1,0 +1,46 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": false,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0001045810-26-000052"
+  ],
+  "gold_visible": true,
+  "missing_values": [],
+  "question_id": "q_2dcb1abaace6effa",
+  "text_sha256": "a65d853b427072461853c6dd146644e8aae27b45dc9cc23ffe45b72cef040022",
+  "tokens_est": 2203
+ },
+ "cost_usd": "0.00598300",
+ "error": null,
+ "finished_at": "2026-11-12T02:09:54.969375+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "65.6"
+ },
+ "question_id": "q_2dcb1abaace6effa",
+ "question_sha": "b10eee44969216c5f67d9b7d4d7b4bb981814a564e76eb81d870d7c7cd641ad7",
+ "raw_output": "Operating margin = operating income \u00f7 revenue = 53,536 / 81,615.\n\n53,536 / 81,615 \u2248 0.65594, so about 65.6%.\n\nCheck: 81,615 \u00d7 0.656 = 53,540.4, which is slightly above 53,536, so the ratio is just under 0.656. That gives 65.59%.\n\nNvidia's operating margin in fiscal Q1 2027 (quarter ended Apr 26, 2026) was about 65.6%.\n\n{\"value\": 65.6, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-12T02:07:22.538489+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 5013,
+  "output_tokens": 194,
+  "web_searches": 0
+ }
+}

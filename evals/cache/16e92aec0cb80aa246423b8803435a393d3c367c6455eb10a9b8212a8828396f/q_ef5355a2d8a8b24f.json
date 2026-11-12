@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.012568",
+ "finished_at": "2026-11-12T02:04:45.224977+00:00",
+ "latency_ms": 4120,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "40.07"
+ },
+ "question_id": "q_ef5355a2d8a8b24f",
+ "question_sha": "045ecb4c8e636d7907c50a977a62ed29e25617cbe04afdd6b246c71cdfcde11e",
+ "raw_output": "Meta's operating margin in fiscal Q3 2025 (quarter ended September 30, 2025) was about 40.1%, based on income from operations of roughly $20.54 billion on revenue of roughly $51.24 billion. These figures are from my recollection of the reported results rather than a freshly checked filing.\n\n{\"value\": 40.07, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgxDN325Z6i2Z6MkMaCkD"
+ ],
+ "split": "test",
+ "started_at": "2026-11-12T02:04:41.113958+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "16e92aec0cb80aa246423b8803435a393d3c367c6455eb10a9b8212a8828396f",
+ "system_id": "b0-fable",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 336,
+  "output_tokens": 247,
+  "web_searches": 0
+ }
+}

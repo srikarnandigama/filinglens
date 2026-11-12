@@ -1,0 +1,46 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": false,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0000320193-25-000057"
+  ],
+  "gold_visible": true,
+  "missing_values": [],
+  "question_id": "q_d2fe4c591c1c3e8a",
+  "text_sha256": "4c1014a03544e5f68ddd7258c67733378edbaa46b22d9d982ddf9fdce2292982",
+  "tokens_est": 2604
+ },
+ "cost_usd": "0.00655300",
+ "error": null,
+ "finished_at": "2026-11-11T21:43:32.991684+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "23636"
+ },
+ "question_id": "q_d2fe4c591c1c3e8a",
+ "question_sha": "2c7290704c3f6528b4c83ce705b326abf1fe3b4e5585fe86f96f0eeb7cb41310",
+ "raw_output": "Apple's net income for the three months ended March 30, 2024 (fiscal Q2 2024) was $23,636 million, as shown in the comparative column of the condensed consolidated statement of operations in the Q2 2025 10-Q.\n\n{\"value\": 23636, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-11T21:41:30.293730+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 5993,
+  "output_tokens": 112,
+  "web_searches": 0
+ }
+}

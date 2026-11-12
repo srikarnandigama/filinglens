@@ -1,0 +1,48 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": false,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0001018724-26-000004",
+   "0001018724-25-000123",
+   "0001018724-25-000036"
+  ],
+  "gold_visible": true,
+  "missing_values": [],
+  "question_id": "q_c87ceaefb354a617",
+  "text_sha256": "9a3c1aae756c4d39cddd4e1287abdf7426f8b239bb2fa62f7c26efc33057f434",
+  "tokens_est": 4230
+ },
+ "cost_usd": "0.01155300",
+ "error": null,
+ "finished_at": "2026-11-12T02:09:55.003331+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "31.04"
+ },
+ "question_id": "q_c87ceaefb354a617",
+ "question_sha": "b749d8f9867a1406272047c67313394f28f5b3ff731e21850e6b7b9428167d66",
+ "raw_output": "Amazon's total revenue rose about 31.0% from fiscal Q1 2024 to fiscal Q4 2024.\n\nThe excerpts don't report Q4 2024 revenue directly, so I derived it from the full-year and nine-month figures:\n\n- Q4 2024 net sales = FY2024 total net sales \u2212 nine-month 2024 net sales = $637,959M \u2212 $450,167M = $187,792M.\n- Q1 2024 net sales (from the Q1 2025 10-Q comparative column) = $143,313M.\n- Percent change = (187,792 \u2212 143,313) / 143,313 = 44,479 / 143,313 \u2248 31.04%.\n\n{\"value\": 31.04, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-12T02:07:22.538489+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 9603,
+  "output_tokens": 390,
+  "web_searches": 0
+ }
+}

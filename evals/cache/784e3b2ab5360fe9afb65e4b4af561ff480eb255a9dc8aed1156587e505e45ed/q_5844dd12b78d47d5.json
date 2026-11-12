@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.013128",
+ "finished_at": "2026-11-11T20:40:57.760008+00:00",
+ "latency_ms": 9090,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "57"
+ },
+ "question_id": "q_5844dd12b78d47d5",
+ "question_sha": "e457ab1ea761adfc8e2b90ea3d25595c35d557556a9cb6469e68274d0b724c84",
+ "raw_output": "Chevron's net cash provided by operating activities rose by roughly 57% from fiscal Q1 2024 to fiscal Q4 2024. This is an estimate from memory of the reported figures, not checked against the filings.\n\n- **Q1 2024:** about $5.0 billion.\n- **Q4 2024:** about $7.85 billion. I derived this by subtracting the other three quarters (roughly $5.0B, $8.5B and $10.1B) from the full-year total of about $31.5 billion.\n\nThe change is (7.85 \u2212 5.0) / 5.0 \u2248 +57%.\n\n{\"value\": 57, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgwnfZk6bQU1FFJNXFxNi"
+ ],
+ "split": "test",
+ "started_at": "2026-11-11T20:40:48.670529+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 359,
+  "output_tokens": 1241,
+  "web_searches": 0
+ }
+}

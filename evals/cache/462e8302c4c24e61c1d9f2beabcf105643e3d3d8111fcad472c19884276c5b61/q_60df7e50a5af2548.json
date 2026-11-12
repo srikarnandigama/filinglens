@@ -1,0 +1,34 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.06216700",
+ "error": null,
+ "finished_at": "2026-11-12T02:14:09.009670+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD billions",
+  "value": "95.7"
+ },
+ "question_id": "q_60df7e50a5af2548",
+ "question_sha": "0cfe79e1662670ef3c2448c2d9bc0c0e80122cefc34802f6d08a2148e4fbe547",
+ "raw_output": "Costco's total revenue for fiscal Q4 2026 was about $95.7 billion (about $95.72 billion). This is the 16-week quarter ended August 30, 2026, and it includes membership fees. Net sales were $93.9 billion, up 11.2% from the prior year. Total revenue was $86.2 billion in the same quarter a year earlier, so revenue grew about 11.1%.\n\n{\"value\": 95.7, \"unit\": \"USD billions\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-12T02:10:05.212451+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "462e8302c4c24e61c1d9f2beabcf105643e3d3d8111fcad472c19884276c5b61",
+ "system_id": "b1-sonnet",
+ "system_kind": "b1",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 38277,
+  "output_tokens": 778,
+  "web_searches": 2
+ }
+}

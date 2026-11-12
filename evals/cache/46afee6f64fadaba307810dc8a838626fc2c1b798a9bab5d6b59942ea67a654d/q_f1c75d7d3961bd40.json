@@ -1,0 +1,47 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": false,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0001193125-26-323660",
+   "0001045810-26-000021"
+  ],
+  "gold_visible": true,
+  "missing_values": [],
+  "question_id": "q_f1c75d7d3961bd40",
+  "text_sha256": "2b52bb715e0c883ac756448e2518353912ba733f243cba12b4ce04d5035fd8e1",
+  "tokens_est": 27736
+ },
+ "cost_usd": "0.05174400",
+ "error": null,
+ "finished_at": "2026-11-11T21:43:32.991684+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": "NVDA",
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percentage_points",
+  "value": "3.12"
+ },
+ "question_id": "q_f1c75d7d3961bd40",
+ "question_sha": "c70e5fa2b198827d29628012856bf72a11e59eba041b101abfad319d54d3d93b",
+ "raw_output": "Gross margin as a percentage of revenue, fiscal 2026:\n\n- Microsoft: 225,465 / 331,839 = 67.95%\n- Nvidia: 153,463 / 215,938 = 71.07%\n\nNvidia's gross margin was higher. The difference is 71.07 \u2212 67.95 \u2248 3.1 percentage points.\n\nCheck on the divisions:\n- Microsoft: 331,839 \u00d7 0.68 = 225,650, which is slightly above 225,465. The gap is 185, or 0.056%, so the margin is 68 \u2212 0.056 = 67.944%.\n- Nvidia: 215,938 \u00d7 0.71 = 153,316, and 153,463 \u2212 153,316 = 147, which is 0.068%, so the margin is 71.068%.\n\nThe difference is 71.068 \u2212 67.944 = 3.124 percentage points.\n\nNvidia had the higher gross margin, by about 3.1 percentage points.\n\n{\"value\": 3.12, \"unit\": \"percentage_points\", \"choice\": \"NVDA\", \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-11T21:41:30.293730+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 49984,
+  "output_tokens": 352,
+  "web_searches": 0
+ }
+}

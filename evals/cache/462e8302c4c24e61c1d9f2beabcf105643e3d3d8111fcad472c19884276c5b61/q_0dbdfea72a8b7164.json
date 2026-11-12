@@ -1,0 +1,34 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.00843400",
+ "error": null,
+ "finished_at": "2026-11-12T02:14:09.009670+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "2827.75"
+ },
+ "question_id": "q_0dbdfea72a8b7164",
+ "question_sha": "9b9e68b00d6829293e7ec7d2e83805b87857e766823a2e96d8babd793cdc5c21",
+ "raw_output": "Coca-Cola's average quarterly operating income over fiscal 2023 was about **$2,828 million**. I worked from memory and did not run a search to confirm the figure.\n\nFiscal 2023 operating income was about $11,311 million. Dividing by four quarters gives $11,311 million \u00f7 4 \u2248 $2,827.75 million.\n\n{\"value\": 2827.75, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-12T02:10:05.212451+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "462e8302c4c24e61c1d9f2beabcf105643e3d3d8111fcad472c19884276c5b61",
+ "system_id": "b1-sonnet",
+ "system_kind": "b1",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 6304,
+  "output_tokens": 426,
+  "web_searches": 0
+ }
+}

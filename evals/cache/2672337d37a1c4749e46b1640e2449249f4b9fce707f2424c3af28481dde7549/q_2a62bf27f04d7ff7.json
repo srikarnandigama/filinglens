@@ -1,0 +1,172 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 6,
+  "numeric_valid": 6,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.214138",
+ "error": null,
+ "finished_at": "2026-11-11T20:25:18.301693+00:00",
+ "latency_ms": 23292,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD",
+  "value": "83059500000"
+ },
+ "question_id": "q_2a62bf27f04d7ff7",
+ "question_sha": "1436cd97916d7c4efda24443327f2c1632beb58f92e5d52cc69f23abab852f8a",
+ "raw_output": {
+  "caveats": [
+   "Q4 2025 revenue is derived (full-year revenue of $332.238 billion minus the nine-month figure of $249.930 billion), not a directly reported quarterly figure.",
+   "The mean is a simple average of the four quarterly revenue values and does not weight for differences between quarters."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "2565"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q1",
+     "fiscal_year": 2025
+    },
+    "text": "XOM Q1 2025 revenue was $83.13 billion.",
+    "ticker": "XOM",
+    "unit": "USD",
+    "value": "83130000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "2566"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q2",
+     "fiscal_year": 2025
+    },
+    "text": "XOM Q2 2025 revenue was $81.51 billion.",
+    "ticker": "XOM",
+    "unit": "USD",
+    "value": "81506000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "2567"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q3",
+     "fiscal_year": 2025
+    },
+    "text": "XOM Q3 2025 revenue was $85.29 billion.",
+    "ticker": "XOM",
+    "unit": "USD",
+    "value": "85294000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "2568"
+     }
+    ],
+    "id": "c4",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q4",
+     "fiscal_year": 2025
+    },
+    "text": "XOM Q4 2025 revenue was $82.31 billion (derived from annual revenue less the nine-month figure).",
+    "ticker": "XOM",
+    "unit": "USD",
+    "value": "82308000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": "value",
+      "kind": "computation",
+      "ref": "cmp_2"
+     }
+    ],
+    "id": "c5",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "The four quarters sum to $332.24 billion of fiscal 2025 revenue.",
+    "ticker": "XOM",
+    "unit": "USD",
+    "value": "332238000000",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "mean",
+      "kind": "computation",
+      "ref": "cmp_1"
+     }
+    ],
+    "id": "c6",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "The average quarterly total revenue for XOM over fiscal 2025 was about $83.06 billion.",
+    "ticker": "XOM",
+    "unit": "USD",
+    "value": "83059500000",
+    "value_basis": "computation"
+   }
+  ],
+  "final_claim_id": "c6",
+  "final_unit": "USD",
+  "final_value": "83059500000",
+  "status": "answered",
+  "summary": "ExxonMobil's average quarterly total revenue over fiscal 2025 was about $83.06 billion. That is the mean of four quarters: Q1 $83.13 billion, Q2 $81.51 billion, Q3 $85.29 billion and Q4 $82.31 billion. The four quarters sum to $332.24 billion for the year."
+ },
+ "run_id": "2f9e6161-82ae-40f9-b2e5-1972381bdea8",
+ "run_status": "done",
+ "split": "test",
+ "started_at": "2026-11-11T20:24:54.971782+00:00",
+ "status": "done",
+ "system_config_hash": "2672337d37a1c4749e46b1640e2449249f4b9fce707f2424c3af28481dde7549",
+ "system_id": "system",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 92494,
+  "output_tokens": 2915
+ }
+}

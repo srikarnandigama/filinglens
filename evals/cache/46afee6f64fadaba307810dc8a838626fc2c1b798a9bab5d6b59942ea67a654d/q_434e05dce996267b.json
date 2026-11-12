@@ -1,0 +1,48 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": true,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0000320187-26-000193",
+   "0000320187-26-000088",
+   "0000320187-26-000037"
+  ],
+  "gold_visible": true,
+  "missing_values": [],
+  "question_id": "q_434e05dce996267b",
+  "text_sha256": "745bcfdf1b38d5cae6176c7e6dcc7c2c994f0fc8f027583d235937f889c69cec",
+  "tokens_est": 50028
+ },
+ "cost_usd": "0.09025200",
+ "error": null,
+ "finished_at": "2026-11-12T02:09:54.961512+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "-33.3"
+ },
+ "question_id": "q_434e05dce996267b",
+ "question_sha": "99637bcbefd57d791f7e91714c4fd53837b1c430b3a22b651616166caee16a6c",
+ "raw_output": "Nike's capital expenditures (additions to property, plant and equipment) fell about 33.3% from fiscal Q1 2026 to fiscal Q4 2026.\n\n- **Q1 FY2026** (three months ended August 31, 2025): $207 million, from the prior-year column of the Q1 FY2027 10-Q.\n- **Q4 FY2026:** the filings give no standalone figure, so I derived it. Full-year FY2026 capex was $684 million and the nine months ended February 28, 2026 was $546 million, so Q4 = 684 \u2212 546 = $138 million.\n- **Change:** (138 \u2212 207) / 207 = \u221233.3%.\n\n{\"value\": -33.3, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-12T02:07:22.538489+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 88222,
+  "output_tokens": 406,
+  "web_searches": 0
+ }
+}

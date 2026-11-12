@@ -1,0 +1,46 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": false,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0001045810-26-000021"
+  ],
+  "gold_visible": true,
+  "missing_values": [],
+  "question_id": "q_b1dd7dbbd2417b9c",
+  "text_sha256": "92427d0d07e826df4c3c15065b367830e423b6305428c72e33b89fa42bebe90d",
+  "tokens_est": 2727
+ },
+ "cost_usd": "0.00700900",
+ "error": null,
+ "finished_at": "2026-11-11T21:43:33.019768+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "56.82"
+ },
+ "question_id": "q_b1dd7dbbd2417b9c",
+ "question_sha": "82e7c38a7267c68a86283e26175cc78e411f86a047ca93abce914ef836995cf3",
+ "raw_output": "Gross profit rose from $97,858 million in fiscal 2025 to $153,463 million in fiscal 2026.\n\nChange = (153,463 \u2212 97,858) / 97,858 = 55,605 / 97,858 \u2248 0.5682, or about 56.82%.\n\nGross profit grew about 56.8%.\n\n{\"value\": 56.82, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-11T21:41:30.293730+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 6314,
+  "output_tokens": 139,
+  "web_searches": 0
+ }
+}

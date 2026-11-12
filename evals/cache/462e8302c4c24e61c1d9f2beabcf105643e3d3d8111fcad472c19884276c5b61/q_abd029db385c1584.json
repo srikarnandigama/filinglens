@@ -1,0 +1,34 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.10517600",
+ "error": null,
+ "finished_at": "2026-11-12T02:14:09.065851+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "10.45"
+ },
+ "question_id": "q_abd029db385c1584",
+ "question_sha": "23d064fd07551e0766110dfba57d997b992d93bab2405d8023606c0b22251840",
+ "raw_output": "Disney's fiscal Q3 2026 net margin was about 10.4%, using net income attributable to Disney.\n\n- Net income attributable to Disney was $2,638 million, according to the company's earnings release.\n- Revenue was about $25.25 billion. Reports of the quarter ended June 27 cite that figure.\n- The margin is $2,638M \u00f7 about $25,250M, or roughly 10.4\u201310.5%.\n\nI couldn't retrieve the exact revenue line in millions, so the second decimal is an estimate. If you used net income including noncontrolling interests ($2,844M), the margin would be about 11.3%.\n\n{\"value\": 10.45, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-12T02:10:05.212451+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "462e8302c4c24e61c1d9f2beabcf105643e3d3d8111fcad472c19884276c5b61",
+ "system_id": "b1-sonnet",
+ "system_kind": "b1",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 67241,
+  "output_tokens": 1587,
+  "web_searches": 3
+ }
+}

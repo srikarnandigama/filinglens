@@ -151,6 +151,20 @@ def bootstrap_ci(
     return (sum(values) / n, lo, hi)
 
 
+def bootstrap_mean_ci(
+    values: Sequence[float], resamples: int = 10_000, seed: int = 20261109, level: float = 0.95
+) -> tuple[float, float, float]:
+    """Mean with a percentile bootstrap CI (judge scores 1-5)."""
+    n = len(values)
+    if n == 0:
+        return (math.nan, math.nan, math.nan)
+    rng = random.Random(seed)
+    means = sorted(sum(rng.choices(values, k=n)) / n for _ in range(resamples))
+    lo = means[int((1 - level) / 2 * resamples)]
+    hi = means[min(resamples - 1, int((1 + level) / 2 * resamples))]
+    return (sum(values) / n, lo, hi)
+
+
 def paired_diff_ci(
     a: Sequence[bool], b: Sequence[bool], resamples: int = 10_000, seed: int = 20261109
 ) -> tuple[float, float, float]:

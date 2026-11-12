@@ -1,0 +1,48 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": true,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0000320187-26-000193",
+   "0000320187-26-000088",
+   "0000320187-26-000037"
+  ],
+  "gold_visible": true,
+  "missing_values": [],
+  "question_id": "q_904fca8ce76b181d",
+  "text_sha256": "745bcfdf1b38d5cae6176c7e6dcc7c2c994f0fc8f027583d235937f889c69cec",
+  "tokens_est": 50028
+ },
+ "cost_usd": "0.08939400",
+ "error": null,
+ "finished_at": "2026-11-11T21:43:32.991684+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "777"
+ },
+ "question_id": "q_904fca8ce76b181d",
+ "question_sha": "d2a20af7dd780c6cdb8038d808e05ed5422fae720aab96bb77b58820a0c03486",
+ "raw_output": "Nike's fiscal 2026 net income was $3,108 million for the full year (year ended May 31, 2026), as reported in the 10-K.\n\nAverage quarterly net income = 3,108 / 4 = $777 million.\n\nAs a check, the quarterly figures in the filings are Q1 $727M, Q3 $520M, and nine-month total $2,039M, so Q2 = 2,039 \u2212 727 \u2212 520 = $792M, and Q4 = 3,108 \u2212 2,039 = $1,069M. These sum to $3,108M, consistent with the annual figure.\n\n**Average quarterly net income \u2248 $777 million**\n\n{\"value\": 777, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-11T21:41:30.293730+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 88204,
+  "output_tokens": 238,
+  "web_searches": 0
+ }
+}

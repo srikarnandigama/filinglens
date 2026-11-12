@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.015542",
+ "finished_at": "2026-11-11T20:38:05.557091+00:00",
+ "latency_ms": 10483,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "-4.5"
+ },
+ "question_id": "q_1909ec0b8e5f1951",
+ "question_sha": "6bb6dda034628bc3f227842612d88847d7c689527b32e7ef6cb750927ef5ab0e",
+ "raw_output": "Coca-Cola's gross profit fell by roughly 4.5% from fiscal Q1 2023 to fiscal Q4 2023. This is an estimate: I worked partly from memory of the reported figures and did not verify every quarterly number against the filings.\n\n- **Q1 2023:** Net operating revenues were about $10,975M and cost of goods sold about $4,402M, giving gross profit of about $6,573M.\n- **Q4 2023:** Revenues were about $10,851M. Cost of goods sold of about $4,573M is the part I am least sure of. I backed into it from the full-year figure of about $18,520M, less my recalled Q1\u2013Q3 amounts. That gives gross profit of about $6,278M.\n- **Change:** (6,278 \u2212 6,573) / 6,573 \u2248 \u22124.5%.\n\n{\"value\": -4.5, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgwnSmYPe7gt342ZXkiVy"
+ ],
+ "split": "test",
+ "started_at": "2026-11-11T20:37:55.066618+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 356,
+  "output_tokens": 1483,
+  "web_searches": 0
+ }
+}

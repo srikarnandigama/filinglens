@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.010714",
+ "finished_at": "2026-11-11T20:38:03.098311+00:00",
+ "latency_ms": 7857,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD billions",
+  "value": "6.7"
+ },
+ "question_id": "q_85478121730db4dd",
+ "question_sha": "edc7240df76832d3fa9ecdd19b0e46522dbbf1a40519f148fd2be0e1c34e7a3c",
+ "raw_output": "**Estimate: about $6.7 billion per quarter** (this is from memory, not checked against the filings, so treat it as approximate).\n\nThe quarterly net earnings I recall for fiscal 2025 are:\n\n| Quarter | Net earnings (approx.) |\n|---|---|\n| Q1 | $11.0 billion |\n| Q2 | $5.5 billion |\n| Q3 | $5.15 billion |\n| Q4 | $5.1 billion |\n\nThe Q4 figure is the one I'm least sure of. The total is about $26.8 billion, and dividing by four quarters gives roughly $6.7 billion.\n\n{\"value\": 6.7, \"unit\": \"USD billions\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgwnSnFoavLQfReeRUMBT"
+ ],
+ "split": "test",
+ "started_at": "2026-11-11T20:37:55.234958+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 342,
+  "output_tokens": 1003,
+  "web_searches": 0
+ }
+}

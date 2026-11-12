@@ -1,0 +1,47 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": false,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0000080424-26-000103",
+   "0001628280-26-010047"
+  ],
+  "gold_visible": true,
+  "missing_values": [],
+  "question_id": "q_07f2b541aca0b44e",
+  "text_sha256": "4dafe26f1bf5d48d0b22764980f90a5ede6db170c9151d4d79863d8dcaccef79",
+  "tokens_est": 5624
+ },
+ "cost_usd": "0.0142350",
+ "error": null,
+ "finished_at": "2026-11-11T21:43:32.925127+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": "PG",
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percentage_points",
+  "value": "0.83"
+ },
+ "question_id": "q_07f2b541aca0b44e",
+ "question_sha": "649350d3fc43c59cbf9291ca4b0d119a883fe41ce8dbc78f5e1c9bb97e880ac6",
+ "raw_output": "Fiscal 2024 operating margin, using operating income divided by net sales (net operating revenues for Coca-Cola):\n\n- **Procter & Gamble:** 18,545 / 84,039 = 22.07%\n- **Coca-Cola:** 9,992 / 47,061 = 21.23%\n\nThe difference is 22.07 \u2212 21.23 = 0.84 percentage points.\n\nFor precision: 18,545 / 84,039 = 0.220660, and 9,992 / 47,061 = 0.212323. The gap is 0.008337, or about 0.83 percentage points.\n\nProcter & Gamble had the higher operating margin in fiscal 2024, by about 0.83 percentage points.\n\n{\"value\": 0.83, \"unit\": \"percentage_points\", \"choice\": \"PG\", \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-11T21:41:30.293730+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 12900,
+  "output_tokens": 267,
+  "web_searches": 0
+ }
+}

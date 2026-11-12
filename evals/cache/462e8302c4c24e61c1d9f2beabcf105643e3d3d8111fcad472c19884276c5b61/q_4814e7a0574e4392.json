@@ -1,0 +1,34 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.0715600",
+ "error": null,
+ "finished_at": "2026-11-12T02:14:09.028723+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "2.9"
+ },
+ "question_id": "q_4814e7a0574e4392",
+ "question_sha": "9915f0d5eee95b98bfd483b4c733c0285e75d677a5f7948c811fec85c7d30e46",
+ "raw_output": "Walmart's net income rose about 2.9% from fiscal Q1 2025 to fiscal Q4 2025. I used net income attributable to Walmart, which is the usual \"net income\" figure.\n\n- **Q1 FY2025 (quarter ended April 30, 2024):** Consolidated net income attributable to Walmart was $5,104 million.\n- **Q4 FY2025 (quarter ended January 31, 2025):** I derived this figure rather than reading it from a filing. I took full-year attributable net income of about $19,436 million, which I recalled from memory and did not check in this search. I then subtracted the nine-month figure of $14,182 million from the Q3 10-Q. That gives about $5,254 million.\n- **Change:** (5,254 \u2212 5,104) / 5,104 \u2248 +2.9%.\n\nConsolidated net income, which includes noncontrolling interests, gives a slightly lower change. Q1 was $5,307 million. Q4 is about $5,425 million, derived from my recalled full-year figure of $20,157 million less the nine-month $14,732 million. That is roughly +2.2%.\n\n{\"value\": 2.9, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-12T02:10:05.212451+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "462e8302c4c24e61c1d9f2beabcf105643e3d3d8111fcad472c19884276c5b61",
+ "system_id": "b1-sonnet",
+ "system_kind": "b1",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 32840,
+  "output_tokens": 1744,
+  "web_searches": 3
+ }
+}

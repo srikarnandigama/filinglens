@@ -1,0 +1,109 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 3,
+  "numeric_valid": 3,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.122000",
+ "error": null,
+ "finished_at": "2026-11-11T20:37:19.455026+00:00",
+ "latency_ms": 15878,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "46.490705687184"
+ },
+ "question_id": "q_7bb910132c302e36",
+ "question_sha": "9b8d190bc8e29a7173f7a5c307e6d60ed5cd49a7008911548ea10a96a3e60807",
+ "raw_output": {
+  "caveats": [],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "49"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q3",
+     "fiscal_year": 2025
+    },
+    "text": "Apple's gross profit in fiscal Q3 2025 was $43.718 billion.",
+    "ticker": "AAPL",
+    "unit": "USD",
+    "value": "43718000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "13"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q3",
+     "fiscal_year": 2025
+    },
+    "text": "Apple's revenue in fiscal Q3 2025 was $94.036 billion.",
+    "ticker": "AAPL",
+    "unit": "USD",
+    "value": "94036000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_1"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q3",
+     "fiscal_year": 2025
+    },
+    "text": "Apple's gross margin in fiscal Q3 2025 was about 46.5% (gross profit divided by revenue).",
+    "ticker": "AAPL",
+    "unit": "percent",
+    "value": "46.490705687184",
+    "value_basis": "computation"
+   }
+  ],
+  "final_claim_id": "c3",
+  "final_unit": "percent",
+  "final_value": "46.490705687184",
+  "status": "answered",
+  "summary": "Apple's gross margin in fiscal Q3 2025 (quarter ended 2025-06-28) was about 46.5%. That is gross profit of $43.718 billion divided by revenue of $94.036 billion."
+ },
+ "run_id": "2547727c-12a1-41cb-923c-e24864eb7b73",
+ "run_status": "done",
+ "split": "test",
+ "started_at": "2026-11-11T20:37:03.531215+00:00",
+ "status": "done",
+ "system_config_hash": "2672337d37a1c4749e46b1640e2449249f4b9fce707f2424c3af28481dde7549",
+ "system_id": "system",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 50425,
+  "output_tokens": 2115
+ }
+}

@@ -226,6 +226,17 @@ def meta_path() -> Path:
     return ROOT / "evals" / "b2_contexts_v1.meta.jsonl"
 
 
+# D109: B2 extended to the other 80 questions of the 180 subset. Their metadata lives in a separate
+# file so that the original file, whose hash is part of B2's cache key, stays unchanged.
+EXTRA_META_SHA256 = "087724b6026642881179f263a47d680fd7ff6ae80115daf34e4d1e3939c6018e"
+
+
+def extra_meta_path() -> Path:
+    from filinglens.config import ROOT
+
+    return ROOT / "evals" / "b2_contexts_v1.subset_extra.meta.jsonl"
+
+
 def text_sha256(text: str) -> str:
     import hashlib
 
@@ -233,10 +244,15 @@ def text_sha256(text: str) -> str:
 
 
 def build_meta(
-    questions: list[dict[str, Any]], database_url: str, raw_dir: Path, snapshot_id: str
+    questions: list[dict[str, Any]],
+    database_url: str,
+    raw_dir: Path,
+    snapshot_id: str,
+    ids: set[str] | None = None,
 ) -> list[dict[str, Any]]:
-    """B2 context metadata for the frozen sample: visibility, truncation and the text hash."""
-    sample = [q for q in questions if q.get("sample_100")]
+    """B2 context metadata (visibility, truncation and the text hash) for the frozen sample, or
+    for the given question ids."""
+    sample = [q for q in questions if (q["id"] in ids if ids is not None else q.get("sample_100"))]
     accessions = {acc for q in sample for acc, _ in filings_for(q)}
     windows = load_windows(accessions, database_url, raw_dir, snapshot_id)
     rows = []
@@ -257,13 +273,21 @@ def write_meta(rows: list[dict[str, Any]], path: Path | None = None) -> Path:
 
 
 def frozen_context_loader(settings: Any, path: Path | None = None):
-    """(question) -> (text, meta): rebuilt from the frozen snapshot, verified against the meta."""
+    """(question) -> (text, meta): rebuilt from the frozen snapshot, verified against the meta.
+    The subset's extra rows (D109) are included when their file exists and matches its hash."""
+    import hashlib
     import json
 
     rows = {
         r["question_id"]: r
         for r in map(json.loads, (path or meta_path()).read_text(encoding="utf-8").splitlines())
     }
+    extra = extra_meta_path()
+    if path is None and extra.exists():
+        data = extra.read_bytes()
+        if hashlib.sha256(data).hexdigest() != EXTRA_META_SHA256:
+            raise ValueError(f"{extra.name} does not match its frozen hash (D109)")
+        rows |= {r["question_id"]: r for r in map(json.loads, data.decode().splitlines())}
     windows: dict[str, FilingWindow] = {}
 
     def load(question: dict[str, Any]) -> tuple[str, dict[str, Any]]:

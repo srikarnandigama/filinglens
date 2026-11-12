@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.005084",
+ "finished_at": "2026-11-11T20:38:28.432854+00:00",
+ "latency_ms": 3225,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "33262.5"
+ },
+ "question_id": "q_3baaae1e0112b689",
+ "question_sha": "62a91a7c20f451245b8e1ca83da80e6e559710c4bb7a7bfdc906c44f91f51eae",
+ "raw_output": "Apple's fiscal 2025 operating income was about $133.05 billion, so the quarterly average is about $33.3 billion. These are quarterly figures as I recall them, not looked up.\n\n| Fiscal 2025 quarter | Operating income |\n|---|---|\n| Q1 (ended December 2024) | $42.83 billion |\n| Q2 (ended March 2025) | $29.59 billion |\n| Q3 (ended June 2025) | $28.20 billion |\n| Q4 (ended September 2025) | $32.43 billion |\n| Total | $133.05 billion |\n\nDividing the total by four gives $33.26 billion per quarter.\n\n{\"value\": 33262.5, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgwnUzPMYAW5jaCbJ8dqc"
+ ],
+ "split": "test",
+ "started_at": "2026-11-11T20:38:25.199175+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 337,
+  "output_tokens": 441,
+  "web_searches": 0
+ }
+}

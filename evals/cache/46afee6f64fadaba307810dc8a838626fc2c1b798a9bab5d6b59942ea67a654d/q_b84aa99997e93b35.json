@@ -1,0 +1,47 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": false,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0000078003-26-000026",
+   "0000200406-26-000016"
+  ],
+  "gold_visible": true,
+  "missing_values": [],
+  "question_id": "q_b84aa99997e93b35",
+  "text_sha256": "afb2e33083930bb560d8809882230fa393d1c04450413757f7e29223eaec406d",
+  "tokens_est": 26056
+ },
+ "cost_usd": "0.04537300",
+ "error": null,
+ "finished_at": "2026-11-11T21:43:33.010860+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": "JNJ",
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percentage_points",
+  "value": "37.7"
+ },
+ "question_id": "q_b84aa99997e93b35",
+ "question_sha": "a8c7a3559480a954e207cfb79ccc36b35b50b2b36aa7b359ddd7e6814f0c737e",
+ "raw_output": "Net margin for fiscal 2023 is net income divided by total revenue, taking each company's net income as reported.\n\n**Pfizer:** Net income attributable to Pfizer common shareholders was $2,119M on revenue of $59,553M, a margin of 3.558%. Using net income before noncontrolling interests ($2,158M) gives 3.62%.\n\n**Johnson & Johnson:** Net earnings were $35,153M on sales of $85,159M, a margin of 41.28%. This figure includes $21,827M from discontinued operations (the Kenvue separation). Net earnings from continuing operations alone were $13,326M, a margin of 15.65%.\n\nI used total net earnings as reported, since the 2023 figures were not recast to exclude discontinued operations. On that basis J&J leads by 41.28 \u2212 3.56 = 37.72 percentage points.\n\n**Johnson & Johnson had the higher fiscal 2023 net margin, by about 37.7 percentage points.**\n\n{\"value\": 37.7, \"unit\": \"percentage_points\", \"choice\": \"JNJ\", \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-11T21:41:30.293730+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 43548,
+  "output_tokens": 365,
+  "web_searches": 0
+ }
+}

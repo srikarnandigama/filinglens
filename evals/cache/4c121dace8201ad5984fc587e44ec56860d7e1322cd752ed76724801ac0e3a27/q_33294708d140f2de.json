@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.00874",
+ "finished_at": "2026-11-11T20:43:03.213888+00:00",
+ "latency_ms": 3276,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "3314"
+ },
+ "question_id": "q_33294708d140f2de",
+ "question_sha": "9370e88786163e922292128168f0db5382034517d499cd208cce2b713ead19d5",
+ "raw_output": "Tesla's average quarterly operating cash flow in fiscal 2023 was about **$3,314 million**.\n\nTesla reported net cash provided by operating activities of **$13,256 million** for fiscal 2023 (ended December 31, 2023). This figure is from recall of the 10-K, not checked against the filing.\n\nAverage per quarter = $13,256M \u00f7 4 = **$3,314 million**.\n\nThe quarterly figures I recall also sum to the annual total:\n\n| Quarter | Operating cash flow |\n|---|---|\n| Q1 | $2,513M |\n| Q2 | $3,065M |\n| Q3 | $3,308M |\n| Q4 | $4,370M |\n| **Total** | **$13,256M** |\n\n{\"value\": 3314, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgwnqEyktBR7JmUK5cQEE"
+ ],
+ "split": "test",
+ "started_at": "2026-11-11T20:42:59.941129+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "4c121dace8201ad5984fc587e44ec56860d7e1322cd752ed76724801ac0e3a27",
+ "system_id": "b0-opus",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 345,
+  "output_tokens": 368,
+  "web_searches": 0
+ }
+}

@@ -1,0 +1,47 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": false,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0000104169-26-000055",
+   "0000104169-24-000178"
+  ],
+  "gold_visible": true,
+  "missing_values": [],
+  "question_id": "q_7da69a87bad51f99",
+  "text_sha256": "dc48982117b5e1d04e6d36f7e4e6ff63d8e27a166742eedc99e41ec3dca1e7ca",
+  "tokens_est": 7397
+ },
+ "cost_usd": "0.0193100",
+ "error": null,
+ "finished_at": "2026-11-12T02:09:55.003331+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "5494"
+ },
+ "question_id": "q_7da69a87bad51f99",
+ "question_sha": "4c0e5bed35cbb2176ca070af5ccc4456effa36140a00ed2a9d117ba8fdf45435",
+ "raw_output": "Walmart's net income in fiscal Q4 2024 (the quarter ended January 31, 2024) was about $5,494 million. I derived it by subtracting the nine-month figure from the full-year figure, since the excerpts give no standalone Q4 income statement.\n\nI took \"net income\" to mean consolidated net income attributable to Walmart:\n\n- Fiscal 2024 full year: $15,511 million.\n- Nine months ended October 31, 2023: $10,017 million.\n- Q4 = 15,511 \u2212 10,017 = $5,494 million.\n\nIncluding the noncontrolling interest, consolidated net income for the quarter would be $5,678 million (16,270 \u2212 10,592).\n\n{\"value\": 5494, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-12T02:07:22.538489+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 17090,
+  "output_tokens": 444,
+  "web_searches": 0
+ }
+}

@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.01066",
+ "finished_at": "2026-11-11T20:43:44.278486+00:00",
+ "latency_ms": 4461,
+ "latency_note": null,
+ "prediction": {
+  "choice": "PG",
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percentage_points",
+  "value": "20.49"
+ },
+ "question_id": "q_c08bbd2823ca2696",
+ "question_sha": "d41019e714a4dbe4382d3bb0bb12ae08adcddd83747b5673b6455805ffabf377",
+ "raw_output": "**Procter & Gamble had the higher operating margin in fiscal 2025, by about 20.5 percentage points.** The figures below are recalled from each company's fiscal 2025 annual report, not checked against the filings.\n\n| Company | Fiscal year end | Operating income | Revenue | Operating margin |\n|---|---|---|---|---|\n| Procter & Gamble | June 30, 2025 | ~$20,451M | ~$84,284M (net sales) | ~24.26% |\n| Costco | August 31, 2025 | ~$10,383M | ~$275,235M (total revenue) | ~3.77% |\n\nThe difference is 24.26% \u2212 3.77% \u2248 20.49 percentage points.\n\n{\"value\": 20.49, \"unit\": \"percentage_points\", \"choice\": \"PG\", \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgwntBTWnXUSxoUqcFZVu"
+ ],
+ "split": "test",
+ "started_at": "2026-11-11T20:43:39.816270+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "4c121dace8201ad5984fc587e44ec56860d7e1322cd752ed76724801ac0e3a27",
+ "system_id": "b0-opus",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 355,
+  "output_tokens": 462,
+  "web_searches": 0
+ }
+}

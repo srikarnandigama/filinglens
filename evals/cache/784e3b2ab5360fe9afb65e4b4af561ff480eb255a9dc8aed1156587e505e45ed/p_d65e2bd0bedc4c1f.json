@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.002406",
+ "finished_at": "2026-11-11T20:46:28.732479+00:00",
+ "latency_ms": 2087,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "not_applicable",
+  "unit": "USD",
+  "value": null
+ },
+ "question_id": "p_d65e2bd0bedc4c1f",
+ "question_sha": "e9d485ce3a8ae0bbf580871bb8557e7130d55c92c162f2a0b4d85ef757a6ad0f",
+ "raw_output": "Bank of America is a bank holding company, and its income statement has no gross profit line. It does not report cost of goods sold or a comparable cost-of-revenue figure, so gross profit is not a meaningful measure for it. Its reporting centers on net interest income, noninterest income, total revenue net of interest expense, provision for credit losses, and noninterest expense.\n\nBecause the metric does not exist for this company, the answer is not applicable.\n\n{\"value\": null, \"unit\": \"USD\", \"choice\": null, \"status\": \"not_applicable\"}",
+ "request_ids": [
+  "req_011Cgwo6UpcX2X7Qun5CwW3r"
+ ],
+ "split": "probe",
+ "started_at": "2026-11-11T20:46:26.645242+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 338,
+  "output_tokens": 173,
+  "web_searches": 0
+ }
+}

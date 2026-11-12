@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.019612",
+ "finished_at": "2026-11-11T20:44:26.476524+00:00",
+ "latency_ms": 8226,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD billions",
+  "value": "1.94"
+ },
+ "question_id": "q_c57e9ad06fa491f2",
+ "question_sha": "1e7413ea34af84f474f67934e554e2701ea099c70247352d89f415c79b7df47f",
+ "raw_output": "Pfizer's average quarterly net income over fiscal 2025 was about **$1.94 billion**. This is an estimate, not a confirmed figure: the first three quarters are recalled from reported results, and the fourth quarter is inferred. The figures are net income attributable to Pfizer.\n\n| Quarter | Net income | Basis |\n|---|---|---|\n| Q1 2025 | \u2248 $2.97B | Recalled from reported results |\n| Q2 2025 | \u2248 $2.91B | Recalled from reported results |\n| Q3 2025 | \u2248 $3.54B | Recalled from reported results |\n| Q4 2025 | \u2248 \u2013$1.65B (net loss) | Inferred, see below |\n| **Full year** | **\u2248 $7.77B** | Sum of the four quarters |\n\nThe Q4 figure is derived, not taken from the filing. I recall full-year reported diluted EPS of about $1.36, while the first three quarters sum to about $1.65. That implies Q4 EPS of about \u2013$0.29, or a net loss near $1.65B. The loss is plausibly due to acquisition-related and impairment charges, but this should be checked against the 10-K.\n\nAverage quarterly net income \u2248 $7.77B \u00f7 4 \u2248 **$1.94B**.\n\n{\"value\": 1.94, \"unit\": \"USD billions\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011Cgwnw1peizVHUwfW9S5GH"
+ ],
+ "split": "test",
+ "started_at": "2026-11-11T20:44:18.261039+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "4c121dace8201ad5984fc587e44ec56860d7e1322cd752ed76724801ac0e3a27",
+ "system_id": "b0-opus",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 338,
+  "output_tokens": 913,
+  "web_searches": 0
+ }
+}

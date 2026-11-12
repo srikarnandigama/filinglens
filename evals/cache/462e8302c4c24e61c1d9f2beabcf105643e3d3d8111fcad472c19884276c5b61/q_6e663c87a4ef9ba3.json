@@ -1,0 +1,34 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.03519400",
+ "error": null,
+ "finished_at": "2026-11-12T02:14:09.026359+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "12296"
+ },
+ "question_id": "q_6e663c87a4ef9ba3",
+ "question_sha": "788f7beb7bdd43b5e20df0d6985e4e57b20472581a3d34e537f99324edf250a1",
+ "raw_output": "Meta's research and development expense in fiscal Q4 2024 was about $12.3 billion ($12,296 million). I derived this figure rather than reading it from a filing. I took full-year 2024 R&D of $43,873 million and subtracted the first three quarters.\n\n- Q1 2024: $9,978 million. I confirmed this in Meta's Q1 2024 10-Q.\n- Q2 2024: $10,422 million, from memory.\n- Q3 2024: $11,177 million, from memory.\n- Full-year 2024: $43,873 million, from memory.\n\nQ4 is therefore 43,873 \u2212 9,978 \u2212 10,422 \u2212 11,177 = $12,296 million. Only the Q1 figure was checked against a source, so the Q2, Q3 and full-year inputs could be slightly off.\n\n{\"value\": 12296, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-12T02:10:05.212451+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "462e8302c4c24e61c1d9f2beabcf105643e3d3d8111fcad472c19884276c5b61",
+ "system_id": "b1-sonnet",
+ "system_kind": "b1",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 21109,
+  "output_tokens": 817,
+  "web_searches": 1
+ }
+}

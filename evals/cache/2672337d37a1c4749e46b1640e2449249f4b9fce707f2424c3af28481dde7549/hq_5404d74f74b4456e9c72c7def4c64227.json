@@ -1,0 +1,176 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 1,
+  "numeric_valid": 1,
+  "text_pending_judge": [
+   {
+    "chunk_ids": [
+     "chk_a34ecbf68c18a89852a3fd52867ef7e6de9eb7974b753125f4dada6ad9b824b1"
+    ],
+    "claim_id": "c1",
+    "text": "AWS segment operating income rose from $24,631 million in 2023 to $39,834 million in 2024, according to the 10-K segment table."
+   }
+  ],
+  "text_string_supported": 2,
+  "text_total": 3,
+  "uncited": 0
+ },
+ "cost_usd": "0.2287103",
+ "error": null,
+ "finished_at": "2026-11-11T20:49:53.063148+00:00",
+ "latency_ms": 63390,
+ "prediction": {
+  "parse_ok": true,
+  "text": "AWS segment operating income rose from $24,631 million in 2023 to $39,834 million in 2024. Amazon's 10-K attributes the increase mainly to higher sales, lower payroll and related expenses, and lower depreciation and amortization from a change in the estimated useful lives of its servers. Spending on technology infrastructure to support AWS growth partly offset these gains. AWS sales rose 19%. For context, consolidated operating income rose about 86.1% over the same period.\nAWS segment operating income rose from $24,631 million in 2023 to $39,834 million in 2024, according to the 10-K segment table.\nAmazon attributed the increase in AWS operating income primarily to increased sales, decreased payroll and related expenses, and a reduction in depreciation and amortization expense from its change in the estimated useful lives of its servers. Spending on technology infrastructure, primarily driven by additional investments to support AWS business growth, partially offset these gains.\nAWS sales increased 19% in 2024. Amazon said the growth primarily reflects increased customer usage, partially offset by pricing changes primarily driven by long-term customer contracts.\nFor context, Amazon's consolidated operating income grew about 86.1% from FY2023 ($36.852 billion) to FY2024 ($68.593 billion)."
+ },
+ "question_id": "hq_5404d74f74b4456e9c72c7def4c64227",
+ "question_sha": "6f572735fabeb14796182d0183db6335e91d1ff9154ee3ad77d0cd5966789d0f",
+ "raw_output": {
+  "caveats": [
+   "The AWS segment operating income figures come from the 10-K MD&A table text, not from structured facts. I did not compute a percentage growth rate for AWS itself.",
+   "The 10-K does not give a dollar split of the AWS increase across the individual drivers.",
+   "The filing states that changes in foreign exchange rates positively impacted operating income by $240 million in 2024, but the passage does not make clear whether this applies to AWS specifically, so I did not count it as an AWS driver."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_a34ecbf68c18a89852a3fd52867ef7e6de9eb7974b753125f4dada6ad9b824b1"
+     }
+    ],
+    "id": "c1",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "AWS segment operating income rose from $24,631 million in 2023 to $39,834 million in 2024, according to the 10-K segment table.",
+    "ticker": "AMZN",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_a34ecbf68c18a89852a3fd52867ef7e6de9eb7974b753125f4dada6ad9b824b1"
+     },
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_3ad43ee91a72e374fa5ecd7f80ddf4139048adce12534cb53e14eed689878596"
+     }
+    ],
+    "id": "c2",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "Amazon attributed the increase in AWS operating income primarily to increased sales, decreased payroll and related expenses, and a reduction in depreciation and amortization expense from its change in the estimated useful lives of its servers. Spending on technology infrastructure, primarily driven by additional investments to support AWS business growth, partially offset these gains.",
+    "ticker": "AMZN",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_341fe0a661021d4bde259613a4a8558e628ba7c37a2856996048faad6ae000ac"
+     }
+    ],
+    "id": "c3",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "AWS sales increased 19% in 2024. Amazon said the growth primarily reflects increased customer usage, partially offset by pricing changes primarily driven by long-term customer contracts.",
+    "ticker": "AMZN",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_2"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "706"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "711"
+     }
+    ],
+    "id": "c4",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "For context, Amazon's consolidated operating income grew about 86.1% from FY2023 ($36.852 billion) to FY2024 ($68.593 billion).",
+    "ticker": "AMZN",
+    "unit": "percent",
+    "value": "86.131010528601",
+    "value_basis": "computation"
+   }
+  ],
+  "final_claim_id": null,
+  "final_unit": null,
+  "final_value": null,
+  "status": "answered",
+  "summary": "AWS segment operating income rose from $24,631 million in 2023 to $39,834 million in 2024. Amazon's 10-K attributes the increase mainly to higher sales, lower payroll and related expenses, and lower depreciation and amortization from a change in the estimated useful lives of its servers. Spending on technology infrastructure to support AWS growth partly offset these gains. AWS sales rose 19%. For context, consolidated operating income rose about 86.1% over the same period."
+ },
+ "retrieval": {
+  "first_search": {
+   "filings:s1": [
+    "chk_a34ecbf68c18a89852a3fd52867ef7e6de9eb7974b753125f4dada6ad9b824b1",
+    "chk_387991119303514148ccdffd8269d98892b0688c67e3b0b30a842ffd6d7815ac",
+    "chk_341fe0a661021d4bde259613a4a8558e628ba7c37a2856996048faad6ae000ac",
+    "chk_3ad43ee91a72e374fa5ecd7f80ddf4139048adce12534cb53e14eed689878596",
+    "chk_74939e878b7ed69c9c674bb59ce693830fddab2b7f9a075d4ba6ccf70187c946",
+    "chk_b484e39a57cefba5f4302792a2eeb45c5516f3317256b0dc7d8566018f121d7b",
+    "chk_b6c1624acbdfcaf42ad5c44444bd88c9c1ba5bb98941525250a3016e458a28f6",
+    "chk_36fd0f6214ec25e505118d59103de87e1450eb76cd185bc2d6fc921b7a2c8b4b"
+   ]
+  },
+  "seen": [
+   "chk_a34ecbf68c18a89852a3fd52867ef7e6de9eb7974b753125f4dada6ad9b824b1",
+   "chk_387991119303514148ccdffd8269d98892b0688c67e3b0b30a842ffd6d7815ac",
+   "chk_341fe0a661021d4bde259613a4a8558e628ba7c37a2856996048faad6ae000ac",
+   "chk_3ad43ee91a72e374fa5ecd7f80ddf4139048adce12534cb53e14eed689878596",
+   "chk_74939e878b7ed69c9c674bb59ce693830fddab2b7f9a075d4ba6ccf70187c946",
+   "chk_b484e39a57cefba5f4302792a2eeb45c5516f3317256b0dc7d8566018f121d7b",
+   "chk_b6c1624acbdfcaf42ad5c44444bd88c9c1ba5bb98941525250a3016e458a28f6",
+   "chk_36fd0f6214ec25e505118d59103de87e1450eb76cd185bc2d6fc921b7a2c8b4b"
+  ]
+ },
+ "run_id": "3689e147-0c54-4ca7-a859-f99e4c8ffc9e",
+ "run_status": "done",
+ "split": "handwritten",
+ "started_at": "2026-11-11T20:48:49.605490+00:00",
+ "status": "done",
+ "system_config_hash": "2672337d37a1c4749e46b1640e2449249f4b9fce707f2424c3af28481dde7549",
+ "system_id": "system",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 126428,
+  "output_tokens": 9024
+ }
+}

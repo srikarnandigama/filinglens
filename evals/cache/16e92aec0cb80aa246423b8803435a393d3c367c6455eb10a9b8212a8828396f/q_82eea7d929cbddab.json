@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.013672",
+ "finished_at": "2026-11-12T02:05:41.251060+00:00",
+ "latency_ms": 4610,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "15337.5"
+ },
+ "question_id": "q_82eea7d929cbddab",
+ "question_sha": "8c217b8f9252519c887b37784748ced8937cf45752a9587b97f8abccf0659385",
+ "raw_output": "Johnson & Johnson's average quarterly gross profit over fiscal 2024 was about $15,337.5 million (roughly $15.34 billion). This is from recalled 10-K figures: sales of $88,821 million less cost of products sold of $27,471 million gives full-year gross profit of $61,350 million, divided by four quarters.\n\n{\"value\": 15337.5, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgxDS8TN53BgcwxfDGQeg"
+ ],
+ "split": "test",
+ "started_at": "2026-11-12T02:05:36.641015+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "16e92aec0cb80aa246423b8803435a393d3c367c6455eb10a9b8212a8828396f",
+ "system_id": "b0-fable",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 344,
+  "output_tokens": 273,
+  "web_searches": 0
+ }
+}

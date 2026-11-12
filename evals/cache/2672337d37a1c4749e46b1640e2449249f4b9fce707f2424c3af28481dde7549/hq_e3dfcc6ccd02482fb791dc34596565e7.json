@@ -1,0 +1,217 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 0,
+  "numeric_valid": 0,
+  "text_pending_judge": [
+   {
+    "chunk_ids": [
+     "chk_8c0306f0215208f573e402c0aee8e3e846fef2c5e378ea4af78448aedcea3ec0",
+     "chk_3cf73f5c20bc2c44a2fbd49aa5cbfafbb0200143b88f01a7b29f38939e873348"
+    ],
+    "claim_id": "c2",
+    "text": "In its FY2025 10-K (Table 45), the -100 bps instantaneous shift at December 31, 2025 was $(2.0) billion for 12-month pretax net interest income, versus $(2.3) billion at December 31, 2024."
+   },
+   {
+    "chunk_ids": [
+     "chk_01e84e13f124ca256665ab7897d65d178f9d0b224ae0b3fb6bdfdb8765c47c12"
+    ],
+    "claim_id": "c5",
+    "text": "Management cautioned that when rates are already low, the ability to cut rates paid on deposits is limited as customer rates near zero. It also said that for larger rate shifts the sensitivity may behave in a non-linear manner. The -100 bps figure should therefore not be scaled up mechanically."
+   }
+  ],
+  "text_string_supported": 3,
+  "text_total": 5,
+  "uncited": 0
+ },
+ "cost_usd": "0.1449148",
+ "error": null,
+ "finished_at": "2026-11-11T20:52:49.778767+00:00",
+ "latency_ms": 49241,
+ "prediction": {
+  "parse_ok": true,
+  "text": "Bank of America's latest disclosure says a sudden 100 basis point drop in rates would lower its pretax net interest income by about $2.2 billion over the next 12 months. That is the June 30, 2026 figure. The December 31, 2025 figure was $2.0 billion. The estimate assumes no management action.\nIn its Q2 2026 10-Q (Table 41), Bank of America reports that an instantaneous parallel -100 bps shift in rates would reduce forecasted pretax net interest income over the next 12 months by $(2.2) billion at June 30, 2026. The comparable figure at December 31, 2025 was $(2.0) billion.\nIn its FY2025 10-K (Table 45), the -100 bps instantaneous shift at December 31, 2025 was $(2.0) billion for 12-month pretax net interest income, versus $(2.3) billion at December 31, 2024.\nBank of America wrote that it continues to be asset sensitive to a parallel move in interest rates, with the majority of that impact coming from the short end of the yield curve. This is why lower rates reduce net interest income.\nThe sensitivity analysis assumes the company takes no action in response to the rate shock. It also assumes no change in other macroeconomic variables normally correlated with interest rates. In lower-rate scenarios, the 10-K says the analysis assumes a portion of higher-yielding deposits or market-based funding is replaced with low-cost or noninterest-bearing deposits.\nManagement cautioned that when rates are already low, the ability to cut rates paid on deposits is limited as customer rates near zero. It also said that for larger rate shifts the sensitivity may behave in a non-linear manner. The -100 bps figure should therefore not be scaled up mechanically."
+ },
+ "question_id": "hq_e3dfcc6ccd02482fb791dc34596565e7",
+ "question_sha": "eea1a8e66740ec7947e9ffc14c78af713ac8daf1c161007616c1c663728f87a7",
+ "raw_output": {
+  "caveats": [
+   "The figures are model-based estimates of pretax net interest income over the next 12 months, measured against a market-based forward-curve baseline. They are not a forecast of reported results.",
+   "The estimates assume no management action.",
+   "The Q2 2026 table row for -100 bps was extracted as a fragment of a split table. The $(2.2) billion and $(2.0) billion values come from the verified quote and the worker's notes on Table 41.",
+   "No structured SEC facts were available for this sensitivity, so the dollar amounts come from filing text, not from fact records."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_ff661f21ae82bd3402c59811c5544438e4e2f86902c18bc816deb09cd1ad6334"
+     }
+    ],
+    "id": "c1",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "Q2",
+     "fiscal_year": 2026
+    },
+    "text": "In its Q2 2026 10-Q (Table 41), Bank of America reports that an instantaneous parallel -100 bps shift in rates would reduce forecasted pretax net interest income over the next 12 months by $(2.2) billion at June 30, 2026. The comparable figure at December 31, 2025 was $(2.0) billion.",
+    "ticker": "BAC",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_8c0306f0215208f573e402c0aee8e3e846fef2c5e378ea4af78448aedcea3ec0"
+     },
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_3cf73f5c20bc2c44a2fbd49aa5cbfafbb0200143b88f01a7b29f38939e873348"
+     }
+    ],
+    "id": "c2",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "In its FY2025 10-K (Table 45), the -100 bps instantaneous shift at December 31, 2025 was $(2.0) billion for 12-month pretax net interest income, versus $(2.3) billion at December 31, 2024.",
+    "ticker": "BAC",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_64fde50645d6e7a1f4124979e37c4e820a954e450b00cb778e16f28d34faa22b"
+     }
+    ],
+    "id": "c3",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "Q2",
+     "fiscal_year": 2026
+    },
+    "text": "Bank of America wrote that it continues to be asset sensitive to a parallel move in interest rates, with the majority of that impact coming from the short end of the yield curve. This is why lower rates reduce net interest income.",
+    "ticker": "BAC",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_64fde50645d6e7a1f4124979e37c4e820a954e450b00cb778e16f28d34faa22b"
+     },
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_ce63ca8487ae28531f151cba39bf2638513aa874aeac4ae77352ca8b469715fd"
+     }
+    ],
+    "id": "c4",
+    "kind": "textual",
+    "period": null,
+    "text": "The sensitivity analysis assumes the company takes no action in response to the rate shock. It also assumes no change in other macroeconomic variables normally correlated with interest rates. In lower-rate scenarios, the 10-K says the analysis assumes a portion of higher-yielding deposits or market-based funding is replaced with low-cost or noninterest-bearing deposits.",
+    "ticker": "BAC",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_01e84e13f124ca256665ab7897d65d178f9d0b224ae0b3fb6bdfdb8765c47c12"
+     }
+    ],
+    "id": "c5",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "Q2",
+     "fiscal_year": 2026
+    },
+    "text": "Management cautioned that when rates are already low, the ability to cut rates paid on deposits is limited as customer rates near zero. It also said that for larger rate shifts the sensitivity may behave in a non-linear manner. The -100 bps figure should therefore not be scaled up mechanically.",
+    "ticker": "BAC",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   }
+  ],
+  "final_claim_id": null,
+  "final_unit": null,
+  "final_value": null,
+  "status": "answered",
+  "summary": "Bank of America's latest disclosure says a sudden 100 basis point drop in rates would lower its pretax net interest income by about $2.2 billion over the next 12 months. That is the June 30, 2026 figure. The December 31, 2025 figure was $2.0 billion. The estimate assumes no management action."
+ },
+ "retrieval": {
+  "first_search": {
+   "filings:s1": [
+    "chk_64fde50645d6e7a1f4124979e37c4e820a954e450b00cb778e16f28d34faa22b",
+    "chk_01e84e13f124ca256665ab7897d65d178f9d0b224ae0b3fb6bdfdb8765c47c12",
+    "chk_ff661f21ae82bd3402c59811c5544438e4e2f86902c18bc816deb09cd1ad6334",
+    "chk_8b8bbfb4e6b2619b2a883d2a286f93d53752838955f70cd2c6de113ad0013162",
+    "chk_62f7e33d756b759b10ce244f425a56582b4833a8129f080aaf751dcd9be5d6ce",
+    "chk_b21525767a89c3a57a6fd6fc5986e30f527077e2afa8c939f1f7dcfa795f287b",
+    "chk_4ecb852127220a12628c5279d8c40a812e9243f9d5bca66c0b21443be964a90b",
+    "chk_aec4628165f9e48d6435b4861625f8963613104136b5caa6be7f4208d6627f9f"
+   ],
+   "filings:s2": [
+    "chk_ce63ca8487ae28531f151cba39bf2638513aa874aeac4ae77352ca8b469715fd",
+    "chk_c9a6ab5a6eb37d5b4b42ef4b6c326ba778893fae6014bb77f16e90a323f11764",
+    "chk_ae78e7f40d83b47125554d09ddb59b6aff36b6e767a649dd189d43c9e1e0f487",
+    "chk_bc4ae57424ed64e54e00526706b0bfe48e5fbae04318f572632becae8c8ff313",
+    "chk_3cf73f5c20bc2c44a2fbd49aa5cbfafbb0200143b88f01a7b29f38939e873348",
+    "chk_d341aff20bba4d897ea063b4f852637a0f16acd6a389a2b0804d1cfc1fbac3a1",
+    "chk_70e722208a066c2b511745cc27721537688cfbd550b7be334f7fd81836ad8681",
+    "chk_1267e5bb1c799d6613979eb0795603469dde033a0b335715176354ab1d6c2a66"
+   ]
+  },
+  "seen": [
+   "chk_ce63ca8487ae28531f151cba39bf2638513aa874aeac4ae77352ca8b469715fd",
+   "chk_c9a6ab5a6eb37d5b4b42ef4b6c326ba778893fae6014bb77f16e90a323f11764",
+   "chk_ae78e7f40d83b47125554d09ddb59b6aff36b6e767a649dd189d43c9e1e0f487",
+   "chk_bc4ae57424ed64e54e00526706b0bfe48e5fbae04318f572632becae8c8ff313",
+   "chk_3cf73f5c20bc2c44a2fbd49aa5cbfafbb0200143b88f01a7b29f38939e873348",
+   "chk_d341aff20bba4d897ea063b4f852637a0f16acd6a389a2b0804d1cfc1fbac3a1",
+   "chk_70e722208a066c2b511745cc27721537688cfbd550b7be334f7fd81836ad8681",
+   "chk_1267e5bb1c799d6613979eb0795603469dde033a0b335715176354ab1d6c2a66",
+   "chk_64fde50645d6e7a1f4124979e37c4e820a954e450b00cb778e16f28d34faa22b",
+   "chk_01e84e13f124ca256665ab7897d65d178f9d0b224ae0b3fb6bdfdb8765c47c12",
+   "chk_ff661f21ae82bd3402c59811c5544438e4e2f86902c18bc816deb09cd1ad6334",
+   "chk_8b8bbfb4e6b2619b2a883d2a286f93d53752838955f70cd2c6de113ad0013162",
+   "chk_62f7e33d756b759b10ce244f425a56582b4833a8129f080aaf751dcd9be5d6ce",
+   "chk_b21525767a89c3a57a6fd6fc5986e30f527077e2afa8c939f1f7dcfa795f287b",
+   "chk_4ecb852127220a12628c5279d8c40a812e9243f9d5bca66c0b21443be964a90b",
+   "chk_aec4628165f9e48d6435b4861625f8963613104136b5caa6be7f4208d6627f9f",
+   "chk_8c0306f0215208f573e402c0aee8e3e846fef2c5e378ea4af78448aedcea3ec0",
+   "chk_4393263ada8b0fddd5ca8d38eba337e9d9c974707650548aaa92013124e41973"
+  ]
+ },
+ "run_id": "e12ac7d1-2a5c-4a04-8e69-bc067ab2b0da",
+ "run_status": "done",
+ "split": "handwritten",
+ "started_at": "2026-11-11T20:52:00.448277+00:00",
+ "status": "done",
+ "system_config_hash": "2672337d37a1c4749e46b1640e2449249f4b9fce707f2424c3af28481dde7549",
+ "system_id": "system",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 130051,
+  "output_tokens": 9474
+ }
+}

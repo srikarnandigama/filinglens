@@ -1,0 +1,34 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.03360700",
+ "error": null,
+ "finished_at": "2026-11-12T02:14:08.993549+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "21.26"
+ },
+ "question_id": "q_bfb5f464f4248f4a",
+ "question_sha": "bfc8d15a1228a2814b24c2b7ac047b353dbda2bb90342c91248b4a650c85fb87",
+ "raw_output": "Pfizer's net margin in fiscal Q3 2025 was about 21.3%.\n\nPfizer's Q3 2025 earnings release reports revenues of $16,654 million and reported net income of $3,541 million.\n\nNet margin = 3,541 / 16,654 \u2248 21.26%.\n\nI treated the $3,541 million as net income attributable to Pfizer. I didn't separately check whether it includes noncontrolling interests, which are small.\n\n{\"value\": 21.26, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-12T02:10:05.212451+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "462e8302c4c24e61c1d9f2beabcf105643e3d3d8111fcad472c19884276c5b61",
+ "system_id": "b1-sonnet",
+ "system_kind": "b1",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 21337,
+  "output_tokens": 454,
+  "web_searches": 1
+ }
+}

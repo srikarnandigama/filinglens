@@ -1,0 +1,46 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": false,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0000200406-25-000209"
+  ],
+  "gold_visible": true,
+  "missing_values": [],
+  "question_id": "q_845568f6d5a2d9a2",
+  "text_sha256": "fbe0d77feeb7b7af70ab0615ab8f4a272d26adcb5b3030e66d3d2da48a015941",
+  "tokens_est": 3010
+ },
+ "cost_usd": "0.00745100",
+ "error": null,
+ "finished_at": "2026-11-11T21:43:32.917296+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "69.0"
+ },
+ "question_id": "q_845568f6d5a2d9a2",
+ "question_sha": "6354bdfd1b0b10dbbe6a3200bfa1275a8775b36921ad60b6a34bc1c42ab986bf",
+ "raw_output": "Johnson & Johnson's gross margin in fiscal Q3 2024 was 69.0%. This is gross profit divided by sales for the quarter ended September 29, 2024: $15,508 million \u00f7 $22,471 million = 69.02%, which matches the 69.0% \"Percent to Sales\" shown in the filing.\n\n{\"value\": 69.0, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-11T21:41:30.293730+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 6746,
+  "output_tokens": 141,
+  "web_searches": 0
+ }
+}

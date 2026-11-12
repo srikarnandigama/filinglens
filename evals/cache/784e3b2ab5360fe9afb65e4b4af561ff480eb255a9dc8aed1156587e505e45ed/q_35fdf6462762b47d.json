@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.002212",
+ "finished_at": "2026-11-11T20:40:10.958051+00:00",
+ "latency_ms": 1706,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "2.3"
+ },
+ "question_id": "q_35fdf6462762b47d",
+ "question_sha": "aa630d8b42d9a795658803974d59f1cbe33ff36abdc778ac8bb609b6f91ad0cb",
+ "raw_output": "Bank of America's reported net income was $26.515 billion in fiscal 2023 and $27.132 billion in fiscal 2024.\n\nPercent change = (27.132 \u2212 26.515) / 26.515 = 0.617 / 26.515 \u2248 2.33%\n\nNet income rose about 2.3% from fiscal 2023 to fiscal 2024.\n\n{\"value\": 2.3, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgwncfG92mh1CLHzkYqt1"
+ ],
+ "split": "test",
+ "started_at": "2026-11-11T20:40:09.261643+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 346,
+  "output_tokens": 152,
+  "web_searches": 0
+ }
+}

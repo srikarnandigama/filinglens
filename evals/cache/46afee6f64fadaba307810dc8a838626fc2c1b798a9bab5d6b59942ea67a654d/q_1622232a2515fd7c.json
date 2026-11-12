@@ -1,0 +1,48 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": false,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0000080424-26-000103",
+   "0000080424-26-000060",
+   "0000080424-25-000245"
+  ],
+  "gold_visible": true,
+  "missing_values": [],
+  "question_id": "q_1622232a2515fd7c",
+  "text_sha256": "896c63101196ce06641a7f6e78c24ed17fbd3dfd6d83f7de6fd078504efa7dbf",
+  "tokens_est": 8668
+ },
+ "cost_usd": "0.02184700",
+ "error": null,
+ "finished_at": "2026-11-11T21:43:32.925127+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "-5.12"
+ },
+ "question_id": "q_1622232a2515fd7c",
+ "question_sha": "8d612ded0e310d95b298aad370798ad45fba6b24d2c35901532150185c84ae90",
+ "raw_output": "Q1 FY2026 operating cash flow (three months ended Sept 30, 2025): 5,408.\n\nQ4 FY2026 is the full year less the nine months ended March 31, 2026: 19,556 \u2212 14,425 = 5,131.\n\nPercent change from Q1 to Q4: (5,131 \u2212 5,408) / 5,408 = \u2212277 / 5,408 \u2248 \u22125.12%.\n\n**Operating cash flow fell about 5.1% from fiscal Q1 2026 to fiscal Q4 2026.**\n\n{\"value\": -5.12, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-11T21:41:30.293730+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 20802,
+  "output_tokens": 209,
+  "web_searches": 0
+ }
+}

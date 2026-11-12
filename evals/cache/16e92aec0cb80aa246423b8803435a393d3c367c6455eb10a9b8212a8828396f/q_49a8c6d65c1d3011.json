@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.023072",
+ "finished_at": "2026-11-12T02:06:42.689013+00:00",
+ "latency_ms": 6525,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "10.5"
+ },
+ "question_id": "q_49a8c6d65c1d3011",
+ "question_sha": "d7178cdebd7704878c91be2dcbf959d16e52ead58891d1e07665b85953c345e4",
+ "raw_output": "I don't have Costco's reported fiscal 2026 full-year results (the year ending around August 2026), so this is an estimate rather than a reported figure. Fiscal 2025 net income was about $8.10 billion, up roughly 10% from $7.37 billion in fiscal 2024. From my recollection, the first quarter of fiscal 2026 ran about 11% ahead of the prior-year quarter. On that trend, my best estimate is growth of roughly 10.5%, implying fiscal 2026 net income of about $8.9\u20139.0 billion.\n\n{\"value\": 10.5, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgxDWWvLKcm5BDiupBuxD"
+ ],
+ "split": "test",
+ "started_at": "2026-11-12T02:06:36.155918+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "16e92aec0cb80aa246423b8803435a393d3c367c6455eb10a9b8212a8828396f",
+ "system_id": "b0-fable",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 344,
+  "output_tokens": 508,
+  "web_searches": 0
+ }
+}

@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.002826",
+ "finished_at": "2026-11-11T20:41:30.011693+00:00",
+ "latency_ms": 2010,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "45170.75"
+ },
+ "question_id": "q_c1bbb3e7c51f5fb0",
+ "question_sha": "cad3a611de92eb7b547093787175720231e498ef09356a30c76701be1185faa8",
+ "raw_output": "Apple's fiscal 2024 gross profit (gross margin) was about $180,683 million, based on net sales of $391,035 million less cost of sales of $210,352 million. Dividing by four quarters gives an average of about $45,171 million, or roughly $45.17 billion per quarter.\n\n{\"value\": 45170.75, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgwniTvS5My2SwunDMha5"
+ ],
+ "split": "test",
+ "started_at": "2026-11-11T20:41:27.998767+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 338,
+  "output_tokens": 215,
+  "web_searches": 0
+ }
+}

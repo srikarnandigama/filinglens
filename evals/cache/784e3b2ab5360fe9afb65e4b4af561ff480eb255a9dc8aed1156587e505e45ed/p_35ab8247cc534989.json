@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.002028",
+ "finished_at": "2026-11-11T20:46:21.155206+00:00",
+ "latency_ms": 1843,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "not_applicable",
+  "unit": "percent",
+  "value": null
+ },
+ "question_id": "p_35ab8247cc534989",
+ "question_sha": "cade684b9da934b76ca915440f89d1b008324aa717566c21e57c73ed8f081172",
+ "raw_output": "JPMorgan Chase is a bank holding company, and its income statement has no cost of goods sold or gross profit line. Revenue is reported as net interest income plus noninterest revenue, and expenses are reported as provision for credit losses and noninterest expense. A gross margin therefore doesn't exist for this company.\n\n{\"value\": null, \"unit\": \"percent\", \"choice\": null, \"status\": \"not_applicable\"}",
+ "request_ids": [
+  "req_011Cgwo5wXCMtRbRLCqRUoSz"
+ ],
+ "split": "probe",
+ "started_at": "2026-11-11T20:46:19.312340+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 339,
+  "output_tokens": 135,
+  "web_searches": 0
+ }
+}

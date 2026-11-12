@@ -1,0 +1,48 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": false,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0000034088-26-000045",
+   "0000034088-25-000061",
+   "0000034088-25-000024"
+  ],
+  "gold_visible": true,
+  "missing_values": [],
+  "question_id": "q_aa288b6674118a5b",
+  "text_sha256": "4036ffb899120fd97181c709af42ca611c8a09efe85b972367a579e4060ee520",
+  "tokens_est": 49353
+ },
+ "cost_usd": "0.08827200",
+ "error": null,
+ "finished_at": "2026-11-11T21:43:33.004831+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "-16.6"
+ },
+ "question_id": "q_aa288b6674118a5b",
+ "question_sha": "2c81f78bb68ba4f8c1318769e809e9cd1e1d0374fa6139e7e80fd7df129bb051",
+ "raw_output": "Operating cash flow fell about 16.6% from fiscal Q1 2024 to fiscal Q4 2024, from $14,664 million to $12,229 million.\n\n- **Q1 2024:** net cash provided by operating activities was $14,664 million, from the Q1 2025 10-Q's prior-year column.\n- **Q4 2024:** the filings give no standalone figure, so I derived it as full-year 2024 less the first nine months of 2024. That is $55,022 million \u2212 $42,793 million = $12,229 million.\n- **Change:** ($12,229 \u2212 $14,664) / $14,664 = \u2212$2,435 / $14,664 \u2248 \u221216.6%.\n\n{\"value\": -16.6, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-11T21:41:30.293730+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 86342,
+  "output_tokens": 386,
+  "web_searches": 0
+ }
+}

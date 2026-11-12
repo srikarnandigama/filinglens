@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.011916",
+ "finished_at": "2026-11-11T20:44:33.479991+00:00",
+ "latency_ms": 4949,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "-36.5"
+ },
+ "question_id": "q_2bab6fd3565ceec3",
+ "question_sha": "e4d49f19c23bbb99e4a416cf6f77c3c6702b39add6a0f9d2861c90d2772a249d",
+ "raw_output": "Coca-Cola's net income attributable to shareowners **fell about 36.5%** from fiscal Q1 2023 to fiscal Q4 2023.\n\n- **Q1 2023:** $3,107 million.\n- **Q4 2023:** about $1,973 million. I derived this rather than reading it directly from a quarterly filing: full-year 2023 net income of $10,714M, minus Q1 ($3,107M), Q2 ($2,547M) and Q3 ($3,087M). The figures are from memory of the filings. The result is consistent with the reported Q4 EPS of $0.46.\n- **Change:** ($1,973M \u2212 $3,107M) / $3,107M \u2248 \u221236.5%.\n\nI used net income attributable to shareowners rather than consolidated net income including noncontrolling interests.\n\n{\"value\": -36.5, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011Cgwnwmm6PqPWArf1iDR8r"
+ ],
+ "split": "test",
+ "started_at": "2026-11-11T20:44:28.530361+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "4c121dace8201ad5984fc587e44ec56860d7e1322cd752ed76724801ac0e3a27",
+ "system_id": "b0-opus",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 354,
+  "output_tokens": 525,
+  "web_searches": 0
+ }
+}

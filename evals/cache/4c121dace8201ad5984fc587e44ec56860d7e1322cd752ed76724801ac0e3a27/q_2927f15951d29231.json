@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.01168",
+ "finished_at": "2026-11-11T20:43:47.061247+00:00",
+ "latency_ms": 6039,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "750"
+ },
+ "question_id": "q_2927f15951d29231",
+ "question_sha": "38e2933483c52033e95560edf2c8017817de812b4160239422c8325a0e82ec6e",
+ "raw_output": "Pfizer's fiscal Q4 2025 capital expenditures were roughly **$750 million**. This is an estimate, not a figure I can confirm from the filings.\n\n- **How it was derived:** Pfizer reports capital expenditures as \"purchases of property, plant and equipment\" in its cash flow statement. Q4 would normally be the full-year 2025 total minus the nine-month year-to-date total. I don't have either 2025 figure reliably.\n- **Basis for the estimate:** Full-year 2024 purchases were about $2.9 billion, and I believe 2025 spending was somewhat lower, perhaps around $2.4 billion. That puts a typical quarter at roughly $600\u2013$750 million, and fourth quarters often run higher, so I took the upper end of that range.\n\n{\"value\": 750, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgwntGf3Qs9Gwcu7kTqgZ"
+ ],
+ "split": "test",
+ "started_at": "2026-11-11T20:43:41.024427+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "4c121dace8201ad5984fc587e44ec56860d7e1322cd752ed76724801ac0e3a27",
+ "system_id": "b0-opus",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 340,
+  "output_tokens": 516,
+  "web_searches": 0
+ }
+}

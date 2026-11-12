@@ -1,0 +1,47 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": false,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0001628280-26-003942",
+   "0001628280-25-047240"
+  ],
+  "gold_visible": true,
+  "missing_values": [],
+  "question_id": "q_6e663c87a4ef9ba3",
+  "text_sha256": "233f72222e72b592daefa12df999d119dc22ef020d00b563dc2c454dd3a40c90",
+  "tokens_est": 17741
+ },
+ "cost_usd": "0.0298250",
+ "error": null,
+ "finished_at": "2026-11-11T21:43:32.974953+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "12180"
+ },
+ "question_id": "q_6e663c87a4ef9ba3",
+ "question_sha": "788f7beb7bdd43b5e20df0d6985e4e57b20472581a3d34e537f99324edf250a1",
+ "raw_output": "Q4 2024 R&D is the full-year 2024 figure less the nine-month figure.\n\n- FY2024 R&D: $43,873 million (from the 10-K).\n- Nine months ended September 30, 2024 R&D: $31,693 million (from the Q3 10-Q).\n- Q4 2024 R&D = 43,873 \u2212 31,693 = $12,180 million.\n\n{\"value\": 12180, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-11T21:41:30.293730+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 29025,
+  "output_tokens": 160,
+  "web_searches": 0
+ }
+}

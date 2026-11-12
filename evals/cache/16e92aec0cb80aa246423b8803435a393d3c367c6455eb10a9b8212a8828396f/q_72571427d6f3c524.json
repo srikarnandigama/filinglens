@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.025296",
+ "finished_at": "2026-11-12T02:04:14.308254+00:00",
+ "latency_ms": 6129,
+ "latency_note": null,
+ "prediction": {
+  "choice": "NVDA",
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percentage_points",
+  "value": "28.08"
+ },
+ "question_id": "q_72571427d6f3c524",
+ "question_sha": "adc74de6ba8b817ac4385fc7e105b64034cc354b8e6390432144929fa6f7e8f3",
+ "raw_output": "**Nvidia had the higher gross margin in fiscal 2025, by about 28.1 percentage points.** These figures are from my recollection of the filings, not looked up live.\n\n| Company | Fiscal year end | Revenue | Gross profit | Gross margin |\n|---|---|---|---|---|\n| Nvidia | Jan 26, 2025 | $130,497M | $97,858M | \u2248 74.99% |\n| Apple | Sep 27, 2025 | $416,161M | $195,201M | \u2248 46.91% |\n\nDifference: 74.99% \u2212 46.91% \u2248 28.08 percentage points.\n\n{\"value\": 28.08, \"unit\": \"percentage_points\", \"choice\": \"NVDA\", \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgxDKcY7xAfSRz5K6Tf7U"
+ ],
+ "split": "test",
+ "started_at": "2026-11-12T02:04:08.178482+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "16e92aec0cb80aa246423b8803435a393d3c367c6455eb10a9b8212a8828396f",
+ "system_id": "b0-fable",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 352,
+  "output_tokens": 562,
+  "web_searches": 0
+ }
+}

@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.014656",
+ "finished_at": "2026-11-11T20:44:09.900855+00:00",
+ "latency_ms": 6527,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "15000"
+ },
+ "question_id": "q_99517a82fb10cb5f",
+ "question_sha": "e09497fc736950b10b4245d46ced0d7d380356da99662dbb008e78494606da07",
+ "raw_output": "I estimate Bank of America's net cash provided by operating activities in fiscal Q4 2025 at about **$15 billion**, but this is a low-confidence guess, not a reported figure.\n\n- Bank of America does not report Q4 operating cash flow on its own. It has to be worked out as the full-year 2025 figure (from the 10-K) minus the nine-month figure (from the Q3 2025 10-Q).\n- I do not reliably know either of those 2025 figures, so I could not do that subtraction.\n- For reference, full-year operating cash flow was about +$45.0 billion in 2023 and about \u2212$8.8 billion in 2024. Bank operating cash flows swing a lot with changes in trading assets and liabilities, so the true Q4 2025 value could be far from my estimate and could even be negative.\n\n{\"value\": 15000, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgwnuvDH9cYjK1HBXWKeT"
+ ],
+ "split": "test",
+ "started_at": "2026-11-11T20:44:03.362245+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "4c121dace8201ad5984fc587e44ec56860d7e1322cd752ed76724801ac0e3a27",
+ "system_id": "b0-opus",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 344,
+  "output_tokens": 664,
+  "web_searches": 0
+ }
+}

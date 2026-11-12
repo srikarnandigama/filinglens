@@ -1,0 +1,46 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": false,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0000320193-25-000079"
+  ],
+  "gold_visible": true,
+  "missing_values": [],
+  "question_id": "q_35aa944f9f925cde",
+  "text_sha256": "60e75e159c05ffdfe0c11ecdbf789866a87314597e0d95381474f5e10f9cd8bf",
+  "tokens_est": 2517
+ },
+ "cost_usd": "0.0065050",
+ "error": null,
+ "finished_at": "2026-11-11T21:43:32.991684+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "5.04"
+ },
+ "question_id": "q_35aa944f9f925cde",
+ "question_sha": "b5c36a7d242a6a4a70b069a575783a8e9e720e227187471729e4c37f6348aff3",
+ "raw_output": "Apple's total cost of sales was $220,960 million in fiscal 2025 and $210,352 million in fiscal 2024.\n\nChange = (220,960 \u2212 210,352) / 210,352 = 10,608 / 210,352 \u2248 5.04%\n\nCost of revenue rose about 5.04% from fiscal 2024 to fiscal 2025.\n\n{\"value\": 5.04, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-11T21:41:30.293730+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 5745,
+  "output_tokens": 152,
+  "web_searches": 0
+ }
+}

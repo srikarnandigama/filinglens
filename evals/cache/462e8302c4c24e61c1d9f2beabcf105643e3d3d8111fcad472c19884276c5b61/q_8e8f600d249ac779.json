@@ -1,0 +1,34 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.10754900",
+ "error": null,
+ "finished_at": "2026-11-12T02:14:09.127562+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "3044"
+ },
+ "question_id": "q_8e8f600d249ac779",
+ "question_sha": "aab9f8f0bf49fa294c8894564eec745645db7fedcc219b135e50a031e6b05fe4",
+ "raw_output": "Need precise figure.P&G's net earnings attributable to the company in fiscal Q4 2026 (the quarter ended June 30, 2026) were **$3,044 million**, about $3.04 billion. That is down 16% from $3,615 million a year earlier.\n\nTotal net earnings, including noncontrolling interests, were $3,081 million. That figure is the \"$3.1 billion\" in P&G's earnings release. I used the attributable figure because it is the standard net income measure.\n\nThe figure comes from P&G's Q4 FY2026 earnings release, which I read through search results and not the filing itself. As a cross-check, the full-year figure in the 10-K is $16,046 million.\n\n{\"value\": 3044, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-12T02:10:05.212451+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "462e8302c4c24e61c1d9f2beabcf105643e3d3d8111fcad472c19884276c5b61",
+ "system_id": "b1-sonnet",
+ "system_kind": "b1",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 69614,
+  "output_tokens": 1587,
+  "web_searches": 3
+ }
+}

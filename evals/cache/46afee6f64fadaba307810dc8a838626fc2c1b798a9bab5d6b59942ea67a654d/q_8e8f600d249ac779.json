@@ -1,0 +1,47 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": false,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0000080424-26-000103",
+   "0000080424-26-000060"
+  ],
+  "gold_visible": true,
+  "missing_values": [],
+  "question_id": "q_8e8f600d249ac779",
+  "text_sha256": "ea8f007141fd22b64196ba3e06ec06bafc6367da08b519c6308bb62e5f56f3d3",
+  "tokens_est": 6221
+ },
+ "cost_usd": "0.01627200",
+ "error": null,
+ "finished_at": "2026-11-11T21:43:33.020817+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "3044"
+ },
+ "question_id": "q_8e8f600d249ac779",
+ "question_sha": "aab9f8f0bf49fa294c8894564eec745645db7fedcc219b135e50a031e6b05fe4",
+ "raw_output": "Fiscal Q4 2026 is the three months ended June 30, 2026. P&G does not report it directly, so I derive it as full-year fiscal 2026 less the nine months ended March 31, 2026.\n\nNet earnings attributable to P&G:\n- Fiscal 2026: 16,046\n- Nine months ended March 31, 2026: 13,002\n- Q4: 16,046 \u2212 13,002 = 3,044\n\nIncluding noncontrolling interests, net earnings were 16,144 \u2212 13,063 = 3,081. The question asks for net income, and the figure attributable to P&G is the usual measure, so I use $3,044 million.\n\n{\"value\": 3044, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-11T21:41:30.293730+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 15052,
+  "output_tokens": 244,
+  "web_searches": 0
+ }
+}

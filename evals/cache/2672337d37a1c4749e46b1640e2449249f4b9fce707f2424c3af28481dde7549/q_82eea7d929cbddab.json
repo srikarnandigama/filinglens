@@ -1,0 +1,172 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 6,
+  "numeric_valid": 6,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.250622",
+ "error": null,
+ "finished_at": "2026-11-11T20:31:40.454924+00:00",
+ "latency_ms": 38687,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD",
+  "value": "15337500000"
+ },
+ "question_id": "q_82eea7d929cbddab",
+ "question_sha": "8c217b8f9252519c887b37784748ced8937cf45752a9587b97f8abccf0659385",
+ "raw_output": {
+  "caveats": [
+   "Q4 fiscal 2024 gross profit is derived (annual $61.35 billion minus nine-month $45.958 billion), not directly reported as a quarterly figure.",
+   "JNJ's fiscal year ends 2024-12-29, so quarters follow its fiscal calendar rather than calendar quarters."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "2805"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q1",
+     "fiscal_year": 2024
+    },
+    "text": "Q1 fiscal 2024 gross profit was $14.872 billion.",
+    "ticker": "JNJ",
+    "unit": "USD",
+    "value": "14872000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "2806"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q2",
+     "fiscal_year": 2024
+    },
+    "text": "Q2 fiscal 2024 gross profit was $15.578 billion.",
+    "ticker": "JNJ",
+    "unit": "USD",
+    "value": "15578000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "2807"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q3",
+     "fiscal_year": 2024
+    },
+    "text": "Q3 fiscal 2024 gross profit was $15.508 billion.",
+    "ticker": "JNJ",
+    "unit": "USD",
+    "value": "15508000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "2808"
+     }
+    ],
+    "id": "c4",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q4",
+     "fiscal_year": 2024
+    },
+    "text": "Q4 fiscal 2024 gross profit was $15.392 billion (derived as full-year minus nine-month gross profit).",
+    "ticker": "JNJ",
+    "unit": "USD",
+    "value": "15392000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": "mean",
+      "kind": "computation",
+      "ref": "cmp_1"
+     }
+    ],
+    "id": "c5",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "Average quarterly gross profit across the four quarters of fiscal 2024 was about $15.34 billion ($15,337,500,000).",
+    "ticker": "JNJ",
+    "unit": "USD",
+    "value": "15337500000",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value",
+      "kind": "computation",
+      "ref": "cmp_2"
+     }
+    ],
+    "id": "c6",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "Four times the average equals $61.35 billion, matching the fiscal 2024 annual gross profit input used to derive Q4.",
+    "ticker": "JNJ",
+    "unit": "USD",
+    "value": "61350000000",
+    "value_basis": "computation"
+   }
+  ],
+  "final_claim_id": "c5",
+  "final_unit": "USD",
+  "final_value": "15337500000",
+  "status": "answered",
+  "summary": "Johnson & Johnson's average quarterly gross profit over fiscal 2024 was about $15.34 billion ($15,337,500,000), the mean of four quarters. The quarters were $14.872 billion in Q1, $15.578 billion in Q2, $15.508 billion in Q3 and $15.392 billion in Q4. Four times the average equals $61.35 billion, which matches the annual gross profit."
+ },
+ "run_id": "06c98462-af8b-4367-b84d-9b7b30782ca0",
+ "run_status": "done",
+ "split": "test",
+ "started_at": "2026-11-11T20:31:01.739851+00:00",
+ "status": "done",
+ "system_config_hash": "2672337d37a1c4749e46b1640e2449249f4b9fce707f2424c3af28481dde7549",
+ "system_id": "system",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 99626,
+  "output_tokens": 5137
+ }
+}

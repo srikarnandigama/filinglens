@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.016584",
+ "finished_at": "2026-11-11T20:43:24.297730+00:00",
+ "latency_ms": 7125,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "620"
+ },
+ "question_id": "q_904fca8ce76b181d",
+ "question_sha": "d2a20af7dd780c6cdb8038d808e05ed5422fae720aab96bb77b58820a0c03486",
+ "raw_output": "Nike's fiscal 2026 runs to May 31, 2026, and I don't have the full year's results. My **best estimate is about $620 million average quarterly net income**, but only two of the four quarters are figures I recall; the second half is a guess.\n\n| Quarter (fiscal 2026) | Net income | Basis |\n|---|---|---|\n| Q1 (ended Aug 2025) | $727M | Reported |\n| Q2 (ended Nov 2025) | $792M | Reported |\n| Q3 (ended Feb 2026) | ~$550M | Estimate |\n| Q4 (ended May 2026) | ~$400M | Estimate |\n\n- **Q3:** Nike guided to revenue down low single digits and gross margin down about 2 percentage points, against $794M in Q3 of fiscal 2025.\n- **Q4:** I assumed some recovery from the depressed $211M in Q4 of fiscal 2025.\n\nThe full year comes to roughly $2.47 billion, or about $620 million per quarter.\n\n{\"value\": 620, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgwnrWdct5RNte6EGiGGn"
+ ],
+ "split": "test",
+ "started_at": "2026-11-11T20:43:17.173429+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "4c121dace8201ad5984fc587e44ec56860d7e1322cd752ed76724801ac0e3a27",
+ "system_id": "b0-opus",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 336,
+  "output_tokens": 762,
+  "web_searches": 0
+ }
+}

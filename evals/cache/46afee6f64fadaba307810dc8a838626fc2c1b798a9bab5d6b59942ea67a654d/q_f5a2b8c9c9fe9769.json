@@ -1,0 +1,47 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": false,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0000731766-26-000062",
+   "0000731766-25-000305"
+  ],
+  "gold_visible": true,
+  "missing_values": [],
+  "question_id": "q_f5a2b8c9c9fe9769",
+  "text_sha256": "262c08d2cffb0a0a787b4fbdaa6c3952ca889b0cbd72037dd14b7648a7f8e692",
+  "tokens_est": 6491
+ },
+ "cost_usd": "0.01714800",
+ "error": null,
+ "finished_at": "2026-11-12T02:09:54.954512+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "79499"
+ },
+ "question_id": "q_f5a2b8c9c9fe9769",
+ "question_sha": "3753934eaadb0cced89ba0109d7453dd4710fabb67240a6e6a09e8e24c785212",
+ "raw_output": "UnitedHealth does not report a single \"cost of revenue\" line, so I defined it as medical costs plus cost of products sold. Q4 2024 is the full-year 2024 figure minus the nine months ended September 30, 2024.\n\n- Medical costs: 264,185 \u2212 197,150 = 67,035 (USD millions)\n- Cost of products sold: 46,694 \u2212 34,230 = 12,464 (USD millions)\n- Cost of revenue, Q4 2024: 67,035 + 12,464 = 79,499 (USD millions), or about $79.5 billion\n\nIf cost of revenue were instead read as total operating costs, the Q4 figure would be 367,991 \u2212 274,957 = 93,034 (USD millions). I used the narrower definition.\n\n{\"value\": 79499, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-12T02:07:22.538489+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 14633,
+  "output_tokens": 503,
+  "web_searches": 0
+ }
+}

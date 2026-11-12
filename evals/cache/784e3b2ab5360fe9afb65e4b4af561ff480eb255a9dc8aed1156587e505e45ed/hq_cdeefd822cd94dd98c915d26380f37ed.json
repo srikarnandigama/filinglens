@@ -1,0 +1,32 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.009416",
+ "finished_at": "2026-11-11T20:54:00.328104+00:00",
+ "latency_ms": 8341,
+ "latency_note": null,
+ "prediction": {
+  "parse_ok": true,
+  "text": "The February 2024 ransomware attack on Change Healthcare, part of Optum within UnitedHealth Group, hit the company in several ways. Systems for claims processing, payments and pharmacy transactions were disrupted for weeks, which hurt Optum's results and the many providers that depend on those systems. UnitedHealth reported billions of dollars in costs, which I recall as roughly $3 billion pre-tax for 2024. These were split between direct response costs (restoring systems, investigation, and support) and lost business from the disruption. It also advanced providers more than $9 billion in interim funding, most of which was later repaid. The company later said the personal data of about 190 million people may have been exposed, and the incident brought litigation, regulatory scrutiny, and congressional hearings. I'm confident of the overall picture but less sure of the exact dollar figures, so check the 2024 10-K and the 2024 10-Qs for precise amounts."
+ },
+ "question_id": "hq_cdeefd822cd94dd98c915d26380f37ed",
+ "question_sha": "dae6503850b964e5ad430fd0d155b91ca3accaff2e56abf15b0a1004389166cd",
+ "raw_output": "The February 2024 ransomware attack on Change Healthcare, part of Optum within UnitedHealth Group, hit the company in several ways. Systems for claims processing, payments and pharmacy transactions were disrupted for weeks, which hurt Optum's results and the many providers that depend on those systems. UnitedHealth reported billions of dollars in costs, which I recall as roughly $3 billion pre-tax for 2024. These were split between direct response costs (restoring systems, investigation, and support) and lost business from the disruption. It also advanced providers more than $9 billion in interim funding, most of which was later repaid. The company later said the personal data of about 190 million people may have been exposed, and the incident brought litigation, regulatory scrutiny, and congressional hearings. I'm confident of the overall picture but less sure of the exact dollar figures, so check the 2024 10-K and the 2024 10-Qs for precise amounts.",
+ "request_ids": [
+  "req_011CgwofJtjk2KcJPdwPqveb"
+ ],
+ "split": "handwritten",
+ "started_at": "2026-11-11T20:53:51.987521+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 93,
+  "output_tokens": 923,
+  "web_searches": 0
+ }
+}

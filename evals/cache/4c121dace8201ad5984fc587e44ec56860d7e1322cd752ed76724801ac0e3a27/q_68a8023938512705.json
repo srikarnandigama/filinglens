@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.010024",
+ "finished_at": "2026-11-11T20:42:39.528875+00:00",
+ "latency_ms": 5156,
+ "latency_note": null,
+ "prediction": {
+  "choice": "TSLA",
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percentage_points",
+  "value": "10.2"
+ },
+ "question_id": "q_68a8023938512705",
+ "question_sha": "d978b20a8306bbc7dcd915e63e310f802712fd43cd7c927d1185d4cfc516a82e",
+ "raw_output": "**Tesla had the higher net margin in fiscal 2023, by about 10.2 percentage points.**\n\n| Company | FY2023 revenue | FY2023 net income | Net margin |\n|---|---|---|---|\n| Tesla | $96.77B | $15.00B (attributable to common stockholders) | 15.50% |\n| Amazon | $574.79B | $30.43B | 5.29% |\n\nThe difference is 15.50% \u2212 5.29% \u2248 10.20 percentage points.\n\nTesla's 2023 net income was boosted by a one-time tax benefit of about $5.9B, from releasing a valuation allowance on deferred tax assets. Without it, the gap would be much smaller.\n\n{\"value\": 10.20, \"unit\": \"percentage_points\", \"choice\": \"TSLA\", \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgwnoMfnSHrYFQCc26FsX"
+ ],
+ "split": "test",
+ "started_at": "2026-11-11T20:42:34.361900+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "4c121dace8201ad5984fc587e44ec56860d7e1322cd752ed76724801ac0e3a27",
+ "system_id": "b0-opus",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 351,
+  "output_tokens": 431,
+  "web_searches": 0
+ }
+}

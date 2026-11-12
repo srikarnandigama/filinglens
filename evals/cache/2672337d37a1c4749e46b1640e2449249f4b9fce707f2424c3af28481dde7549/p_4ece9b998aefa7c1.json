@@ -1,0 +1,77 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 0,
+  "numeric_valid": 0,
+  "text_pending_judge": [
+   {
+    "chunk_ids": [],
+    "claim_id": "c1",
+    "text": "JPM's fiscal 2025 operating income is unavailable in the snapshot. The fact record says there is no compatible standard-taxonomy fact. It also says that absence alone does not establish non-applicability, so the metric is not declared inapplicable."
+   }
+  ],
+  "text_string_supported": 0,
+  "text_total": 1,
+  "uncited": 0
+ },
+ "cost_usd": "0.068290",
+ "error": null,
+ "finished_at": "2026-11-11T20:46:00.129540+00:00",
+ "latency_ms": 10944,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "not_available",
+  "unit": null,
+  "value": null
+ },
+ "question_id": "p_4ece9b998aefa7c1",
+ "question_sha": "ea176abfc942da73f5bcf9f16cbde9c402e82bc1732c43d37a37a22a05127e67",
+ "raw_output": {
+  "caveats": [
+   "No filing passages were provided that could support an alternative measure, so no substitute (such as pre-tax income) is offered."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "na_JPM_operating_income_2025_FY"
+     }
+    ],
+    "id": "c1",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "JPM's fiscal 2025 operating income is unavailable in the snapshot. The fact record says there is no compatible standard-taxonomy fact. It also says that absence alone does not establish non-applicability, so the metric is not declared inapplicable.",
+    "ticker": "JPM",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   }
+  ],
+  "final_claim_id": null,
+  "final_unit": null,
+  "final_value": null,
+  "status": "not_available",
+  "summary": "JPMorgan Chase's operating income for fiscal 2025 is not available in the snapshot. The record is marked unavailable because there is no compatible standard-taxonomy fact. I did not substitute another metric or period."
+ },
+ "run_id": "72a5a1ba-8f69-42fa-a679-e69b4806880d",
+ "run_status": "done",
+ "split": "probe",
+ "started_at": "2026-11-11T20:45:49.144379+00:00",
+ "status": "done",
+ "system_config_hash": "2672337d37a1c4749e46b1640e2449249f4b9fce707f2424c3af28481dde7549",
+ "system_id": "system",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 27720,
+  "output_tokens": 1285
+ }
+}

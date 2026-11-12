@@ -1,0 +1,34 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.0645750",
+ "error": null,
+ "finished_at": "2026-11-12T02:14:08.982101+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "57.3"
+ },
+ "question_id": "q_bdb92b01c2693e31",
+ "question_sha": "55b497685202092d401c84758981adbd6a7c8b334b6a7c728cfcf7fe0df32afc",
+ "raw_output": "Coca-Cola's gross margin in fiscal Q4 2023 was about 57.3%.\n\nThe Q4 2023 earnings release (SEC filing) reports these figures for the three months ended December 31, 2023:\n\n- **Cost of goods sold:** $4,634 million.\n- **Gross profit:** $6,215 million.\n- **Net operating revenues:** about $10,850 million. I added cost of goods sold and gross profit to get $10,849 million, so this is a rounding-level estimate.\n\nGross margin is gross profit divided by net operating revenues: 6,215 / 10,850 \u2248 57.3%.\n\n{\"value\": 57.3, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-12T02:10:05.212451+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "462e8302c4c24e61c1d9f2beabcf105643e3d3d8111fcad472c19884276c5b61",
+ "system_id": "b1-sonnet",
+ "system_kind": "b1",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 39190,
+  "output_tokens": 1077,
+  "web_searches": 2
+ }
+}

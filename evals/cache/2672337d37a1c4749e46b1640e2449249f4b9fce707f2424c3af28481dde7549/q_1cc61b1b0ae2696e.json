@@ -1,0 +1,132 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 3,
+  "numeric_valid": 3,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.151818",
+ "error": null,
+ "finished_at": "2026-11-11T20:23:57.055508+00:00",
+ "latency_ms": 18556,
+ "prediction": {
+  "choice": "META",
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percentage_points",
+  "value": "20.186135829084"
+ },
+ "question_id": "q_1cc61b1b0ae2696e",
+ "question_sha": "7e1d51f6d551616fc53ca17b2d9dd3dc3291b5483f299f8f70471963ec4ef971",
+ "raw_output": {
+  "caveats": [
+   "The two companies have different fiscal year ends. Meta's FY2023 ended Dec 31, 2023, and Disney's ended Sept 30, 2023.",
+   "Operating margin is operating income divided by total revenue as reported in the facts."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_1"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "833"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "799"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2023
+    },
+    "text": "Meta's FY2023 operating margin was about 34.66% (operating income $46.751 billion on revenue of $134.902 billion).",
+    "ticker": "META",
+    "unit": "percent",
+    "value": "34.655527716416",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_2"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3880"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3862"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2023
+    },
+    "text": "Disney's FY2023 operating margin was about 14.47% (operating income $12.863 billion on revenue of $88.898 billion).",
+    "ticker": "DIS",
+    "unit": "percent",
+    "value": "14.469391887332",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value",
+      "kind": "computation",
+      "ref": "cmp_3"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2023
+    },
+    "text": "Meta's operating margin was higher than Disney's by about 20.19 percentage points.",
+    "ticker": "META",
+    "unit": "percentage_points",
+    "value": "20.186135829084",
+    "value_basis": "computation"
+   }
+  ],
+  "final_claim_id": "c3",
+  "final_unit": "percentage_points",
+  "final_value": "20.186135829084",
+  "status": "answered",
+  "summary": "Meta had the higher fiscal 2023 operating margin: about 34.66% against Disney's 14.47%. That is a gap of about 20.19 percentage points."
+ },
+ "run_id": "20dad655-ce2e-4c36-8734-72387f8964a9",
+ "run_status": "done",
+ "split": "test",
+ "started_at": "2026-11-11T20:23:38.472821+00:00",
+ "status": "done",
+ "system_config_hash": "2672337d37a1c4749e46b1640e2449249f4b9fce707f2424c3af28481dde7549",
+ "system_id": "system",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 61844,
+  "output_tokens": 2813
+ }
+}

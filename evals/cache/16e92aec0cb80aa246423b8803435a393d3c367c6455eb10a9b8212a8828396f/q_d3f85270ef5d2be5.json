@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.014792",
+ "finished_at": "2026-11-12T02:06:36.220166+00:00",
+ "latency_ms": 4622,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "94827"
+ },
+ "question_id": "q_d3f85270ef5d2be5",
+ "question_sha": "aa93f53c3dbc76d224c00558485787d48ba80dcd318472a1d60ff41a65105f6e",
+ "raw_output": "Tesla's total revenue in fiscal 2025 was about $94.83 billion ($94,827 million), down roughly 3% from $97.69 billion in fiscal 2024. This is from my recollection of the reported quarterly figures (Q1 $19.335B, Q2 $22.496B, Q3 $28.095B, Q4 $24.901B), not a filing I have in front of me.\n\n{\"value\": 94827, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgxDWBQL3EDeGyaxJSkpF"
+ ],
+ "split": "test",
+ "started_at": "2026-11-12T02:06:31.586311+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "16e92aec0cb80aa246423b8803435a393d3c367c6455eb10a9b8212a8828396f",
+ "system_id": "b0-fable",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 334,
+  "output_tokens": 303,
+  "web_searches": 0
+ }
+}

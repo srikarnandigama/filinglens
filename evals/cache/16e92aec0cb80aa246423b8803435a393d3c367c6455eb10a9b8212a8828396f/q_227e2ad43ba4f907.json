@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.0128",
+ "finished_at": "2026-11-12T02:05:24.061469+00:00",
+ "latency_ms": 3733,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "16384"
+ },
+ "question_id": "q_227e2ad43ba4f907",
+ "question_sha": "81aa0f89a3796ed5822d8056db8594826ceeb2feae4a50261db07d161783dba4",
+ "raw_output": "Meta's operating income (income from operations) in fiscal Q4 2023 was about $16,384 million (\u2248$16.38 billion), on revenue of about $40.1 billion. This is from memory, and it reconciles with the full-year 2023 figure of $46,751 million less the first three quarters ($7,227M + $9,392M + $13,748M).\n\n{\"value\": 16384, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgxDQvhQzfcvujQ4gPk3o"
+ ],
+ "split": "test",
+ "started_at": "2026-11-12T02:05:20.333841+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "16e92aec0cb80aa246423b8803435a393d3c367c6455eb10a9b8212a8828396f",
+ "system_id": "b0-fable",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 335,
+  "output_tokens": 253,
+  "web_searches": 0
+ }
+}

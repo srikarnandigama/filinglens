@@ -1,0 +1,47 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": false,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0001018724-26-000004",
+   "0001018724-25-000123"
+  ],
+  "gold_visible": true,
+  "missing_values": [],
+  "question_id": "q_770c4d8e3821d2f2",
+  "text_sha256": "534d098f95bc1bbd7e4c7754913d32e6feb5449b10489b7ca064ba3576d31034",
+  "tokens_est": 3115
+ },
+ "cost_usd": "0.00920900",
+ "error": null,
+ "finished_at": "2026-11-12T02:09:54.976378+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "10.65"
+ },
+ "question_id": "q_770c4d8e3821d2f2",
+ "question_sha": "19543a3fc4ab840df5e2fc42de69b2e59e95c18f3e687f4d662110f7ee0fd146",
+ "raw_output": "Amazon's fiscal Q4 2024 net margin was about 10.65%. The excerpts give only full-year and nine-month figures, so I derived Q4 by subtracting the nine-month figures from the full year.\n\n- **Q4 2024 net income:** $59,248M (full-year 2024) \u2212 $39,244M (nine months ended Sept 30, 2024) = $20,004M.\n- **Q4 2024 net sales:** $637,959M (full-year 2024) \u2212 $450,167M (nine months ended Sept 30, 2024) = $187,792M.\n- **Net margin:** $20,004M \u00f7 $187,792M \u2248 10.65%.\n\n{\"value\": 10.65, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-12T02:07:22.538489+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 7239,
+  "output_tokens": 394,
+  "web_searches": 0
+ }
+}

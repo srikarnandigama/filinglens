@@ -1,0 +1,49 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": false,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0001652044-26-000018",
+   "0001744489-25-000155"
+  ],
+  "gold_visible": false,
+  "missing_values": [
+   "12863000000"
+  ],
+  "question_id": "q_1787a5317796857d",
+  "text_sha256": "3c3f3665f6dcefe9555a69dd326185f7a0a180742b6074863ec04ef2273fb37b",
+  "tokens_est": 4958
+ },
+ "cost_usd": "0.0144050",
+ "error": null,
+ "finished_at": "2026-11-11T21:43:32.974953+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": "GOOGL",
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percentage_points",
+  "value": "21.7"
+ },
+ "question_id": "q_1787a5317796857d",
+ "question_sha": "2e11f6bfd0e885a80fa8971cdf0aeefae1575a1dbb199132260c4372fb9a439e",
+ "raw_output": "**Alphabet had the higher fiscal 2023 operating margin, by about 21.7 percentage points.**\n\n- **Alphabet:** Income from operations was $84,293M on revenues of $307,394M, which is a margin of about 27.42%.\n- **Disney:** The income statement has no operating income line, so I derived it as total revenues less total costs and expenses less restructuring and impairment charges. That gives $88,898M \u2212 $79,906M \u2212 $3,892M = $5,100M, a margin of about 5.74%.\n\nThe gap is 27.42% \u2212 5.74% \u2248 21.7 percentage points. Disney's own segment-based operating income measure would differ from my derived figure.\n\n{\"value\": 21.7, \"unit\": \"percentage_points\", \"choice\": \"GOOGL\", \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-11T21:41:30.293730+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 11655,
+  "output_tokens": 550,
+  "web_searches": 0
+ }
+}

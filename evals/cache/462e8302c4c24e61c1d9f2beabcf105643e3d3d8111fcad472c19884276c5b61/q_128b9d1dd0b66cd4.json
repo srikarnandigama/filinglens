@@ -1,0 +1,34 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.06421700",
+ "error": null,
+ "finished_at": "2026-11-12T02:14:09.095006+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "54.3"
+ },
+ "question_id": "q_128b9d1dd0b66cd4",
+ "question_sha": "66934c73c192037265dd99f1532065fea45f9563c063be8221431e47c468ecba",
+ "raw_output": "Costco's operating income rose about 54.3% from fiscal Q1 2026 to fiscal Q4 2026.\n\n- **Q1 FY2026:** Operating income was $2,463 million for the 12 weeks ended Nov 23, 2025.\n- **Q4 FY2026:** Operating income was $3,801 million for the 16 weeks ended Aug 30, 2026.\n- **Change:** (3,801 \u2212 2,463) / 2,463 \u2248 +54.3%.\n\nCostco's fourth quarter is 16 weeks and its first quarter is 12 weeks. Much of the increase comes from the four extra weeks.\n\n{\"value\": 54.3, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-12T02:10:05.212451+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "462e8302c4c24e61c1d9f2beabcf105643e3d3d8111fcad472c19884276c5b61",
+ "system_id": "b1-sonnet",
+ "system_kind": "b1",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 38962,
+  "output_tokens": 1051,
+  "web_searches": 2
+ }
+}

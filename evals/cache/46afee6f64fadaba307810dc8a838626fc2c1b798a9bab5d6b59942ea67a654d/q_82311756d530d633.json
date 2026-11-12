@@ -1,0 +1,46 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": false,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0000320187-26-000193"
+  ],
+  "gold_visible": true,
+  "missing_values": [],
+  "question_id": "q_82311756d530d633",
+  "text_sha256": "40d692faab2eafeec4c984eeede01b4a8754f1cd020b4494d9159142d211ed48",
+  "tokens_est": 24837
+ },
+ "cost_usd": "0.04189200",
+ "error": null,
+ "finished_at": "2026-11-11T21:43:32.974953+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "6903"
+ },
+ "question_id": "q_82311756d530d633",
+ "question_sha": "ca995319eb1331f452eb0402ce70e4606a394b25aea0b983bb8d9d7a925cc1d2",
+ "raw_output": "Nike's cash and equivalents at August 31, 2026 (end of fiscal Q1 2027) were $6,903 million, or about $6.9 billion. This figure comes from the balance sheet and matches the end-of-period cash line in the cash flow statement.\n\n{\"value\": 6903, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-11T21:41:30.293730+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 41292,
+  "output_tokens": 120,
+  "web_searches": 0
+ }
+}

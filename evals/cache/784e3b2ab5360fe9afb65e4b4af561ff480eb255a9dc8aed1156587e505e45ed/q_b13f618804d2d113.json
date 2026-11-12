@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.002202",
+ "finished_at": "2026-11-11T20:39:18.499563+00:00",
+ "latency_ms": 1360,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "2.77"
+ },
+ "question_id": "q_b13f618804d2d113",
+ "question_sha": "e87bb470444b0a2f21e1f11a34ded4362cd672bb4bd2de5e2b658dfeceb04385",
+ "raw_output": "Disney's total revenues were $88,898 million in fiscal 2023 and $91,361 million in fiscal 2024.\n\nChange: (91,361 \u2212 88,898) / 88,898 = 2,463 / 88,898 \u2248 2.77%\n\nDisney's total revenue grew about 2.8% from fiscal 2023 to fiscal 2024.\n\n{\"value\": 2.77, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgwnYpQwUU5CaxkAwWctc"
+ ],
+ "split": "test",
+ "started_at": "2026-11-11T20:39:17.132089+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 346,
+  "output_tokens": 151,
+  "web_searches": 0
+ }
+}

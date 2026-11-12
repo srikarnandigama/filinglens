@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.01428",
+ "finished_at": "2026-11-11T20:42:37.338303+00:00",
+ "latency_ms": 5972,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "36.53"
+ },
+ "question_id": "q_9d900c4d132f7f52",
+ "question_sha": "917167bca1a1f4fa9d23f4ac0ab6e18084498bddb06946ef22dd54b4b9c4e5e8",
+ "raw_output": "Amazon's cost of revenue (reported as \"cost of sales\") **rose about 36.5%** from fiscal Q1 2023 to fiscal Q4 2023.\n\n| Quarter | Cost of sales | Basis |\n|---|---|---|\n| Q1 2023 | $67,791M | As I recall it from the Q1 2023 10-Q |\n| Q2 2023 | $69,373M | As I recall it from the Q2 10-Q |\n| Q3 2023 | $75,022M | As I recall it from the Q3 10-Q |\n| FY 2023 | $304,739M | As I recall it from the 10-K |\n| Q4 2023 | $92,553M | Derived: FY 2023 minus Q1\u2013Q3 |\n\nChange = (92,553 \u2212 67,791) / 67,791 \u2248 **+36.5%**\n\nThe Q4 figure is not a directly reported quarterly number. It depends on all four recalled figures being correct, and I have not checked them against the filings.\n\n{\"value\": 36.53, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011Cgwno8uL4peAj3wPwrZ1A"
+ ],
+ "split": "test",
+ "started_at": "2026-11-11T20:42:31.362014+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "4c121dace8201ad5984fc587e44ec56860d7e1322cd752ed76724801ac0e3a27",
+ "system_id": "b0-opus",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 355,
+  "output_tokens": 643,
+  "web_searches": 0
+ }
+}

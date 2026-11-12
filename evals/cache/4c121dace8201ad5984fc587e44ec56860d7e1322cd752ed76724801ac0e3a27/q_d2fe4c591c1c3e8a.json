@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.004976",
+ "finished_at": "2026-11-11T20:43:35.617242+00:00",
+ "latency_ms": 2001,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "23636"
+ },
+ "question_id": "q_d2fe4c591c1c3e8a",
+ "question_sha": "2c7290704c3f6528b4c83ce705b326abf1fe3b4e5585fe86f96f0eeb7cb41310",
+ "raw_output": "Apple's net income for fiscal Q2 2024 (the quarter ended March 30, 2024) was **$23,636 million** (about $23.6 billion). That works out to diluted EPS of $1.53, on revenue of about $90.75 billion.\n\n{\"value\": 23636, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgwnsiyYu6P9n89jiNvcr"
+ ],
+ "split": "test",
+ "started_at": "2026-11-11T20:43:33.614689+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "4c121dace8201ad5984fc587e44ec56860d7e1322cd752ed76724801ac0e3a27",
+ "system_id": "b0-opus",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 334,
+  "output_tokens": 182,
+  "web_searches": 0
+ }
+}

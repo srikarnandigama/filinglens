@@ -1,0 +1,47 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": false,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0001628280-26-003942",
+   "0001326801-24-000081"
+  ],
+  "gold_visible": true,
+  "missing_values": [],
+  "question_id": "q_227e2ad43ba4f907",
+  "text_sha256": "5a51fae6844db8bb89a349ee157666a09b0c1cb30485cb9d58c415c31f103d2f",
+  "tokens_est": 17666
+ },
+ "cost_usd": "0.02969800",
+ "error": null,
+ "finished_at": "2026-11-11T21:43:32.991684+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "16384"
+ },
+ "question_id": "q_227e2ad43ba4f907",
+ "question_sha": "81aa0f89a3796ed5822d8056db8594826ceeb2feae4a50261db07d161783dba4",
+ "raw_output": "Q4 2023 operating income = full-year 2023 operating income minus the nine-month 2023 figure.\n\n- Full-year 2023 income from operations: $46,751 million (from the 2025 10-K).\n- Nine months ended September 30, 2023: $30,367 million (from the Q3 2024 10-Q).\n\nQ4 2023 = 46,751 \u2212 30,367 = $16,384 million.\n\n{\"value\": 16384, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-11T21:41:30.293730+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 28863,
+  "output_tokens": 167,
+  "web_searches": 0
+ }
+}

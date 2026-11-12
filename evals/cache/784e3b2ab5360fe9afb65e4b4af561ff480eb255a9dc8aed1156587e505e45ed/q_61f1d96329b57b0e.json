@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.001942",
+ "finished_at": "2026-11-11T20:38:11.311339+00:00",
+ "latency_ms": 2076,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "13209"
+ },
+ "question_id": "q_61f1d96329b57b0e",
+ "question_sha": "35d5fd6c94aaf57e36da4823315528b177364b618a19f72460a651da741c5bf0",
+ "raw_output": "Amazon's operating income for fiscal Q4 2023 (the quarter ended December 31, 2023) was $13.2 billion, or $13,209 million. This is from memory of the reported figure, not a fresh lookup. It compares with $2.7 billion in Q4 2022.\n\n{\"value\": 13209, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgwnTp5ie7fTiNVxEucnE"
+ ],
+ "split": "test",
+ "started_at": "2026-11-11T20:38:09.234666+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 336,
+  "output_tokens": 127,
+  "web_searches": 0
+ }
+}

@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.008888",
+ "finished_at": "2026-11-11T20:44:16.231387+00:00",
+ "latency_ms": 3682,
+ "latency_note": null,
+ "prediction": {
+  "choice": "TSLA",
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percentage_points",
+  "value": "2.78"
+ },
+ "question_id": "q_c75fe9af2ecdc0d5",
+ "question_sha": "f07f1b130c1050fe5d8d86aac967ee5997d712bb98656fbf938bbc2203f34ecb",
+ "raw_output": "**Tesla had the higher operating margin in fiscal 2023, by about 2.78 percentage points.** Both fiscal years match the calendar year.\n\n| Company | Revenue | Operating income | Operating margin |\n|---|---|---|---|\n| Tesla | $96,773M | $8,891M | \u2248 9.19% |\n| Amazon | $574,785M | $36,852M | \u2248 6.41% |\n\n9.19% \u2212 6.41% \u2248 2.78 percentage points.\n\nThese figures are recalled from the FY2023 10-K filings, not checked against them here.\n\n{\"value\": 2.78, \"unit\": \"percentage_points\", \"choice\": \"TSLA\", \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgwnvbSDP3D9uKcp4CNiN"
+ ],
+ "split": "test",
+ "started_at": "2026-11-11T20:44:12.548592+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "4c121dace8201ad5984fc587e44ec56860d7e1322cd752ed76724801ac0e3a27",
+ "system_id": "b0-opus",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 352,
+  "output_tokens": 374,
+  "web_searches": 0
+ }
+}

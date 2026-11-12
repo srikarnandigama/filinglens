@@ -1,0 +1,69 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 1,
+  "numeric_valid": 1,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.063272",
+ "error": null,
+ "finished_at": "2026-11-11T20:33:18.697399+00:00",
+ "latency_ms": 8535,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD",
+  "value": "20458000000"
+ },
+ "question_id": "q_9e87ad2a75898728",
+ "question_sha": "d99bc2277046787b739acbccab146ebea5ad67ead2e495fe52405f9ab71e2b7a",
+ "raw_output": {
+  "caveats": [],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "378"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q1",
+     "fiscal_year": 2027
+    },
+    "text": "Nvidia reported cost of revenue of about $20.46 billion ($20,458,000,000) for fiscal Q1 2027, the quarter from January 26, 2026 to April 26, 2026.",
+    "ticker": "NVDA",
+    "unit": "USD",
+    "value": "20458000000",
+    "value_basis": "fact"
+   }
+  ],
+  "final_claim_id": "c1",
+  "final_unit": "USD",
+  "final_value": "20458000000",
+  "status": "answered",
+  "summary": "Nvidia's cost of revenue in fiscal Q1 2027 (quarter ended April 26, 2026) was about $20.46 billion."
+ },
+ "run_id": "10882d37-b4b0-488b-a903-c0ac773df040",
+ "run_status": "done",
+ "split": "test",
+ "started_at": "2026-11-11T20:33:10.122949+00:00",
+ "status": "done",
+ "system_config_hash": "2672337d37a1c4749e46b1640e2449249f4b9fce707f2424c3af28481dde7549",
+ "system_id": "system",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 26461,
+  "output_tokens": 1035
+ }
+}

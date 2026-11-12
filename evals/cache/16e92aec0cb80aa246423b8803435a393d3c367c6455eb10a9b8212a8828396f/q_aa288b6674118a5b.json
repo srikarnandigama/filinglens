@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.017856",
+ "finished_at": "2026-11-12T02:05:41.476917+00:00",
+ "latency_ms": 5280,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "-16.6"
+ },
+ "question_id": "q_aa288b6674118a5b",
+ "question_sha": "2c81f78bb68ba4f8c1318769e809e9cd1e1d0374fa6139e7e80fd7df129bb051",
+ "raw_output": "ExxonMobil's net cash provided by operating activities fell about 16.6% from Q1 2024 to Q4 2024.\n\n- Q1 2024: $14,664 million\n- Q4 2024: $12,229 million (derived as full-year $55,022 million less the first nine months, $42,793 million)\n- Change: 12,229 / 14,664 \u2212 1 \u2248 \u221216.6%\n\nThese figures are from memory of the filings rather than a document in front of me, so treat them as a best estimate.\n\n{\"value\": -16.6, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgxDS6X2bSTDrkkK4dPxA"
+ ],
+ "split": "test",
+ "started_at": "2026-11-12T02:05:36.196672+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "16e92aec0cb80aa246423b8803435a393d3c367c6455eb10a9b8212a8828396f",
+ "system_id": "b0-fable",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 362,
+  "output_tokens": 374,
+  "web_searches": 0
+ }
+}

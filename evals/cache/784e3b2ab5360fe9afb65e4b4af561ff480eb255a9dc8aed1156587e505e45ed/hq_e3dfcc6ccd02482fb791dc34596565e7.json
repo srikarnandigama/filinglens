@@ -1,0 +1,32 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.008268",
+ "finished_at": "2026-11-11T20:54:04.703590+00:00",
+ "latency_ms": 6807,
+ "latency_note": null,
+ "prediction": {
+  "parse_ok": true,
+  "text": "Bank of America is asset-sensitive, so a sudden 100 basis point drop in rates would reduce its net interest income. In the \"Interest Rate Risk Management for the Banking Book\" section of its 10-K, it shows the estimated 12-month impact of instantaneous shifts in the yield curve. In recent filings, a 100 bp parallel decline reduced NII by a couple of billion dollars, which is only a few percent of its roughly $55-57 billion in annual NII. The cause is that floating-rate loans and cash reprice down faster than deposit costs can fall. Hedges such as receive-fixed swaps and the securities portfolio offset part of the decline. I don't remember the exact figure for the latest period, and it changes from filing to filing, so check the sensitivity table in the most recent 10-K or 10-Q for the precise number."
+ },
+ "question_id": "hq_e3dfcc6ccd02482fb791dc34596565e7",
+ "question_sha": "eea1a8e66740ec7947e9ffc14c78af713ac8daf1c161007616c1c663728f87a7",
+ "raw_output": "Bank of America is asset-sensitive, so a sudden 100 basis point drop in rates would reduce its net interest income. In the \"Interest Rate Risk Management for the Banking Book\" section of its 10-K, it shows the estimated 12-month impact of instantaneous shifts in the yield curve. In recent filings, a 100 bp parallel decline reduced NII by a couple of billion dollars, which is only a few percent of its roughly $55-57 billion in annual NII. The cause is that floating-rate loans and cash reprice down faster than deposit costs can fall. Hedges such as receive-fixed swaps and the securities portfolio offset part of the decline. I don't remember the exact figure for the latest period, and it changes from filing to filing, so check the sensitivity table in the most recent 10-K or 10-Q for the precise number.",
+ "request_ids": [
+  "req_011CgwofkBGcDHwEDTgRANe5"
+ ],
+ "split": "handwritten",
+ "started_at": "2026-11-11T20:53:57.901061+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 94,
+  "output_tokens": 808,
+  "web_searches": 0
+ }
+}

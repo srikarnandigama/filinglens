@@ -1,0 +1,71 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 1,
+  "numeric_valid": 1,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.067888",
+ "error": null,
+ "finished_at": "2026-11-11T20:28:50.674895+00:00",
+ "latency_ms": 10263,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD",
+  "value": "95723000000"
+ },
+ "question_id": "q_60df7e50a5af2548",
+ "question_sha": "0cfe79e1662670ef3c2448c2d9bc0c0e80122cefc34802f6d08a2148e4fbe547",
+ "raw_output": {
+  "caveats": [
+   "The Q4 value is derived, not reported directly. It is full-year revenue of $303,154,000,000 minus the revenue for the first 36 weeks (through 2026-05-10) of $207,431,000,000."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3342"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q4",
+     "fiscal_year": 2026
+    },
+    "text": "Costco's total revenue in fiscal Q4 2026 (2026-05-11 to 2026-08-30) was about $95.72 billion ($95,723,000,000).",
+    "ticker": "COST",
+    "unit": "USD",
+    "value": "95723000000",
+    "value_basis": "fact"
+   }
+  ],
+  "final_claim_id": "c1",
+  "final_unit": "USD",
+  "final_value": "95723000000",
+  "status": "answered",
+  "summary": "Costco's total revenue for fiscal Q4 2026 (May 11 to August 30, 2026) was about $95.72 billion. This is a derived value."
+ },
+ "run_id": "0864eaf7-cf0b-49ac-9770-e60bece8209b",
+ "run_status": "done",
+ "split": "test",
+ "started_at": "2026-11-11T20:28:40.389024+00:00",
+ "status": "done",
+ "system_config_hash": "2672337d37a1c4749e46b1640e2449249f4b9fce707f2424c3af28481dde7549",
+ "system_id": "system",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 27774,
+  "output_tokens": 1234
+ }
+}

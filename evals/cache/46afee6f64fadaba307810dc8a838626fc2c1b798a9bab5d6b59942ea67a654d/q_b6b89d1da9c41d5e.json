@@ -1,0 +1,48 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": false,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0000034088-26-000045",
+   "0000034088-24-000068",
+   "0000034088-24-000029"
+  ],
+  "gold_visible": true,
+  "missing_values": [],
+  "question_id": "q_b6b89d1da9c41d5e",
+  "text_sha256": "ce3465f079c673822faca5d4efd120e63af8cb45258cfc99aec68bc521308d2e",
+  "tokens_est": 45860
+ },
+ "cost_usd": "0.08035900",
+ "error": null,
+ "finished_at": "2026-11-11T21:43:32.972391+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "-2.56"
+ },
+ "question_id": "q_b6b89d1da9c41d5e",
+ "question_sha": "97e732ea3ce5a17514849d704867e260d197bab8c338a6771a041c862bff3c89",
+ "raw_output": "ExxonMobil's total revenue fell about 2.6% from fiscal Q1 2023 to fiscal Q4 2023. I used \"Total revenues and other income\" as the revenue measure.\n\n- **Q1 2023:** total revenues and other income were $86,564 million, from the Q1 2024 10-Q comparative column.\n- **Q4 2023:** the full-year 2023 figure is $344,582 million and the nine-month 2023 figure is $260,238 million. The difference gives $84,344 million for the fourth quarter.\n- **Change:** (84,344 \u2212 86,564) / 86,564 = \u22122.56%.\n\nIf \"total revenue\" were instead read as sales and other operating revenue, the decline would be about 2.34%.\n\n{\"value\": -2.56, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-11T21:41:30.293730+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 77624,
+  "output_tokens": 547,
+  "web_searches": 0
+ }
+}

@@ -1,0 +1,50 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": false,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0000070858-26-000157",
+   "0000070858-25-000405"
+  ],
+  "gold_visible": false,
+  "missing_values": [
+   "12613000000",
+   "35558000000"
+  ],
+  "question_id": "q_99517a82fb10cb5f",
+  "text_sha256": "9d2b7ef0c065661d50eaadde71660fc389aea7c6184c10c32a20341a954d9314",
+  "tokens_est": 50019
+ },
+ "cost_usd": "0.08818200",
+ "error": null,
+ "finished_at": "2026-11-11T21:43:33.020817+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "not_available",
+  "unit": "USD",
+  "value": null
+ },
+ "question_id": "q_99517a82fb10cb5f",
+ "question_sha": "e09497fc736950b10b4245d46ced0d7d380356da99662dbb008e78494606da07",
+ "raw_output": "The excerpts don't include Bank of America's consolidated statement of cash flows, so I can't state or derive its Q4 2025 operating cash flow. Neither the 10-K (full year 2025) nor the Q3 10-Q (nine months to September 30, 2025) shows net cash provided by or used in operating activities. Banks also don't report a standalone Q4 cash flow statement. It would have to be calculated as full-year operating cash flow minus nine-month operating cash flow, and neither figure appears in the excerpts.\n\n{\"value\": null, \"unit\": \"USD\", \"choice\": null, \"status\": \"not_available\"}",
+ "split": "test",
+ "started_at": "2026-11-11T21:41:30.293730+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 86712,
+  "output_tokens": 294,
+  "web_searches": 0
+ }
+}

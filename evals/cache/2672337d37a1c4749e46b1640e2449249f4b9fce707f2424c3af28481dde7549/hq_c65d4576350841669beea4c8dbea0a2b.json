@@ -1,0 +1,284 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 0,
+  "numeric_valid": 0,
+  "text_pending_judge": [
+   {
+    "chunk_ids": [
+     "chk_63fbfc975f5705abe61baba2542cbc87dd5fbd5a53c7f53594a77403b2033bec"
+    ],
+    "claim_id": "c4",
+    "text": "For commodity risk, Coca-Cola said it manages its exposure primarily through supplier pricing agreements, which let it establish purchase prices for certain inputs used in manufacturing and distribution. When deemed appropriate, it also uses derivatives to further manage commodity exposure."
+   },
+   {
+    "chunk_ids": [
+     "chk_9c56714a7d482c6be047f8435c12941917319ed7ff99ce7f28fbffebef3b28ed"
+    ],
+    "claim_id": "c5",
+    "text": "Commodity derivatives had total notional values of $535 million at December 31, 2025, versus $386 million a year earlier. Coca-Cola said certain of these do not qualify for hedge accounting but are effective economic hedges that help mitigate price risk on purchases and transportation of materials used in manufacturing."
+   }
+  ],
+  "text_string_supported": 5,
+  "text_total": 7,
+  "uncited": 0
+ },
+ "cost_usd": "0.1908065",
+ "error": null,
+ "finished_at": "2026-11-11T20:52:20.910931+00:00",
+ "latency_ms": 54796,
+ "prediction": {
+  "parse_ok": true,
+  "text": "Coca-Cola says it uses derivatives to reduce its exposure to currency, interest-rate and commodity price swings, and it does not trade them. For currency, it nets exposures and uses forwards, options and collars. It had $21,128 million of foreign currency derivatives at year-end 2025. For commodities, it relies mainly on supplier pricing agreements and uses derivatives \"when deemed appropriate\". Commodity derivatives were $535 million. The company warns that hedging and pricing actions may not fully offset cost increases.\nCoca-Cola said it uses derivative financial instruments primarily to reduce its exposure to adverse fluctuations in foreign currency exchange rates, interest rates, commodity prices and other market risks. It said it does not enter into derivatives for trading purposes.\nFor currency risk, Coca-Cola manages most exposures on a consolidated basis, which lets it net certain exposures and use natural offsets. It said weakness in some currencies may be offset by strength in others because of its geographic diversity. It enters into forward exchange contracts and buys foreign currency options and collars (principally euro, British pound and Japanese yen) to hedge portions of forecasted cash flows denominated in foreign currencies. It also uses derivatives to further reduce its net currency exposure.\nForeign currency derivatives had total notional values of $21,128 million at December 31, 2025, up from $18,442 million a year earlier. Those that qualified for hedge accounting showed a net unrealized gain of $48 million. Coca-Cola estimated that a 10% weakening of the U.S. dollar would have decreased their fair value by $609 million.\nFor commodity risk, Coca-Cola said it manages its exposure primarily through supplier pricing agreements, which let it establish purchase prices for certain inputs used in manufacturing and distribution. When deemed appropriate, it also uses derivatives to further manage commodity exposure.\nCommodity derivatives had total notional values of $535 million at December 31, 2025, versus $386 million a year earlier. Coca-Cola said certain of these do not qualify for hedge accounting but are effective economic hedges that help mitigate price risk on purchases and transportation of materials used in manufacturing.\nCoca-Cola cautioned that protection is limited. Many raw materials and supplies are bought in the open market at fluctuating prices. It said it may not be able to offset cost increases through price increases, productivity initiatives or its commodity hedging activity.\nIn its Q1 2026 10-Q, Coca-Cola said its hedging activities are designed to mitigate, over time, a portion of the impact of exchange rate fluctuations on net income. Based on current spot rates and hedging coverage in place, it expects currency fluctuations to have a favorable impact on operating income and operating cash flows through year-end. It said currency fluctuations, including the effects of hedging, favorably impacted consolidated operating income by 4%. That discussion also cited higher commodity costs as a partial offset."
+ },
+ "question_id": "hq_c65d4576350841669beea4c8dbea0a2b",
+ "question_sha": "667beb52e7faa652a48f58e068f03f1e40de2828ccd6e7e201e3d6c230904eb1",
+ "raw_output": {
+  "caveats": [
+   "The Q1 2026 10-Q passages retrieved describe currency hedging only. They do not describe commodity hedging programs or hedge coverage.",
+   "The hedge-accounting treatment in the notes to the financial statements (Note 5) was not retrieved.",
+   "The retrieved passages give no hedge coverage percentages or tenors.",
+   "Interest rate hedging was outside the scope of this answer."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_27008aeb12bb8eb789f17f76eb474b93948766aeb1f898debf55bbaf73ec6ed3"
+     }
+    ],
+    "id": "c1",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Coca-Cola said it uses derivative financial instruments primarily to reduce its exposure to adverse fluctuations in foreign currency exchange rates, interest rates, commodity prices and other market risks. It said it does not enter into derivatives for trading purposes.",
+    "ticker": "KO",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_27008aeb12bb8eb789f17f76eb474b93948766aeb1f898debf55bbaf73ec6ed3"
+     },
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_39cf65a1499b98487b9753727c882aba9ea879cd99df578519314d90519e10dc"
+     }
+    ],
+    "id": "c2",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "For currency risk, Coca-Cola manages most exposures on a consolidated basis, which lets it net certain exposures and use natural offsets. It said weakness in some currencies may be offset by strength in others because of its geographic diversity. It enters into forward exchange contracts and buys foreign currency options and collars (principally euro, British pound and Japanese yen) to hedge portions of forecasted cash flows denominated in foreign currencies. It also uses derivatives to further reduce its net currency exposure.",
+    "ticker": "KO",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_6cb3932405442b5a8a0c8ad8d09091dd431b29237196ed5dcacfbbc209275805"
+     }
+    ],
+    "id": "c3",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Foreign currency derivatives had total notional values of $21,128 million at December 31, 2025, up from $18,442 million a year earlier. Those that qualified for hedge accounting showed a net unrealized gain of $48 million. Coca-Cola estimated that a 10% weakening of the U.S. dollar would have decreased their fair value by $609 million.",
+    "ticker": "KO",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_63fbfc975f5705abe61baba2542cbc87dd5fbd5a53c7f53594a77403b2033bec"
+     }
+    ],
+    "id": "c4",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "For commodity risk, Coca-Cola said it manages its exposure primarily through supplier pricing agreements, which let it establish purchase prices for certain inputs used in manufacturing and distribution. When deemed appropriate, it also uses derivatives to further manage commodity exposure.",
+    "ticker": "KO",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_9c56714a7d482c6be047f8435c12941917319ed7ff99ce7f28fbffebef3b28ed"
+     }
+    ],
+    "id": "c5",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Commodity derivatives had total notional values of $535 million at December 31, 2025, versus $386 million a year earlier. Coca-Cola said certain of these do not qualify for hedge accounting but are effective economic hedges that help mitigate price risk on purchases and transportation of materials used in manufacturing.",
+    "ticker": "KO",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_27a2be50520c4788ae0cd48e6d3ffdbf7e681dc7bfb3f32f08cc66b4d4903044"
+     },
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_d27abe56c78f2a34d42ec9f6851a1ac25dbfdaf8042035a3e08c6d32072a6017"
+     }
+    ],
+    "id": "c6",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Coca-Cola cautioned that protection is limited. Many raw materials and supplies are bought in the open market at fluctuating prices. It said it may not be able to offset cost increases through price increases, productivity initiatives or its commodity hedging activity.",
+    "ticker": "KO",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_68c84da3958bdbcd36bcbe6ece5a66920164565579a45019cde6852cea75ca4a"
+     },
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_2a18d8e6106f042f226588ac427ab5db50d47360fc0a78c3572c7bbe199a9694"
+     }
+    ],
+    "id": "c7",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "Q1",
+     "fiscal_year": 2026
+    },
+    "text": "In its Q1 2026 10-Q, Coca-Cola said its hedging activities are designed to mitigate, over time, a portion of the impact of exchange rate fluctuations on net income. Based on current spot rates and hedging coverage in place, it expects currency fluctuations to have a favorable impact on operating income and operating cash flows through year-end. It said currency fluctuations, including the effects of hedging, favorably impacted consolidated operating income by 4%. That discussion also cited higher commodity costs as a partial offset.",
+    "ticker": "KO",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   }
+  ],
+  "final_claim_id": null,
+  "final_unit": null,
+  "final_value": null,
+  "status": "answered",
+  "summary": "Coca-Cola says it uses derivatives to reduce its exposure to currency, interest-rate and commodity price swings, and it does not trade them. For currency, it nets exposures and uses forwards, options and collars. It had $21,128 million of foreign currency derivatives at year-end 2025. For commodities, it relies mainly on supplier pricing agreements and uses derivatives \"when deemed appropriate\". Commodity derivatives were $535 million. The company warns that hedging and pricing actions may not fully offset cost increases."
+ },
+ "retrieval": {
+  "first_search": {
+   "filings:s1": [
+    "chk_27008aeb12bb8eb789f17f76eb474b93948766aeb1f898debf55bbaf73ec6ed3",
+    "chk_6cb3932405442b5a8a0c8ad8d09091dd431b29237196ed5dcacfbbc209275805",
+    "chk_63fbfc975f5705abe61baba2542cbc87dd5fbd5a53c7f53594a77403b2033bec",
+    "chk_9c56714a7d482c6be047f8435c12941917319ed7ff99ce7f28fbffebef3b28ed",
+    "chk_2a9bb9fc9909af8c0fffefabaea41d3ed1171f9b4156731561d4ac15e95e062d",
+    "chk_9e84c4e393c14ad7a627ab2e2c9e173d050e749d7f1048c88cbcf5911a3d2afe",
+    "chk_6fb04510a39f21b4b5cd051229bed0dc70143565e5a61fbdc523c8fa026ea9d8",
+    "chk_02da5e6029ca47db00332a4a3e322bf2bb60582d68a1aca14891520441c6550f"
+   ],
+   "filings:s2": [
+    "chk_39cf65a1499b98487b9753727c882aba9ea879cd99df578519314d90519e10dc",
+    "chk_27a2be50520c4788ae0cd48e6d3ffdbf7e681dc7bfb3f32f08cc66b4d4903044",
+    "chk_fc7ffd933a7d1884fdabca2e1eefe5845d9a296f758b11c8a9e113b74ed6d447",
+    "chk_d27abe56c78f2a34d42ec9f6851a1ac25dbfdaf8042035a3e08c6d32072a6017",
+    "chk_c246ebea3474b12b347fe64f01a632c4ff8c3e98186010d8bb2eb928af113ca9",
+    "chk_1db2e7acb6af2feb8e9484647b6cb8747f3f58042b9094b4b899ab71c352381b",
+    "chk_0094ebc0a73902351f14a64df0c1ff7dcca573499bf61319a12e996a7714a270",
+    "chk_a126684dce3398a81ca8ad21dd40a0203ddec0f03a1e2daec9cc3b886553aea5"
+   ],
+   "filings:s3": [
+    "chk_68c84da3958bdbcd36bcbe6ece5a66920164565579a45019cde6852cea75ca4a",
+    "chk_143002e4e69b0d3157f90e8a5e05db1b14fb8ecc2abdfb356177971110b4a3ef",
+    "chk_2a18d8e6106f042f226588ac427ab5db50d47360fc0a78c3572c7bbe199a9694",
+    "chk_f7ac4acb54b5207c49ff4872fc6fcb89cd6e89b779a781dbbc26fe33da044122",
+    "chk_3e9eaf88b6bca792e1d0bd4b33a57ec294589fab65b628084208774855766494",
+    "chk_9fa91e29ab8bece921910815b3acf51cb92f3017f8025ef15cc1c39a5fccdf7e",
+    "chk_0410da27369f604c44e93872fe9551b3f3a44c49f0c6bc17cab1c4e8a3d5a17f",
+    "chk_9c015b02e73596df159ce0e76811a66c89307a61c676c48122fdd63af1dfe430"
+   ]
+  },
+  "seen": [
+   "chk_39cf65a1499b98487b9753727c882aba9ea879cd99df578519314d90519e10dc",
+   "chk_27a2be50520c4788ae0cd48e6d3ffdbf7e681dc7bfb3f32f08cc66b4d4903044",
+   "chk_fc7ffd933a7d1884fdabca2e1eefe5845d9a296f758b11c8a9e113b74ed6d447",
+   "chk_d27abe56c78f2a34d42ec9f6851a1ac25dbfdaf8042035a3e08c6d32072a6017",
+   "chk_c246ebea3474b12b347fe64f01a632c4ff8c3e98186010d8bb2eb928af113ca9",
+   "chk_1db2e7acb6af2feb8e9484647b6cb8747f3f58042b9094b4b899ab71c352381b",
+   "chk_0094ebc0a73902351f14a64df0c1ff7dcca573499bf61319a12e996a7714a270",
+   "chk_a126684dce3398a81ca8ad21dd40a0203ddec0f03a1e2daec9cc3b886553aea5",
+   "chk_68c84da3958bdbcd36bcbe6ece5a66920164565579a45019cde6852cea75ca4a",
+   "chk_143002e4e69b0d3157f90e8a5e05db1b14fb8ecc2abdfb356177971110b4a3ef",
+   "chk_2a18d8e6106f042f226588ac427ab5db50d47360fc0a78c3572c7bbe199a9694",
+   "chk_f7ac4acb54b5207c49ff4872fc6fcb89cd6e89b779a781dbbc26fe33da044122",
+   "chk_3e9eaf88b6bca792e1d0bd4b33a57ec294589fab65b628084208774855766494",
+   "chk_9fa91e29ab8bece921910815b3acf51cb92f3017f8025ef15cc1c39a5fccdf7e",
+   "chk_0410da27369f604c44e93872fe9551b3f3a44c49f0c6bc17cab1c4e8a3d5a17f",
+   "chk_9c015b02e73596df159ce0e76811a66c89307a61c676c48122fdd63af1dfe430",
+   "chk_27008aeb12bb8eb789f17f76eb474b93948766aeb1f898debf55bbaf73ec6ed3",
+   "chk_6cb3932405442b5a8a0c8ad8d09091dd431b29237196ed5dcacfbbc209275805",
+   "chk_63fbfc975f5705abe61baba2542cbc87dd5fbd5a53c7f53594a77403b2033bec",
+   "chk_9c56714a7d482c6be047f8435c12941917319ed7ff99ce7f28fbffebef3b28ed",
+   "chk_2a9bb9fc9909af8c0fffefabaea41d3ed1171f9b4156731561d4ac15e95e062d",
+   "chk_9e84c4e393c14ad7a627ab2e2c9e173d050e749d7f1048c88cbcf5911a3d2afe",
+   "chk_6fb04510a39f21b4b5cd051229bed0dc70143565e5a61fbdc523c8fa026ea9d8",
+   "chk_02da5e6029ca47db00332a4a3e322bf2bb60582d68a1aca14891520441c6550f",
+   "chk_5a3bd0c2fa6fe4546b549208730eadfeda06335c15d2d9d7e523a62819e0afaf",
+   "chk_e3ee4497c09e2fa343f232dd956302b38f10c5446c408552bdba384fd5244cc4",
+   "chk_afe7d4a350697739ff8ca453949c51708d59d76796bf079cc37ecfc6f515e3f0",
+   "chk_398ac56f7598dce2bf572e29063c71c683c757594cd8ff540c53c93df2829b8f"
+  ]
+ },
+ "run_id": "c274ce57-fe7b-4efb-80f3-5df006335036",
+ "run_status": "done",
+ "split": "handwritten",
+ "started_at": "2026-11-11T20:51:26.043663+00:00",
+ "status": "done",
+ "system_config_hash": "2672337d37a1c4749e46b1640e2449249f4b9fce707f2424c3af28481dde7549",
+ "system_id": "system",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 168881,
+  "output_tokens": 11343
+ }
+}

@@ -1,0 +1,47 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": false,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0001018724-26-000004",
+   "0001628280-26-003952"
+  ],
+  "gold_visible": true,
+  "missing_values": [],
+  "question_id": "q_c75fe9af2ecdc0d5",
+  "text_sha256": "45e58e41ebbe4e873140ac328f451756703d0f9de5b137a2dace6d14323b7a50",
+  "tokens_est": 4535
+ },
+ "cost_usd": "0.01125800",
+ "error": null,
+ "finished_at": "2026-11-11T21:43:33.020817+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": "TSLA",
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percentage_points",
+  "value": "2.78"
+ },
+ "question_id": "q_c75fe9af2ecdc0d5",
+ "question_sha": "f07f1b130c1050fe5d8d86aac967ee5997d712bb98656fbf938bbc2203f34ecb",
+ "raw_output": "Operating margin for fiscal 2023, from the income statements provided:\n\n- Tesla: income from operations of 8,891 on total revenues of 96,773 gives 9.188%.\n- Amazon: operating income of 36,852 on total net sales of 574,785 gives 6.411%.\n\nTesla's margin was higher by 9.188 \u2212 6.411 = 2.777, or about 2.78 percentage points.\n\nTesla had the higher operating margin in fiscal 2023, by about 2.78 percentage points.\n\n{\"value\": 2.78, \"unit\": \"percentage_points\", \"choice\": \"TSLA\", \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-11T21:41:30.293730+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 10213,
+  "output_tokens": 209,
+  "web_searches": 0
+ }
+}

@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.027968",
+ "finished_at": "2026-11-12T02:05:21.418514+00:00",
+ "latency_ms": 6447,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "590"
+ },
+ "question_id": "q_904fca8ce76b181d",
+ "question_sha": "d2a20af7dd780c6cdb8038d808e05ed5422fae720aab96bb77b58820a0c03486",
+ "raw_output": "I don't have Nike's complete fiscal 2026 results (the year ends May 31, 2026), so this is an estimate rather than a reported figure.\n\n- **Reported, from memory:** Q1 net income was about $727 million and Q2 about $792 million.\n- **Assumed:** Q3 at roughly $440 million and Q4 at roughly $400 million, based on my recollection of analyst expectations at the time.\n\nThat gives full-year net income of about $2.36 billion, or roughly $590 million per quarter on average.\n\n{\"value\": 590, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgxDQXknBuwnB6EXSoUGh"
+ ],
+ "split": "test",
+ "started_at": "2026-11-12T02:05:14.971134+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "16e92aec0cb80aa246423b8803435a393d3c367c6455eb10a9b8212a8828396f",
+ "system_id": "b0-fable",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 336,
+  "output_tokens": 632,
+  "web_searches": 0
+ }
+}

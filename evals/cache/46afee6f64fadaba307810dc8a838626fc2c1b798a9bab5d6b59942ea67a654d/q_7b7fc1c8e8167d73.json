@@ -1,0 +1,47 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": false,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0000909832-26-000093",
+   "0000080424-26-000103"
+  ],
+  "gold_visible": true,
+  "missing_values": [],
+  "question_id": "q_7b7fc1c8e8167d73",
+  "text_sha256": "b5952be47752988f2f3c0da7afe660b46642cd4bc921810926f17c8f63a59adc",
+  "tokens_est": 5287
+ },
+ "cost_usd": "0.01353900",
+ "error": null,
+ "finished_at": "2026-11-11T21:43:33.020817+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": "PG",
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percentage_points",
+  "value": "15.4"
+ },
+ "question_id": "q_7b7fc1c8e8167d73",
+ "question_sha": "f2e9bd95cbc410d276267268c7e2fc4e68d281410919a8d34d5484f3c09ef04f",
+ "raw_output": "Net margin is net income divided by total revenue (net sales for P&G). I use net earnings attributable to P&G.\n\n**Procter & Gamble:** 16,046 / 87,032 = 18.44%\n\n**Costco:** 9,226 / 303,154 = 3.043%\n\n**Difference:** 18.44 \u2212 3.04 = 15.40 percentage points\n\nProcter & Gamble had the higher net margin in fiscal 2026, by about 15.4 percentage points.\n\n{\"value\": 15.4, \"unit\": \"percentage_points\", \"choice\": \"PG\", \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-11T21:41:30.293730+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 12569,
+  "output_tokens": 194,
+  "web_searches": 0
+ }
+}

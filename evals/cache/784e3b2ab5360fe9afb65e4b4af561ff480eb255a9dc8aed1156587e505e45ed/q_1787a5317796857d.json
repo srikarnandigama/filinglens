@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.023504",
+ "finished_at": "2026-11-11T20:39:49.710357+00:00",
+ "latency_ms": 18918,
+ "latency_note": null,
+ "prediction": {
+  "choice": "GOOGL",
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percentage_points",
+  "value": "18.8"
+ },
+ "question_id": "q_1787a5317796857d",
+ "question_sha": "2e11f6bfd0e885a80fa8971cdf0aeefae1575a1dbb199132260c4372fb9a439e",
+ "raw_output": "**Alphabet** had the higher operating margin in fiscal 2023, by roughly 18.8 percentage points. The Disney figure is an estimate from memory, so the gap is approximate.\n\n- **Alphabet:** operating income of about $84.3B on revenue of about $307.4B gives a margin of about 27.4%.\n- **Disney:** Disney does not report an operating income line, so I estimated it at about $7.7B on revenue of about $88.9B, a margin of about 8.6%. This is the less certain number.\n\nDifference: 27.4% \u2212 8.6% \u2248 18.8 percentage points.\n\n{\"value\": 18.8, \"unit\": \"percentage_points\", \"choice\": \"GOOGL\", \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgwnZpnYXmHpsakMnZQTU"
+ ],
+ "split": "test",
+ "started_at": "2026-11-11T20:39:30.786941+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 352,
+  "output_tokens": 2280,
+  "web_searches": 0
+ }
+}

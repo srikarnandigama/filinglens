@@ -1,0 +1,131 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 3,
+  "numeric_valid": 3,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.173404",
+ "error": null,
+ "finished_at": "2026-11-11T20:33:21.644723+00:00",
+ "latency_ms": 21872,
+ "prediction": {
+  "choice": "AMZN",
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percentage_points",
+  "value": "3.882651724971"
+ },
+ "question_id": "q_4b4d006524d9a05c",
+ "question_sha": "4c14648a95df5eb8024675ea50f790ba4e8a0ff029d5dd646f8ecd5396a14976",
+ "raw_output": {
+  "caveats": [
+   "The two companies have different fiscal year ends. Amazon's FY2025 covers calendar 2025, and Nike's FY2025 covers June 2024 to May 2025."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_1"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "733"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "682"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Amazon's FY2025 net margin was about 10.83% (net income $77.67 billion on revenue of $716.92 billion).",
+    "ticker": "AMZN",
+    "unit": "percent",
+    "value": "10.833784334183",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_2"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3780"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3732"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Nike's FY2025 net margin (fiscal year ended May 31, 2025) was about 6.95% (net income $3.219 billion on revenue of $46.309 billion).",
+    "ticker": "NKE",
+    "unit": "percent",
+    "value": "6.951132609212",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value",
+      "kind": "computation",
+      "ref": "cmp_3"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Amazon's net margin exceeded Nike's by about 3.88 percentage points.",
+    "ticker": "AMZN",
+    "unit": "percentage_points",
+    "value": "3.882651724971",
+    "value_basis": "computation"
+   }
+  ],
+  "final_claim_id": "c3",
+  "final_unit": "percentage_points",
+  "final_value": "3.882651724971",
+  "status": "answered",
+  "summary": "Amazon had the higher net margin in fiscal 2025. Its margin was about 10.83%, against about 6.95% for Nike. That is a gap of about 3.88 percentage points."
+ },
+ "run_id": "32cd7216-39c7-4208-b421-3641b9464d6b",
+ "run_status": "done",
+ "split": "test",
+ "started_at": "2026-11-11T20:32:59.751024+00:00",
+ "status": "done",
+ "system_config_hash": "2672337d37a1c4749e46b1640e2449249f4b9fce707f2424c3af28481dde7549",
+ "system_id": "system",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 71207,
+  "output_tokens": 3099
+ }
+}

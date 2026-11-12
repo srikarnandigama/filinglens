@@ -951,7 +951,7 @@ def main(argv: list[str] | None = None) -> None:
     from filinglens.config import Settings
 
     parser = argparse.ArgumentParser(description="Generate or freeze benchmark questions v1.")
-    parser.add_argument("command", choices=["draft", "b2meta", "freeze", "subset"])
+    parser.add_argument("command", choices=["draft", "b2meta", "b2extra", "freeze", "subset"])
     args = parser.parse_args(argv)
     if args.command == "freeze":
         print(json.dumps(freeze(), indent=2))
@@ -967,6 +967,19 @@ def main(argv: list[str] | None = None) -> None:
         records = [json.loads(line) for line in DRAFT_PATH.read_text(encoding="utf-8").splitlines()]
         path = write_meta(build_meta(records, settings.database_url, settings.raw_dir, SNAPSHOT_ID))
         print(f"wrote {path}")
+        return
+    if args.command == "b2extra":  # D109: the subset's 80 questions outside the sample, once
+        from evals.b2_context import build_meta, extra_meta_path, write_meta
+
+        path = extra_meta_path()
+        if path.exists():
+            raise FileExistsError(f"{path.name} is frozen and is never regenerated in place")
+        records = load_frozen()
+        subset_ids = set(json.loads(SUBSET_PATH.read_text(encoding="utf-8"))["ids"])
+        extra = {r["id"] for r in records if r["id"] in subset_ids and not r["sample_100"]}
+        rows = build_meta(records, settings.database_url, settings.raw_dir, SNAPSHOT_ID, extra)
+        write_meta(rows, path)
+        print(f"wrote {len(rows)} rows to {path}; sha256 {sha256_file(path)}")
         return
     records = build(load_facts(settings.database_url, settings.raw_dir))
     path = write_draft(records)

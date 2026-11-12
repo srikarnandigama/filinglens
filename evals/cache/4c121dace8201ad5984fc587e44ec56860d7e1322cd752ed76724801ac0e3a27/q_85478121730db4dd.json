@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.014328",
+ "finished_at": "2026-11-11T20:42:30.280502+00:00",
+ "latency_ms": 6417,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD billions",
+  "value": "6.7"
+ },
+ "question_id": "q_85478121730db4dd",
+ "question_sha": "edc7240df76832d3fa9ecdd19b0e46522dbbf1a40519f148fd2be0e1c34e7a3c",
+ "raw_output": "Johnson & Johnson's average quarterly net income in fiscal 2025 was approximately **$6.7 billion**. This is an estimate: the quarterly figures below are recalled rather than checked against the filings, and the Q4 figure is the least certain.\n\n| Quarter | Net earnings (approx.) |\n|---|---|\n| Q1 2025 | $11.0B (lifted by a reversal of talc-related charges) |\n| Q2 2025 | $5.54B |\n| Q3 2025 | $5.15B |\n| Q4 2025 | ~$5.1B |\n| **Full year** | **~$26.8B** |\n\nDividing the full-year total of about $26.8 billion by four gives about $6.7 billion per quarter. The Q1 one-time gain pulls this average well above the typical quarter of about $5.1\u20135.5 billion.\n\n{\"value\": 6.7, \"unit\": \"USD billions\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011Cgwnnak4NhgyAGVxUD6UE"
+ ],
+ "split": "test",
+ "started_at": "2026-11-11T20:42:23.868482+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "4c121dace8201ad5984fc587e44ec56860d7e1322cd752ed76724801ac0e3a27",
+ "system_id": "b0-opus",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 342,
+  "output_tokens": 648,
+  "web_searches": 0
+ }
+}

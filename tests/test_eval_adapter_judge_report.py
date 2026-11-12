@@ -1,5 +1,8 @@
 """System adapter, judge parsing/calibration and report rendering (D091-D094); offline test data."""
 
+import asyncio
+import json
+from decimal import Decimal
 from types import SimpleNamespace
 
 import pytest
@@ -208,3 +211,154 @@ def test_report_headline_paired_and_render_on_synthetic_records(monkeypatch):
     assert "| b0 | none (closed book) | 60.3% [" in larger and "b1-sonnet" not in larger
     assert "not measure extraction" in text and "no discrepancies" in text  # D104, stated plainly
     assert "McNemar" in text and "_M6._" in text
+
+
+# ---------------------------------------------------------------- judge runner (D107)
+
+
+def _judge_inputs():
+    questions = [
+        {"id": "hq_1", "question": "Why?", "reference_answer": "Because A and B."},
+        {"id": "hq_2", "question": "How?", "reference_answer": "By C."},
+    ]
+    pending = [
+        {"claim_id": "c1", "text": "Revenue rose on A.", "chunk_ids": ["chk_1"]},
+        {"claim_id": "c2", "text": "Unreadable.", "chunk_ids": ["chk_missing"]},
+    ]
+    records = {
+        "system": [
+            {
+                "question_id": "hq_1",
+                "prediction": {"text": "A and B."},
+                "citations": {"text_pending_judge": pending},
+            },
+            {"question_id": "hq_2", "status": "error", "prediction": None},  # token budget, D108
+        ],
+        "b0-sonnet": [{"question_id": "hq_2", "prediction": {"text": "Maybe C."}}],
+        "b0-opus": [{"question_id": "hq_1", "prediction": {"text": "not judged (cut 2)"}}],
+    }
+    return questions, records, {"chk_1": "Revenue rose because of A."}
+
+
+def test_judge_items_cover_judged_systems_and_claims_with_passages():
+    from evals import judge
+
+    items = judge.judge_items(*_judge_inputs(), model="opus")
+    kinds = [(i["kind"], i["system_id"], i["question_id"]) for i in items]
+    assert kinds == [
+        ("rubric", "system", "hq_1"),
+        ("rubric", "b0-sonnet", "hq_2"),
+        ("claim", "system", "hq_1"),
+    ]  # no B0 Opus; the claim without a passage is not sent
+    assert "Revenue rose because of A." in items[2]["params"]["messages"][0]["content"]
+    assert items[0]["params"]["model"] == "opus" and len({i["key"] for i in items}) == 3
+
+
+def test_judge_runner_batches_parses_caches_and_caps(tmp_path):
+    from types import SimpleNamespace
+
+    from evals import judge
+    from filinglens.llm.pricing import ModelPrice
+    from tests.test_eval_runner import FakeMessages, message
+
+    items = judge.judge_items(*_judge_inputs(), model="opus")
+    price = ModelPrice(input_per_mtok=Decimal("4"), output_per_mtok=Decimal("20"))
+    replies = [
+        message(text='ok {"score": 4, "missing_points": ["B"], "errors": []}'),
+        message(text='{"score": 2, "missing_points": [], "errors": ["x"]}'),
+        message(text='{"supported": true, "reason": "stated"}'),
+    ]
+    fake = FakeMessages(replies)
+    kwargs = dict(
+        client=SimpleNamespace(messages=fake),
+        model_price=price,
+        batch_multiplier=Decimal("0.5"),
+        model="opus",
+        cache_dir=tmp_path,
+    )
+    out = asyncio.run(judge.run_judges(items, **kwargs))
+    assert len(fake.batches.submitted) == 1 and out["summary"]["judged"] == 3
+    by_kind = {(r["kind"], r["system_id"]): r for r in out["records"]}
+    assert {r["result"].get("score") for r in out["records"] if r["kind"] == "rubric"} == {2, 4}
+    assert by_kind[("claim", "system")]["result"]["supported"] is True
+    assert Decimal(out["summary"]["spent_usd"]) > 0
+    again = asyncio.run(judge.run_judges(items, **kwargs))  # cached: no new batch, no spend
+    assert len(fake.batches.submitted) == 1 and again["summary"]["spent_usd"] == "0"
+    assert len(judge.load_judged("opus", tmp_path)) == 3
+    fake.responses.append(message(text='{"score": 3, "missing_points": [], "errors": []}'))
+    tight = kwargs | {"cache_dir": tmp_path / "new", "cap": Decimal("0.03")}
+    capped = asyncio.run(judge.run_judges(items, **tight))
+    assert len(capped["summary"]["skipped_spend_cap"]) == 2  # rubric first, then the cap stops
+
+
+def test_calibration_sheet_is_blind(tmp_path):
+    from evals import judge
+
+    judged = [
+        {
+            "key": f"k{i}",
+            "kind": "rubric",
+            "system_id": "system" if i % 2 else "b0-sonnet",
+            "question": f"Q{i}",
+            "reference": "R",
+            "answer": "line one\n\nline two",
+            "result": {"score": 1 + i % 5, "parse_ok": True},
+        }
+        for i in range(30)
+    ]
+    sample = judge.calibration_sample(judge.calibration_rows(judged))
+    assert len(sample) == 20 and {s["score"] for s in sample} == {1, 2, 3, 4, 5}
+    rows = [
+        json.loads(line)
+        for line in judge.blind_export(sample, tmp_path / "b.jsonl").read_text().splitlines()
+    ]
+    assert all(set(r) == {"key", "question", "reference", "answer", "student_score"} for r in rows)
+    text = judge.calibration_markdown(sample, tmp_path / "b.md").read_text(encoding="utf-8")
+    assert "Your score (1-5)" in text and "b0-sonnet" not in text and '"score"' not in text
+
+
+def test_report_handwritten_section_scores_recall_and_pending_calibration(tmp_path, monkeypatch):
+    from evals import judge, report
+
+    monkeypatch.setattr(judge, "CALIBRATION_JSONL", tmp_path / "none.jsonl")
+    rubric = [
+        {
+            "key": f"{s}{i}",
+            "kind": "rubric",
+            "system_id": s,
+            "result": {"score": score_, "parse_ok": True},
+        }
+        for s, scores in (("system", [5, 4, 4]), ("b0-sonnet", [2, 3, 1]))
+        for i, score_ in enumerate(scores)
+    ]
+    supported = {"supported": True, "parse_ok": True}
+    claim = {"kind": "claim", "system_id": "system", "result": supported}
+    data = {
+        "judge": rubric + [claim],
+        "handwritten_questions": {"hq": {"id": "hq", "gold_chunk_ids": ["a", "b"]}},
+        "handwritten": {
+            "system": {
+                "hq": {
+                    "status": "done",
+                    "prediction": {"text": "An answer."},
+                    "retrieval": {"first_search": {"w1": ["a", "x", "y", "z", "q", "b"]}},
+                    "citations": {"text_total": 2, "text_string_supported": 1},
+                },
+                "hq_budget": {"status": "error", "prediction": None},  # no answer (D108)
+            }
+        },
+    }
+    text = "\n".join(report.handwritten_section(data))
+    # (5 + 4 + 4 + 1) / 4 with the no-answer run scored 1; 4.33 over answered; 1 of 2 no answer
+    assert "| system | 3.50 [" in text and "| 4.33 [" in text and "| 1/2 |" in text
+    assert "| b0-sonnet | 2.00 [" in text and "| 0/3 |" in text
+    assert "pending the student's 20 blind labels" in text
+    assert "string match 1, by the claim judge 1 of 1 judged (100.0% supported)" in text
+    assert "recall@5 0.500, recall@10 1.000 (n=1)" in text
+    labels = tmp_path / "labels.jsonl"
+    labels.write_text(
+        "".join(json.dumps({"key": r["key"], "student_score": 4}) + "\n" for r in rubric),
+        encoding="utf-8",
+    )
+    monkeypatch.setattr(judge, "CALIBRATION_JSONL", labels)
+    assert "Judge calibration (n=6)" in "\n".join(report.handwritten_section(data))

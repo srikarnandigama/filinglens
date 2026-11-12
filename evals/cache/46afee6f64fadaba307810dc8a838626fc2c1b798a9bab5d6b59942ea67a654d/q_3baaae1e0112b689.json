@@ -1,0 +1,49 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": false,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0000320193-26-000020",
+   "0000320193-26-000013",
+   "0000320193-26-000006",
+   "0000320193-25-000079"
+  ],
+  "gold_visible": true,
+  "missing_values": [],
+  "question_id": "q_3baaae1e0112b689",
+  "text_sha256": "f3ea4f86842500846e1920ded6a7c9c932864e783106ae986e4dfed790a0c3a1",
+  "tokens_est": 9936
+ },
+ "cost_usd": "0.02277900",
+ "error": null,
+ "finished_at": "2026-11-11T21:43:32.972391+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "33262.5"
+ },
+ "question_id": "q_3baaae1e0112b689",
+ "question_sha": "62a91a7c20f451245b8e1ca83da80e6e559710c4bb7a7bfdc906c44f91f51eae",
+ "raw_output": "Apple's fiscal 2025 operating income was $133,050 million, as reported in the 10-K for the year ended September 27, 2025.\n\nAverage quarterly operating income = 133,050 / 4 = 33,262.5 million.\n\nAs a cross-check, the quarterly figures from the filings are:\n- Q1 (Dec 2024): 42,832\n- Q2 (Mar 2025): 29,589\n- Q3 (Jun 2025): 28,202\n- Q4: 133,050 \u2212 100,623 = 32,427\n\nThese sum to 133,050, which matches the annual figure.\n\n**Average quarterly operating income for fiscal 2025 was about $33,262.5 million (about $33.26 billion).**\n\n{\"value\": 33262.5, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-11T21:41:30.293730+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 21434,
+  "output_tokens": 269,
+  "web_searches": 0
+ }
+}

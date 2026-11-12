@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.010004",
+ "finished_at": "2026-11-11T20:42:34.361900+00:00",
+ "latency_ms": 4088,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "1535"
+ },
+ "question_id": "q_368209df4b912b44",
+ "question_sha": "a74157575a84c48950c5e1a77ffd1b97d0cfb3d81a433f63d1452d30d09014c5",
+ "raw_output": "Pfizer's fiscal Q3 2023 ended October 1, 2023. From memory, cash and cash equivalents were about **$1.54 billion** (roughly $1,535 million). This is an estimate I could not check against the 10-Q balance sheet.\n\nFor context, cash and cash equivalents were small because Pfizer held most of its liquidity in short-term investments ahead of the Seagen acquisition.\n\n{\"value\": 1535, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011Cgwno4BKawMS7DSKVHj3e"
+ ],
+ "split": "test",
+ "started_at": "2026-11-11T20:42:30.280502+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "4c121dace8201ad5984fc587e44ec56860d7e1322cd752ed76724801ac0e3a27",
+ "system_id": "b0-opus",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 346,
+  "output_tokens": 431,
+  "web_searches": 0
+ }
+}

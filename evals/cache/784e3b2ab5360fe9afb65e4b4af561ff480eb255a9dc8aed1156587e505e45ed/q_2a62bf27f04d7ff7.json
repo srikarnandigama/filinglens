@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.007594",
+ "finished_at": "2026-11-11T20:38:18.667402+00:00",
+ "latency_ms": 5307,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD billions",
+  "value": "83.2"
+ },
+ "question_id": "q_2a62bf27f04d7ff7",
+ "question_sha": "1436cd97916d7c4efda24443327f2c1632beb58f92e5d52cc69f23abab852f8a",
+ "raw_output": "ExxonMobil's average quarterly total revenue over fiscal 2025 was about $83 billion. This is an estimate from memory of the reported quarterly figures, not checked against the filings, and the Q4 number is the least certain.\n\nApproximate total revenues and other income by quarter:\n\n| Quarter | Revenue (USD billions) |\n|---|---|\n| Q1 | about 83.1 |\n| Q2 | about 81.5 |\n| Q3 | about 85.3 |\n| Q4 | about 83.0 |\n\nThese sum to roughly $333 billion for the year, which gives an average of about $83 billion per quarter.\n\n{\"value\": 83.2, \"unit\": \"USD billions\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgwnU7hs6CjCjyVLg2wcr"
+ ],
+ "split": "test",
+ "started_at": "2026-11-11T20:38:13.357210+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 342,
+  "output_tokens": 691,
+  "web_searches": 0
+ }
+}

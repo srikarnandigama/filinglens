@@ -1,0 +1,131 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 4,
+  "numeric_valid": 4,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.146248",
+ "error": null,
+ "finished_at": "2026-11-11T20:28:48.076286+00:00",
+ "latency_ms": 18402,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "2.770591014421"
+ },
+ "question_id": "q_b13f618804d2d113",
+ "question_sha": "e87bb470444b0a2f21e1f11a34ded4362cd672bb4bd2de5e2b658dfeceb04385",
+ "raw_output": {
+  "caveats": [
+   "Fiscal 2023 ran from 2022-10-02 to 2023-09-30. Fiscal 2024 ran from 2023-10-01 to 2024-09-28. Disney's fiscal years do not end on a calendar year-end."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": "value",
+      "kind": "fact",
+      "ref": "3862"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2023
+    },
+    "text": "Disney's fiscal 2023 total revenue was $88.898 billion.",
+    "ticker": "DIS",
+    "unit": "USD",
+    "value": "88898000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": "value",
+      "kind": "fact",
+      "ref": "3867"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "Disney's fiscal 2024 total revenue was $91.361 billion.",
+    "ticker": "DIS",
+    "unit": "USD",
+    "value": "91361000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": "value",
+      "kind": "computation",
+      "ref": "cmp_2"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "Revenue increased by about $2.463 billion from fiscal 2023 to fiscal 2024.",
+    "ticker": "DIS",
+    "unit": "USD",
+    "value": "2463000000",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_1"
+     }
+    ],
+    "id": "c4",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "Disney's total revenue grew about 2.77% from fiscal 2023 to fiscal 2024.",
+    "ticker": "DIS",
+    "unit": "percent",
+    "value": "2.770591014421",
+    "value_basis": "computation"
+   }
+  ],
+  "final_claim_id": "c4",
+  "final_unit": "percent",
+  "final_value": "2.770591014421",
+  "status": "answered",
+  "summary": "Disney's total revenue rose about 2.77%, from $88.898 billion in fiscal 2023 to $91.361 billion in fiscal 2024. That is an increase of about $2.463 billion."
+ },
+ "run_id": "bdc708a5-4d33-4076-8cb6-b84fc21b4558",
+ "run_status": "done",
+ "split": "test",
+ "started_at": "2026-11-11T20:28:29.629561+00:00",
+ "status": "done",
+ "system_config_hash": "2672337d37a1c4749e46b1640e2449249f4b9fce707f2424c3af28481dde7549",
+ "system_id": "system",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 61359,
+  "output_tokens": 2353
+ }
+}

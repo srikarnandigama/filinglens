@@ -1,0 +1,49 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": false,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0000093410-26-000167",
+   "0000093410-26-000113",
+   "0000093410-26-000078",
+   "0000093410-25-000108"
+  ],
+  "gold_visible": true,
+  "missing_values": [],
+  "question_id": "q_f3ad0b47f40c6440",
+  "text_sha256": "3adb93c7d6284c53b1ec2f496798f634129064a31d829d8afa46a99ec4783a36",
+  "tokens_est": 36386
+ },
+ "cost_usd": "0.07092900",
+ "error": null,
+ "finished_at": "2026-11-12T02:09:55.000480+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "27053.5"
+ },
+ "question_id": "q_f3ad0b47f40c6440",
+ "question_sha": "00840d2ca766b8b226387433d7a64c0ef852eee0fdc3908f3211d3585fc63b7a",
+ "raw_output": "Chevron's average quarterly cost of revenue over fiscal 2025 was about $27,053.5 million, taking \"Purchased crude oil and products\" as its cost of revenue. Chevron doesn't report a line labeled \"cost of revenue,\" so this is the closest match. It is the direct cost of the crude oil and products it sells, and it excludes operating expenses, SG&A, and depreciation, depletion and amortization.\n\nThe fiscal 2025 full-year figure is $108,214 million, so the quarterly average is $108,214 million \u00f7 4 = $27,053.5 million.\n\n{\"value\": 27053.5, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-12T02:07:22.538489+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 69024,
+  "output_tokens": 381,
+  "web_searches": 0
+ }
+}

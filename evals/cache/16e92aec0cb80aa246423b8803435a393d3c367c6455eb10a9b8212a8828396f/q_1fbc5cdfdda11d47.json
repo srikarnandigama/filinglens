@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.013664",
+ "finished_at": "2026-11-12T02:05:02.274286+00:00",
+ "latency_ms": 4284,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "-11.56"
+ },
+ "question_id": "q_1fbc5cdfdda11d47",
+ "question_sha": "fd189e36cbac2c04c142c3d835f95158703965deb584a3687d39aa37bc139a31",
+ "raw_output": "Chevron's net cash provided by operating activities fell about 11.56% from fiscal 2023 to fiscal 2024, based on figures recalled from the 10-K filings rather than looked up here.\n\n- Fiscal 2023: $35,609 million\n- Fiscal 2024: $31,492 million\n- Change: (31,492 \u2212 35,609) / 35,609 = \u22124,117 / 35,609 \u2248 \u221211.56%\n\n{\"value\": -11.56, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgxDPHF8CBDZESP2DwJFH"
+ ],
+ "split": "test",
+ "started_at": "2026-11-12T02:04:58.004957+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "16e92aec0cb80aa246423b8803435a393d3c367c6455eb10a9b8212a8828396f",
+ "system_id": "b0-fable",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 353,
+  "output_tokens": 271,
+  "web_searches": 0
+ }
+}

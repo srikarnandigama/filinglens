@@ -1,0 +1,46 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": false,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0000093410-24-000021"
+  ],
+  "gold_visible": true,
+  "missing_values": [],
+  "question_id": "q_d64fd9e2559a9ea5",
+  "text_sha256": "9e47c0dd7ce647c85e57eea414e08e5fe61b4e6af045dd2c5467d60c05d3886e",
+  "tokens_est": 3101
+ },
+ "cost_usd": "0.0075950",
+ "error": null,
+ "finished_at": "2026-11-12T02:09:54.994450+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "7205"
+ },
+ "question_id": "q_d64fd9e2559a9ea5",
+ "question_sha": "c0a0f0fea6fedbf5842c2fdb85ccebae33cfcca6242413df62fba262ae0f2b69",
+ "raw_output": "Chevron's net cash provided by operating activities for the three months ended March 31, 2023 was $7,205 million. This comes from the cash flow statement in the Q1 2024 10-Q, which reports the 2023 quarter as the comparative period.\n\n{\"value\": 7205, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-12T02:07:22.538489+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 7020,
+  "output_tokens": 115,
+  "web_searches": 0
+ }
+}

@@ -1,0 +1,58 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 0,
+  "numeric_valid": 0,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.425052",
+ "error": {
+  "handled": "budget_finalized",
+  "kind": "tokens",
+  "message": "Run used 202902 tokens of MAX_RUN_TOKENS=200000.",
+  "type": "BudgetExceeded"
+ },
+ "finished_at": "2026-11-11T20:30:25.012284+00:00",
+ "latency_ms": 23595,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "not_available",
+  "unit": null,
+  "value": null
+ },
+ "question_id": "q_7efc51f876d501c0",
+ "question_sha": "39c001443640e6b6a00d322ed67a0e52554ca13cdfbedf5c64ffcf99c7094a0d",
+ "raw_output": {
+  "caveats": [
+   "2 caveats could not be verified and were removed.",
+   "5 claims could not be verified and were removed.",
+   "Summary rewritten from verified claims.",
+   "Verification was cut short by the run's token budget (MAX_RUN_TOKENS); only claims verified in both stages were kept."
+  ],
+  "claims": [],
+  "final_claim_id": null,
+  "final_unit": null,
+  "final_value": null,
+  "status": "not_available",
+  "summary": "No verified claims remain."
+ },
+ "run_id": "bb3f180f-f0a4-4554-97dd-53b86a8cb0c9",
+ "run_status": "done",
+ "split": "test",
+ "started_at": "2026-11-11T20:30:01.393931+00:00",
+ "status": "done",
+ "system_config_hash": "2672337d37a1c4749e46b1640e2449249f4b9fce707f2424c3af28481dde7549",
+ "system_id": "system",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 200496,
+  "output_tokens": 2406
+ }
+}

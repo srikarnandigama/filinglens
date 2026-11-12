@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.01988",
+ "finished_at": "2026-11-12T02:04:26.699388+00:00",
+ "latency_ms": 5419,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "36.53"
+ },
+ "question_id": "q_9d900c4d132f7f52",
+ "question_sha": "917167bca1a1f4fa9d23f4ac0ab6e18084498bddb06946ef22dd54b4b9c4e5e8",
+ "raw_output": "Amazon's cost of revenue (cost of sales) rose about 36.53% from fiscal Q1 2023 to fiscal Q4 2023.\n\n- Q1 2023 cost of sales: $67,791 million\n- Q4 2023 cost of sales: $92,553 million\n- Change: (92,553 \u2212 67,791) / 67,791 = 24,762 / 67,791 \u2248 36.53%\n\nThese figures are from memory, but the four quarters sum to the reported full-year 2023 cost of sales of $304,739 million.\n\n{\"value\": 36.53, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgxDLaDFeY2pfmc5ULT8M"
+ ],
+ "split": "test",
+ "started_at": "2026-11-12T02:04:21.272978+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "16e92aec0cb80aa246423b8803435a393d3c367c6455eb10a9b8212a8828396f",
+ "system_id": "b0-fable",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 355,
+  "output_tokens": 426,
+  "web_searches": 0
+ }
+}

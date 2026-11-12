@@ -1,0 +1,34 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.03351900",
+ "error": null,
+ "finished_at": "2026-11-12T02:14:09.078842+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "16.8"
+ },
+ "question_id": "q_4d9e8b0cb88fd33f",
+ "question_sha": "75b3c709a703ef9e7a90a23a7eaddd4891b918b80331ca8dff70742626654d30",
+ "raw_output": "Tesla's total gross margin in fiscal Q2 2026 (the quarter ended June 30, 2026) was **16.8%**. That comes from its Form 10-Q, which shows total gross profit of $4,751 million for the quarter. This compares with 17.2% in Q2 2025.\n\nI did not check the quarter's revenue figure separately, so the 16.8% is the filing's reported number, not one I recalculated.\n\n{\"value\": 16.8, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-12T02:10:05.212451+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "462e8302c4c24e61c1d9f2beabcf105643e3d3d8111fcad472c19884276c5b61",
+ "system_id": "b1-sonnet",
+ "system_kind": "b1",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 20759,
+  "output_tokens": 552,
+  "web_searches": 1
+ }
+}

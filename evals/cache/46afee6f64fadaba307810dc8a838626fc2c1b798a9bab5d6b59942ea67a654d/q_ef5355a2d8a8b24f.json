@@ -1,0 +1,46 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": false,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0001628280-25-047240"
+  ],
+  "gold_visible": true,
+  "missing_values": [],
+  "question_id": "q_ef5355a2d8a8b24f",
+  "text_sha256": "8b77122130047d3716f3024173329497aab2ea452f208a4755b6a5372290f8a8",
+  "tokens_est": 2874
+ },
+ "cost_usd": "0.00737800",
+ "error": null,
+ "finished_at": "2026-11-11T21:43:32.969577+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "40.07"
+ },
+ "question_id": "q_ef5355a2d8a8b24f",
+ "question_sha": "045ecb4c8e636d7907c50a977a62ed29e25617cbe04afdd6b246c71cdfcde11e",
+ "raw_output": "Operating margin is income from operations divided by revenue. For the three months ended September 30, 2025:\n\n20,535 / 51,242 = 0.40074, or about 40.07%.\n\nCheck: 51,242 \u00d7 0.4 = 20,496.8. The remainder is 38.2, and 38.2 / 51,242 = 0.000745. That gives 0.400745, or about 40.07%.\n\n{\"value\": 40.07, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-11T21:41:30.293730+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 6578,
+  "output_tokens": 160,
+  "web_searches": 0
+ }
+}

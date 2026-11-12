@@ -1,0 +1,71 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 1,
+  "numeric_valid": 1,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.164478",
+ "error": null,
+ "finished_at": "2026-11-11T20:31:50.471319+00:00",
+ "latency_ms": 24987,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD",
+  "value": "9241000000"
+ },
+ "question_id": "q_cbde504659ae6cb6",
+ "question_sha": "6f3aaad2b357f12ac541a3804bf99c836c404a388b05c9305b010e154feabc6d",
+ "raw_output": {
+  "caveats": [
+   "The figure comes from a structured SEC fact record (fact ID 879). The record's source URL points to a Meta filing for the period ended 2024-09-30 (accession 0001326801-24-000081), while the fact is labeled fiscal Q3 2023 (July 1 to September 30, 2023). No filing passages were provided."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": "value",
+      "kind": "fact",
+      "ref": "879"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q3",
+     "fiscal_year": 2023
+    },
+    "text": "Meta reported research and development expense of about $9.24 billion ($9,241,000,000) for fiscal Q3 2023 (July 1 to September 30, 2023).",
+    "ticker": "META",
+    "unit": "USD",
+    "value": "9241000000",
+    "value_basis": "fact"
+   }
+  ],
+  "final_claim_id": "c1",
+  "final_unit": "USD",
+  "final_value": "9241000000",
+  "status": "answered",
+  "summary": "Meta's research and development expense in fiscal Q3 2023 (July 1 to September 30, 2023) was about $9.24 billion ($9,241,000,000)."
+ },
+ "run_id": "69555cb1-a810-4be1-8eab-9b5b0135937c",
+ "run_status": "done",
+ "split": "test",
+ "started_at": "2026-11-11T20:31:25.438013+00:00",
+ "status": "done",
+ "system_config_hash": "2672337d37a1c4749e46b1640e2449249f4b9fce707f2424c3af28481dde7549",
+ "system_id": "system",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 67159,
+  "output_tokens": 3016
+ }
+}

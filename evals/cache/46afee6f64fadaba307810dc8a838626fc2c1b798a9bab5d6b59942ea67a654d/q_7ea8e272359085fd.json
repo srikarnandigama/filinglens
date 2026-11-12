@@ -1,0 +1,46 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": false,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0001744489-24-000081"
+  ],
+  "gold_visible": true,
+  "missing_values": [],
+  "question_id": "q_7ea8e272359085fd",
+  "text_sha256": "7ffaf160e4b9594d1ff2c0b73db0355d067802035c3ad2fc650a7c9ce552e9da",
+  "tokens_est": 2234
+ },
+ "cost_usd": "0.00590200",
+ "error": null,
+ "finished_at": "2026-11-11T21:43:32.925127+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "7192"
+ },
+ "question_id": "q_7ea8e272359085fd",
+ "question_sha": "f56cf86f8ed90b17d3c1d0758e104b0d84f773585bf51ec7bcee697e446db9ec",
+ "raw_output": "Disney's balance sheet at December 30, 2023, the end of fiscal Q1 2024, shows cash and cash equivalents of $7,192 million, or about $7.19 billion.\n\nThis differs from the $7,247 million in the cash flow statement because that figure also includes restricted cash.\n\n{\"value\": 7192, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-11T21:41:30.293730+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 5257,
+  "output_tokens": 129,
+  "web_searches": 0
+ }
+}

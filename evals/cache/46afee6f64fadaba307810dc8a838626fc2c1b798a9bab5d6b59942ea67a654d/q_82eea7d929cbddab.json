@@ -1,0 +1,49 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": false,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0000200406-26-000016",
+   "0000200406-25-000209",
+   "0000200406-25-000178",
+   "0000200406-25-000119"
+  ],
+  "gold_visible": true,
+  "missing_values": [],
+  "question_id": "q_82eea7d929cbddab",
+  "text_sha256": "914dde60d80c4dce67e0f2694692d77b5fe2e1e5fd7ba51d4a4924e1af8491c8",
+  "tokens_est": 10454
+ },
+ "cost_usd": "0.02320600",
+ "error": null,
+ "finished_at": "2026-11-11T21:43:33.004831+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "15337.5"
+ },
+ "question_id": "q_82eea7d929cbddab",
+ "question_sha": "8c217b8f9252519c887b37784748ced8937cf45752a9587b97f8abccf0659385",
+ "raw_output": "Fiscal 2024 gross profit was $61,350 million for the full year (from the 10-K), so the quarterly average is 61,350 / 4 = $15,337.5 million.\n\nCross-check against the quarterly figures: Q1 14,872 + Q2 15,578 + Q3 15,508 = 45,958 for nine months. That leaves Q4 at 61,350 \u2212 45,958 = 15,392. The four quarters sum to 61,350, which matches.\n\n**Average quarterly gross profit in fiscal 2024: about $15,337.5 million**\n\n{\"value\": 15337.5, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-11T21:41:30.293730+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 22096,
+  "output_tokens": 222,
+  "web_searches": 0
+ }
+}

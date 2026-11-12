@@ -1,0 +1,46 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": false,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0001628280-26-003952"
+  ],
+  "gold_visible": true,
+  "missing_values": [],
+  "question_id": "q_d3f85270ef5d2be5",
+  "text_sha256": "ef37a79a1ba1ad0a0d98ec9d44cba0eb59970b02db5d627372f22001593fefcc",
+  "tokens_est": 2812
+ },
+ "cost_usd": "0.00694200",
+ "error": null,
+ "finished_at": "2026-11-11T21:43:33.035431+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "94827"
+ },
+ "question_id": "q_d3f85270ef5d2be5",
+ "question_sha": "aa93f53c3dbc76d224c00558485787d48ba80dcd318472a1d60ff41a65105f6e",
+ "raw_output": "Tesla's total revenues for fiscal 2025 were $94,827 million, or about $94.8 billion. The figure comes from the Consolidated Statements of Operations for the year ended December 31, 2025.\n\n{\"value\": 94827, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-11T21:41:30.293730+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 6427,
+  "output_tokens": 103,
+  "web_searches": 0
+ }
+}

@@ -1,0 +1,47 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": false,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0001045810-26-000021",
+   "0000320193-25-000079"
+  ],
+  "gold_visible": true,
+  "missing_values": [],
+  "question_id": "q_72571427d6f3c524",
+  "text_sha256": "6ef98b2bb8592fafef333163dd7e4c6ec9a13a35200f9a89045f19d238604853",
+  "tokens_est": 5244
+ },
+ "cost_usd": "0.01428100",
+ "error": null,
+ "finished_at": "2026-11-11T21:43:32.915291+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": "NVDA",
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percentage_points",
+  "value": "28.08"
+ },
+ "question_id": "q_72571427d6f3c524",
+ "question_sha": "adc74de6ba8b817ac4385fc7e105b64034cc354b8e6390432144929fa6f7e8f3",
+ "raw_output": "**Nvidia had the higher gross margin in fiscal 2025, by about 28.1 percentage points.**\n\nUnder the convention that a fiscal year is named for the calendar year in which it ends, Nvidia's fiscal 2025 is the year ended January 26, 2025.\n\n- **Nvidia:** gross profit of $97,858M on revenue of $130,497M gives a gross margin of about 74.99%.\n- **Apple:** gross margin of $195,201M on net sales of $416,161M gives about 46.90%.\n\nThe difference is 74.99% \u2212 46.90% \u2248 28.08 percentage points.\n\n{\"value\": 28.08, \"unit\": \"percentage_points\", \"choice\": \"NVDA\", \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-11T21:41:30.293730+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 11666,
+  "output_tokens": 523,
+  "web_searches": 0
+ }
+}

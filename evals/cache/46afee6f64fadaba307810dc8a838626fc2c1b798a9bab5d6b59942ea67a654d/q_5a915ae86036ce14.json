@@ -1,0 +1,49 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": false,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0001018724-26-000004",
+   "0001018724-25-000123",
+   "0001018724-25-000086",
+   "0001018724-25-000036"
+  ],
+  "gold_visible": true,
+  "missing_values": [],
+  "question_id": "q_5a915ae86036ce14",
+  "text_sha256": "2d029fb791db7d96a35d422b1e52d9fada3fb7998574c45149d190b221a5c67c",
+  "tokens_est": 5612
+ },
+ "cost_usd": "0.01390300",
+ "error": null,
+ "finished_at": "2026-11-12T02:09:54.936526+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "81572"
+ },
+ "question_id": "q_5a915ae86036ce14",
+ "question_sha": "4765e785ba52cecd5a36a0fee14010f7476e7f1c37eb8f4499abcb3d7240762c",
+ "raw_output": "Amazon's cost of sales for fiscal 2024 was $326,288 million. That is the full-year figure from the FY2025 10-K, the most recent filing that reports it.\n\nAverage quarterly cost of revenue = 326,288 / 4 = $81,572 million.\n\nAs a check, the 2024 quarterly figures from the filings sum to the same total:\n- Q1: $72,633 million\n- Q2: $73,785 million\n- Q3: $80,977 million\n- Q4: 326,288 \u2212 227,395 (nine-month total) = $98,893 million\n\nThe four quarters add up to $326,288 million, so the average is $81,572 million.\n\n{\"value\": 81572, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-12T02:07:22.538489+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 12683,
+  "output_tokens": 244,
+  "web_searches": 0
+ }
+}

@@ -1,0 +1,49 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": false,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0001652044-26-000071",
+   "0001652044-26-000048",
+   "0001652044-26-000018",
+   "0001652044-25-000091"
+  ],
+  "gold_visible": true,
+  "missing_values": [],
+  "question_id": "q_1256a4e50cfa4362",
+  "text_sha256": "2caadb92a3ff4968d122fbe414f25c76351205ff000cb4eb10b78bc7c9e3f730",
+  "tokens_est": 9931
+ },
+ "cost_usd": "0.0237400",
+ "error": null,
+ "finished_at": "2026-11-11T21:43:33.010860+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "15271.75"
+ },
+ "question_id": "q_1256a4e50cfa4362",
+ "question_sha": "700245803fdda268f4cf2b7dc71ec8e78f46e15321b0eb55a9791d04f802f7f6",
+ "raw_output": "Alphabet's fiscal 2025 research and development expense was $61,087 million for the full year (from the 10-K).\n\nAverage per quarter = 61,087 / 4 = 15,271.75 million.\n\nAs a cross-check, the quarterly figures are Q1 $13,556M, Q2 $13,808M, Q3 $15,151M, and Q4 implied at $18,572M. These sum to $61,087M, which matches the annual figure.\n\nThe average quarterly R&D expense was about $15,271.75 million, or roughly $15.27 billion.\n\n{\"value\": 15271.75, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-11T21:41:30.293730+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 22660,
+  "output_tokens": 216,
+  "web_searches": 0
+ }
+}

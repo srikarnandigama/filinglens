@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.010712",
+ "finished_at": "2026-11-11T20:41:18.598660+00:00",
+ "latency_ms": 7553,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD",
+  "value": "29500000000"
+ },
+ "question_id": "q_f3ad0b47f40c6440",
+ "question_sha": "00840d2ca766b8b226387433d7a64c0ef852eee0fdc3908f3211d3585fc63b7a",
+ "raw_output": "I estimate Chevron's average quarterly cost of revenue in fiscal 2025 at about $29.5 billion. I did not have the 2025 filings in front of me, so this figure is a rough estimate rather than a reported number.\n\nChevron does not report a line called \"cost of revenue.\" I took the closest match to be purchased crude oil and products, which I put at roughly $118 billion for the year. Dividing by four quarters gives about $29.5 billion per quarter.\n\nIf you meant total costs and other deductions instead, the average would be higher, roughly $43 billion per quarter.\n\n{\"value\": 29500000000, \"unit\": \"USD\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgwnhDQ34ymw375jXDNmA"
+ ],
+ "split": "test",
+ "started_at": "2026-11-11T20:41:11.043690+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 341,
+  "output_tokens": 1003,
+  "web_searches": 0
+ }
+}

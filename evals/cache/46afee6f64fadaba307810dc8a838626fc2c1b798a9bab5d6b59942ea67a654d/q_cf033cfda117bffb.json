@@ -1,0 +1,46 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": false,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0000731766-26-000127"
+  ],
+  "gold_visible": true,
+  "missing_values": [],
+  "question_id": "q_cf033cfda117bffb",
+  "text_sha256": "eb4295fa466b6f4c72324db2b3cfdaefa8d91ce5bb9e0c2047725e4b9f45e7a5",
+  "tokens_est": 2319
+ },
+ "cost_usd": "0.00625600",
+ "error": null,
+ "finished_at": "2026-11-11T21:43:33.020817+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "6280"
+ },
+ "question_id": "q_cf033cfda117bffb",
+ "question_sha": "7de41f370b00f0f14e7c6fe01bb7cae9c08292fbd9fd123efd7cf33ea8534cfc",
+ "raw_output": "The question is ambiguous between two net income measures. \"Net earnings\" is $6,481 million, and \"Net earnings attributable to UnitedHealth Group common shareholders\" is $6,280 million. Net income usually means the amount attributable to common shareholders, so I use $6,280 million. Including noncontrolling interests, the figure would be $6,481 million.\n\nUnitedHealth's net income attributable to common shareholders in fiscal Q1 2026 (three months ended March 31, 2026) was $6,280 million.\n\n{\"value\": 6280, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-11T21:41:30.293730+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 5236,
+  "output_tokens": 204,
+  "web_searches": 0
+ }
+}

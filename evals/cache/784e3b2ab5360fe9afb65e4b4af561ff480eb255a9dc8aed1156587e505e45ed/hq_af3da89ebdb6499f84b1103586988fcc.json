@@ -1,0 +1,32 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.008776",
+ "finished_at": "2026-11-11T20:53:51.614226+00:00",
+ "latency_ms": 7928,
+ "latency_note": null,
+ "prediction": {
+  "parse_ok": true,
+  "text": "Coca-Cola's 10-K says that, under its bottling agreements, the company generally has the right to set the prices it charges bottlers for concentrates, and it can change them at its discretion. In many markets, including the U.S., concentrate pricing follows an \"incidence-based\" model. Under it, the price depends on factors such as the product, package type, and sales channel, and it is tied to the price of the finished beverage sold by the bottler. Concentrate revenue therefore tends to move with bottlers' finished-product pricing and mix. The company also sells syrups to fountain customers and wholesalers, which are priced differently. I'm working from memory of the filings' general language, so for exact terms, which vary by territory and agreement, check the latest 10-K's sections on bottling agreements and revenue recognition."
+ },
+ "question_id": "hq_af3da89ebdb6499f84b1103586988fcc",
+ "question_sha": "940f86307f341d4ee2f16767ebf37bef8890b21ba6c464887e2ccc7827acc251",
+ "raw_output": "Coca-Cola's 10-K says that, under its bottling agreements, the company generally has the right to set the prices it charges bottlers for concentrates, and it can change them at its discretion. In many markets, including the U.S., concentrate pricing follows an \"incidence-based\" model. Under it, the price depends on factors such as the product, package type, and sales channel, and it is tied to the price of the finished beverage sold by the bottler. Concentrate revenue therefore tends to move with bottlers' finished-product pricing and mix. The company also sells syrups to fountain customers and wholesalers, which are priced differently. I'm working from memory of the filings' general language, so for exact terms, which vary by territory and agreement, check the latest 10-K's sections on bottling agreements and revenue recognition.",
+ "request_ids": [
+  "req_011CgwoehP4T8WXiRj5PkcxN"
+ ],
+ "split": "handwritten",
+ "started_at": "2026-11-11T20:53:43.689671+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 88,
+  "output_tokens": 860,
+  "web_searches": 0
+ }
+}

@@ -1,0 +1,34 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.00824900",
+ "error": null,
+ "finished_at": "2026-11-12T02:14:09.130730+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "46.5"
+ },
+ "question_id": "q_7bb910132c302e36",
+ "question_sha": "9b8d190bc8e29a7173f7a5c307e6d60ed5cd49a7008911548ea10a96a3e60807",
+ "raw_output": "Apple's gross margin in fiscal Q3 2025 (the quarter ended June 28, 2025) was about **46.5%**. I'm giving this from memory of Apple's 10-Q, not from a search.\n\n- Net sales were about $94.04 billion.\n- Gross margin was about $43.72 billion in dollars.\n- That works out to 43.72 \u00f7 94.04 \u2248 46.5%.\n\n{\"value\": 46.5, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-12T02:10:05.212451+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "462e8302c4c24e61c1d9f2beabcf105643e3d3d8111fcad472c19884276c5b61",
+ "system_id": "b1-sonnet",
+ "system_kind": "b1",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 6299,
+  "output_tokens": 390,
+  "web_searches": 0
+ }
+}

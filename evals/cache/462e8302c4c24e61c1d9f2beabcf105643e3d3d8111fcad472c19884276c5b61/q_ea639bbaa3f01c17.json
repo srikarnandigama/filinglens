@@ -1,0 +1,34 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.06801300",
+ "error": null,
+ "finished_at": "2026-11-12T02:14:09.072809+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "-7.11"
+ },
+ "question_id": "q_ea639bbaa3f01c17",
+ "question_sha": "f0737c62e60ac75b637f0177d3d15c04f86582c08f3a0f586ca03312de533695",
+ "raw_output": "Chevron's total revenue fell about 7.1% from Q1 2023 to Q4 2023. I used the \"Total Revenues and Other Income\" line from its income statements.\n\n- **Q1 2023:** Total revenues and other income were $50,793 million.\n- **Q4 2023:** Chevron's filings give full-year and nine-month totals, so I derived the quarter by subtraction. Full-year 2023 was $200,949 million. The nine months ended September 30, 2023 were $153,769 million. That leaves $47,180 million for Q4.\n- **Change:** (47,180 \u2212 50,793) / 50,793 \u2248 \u22127.11%.\n\nIf you meant only \"Sales and other operating revenues,\" the answer is different. That line was $48,842 million in Q1 and about $48,933 million in Q4 (196,913 \u2212 147,980), a rise of about 0.2%.\n\n{\"value\": -7.11, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-12T02:10:05.212451+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "462e8302c4c24e61c1d9f2beabcf105643e3d3d8111fcad472c19884276c5b61",
+ "system_id": "b1-sonnet",
+ "system_kind": "b1",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 31478,
+  "output_tokens": 1307,
+  "web_searches": 3
+ }
+}

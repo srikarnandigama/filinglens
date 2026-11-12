@@ -1,0 +1,32 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.011506",
+ "finished_at": "2026-11-11T20:54:14.176235+00:00",
+ "latency_ms": 9466,
+ "latency_note": null,
+ "prediction": {
+  "parse_ok": true,
+  "text": "Johnson & Johnson's filings describe the Inflation Reduction Act as a significant pricing and revenue risk. I'm working from memory of the filings rather than the text itself, so check the latest 10-K for exact wording and figures.\n\n- **Government-set prices:** The law lets CMS set \"maximum fair prices\" for selected Medicare drugs. J&J has had several products selected, including Xarelto, Imbruvica (with AbbVie) and Stelara. The first negotiated prices take effect in 2026 and are expected to reduce revenue for those products.\n- **Wider pricing pressure:** Part D redesign increases manufacturer liability, and inflation-based rebates apply if prices rise faster than inflation. Both add pressure on net pricing.\n- **Penalties:** Noncompliance can bring significant excise taxes.\n- **Effects on R&D and strategy:** The company has said the law could affect investment decisions, particularly for small-molecule drugs, which become eligible for negotiation sooner than biologics.\n- **Legal and political uncertainty:** J&J has challenged the program in court, and the outcome of that litigation and of future regulatory changes is uncertain.\n\nThe filings generally do not quantify the full long-term financial impact."
+ },
+ "question_id": "hq_f5d53183cdd04505b02cde17b599d44f",
+ "question_sha": "346ab7b3b99eb514d567f4a0924c3d2fa460ef8dd97b1f1dafad7f63e12fdfa6",
+ "raw_output": "Johnson & Johnson's filings describe the Inflation Reduction Act as a significant pricing and revenue risk. I'm working from memory of the filings rather than the text itself, so check the latest 10-K for exact wording and figures.\n\n- **Government-set prices:** The law lets CMS set \"maximum fair prices\" for selected Medicare drugs. J&J has had several products selected, including Xarelto, Imbruvica (with AbbVie) and Stelara. The first negotiated prices take effect in 2026 and are expected to reduce revenue for those products.\n- **Wider pricing pressure:** Part D redesign increases manufacturer liability, and inflation-based rebates apply if prices rise faster than inflation. Both add pressure on net pricing.\n- **Penalties:** Noncompliance can bring significant excise taxes.\n- **Effects on R&D and strategy:** The company has said the law could affect investment decisions, particularly for small-molecule drugs, which become eligible for negotiation sooner than biologics.\n- **Legal and political uncertainty:** J&J has challenged the program in court, and the outcome of that litigation and of future regulatory changes is uncertain.\n\nThe filings generally do not quantify the full long-term financial impact.",
+ "request_ids": [
+  "req_011CgwogFHEYnEbEaunq8oum"
+ ],
+ "split": "handwritten",
+ "started_at": "2026-11-11T20:54:04.718753+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 103,
+  "output_tokens": 1130,
+  "web_searches": 0
+ }
+}

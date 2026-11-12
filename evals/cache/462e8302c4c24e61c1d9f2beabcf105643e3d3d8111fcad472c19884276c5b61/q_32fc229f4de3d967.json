@@ -1,0 +1,34 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.00773400",
+ "error": null,
+ "finished_at": "2026-11-12T02:14:09.073797+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "8090"
+ },
+ "question_id": "q_32fc229f4de3d967",
+ "question_sha": "5fb7fec1bd2e503eb03c43241d2bb500cf6951aa2c70ed1a3a70cf6373644d93",
+ "raw_output": "UnitedHealth Group's fiscal 2023 earnings from operations were about $32,360 million. This is from memory of its 10-K, and I didn't search to confirm it.\n\nDividing by four quarters gives an average of about $8,090 million per quarter, or roughly $8.09 billion.\n\n{\"value\": 8090, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-12T02:10:05.212451+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "462e8302c4c24e61c1d9f2beabcf105643e3d3d8111fcad472c19884276c5b61",
+ "system_id": "b1-sonnet",
+ "system_kind": "b1",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 6304,
+  "output_tokens": 286,
+  "web_searches": 0
+ }
+}

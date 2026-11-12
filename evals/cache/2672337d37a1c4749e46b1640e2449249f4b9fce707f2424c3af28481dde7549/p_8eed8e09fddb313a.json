@@ -1,0 +1,84 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 0,
+  "numeric_valid": 0,
+  "text_pending_judge": [
+   {
+    "chunk_ids": [
+     "chk_ba6775b0b0964194bc9504e7190335d92582830d57d3c4765181c5db4a2a54ee"
+    ],
+    "claim_id": "c1",
+    "text": "Gross profit is not applicable to JPMorgan Chase (JPM) for FY2024. The stored record says the banking applicability policy treats gross profit as not applicable to this bank's net-interest/noninterest presentation. It was not inferred from absent XBRL tags, and no value is reported."
+   }
+  ],
+  "text_string_supported": 0,
+  "text_total": 1,
+  "uncited": 0
+ },
+ "cost_usd": "0.072086",
+ "error": null,
+ "finished_at": "2026-11-11T20:45:20.043069+00:00",
+ "latency_ms": 11296,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "not_applicable",
+  "unit": null,
+  "value": null
+ },
+ "question_id": "p_8eed8e09fddb313a",
+ "question_sha": "bc1aaff223c1f2bb45cfbf789b88b1859f94cbdffc179ebdb765e7d1aebb6b6b",
+ "raw_output": {
+  "caveats": [
+   "No substitute metric, such as net revenue or net interest income, was used in place of gross profit, because none was requested and substituting one would change the question."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "na_JPM_gross_profit_2024_FY"
+     },
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_ba6775b0b0964194bc9504e7190335d92582830d57d3c4765181c5db4a2a54ee"
+     }
+    ],
+    "id": "c1",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "Gross profit is not applicable to JPMorgan Chase (JPM) for FY2024. The stored record says the banking applicability policy treats gross profit as not applicable to this bank's net-interest/noninterest presentation. It was not inferred from absent XBRL tags, and no value is reported.",
+    "ticker": "JPM",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   }
+  ],
+  "final_claim_id": null,
+  "final_unit": null,
+  "final_value": null,
+  "status": "not_applicable",
+  "summary": "Gross profit is not applicable to JPMorgan Chase for fiscal 2024. The snapshot marks the metric not_applicable because of the bank's net-interest/noninterest income presentation. No gross profit figure is given, and no other metric is used in its place."
+ },
+ "run_id": "cfe1eb28-601d-4791-9693-8511f745b10e",
+ "run_status": "done",
+ "split": "probe",
+ "started_at": "2026-11-11T20:45:08.722666+00:00",
+ "status": "done",
+ "system_config_hash": "2672337d37a1c4749e46b1640e2449249f4b9fce707f2424c3af28481dde7549",
+ "system_id": "system",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 28978,
+  "output_tokens": 1413
+ }
+}

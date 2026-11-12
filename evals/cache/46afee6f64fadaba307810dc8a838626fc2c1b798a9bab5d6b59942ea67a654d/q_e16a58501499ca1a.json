@@ -1,0 +1,46 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": false,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0000200406-24-000075"
+  ],
+  "gold_visible": true,
+  "missing_values": [],
+  "question_id": "q_e16a58501499ca1a",
+  "text_sha256": "92590cbd60818ccbf1d38477764be6e186d4acdd0736ccab7a9f6d8a28c10f0f",
+  "tokens_est": 3601
+ },
+ "cost_usd": "0.00868900",
+ "error": null,
+ "finished_at": "2026-11-11T21:43:33.010860+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "70.0"
+ },
+ "question_id": "q_e16a58501499ca1a",
+ "question_sha": "a0b4c352c87f974568290d40bd3d3514d0144796411c6970ebefed9b6de2756e",
+ "raw_output": "Johnson & Johnson's gross margin in fiscal Q2 2023 was 70.0%. This is the \"Percent to Sales\" figure in the recast Q2 2023 column of the statement of earnings.\n\nCheck from the reported figures: gross profit of $15,057 million divided by sales of $21,519 million is about 69.97%, which rounds to 70.0%.\n\n{\"value\": 70.0, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-11T21:41:30.293730+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 7919,
+  "output_tokens": 154,
+  "web_searches": 0
+ }
+}

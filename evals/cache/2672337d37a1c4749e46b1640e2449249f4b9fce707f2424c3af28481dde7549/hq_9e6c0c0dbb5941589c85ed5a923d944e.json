@@ -1,0 +1,159 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 0,
+  "numeric_valid": 0,
+  "text_pending_judge": [
+   {
+    "chunk_ids": [
+     "chk_99ab0b427495b87b840404fbeb8e0386f3968a3a68e7b16b55482b30f82be95d"
+    ],
+    "claim_id": "c4",
+    "text": "NVIDIA warned that rule changes could effectively exclude it from all or part of the China market. It also said the U.S. government has already restricted certain gaming GPUs. If those controls expand to additional gaming products, it said, they may disrupt a significant portion of its supply and distribution chain."
+   }
+  ],
+  "text_string_supported": 3,
+  "text_total": 4,
+  "uncited": 0
+ },
+ "cost_usd": "0.1573173",
+ "error": null,
+ "finished_at": "2026-11-11T20:51:26.042039+00:00",
+ "latency_ms": 47340,
+ "prediction": {
+  "parse_ok": true,
+  "text": "In its FY2025 10-K risk factors, NVIDIA described U.S. export controls on China as a significant risk. It said the controls stem from U.S. government restrictions and licensing requirements on China, which began in fiscal 2023 and were updated in October 2023. It said licensing is slow and uncertain, and that the controls have already harmed its competitive position. It also said further changes could exclude it from all or part of the China market.\nNVIDIA said the U.S. government announced export restrictions and licensing requirements targeting China's semiconductor and supercomputing industries during the third quarter of fiscal 2023. In October 2023 it announced new and updated licensing requirements, effective in NVIDIA's fourth quarter of fiscal 2024, for exports to China and Country Groups D1, D4 and D5.\nNVIDIA said the licensing process is time-consuming. It said it has no assurance that the U.S. government will grant a license, or act on an application in a timely manner or at all. It also noted that the Notified Advanced Computing (NAC) process has not resulted in approvals for exports of products to customers in China.\nNVIDIA said its competitive position has been harmed by the existing export controls. It said its competitive position and future results may be harmed further, over the long term, if there are further changes in the U.S. government's export controls.\nNVIDIA warned that rule changes could effectively exclude it from all or part of the China market. It also said the U.S. government has already restricted certain gaming GPUs. If those controls expand to additional gaming products, it said, they may disrupt a significant portion of its supply and distribution chain."
+ },
+ "question_id": "hq_9e6c0c0dbb5941589c85ed5a923d944e",
+ "question_sha": "01dbb746f8c5773fa96ab2635131b342ab0c28db08e147e6dc2345bfe72dfeba",
+ "raw_output": {
+  "caveats": [
+   "This answer is based on four Item 1A passages from the FY2025 10-K. Other Item 1A passages were not read in full. They cover gaming GPUs, Hong Kong supply chain exposure and AI diffusion rules."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_9248f4410e4be27328a37aebbbd56effc72f9003f62ecb8b05eb7b85036233f2"
+     }
+    ],
+    "id": "c1",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "NVIDIA said the U.S. government announced export restrictions and licensing requirements targeting China's semiconductor and supercomputing industries during the third quarter of fiscal 2023. In October 2023 it announced new and updated licensing requirements, effective in NVIDIA's fourth quarter of fiscal 2024, for exports to China and Country Groups D1, D4 and D5.",
+    "ticker": "NVDA",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_1ec28c3d453e74bd23ce70331081319ca35e0f3316d0911f816f49b87c1ea340"
+     }
+    ],
+    "id": "c2",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "NVIDIA said the licensing process is time-consuming. It said it has no assurance that the U.S. government will grant a license, or act on an application in a timely manner or at all. It also noted that the Notified Advanced Computing (NAC) process has not resulted in approvals for exports of products to customers in China.",
+    "ticker": "NVDA",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_a8abfb23fd3a97dbf94ec40bcee72120226501f6d6585070e98350e1393b315e"
+     }
+    ],
+    "id": "c3",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "NVIDIA said its competitive position has been harmed by the existing export controls. It said its competitive position and future results may be harmed further, over the long term, if there are further changes in the U.S. government's export controls.",
+    "ticker": "NVDA",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_99ab0b427495b87b840404fbeb8e0386f3968a3a68e7b16b55482b30f82be95d"
+     }
+    ],
+    "id": "c4",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "NVIDIA warned that rule changes could effectively exclude it from all or part of the China market. It also said the U.S. government has already restricted certain gaming GPUs. If those controls expand to additional gaming products, it said, they may disrupt a significant portion of its supply and distribution chain.",
+    "ticker": "NVDA",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   }
+  ],
+  "final_claim_id": null,
+  "final_unit": null,
+  "final_value": null,
+  "status": "answered",
+  "summary": "In its FY2025 10-K risk factors, NVIDIA described U.S. export controls on China as a significant risk. It said the controls stem from U.S. government restrictions and licensing requirements on China, which began in fiscal 2023 and were updated in October 2023. It said licensing is slow and uncertain, and that the controls have already harmed its competitive position. It also said further changes could exclude it from all or part of the China market."
+ },
+ "retrieval": {
+  "first_search": {
+   "filings:s1": [
+    "chk_1ec28c3d453e74bd23ce70331081319ca35e0f3316d0911f816f49b87c1ea340",
+    "chk_9248f4410e4be27328a37aebbbd56effc72f9003f62ecb8b05eb7b85036233f2",
+    "chk_a8abfb23fd3a97dbf94ec40bcee72120226501f6d6585070e98350e1393b315e",
+    "chk_99ab0b427495b87b840404fbeb8e0386f3968a3a68e7b16b55482b30f82be95d",
+    "chk_13cf546845bf1334fd6bf04663ff4abc26a1a52e2ee20030d6ff97014bbd22e9",
+    "chk_32d7bb055a723dc80feb7dafa2cec34bf3282c6769a13565ada93677e13a0f57",
+    "chk_ad744f974ee528663d0a9b383ec0ee4b4d29f99bc27cc5fa76547546ded26938",
+    "chk_74c219df8f97154136dda76d05bfdd82eb79c6f0ab9d042ff43ff7fc37fa7b53"
+   ]
+  },
+  "seen": [
+   "chk_1ec28c3d453e74bd23ce70331081319ca35e0f3316d0911f816f49b87c1ea340",
+   "chk_9248f4410e4be27328a37aebbbd56effc72f9003f62ecb8b05eb7b85036233f2",
+   "chk_a8abfb23fd3a97dbf94ec40bcee72120226501f6d6585070e98350e1393b315e",
+   "chk_99ab0b427495b87b840404fbeb8e0386f3968a3a68e7b16b55482b30f82be95d",
+   "chk_13cf546845bf1334fd6bf04663ff4abc26a1a52e2ee20030d6ff97014bbd22e9",
+   "chk_32d7bb055a723dc80feb7dafa2cec34bf3282c6769a13565ada93677e13a0f57",
+   "chk_ad744f974ee528663d0a9b383ec0ee4b4d29f99bc27cc5fa76547546ded26938",
+   "chk_74c219df8f97154136dda76d05bfdd82eb79c6f0ab9d042ff43ff7fc37fa7b53"
+  ]
+ },
+ "run_id": "47dfeaa4-f656-4e2c-b11f-72130cef74f5",
+ "run_status": "done",
+ "split": "handwritten",
+ "started_at": "2026-11-11T20:50:38.644264+00:00",
+ "status": "done",
+ "system_config_hash": "2672337d37a1c4749e46b1640e2449249f4b9fce707f2424c3af28481dde7549",
+ "system_id": "system",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 78469,
+  "output_tokens": 7534
+ }
+}

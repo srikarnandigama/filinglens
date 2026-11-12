@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.005654",
+ "finished_at": "2026-11-11T20:41:17.462222+00:00",
+ "latency_ms": 4127,
+ "latency_note": null,
+ "prediction": {
+  "choice": "JNJ",
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percentage_points",
+  "value": "37.7"
+ },
+ "question_id": "q_b84aa99997e93b35",
+ "question_sha": "a8c7a3559480a954e207cfb79ccc36b35b50b2b36aa7b359ddd7e6814f0c737e",
+ "raw_output": "**Johnson & Johnson** had the higher net margin in fiscal 2023, by about 37.7 percentage points. These figures are from my recollection of the filings, not looked up.\n\n- **Johnson & Johnson:** Net earnings were about $35.15B on sales of about $85.16B, a margin of roughly 41.3%. The figure includes a large one-time gain from the Kenvue separation.\n- **Pfizer:** Net income attributable to Pfizer was about $2.12B on revenue of about $58.50B, a margin of roughly 3.6%.\n\nThe gap is 41.28% \u2212 3.62% \u2248 37.7 percentage points.\n\n{\"value\": 37.7, \"unit\": \"percentage_points\", \"choice\": \"JNJ\", \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgwnhPGc1R5CKny13krz9"
+ ],
+ "split": "test",
+ "started_at": "2026-11-11T20:41:13.328872+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 357,
+  "output_tokens": 494,
+  "web_searches": 0
+ }
+}

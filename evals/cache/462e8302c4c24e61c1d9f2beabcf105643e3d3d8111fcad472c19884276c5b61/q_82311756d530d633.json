@@ -1,0 +1,34 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.05418400",
+ "error": null,
+ "finished_at": "2026-11-12T02:14:09.009670+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "6903"
+ },
+ "question_id": "q_82311756d530d633",
+ "question_sha": "ca995319eb1331f452eb0402ce70e4606a394b25aea0b983bb8d9d7a925cc1d2",
+ "raw_output": "Result exists. Need the balance sheet.Nike's cash and cash equivalents were **$6,903 million** at the end of fiscal Q1 2027 (August 31, 2026). That is down 2% from $7,024 million a year earlier. The figure comes from the balance sheet table in Nike's Q1 FY27 earnings release.\n\nThe 10-Q's cash flow statement is consistent with it. Cash fell $660 million in the quarter, and $6,903 million plus $660 million gives $7,563 million. That matches the fiscal 2026 year-end balance of $7,464 million (the fiscal 2025 year-end balance, which I recalled rather than found in the search results) plus that year's $99 million net increase.\n\nCash and equivalents together with short-term investments were about $8.4 billion.\n\n{\"value\": 6903, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-12T02:10:05.212451+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "462e8302c4c24e61c1d9f2beabcf105643e3d3d8111fcad472c19884276c5b61",
+ "system_id": "b1-sonnet",
+ "system_kind": "b1",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 39209,
+  "output_tokens": 995,
+  "web_searches": 1
+ }
+}

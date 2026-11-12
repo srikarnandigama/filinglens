@@ -1,0 +1,18 @@
+# M5 test run (D109): B1 (Sonnet 5.5 + web search, Batch API, max_uses 3) on the 180-question
+# subset. The 15 pilot answers come from the cache, so this submits 165. Pilot: $0.0397/q (median
+# $0.033, max $0.135, n=15); expected $6.55; $0.06/q reserved (about the 95% upper bound).
+name = "m5-test-b1-subset"
+split = "test"
+sample = "subset_180"
+seed = 20261109
+budget = "d109"
+spend_cap_usd = "10.00"
+
+[[systems]]
+id = "b1-sonnet"
+kind = "b1"
+model_env = "BASELINE_MODELS"
+model_index = 0
+batch = true
+max_uses = 3              # cut 4
+reserve_usd = "0.06"

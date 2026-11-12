@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.014032",
+ "finished_at": "2026-11-12T02:04:43.942655+00:00",
+ "latency_ms": 3134,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "7192"
+ },
+ "question_id": "q_7ea8e272359085fd",
+ "question_sha": "f56cf86f8ed90b17d3c1d0758e104b0d84f773585bf51ec7bcee697e446db9ec",
+ "raw_output": "Disney's cash and cash equivalents at the end of fiscal Q1 2024 (the quarter ended December 30, 2023) were about $7,192 million, or roughly $7.19 billion. This figure is from my recollection of the 10-Q balance sheet rather than a document in front of me.\n\n{\"value\": 7192, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgxDN1iwmRTuP2JtrSCeQ"
+ ],
+ "split": "test",
+ "started_at": "2026-11-12T02:04:40.800620+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "16e92aec0cb80aa246423b8803435a393d3c367c6455eb10a9b8212a8828396f",
+ "system_id": "b0-fable",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 344,
+  "output_tokens": 282,
+  "web_searches": 0
+ }
+}

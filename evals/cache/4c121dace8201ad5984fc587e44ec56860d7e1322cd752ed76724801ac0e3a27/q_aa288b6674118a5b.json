@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.015028",
+ "finished_at": "2026-11-11T20:43:42.341871+00:00",
+ "latency_ms": 6729,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "-16.7"
+ },
+ "question_id": "q_aa288b6674118a5b",
+ "question_sha": "2c81f78bb68ba4f8c1318769e809e9cd1e1d0374fa6139e7e80fd7df129bb051",
+ "raw_output": "**ExxonMobil's operating cash flow fell about 16.7% from Q1 2024 to Q4 2024.** The Q4 figure is my estimate, derived by subtraction rather than taken from a reported quarterly statement, and the other figures are recalled rather than checked against the filings.\n\n| Period | Net cash from operating activities |\n|---|---|\n| Q1 2024 (10-Q) | \u2248 $14,662 million |\n| Q2 2024 | \u2248 $10,573 million |\n| Q3 2024 | \u2248 $17,569 million |\n| Full year 2024 (10-K) | \u2248 $55,022 million |\n\n**Q4 2024:** $55,022 \u2212 $14,662 \u2212 $10,573 \u2212 $17,569 \u2248 **$12,218 million**. This matches the roughly $12.2 billion I recall being reported for the quarter.\n\n**Change:** ($12,218 \u2212 $14,662) / $14,662 \u2248 \u221216.7%.\n\n{\"value\": -16.7, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgwnssVmXPn1WHJuB6XEQ"
+ ],
+ "split": "test",
+ "started_at": "2026-11-11T20:43:35.618456+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "4c121dace8201ad5984fc587e44ec56860d7e1322cd752ed76724801ac0e3a27",
+ "system_id": "b0-opus",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 362,
+  "output_tokens": 679,
+  "web_searches": 0
+ }
+}

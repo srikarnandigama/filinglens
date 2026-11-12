@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.033808",
+ "finished_at": "2026-11-12T02:05:20.330493+00:00",
+ "latency_ms": 6830,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "2.94"
+ },
+ "question_id": "q_4814e7a0574e4392",
+ "question_sha": "9915f0d5eee95b98bfd483b4c733c0285e75d677a5f7948c811fec85c7d30e46",
+ "raw_output": "Walmart's net income rose about 2.94% from fiscal Q1 2025 to fiscal Q4 2025, based on consolidated net income attributable to Walmart recalled from memory rather than looked up in the filings.\n\n- Fiscal Q1 2025 (quarter ended April 30, 2024): about $5,104 million\n- Fiscal Q4 2025 (quarter ended January 31, 2025): about $5,254 million, which is the full-year $19,436 million less the first three quarters\n\nChange: (5,254 \u2212 5,104) / 5,104 \u2248 2.94%.\n\nIf you instead use consolidated net income including noncontrolling interests (about $5,307 million to about $5,422 million), the increase is roughly 2.2%.\n\n{\"value\": 2.94, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgxDQRWEFm1mK3mSgmHbq"
+ ],
+ "split": "test",
+ "started_at": "2026-11-12T02:05:13.499719+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "16e92aec0cb80aa246423b8803435a393d3c367c6455eb10a9b8212a8828396f",
+ "system_id": "b0-fable",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 351,
+  "output_tokens": 775,
+  "web_searches": 0
+ }
+}

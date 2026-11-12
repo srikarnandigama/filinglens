@@ -1,0 +1,49 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": false,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0001652044-25-000014",
+   "0001652044-24-000118",
+   "0001652044-24-000079",
+   "0001652044-24-000053"
+  ],
+  "gold_visible": true,
+  "missing_values": [],
+  "question_id": "q_66fe4b8d5e98a3ad",
+  "text_sha256": "5b10eb077960a5320fb994b8245ffbe2a2f67953dbe94a1d87747628d64bf624",
+  "tokens_est": 8839
+ },
+ "cost_usd": "0.02138700",
+ "error": null,
+ "finished_at": "2026-11-12T02:09:54.936526+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "76848.5"
+ },
+ "question_id": "q_66fe4b8d5e98a3ad",
+ "question_sha": "fa81039d16adcb33e518fa7eef391c8a930870c6cab61eb89e9f2358b379749e",
+ "raw_output": "Alphabet's fiscal 2023 revenue was $307,394 million, taken from the FY2024 10-K income statement. The average quarterly figure is that total divided by four quarters.\n\n$307,394 million / 4 = $76,848.5 million\n\nAs a check, the individual quarters sum to the same total. Q1 was $69,787 million, Q2 was $74,604 million, and Q3 was $76,693 million. Q4 is the full-year total less the nine-month figure of $221,084 million, which is $86,310 million.\n\nThe average quarterly revenue was about $76,848.5 million, or roughly $76.85 billion.\n\n{\"value\": 76848.5, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-12T02:07:22.538489+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 20187,
+  "output_tokens": 240,
+  "web_searches": 0
+ }
+}

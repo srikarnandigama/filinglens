@@ -1,0 +1,46 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": false,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0000070858-26-000394"
+  ],
+  "gold_visible": true,
+  "missing_values": [],
+  "question_id": "q_9de6941b47e87a00",
+  "text_sha256": "b72209c5359076968f7f005d99d2029614998e10ad526f9292680d8c52f729bc",
+  "tokens_est": 25009
+ },
+ "cost_usd": "0.04638900",
+ "error": null,
+ "finished_at": "2026-11-11T21:43:33.009184+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD/share",
+  "value": "1.21"
+ },
+ "question_id": "q_9de6941b47e87a00",
+ "question_sha": "4c339587ecacff02ee9d64e1d067aff537282633d9625f8a4db932911c740391",
+ "raw_output": "Bank of America reported diluted earnings per share of $1.21 for the three months ended June 30, 2026 (fiscal Q2 2026). This comes from the Summary Income Statement table in the filing, which compares it with $0.90 in the same quarter of 2025.\n\n{\"value\": 1.21, \"unit\": \"USD/share\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-11T21:41:30.293730+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 45774,
+  "output_tokens": 123,
+  "web_searches": 0
+ }
+}

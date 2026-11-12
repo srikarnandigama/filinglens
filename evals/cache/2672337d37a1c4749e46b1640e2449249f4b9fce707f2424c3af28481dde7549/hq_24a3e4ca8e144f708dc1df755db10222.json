@@ -1,0 +1,323 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 0,
+  "numeric_valid": 0,
+  "text_pending_judge": [
+   {
+    "chunk_ids": [
+     "chk_5d53f2e3106ac1503ffd5b09ec45f1a54f8ede08c6343f0e7050f9232c9a1c25",
+     "chk_539ad4abd5a6aebba6212061aa87fa82247e4865cf91ce27ad7a9806b9379429"
+    ],
+    "claim_id": "c2",
+    "text": "Amazon says the results of operations of, and certain intercompany balances associated with, its international stores and AWS are exposed to exchange rate fluctuations. The International segment made up 23% of consolidated 2025 revenue. In its risk factors, Amazon adds that its exposure has increased as it has expanded internationally."
+   },
+   {
+    "chunk_ids": [
+     "chk_5d53f2e3106ac1503ffd5b09ec45f1a54f8ede08c6343f0e7050f9232c9a1c25"
+    ],
+    "claim_id": "c3",
+    "text": "Amazon reported that exchange rate fluctuations versus the prior-year rates increased 2025 International segment net sales by $4.9 billion."
+   },
+   {
+    "chunk_ids": [
+     "chk_c06e48ad72cf4cbed3df1119be2c7a589ec9c367b9bd48492347028067d28a4d"
+    ],
+    "claim_id": "c4",
+    "text": "The 2025 MD&A shows exchange rates moved operating income in different directions: a positive $903 million effect and negative effects of $204 million and $341 million. The extracted passage does not name the segment for each figure."
+   },
+   {
+    "chunk_ids": [
+     "chk_5d53f2e3106ac1503ffd5b09ec45f1a54f8ede08c6343f0e7050f9232c9a1c25",
+     "chk_445e817ce3b658e4abf0cfdef500392712e6dad5aac91bf77a236a0c6eae2a0f"
+    ],
+    "claim_id": "c5",
+    "text": "Amazon's Item 7A sensitivity analysis, as summarized by the workers, covers two exposures. Foreign funds of about $29.7 billion would decline by $1.5 billion, $3.0 billion and $5.9 billion under assumed 5%, 10% and 20% adverse exchange rate moves. Intercompany balances would produce losses of $600 million, $1.2 billion and $2.4 billion under the same moves, recorded in Other income (expense), net. This comes from the worker notes rather than a verified quote."
+   }
+  ],
+  "text_string_supported": 4,
+  "text_total": 8,
+  "uncited": 0
+ },
+ "cost_usd": "0.1924414",
+ "error": null,
+ "finished_at": "2026-11-11T20:48:38.757178+00:00",
+ "latency_ms": 82668,
+ "prediction": {
+  "parse_ok": true,
+  "text": "Amazon is materially exposed to currency swings, but the effect is mixed across segments and periods. Management says the U.S. Dollar is its reporting currency and that exchange rate changes significantly affect reported results. International was 23% of 2025 revenue. In 2025, exchange rates added $4.9 billion to International net sales. They also moved operating income by +$903 million, -$204 million and -$341 million in three segment-level disclosures. In the first six months of 2026, exchange rates added about $3.0 billion to net sales. They had no significant effect on Q2 2026 operating income.\nAmazon states that its financial reporting currency is the U.S. Dollar and that changes in foreign exchange rates significantly affect its reported results and consolidated trends.\nAmazon says the results of operations of, and certain intercompany balances associated with, its international stores and AWS are exposed to exchange rate fluctuations. The International segment made up 23% of consolidated 2025 revenue. In its risk factors, Amazon adds that its exposure has increased as it has expanded internationally.\nAmazon reported that exchange rate fluctuations versus the prior-year rates increased 2025 International segment net sales by $4.9 billion.\nThe 2025 MD&A shows exchange rates moved operating income in different directions: a positive $903 million effect and negative effects of $204 million and $341 million. The extracted passage does not name the segment for each figure.\nAmazon's Item 7A sensitivity analysis, as summarized by the workers, covers two exposures. Foreign funds of about $29.7 billion would decline by $1.5 billion, $3.0 billion and $5.9 billion under assumed 5%, 10% and 20% adverse exchange rate moves. Intercompany balances would produce losses of $600 million, $1.2 billion and $2.4 billion under the same moves, recorded in Other income (expense), net. This comes from the worker notes rather than a verified quote.\nAmazon warns that when the U.S. Dollar strengthens, foreign-currency cash equivalents and marketable securities balances, when translated, may be materially less than expected, and vice versa.\nIn the latest quarter (Q2 2026), Amazon said exchange rate changes did not significantly affect net sales or operating income. For the six months ended June 30, 2026, they increased net sales by $3.0 billion, including $485 million in North America.\nFor the six months ended June 30, 2026, exchange rates raised operating income by $304 million in one segment and lowered it by $395 million in another. Per the worker notes, these are International and AWS respectively. The effect-of-exchange-rates table shows only a small net effect on consolidated operating income, $51,313 million reported versus $51,451 million at prior-year rates."
+ },
+ "question_id": "hq_24a3e4ca8e144f708dc1df755db10222",
+ "question_sha": "79aef5de0f20a517b19f2cbaf4a3206aece8d5840693f5981af9a52f39c9ea89",
+ "raw_output": {
+  "caveats": [
+   "No structured XBRL facts were available, so the figures come from filing passages and no calculations were performed.",
+   "The Item 7A sensitivity figures and the six-month 2026 segment attributions (International and AWS) come from worker notes rather than verified quotes. The chunk for the 'financial reporting currency' quote was read only as a search snippet.",
+   "The 2025 MD&A effect-of-exchange-rates table was truncated and not quoted.",
+   "1 caveat could not be verified and was removed."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_c1fa9ce83cb6b5c20f0f3fe7b7fc2122717e546c244913c356754cc1a18b00a2"
+     }
+    ],
+    "id": "c1",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Amazon states that its financial reporting currency is the U.S. Dollar and that changes in foreign exchange rates significantly affect its reported results and consolidated trends.",
+    "ticker": "AMZN",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_5d53f2e3106ac1503ffd5b09ec45f1a54f8ede08c6343f0e7050f9232c9a1c25"
+     },
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_539ad4abd5a6aebba6212061aa87fa82247e4865cf91ce27ad7a9806b9379429"
+     }
+    ],
+    "id": "c2",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Amazon says the results of operations of, and certain intercompany balances associated with, its international stores and AWS are exposed to exchange rate fluctuations. The International segment made up 23% of consolidated 2025 revenue. In its risk factors, Amazon adds that its exposure has increased as it has expanded internationally.",
+    "ticker": "AMZN",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_5d53f2e3106ac1503ffd5b09ec45f1a54f8ede08c6343f0e7050f9232c9a1c25"
+     }
+    ],
+    "id": "c3",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Amazon reported that exchange rate fluctuations versus the prior-year rates increased 2025 International segment net sales by $4.9 billion.",
+    "ticker": "AMZN",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_c06e48ad72cf4cbed3df1119be2c7a589ec9c367b9bd48492347028067d28a4d"
+     }
+    ],
+    "id": "c4",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "The 2025 MD&A shows exchange rates moved operating income in different directions: a positive $903 million effect and negative effects of $204 million and $341 million. The extracted passage does not name the segment for each figure.",
+    "ticker": "AMZN",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_5d53f2e3106ac1503ffd5b09ec45f1a54f8ede08c6343f0e7050f9232c9a1c25"
+     },
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_445e817ce3b658e4abf0cfdef500392712e6dad5aac91bf77a236a0c6eae2a0f"
+     }
+    ],
+    "id": "c5",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Amazon's Item 7A sensitivity analysis, as summarized by the workers, covers two exposures. Foreign funds of about $29.7 billion would decline by $1.5 billion, $3.0 billion and $5.9 billion under assumed 5%, 10% and 20% adverse exchange rate moves. Intercompany balances would produce losses of $600 million, $1.2 billion and $2.4 billion under the same moves, recorded in Other income (expense), net. This comes from the worker notes rather than a verified quote.",
+    "ticker": "AMZN",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_539ad4abd5a6aebba6212061aa87fa82247e4865cf91ce27ad7a9806b9379429"
+     }
+    ],
+    "id": "c6",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Amazon warns that when the U.S. Dollar strengthens, foreign-currency cash equivalents and marketable securities balances, when translated, may be materially less than expected, and vice versa.",
+    "ticker": "AMZN",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_e94230def5b1a9c2c2e9114fb045f488b894690d4b86922fe098409b01dcdbf7"
+     },
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_274570b0bf73fb32a964a6e47a9a8474be54398c6e4c8e3e201fda3683823be3"
+     }
+    ],
+    "id": "c7",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "Q2",
+     "fiscal_year": 2026
+    },
+    "text": "In the latest quarter (Q2 2026), Amazon said exchange rate changes did not significantly affect net sales or operating income. For the six months ended June 30, 2026, they increased net sales by $3.0 billion, including $485 million in North America.",
+    "ticker": "AMZN",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_274570b0bf73fb32a964a6e47a9a8474be54398c6e4c8e3e201fda3683823be3"
+     },
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_21855b42bcfed6c7f8c02c39911efe12af845d4159de020825d96163a3a703e0"
+     }
+    ],
+    "id": "c8",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "Q2",
+     "fiscal_year": 2026
+    },
+    "text": "For the six months ended June 30, 2026, exchange rates raised operating income by $304 million in one segment and lowered it by $395 million in another. Per the worker notes, these are International and AWS respectively. The effect-of-exchange-rates table shows only a small net effect on consolidated operating income, $51,313 million reported versus $51,451 million at prior-year rates.",
+    "ticker": "AMZN",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   }
+  ],
+  "final_claim_id": null,
+  "final_unit": null,
+  "final_value": null,
+  "status": "answered",
+  "summary": "Amazon is materially exposed to currency swings, but the effect is mixed across segments and periods. Management says the U.S. Dollar is its reporting currency and that exchange rate changes significantly affect reported results. International was 23% of 2025 revenue. In 2025, exchange rates added $4.9 billion to International net sales. They also moved operating income by +$903 million, -$204 million and -$341 million in three segment-level disclosures. In the first six months of 2026, exchange rates added about $3.0 billion to net sales. They had no significant effect on Q2 2026 operating income."
+ },
+ "retrieval": {
+  "first_search": {
+   "filings:s1": [
+    "chk_5d53f2e3106ac1503ffd5b09ec45f1a54f8ede08c6343f0e7050f9232c9a1c25",
+    "chk_42f0b1415251558791a7770f87dd8da42e1648b99778b9f263799e6a46586075",
+    "chk_25297a151e2aee5d0a1ff0417e174cfddad18db8fd3db8fca878d26ea7a95efd",
+    "chk_445e817ce3b658e4abf0cfdef500392712e6dad5aac91bf77a236a0c6eae2a0f",
+    "chk_c06e48ad72cf4cbed3df1119be2c7a589ec9c367b9bd48492347028067d28a4d",
+    "chk_c1fa9ce83cb6b5c20f0f3fe7b7fc2122717e546c244913c356754cc1a18b00a2",
+    "chk_088eb0520d255494f27b2f34a0cd67d893180f8985d3ab8a61dfbbaf9c6c0bfd",
+    "chk_605223b99121d420d44f69e0979951cf08098507febbf032eecfef9f27e8fe17"
+   ],
+   "filings:s2": [
+    "chk_539ad4abd5a6aebba6212061aa87fa82247e4865cf91ce27ad7a9806b9379429",
+    "chk_54cfeed3b9e29879f81a43081b8a1762418ff7f5af0c1af4cce98a6547345d50",
+    "chk_af3ab9e955e74d3e46be60f2b967cf61f418f3d378ce19b9326e5f3d1512acff",
+    "chk_dbf761bd6c8f521a8649b2a860bbe0ce256260e4b8963b4af3c03f026737e337",
+    "chk_328db49482dda8e593af90da55ab04a1624577cb804e5b2e54113c64f3781b65",
+    "chk_b02a30c1adfb961e03c67a1350e2efc3085f6a8a14dc011420b7aebaa28cb8fa",
+    "chk_bfc264b4c445130c7535fea8663e79ef2f6af633214d6adecf15afc61dece53d",
+    "chk_e391b3a7b57e52542cc6a35ffd08702b6c2a75d9002240c04b87e77d1568bd88"
+   ],
+   "filings:s3": [
+    "chk_362013531de90481333928c0f69b7de2b5ea36e6fdd1160642883bb5308b1326",
+    "chk_21855b42bcfed6c7f8c02c39911efe12af845d4159de020825d96163a3a703e0",
+    "chk_19d5857d6cf157036ac067906000cdb67cb49b22576ef1ce7b1dab617d9576f3",
+    "chk_e94230def5b1a9c2c2e9114fb045f488b894690d4b86922fe098409b01dcdbf7",
+    "chk_274570b0bf73fb32a964a6e47a9a8474be54398c6e4c8e3e201fda3683823be3",
+    "chk_549d8fbc5e2e7ad2d4048b8c32c10f8b6a08a62cf1ca3ded91864cbef36ff710",
+    "chk_f90a801464f7a54b4403d5d01fbc68f3ffb1ca04454f89655f99bd13aca05588",
+    "chk_25d9ed1d0c3e0d54a84c1bbc2b3d68c6eb35b657c3540e1a16960adf8461a458"
+   ]
+  },
+  "seen": [
+   "chk_5d53f2e3106ac1503ffd5b09ec45f1a54f8ede08c6343f0e7050f9232c9a1c25",
+   "chk_42f0b1415251558791a7770f87dd8da42e1648b99778b9f263799e6a46586075",
+   "chk_25297a151e2aee5d0a1ff0417e174cfddad18db8fd3db8fca878d26ea7a95efd",
+   "chk_445e817ce3b658e4abf0cfdef500392712e6dad5aac91bf77a236a0c6eae2a0f",
+   "chk_c06e48ad72cf4cbed3df1119be2c7a589ec9c367b9bd48492347028067d28a4d",
+   "chk_c1fa9ce83cb6b5c20f0f3fe7b7fc2122717e546c244913c356754cc1a18b00a2",
+   "chk_088eb0520d255494f27b2f34a0cd67d893180f8985d3ab8a61dfbbaf9c6c0bfd",
+   "chk_605223b99121d420d44f69e0979951cf08098507febbf032eecfef9f27e8fe17",
+   "chk_539ad4abd5a6aebba6212061aa87fa82247e4865cf91ce27ad7a9806b9379429",
+   "chk_54cfeed3b9e29879f81a43081b8a1762418ff7f5af0c1af4cce98a6547345d50",
+   "chk_af3ab9e955e74d3e46be60f2b967cf61f418f3d378ce19b9326e5f3d1512acff",
+   "chk_dbf761bd6c8f521a8649b2a860bbe0ce256260e4b8963b4af3c03f026737e337",
+   "chk_328db49482dda8e593af90da55ab04a1624577cb804e5b2e54113c64f3781b65",
+   "chk_b02a30c1adfb961e03c67a1350e2efc3085f6a8a14dc011420b7aebaa28cb8fa",
+   "chk_bfc264b4c445130c7535fea8663e79ef2f6af633214d6adecf15afc61dece53d",
+   "chk_e391b3a7b57e52542cc6a35ffd08702b6c2a75d9002240c04b87e77d1568bd88",
+   "chk_362013531de90481333928c0f69b7de2b5ea36e6fdd1160642883bb5308b1326",
+   "chk_21855b42bcfed6c7f8c02c39911efe12af845d4159de020825d96163a3a703e0",
+   "chk_19d5857d6cf157036ac067906000cdb67cb49b22576ef1ce7b1dab617d9576f3",
+   "chk_e94230def5b1a9c2c2e9114fb045f488b894690d4b86922fe098409b01dcdbf7",
+   "chk_274570b0bf73fb32a964a6e47a9a8474be54398c6e4c8e3e201fda3683823be3",
+   "chk_549d8fbc5e2e7ad2d4048b8c32c10f8b6a08a62cf1ca3ded91864cbef36ff710",
+   "chk_f90a801464f7a54b4403d5d01fbc68f3ffb1ca04454f89655f99bd13aca05588",
+   "chk_25d9ed1d0c3e0d54a84c1bbc2b3d68c6eb35b657c3540e1a16960adf8461a458",
+   "chk_7daa139bc355792f14b8cb7646cf2c4f42fee0756196988e7bcb5f59fce74648",
+   "chk_d955462c960a340c27ddd1a56eb3176a4abfd7d9da5292190797022a384a553a"
+  ]
+ },
+ "run_id": "4b7d377c-2425-469c-9676-7ef74ef56b2a",
+ "run_status": "done",
+ "split": "handwritten",
+ "started_at": "2026-11-11T20:47:15.997816+00:00",
+ "status": "done",
+ "system_config_hash": "2672337d37a1c4749e46b1640e2449249f4b9fce707f2424c3af28481dde7549",
+ "system_id": "system",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 190932,
+  "output_tokens": 16332
+ }
+}

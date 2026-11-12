@@ -1,0 +1,152 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 5,
+  "numeric_valid": 5,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.200140",
+ "error": null,
+ "finished_at": "2026-11-11T20:24:18.261948+00:00",
+ "latency_ms": 25448,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD",
+  "value": "6701000000"
+ },
+ "question_id": "q_85478121730db4dd",
+ "question_sha": "edc7240df76832d3fa9ecdd19b0e46522dbbf1a40519f148fd2be0e1c34e7a3c",
+ "raw_output": {
+  "caveats": [
+   "Q4 net income is derived (full-year net income of $26.804B minus nine-month net income of $21.688B), not separately reported.",
+   "Q1 net income is much higher than the other quarters, so the mean is above the median."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "2827"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q1",
+     "fiscal_year": 2025
+    },
+    "text": "JNJ Q1 fiscal 2025 net income was $10.999 billion.",
+    "ticker": "JNJ",
+    "unit": "USD",
+    "value": "10999000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "2828"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q2",
+     "fiscal_year": 2025
+    },
+    "text": "JNJ Q2 fiscal 2025 net income was $5.537 billion.",
+    "ticker": "JNJ",
+    "unit": "USD",
+    "value": "5537000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "2829"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q3",
+     "fiscal_year": 2025
+    },
+    "text": "JNJ Q3 fiscal 2025 net income was $5.152 billion.",
+    "ticker": "JNJ",
+    "unit": "USD",
+    "value": "5152000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "2830"
+     }
+    ],
+    "id": "c4",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q4",
+     "fiscal_year": 2025
+    },
+    "text": "JNJ Q4 fiscal 2025 net income was $5.116 billion (derived as full-year minus nine-month net income).",
+    "ticker": "JNJ",
+    "unit": "USD",
+    "value": "5116000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": "mean",
+      "kind": "computation",
+      "ref": "cmp_1"
+     }
+    ],
+    "id": "c5",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "The mean quarterly net income across fiscal 2025 Q1\u2013Q4 was about $6.701 billion.",
+    "ticker": "JNJ",
+    "unit": "USD",
+    "value": "6701000000",
+    "value_basis": "computation"
+   }
+  ],
+  "final_claim_id": "c5",
+  "final_unit": "USD",
+  "final_value": "6701000000",
+  "status": "answered",
+  "summary": "Johnson & Johnson's average quarterly net income over fiscal 2025 was about $6.701 billion. That is the mean of Q1\u2013Q4: $10.999 billion, $5.537 billion, $5.152 billion and $5.116 billion."
+ },
+ "run_id": "967a53d8-1e4b-4538-a44d-3d843f19f2c8",
+ "run_status": "done",
+ "split": "test",
+ "started_at": "2026-11-11T20:23:52.771229+00:00",
+ "status": "done",
+ "system_config_hash": "2672337d37a1c4749e46b1640e2449249f4b9fce707f2424c3af28481dde7549",
+ "system_id": "system",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 81655,
+  "output_tokens": 3683
+ }
+}

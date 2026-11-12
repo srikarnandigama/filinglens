@@ -1,0 +1,34 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.00778600",
+ "error": null,
+ "finished_at": "2026-11-12T02:14:09.112046+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "31.04"
+ },
+ "question_id": "q_c87ceaefb354a617",
+ "question_sha": "b749d8f9867a1406272047c67313394f28f5b3ff731e21850e6b7b9428167d66",
+ "raw_output": "Amazon's total net sales rose about 31.0% from fiscal Q1 2024 to fiscal Q4 2024. I took both figures from memory of Amazon's reported results and did not search to check them.\n\n- Q1 2024 net sales were about $143,313 million.\n- Q4 2024 net sales were about $187,792 million.\n\nThe change is (187,792 \u2212 143,313) / 143,313 \u2248 +31.04%.\n\n{\"value\": 31.04, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-12T02:10:05.212451+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "462e8302c4c24e61c1d9f2beabcf105643e3d3d8111fcad472c19884276c5b61",
+ "system_id": "b1-sonnet",
+ "system_kind": "b1",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 6316,
+  "output_tokens": 294,
+  "web_searches": 0
+ }
+}

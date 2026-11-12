@@ -1,0 +1,46 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": false,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0001652044-26-000071"
+  ],
+  "gold_visible": true,
+  "missing_values": [],
+  "question_id": "q_337b7c1e3ea03c7a",
+  "text_sha256": "889bc4a9f10d0921d4b01c63f19d878a3cbc1498a6af9a0a96c67dd1905a3cea",
+  "tokens_est": 3269
+ },
+ "cost_usd": "0.00900700",
+ "error": null,
+ "finished_at": "2026-11-12T02:09:54.964654+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "34.03"
+ },
+ "question_id": "q_337b7c1e3ea03c7a",
+ "question_sha": "9310dad6cfa7916a05664958d6f759d599720266d61dc3f90b83d8bacac7d091",
+ "raw_output": "Operating margin is income from operations divided by revenues for the three months ended June 30, 2026.\n\nQ2 2026 income from operations is $40,770 million and revenues are $119,796 million, so the margin is 40,770 / 119,796 = 34.03%.\n\nThe column order in the income statement is Q2 2025, Q2 2026, six months 2025, six months 2026. The 2026 quarter is therefore the second column, with revenues of $119,796 million.\n\nAs a check, 119,796 \u2212 79,026 = 40,770, which matches the reported income from operations.\n\n**Operating margin \u2248 34.0%**\n\n{\"value\": 34.03, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-12T02:07:22.538489+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 7847,
+  "output_tokens": 232,
+  "web_searches": 0
+ }
+}

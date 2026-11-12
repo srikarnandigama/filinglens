@@ -1,0 +1,152 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 0,
+  "numeric_valid": 0,
+  "text_pending_judge": [],
+  "text_string_supported": 4,
+  "text_total": 4,
+  "uncited": 0
+ },
+ "cost_usd": "0.1282382",
+ "error": null,
+ "finished_at": "2026-11-11T20:51:24.533882+00:00",
+ "latency_ms": 36396,
+ "prediction": {
+  "parse_ok": true,
+  "text": "Under most bottler's agreements, Coca-Cola has contractual flexibility to set the price and terms of concentrates and syrups. In practice, competitive market conditions limit that flexibility. In most markets it uses an incidence-based concentrate pricing model. Under that model the price depends on factors such as bottler pricing, the channels where the finished products are sold, and package mix.\nCoca-Cola states that under most of its bottler's agreements it generally has complete flexibility to determine the price and other terms of sale of the concentrates and syrups it sells to bottlers. As a practical matter, that flexibility is subject, both inside and outside the United States, to competitive market conditions.\nCoca-Cola has implemented an incidence-based concentrate pricing model in most markets. Under this model, the concentrate price it charges is impacted by a number of factors, including, but not limited to, bottler pricing, the channels in which the finished products made from the concentrates are sold, and package mix.\nIn MD&A, management says it adopted the incidence-based model in most markets to allow the Company and its bottling partners to grow together through shared value, aligned financial objectives and flexibility to meet consumers' changing needs and tastes.\nBottlers are obligated to purchase their entire requirement of concentrates or syrups for the designated Company Trademark Beverages from the Company or Company-authorized suppliers."
+ },
+ "question_id": "hq_af3da89ebdb6499f84b1103586988fcc",
+ "question_sha": "940f86307f341d4ee2f16767ebf37bef8890b21ba6c464887e2ccc7827acc251",
+ "raw_output": {
+  "caveats": [
+   "The retrieved passages do not give a specific price formula beyond the incidence-based model and the listed factors.",
+   "One MD&A passage was truncated mid-sentence, before the discussion of variable consideration. The passage on timing of concentrate revenue recognition was not retrieved in full, so it is not used."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_bf405013d93aaa8433ed5b0523ac3e1beddd0068c8696ef512d572d84343325f"
+     }
+    ],
+    "id": "c1",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Coca-Cola states that under most of its bottler's agreements it generally has complete flexibility to determine the price and other terms of sale of the concentrates and syrups it sells to bottlers. As a practical matter, that flexibility is subject, both inside and outside the United States, to competitive market conditions.",
+    "ticker": "KO",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_bf405013d93aaa8433ed5b0523ac3e1beddd0068c8696ef512d572d84343325f"
+     }
+    ],
+    "id": "c2",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Coca-Cola has implemented an incidence-based concentrate pricing model in most markets. Under this model, the concentrate price it charges is impacted by a number of factors, including, but not limited to, bottler pricing, the channels in which the finished products made from the concentrates are sold, and package mix.",
+    "ticker": "KO",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_73cc2163caa406beea9800c2a17b308dfdf5790aa1af87173382696b7b409dcc"
+     }
+    ],
+    "id": "c3",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "In MD&A, management says it adopted the incidence-based model in most markets to allow the Company and its bottling partners to grow together through shared value, aligned financial objectives and flexibility to meet consumers' changing needs and tastes.",
+    "ticker": "KO",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_382c61966d0412625cde24b2d01d3187816326985b171f715559b9be3798a97c"
+     }
+    ],
+    "id": "c4",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Bottlers are obligated to purchase their entire requirement of concentrates or syrups for the designated Company Trademark Beverages from the Company or Company-authorized suppliers.",
+    "ticker": "KO",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   }
+  ],
+  "final_claim_id": null,
+  "final_unit": null,
+  "final_value": null,
+  "status": "answered",
+  "summary": "Under most bottler's agreements, Coca-Cola has contractual flexibility to set the price and terms of concentrates and syrups. In practice, competitive market conditions limit that flexibility. In most markets it uses an incidence-based concentrate pricing model. Under that model the price depends on factors such as bottler pricing, the channels where the finished products are sold, and package mix."
+ },
+ "retrieval": {
+  "first_search": {
+   "filings:s1": [
+    "chk_4103c398c905ea9307141f320898b4e9db3a537e24674c52434148e533caf908",
+    "chk_2b9d465f08d4e35239c503d4fdacc10cb2f03523f3d71fc0aa0b23ea82769c8d",
+    "chk_1069eeb02fcad3ac1c9ebb1edf35fa1f8369a21c66c5515eaf553bfb01519121",
+    "chk_bf405013d93aaa8433ed5b0523ac3e1beddd0068c8696ef512d572d84343325f",
+    "chk_382c61966d0412625cde24b2d01d3187816326985b171f715559b9be3798a97c",
+    "chk_73cc2163caa406beea9800c2a17b308dfdf5790aa1af87173382696b7b409dcc",
+    "chk_56e05bcfe421782598b0fdce18dec61e1b054c573e23004cf0f2bce27124c7e5",
+    "chk_95f1df9ee47047dd0719fe4fdc171330f19cd9a9625b2463b4a2990a07f9f5eb"
+   ]
+  },
+  "seen": [
+   "chk_4103c398c905ea9307141f320898b4e9db3a537e24674c52434148e533caf908",
+   "chk_2b9d465f08d4e35239c503d4fdacc10cb2f03523f3d71fc0aa0b23ea82769c8d",
+   "chk_1069eeb02fcad3ac1c9ebb1edf35fa1f8369a21c66c5515eaf553bfb01519121",
+   "chk_bf405013d93aaa8433ed5b0523ac3e1beddd0068c8696ef512d572d84343325f",
+   "chk_382c61966d0412625cde24b2d01d3187816326985b171f715559b9be3798a97c",
+   "chk_73cc2163caa406beea9800c2a17b308dfdf5790aa1af87173382696b7b409dcc",
+   "chk_56e05bcfe421782598b0fdce18dec61e1b054c573e23004cf0f2bce27124c7e5",
+   "chk_95f1df9ee47047dd0719fe4fdc171330f19cd9a9625b2463b4a2990a07f9f5eb"
+  ]
+ },
+ "run_id": "267f4005-38a8-45ed-9245-13544938c2dd",
+ "run_status": "done",
+ "split": "handwritten",
+ "started_at": "2026-11-11T20:50:48.063141+00:00",
+ "status": "done",
+ "system_config_hash": "2672337d37a1c4749e46b1640e2449249f4b9fce707f2424c3af28481dde7549",
+ "system_id": "system",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 89901,
+  "output_tokens": 5123
+ }
+}

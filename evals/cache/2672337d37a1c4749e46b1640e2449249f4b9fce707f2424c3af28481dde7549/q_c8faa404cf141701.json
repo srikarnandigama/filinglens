@@ -1,0 +1,71 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 1,
+  "numeric_valid": 1,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.081576",
+ "error": null,
+ "finished_at": "2026-11-11T20:27:49.210025+00:00",
+ "latency_ms": 11231,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD/shares",
+  "value": "0.53"
+ },
+ "question_id": "q_c8faa404cf141701",
+ "question_sha": "913aa074ee5ce5b96377cc681df7ea76998e994b6d02f38acfd8eb8bcc88e036",
+ "raw_output": {
+  "caveats": [
+   "The fact record's source accession is a later filing (tsla-20240930.htm), not the original Q3 2023 filing. The value is reported as tagged for the Q3 2023 period."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "1043"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q3",
+     "fiscal_year": 2023
+    },
+    "text": "Tesla reported diluted EPS of $0.53 per share for fiscal Q3 2023 (quarter ended 2023-09-30).",
+    "ticker": "TSLA",
+    "unit": "USD/shares",
+    "value": "0.53",
+    "value_basis": "fact"
+   }
+  ],
+  "final_claim_id": "c1",
+  "final_unit": "USD/shares",
+  "final_value": "0.53",
+  "status": "answered",
+  "summary": "Tesla's diluted earnings per share for fiscal Q3 2023 (July 1 to September 30, 2023) was $0.53."
+ },
+ "run_id": "c71e8ec5-2608-4ec1-95e0-fdf37a0101bd",
+ "run_status": "done",
+ "split": "test",
+ "started_at": "2026-11-11T20:27:37.942877+00:00",
+ "status": "done",
+ "system_config_hash": "2672337d37a1c4749e46b1640e2449249f4b9fce707f2424c3af28481dde7549",
+ "system_id": "system",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 33573,
+  "output_tokens": 1443
+ }
+}

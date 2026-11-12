@@ -1,0 +1,48 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": false,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0000200406-26-000016",
+   "0000200406-25-000209",
+   "0000200406-25-000119"
+  ],
+  "gold_visible": true,
+  "missing_values": [],
+  "question_id": "q_8a14dc4a020fecb1",
+  "text_sha256": "2c23f149127e2c3eefe0d46d47de5d9d038d09486ee502affeb61929e1546a96",
+  "tokens_est": 7461
+ },
+ "cost_usd": "0.0178700",
+ "error": null,
+ "finished_at": "2026-11-11T21:43:33.020817+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "90.9"
+ },
+ "question_id": "q_8a14dc4a020fecb1",
+ "question_sha": "2b419136fbbcac5a4c936600edc7bf4b850fcf94f190f5582e16b6bb0c76a766",
+ "raw_output": "Johnson & Johnson's net cash from operating activities rose about 90.9% from fiscal Q1 2024 to fiscal Q4 2024. The filings give no standalone Q4 figure, so I derived it by subtracting nine-month cash flow from the full-year figure.\n\n- **Q4 2024 operating cash flow:** FY2024 was $24,266 million and the nine months ended September 29, 2024 were $17,283 million, so Q4 2024 was $24,266 \u2212 $17,283 = $6,983 million.\n- **Q1 2024 operating cash flow:** $3,657 million.\n- **Change:** ($6,983 \u2212 $3,657) / $3,657 = $3,326 / $3,657 \u2248 90.9%.\n\n{\"value\": 90.9, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-11T21:41:30.293730+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 15780,
+  "output_tokens": 418,
+  "web_searches": 0
+ }
+}

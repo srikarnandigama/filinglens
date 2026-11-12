@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.007536",
+ "finished_at": "2026-11-11T20:43:18.151431+00:00",
+ "latency_ms": 3303,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "17817"
+ },
+ "question_id": "q_2e0acc932d011b02",
+ "question_sha": "80083906f344cc83e3c86f4aeb7c03533360d71b5cf61cd878a86765d0f52d86",
+ "raw_output": "P&G's net cash provided by operating activities in fiscal 2025 (the year ended June 30, 2025) was about **$17.8 billion**. The exact figure of roughly $17,817 million is from memory and was not checked against the 10-K, so treat the last digits as approximate. This was down from about $19.8 billion in fiscal 2024.\n\n{\"value\": 17817, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgwnrLiZnruswaoBMdc3P"
+ ],
+ "split": "test",
+ "started_at": "2026-11-11T20:43:14.848505+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "4c121dace8201ad5984fc587e44ec56860d7e1322cd752ed76724801ac0e3a27",
+ "system_id": "b0-opus",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 344,
+  "output_tokens": 308,
+  "web_searches": 0
+ }
+}

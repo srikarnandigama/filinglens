@@ -1,0 +1,47 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": false,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0001018724-26-000004",
+   "0001628280-26-003952"
+  ],
+  "gold_visible": true,
+  "missing_values": [],
+  "question_id": "q_17f4f7ece158dc1c",
+  "text_sha256": "45e58e41ebbe4e873140ac328f451756703d0f9de5b137a2dace6d14323b7a50",
+  "tokens_est": 4535
+ },
+ "cost_usd": "0.01138200",
+ "error": null,
+ "finished_at": "2026-11-12T02:09:54.935075+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": "AMZN",
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percentage_points",
+  "value": "2.03"
+ },
+ "question_id": "q_17f4f7ece158dc1c",
+ "question_sha": "8805f8419b236bd9589eab03e317cb5c1e116cd38c38d93761edfd65b9f1d216",
+ "raw_output": "Net margin for fiscal 2024 is net income divided by total revenue.\n\n**Amazon:** 59,248 / 637,959 = 9.287%.\n\n**Tesla:** I used net income attributable to common stockholders, 7,091 / 97,690 = 7.259%. Using total net income of 7,153 instead gives 7.32%, which would not change the answer.\n\n**Difference:** 9.287 \u2212 7.259 \u2248 2.03 percentage points, so Amazon is higher.\n\nAmazon had the higher net margin in fiscal 2024, by about 2.0 percentage points.\n\n{\"value\": 2.03, \"unit\": \"percentage_points\", \"choice\": \"AMZN\", \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-12T02:07:22.538489+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 10212,
+  "output_tokens": 234,
+  "web_searches": 0
+ }
+}

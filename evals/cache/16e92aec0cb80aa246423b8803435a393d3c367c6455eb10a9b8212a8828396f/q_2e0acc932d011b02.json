@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.012432",
+ "finished_at": "2026-11-12T02:05:12.699011+00:00",
+ "latency_ms": 2999,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "17817"
+ },
+ "question_id": "q_2e0acc932d011b02",
+ "question_sha": "80083906f344cc83e3c86f4aeb7c03533360d71b5cf61cd878a86765d0f52d86",
+ "raw_output": "Procter & Gamble's net cash provided by operating activities in fiscal 2025 (year ended June 30, 2025) was approximately $17.8 billion \u2014 $17,817 million as best I recall from the 10-K.\n\n{\"value\": 17817, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgxDQ9ESekjtsoKgVqS8P"
+ ],
+ "split": "test",
+ "started_at": "2026-11-12T02:05:09.706944+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "16e92aec0cb80aa246423b8803435a393d3c367c6455eb10a9b8212a8828396f",
+ "system_id": "b0-fable",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 344,
+  "output_tokens": 242,
+  "web_searches": 0
+ }
+}

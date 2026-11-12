@@ -1,0 +1,34 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.05534400",
+ "error": null,
+ "finished_at": "2026-11-12T02:14:09.075847+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": "AMZN",
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percentage_points",
+  "value": "3.9"
+ },
+ "question_id": "q_4b4d006524d9a05c",
+ "question_sha": "4c14648a95df5eb8024675ea50f790ba4e8a0ff029d5dd646f8ecd5396a14976",
+ "raw_output": "Amazon had the higher net margin in fiscal 2025, by about 3.9 percentage points.\n\n- **Amazon (fiscal year ended Dec 2025):** Net sales rose 12% to $716.9 billion, and net income for the year was $77.7 billion. That is a net margin of about 10.8% (77.7 \u00f7 716.9).\n- **Nike (fiscal year ended May 31, 2025):** I did not search for Nike's figures. I used revenue of about $46.3 billion and net income of about $3.22 billion, which I recalled from memory. That gives a net margin of about 6.95%.\n\nThe difference is 10.83% \u2212 6.95%, which is about 3.9 percentage points.\n\n{\"value\": 3.9, \"unit\": \"percentage_points\", \"choice\": \"AMZN\", \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-12T02:10:05.212451+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "462e8302c4c24e61c1d9f2beabcf105643e3d3d8111fcad472c19884276c5b61",
+ "system_id": "b1-sonnet",
+ "system_kind": "b1",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 39899,
+  "output_tokens": 1089,
+  "web_searches": 1
+ }
+}

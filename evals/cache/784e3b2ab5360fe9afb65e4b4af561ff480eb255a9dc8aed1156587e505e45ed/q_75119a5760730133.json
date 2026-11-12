@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.002042",
+ "finished_at": "2026-11-11T20:37:55.066618+00:00",
+ "latency_ms": 1825,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "4424"
+ },
+ "question_id": "q_75119a5760730133",
+ "question_sha": "a22e15671d21e78feecca488db5d6df53b3ca261a45e2eca5b8a506462359336",
+ "raw_output": "Johnson & Johnson's capital expenditures in fiscal 2023 were about $4.4 billion. This is recalled from memory rather than checked against the filing. The cash flow statement line \"Additions to property, plant and equipment\" was $4,424 million in 2023, compared with $4,078 million in 2022.\n\n{\"value\": 4424, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgwnSdtWRFMoSRiUHCu8N"
+ ],
+ "split": "test",
+ "started_at": "2026-11-11T20:37:53.246067+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 341,
+  "output_tokens": 136,
+  "web_searches": 0
+ }
+}

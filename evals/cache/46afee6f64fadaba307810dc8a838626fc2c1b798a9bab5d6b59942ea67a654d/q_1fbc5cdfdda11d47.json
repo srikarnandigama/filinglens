@@ -1,0 +1,46 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": false,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0000093410-26-000078"
+  ],
+  "gold_visible": true,
+  "missing_values": [],
+  "question_id": "q_1fbc5cdfdda11d47",
+  "text_sha256": "dea938e4e0bc6f4921f225b357c8eda5c1374677dc260cdbe40f2eaa3f9d5d72",
+  "tokens_est": 25009
+ },
+ "cost_usd": "0.044700",
+ "error": null,
+ "finished_at": "2026-11-11T21:43:32.974953+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "-11.56"
+ },
+ "question_id": "q_1fbc5cdfdda11d47",
+ "question_sha": "fd189e36cbac2c04c142c3d835f95158703965deb584a3687d39aa37bc139a31",
+ "raw_output": "Net cash provided by operating activities was $35,609 million in fiscal 2023 and $31,492 million in fiscal 2024.\n\nThe change is (31,492 \u2212 35,609) / 35,609 = \u22124,117 / 35,609 \u2248 \u221211.56%.\n\nChevron's operating cash flow fell by about 11.56% from fiscal 2023 to fiscal 2024.\n\n{\"value\": -11.56, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-11T21:41:30.293730+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 43905,
+  "output_tokens": 159,
+  "web_searches": 0
+ }
+}

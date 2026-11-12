@@ -1,0 +1,34 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.04401900",
+ "error": null,
+ "finished_at": "2026-11-12T02:14:08.993549+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "16.6"
+ },
+ "question_id": "q_c69effdd131da692",
+ "question_sha": "c93fdd0b591c99b81e8eacb614b7360d3c072109a3fe23fef2c2b15d832c3e75",
+ "raw_output": "Amazon's operating income rose about 16.6% from fiscal 2024 to fiscal 2025.\n\n- Amazon reported operating income of $80.0 billion for 2025, up from $68.6 billion the previous year.\n- The calculation is (80.0 \u2212 68.6) / 68.6 \u2248 16.6%.\n- Both figures are rounded to the nearest $0.1 billion, so the exact percentage could differ slightly.\n\n{\"value\": 16.6, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-12T02:10:05.212451+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "462e8302c4c24e61c1d9f2beabcf105643e3d3d8111fcad472c19884276c5b61",
+ "system_id": "b1-sonnet",
+ "system_kind": "b1",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 30329,
+  "output_tokens": 738,
+  "web_searches": 1
+ }
+}

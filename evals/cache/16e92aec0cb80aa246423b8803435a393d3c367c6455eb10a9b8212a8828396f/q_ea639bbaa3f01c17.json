@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.038264",
+ "finished_at": "2026-11-12T02:06:06.060612+00:00",
+ "latency_ms": 9589,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "-7.11"
+ },
+ "question_id": "q_ea639bbaa3f01c17",
+ "question_sha": "f0737c62e60ac75b637f0177d3d15c04f86582c08f3a0f586ca03312de533695",
+ "raw_output": "**Chevron's total revenue fell about 7.11% from Q1 2023 to Q4 2023**, taking \"total revenue\" to mean the company's \"Total revenues and other income\" line. These figures are from memory of the filings, not looked up here.\n\n- Q1 2023: about $50,793 million\n- Q4 2023: about $47,180 million (full-year total less the first three quarters)\n- Change: (47,180 \u2212 50,793) / 50,793 \u2248 \u22127.11%\n\nIf you instead mean \"Sales and other operating revenues\" only, the figures are about $48,842 million and $48,933 million, a change of roughly +0.19%.\n\n{\"value\": -7.11, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgxDTbDyAaFzTyKzWEM1F"
+ ],
+ "split": "test",
+ "started_at": "2026-11-12T02:05:56.471369+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "16e92aec0cb80aa246423b8803435a393d3c367c6455eb10a9b8212a8828396f",
+ "system_id": "b0-fable",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 353,
+  "output_tokens": 886,
+  "web_searches": 0
+ }
+}

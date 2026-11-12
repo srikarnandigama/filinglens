@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.01774",
+ "finished_at": "2026-11-11T20:42:45.311430+00:00",
+ "latency_ms": 7216,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "57.0"
+ },
+ "question_id": "q_bdb92b01c2693e31",
+ "question_sha": "55b497685202092d401c84758981adbd6a7c8b334b6a7c728cfcf7fe0df32afc",
+ "raw_output": "Coca-Cola's gross margin in fiscal Q4 2023 was **about 57%**. This is an estimate: I derived it from remembered figures rather than taking it from the filing, so it could be off by roughly a percentage point.\n\nI worked it out by subtracting the first three quarters from the full year:\n\n| | Net operating revenue | Cost of goods sold |\n|---|---|---|\n| Full year 2023 | \u2248 $45,754M | \u2248 $18,520M |\n| Q1\u2013Q3 2023 | \u2248 $34,905M | \u2248 $13,854M (approximate quarterly figures) |\n| **Q4 2023** | **\u2248 $10,849M** | **\u2248 $4,666M** |\n\n- Q4 gross profit \u2248 $10,849M \u2212 $4,666M \u2248 $6,183M.\n- Q4 gross margin \u2248 $6,183M \u00f7 $10,849M \u2248 57.0%.\n\n{\"value\": 57.0, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgwnodbVewYDpZsFUNPiN"
+ ],
+ "split": "test",
+ "started_at": "2026-11-11T20:42:38.097293+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "4c121dace8201ad5984fc587e44ec56860d7e1322cd752ed76724801ac0e3a27",
+ "system_id": "b0-opus",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 340,
+  "output_tokens": 819,
+  "web_searches": 0
+ }
+}

@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.008924",
+ "finished_at": "2026-11-11T20:42:54.825346+00:00",
+ "latency_ms": 4208,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "-2.56"
+ },
+ "question_id": "q_b6b89d1da9c41d5e",
+ "question_sha": "97e732ea3ce5a17514849d704867e260d197bab8c338a6771a041c862bff3c89",
+ "raw_output": "ExxonMobil's total revenue fell about **2.6%** from fiscal Q1 2023 to fiscal Q4 2023. The figures below are total revenues and other income, recalled from ExxonMobil's quarterly reports rather than checked against the filings.\n\n- Q1 2023: about $86,564 million\n- Q4 2023: about $84,344 million\n\nChange = (84,344 \u2212 86,564) / 86,564 \u2248 \u22122.56%\n\n{\"value\": -2.56, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgwnpZ7dqoPQae1x8Biuz"
+ ],
+ "split": "test",
+ "started_at": "2026-11-11T20:42:50.618561+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "4c121dace8201ad5984fc587e44ec56860d7e1322cd752ed76724801ac0e3a27",
+ "system_id": "b0-opus",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 356,
+  "output_tokens": 375,
+  "web_searches": 0
+ }
+}

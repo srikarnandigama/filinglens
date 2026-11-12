@@ -1,0 +1,47 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": false,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0000320187-26-000088",
+   "0000320187-26-000037"
+  ],
+  "gold_visible": true,
+  "missing_values": [],
+  "question_id": "q_957bc65c36c5eec4",
+  "text_sha256": "ef5969ed297a599752172600c488d70c8e74843330af8dab0a6d39e938551cbe",
+  "tokens_est": 27517
+ },
+ "cost_usd": "0.05394200",
+ "error": null,
+ "finished_at": "2026-11-12T02:09:55.003331+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "49.15"
+ },
+ "question_id": "q_957bc65c36c5eec4",
+ "question_sha": "1dba4574ce241bac373c3e0b82041ad44e4bc807f8ddc54240ce474925f7b721",
+ "raw_output": "Fiscal Q4 2026 is the year total minus the nine-month total, using the full-year 10-K and the Q3 10-Q.\n\n**Revenue**\n- Full year FY2026: 46,398\n- Nine months: 35,426\n- Q4 revenue: 46,398 \u2212 35,426 = 10,972\n\n**Gross profit**\n- Full year FY2026: 19,911\n- Nine months: 14,518\n- Q4 gross profit: 19,911 \u2212 14,518 = 5,393\n\n**Gross margin**\n- Q4 gross margin: 5,393 / 10,972 = 49.15%\n\nCheck on the division: 10,972 \u00d7 0.49 = 5,376.3, and the remainder of 16.7 / 10,972 = 0.0015. That gives 0.4915, so about 49.2%.\n\nThis is high compared with 41.0% for the first nine months and 43.5% in the prior-year period. It may reflect items not shown in the excerpts, but the arithmetic follows directly from the filings provided.\n\n**Nike's fiscal Q4 2026 gross margin was about 49.2%.**\n\n{\"value\": 49.15, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-12T02:07:22.538489+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 51962,
+  "output_tokens": 396,
+  "web_searches": 0
+ }
+}

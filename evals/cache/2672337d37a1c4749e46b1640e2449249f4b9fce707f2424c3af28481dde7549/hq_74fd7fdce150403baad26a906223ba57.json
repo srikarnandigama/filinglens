@@ -1,0 +1,108 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 0,
+  "numeric_valid": 0,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.1516450",
+ "error": {
+  "kind": "tokens",
+  "message": "Run used 207246 tokens of MAX_RUN_TOKENS=200000.",
+  "type": "BudgetExceeded"
+ },
+ "finished_at": "2026-11-11T20:49:45.376304+00:00",
+ "latency_ms": 30306,
+ "prediction": {
+  "parse_ok": false,
+  "text": ""
+ },
+ "question_id": "hq_74fd7fdce150403baad26a906223ba57",
+ "question_sha": "f1fd177c38094a9274160149ef07c9e6a33f992661a9ddd27ed7780e376de372",
+ "raw_output": null,
+ "retrieval": {
+  "first_search": {
+   "filings:s1": [
+    "chk_a95bbaa56c0d962ad7662eef4f6d5741777bd2b33dd216693e9d656b6b689e7b",
+    "chk_5aafcff01c9095095871051a8145612adaaa7fccc4542d921bebdd473a5bf5c6",
+    "chk_2e2628d4e9431c152f30b6c0a3f90ead7130b101d489964dff6dabd01658fcb1",
+    "chk_f5c52cf4492538ce8d606556c71b3253546b688b8655c2639cd427b794f6c41d",
+    "chk_a6d75a5d586cff0ee9005f8a1a08641fdfa3b8b39307ba200650e82bcae4240a",
+    "chk_9fed0e855d128c5833c1460452c0ae93d6cfe3f22611ebb88f2bf3466f8f1d7f",
+    "chk_ec4abbbe04d2172ba009284455ce493dc330bd1756a9368927d8b63f4a667d25",
+    "chk_234d7c19ba09303b5549e729b57872c9d6cfabbede443e2e585a125685374ac1"
+   ],
+   "filings:s2": [
+    "chk_c44b39db97bea866aa2cc548813bd2c35d8e1dfd31c58bf560d9add94df432bd",
+    "chk_fe515dcc7594fd524538daa1a10cd057927d41fd4e58af7c026bc52bcaf546e1",
+    "chk_717bc60f1882ae0de8fbb65a72491a4a8dce4515c06b917562bd23c5b5a87381",
+    "chk_a487b00369e8bf0b6812be339adcc40e7785e88c0417e24fffad48605b5dd2ef",
+    "chk_ac561a51b56d65cf83a5cc83b310cf843fffd46e5918a7b417d8407b744bb42d",
+    "chk_a57dfd25971c402cacddfc7062bf7fc2ea03a9693e3bb790ec450646a547b121",
+    "chk_86a8e25875785b5548f9ffdbca9593937086d1f606ba32b94057dcd5dc4696ea",
+    "chk_6c2f14b95a96c60cf1fa1890d9157da8d422444708e07d0565107fa93ca41fe6"
+   ],
+   "filings:s3": [
+    "chk_0e523044c9af7bb7e158644edc421f59f5641dc23815d8ab97b1c6054653900f"
+   ],
+   "filings:s4": [
+    "chk_b2e4f6dba81c982385c9cc10295adf299021148a89a5f782ff8ede5c3313681d",
+    "chk_394e32757be67ab66ac21fc4f240a1f5347db1382edab222848350c5c4f85901",
+    "chk_1be45f3e9db2e2c501cbbc59a0ef06438a37129faffc1cde354e286f95ff05bd",
+    "chk_383e25910dd6f9ed57f98767f0351540cc9798e19f23cc65fac40d9281dbcbfe",
+    "chk_3391004af186ec8980533b242cfeb9dee78d36bbf157d2bd701d194bd753aa3c",
+    "chk_52d4cb3fd98152204f785d444496bc00308c2bf021e6984ce368e55028152d58",
+    "chk_ff1c19ab1c49d41d2e3b63d3ebf43a184f67ac4f28b59b83203dcba035f731ac",
+    "chk_086a6637de48e14714fdeb625a08f5825b7ea75ee22706ab5515a424db6f93c2"
+   ]
+  },
+  "seen": [
+   "chk_0e523044c9af7bb7e158644edc421f59f5641dc23815d8ab97b1c6054653900f",
+   "chk_a95bbaa56c0d962ad7662eef4f6d5741777bd2b33dd216693e9d656b6b689e7b",
+   "chk_5aafcff01c9095095871051a8145612adaaa7fccc4542d921bebdd473a5bf5c6",
+   "chk_2e2628d4e9431c152f30b6c0a3f90ead7130b101d489964dff6dabd01658fcb1",
+   "chk_f5c52cf4492538ce8d606556c71b3253546b688b8655c2639cd427b794f6c41d",
+   "chk_a6d75a5d586cff0ee9005f8a1a08641fdfa3b8b39307ba200650e82bcae4240a",
+   "chk_9fed0e855d128c5833c1460452c0ae93d6cfe3f22611ebb88f2bf3466f8f1d7f",
+   "chk_ec4abbbe04d2172ba009284455ce493dc330bd1756a9368927d8b63f4a667d25",
+   "chk_234d7c19ba09303b5549e729b57872c9d6cfabbede443e2e585a125685374ac1",
+   "chk_c44b39db97bea866aa2cc548813bd2c35d8e1dfd31c58bf560d9add94df432bd",
+   "chk_fe515dcc7594fd524538daa1a10cd057927d41fd4e58af7c026bc52bcaf546e1",
+   "chk_717bc60f1882ae0de8fbb65a72491a4a8dce4515c06b917562bd23c5b5a87381",
+   "chk_a487b00369e8bf0b6812be339adcc40e7785e88c0417e24fffad48605b5dd2ef",
+   "chk_ac561a51b56d65cf83a5cc83b310cf843fffd46e5918a7b417d8407b744bb42d",
+   "chk_a57dfd25971c402cacddfc7062bf7fc2ea03a9693e3bb790ec450646a547b121",
+   "chk_86a8e25875785b5548f9ffdbca9593937086d1f606ba32b94057dcd5dc4696ea",
+   "chk_6c2f14b95a96c60cf1fa1890d9157da8d422444708e07d0565107fa93ca41fe6",
+   "chk_b2e4f6dba81c982385c9cc10295adf299021148a89a5f782ff8ede5c3313681d",
+   "chk_394e32757be67ab66ac21fc4f240a1f5347db1382edab222848350c5c4f85901",
+   "chk_1be45f3e9db2e2c501cbbc59a0ef06438a37129faffc1cde354e286f95ff05bd",
+   "chk_383e25910dd6f9ed57f98767f0351540cc9798e19f23cc65fac40d9281dbcbfe",
+   "chk_3391004af186ec8980533b242cfeb9dee78d36bbf157d2bd701d194bd753aa3c",
+   "chk_52d4cb3fd98152204f785d444496bc00308c2bf021e6984ce368e55028152d58",
+   "chk_ff1c19ab1c49d41d2e3b63d3ebf43a184f67ac4f28b59b83203dcba035f731ac",
+   "chk_086a6637de48e14714fdeb625a08f5825b7ea75ee22706ab5515a424db6f93c2",
+   "chk_e6a173622b544ae0b9a3979c3a038e0bb1c3d108f9d9d62ba2f38fad29dbca9e",
+   "chk_6d66e5d38668118c052bf244abb3dd099ad52f74b3d59af3ea8782273e4b91e5",
+   "chk_3447f0c72a8370b8672f680725c09817d78b3ead7c62e1bcc6d12712e2df2810",
+   "chk_60ae56b154502cadd8400e4d0803bde8268e4985767c7617172e812b18e6bbd6"
+  ]
+ },
+ "run_id": "238446d9-0d14-4976-9c31-6ee699fcae3d",
+ "run_status": "error",
+ "split": "handwritten",
+ "started_at": "2026-11-11T20:49:14.987561+00:00",
+ "status": "error",
+ "system_config_hash": "2672337d37a1c4749e46b1640e2449249f4b9fce707f2424c3af28481dde7549",
+ "system_id": "system",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 197188,
+  "output_tokens": 10058
+ }
+}

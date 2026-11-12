@@ -1,0 +1,32 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.008386",
+ "finished_at": "2026-11-11T20:53:23.180895+00:00",
+ "latency_ms": 7316,
+ "latency_note": null,
+ "prediction": {
+  "parse_ok": true,
+  "text": "Nike's fiscal 2025 revenues (year ended May 31, 2025) were about $46.3 billion, down roughly 10% from the prior year. As I recall from its filings, the decline had several causes:\n\n- **Weaker demand in key franchises:** Sales of long-running lifestyle franchises such as Air Force 1, Dunk, and Air Jordan 1 fell as Nike deliberately cut back supply, and new products had not yet fully replaced them.\n- **Lower Nike Direct sales:** Nike's own digital and store sales fell by double digits, and the company pulled back on some promotional activity and digital marketing.\n- **Lower wholesale sales:** Sales to retail partners also declined, though by less than Nike Direct.\n- **Greater China:** Revenue there fell notably amid a weaker consumer environment.\n- **Converse:** Converse revenue fell sharply.\n- **Currency:** Unfavorable foreign exchange added a small additional drag.\n\nManagement framed this as part of a transition to a sport-focused strategy and a reset of its product mix and channel relationships. I'm confident about the overall decline and its main drivers, but I'm less sure of the exact segment and regional figures, so check the 10-K for precise numbers."
+ },
+ "question_id": "hq_21f4a3b2e4e044129aee7a3fa547a79b",
+ "question_sha": "d6cda3ec75c214241f68191dea895d06bca66530451083cdc23dc5235f763b0a",
+ "raw_output": "Nike's fiscal 2025 revenues (year ended May 31, 2025) were about $46.3 billion, down roughly 10% from the prior year. As I recall from its filings, the decline had several causes:\n\n- **Weaker demand in key franchises:** Sales of long-running lifestyle franchises such as Air Force 1, Dunk, and Air Jordan 1 fell as Nike deliberately cut back supply, and new products had not yet fully replaced them.\n- **Lower Nike Direct sales:** Nike's own digital and store sales fell by double digits, and the company pulled back on some promotional activity and digital marketing.\n- **Lower wholesale sales:** Sales to retail partners also declined, though by less than Nike Direct.\n- **Greater China:** Revenue there fell notably amid a weaker consumer environment.\n- **Converse:** Converse revenue fell sharply.\n- **Currency:** Unfavorable foreign exchange added a small additional drag.\n\nManagement framed this as part of a transition to a sport-focused strategy and a reset of its product mix and channel relationships. I'm confident about the overall decline and its main drivers, but I'm less sure of the exact segment and regional figures, so check the 10-K for precise numbers.",
+ "request_ids": [
+  "req_011CgwoceYrEc8zMbB8Ju536"
+ ],
+ "split": "handwritten",
+ "started_at": "2026-11-11T20:53:15.863916+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 83,
+  "output_tokens": 822,
+  "web_searches": 0
+ }
+}

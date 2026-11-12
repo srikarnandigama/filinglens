@@ -1,0 +1,46 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": false,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0001045810-26-000075"
+  ],
+  "gold_visible": true,
+  "missing_values": [],
+  "question_id": "q_ebb237b5a45f0463",
+  "text_sha256": "a0ba4094d5264ed60c1a98c48d95f5b3826658dfd7263995a298b8dc5dff6b19",
+  "tokens_est": 3059
+ },
+ "cost_usd": "0.00800200",
+ "error": null,
+ "finished_at": "2026-11-11T21:43:33.020817+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "66.24"
+ },
+ "question_id": "q_ebb237b5a45f0463",
+ "question_sha": "bebe959dab48f6544a15b25a1a80a6574c27c2f177e43e50af8c85398f3eb0f0",
+ "raw_output": "Fiscal Q2 2027 is the three months ended Jul 26, 2026.\n\nOperating margin = operating income \u00f7 revenue = 63,734 \u00f7 96,221 \u2248 0.66238, or about 66.24%.\n\nCheck: 96,221 \u00d7 0.6624 = 63,735.6, which is slightly above 63,734, so the margin is just under 66.24%, at about 66.238%.\n\n**Operating margin \u2248 66.24%**\n\n{\"value\": 66.24, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-11T21:41:30.293730+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 7077,
+  "output_tokens": 185,
+  "web_searches": 0
+ }
+}

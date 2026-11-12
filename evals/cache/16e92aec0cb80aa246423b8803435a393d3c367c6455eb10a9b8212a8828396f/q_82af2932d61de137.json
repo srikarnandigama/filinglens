@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.013096",
+ "finished_at": "2026-11-12T02:05:05.423038+00:00",
+ "latency_ms": 3131,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "29.4"
+ },
+ "question_id": "q_82af2932d61de137",
+ "question_sha": "91a0cb240263d74c7bf89409c9c65ec3f5dffd0a54050f7364e1a338c5617e84",
+ "raw_output": "**Bank of America's net margin in fiscal Q2 2023 was about 29.4%.**\n\nThis is based on my recollection of the reported figures rather than a fresh lookup of the filing:\n\n- Net income: about $7,408 million\n- Total revenue, net of interest expense: about $25,197 million\n- Net margin: 7,408 / 25,197 \u2248 29.4%\n\n{\"value\": 29.4, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgxDPbdQhpprWJT1JX4QM"
+ ],
+ "split": "test",
+ "started_at": "2026-11-12T02:05:02.290317+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "16e92aec0cb80aa246423b8803435a393d3c367c6455eb10a9b8212a8828396f",
+ "system_id": "b0-fable",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 337,
+  "output_tokens": 260,
+  "web_searches": 0
+ }
+}

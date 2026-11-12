@@ -1,0 +1,49 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": false,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0000200406-26-000153",
+   "0000200406-26-000087",
+   "0000200406-26-000016",
+   "0000200406-25-000209"
+  ],
+  "gold_visible": true,
+  "missing_values": [],
+  "question_id": "q_85478121730db4dd",
+  "text_sha256": "535b21f8c7565eb090061b9dc51096de562c4d53fb18d30653fb19cdea50076c",
+  "tokens_est": 10320
+ },
+ "cost_usd": "0.02290800",
+ "error": null,
+ "finished_at": "2026-11-11T21:43:32.917296+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "6701"
+ },
+ "question_id": "q_85478121730db4dd",
+ "question_sha": "edc7240df76832d3fa9ecdd19b0e46522dbbf1a40519f148fd2be0e1c34e7a3c",
+ "raw_output": "Fiscal 2025 net earnings were $26,804 million, as reported in the annual statement of earnings. Dividing by four quarters gives the average quarterly net income.\n\n26,804 / 4 = 6,701\n\nAs a check, the quarterly figures are consistent with the annual total:\n- Q1 2025: $10,999 million\n- Q2 2025: $5,537 million\n- Q3 2025: $5,152 million\n- Q4 2025 (derived): 26,804 \u2212 21,688 = $5,116 million\n\nThese sum to $26,804 million, so the average is about $6,701 million per quarter.\n\n{\"value\": 6701, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-11T21:41:30.293730+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 21758,
+  "output_tokens": 230,
+  "web_searches": 0
+ }
+}

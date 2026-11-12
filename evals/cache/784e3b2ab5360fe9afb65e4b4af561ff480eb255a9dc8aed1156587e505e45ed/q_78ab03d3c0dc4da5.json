@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.05963",
+ "finished_at": "2026-11-11T20:41:03.858843+00:00",
+ "latency_ms": 45224,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "-45"
+ },
+ "question_id": "q_78ab03d3c0dc4da5",
+ "question_sha": "271bb27dcb11d3699e0a62e05724d88c78a0783549715e9a7a52e05ff2af2791",
+ "raw_output": "Coca-Cola's operating income fell by roughly 45% from Q1 2024 to Q4 2024. This is a best estimate from memory, not a figure I could confirm against the filings.\n\n- Q1 2024 operating income: about $5.4 billion (recalled, not confirmed)\n- Q4 2024 operating income: about $2.9 billion (recalled, not confirmed)\n\nChange: (2.9 \u2212 5.4) / 5.4 \u2248 \u221246%, which I round to about \u221245% given the uncertainty in both inputs.\n\n{\"value\": -45, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgwndMMexYXHbCDyr1A8A"
+ ],
+ "split": "test",
+ "started_at": "2026-11-11T20:40:18.645857+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 355,
+  "output_tokens": 5892,
+  "web_searches": 0
+ }
+}

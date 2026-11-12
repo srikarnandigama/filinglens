@@ -1,0 +1,46 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": false,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0000070858-26-000394"
+  ],
+  "gold_visible": true,
+  "missing_values": [],
+  "question_id": "q_137bbc2bd00f4398",
+  "text_sha256": "b72209c5359076968f7f005d99d2029614998e10ad526f9292680d8c52f729bc",
+  "tokens_est": 25009
+ },
+ "cost_usd": "0.04629200",
+ "error": null,
+ "finished_at": "2026-11-12T02:09:54.931194+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "3411738"
+ },
+ "question_id": "q_137bbc2bd00f4398",
+ "question_sha": "6afaf67e1a0d2108267cffdc0f54bc27efb1155b86a25325ccf3d176b438f0f7",
+ "raw_output": "Bank of America's balance sheet in the excerpt shows total assets of $3,411,738 million at December 31, 2025, which is the end of fiscal Q4 2025. That is about $3.41 trillion.\n\n{\"value\": 3411738, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-12T02:07:22.538489+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 45772,
+  "output_tokens": 104,
+  "web_searches": 0
+ }
+}

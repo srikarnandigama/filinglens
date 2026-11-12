@@ -587,23 +587,61 @@ def test_replay_deps_hit_the_live_runs_cache_without_clients(draft, tmp_path, mo
 
 
 def test_test_run_caps_fit_the_ceiling_and_cover_their_reservations():
+    import tomllib
     from pathlib import Path
 
     from evals.judge import JUDGE_SPEND_CAP_USD
 
-    configs = [
-        r.load_config(p)
+    paths = [
+        p
         for p in sorted(Path(r.ROOT / "evals" / "configs").glob("*.toml"))
         if p.stem != "m5_dev_pilot"
     ]
-    total = sum((c.spend_cap_usd for c in configs), JUDGE_SPEND_CAP_USD)
-    assert total <= Decimal("60.00")  # D105 test-run ceiling
-    sizes = {"subset_180": 180, "sample_100": 100}
-    for c in configs:
+    budget = {p.stem: tomllib.loads(p.read_text(encoding="utf-8")).get("budget") for p in paths}
+    configs = {p.stem: r.load_config(p) for p in paths}
+    d105 = [c for k, c in configs.items() if budget[k] is None]
+    d109 = [c for k, c in configs.items() if budget[k] == "d109"]
+    assert sum(c.spend_cap_usd for c in d105) <= Decimal("60.00")  # D105 test-run ceiling
+    # D109: everything after the first test steps, judges included, within $30
+    assert sum((c.spend_cap_usd for c in d109), JUDGE_SPEND_CAP_USD) <= Decimal("30.00")
+    sample = {q["id"] for q in r.load_frozen() if q["sample_100"]}
+    covers = {"sample_100": sample, "subset_180": r.subset_ids()}
+
+    def coverage(c):
+        return set(c.ids) if c.ids else covers[c.sample]
+
+    for c in configs.values():
         batch = [s for s in c.systems if s.batch]
         if batch:  # all reserved up front: every question must fit, or the tail is skipped
-            n = sizes[c.sample]
-            assert sum(s.reserve() * n for s in batch) <= c.spend_cap_usd, c.name
+
+            def submitted(s, c=c):  # answers cached by a smaller config of the same system
+                prior = set().union(
+                    *(
+                        coverage(o)
+                        for o in configs.values()
+                        if o is not c
+                        and s.id in {x.id for x in o.systems}
+                        and coverage(o) < coverage(c)
+                    )
+                )
+                return len(coverage(c) - prior)
+
+            assert sum(s.reserve() * submitted(s) for s in batch) <= c.spend_cap_usd, c.name
+        if c.ids:
+            assert set(c.ids) <= sample, c.name  # the B1 pilot is drawn from the paired sample
         realtime = [s for s in c.systems if not s.batch]
         if realtime:
             assert c.spend_cap_usd > max(s.reserve() for s in realtime) * c.concurrency, c.name
+
+
+def test_b1_pilot_and_full_run_share_one_cache_key():
+    from pathlib import Path
+
+    folder = Path(r.ROOT / "evals" / "configs")
+    pilot = r.load_config(folder / "m5_test_b1_pilot.toml")
+    full = r.load_config(folder / "m5_test_b1_subset.toml")
+    d = r.Deps(models={"BASELINE_MODELS[0]": "m"})
+    keys = {
+        r.config_hash(r.system_settings(c.systems[0], d, c)) for c in (pilot, full)
+    }  # so the 15 pilot answers are served from the cache, never re-submitted
+    assert len(keys) == 1 and len(pilot.ids) == 15

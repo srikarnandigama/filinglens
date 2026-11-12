@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.015648",
+ "finished_at": "2026-11-11T20:43:36.574891+00:00",
+ "latency_ms": 6602,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "20.3"
+ },
+ "question_id": "q_97ad13ef38ef7938",
+ "question_sha": "da110aee4fc8569a0bb0a67d8f66ccb02a3255b2eb136912d402f806d4dcb08b",
+ "raw_output": "Microsoft's operating income likely grew about **20%** from fiscal 2025 to fiscal 2026, to roughly $155B. This is an estimate: I don't have the fiscal 2026 10-K (year ended June 30, 2026). The figure combines two reported quarters with my projection of the last two.\n\n**Fiscal 2025 (reported):** operating income was about $128.5B.\n\n**Fiscal 2026:**\n\n| Quarter | Operating income | Basis |\n|---|---|---|\n| Q1 (Sep 2025) | about $38.0B | reported, up about 24% year over year |\n| Q2 (Dec 2025) | about $38.3B | as I recall it |\n| Q3 | about $37.8B | my estimate, assuming roughly 18% year-over-year growth |\n| Q4 | about $40.5B | my estimate, assuming roughly 18% year-over-year growth |\n| **Total** | **about $154.6B** | |\n\n**Change:** ($154.6B \u2212 $128.5B) / $128.5B \u2248 20.3%.\n\n{\"value\": 20.3, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgwnsTPBdmq8x1vrpYUiN"
+ ],
+ "split": "test",
+ "started_at": "2026-11-11T20:43:29.978327+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "4c121dace8201ad5984fc587e44ec56860d7e1322cd752ed76724801ac0e3a27",
+ "system_id": "b0-opus",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 347,
+  "output_tokens": 713,
+  "web_searches": 0
+ }
+}

@@ -1,0 +1,49 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": false,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0001628280-26-003942",
+   "0001744489-25-000155"
+  ],
+  "gold_visible": false,
+  "missing_values": [
+   "12863000000"
+  ],
+  "question_id": "q_1cc61b1b0ae2696e",
+  "text_sha256": "a1d065c7b7543f8446f170ab5229cf5852d1ae21ede6f33eebc8881cee3cae01",
+  "tokens_est": 17653
+ },
+ "cost_usd": "0.03245300",
+ "error": null,
+ "finished_at": "2026-11-12T02:09:54.923652+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": "META",
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percentage_points",
+  "value": "28.9"
+ },
+ "question_id": "q_1cc61b1b0ae2696e",
+ "question_sha": "7e1d51f6d551616fc53ca17b2d9dd3dc3291b5483f299f8f70471963ec4ef971",
+ "raw_output": "**Meta had the higher fiscal 2023 operating margin, by about 28.9 percentage points.**\n\n- **Meta:** Income from operations was $46,751M on revenue of $134,902M, a margin of about 34.66%.\n- **Disney:** The income statement has no operating income line, so I derived one. I took total revenues of $88,898M, subtracted total costs and expenses of $79,906M, and then subtracted restructuring and impairment charges of $3,892M. That gives about $5,100M, or a margin of about 5.74%.\n\nThe gap is 34.66% \u2212 5.74% \u2248 28.9 points. If restructuring and impairment charges were excluded from Disney's costs, its margin would be about 10.1% and the gap about 24.5 points. Meta would still be higher.\n\n{\"value\": 28.9, \"unit\": \"percentage_points\", \"choice\": \"META\", \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-12T02:07:22.538489+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 29213,
+  "output_tokens": 648,
+  "web_searches": 0
+ }
+}

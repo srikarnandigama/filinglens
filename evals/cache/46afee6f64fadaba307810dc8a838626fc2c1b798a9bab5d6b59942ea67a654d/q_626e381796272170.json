@@ -1,0 +1,49 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": false,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0000320193-25-000079",
+   "0000320193-25-000073",
+   "0000320193-25-000057",
+   "0000320193-25-000008"
+  ],
+  "gold_visible": true,
+  "missing_values": [],
+  "question_id": "q_626e381796272170",
+  "text_sha256": "2b091314149d0b0593252ec6843e2ce7fc9b7da7c00921d9a99723c681d38e90",
+  "tokens_est": 9893
+ },
+ "cost_usd": "0.02216900",
+ "error": null,
+ "finished_at": "2026-11-12T02:09:54.977377+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "29563.5"
+ },
+ "question_id": "q_626e381796272170",
+ "question_sha": "998cc72c25bada229fe0b2a5f8a73f919e76a792dd2066748d15e571edd0103e",
+ "raw_output": "Apple's fiscal 2024 operating cash flow was $118,254 million, as shown in the FY2025 10-K's comparative column.\n\nAveraging over four quarters: 118,254 / 4 = 29,563.5 million.\n\n**Average quarterly net cash provided by operating activities for fiscal 2024: about $29.56 billion ($29,563.5 million).**\n\n{\"value\": 29563.5, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-12T02:07:22.538489+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 21379,
+  "output_tokens": 158,
+  "web_searches": 0
+ }
+}

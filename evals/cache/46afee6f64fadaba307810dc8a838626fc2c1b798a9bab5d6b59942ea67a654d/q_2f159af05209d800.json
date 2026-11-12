@@ -1,0 +1,47 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": false,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0000070858-26-000157",
+   "0001628280-26-008131"
+  ],
+  "gold_visible": true,
+  "missing_values": [],
+  "question_id": "q_2f159af05209d800",
+  "text_sha256": "b92361be93b9feef074e438fa6faf3997cec4c26a2acc4f553febb44147bca5f",
+  "tokens_est": 50019
+ },
+ "cost_usd": "0.08429300",
+ "error": null,
+ "finished_at": "2026-11-12T02:09:54.956516+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": "JPM",
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percentage_points",
+  "value": "5.74"
+ },
+ "question_id": "q_2f159af05209d800",
+ "question_sha": "7410ba4faa5ef68a973ff7c1a975ceac69748605cd97b2f24494fd68647c9c9c",
+ "raw_output": "Net margin = net income / total revenue (reported net revenue for JPMorgan; total revenue, net of interest expense for BofA).\n\n**JPMorgan Chase, 2023:** net income $49,552M \u00f7 total net revenue $158,104M = 31.34%\n\n**Bank of America, 2023:** net income $26,305M \u00f7 total revenue, net of interest expense $102,769M = 25.60%\n\n**Difference:** 31.34% \u2212 25.60% = 5.74 percentage points\n\nJPMorgan Chase had the higher net margin in fiscal 2023, by about 5.7 percentage points.\n\n{\"value\": 5.74, \"unit\": \"percentage_points\", \"choice\": \"JPM\", \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-12T02:07:22.538489+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 83098,
+  "output_tokens": 239,
+  "web_searches": 0
+ }
+}

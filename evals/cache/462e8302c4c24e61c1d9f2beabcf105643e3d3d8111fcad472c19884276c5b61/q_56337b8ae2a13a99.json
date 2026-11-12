@@ -1,0 +1,34 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.06685600",
+ "error": null,
+ "finished_at": "2026-11-12T02:14:09.047044+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": "KO",
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percentage_points",
+  "value": "24.4"
+ },
+ "question_id": "q_56337b8ae2a13a99",
+ "question_sha": "b8638bfa9d36e8c2e9c8b0f70719918081a45fe8f1f6dad4f9fc92510255435b",
+ "raw_output": "Coca-Cola had the higher operating margin in fiscal 2025, by about 24.4 percentage points.\n\n- **Coca-Cola (fiscal 2025, year ended Dec 31, 2025):** The company's earnings release says operating margin was 28.7% for the full year.\n- **Walmart (fiscal 2025, year ended Jan 31, 2025):** I took operating income of about $29.35 billion and revenue of about $681.0 billion from memory, not from a search. That gives a margin of about 4.31%.\n\nThe gap is 28.7% \u2212 4.31% \u2248 24.4 percentage points.\n\n{\"value\": 24.4, \"unit\": \"percentage_points\", \"choice\": \"KO\", \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-12T02:10:05.212451+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "462e8302c4c24e61c1d9f2beabcf105643e3d3d8111fcad472c19884276c5b61",
+ "system_id": "b1-sonnet",
+ "system_kind": "b1",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 31206,
+  "output_tokens": 1130,
+  "web_searches": 3
+ }
+}

@@ -1,0 +1,187 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 4,
+  "numeric_valid": 4,
+  "text_pending_judge": [],
+  "text_string_supported": 2,
+  "text_total": 2,
+  "uncited": 0
+ },
+ "cost_usd": "0.3240343",
+ "error": null,
+ "finished_at": "2026-11-11T20:48:37.526832+00:00",
+ "latency_ms": 81530,
+ "prediction": {
+  "parse_ok": true,
+  "text": "Nike's fiscal 2025 revenue fell about 9.8%, from $51.36 billion to $46.31 billion, a drop of about $5.05 billion. Management said that on a currency-neutral basis the decrease was primarily due to lower revenues in North America, EMEA and Greater China. It also pointed to its own actions: reducing the supply of certain footwear products, repositioning NIKE Brand Digital as a full-price platform, and liquidating inventory through markdowns, returns and discounts.\nNike's fiscal 2025 revenue was $46.31 billion.\nFiscal 2024 revenue was $51.36 billion.\nRevenue fell about 9.8% year over year, confirming the decline.\nThe revenue decline was about $5.05 billion.\nNike reported that revenues decreased 10% on a reported basis and 9% on a currency-neutral basis. On a currency-neutral basis, it said the decrease was primarily due to lower revenues in North America, EMEA and Greater China. These regions reduced NIKE, Inc. Revenues by 4, 3 and 2 percentage points, respectively.\nNike described management actions that reduced revenue. Under Product Management, it is reducing the supply of certain footwear products in the marketplace as it shifts to new products and rebalances its footwear mix. Under Marketplace Management, it is repositioning NIKE Brand Digital as a full-price platform and reinvesting in wholesale distribution. This includes liquidating inventory through increased markdowns across NIKE Direct, and higher sales returns and discounts with wholesale partners. Nike stated that these actions have had, and could in the future have, a negative impact on Revenues and gross margin, along with higher Demand creation expense."
+ },
+ "question_id": "hq_21f4a3b2e4e044129aee7a3fa547a79b",
+ "question_sha": "d6cda3ec75c214241f68191dea895d06bca66530451083cdc23dc5235f763b0a",
+ "raw_output": {
+  "caveats": [
+   "The retrieved passage on management actions starts mid-sentence, and the preceding text on external factors was not retrieved. Only the actions and the regional drivers are quoted.",
+   "Segment-level channel and unit detail was not used because the retrieved passage does not clearly identify which segment it covers.",
+   "The filing excerpts do not state one single cause for the decline beyond the regional and management-action drivers cited."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3732"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Nike's fiscal 2025 revenue was $46.31 billion.",
+    "ticker": "NKE",
+    "unit": "USD",
+    "value": "46309000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3727"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "Fiscal 2024 revenue was $51.36 billion.",
+    "ticker": "NKE",
+    "unit": "USD",
+    "value": "51362000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_1"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Revenue fell about 9.8% year over year, confirming the decline.",
+    "ticker": "NKE",
+    "unit": "percent",
+    "value": "-9.838012538453",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value",
+      "kind": "computation",
+      "ref": "cmp_2"
+     }
+    ],
+    "id": "c4",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "The revenue decline was about $5.05 billion.",
+    "ticker": "NKE",
+    "unit": "USD",
+    "value": "-5053000000",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_128e864cd37a84838f19edff4d6d32175e80a6b1c8b3ce6989d889a3e038c450"
+     }
+    ],
+    "id": "c5",
+    "kind": "textual",
+    "period": null,
+    "text": "Nike reported that revenues decreased 10% on a reported basis and 9% on a currency-neutral basis. On a currency-neutral basis, it said the decrease was primarily due to lower revenues in North America, EMEA and Greater China. These regions reduced NIKE, Inc. Revenues by 4, 3 and 2 percentage points, respectively.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_2639f4e8c634e8ab9174d66dad420202825750c4cd91a4cabbac6a8406da1758"
+     }
+    ],
+    "id": "c6",
+    "kind": "textual",
+    "period": null,
+    "text": "Nike described management actions that reduced revenue. Under Product Management, it is reducing the supply of certain footwear products in the marketplace as it shifts to new products and rebalances its footwear mix. Under Marketplace Management, it is repositioning NIKE Brand Digital as a full-price platform and reinvesting in wholesale distribution. This includes liquidating inventory through increased markdowns across NIKE Direct, and higher sales returns and discounts with wholesale partners. Nike stated that these actions have had, and could in the future have, a negative impact on Revenues and gross margin, along with higher Demand creation expense.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   }
+  ],
+  "final_claim_id": "c3",
+  "final_unit": "percent",
+  "final_value": "-9.838012538453",
+  "status": "answered",
+  "summary": "Nike's fiscal 2025 revenue fell about 9.8%, from $51.36 billion to $46.31 billion, a drop of about $5.05 billion. Management said that on a currency-neutral basis the decrease was primarily due to lower revenues in North America, EMEA and Greater China. It also pointed to its own actions: reducing the supply of certain footwear products, repositioning NIKE Brand Digital as a full-price platform, and liquidating inventory through markdowns, returns and discounts."
+ },
+ "retrieval": {
+  "first_search": {
+   "filings:s4": [
+    "chk_ced4d0cb02f5d17ad6d07e596de2a2727104ca6cbf58e3c9409942e085930f8c",
+    "chk_6f2cc8fbf7da80065f5f821f50f7bc038fa3c058741be415439fd41c1ddc8435",
+    "chk_cc19432ad0a25c7e6d7056d8396dcf02545cd1c0a170af8b2a28c43863441537",
+    "chk_34551a69ea39ff170d4290975de3b86ac8a1b9c850a881155b90258b1e019398",
+    "chk_96ecc255a474f71a105d222833e92c2a6c63dc96b12bfff9dd08800315d10f05",
+    "chk_2639f4e8c634e8ab9174d66dad420202825750c4cd91a4cabbac6a8406da1758",
+    "chk_8315bf03629bfae26f61a8b7c6ec6974cea065701c08b7297bb7253ed52270b1",
+    "chk_128e864cd37a84838f19edff4d6d32175e80a6b1c8b3ce6989d889a3e038c450"
+   ]
+  },
+  "seen": [
+   "chk_ced4d0cb02f5d17ad6d07e596de2a2727104ca6cbf58e3c9409942e085930f8c",
+   "chk_6f2cc8fbf7da80065f5f821f50f7bc038fa3c058741be415439fd41c1ddc8435",
+   "chk_cc19432ad0a25c7e6d7056d8396dcf02545cd1c0a170af8b2a28c43863441537",
+   "chk_34551a69ea39ff170d4290975de3b86ac8a1b9c850a881155b90258b1e019398",
+   "chk_96ecc255a474f71a105d222833e92c2a6c63dc96b12bfff9dd08800315d10f05",
+   "chk_2639f4e8c634e8ab9174d66dad420202825750c4cd91a4cabbac6a8406da1758",
+   "chk_8315bf03629bfae26f61a8b7c6ec6974cea065701c08b7297bb7253ed52270b1",
+   "chk_128e864cd37a84838f19edff4d6d32175e80a6b1c8b3ce6989d889a3e038c450"
+  ]
+ },
+ "run_id": "882ea70e-480b-4059-853f-489e04f23f9c",
+ "run_status": "done",
+ "split": "handwritten",
+ "started_at": "2026-11-11T20:47:15.903694+00:00",
+ "status": "done",
+ "system_config_hash": "2672337d37a1c4749e46b1640e2449249f4b9fce707f2424c3af28481dde7549",
+ "system_id": "system",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 143999,
+  "output_tokens": 10942
+ }
+}

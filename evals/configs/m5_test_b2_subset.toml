@@ -1,0 +1,17 @@
+# M5 test run addition (D109): B2 (Sonnet 5.5, Batch API) extended to the 180-question subset. The
+# sample's 100 answers come from the cache, so this submits the other 80. Expected $2.16 (their
+# contexts at the measured 1.91 real/estimated token ratio, $0.0270/q); $0.035/q reserved.
+name = "m5-test-b2-subset"
+split = "test"
+sample = "subset_180"
+seed = 20261109
+budget = "d109"
+spend_cap_usd = "2.80"
+
+[[systems]]
+id = "b2-sonnet"
+kind = "b2"
+model_env = "BASELINE_MODELS"
+model_index = 0
+batch = true
+reserve_usd = "0.035"

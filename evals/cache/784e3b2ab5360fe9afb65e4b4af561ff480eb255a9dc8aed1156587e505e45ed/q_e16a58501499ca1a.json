@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.009104",
+ "finished_at": "2026-11-11T20:41:14.558072+00:00",
+ "latency_ms": 6872,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "69.0"
+ },
+ "question_id": "q_e16a58501499ca1a",
+ "question_sha": "a0b4c352c87f974568290d40bd3d3514d0144796411c6970ebefed9b6de2756e",
+ "raw_output": "I'm giving an estimate of about 69% for Johnson & Johnson's fiscal Q2 2023 gross margin, based on figures recalled from memory rather than checked against the filing.\n\n- Sales to customers were about $25.5 billion.\n- Cost of products sold was about $7.9 billion.\n- Gross profit was therefore about $17.6 billion, which is roughly 69% of sales.\n\nThe cost of products sold figure is the least certain of these, so the margin could be off by a few tenths of a point.\n\n{\"value\": 69.0, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011Cgwngy3aVdRV267AGwB3y"
+ ],
+ "split": "test",
+ "started_at": "2026-11-11T20:41:07.674985+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 342,
+  "output_tokens": 842,
+  "web_searches": 0
+ }
+}

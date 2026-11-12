@@ -1,0 +1,46 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": false,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0000320193-26-000020"
+  ],
+  "gold_visible": true,
+  "missing_values": [],
+  "question_id": "q_7bb910132c302e36",
+  "text_sha256": "835b320edaa623fc173d631162e3b2112a4b748113ba0250442d1d7434a2c4b7",
+  "tokens_est": 2641
+ },
+ "cost_usd": "0.00702900",
+ "error": null,
+ "finished_at": "2026-11-11T21:43:33.020817+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "43718"
+ },
+ "question_id": "q_7bb910132c302e36",
+ "question_sha": "9b8d190bc8e29a7173f7a5c307e6d60ed5cd49a7008911548ea10a96a3e60807",
+ "raw_output": "Apple's gross margin for the three months ended June 28, 2025 (fiscal Q3 2025) was $43,718 million, taken from the comparative column of the Q3 2026 10-Q.\n\nQuestion wording could mean either gross profit in dollars or gross margin as a percentage. I read it as the dollar line item, since Apple labels gross profit \"Gross margin\" on its income statement. As a percentage of net sales it would be 43,718 / 94,036 \u2248 46.5%.\n\n{\"value\": 43718, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-11T21:41:30.293730+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 6059,
+  "output_tokens": 194,
+  "web_searches": 0
+ }
+}

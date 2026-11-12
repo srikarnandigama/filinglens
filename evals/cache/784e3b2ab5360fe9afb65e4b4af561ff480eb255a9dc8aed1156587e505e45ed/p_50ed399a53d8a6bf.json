@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.00205",
+ "finished_at": "2026-11-11T20:46:34.674866+00:00",
+ "latency_ms": 1519,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "not_applicable",
+  "unit": "percent",
+  "value": null
+ },
+ "question_id": "p_50ed399a53d8a6bf",
+ "question_sha": "8a0f240e426faa5faab75f5f60ee1ae36b049732ff7420c4dbb5c49b5d9052b6",
+ "raw_output": "Gross margin is not a meaningful metric for Bank of America. As a bank holding company, it reports net interest income, noninterest income, and provision for credit losses rather than revenue less cost of goods sold, so there is no gross profit line to calculate it from.\n\nThe value does not exist for this company, so the answer is not_applicable.\n\n{\"value\": null, \"unit\": \"percent\", \"choice\": null, \"status\": \"not_applicable\"}",
+ "request_ids": [
+  "req_011Cgwo6xcChU7w4nwwM6xX1"
+ ],
+ "split": "probe",
+ "started_at": "2026-11-11T20:46:33.156472+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 335,
+  "output_tokens": 138,
+  "web_searches": 0
+ }
+}

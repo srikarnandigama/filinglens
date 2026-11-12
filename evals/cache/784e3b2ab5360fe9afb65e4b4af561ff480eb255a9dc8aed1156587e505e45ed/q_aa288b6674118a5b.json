@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.008724",
+ "finished_at": "2026-11-11T20:40:18.260745+00:00",
+ "latency_ms": 5733,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "26.1"
+ },
+ "question_id": "q_aa288b6674118a5b",
+ "question_sha": "2c81f78bb68ba4f8c1318769e809e9cd1e1d0374fa6139e7e80fd7df129bb051",
+ "raw_output": "ExxonMobil's net cash provided by operating activities rose about **26%** from fiscal Q1 2024 to fiscal Q4 2024. I am working from memory of the reported figures, so the quarterly amounts are approximate.\n\n- Q1 2024: about $11.4 billion\n- Q4 2024: about $14.3 billion\n\nChange: 14.34 / 11.375 \u2212 1 \u2248 +26.1%\n\nAs a check, my recalled Q1\u2013Q4 amounts (about 11.4, 14.7, 14.8 and 14.3 billion) sum to roughly $55.2 billion, close to the full-year 2024 figure of about $55.4 billion I recall.\n\n{\"value\": 26.1, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgwncuFGmGk7aoyFkwi2V"
+ ],
+ "split": "test",
+ "started_at": "2026-11-11T20:40:12.532127+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 362,
+  "output_tokens": 800,
+  "web_searches": 0
+ }
+}

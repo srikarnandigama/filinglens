@@ -1,0 +1,151 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 0,
+  "numeric_valid": 0,
+  "text_pending_judge": [],
+  "text_string_supported": 3,
+  "text_total": 3,
+  "uncited": 0
+ },
+ "cost_usd": "0.1235282",
+ "error": null,
+ "finished_at": "2026-11-11T20:51:40.513007+00:00",
+ "latency_ms": 35092,
+ "prediction": {
+  "parse_ok": true,
+  "text": "The filings don't use the name \"Cost Realignment Program\". The closest match is the \"Realigning Our Cost Base Program\", which I've treated as the same program. In the FY2025 10-K, Pfizer expected total net cost savings of approximately $5.7 billion through 2026. The Q2 2026 10-Q raises that to approximately $6.7 billion through 2029, after $1.0 billion of additional anticipated savings. The additional savings carry about $2.0 billion of one-time costs.\nIn its FY2025 10-K, Pfizer said the Realigning Our Cost Base Program was expected to deliver total net cost savings of approximately $5.7 billion through 2026. Of that, $5.1 billion had been achieved through 2025. The remaining $600 million, primarily in SI&A, was expected by the end of 2026.\nIn its Q2 2026 10-Q, Pfizer said it announced $1.0 billion of additional anticipated net cost savings for the program. It said it now expects total net cost savings of approximately $6.7 billion through 2029, compared with the previously announced approximately $5.7 billion through 2026.\nPfizer said the additional net savings are expected to further reduce SI&A costs and be realized from 2027 through 2029. It expects one-time costs to achieve them, incurred through 2029, to total approximately $2.0 billion."
+ },
+ "question_id": "hq_bbeba329b2724abcbbff1ea7869b3907",
+ "question_sha": "727c6425e43c2960ae9a06281fcfcb7b668d33c63fef2334b0e80154a4e96e7d",
+ "raw_output": {
+  "caveats": [
+   "The exact name \"Cost Realignment Program\" does not appear in the retrieved passages. I inferred that the \"Realigning Our Cost Base Program\" is the program meant, and that match is not confirmed.",
+   "The Q2 2026 10-Q passage says the additional savings were announced \"in the third quarter of 2026\", which is later than the 10-Q's period end of 2026-06-28. This timing should be checked against the filing.",
+   "Note 3A, which holds program details and anticipated and actual costs, was not searched."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_56894a34e520fc784e89a6e6131513b8ffc2280025a5f277a6357d29771e0d89"
+     }
+    ],
+    "id": "c1",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "In its FY2025 10-K, Pfizer said the Realigning Our Cost Base Program was expected to deliver total net cost savings of approximately $5.7 billion through 2026. Of that, $5.1 billion had been achieved through 2025. The remaining $600 million, primarily in SI&A, was expected by the end of 2026.",
+    "ticker": "PFE",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_5611849035a21ed15918a3b572651334f5bd7a24da2ab3b91a5920b0ecb9c1c8"
+     }
+    ],
+    "id": "c2",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "Q2",
+     "fiscal_year": 2026
+    },
+    "text": "In its Q2 2026 10-Q, Pfizer said it announced $1.0 billion of additional anticipated net cost savings for the program. It said it now expects total net cost savings of approximately $6.7 billion through 2029, compared with the previously announced approximately $5.7 billion through 2026.",
+    "ticker": "PFE",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_7d16552a0ab10ec43a9a007b8ceb1de5a0c7738004e5de00d82c691eab36d239"
+     }
+    ],
+    "id": "c3",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "Q2",
+     "fiscal_year": 2026
+    },
+    "text": "Pfizer said the additional net savings are expected to further reduce SI&A costs and be realized from 2027 through 2029. It expects one-time costs to achieve them, incurred through 2029, to total approximately $2.0 billion.",
+    "ticker": "PFE",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   }
+  ],
+  "final_claim_id": null,
+  "final_unit": null,
+  "final_value": null,
+  "status": "answered",
+  "summary": "The filings don't use the name \"Cost Realignment Program\". The closest match is the \"Realigning Our Cost Base Program\", which I've treated as the same program. In the FY2025 10-K, Pfizer expected total net cost savings of approximately $5.7 billion through 2026. The Q2 2026 10-Q raises that to approximately $6.7 billion through 2029, after $1.0 billion of additional anticipated savings. The additional savings carry about $2.0 billion of one-time costs."
+ },
+ "retrieval": {
+  "first_search": {
+   "filings:s1": [
+    "chk_56894a34e520fc784e89a6e6131513b8ffc2280025a5f277a6357d29771e0d89",
+    "chk_1de81c1349504ac7b98a5129bc23aeb611616b76b08e342000a19c46d67d9b9c",
+    "chk_484fff844bbfdbbe057e71828bfd5288058b4e0e362f4feefc5b06157cca3d85",
+    "chk_3fcf0b2ad996fdbbfb34e4a75c3d1776dc2ab76d5ae24de4555f0a52a79fe6b9",
+    "chk_be67adf88aa6ae1779d3d4effda5fd7891b272af4d2f98dc2cd8ec2863de9262",
+    "chk_798942ea8f97546322423e81427f22297d742cbd1d6a3969de7d113f0396e1af",
+    "chk_bb487d9ae7f8d9d3dffbea5dc1ff59d0a03379e595483724d325f65baec92df1",
+    "chk_51c2290c9af3be111f24ca3a7e972977d816b4eae44555d27212978275814117"
+   ],
+   "filings:s2": [
+    "chk_5611849035a21ed15918a3b572651334f5bd7a24da2ab3b91a5920b0ecb9c1c8",
+    "chk_7d16552a0ab10ec43a9a007b8ceb1de5a0c7738004e5de00d82c691eab36d239",
+    "chk_1933b240593ba27330e662a2f1ffd65db0ea820c5c3c9b18342c3011ae365c1d",
+    "chk_e4bd0f5b43752f2d270b22fc66f3079939d056eaa28f1cc8ce040f78b03c1050",
+    "chk_cb39d6700d06ede05200e381bdb154452bb82d9a56b54a67ad5fc2732f7a50cd",
+    "chk_fc6225cee3018a0e40238820433cd2a37b4bf937934e2e6cbf0555481f61fa44",
+    "chk_7f963ffd5e1984948ae9613fd0ae93547a7ead9a2f97fe91fd7050d71713262b",
+    "chk_7d9bbf8d5d4d94fd74b12792b5d8e4e13d355e12b617c266010ad1c7324f668e"
+   ]
+  },
+  "seen": [
+   "chk_5611849035a21ed15918a3b572651334f5bd7a24da2ab3b91a5920b0ecb9c1c8",
+   "chk_7d16552a0ab10ec43a9a007b8ceb1de5a0c7738004e5de00d82c691eab36d239",
+   "chk_1933b240593ba27330e662a2f1ffd65db0ea820c5c3c9b18342c3011ae365c1d",
+   "chk_e4bd0f5b43752f2d270b22fc66f3079939d056eaa28f1cc8ce040f78b03c1050",
+   "chk_cb39d6700d06ede05200e381bdb154452bb82d9a56b54a67ad5fc2732f7a50cd",
+   "chk_fc6225cee3018a0e40238820433cd2a37b4bf937934e2e6cbf0555481f61fa44",
+   "chk_7f963ffd5e1984948ae9613fd0ae93547a7ead9a2f97fe91fd7050d71713262b",
+   "chk_7d9bbf8d5d4d94fd74b12792b5d8e4e13d355e12b617c266010ad1c7324f668e",
+   "chk_56894a34e520fc784e89a6e6131513b8ffc2280025a5f277a6357d29771e0d89",
+   "chk_1de81c1349504ac7b98a5129bc23aeb611616b76b08e342000a19c46d67d9b9c",
+   "chk_484fff844bbfdbbe057e71828bfd5288058b4e0e362f4feefc5b06157cca3d85",
+   "chk_3fcf0b2ad996fdbbfb34e4a75c3d1776dc2ab76d5ae24de4555f0a52a79fe6b9",
+   "chk_be67adf88aa6ae1779d3d4effda5fd7891b272af4d2f98dc2cd8ec2863de9262",
+   "chk_798942ea8f97546322423e81427f22297d742cbd1d6a3969de7d113f0396e1af",
+   "chk_bb487d9ae7f8d9d3dffbea5dc1ff59d0a03379e595483724d325f65baec92df1",
+   "chk_51c2290c9af3be111f24ca3a7e972977d816b4eae44555d27212978275814117"
+  ]
+ },
+ "run_id": "0e6d05bc-9b36-4120-94e0-b930ba65bc9a",
+ "run_status": "done",
+ "split": "handwritten",
+ "started_at": "2026-11-11T20:51:05.331436+00:00",
+ "status": "done",
+ "system_config_hash": "2672337d37a1c4749e46b1640e2449249f4b9fce707f2424c3af28481dde7549",
+ "system_id": "system",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 136701,
+  "output_tokens": 6787
+ }
+}

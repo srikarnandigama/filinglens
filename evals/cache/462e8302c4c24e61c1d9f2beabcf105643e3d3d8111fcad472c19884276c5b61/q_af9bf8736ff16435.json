@@ -1,0 +1,34 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.14339300",
+ "error": null,
+ "finished_at": "2026-11-12T02:14:09.095006+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "67.2"
+ },
+ "question_id": "q_af9bf8736ff16435",
+ "question_sha": "3daa75c42ca0f22dfbc58cf786ee575eeb1f92a17feae2129bc3859ffb6601d6",
+ "raw_output": "Microsoft's gross margin in fiscal Q4 2026 (quarter ended June 30, 2026) was about 67.2% of revenue.\n\n- Gross margin was $60,482 million, per Microsoft's Q4 FY26 press release.\n- Revenue was about $90.01 billion, per a Webull earnings summary.\n- $60,482 million \u00f7 $90,010 million \u2248 67.2%.\n\nThat is down from 68.6% in the prior-year quarter, when gross margin was $52,427 million on revenue of about $76.4 billion. I took the revenue figure from the Webull summary, not from the press release itself. The press-release text I retrieved didn't include the revenue line.\n\n{\"value\": 67.2, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-12T02:10:05.212451+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "462e8302c4c24e61c1d9f2beabcf105643e3d3d8111fcad472c19884276c5b61",
+ "system_id": "b1-sonnet",
+ "system_kind": "b1",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 100893,
+  "output_tokens": 2500,
+  "web_searches": 3
+ }
+}

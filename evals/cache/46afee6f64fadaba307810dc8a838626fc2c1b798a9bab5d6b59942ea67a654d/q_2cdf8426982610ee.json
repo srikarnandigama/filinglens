@@ -1,0 +1,46 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": false,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0001628280-25-045968"
+  ],
+  "gold_visible": true,
+  "missing_values": [],
+  "question_id": "q_2cdf8426982610ee",
+  "text_sha256": "6c25be9cf09cf7c897cef85f4bb410fa724d76f06eba28709475eedb6a221eac",
+  "tokens_est": 3397
+ },
+ "cost_usd": "0.0084750",
+ "error": null,
+ "finished_at": "2026-11-11T21:43:33.036091+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "4997"
+ },
+ "question_id": "q_2cdf8426982610ee",
+ "question_sha": "930212dd2932c6e522ba06183276f12a4763d57f90b2433862b5b42132b0cfe4",
+ "raw_output": "Tesla's gross profit for the three months ended September 30, 2024 (fiscal Q3 2024) was $4,997 million, as shown in the consolidated statements of operations in the Q3 2025 10-Q.\n\nThe same statement gives total revenues of $25,182 million and total cost of revenues of $20,185 million, and 25,182 \u2212 20,185 = 4,997, which matches.\n\n{\"value\": 4997, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-11T21:41:30.293730+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 7665,
+  "output_tokens": 162,
+  "web_searches": 0
+ }
+}

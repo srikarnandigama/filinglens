@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.015664",
+ "finished_at": "2026-11-12T02:05:36.193511+00:00",
+ "latency_ms": 3542,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "2908"
+ },
+ "question_id": "q_0f05fef0eb150a82",
+ "question_sha": "7a2fcc8b2356268a1f27f3ff14060a47d225bb99d56458e7e3b02d8ee697f3b1",
+ "raw_output": "Apple's capital expenditures (payments for acquisition of property, plant and equipment) in fiscal Q4 2024 were about **$2,908 million**.\n\nThis is derived rather than directly reported, and the inputs are recalled from memory of the filings: full-year FY2024 capex of $9,447 million less the nine-month figure through June 29, 2024 of $6,539 million.\n\n{\"value\": 2908, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgxDRqPwT2Eg72Xd6yfzt"
+ ],
+ "split": "test",
+ "started_at": "2026-11-12T02:05:32.651297+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "16e92aec0cb80aa246423b8803435a393d3c367c6455eb10a9b8212a8828396f",
+ "system_id": "b0-fable",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 338,
+  "output_tokens": 324,
+  "web_searches": 0
+ }
+}

@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.026776",
+ "finished_at": "2026-11-12T02:05:34.960739+00:00",
+ "latency_ms": 6937,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "19"
+ },
+ "question_id": "q_97ad13ef38ef7938",
+ "question_sha": "da110aee4fc8569a0bb0a67d8f66ccb02a3255b2eb136912d402f806d4dcb08b",
+ "raw_output": "I don't have Microsoft's full fiscal 2026 results (year ending June 30, 2026), so this is an estimate rather than a reported figure: operating income grew roughly 19%.\n\n- **Fiscal 2025 operating income:** about $128.5 billion, as reported.\n- **Fiscal 2026 operating income:** about $153 billion, my estimate. It rests on my recollection of the first two quarters (about $38.0 billion and $38.3 billion) plus my own projection of roughly $37\u201340 billion for each of the remaining two.\n\nThat gives ($153B \u2212 $128.5B) / $128.5B \u2248 19%. The actual figure could differ by a few points either way.\n\n{\"value\": 19, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgxDRVZM7ewGQb8cUqrpb"
+ ],
+ "split": "test",
+ "started_at": "2026-11-12T02:05:28.026367+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "16e92aec0cb80aa246423b8803435a393d3c367c6455eb10a9b8212a8828396f",
+ "system_id": "b0-fable",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 347,
+  "output_tokens": 600,
+  "web_searches": 0
+ }
+}

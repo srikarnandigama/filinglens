@@ -1,0 +1,46 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": false,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0001628280-24-043486"
+  ],
+  "gold_visible": true,
+  "missing_values": [],
+  "question_id": "q_c8faa404cf141701",
+  "text_sha256": "d3511a2d76d5b87dc8e34a045b1ab5dda179e99aeaabeb848b55375076bb6ef5",
+  "tokens_est": 3372
+ },
+ "cost_usd": "0.00816800",
+ "error": null,
+ "finished_at": "2026-11-12T02:09:54.950505+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD/share",
+  "value": "0.53"
+ },
+ "question_id": "q_c8faa404cf141701",
+ "question_sha": "913aa074ee5ce5b96377cc681df7ea76998e994b6d02f38acfd8eb8bcc88e036",
+ "raw_output": "Tesla's diluted earnings per share for the three months ended September 30, 2023 was $0.53, as shown in the Q3 2024 10-Q's comparative column.\n\n```json\n{\"value\": 0.53, \"unit\": \"USD/share\", \"choice\": null, \"status\": \"answered\"}\n```",
+ "split": "test",
+ "started_at": "2026-11-12T02:07:22.538489+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 7688,
+  "output_tokens": 96,
+  "web_searches": 0
+ }
+}

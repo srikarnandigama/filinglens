@@ -41,21 +41,20 @@ the student independently confirmed the Apple FY2026 Q3 values in the source 10-
 M4 (built in Claude Code; M1-M3 were built with Codex) was accepted on 2026-11-09
 after its final acceptance run.
 - NEXT SESSION, FIRST TURN: do not change, run or commit anything. Read CLAUDE.md,
-  docs/M5_PHASE_C.md and docs/DECISIONS.md D097-D106, summarize the M5 state, and wait
-  for the student's instructions.
-- M5 status (2026-11-11): Phases A and B approved (D083-D102; $100 hard limit, overall
-  test cap $70, test-run ceiling $60, account has $95). Question set FROZEN:
-  evals/questions_v1.jsonl SHA-256 4f270e35... (same-sector GICS comparisons, D101).
-  Dev pilot done ($15.94): system 100/100, B0 Sonnet 44/100 (docs/M5_PHASE_C.md).
-  D103 fixed the runner (one MCP hub, clean exit, replay keys). D104: system accuracy
-  measures reasoning over correct structured data, not extraction; the report headline
-  leads with B2/B1. D105 scope (Option C): system + B0 Sonnet on the frozen 180 subset
-  (evals/questions_v1.subset180.json, 242fbea0...), B0 Opus/B1/B2 on the 100 sample;
-  configs m5_test_subset/_opus/_sample, m5_probe, m5_handwritten; caps sum to $60
-  with judges. Expected $49.4. The judge runner (Opus rubric + text claims, batch,
-  cached, capped) is NOT built yet. Test run NOT started: waiting on the student's
-  go-ahead. No prompt/system changes in M5 (M6 candidates in D106). Nothing from M5
-  is committed yet.
+  docs/M5_STATUS.md, evals/results/report.md and docs/DECISIONS.md D104-D109, summarize
+  the M5 state, and wait for the student's instructions.
+- M5 status (2026-11-11): ALL APPROVED RUNS DONE, $69.48 spent in total (dev $15.94,
+  D105 test steps $40.05, D109 $13.47 of its $30 ceiling). Waiting for the student's
+  review and the 20 blind judge labels (docs/M5_JUDGE_CALIBRATION.md; enter
+  student_score in evals/results/judge_calibration_blind.jsonl, then regenerate the
+  report with the 7 configs listed in docs/M5_STATUS.md). Headline (100 sample):
+  system 99%, B2 96%, B1 90%, B0 Fable 69%, Opus 55%, Sonnet 42%. System vs B2 is
+  significant only with 3 ambiguous Disney segment-operating-income questions
+  (p 0.039 -> 0.22 without). 6/30 handwritten runs gave no answer (D108). Frozen:
+  questions_v1 (4f270e35...), subset180 (242fbea0...), B2 meta (902e5a7a...,
+  087724b6...). .env BASELINE_MODELS now has index 2 = claude-fable-5-2. No
+  prompt/system changes in M5; M6 candidates in D106 and D108. Nothing from M5 is
+  committed yet.
 - M1 data: 20 companies, 275 filings, 2,715 facts (563 derived). Ingestion
   cutoff 2026-10-19, inclusive by filing date (America/New_York). Snapshot
   2026-10-19-v1 at data/raw/2026-10-19-v1/ (bodies keyed by URL SHA-256;

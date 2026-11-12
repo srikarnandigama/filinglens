@@ -1,0 +1,47 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": false,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0001045810-26-000021",
+   "0001045810-24-000316"
+  ],
+  "gold_visible": true,
+  "missing_values": [],
+  "question_id": "q_4a2f1f23def501bd",
+  "text_sha256": "dca4cfbc4987e45e97274e31c0f3c150029c5fbf06e52ab3fd8539f97bca7485",
+  "tokens_est": 5856
+ },
+ "cost_usd": "0.01498400",
+ "error": null,
+ "finished_at": "2026-11-12T02:09:54.981384+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "2465"
+ },
+ "question_id": "q_4a2f1f23def501bd",
+ "question_sha": "96d239db25d3188122617cd6ca3ba37811bb10e88b6318d288d3aa747192b362",
+ "raw_output": "Nvidia's R&D expense in fiscal Q4 2024 (the quarter ended January 28, 2024) was about $2,465 million. The filings give no standalone Q4 figure, so I derived it by subtracting the nine-month figure from the full-year figure:\n\n- Full-year fiscal 2024 R&D was $8,675 million.\n- R&D for the nine months ended October 29, 2023 was $6,210 million.\n- Q4 = $8,675 million \u2212 $6,210 million = $2,465 million.\n\n{\"value\": 2465, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-12T02:07:22.538489+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 13144,
+  "output_tokens": 368,
+  "web_searches": 0
+ }
+}

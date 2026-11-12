@@ -9,16 +9,25 @@ results, the frozen M2 v2 retrieval table, and an uncategorized failure list (ca
 import argparse
 import asyncio
 import json
-from collections import defaultdict
+from collections import Counter, defaultdict
 from decimal import Decimal
 from pathlib import Path
 from typing import Any
 
 from evals.runner import Runner, load_config, load_questions, replay_deps
-from evals.scorers import bootstrap_ci, holm, mcnemar_exact, paired_diff_ci, percentile, score
+from evals.scorers import (
+    bootstrap_ci,
+    bootstrap_mean_ci,
+    holm,
+    mcnemar_exact,
+    paired_diff_ci,
+    percentile,
+    score,
+)
 from filinglens.config import ROOT
 
 REPORT_PATH = ROOT / "evals" / "results" / "report.md"
+NOTES_PATH = ROOT / "evals" / "results" / "report_notes.md"
 RETRIEVAL_V2 = ROOT / "evals" / "results" / "retrieval_v2.json"
 TEMPLATES = [
     "lookup",
@@ -189,10 +198,108 @@ async def collect(config_paths: list[Path]) -> dict[str, Any]:
         questions = load_questions(cfg)
         result = await Runner(cfg, replay_deps(cfg), replay_only=True).run()
         for system_id, records in result["records"].items():
+            if cfg.split == "handwritten":  # free text: judged (D093), not numerically scored
+                out.setdefault("handwritten_questions", {}).update({q["id"]: q for q in questions})
+                out.setdefault("handwritten", {}).setdefault(system_id, {}).update(
+                    {r["question_id"]: r for r in records}
+                )
+                continue
             out.setdefault(cfg.split, {}).setdefault(system_id, {}).update(
                 scored(questions, records)
             )
     return out
+
+
+def handwritten_section(data: dict[str, Any]) -> list[str]:
+    """Judge scores, calibration agreement, text-claim support and system-level recall."""
+    from evals.judge import CALIBRATION_JSONL, agreement
+    from evals.system_adapter import recall_at
+
+    judged = data.get("judge", [])
+    rubric = [r for r in judged if r["kind"] == "rubric"]
+    parts = ["## Handwritten explanatory questions (30; Opus 5.5 judge, D093)", ""]
+    answers = data.get("handwritten", {})
+    rows = []
+    for sid in sorted({r["system_id"] for r in rubric}):
+        mine = [r for r in rubric if r["system_id"] == sid]
+        scores = [r["result"]["score"] for r in mine if (r.get("result") or {}).get("parse_ok")]
+        no_answer = sum(  # D108: no answer (e.g. token budget) is not judged and scores 1
+            r.get("status") == "error" or not (r.get("prediction") or {}).get("text", "").strip()
+            for r in answers.get(sid, {}).values()
+        )
+        total = len(answers.get(sid, {})) or len(mine)
+        cells = []
+        for values in (scores + [1] * no_answer, scores):
+            mean, lo, hi = bootstrap_mean_ci(values)
+            cells.append(f"{mean:.2f} [{lo:.2f}, {hi:.2f}]" if values else "–")
+        dist = Counter(scores)
+        rows.append(
+            [
+                sid,
+                *cells,
+                f"{no_answer}/{total}",
+                " / ".join(str(dist[s]) for s in range(1, 6)),
+                str(len(mine) - len(scores)),
+            ]
+        )
+    parts += [
+        table(
+            [
+                "System",
+                "Mean, no answer = 1 [95% CI]",
+                "Mean over answered [95% CI]",
+                "No answer",
+                "Judged scores 1/2/3/4/5",
+                "Unparsed",
+            ],
+            rows,
+        ),
+        "",
+    ]
+    labels = {}
+    if CALIBRATION_JSONL.exists():
+        for line in CALIBRATION_JSONL.read_text(encoding="utf-8").splitlines():
+            row = json.loads(line)
+            if row.get("student_score") in (1, 2, 3, 4, 5):
+                labels[row["key"]] = row["student_score"]
+    if labels:
+        judge_scores = {r["key"]: r["result"]["score"] for r in rubric if r["key"] in labels}
+        a = agreement(judge_scores, labels)
+        parts += [
+            f"Judge calibration (n={a['n']}): exact {pct(a['exact'])}, within 1 "
+            f"{pct(a['within_1'])}, quadratic-weighted κ {a['quadratic_kappa']:.2f}"
+            + (" — the judge is indicative only (κ < 0.6)." if a["indicative_only"] else "."),
+            "",
+        ]
+    else:
+        parts += ["Judge calibration: pending the student's 20 blind labels.", ""]
+    system = data.get("handwritten", {}).get("system", {})
+    cites = [r.get("citations") or {} for r in system.values()]
+    text_total = sum(c.get("text_total", 0) for c in cites)
+    string_ok = sum(c.get("text_string_supported", 0) for c in cites)
+    claims = [r for r in judged if r["kind"] == "claim" and (r.get("result") or {}).get("parse_ok")]
+    judge_ok = sum(r["result"]["supported"] for r in claims)
+    parts += [
+        f"System text claims: {text_total}; supported by string match {string_ok}, by the claim "
+        f"judge {judge_ok} of {len(claims)} judged"
+        + (f" ({pct((string_ok + judge_ok) / text_total)} supported)." if text_total else "."),
+        "",
+    ]
+    questions = data.get("handwritten_questions", {})
+    recall = {5: [], 10: []}
+    for qid, rec in system.items():
+        gold = questions.get(qid, {}).get("gold_chunk_ids") or []
+        if gold and rec.get("retrieval"):
+            for k in recall:
+                recall[k].append(recall_at(gold, rec["retrieval"], k))
+    if recall[5]:
+        parts += [
+            "System-level retrieval (filings workers' first search, D099): "
+            f"recall@5 {sum(recall[5]) / len(recall[5]):.3f}, "
+            f"recall@10 {sum(recall[10]) / len(recall[10]):.3f} (n={len(recall[5])}).",
+            "",
+        ]
+    return parts
 
 
 METHODOLOGY = [
@@ -209,10 +316,14 @@ METHODOLOGY = [
     "context) and B1 (open web search) can reach the same numbers as the system. They are the "
     "fair comparisons and are listed first after the system. B0 (closed book) measures what "
     "the model knows without any data.",
-    "- **Scope (D105).** The system and B0 Sonnet run on a frozen 180-question test subset (the "
-    "100-question sample plus 80 stratified questions). B0 Opus, B1 and B2 run on the "
-    "100-question sample, where every system answers the same questions and is paired with the "
-    "system.",
+    "- **Scope (D105, D109).** The system, B0 Sonnet, B1 and B2 run on a frozen 180-question "
+    "test subset (the 100-question sample plus 80 stratified questions). B0 Opus and B0 Fable "
+    "5.2 run on the 100-question sample, where every system answers the same questions and is "
+    "paired with the system.",
+    "- **B2 context limit (D109).** B2 contexts were capped at 25K tokens per filing and 50K "
+    "per question (D089), but those caps were measured as characters/4. Financial-statement "
+    "tables tokenize about 1.9 times denser, so real contexts averaged about 23K tokens and the "
+    "largest were near 95K.",
     "- **Cutoff and sample notes.** The test split includes a 20% after-cutoff floor per "
     "template (D086), except comparison at 14.5% (8 of 55): the same-sector pool has only 8 "
     "after-cutoff pairs (D101). After-cutoff questions concentrate in companies whose fiscal "
@@ -281,7 +392,7 @@ def render(data: dict[str, Any], system_id: str = "system") -> str:
         "",
         table(header, rows_for(sample)),
         "",
-        "## Larger test subset (system and B0 Sonnet, 180 questions, D105)",
+        "## Larger test subset: every system run on all 180 questions (D105, D109)",
         "",
         table(header, rows_for({k: v for k, v in test.items() if len(v) > len(sample[k])})),
         "",
@@ -306,7 +417,9 @@ def render(data: dict[str, Any], system_id: str = "system") -> str:
         ]
     parts += ["## Breakdowns (test)", ""]
     rows: list[list[str]] = []
-    for name, v in test.items():
+    for name in ordered(test):
+        v = test[name]
+        rows += breakdown(name, v, lambda x: f"template {x['question']['template']}")
         rows += breakdown(name, v, lambda x: f"cutoff {bucket(x['question'])}")
         rows += breakdown(name, v, lambda x: f"restated {x['question']['fairness']['restated']}")
         rows += breakdown(name, v, lambda x: f"derived {x['question']['fairness']['derived_q4']}")
@@ -329,6 +442,8 @@ def render(data: dict[str, Any], system_id: str = "system") -> str:
             ),
             "",
         ]
+    if data.get("judge") or data.get("handwritten"):
+        parts += handwritten_section(data)
     parts += ["## Retrieval (frozen M2 v2, 30 handwritten questions)", "", retrieval_table(), ""]
     parts += ["## Failures (uncategorized; categorization is M6)", ""]
     for name, v in test.items():
@@ -340,6 +455,26 @@ def render(data: dict[str, Any], system_id: str = "system") -> str:
             f"- **{name}**: {len(wrong)} wrong — "
             + ", ".join(f"{k} {n}" for k, n in sorted(hints.items()))
         )
+    abstained = [x for x in test.get(system_id, {}).values() if x["score"].outcome == "abstained"]
+    if abstained:
+        parts += [
+            "",
+            f"### System abstentions on test ({len(abstained)})",
+            "",
+            "Every generated question has a gold value computed from stored facts, so the data "
+            "never justifies an abstention here (D085).",
+            "",
+        ]
+        for x in abstained:
+            q, answer = x["question"], x["record"].get("raw_output") or {}
+            reason = " ".join([answer.get("summary") or "", *answer.get("caveats", [])]).strip()
+            parts += [
+                f"- `{q['id']}` ({q['template']}, {', '.join(q['companies'])}): {q['question']} "
+                f"Gold {q['gold_value']} {q['gold_unit']}; the system answered "
+                f"{x['record']['prediction'].get('status')}. Stated reason: {reason or '–'}",
+            ]
+    if NOTES_PATH.exists():  # the analyst's notes on the results, included verbatim
+        parts += ["", NOTES_PATH.read_text(encoding="utf-8").strip()]
     parts += ["", "## Ablations", "", "_M6._", ""]
     return "\n".join(parts)
 
@@ -349,6 +484,20 @@ def main(argv: list[str] | None = None) -> None:
     parser.add_argument("configs", nargs="+", type=Path)
     args = parser.parse_args(argv)
     data = asyncio.run(collect(args.configs))
+    from evals import judge
+    from evals.runner import SystemConfig, resolve_model
+    from filinglens.agents.settings import RuntimeSettings
+
+    model = resolve_model(
+        SystemConfig(
+            id="judge",
+            kind="b0",
+            model_env=judge.JUDGE_MODEL_ENV,
+            model_index=judge.JUDGE_MODEL_INDEX,
+        ),
+        RuntimeSettings(),
+    )
+    data["judge"] = judge.load_judged(model)
     REPORT_PATH.write_text(render(data), encoding="utf-8")
     print(f"wrote {REPORT_PATH}")
 

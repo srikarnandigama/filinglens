@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.023152",
+ "finished_at": "2026-11-12T02:06:36.155918+00:00",
+ "latency_ms": 6822,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD billions",
+  "value": "3.6"
+ },
+ "question_id": "q_8e8f600d249ac779",
+ "question_sha": "aab9f8f0bf49fa294c8894564eec745645db7fedcc219b135e50a031e6b05fe4",
+ "raw_output": "I don't have Procter & Gamble's reported results for fiscal Q4 2026 (April\u2013June 2026), as that quarter falls after the data I have. My best estimate is about $3.6 billion in net income, based on the roughly $3.6 billion I recall for the same quarter a year earlier (fiscal Q4 2025). Treat this as an estimate, not a reported figure.\n\n{\"value\": 3.6, \"unit\": \"USD billions\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgxDW1ntRt3kyNFLwPexh"
+ ],
+ "split": "test",
+ "started_at": "2026-11-12T02:06:29.342700+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "16e92aec0cb80aa246423b8803435a393d3c367c6455eb10a9b8212a8828396f",
+ "system_id": "b0-fable",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 339,
+  "output_tokens": 511,
+  "web_searches": 0
+ }
+}

@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.003238",
+ "finished_at": "2026-11-11T20:40:43.242165+00:00",
+ "latency_ms": 2419,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "9620.75"
+ },
+ "question_id": "q_a5a54292c263f0dc",
+ "question_sha": "1714ea1fc56bbe2993aef8d35f50ffa9dd7048827eae60beb5217dab564d1f9f",
+ "raw_output": "Meta's R&D expense for fiscal 2023 was $38,483 million for the full year.\n\nQuarterly figures:\n- Q1 2023: $9,130 million\n- Q2 2023: $9,320 million\n- Q3 2023: $9,455 million\n- Q4 2023: $10,578 million\n\nSum: 9,130 + 9,320 + 9,455 + 10,578 = 38,483 million, which matches the annual total.\n\nAverage quarterly R&D = 38,483 / 4 = $9,620.75 million.\n\n**Meta's average quarterly R&D expense in fiscal 2023 was about $9,621 million (roughly $9.62 billion).**\n\n{\"value\": 9620.75, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgwnezEi2CKoahHke1HUA"
+ ],
+ "split": "test",
+ "started_at": "2026-11-11T20:40:40.823419+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 339,
+  "output_tokens": 256,
+  "web_searches": 0
+ }
+}

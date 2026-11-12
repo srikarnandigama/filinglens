@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.014296",
+ "finished_at": "2026-11-12T02:04:52.988215+00:00",
+ "latency_ms": 3781,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "12180"
+ },
+ "question_id": "q_6e663c87a4ef9ba3",
+ "question_sha": "788f7beb7bdd43b5e20df0d6985e4e57b20472581a3d34e537f99324edf250a1",
+ "raw_output": "Meta's research and development expense in fiscal Q4 2024 was approximately $12.18 billion ($12,180 million). This is from memory of the quarterly figures; the four quarters (about $9,978M, $10,537M, $11,177M and $12,180M) sum to the full-year 2024 total of roughly $43,873 million.\n\n{\"value\": 12180, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgxDNdgACxrU2C3GisLS1"
+ ],
+ "split": "test",
+ "started_at": "2026-11-12T02:04:49.216671+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "16e92aec0cb80aa246423b8803435a393d3c367c6455eb10a9b8212a8828396f",
+ "system_id": "b0-fable",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 337,
+  "output_tokens": 290,
+  "web_searches": 0
+ }
+}

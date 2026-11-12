@@ -1,0 +1,48 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": false,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0000200406-26-000087",
+   "0000200406-26-000016",
+   "0000200406-25-000209"
+  ],
+  "gold_visible": true,
+  "missing_values": [],
+  "question_id": "q_2939d3ad3f7e4c99",
+  "text_sha256": "637d3a71fd5ff206edf97bb5617e41fa5f6e46bfea79fc13d2ccc9e7d0e51e07",
+  "tokens_est": 7375
+ },
+ "cost_usd": "0.01668400",
+ "error": null,
+ "finished_at": "2026-11-12T02:09:54.958516+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "14.17"
+ },
+ "question_id": "q_2939d3ad3f7e4c99",
+ "question_sha": "68199f3f55fe834d191a1496dd2293ac0be6fec09db2861529537c878a355e32",
+ "raw_output": "Q4 2025 gross profit has to be derived from the full-year figure less the nine-month figure.\n\n- Full-year 2025 gross profit: 63,937\n- Nine-month 2025 gross profit: 47,341\n- Q4 2025 gross profit: 63,937 \u2212 47,341 = 16,596\n- Q1 2025 gross profit: 14,536\n\nChange = (16,596 \u2212 14,536) / 14,536 = 2,060 / 14,536 \u2248 14.17%\n\nGross profit rose about 14.2% from Q1 2025 to Q4 2025.\n\n{\"value\": 14.17, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-12T02:07:22.538489+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 15559,
+  "output_tokens": 225,
+  "web_searches": 0
+ }
+}

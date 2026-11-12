@@ -1,0 +1,34 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.04294600",
+ "error": null,
+ "finished_at": "2026-11-12T02:14:09.051989+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD billions",
+  "value": "15.3375"
+ },
+ "question_id": "q_82eea7d929cbddab",
+ "question_sha": "8c217b8f9252519c887b37784748ced8937cf45752a9587b97f8abccf0659385",
+ "raw_output": "J&J's average quarterly gross profit in fiscal 2024 was about $15.34 billion.\n\nI calculated it from the FY2024 10-K figures:\n- Sales to customers were $88,821 million.\n- Cost of products sold was $27,471 million.\n- Annual gross profit was therefore $61,350 million.\n- Dividing by four quarters gives about $15,337.5 million per quarter.\n\nThe 10-K doesn't report gross profit as a line item. I derived it as sales minus cost of products sold.\n\n{\"value\": 15.3375, \"unit\": \"USD billions\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-12T02:10:05.212451+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "462e8302c4c24e61c1d9f2beabcf105643e3d3d8111fcad472c19884276c5b61",
+ "system_id": "b1-sonnet",
+ "system_kind": "b1",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 29391,
+  "output_tokens": 711,
+  "web_searches": 1
+ }
+}

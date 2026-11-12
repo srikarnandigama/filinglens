@@ -1,0 +1,111 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 3,
+  "numeric_valid": 3,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.214546",
+ "error": null,
+ "finished_at": "2026-11-11T20:27:34.511275+00:00",
+ "latency_ms": 29463,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "29.400325435568"
+ },
+ "question_id": "q_82af2932d61de137",
+ "question_sha": "91a0cb240263d74c7bf89409c9c65ec3f5dffd0a54050f7364e1a338c5617e84",
+ "raw_output": {
+  "caveats": [
+   "Net margin uses the 'Revenues' fact (fact 1200) as the denominator and the 'NetIncomeLoss' fact (fact 1217) as the numerator, both for the quarter from 2023-04-01 to 2023-06-30."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "1217"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q2",
+     "fiscal_year": 2023
+    },
+    "text": "BAC net income for fiscal Q2 2023 was $7.408 billion.",
+    "ticker": "BAC",
+    "unit": "USD",
+    "value": "7408000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "1200"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q2",
+     "fiscal_year": 2023
+    },
+    "text": "BAC revenue for fiscal Q2 2023 was $25.197 billion.",
+    "ticker": "BAC",
+    "unit": "USD",
+    "value": "25197000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_1"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q2",
+     "fiscal_year": 2023
+    },
+    "text": "BAC's net margin (net income / revenue) for fiscal Q2 2023 was about 29.4%.",
+    "ticker": "BAC",
+    "unit": "percent",
+    "value": "29.400325435568",
+    "value_basis": "computation"
+   }
+  ],
+  "final_claim_id": "c3",
+  "final_unit": "percent",
+  "final_value": "29.400325435568",
+  "status": "answered",
+  "summary": "Bank of America's net margin in fiscal Q2 2023 (April 1 to June 30, 2023) was about 29.4%. That is net income of $7.408 billion divided by revenue of $25.197 billion."
+ },
+ "run_id": "8add4ef3-e7da-4277-8027-05bbc0017523",
+ "run_status": "done",
+ "split": "test",
+ "started_at": "2026-11-11T20:27:05.007352+00:00",
+ "status": "done",
+ "system_config_hash": "2672337d37a1c4749e46b1640e2449249f4b9fce707f2424c3af28481dde7549",
+ "system_id": "system",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 87538,
+  "output_tokens": 3947
+ }
+}

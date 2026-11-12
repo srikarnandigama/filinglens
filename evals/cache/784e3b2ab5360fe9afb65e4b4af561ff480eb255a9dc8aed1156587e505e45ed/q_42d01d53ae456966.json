@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.002256",
+ "finished_at": "2026-11-11T20:38:28.869242+00:00",
+ "latency_ms": 1553,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "114.2"
+ },
+ "question_id": "q_42d01d53ae456966",
+ "question_sha": "5cfa62b046bdfc36123a138d9e2ed92c6fb832af778b4198c2b89cca74c3bbb3",
+ "raw_output": "Nvidia's total revenue was $60,922 million in fiscal 2024 (year ended January 28, 2024) and $130,497 million in fiscal 2025 (year ended January 26, 2025).\n\nPercent change = (130,497 \u2212 60,922) / 60,922 = 69,575 / 60,922 \u2248 1.1420, an increase of about 114.2%.\n\n{\"value\": 114.2, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgwnV9Q64xUTh7UZQs141"
+ ],
+ "split": "test",
+ "started_at": "2026-11-11T20:38:27.319827+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 348,
+  "output_tokens": 156,
+  "web_searches": 0
+ }
+}

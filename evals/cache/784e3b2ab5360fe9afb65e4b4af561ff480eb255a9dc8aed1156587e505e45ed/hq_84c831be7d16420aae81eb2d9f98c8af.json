@@ -1,0 +1,32 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.006794",
+ "finished_at": "2026-11-11T20:53:41.022895+00:00",
+ "latency_ms": 5872,
+ "latency_note": null,
+ "prediction": {
+  "parse_ok": true,
+  "text": "Costco's membership fee increase, effective September 1, 2024, was the main driver of higher membership fee income in fiscal 2025 (the year ended August 31, 2025). The fee for Gold Star and Business members went from $60 to $65, and the Executive membership fee went from $120 to $130. Membership fee income rose to roughly $5.3 billion, up about 10% from about $4.8 billion in fiscal 2024. Costco recognizes fees ratably over the 12-month membership term, so the increase phased in gradually as members renewed. The full effect will therefore carry into fiscal 2026. Membership growth, more Executive members, and higher renewal fees also contributed. These figures are from memory, so please check them against the 10-K, particularly the exact percentage and the split between the fee increase and other factors."
+ },
+ "question_id": "hq_84c831be7d16420aae81eb2d9f98c8af",
+ "question_sha": "f6cd00e5d1d9ad40e54e6d7758ea484b4ddf08af08455942f4a5903626678411",
+ "raw_output": "Costco's membership fee increase, effective September 1, 2024, was the main driver of higher membership fee income in fiscal 2025 (the year ended August 31, 2025). The fee for Gold Star and Business members went from $60 to $65, and the Executive membership fee went from $120 to $130. Membership fee income rose to roughly $5.3 billion, up about 10% from about $4.8 billion in fiscal 2024. Costco recognizes fees ratably over the 12-month membership term, so the increase phased in gradually as members renewed. The full effect will therefore carry into fiscal 2026. Membership growth, more Executive members, and higher renewal fees also contributed. These figures are from memory, so please check them against the 10-K, particularly the exact percentage and the split between the fee increase and other factors.",
+ "request_ids": [
+  "req_011Cgwoe4psSi2ziXNm8inzv"
+ ],
+ "split": "handwritten",
+ "started_at": "2026-11-11T20:53:35.155291+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 92,
+  "output_tokens": 661,
+  "web_searches": 0
+ }
+}

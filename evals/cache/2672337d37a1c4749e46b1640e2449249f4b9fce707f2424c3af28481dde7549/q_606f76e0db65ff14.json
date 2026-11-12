@@ -1,0 +1,152 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 5,
+  "numeric_valid": 5,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.201160",
+ "error": null,
+ "finished_at": "2026-11-11T20:35:54.975235+00:00",
+ "latency_ms": 27003,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD",
+  "value": "15984250000"
+ },
+ "question_id": "q_606f76e0db65ff14",
+ "question_sha": "6b8a652491c7064db6cf6e99ae28912b82d596ecaf63a5aad35619ec479bcc61",
+ "raw_output": {
+  "caveats": [
+   "Q4 fiscal 2025 gross profit is derived: full-year gross profit of $63.937 billion minus the nine-month figure of $47.341 billion.",
+   "The average is a simple mean of the four fiscal quarters, which run from 2024-12-30 to 2025-12-28."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "2810"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q1",
+     "fiscal_year": 2025
+    },
+    "text": "JNJ Q1 fiscal 2025 gross profit was $14.536 billion.",
+    "ticker": "JNJ",
+    "unit": "USD",
+    "value": "14536000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "2811"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q2",
+     "fiscal_year": 2025
+    },
+    "text": "JNJ Q2 fiscal 2025 gross profit was $16.115 billion.",
+    "ticker": "JNJ",
+    "unit": "USD",
+    "value": "16115000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "2812"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q3",
+     "fiscal_year": 2025
+    },
+    "text": "JNJ Q3 fiscal 2025 gross profit was $16.69 billion.",
+    "ticker": "JNJ",
+    "unit": "USD",
+    "value": "16690000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "2813"
+     }
+    ],
+    "id": "c4",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q4",
+     "fiscal_year": 2025
+    },
+    "text": "JNJ Q4 fiscal 2025 gross profit was $16.596 billion (derived from full-year gross profit minus the nine-month figure).",
+    "ticker": "JNJ",
+    "unit": "USD",
+    "value": "16596000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": "mean",
+      "kind": "computation",
+      "ref": "cmp_1"
+     }
+    ],
+    "id": "c5",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "The mean quarterly gross profit across the four fiscal 2025 quarters was about $15.98 billion ($15,984,250,000).",
+    "ticker": "JNJ",
+    "unit": "USD",
+    "value": "15984250000",
+    "value_basis": "computation"
+   }
+  ],
+  "final_claim_id": "c5",
+  "final_unit": "USD",
+  "final_value": "15984250000",
+  "status": "answered",
+  "summary": "Johnson & Johnson's average quarterly gross profit over fiscal 2025 was about $15.98 billion. This is the mean of the four quarters: Q1 $14.536 billion, Q2 $16.115 billion, Q3 $16.69 billion and Q4 $16.596 billion."
+ },
+ "run_id": "723d2203-fd7e-4999-b82d-895ac9f8ce8e",
+ "run_status": "done",
+ "split": "test",
+ "started_at": "2026-11-11T20:35:27.948394+00:00",
+ "status": "done",
+ "system_config_hash": "2672337d37a1c4749e46b1640e2449249f4b9fce707f2424c3af28481dde7549",
+ "system_id": "system",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 80850,
+  "output_tokens": 3946
+ }
+}

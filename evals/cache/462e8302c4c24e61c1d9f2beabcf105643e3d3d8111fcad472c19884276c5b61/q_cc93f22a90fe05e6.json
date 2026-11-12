@@ -1,0 +1,34 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.0080850",
+ "error": null,
+ "finished_at": "2026-11-12T02:14:09.095006+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD billions",
+  "value": "7.606"
+ },
+ "question_id": "q_cc93f22a90fe05e6",
+ "question_sha": "4c2fb6bb6c0ef14ad6551f6218065abc44a1ae5d5e6d647ea49f0c51a92e8e0b",
+ "raw_output": "Amazon's average quarterly net income in fiscal 2023 was about **$7.61 billion**. This comes from my recollection of Amazon's reported results, and I didn't search to confirm the figures.\n\nAmazon's reported 2023 quarterly net income was:\n\n| Quarter | Net income |\n|---|---|\n| Q1 | $3.172 billion |\n| Q2 | $6.750 billion |\n| Q3 | $9.879 billion |\n| Q4 | $10.624 billion |\n\nThese sum to $30.425 billion for the year. Dividing by four gives $7.606 billion per quarter.\n\n{\"value\": 7.606, \"unit\": \"USD billions\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-12T02:10:05.212451+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "462e8302c4c24e61c1d9f2beabcf105643e3d3d8111fcad472c19884276c5b61",
+ "system_id": "b1-sonnet",
+ "system_kind": "b1",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 6300,
+  "output_tokens": 357,
+  "web_searches": 0
+ }
+}

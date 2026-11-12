@@ -1,0 +1,34 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.05458100",
+ "error": null,
+ "finished_at": "2026-11-12T02:14:08.946051+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "4543"
+ },
+ "question_id": "q_75119a5760730133",
+ "question_sha": "a22e15671d21e78feecca488db5d6df53b3ca261a45e2eca5b8a506462359336",
+ "raw_output": "Johnson & Johnson's capital expenditures in fiscal 2023 (year ended December 31, 2023) were about $4.543 billion. This is the \"Additions to property, plant and equipment\" line in its cash flow statement. I took the figure from a third-party summary of the statements (stock-analysis-on.net), not from the 10-K itself.\n\nThe same source shows $4,009 million for fiscal 2022 and $4,424 million for fiscal 2024. The 2022 figure matches J&J's own 10-K for that year.\n\n{\"value\": 4543, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-12T02:10:05.212451+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "462e8302c4c24e61c1d9f2beabcf105643e3d3d8111fcad472c19884276c5b61",
+ "system_id": "b1-sonnet",
+ "system_kind": "b1",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 29946,
+  "output_tokens": 927,
+  "web_searches": 2
+ }
+}

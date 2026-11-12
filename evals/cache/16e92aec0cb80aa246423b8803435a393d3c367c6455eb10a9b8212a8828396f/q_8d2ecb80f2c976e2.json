@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.023296",
+ "finished_at": "2026-11-12T02:06:35.298149+00:00",
+ "latency_ms": 6584,
+ "latency_note": null,
+ "prediction": {
+  "choice": "AMZN",
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percentage_points",
+  "value": "6.56"
+ },
+ "question_id": "q_8d2ecb80f2c976e2",
+ "question_sha": "94e3cb7ec8655f1e0aa0e8576d6944c15a78630ada50b50a94260ffc6843ac7b",
+ "raw_output": "**Amazon** had the higher fiscal 2025 operating margin, by about 6.56 percentage points. These figures are from my recollection of the reported full-year results, not from a filing in front of me, so treat them as a best estimate.\n\n| Company | Revenue | Operating income | Operating margin |\n|---|---|---|---|\n| Amazon | $716,924M | $79,975M | 11.16% |\n| Tesla | $94,827M | $4,355M | 4.59% |\n\nDifference: 11.16% \u2212 4.59% \u2248 6.56 percentage points.\n\n{\"value\": 6.56, \"unit\": \"percentage_points\", \"choice\": \"AMZN\", \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgxDVyCcHGZn8oj4dFqF5"
+ ],
+ "split": "test",
+ "started_at": "2026-11-12T02:06:28.722555+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "16e92aec0cb80aa246423b8803435a393d3c367c6455eb10a9b8212a8828396f",
+ "system_id": "b0-fable",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 352,
+  "output_tokens": 512,
+  "web_searches": 0
+ }
+}

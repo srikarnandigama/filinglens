@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.01758",
+ "finished_at": "2026-11-11T20:43:05.911250+00:00",
+ "latency_ms": 7377,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "17"
+ },
+ "question_id": "q_ad9e5fc7f012e8c4",
+ "question_sha": "24c9b50a1ae8e948676954d9837c02e076ef52739566380af96e62573370eca3",
+ "raw_output": "**Microsoft's R&D expense rose by about 17% from fiscal Q1 2026 to fiscal Q4 2026. This is an estimate, not a reported figure.** I don't have Microsoft's fiscal Q4 2026 results (quarter ended June 30, 2026).\n\n- **Fiscal Q1 2026 (quarter ended September 30, 2025):** R&D expense was about $8.15 billion. This is from memory, not checked against the 10-Q.\n- **Fiscal Q4 2026 (estimated):** I projected this from the fiscal 2025 pattern.\n  - In fiscal 2025, R&D went from about $7.54 billion in Q1 to about $8.83 billion in Q4, a rise of about 17%.\n  - R&D has recently grown about 8% year over year. Applying that to fiscal Q4 2025's $8.83 billion gives about $9.5 billion.\n- **Change:** ($9.5B \u2212 $8.15B) / $8.15B \u2248 +17%.\n\n{\"value\": 17, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011Cgwnq91qMQzWDEY8bUWPP"
+ ],
+ "split": "test",
+ "started_at": "2026-11-11T20:42:58.536582+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "4c121dace8201ad5984fc587e44ec56860d7e1322cd752ed76724801ac0e3a27",
+ "system_id": "b0-opus",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 355,
+  "output_tokens": 808,
+  "web_searches": 0
+ }
+}

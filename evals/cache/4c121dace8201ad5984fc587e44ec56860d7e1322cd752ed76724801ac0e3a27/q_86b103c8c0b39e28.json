@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.013632",
+ "finished_at": "2026-11-11T20:44:34.346029+00:00",
+ "latency_ms": 6748,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "75.0"
+ },
+ "question_id": "q_86b103c8c0b39e28",
+ "question_sha": "c5f626271151688abbb5ee29f23ba923abc4ef48edba95e0ff6d43d3f59c3d45",
+ "raw_output": "Nvidia's fiscal Q1 2027 is the quarter ending around late April 2026. I don't have its reported results, so this is **an estimate of about 75% GAAP gross margin**, not a reported figure.\n\nThe estimate rests on recent trends and guidance as I understand them:\n- **Q3 FY2026 (ended October 2025):** GAAP gross margin was about 73.4%, on revenue of about $57.0B.\n- **Q4 FY2026 guidance:** the company guided GAAP gross margin to about 74.8% (non-GAAP about 75.0%).\n- **Q1 FY2027:** guidance, as best I recall, pointed to margins holding in the mid-70s.\n\nThe actual figure is likely somewhere around 74\u201376%.\n\n{\"value\": 75.0, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgwnwhuAytraHftbbszqq"
+ ],
+ "split": "test",
+ "started_at": "2026-11-11T20:44:27.597458+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "4c121dace8201ad5984fc587e44ec56860d7e1322cd752ed76724801ac0e3a27",
+ "system_id": "b0-opus",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 338,
+  "output_tokens": 614,
+  "web_searches": 0
+ }
+}

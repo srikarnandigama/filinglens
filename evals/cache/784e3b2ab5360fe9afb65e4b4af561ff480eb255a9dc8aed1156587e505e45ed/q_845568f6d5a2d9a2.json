@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.005104",
+ "finished_at": "2026-11-11T20:38:08.430109+00:00",
+ "latency_ms": 3663,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "69.2"
+ },
+ "question_id": "q_845568f6d5a2d9a2",
+ "question_sha": "6354bdfd1b0b10dbbe6a3200bfa1275a8775b36921ad60b6a34bc1c42ab986bf",
+ "raw_output": "J&J's gross margin in fiscal Q3 2024 was about 69.2%. I'm working from memory of the reported figures, so this is an estimate, not a checked value.\n\n- Sales were about $22.47 billion.\n- Cost of products sold was roughly $6.9 billion, or about 30.8% of sales.\n- Gross profit was therefore about $15.5 billion, which gives the 69.2% margin.\n\n{\"value\": 69.2, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgwnTUzWMRzZQdxUWGtjf"
+ ],
+ "split": "test",
+ "started_at": "2026-11-11T20:38:04.775222+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 342,
+  "output_tokens": 442,
+  "web_searches": 0
+ }
+}

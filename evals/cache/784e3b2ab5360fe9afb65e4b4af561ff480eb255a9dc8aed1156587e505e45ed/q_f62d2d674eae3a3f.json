@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.02421",
+ "finished_at": "2026-11-11T20:39:33.514725+00:00",
+ "latency_ms": 18821,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "-94"
+ },
+ "question_id": "q_f62d2d674eae3a3f",
+ "question_sha": "f4542d6f998bb5c8e9bba5e90d621b609649259b744ff4baa5f1257b88c8f82e",
+ "raw_output": "I'm working from memory rather than the filings, so this is a rough estimate.\n\n- **Q1 2025:** UnitedHealth's earnings from operations were about $9.4 billion.\n- **Q4 2025:** Q4 earnings from operations were much lower, roughly $0.6 billion. I inferred this from the Q4 GAAP loss per share of about $0.35, since the Q4 operating income figure itself is not something I recall reliably.\n- **Change:** (0.6 \u2212 9.4) / 9.4 \u2248 \u221294%.\n\nThe Q4 figure is the weak point, so the true decline could differ noticeably from this.\n\n{\"value\": -94, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgwnYdyPWBab1K5onZ3VF"
+ ],
+ "split": "test",
+ "started_at": "2026-11-11T20:39:14.696947+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 355,
+  "output_tokens": 2350,
+  "web_searches": 0
+ }
+}

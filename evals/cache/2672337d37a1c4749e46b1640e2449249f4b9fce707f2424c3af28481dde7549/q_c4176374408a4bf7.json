@@ -1,0 +1,131 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 4,
+  "numeric_valid": 4,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.147080",
+ "error": null,
+ "finished_at": "2026-11-11T20:30:24.414157+00:00",
+ "latency_ms": 18683,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "59.06976744186"
+ },
+ "question_id": "q_c4176374408a4bf7",
+ "question_sha": "4b04be7b1e94b3e77141123af3d5c6efbba93c1ed7180fc05b9ffa56053a26a3",
+ "raw_output": {
+  "caveats": [
+   "No filing passages were provided, so this answer does not explain why capital expenditures changed."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3825"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Nike's fiscal 2025 capital expenditures (payments to acquire property, plant and equipment) were $430 million.",
+    "ticker": "NKE",
+    "unit": "USD",
+    "value": "430000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3830"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2026
+    },
+    "text": "Nike's fiscal 2026 capital expenditures were $684 million.",
+    "ticker": "NKE",
+    "unit": "USD",
+    "value": "684000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_1"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2026
+    },
+    "text": "Capital expenditures increased by about 59.07% from fiscal 2025 to fiscal 2026.",
+    "ticker": "NKE",
+    "unit": "percent",
+    "value": "59.06976744186",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value",
+      "kind": "computation",
+      "ref": "cmp_2"
+     }
+    ],
+    "id": "c4",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2026
+    },
+    "text": "The absolute increase in capital expenditures was $254 million.",
+    "ticker": "NKE",
+    "unit": "USD",
+    "value": "254000000",
+    "value_basis": "computation"
+   }
+  ],
+  "final_claim_id": "c3",
+  "final_unit": "percent",
+  "final_value": "59.06976744186",
+  "status": "answered",
+  "summary": "Nike's capital expenditures rose about 59.07% from $430 million in fiscal 2025 to $684 million in fiscal 2026. That is an increase of $254 million."
+ },
+ "run_id": "d0d18d9a-1559-445c-a5d9-199b6933eba3",
+ "run_status": "done",
+ "split": "test",
+ "started_at": "2026-11-11T20:30:05.690155+00:00",
+ "status": "done",
+ "system_config_hash": "2672337d37a1c4749e46b1640e2449249f4b9fce707f2424c3af28481dde7549",
+ "system_id": "system",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 61210,
+  "output_tokens": 2466
+ }
+}

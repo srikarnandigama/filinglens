@@ -1,0 +1,34 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.00886800",
+ "error": null,
+ "finished_at": "2026-11-12T02:14:09.095006+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": "PG",
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percentage_points",
+  "value": "20.5"
+ },
+ "question_id": "q_c08bbd2823ca2696",
+ "question_sha": "d41019e714a4dbe4382d3bb0bb12ae08adcddd83747b5673b6455805ffabf377",
+ "raw_output": "**Procter & Gamble had the higher operating margin in fiscal 2025, by about 20.5 percentage points.** I used figures I recalled from the 10-Ks and did not check them against the filings.\n\n- **Procter & Gamble** (fiscal year ended June 30, 2025): operating income was about $20.45 billion on net sales of about $84.28 billion, an operating margin of about 24.3%.\n- **Costco** (fiscal year ended Aug 31, 2025): operating income was about $10.38 billion on total revenue of about $275.24 billion, an operating margin of about 3.8%.\n\nThe gap is 24.26% \u2212 3.77% \u2248 20.5 percentage points.\n\n{\"value\": 20.5, \"unit\": \"percentage_points\", \"choice\": \"PG\", \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-12T02:10:05.212451+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "462e8302c4c24e61c1d9f2beabcf105643e3d3d8111fcad472c19884276c5b61",
+ "system_id": "b1-sonnet",
+ "system_kind": "b1",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 6318,
+  "output_tokens": 510,
+  "web_searches": 0
+ }
+}

@@ -1,0 +1,47 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": false,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0000104169-26-000055",
+   "0001628280-26-010047"
+  ],
+  "gold_visible": true,
+  "missing_values": [],
+  "question_id": "q_56337b8ae2a13a99",
+  "text_sha256": "4e5de14b38aa0b4eadb8cd65388e1785b0ac5f3f78e488e02175bce19caf64a9",
+  "tokens_est": 6112
+ },
+ "cost_usd": "0.01564400",
+ "error": null,
+ "finished_at": "2026-11-11T21:43:32.974953+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": "KO",
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percentage_points",
+  "value": "24.4"
+ },
+ "question_id": "q_56337b8ae2a13a99",
+ "question_sha": "b8638bfa9d36e8c2e9c8b0f70719918081a45fe8f1f6dad4f9fc92510255435b",
+ "raw_output": "Operating margin is operating income divided by total revenues, using each company's fiscal 2025 results as reported.\n\n**Walmart.** The filing's fiscal year ended January 31, 2026 is Walmart's fiscal 2026. The fiscal year ended January 31, 2025 is fiscal 2025. By the stated convention, fiscal 2025 is the year ending in calendar 2025, which is the year ended January 31, 2025.\n- Operating income: $29,348 million\n- Total revenues: $680,985 million\n- Operating margin: 29,348 / 680,985 = 4.310%\n\n**Coca-Cola.** Fiscal 2025 is the year ended December 31, 2025.\n- Operating income: $13,762 million\n- Net operating revenues: $47,941 million\n- Operating margin: 13,762 / 47,941 = 28.707%\n\n**Difference.** Coca-Cola's margin is higher by 28.707 \u2212 4.310 = 24.40 percentage points.\n\nCoca-Cola had the higher operating margin in fiscal 2025, by about 24.4 percentage points.\n\n{\"value\": 24.4, \"unit\": \"percentage_points\", \"choice\": \"KO\", \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-11T21:41:30.293730+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 13644,
+  "output_tokens": 400,
+  "web_searches": 0
+ }
+}

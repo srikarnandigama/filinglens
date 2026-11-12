@@ -1,0 +1,132 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 3,
+  "numeric_valid": 3,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.176074",
+ "error": null,
+ "finished_at": "2026-11-11T20:27:17.184182+00:00",
+ "latency_ms": 23525,
+ "prediction": {
+  "choice": "NKE",
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percentage_points",
+  "value": "24.708162168947"
+ },
+ "question_id": "q_8659a0d2b4d00cc7",
+ "question_sha": "59dbe3ed3c77d8290520e0739dc573aa83a644bf3327042de37b49112d7f7f80",
+ "raw_output": {
+  "caveats": [
+   "The two companies have different fiscal year ends. Tesla's FY2025 ends Dec 31, 2025. Nike's FY2025 ended May 31, 2025.",
+   "Gross margin is calculated as gross profit divided by reported revenue for each company."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_1"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "1004"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "970"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Tesla's FY2025 gross margin was about 18.0% (gross profit $17.094 billion on revenue $94.827 billion).",
+    "ticker": "TSLA",
+    "unit": "percent",
+    "value": "18.026511436616",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_2"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3764"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3732"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Nike's FY2025 gross margin (year ended May 31, 2025) was about 42.7% (gross profit $19.79 billion on revenue $46.309 billion).",
+    "ticker": "NKE",
+    "unit": "percent",
+    "value": "42.734673605563",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value",
+      "kind": "computation",
+      "ref": "cmp_3"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Nike's gross margin exceeded Tesla's by about 24.7 percentage points in fiscal 2025.",
+    "ticker": "NKE",
+    "unit": "percentage_points",
+    "value": "24.708162168947",
+    "value_basis": "computation"
+   }
+  ],
+  "final_claim_id": "c3",
+  "final_unit": "percentage_points",
+  "final_value": "24.708162168947",
+  "status": "answered",
+  "summary": "Nike had the higher gross margin in fiscal 2025: about 42.7%, against about 18.0% for Tesla. That is a gap of about 24.7 percentage points."
+ },
+ "run_id": "49be0632-6a02-453a-8462-b577f4c3dcb2",
+ "run_status": "done",
+ "split": "test",
+ "started_at": "2026-11-11T20:26:53.619212+00:00",
+ "status": "done",
+ "system_config_hash": "2672337d37a1c4749e46b1640e2449249f4b9fce707f2424c3af28481dde7549",
+ "system_id": "system",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 70997,
+  "output_tokens": 3408
+ }
+}

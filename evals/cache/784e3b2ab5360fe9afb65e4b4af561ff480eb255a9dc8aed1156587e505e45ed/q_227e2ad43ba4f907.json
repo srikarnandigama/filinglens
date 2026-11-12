@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.00198",
+ "finished_at": "2026-11-11T20:40:26.480856+00:00",
+ "latency_ms": 1544,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "16384"
+ },
+ "question_id": "q_227e2ad43ba4f907",
+ "question_sha": "81aa0f89a3796ed5822d8056db8594826ceeb2feae4a50261db07d161783dba4",
+ "raw_output": "Meta's income from operations in Q4 2023 (quarter ended December 31, 2023) was $16.384 billion, on revenue of $40.111 billion, which works out to an operating margin of about 41%.\n\nThis figure is from memory of Meta's reported results rather than a fresh check of the filing.\n\n{\"value\": 16384, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgwndpKswc1idbHJvtXbS"
+ ],
+ "split": "test",
+ "started_at": "2026-11-11T20:40:24.950763+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 335,
+  "output_tokens": 131,
+  "web_searches": 0
+ }
+}

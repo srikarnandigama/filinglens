@@ -1,0 +1,34 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.00782900",
+ "error": null,
+ "finished_at": "2026-11-12T02:14:08.993549+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "76184.75"
+ },
+ "question_id": "q_5a915ae86036ce14",
+ "question_sha": "4765e785ba52cecd5a36a0fee14010f7476e7f1c37eb8f4499abcb3d7240762c",
+ "raw_output": "Amazon's cost of sales for fiscal 2024 was about $304,739 million, from memory of its 10-K. I did not check this against a search. Dividing by four quarters gives an average of about $76,185 million, or roughly $76.2 billion per quarter.\n\n{\"value\": 76184.75, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-12T02:10:05.212451+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "462e8302c4c24e61c1d9f2beabcf105643e3d3d8111fcad472c19884276c5b61",
+ "system_id": "b1-sonnet",
+ "system_kind": "b1",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 6304,
+  "output_tokens": 305,
+  "web_searches": 0
+ }
+}

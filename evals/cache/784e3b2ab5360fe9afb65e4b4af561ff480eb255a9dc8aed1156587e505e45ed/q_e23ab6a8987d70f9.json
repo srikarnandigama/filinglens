@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.004154",
+ "finished_at": "2026-11-11T20:40:50.412733+00:00",
+ "latency_ms": 2838,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "25.3"
+ },
+ "question_id": "q_e23ab6a8987d70f9",
+ "question_sha": "edef0cf01212c5ddf91d5cc1da40604d68bcb88ce08c14ba6422a3a6dc5cb89b",
+ "raw_output": "Pfizer's net margin in fiscal Q3 2024 was about 25.3%. I'm working from figures recalled from memory, not checked against the filing, so treat the result as approximate.\n\n- Revenue: about $17.70 billion\n- Net income attributable to Pfizer: about $4.47 billion\n- Net margin: 4.47 \u00f7 17.70 \u2248 25.3%\n\n{\"value\": 25.3, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgwnfV3KaSZF48TgmG5X7"
+ ],
+ "split": "test",
+ "started_at": "2026-11-11T20:40:47.571663+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 337,
+  "output_tokens": 348,
+  "web_searches": 0
+ }
+}

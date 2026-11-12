@@ -1,0 +1,32 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.00819",
+ "finished_at": "2026-11-11T20:53:21.827000+00:00",
+ "latency_ms": 5967,
+ "latency_note": null,
+ "prediction": {
+  "parse_ok": true,
+  "text": "Microsoft Cloud revenue grew about 23% in fiscal 2025, to roughly $169 billion, but its gross margin percentage slipped by a couple of points, to about 69% from about 71%. According to Microsoft's filings, the main cause was the cost of scaling its AI infrastructure (datacenters, servers, and GPUs, and the associated depreciation and operating costs) along with growing usage of AI products, which are more expensive to deliver than traditional cloud services. Efficiency gains in Azure and Microsoft 365 commercial cloud offset part of the pressure. Gross profit dollars still rose, so the shrinkage applies to the margin percentage, not absolute profit. I'm recalling the exact figures from memory, so check them against the 10-K's MD&A."
+ },
+ "question_id": "hq_19ea90a4eeb84991845ef0f0a3c4d316",
+ "question_sha": "5285faf2d654a4bc66de416e81fa6e7b7d54f6abf81fd47c060eac1798f50cc8",
+ "raw_output": "Microsoft Cloud revenue grew about 23% in fiscal 2025, to roughly $169 billion, but its gross margin percentage slipped by a couple of points, to about 69% from about 71%. According to Microsoft's filings, the main cause was the cost of scaling its AI infrastructure (datacenters, servers, and GPUs, and the associated depreciation and operating costs) along with growing usage of AI products, which are more expensive to deliver than traditional cloud services. Efficiency gains in Azure and Microsoft 365 commercial cloud offset part of the pressure. Gross profit dollars still rose, so the shrinkage applies to the margin percentage, not absolute profit. I'm recalling the exact figures from memory, so check them against the 10-K's MD&A.",
+ "request_ids": [
+  "req_011CgwoceWrw42GmExokXw6n"
+ ],
+ "split": "handwritten",
+ "started_at": "2026-11-11T20:53:15.863916+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 100,
+  "output_tokens": 799,
+  "web_searches": 0
+ }
+}

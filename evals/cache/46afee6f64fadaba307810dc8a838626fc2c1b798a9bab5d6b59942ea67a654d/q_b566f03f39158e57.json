@@ -1,0 +1,46 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": false,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0000200406-26-000016"
+  ],
+  "gold_visible": true,
+  "missing_values": [],
+  "question_id": "q_b566f03f39158e57",
+  "text_sha256": "f0d0c6b173c849fc2509399f2ff8bd002f480e759c023e39f84d54b469a3ebc6",
+  "tokens_est": 2437
+ },
+ "cost_usd": "0.0061550",
+ "error": null,
+ "finished_at": "2026-11-11T21:43:32.925127+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "9.22"
+ },
+ "question_id": "q_b566f03f39158e57",
+ "question_sha": "04dc64da5a48147f5f6002cb8f0a23cd487eacdc1c4076ad25094bc7e66e4327",
+ "raw_output": "Capital expenditures are taken from \"Additions to property, plant and equipment\" in the cash flow statement: $4,832 million in fiscal 2025 and $4,424 million in fiscal 2024.\n\nPercent change = (4,832 \u2212 4,424) / 4,424 = 408 / 4,424 \u2248 9.22%\n\nCapital expenditures rose about 9.2% from fiscal 2024 to fiscal 2025.\n\n{\"value\": 9.22, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-11T21:41:30.293730+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 5280,
+  "output_tokens": 175,
+  "web_searches": 0
+ }
+}

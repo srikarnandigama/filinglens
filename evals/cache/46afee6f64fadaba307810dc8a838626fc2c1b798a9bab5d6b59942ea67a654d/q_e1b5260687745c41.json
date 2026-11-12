@@ -1,0 +1,49 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": false,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0000080424-26-000103",
+   "0000080424-26-000060",
+   "0000080424-26-000011",
+   "0000080424-25-000245"
+  ],
+  "gold_visible": true,
+  "missing_values": [],
+  "question_id": "q_e1b5260687745c41",
+  "text_sha256": "e25149709472777bcb72f78c0f6a4acb6a5472d8c5b4f58de1a6f118cab696dc",
+  "tokens_est": 12056
+ },
+ "cost_usd": "0.0300800",
+ "error": null,
+ "finished_at": "2026-11-12T02:09:54.955513+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "10840.5"
+ },
+ "question_id": "q_e1b5260687745c41",
+ "question_sha": "e1d451cf23fa377b6805957246f5206897f2fede3de458fc371f1b34f7276e04",
+ "raw_output": "Fiscal 2026 cost of products sold was $43,362 million for the full year (from the 10-K). Dividing by four quarters gives the average quarterly figure.\n\n$43,362 million \u00f7 4 = $10,840.5 million\n\nAs a cross-check, the quarterly figures from the filings are:\n- Q1: $10,887 million\n- Q2: $10,834 million\n- Q3: $10,722 million\n- Q4 (implied): $43,362 \u2212 $32,442 = $10,920 million\n\nThese sum to $43,363 million, which matches the annual figure apart from rounding.\n\n**Average quarterly cost of revenue was about $10,840.5 million.**\n\n{\"value\": 10840.5, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-12T02:07:22.538489+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 28820,
+  "output_tokens": 252,
+  "web_searches": 0
+ }
+}

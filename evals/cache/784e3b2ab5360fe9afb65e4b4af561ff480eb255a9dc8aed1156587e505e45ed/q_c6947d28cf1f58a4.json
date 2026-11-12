@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.009126",
+ "finished_at": "2026-11-11T20:40:00.972445+00:00",
+ "latency_ms": 6739,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD billions",
+  "value": "2.4"
+ },
+ "question_id": "q_c6947d28cf1f58a4",
+ "question_sha": "691c3fd93c73ec86adbe22ee7c0ffbe88f5b845d971f9698f07ec5ff9ef4bcb7",
+ "raw_output": "Disney's capital expenditures (investments in parks, resorts and other property) in fiscal Q4 2025, the quarter ended September 27, 2025, were roughly $2.4 billion. This is my best estimate. Disney does not report Q4 separately in its 10-K, so I derived it from memory of the filings rather than from a reported figure.\n\n- Full-year fiscal 2025 capex was about $8.0 billion.\n- Capex for the first nine months was about $5.6 billion, which I recalled only approximately.\n- Subtracting the nine-month figure from the full year gives about $2.4 billion for Q4.\n\n{\"value\": 2.4, \"unit\": \"USD billions\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgwnbZ1LPnQBgCaH2jXRr"
+ ],
+ "split": "test",
+ "started_at": "2026-11-11T20:39:54.233473+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 338,
+  "output_tokens": 845,
+  "web_searches": 0
+ }
+}

@@ -1,0 +1,47 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": false,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0000320187-26-000088",
+   "0001018724-26-000004"
+  ],
+  "gold_visible": true,
+  "missing_values": [],
+  "question_id": "q_4b4d006524d9a05c",
+  "text_sha256": "617561211528d3e8ce32b34c0ec8b066c9bf34bfe9907a02d5b302520d86df80",
+  "tokens_est": 4230
+ },
+ "cost_usd": "0.0109050",
+ "error": null,
+ "finished_at": "2026-11-11T21:43:32.988096+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": "AMZN",
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percentage_points",
+  "value": "3.88"
+ },
+ "question_id": "q_4b4d006524d9a05c",
+ "question_sha": "4c14648a95df5eb8024675ea50f790ba4e8a0ff029d5dd646f8ecd5396a14976",
+ "raw_output": "The question asks about fiscal 2025, so for Nike I use the fiscal year ended May 31, 2025 and for Amazon the year ended December 31, 2025.\n\n**Amazon (FY2025):** net income of $77,670M on total net sales of $716,924M gives a net margin of 77,670 / 716,924 = 10.83%.\n\n**Nike (FY2025):** net income of $3,219M on revenues of $46,309M gives a net margin of 3,219 / 46,309 = 6.95%.\n\n**Difference:** 10.83 \u2212 6.95 = 3.88 percentage points.\n\nAmazon had the higher net margin, by about 3.9 percentage points.\n\n{\"value\": 3.88, \"unit\": \"percentage_points\", \"choice\": \"AMZN\", \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-11T21:41:30.293730+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 9600,
+  "output_tokens": 261,
+  "web_searches": 0
+ }
+}

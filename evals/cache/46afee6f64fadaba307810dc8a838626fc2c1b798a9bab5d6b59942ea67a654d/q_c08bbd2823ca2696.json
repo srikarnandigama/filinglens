@@ -1,0 +1,48 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": false,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0000909832-26-000093",
+   "0000080424-26-000103",
+   "0000909832-25-000101"
+  ],
+  "gold_visible": true,
+  "missing_values": [],
+  "question_id": "q_c08bbd2823ca2696",
+  "text_sha256": "7843e3e77da72ad92d132306c828ccaf88a302a6439efe825698cf68ebeda8db",
+  "tokens_est": 7944
+ },
+ "cost_usd": "0.02027900",
+ "error": null,
+ "finished_at": "2026-11-11T21:43:33.004831+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": "PG",
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percentage_points",
+  "value": "20.5"
+ },
+ "question_id": "q_c08bbd2823ca2696",
+ "question_sha": "d41019e714a4dbe4382d3bb0bb12ae08adcddd83747b5673b6455805ffabf377",
+ "raw_output": "Operating margin is operating income divided by total revenue (net sales for P&G).\n\n**Procter & Gamble, fiscal 2025:** 20,451 / 84,284 = 24.27%\n\n**Costco, fiscal 2025:** 10,383 / 275,235 = 3.77%\n\nCostco's figure is 10,383 / 275,235 = 0.037723, so 3.77%.\n\nP&G's figure is 20,451 / 84,284. Since 84,284 \u00d7 0.2427 = 20,455, the ratio is about 0.24265, or 24.27%.\n\nThe difference is 24.27 \u2212 3.77 = 20.50 percentage points. P&G's higher margin is 24.265%, and Costco's is 3.772%, which gives 20.49 points. I will report about 20.5.\n\n**Procter & Gamble had the higher operating margin, by about 20.5 percentage points.**\n\n{\"value\": 20.5, \"unit\": \"percentage_points\", \"choice\": \"PG\", \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-11T21:41:30.293730+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 18634,
+  "output_tokens": 329,
+  "web_searches": 0
+ }
+}

@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.01028",
+ "finished_at": "2026-11-11T20:44:23.471728+00:00",
+ "latency_ms": 4405,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "1.45"
+ },
+ "question_id": "q_4dcd8dd868199d87",
+ "question_sha": "67db61771d2c65b012db6b13df35a520f8914aa29932d54560b7e1c8456706fd",
+ "raw_output": "ExxonMobil's total revenue rose by about **1.45%** from fiscal 2023 to fiscal 2024. The figures below are from the income statement as I recall them, not checked against the filing here.\n\n| | Fiscal 2023 | Fiscal 2024 |\n|---|---|---|\n| Total revenues and other income | $344,582 million | $349,585 million |\n\nChange: (349,585 \u2212 344,582) / 344,582 = 5,003 / 344,582 \u2248 **+1.45%**\n\nIf you count only \"Sales and other operating revenue\" instead, the figures are $334,697 million and $339,247 million. That gives an increase of about 1.36%.\n\n{\"value\": 1.45, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011Cgwnw5GmqCz27RWqGu4rH"
+ ],
+ "split": "test",
+ "started_at": "2026-11-11T20:44:19.065696+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "4c121dace8201ad5984fc587e44ec56860d7e1322cd752ed76724801ac0e3a27",
+ "system_id": "b0-opus",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 350,
+  "output_tokens": 444,
+  "web_searches": 0
+ }
+}

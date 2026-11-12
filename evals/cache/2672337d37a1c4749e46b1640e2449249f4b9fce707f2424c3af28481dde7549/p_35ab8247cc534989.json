@@ -1,0 +1,104 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 1,
+  "numeric_valid": 1,
+  "text_pending_judge": [
+   {
+    "chunk_ids": [
+     "chk_ba6775b0b0964194bc9504e7190335d92582830d57d3c4765181c5db4a2a54ee"
+    ],
+    "claim_id": "c1",
+    "text": "Gross profit is not applicable to JPMorgan Chase for FY2025. The snapshot's banking applicability policy says gross profit does not apply to a bank's net-interest/noninterest presentation, so a gross margin (gross profit divided by revenue) is not defined."
+   }
+  ],
+  "text_string_supported": 0,
+  "text_total": 1,
+  "uncited": 0
+ },
+ "cost_usd": "0.084386",
+ "error": null,
+ "finished_at": "2026-11-11T20:45:12.635549+00:00",
+ "latency_ms": 16020,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "not_applicable",
+  "unit": null,
+  "value": null
+ },
+ "question_id": "p_35ab8247cc534989",
+ "question_sha": "cade684b9da934b76ca915440f89d1b008324aa717566c21e57c73ed8f081172",
+ "raw_output": {
+  "caveats": [
+   "No gross margin value is given. Gross profit is not applicable to banks, and no other metric was substituted."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "na_JPM_gross_profit_2025_FY"
+     },
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_ba6775b0b0964194bc9504e7190335d92582830d57d3c4765181c5db4a2a54ee"
+     }
+    ],
+    "id": "c1",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Gross profit is not applicable to JPMorgan Chase for FY2025. The snapshot's banking applicability policy says gross profit does not apply to a bank's net-interest/noninterest presentation, so a gross margin (gross profit divided by revenue) is not defined.",
+    "ticker": "JPM",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "1136"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "JPMorgan Chase reported FY2025 revenue of $182.447 billion. This is context only and is not used as a gross profit substitute.",
+    "ticker": "JPM",
+    "unit": "USD",
+    "value": "182447000000",
+    "value_basis": "fact"
+   }
+  ],
+  "final_claim_id": null,
+  "final_unit": null,
+  "final_value": null,
+  "status": "not_applicable",
+  "summary": "JPMorgan Chase's gross margin for fiscal 2025 can't be calculated because gross profit doesn't apply to a bank. The snapshot marks gross profit as not applicable for JPM, given its net-interest and noninterest presentation. The filing does report FY2025 revenue of $182.447 billion. That figure is not a substitute for gross profit, so I did not compute a margin."
+ },
+ "run_id": "fbace51e-0c05-422e-a048-b8ad013a727c",
+ "run_status": "done",
+ "split": "probe",
+ "started_at": "2026-11-11T20:44:56.572221+00:00",
+ "status": "done",
+ "system_config_hash": "2672337d37a1c4749e46b1640e2449249f4b9fce707f2424c3af28481dde7549",
+ "system_id": "system",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 30913,
+  "output_tokens": 2256
+ }
+}

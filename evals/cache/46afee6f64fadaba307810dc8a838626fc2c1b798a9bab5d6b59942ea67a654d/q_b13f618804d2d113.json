@@ -1,0 +1,46 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": false,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0001744489-25-000155"
+  ],
+  "gold_visible": true,
+  "missing_values": [],
+  "question_id": "q_b13f618804d2d113",
+  "text_sha256": "ac9f259fba4407a4991d426bb23404f0ec7d022a81bf601aa6a21f21a8d775cb",
+  "tokens_est": 2787
+ },
+ "cost_usd": "0.00750300",
+ "error": null,
+ "finished_at": "2026-11-11T21:43:32.988096+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "2.77"
+ },
+ "question_id": "q_b13f618804d2d113",
+ "question_sha": "e87bb470444b0a2f21e1f11a34ded4362cd672bb4bd2de5e2b658dfeceb04385",
+ "raw_output": "Disney's total revenues were $88,898 million in fiscal 2023 and $91,361 million in fiscal 2024.\n\nChange = (91,361 \u2212 88,898) / 88,898 = 2,463 / 88,898 \u2248 2.77%\n\nTotal revenue grew about 2.77% from fiscal 2023 to fiscal 2024.\n\n{\"value\": 2.77, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-11T21:41:30.293730+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 6763,
+  "output_tokens": 148,
+  "web_searches": 0
+ }
+}

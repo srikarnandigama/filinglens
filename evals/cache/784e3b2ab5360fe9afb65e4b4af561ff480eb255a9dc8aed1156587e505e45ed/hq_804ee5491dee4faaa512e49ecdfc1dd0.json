@@ -1,0 +1,32 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.005704",
+ "finished_at": "2026-11-11T20:53:37.997976+00:00",
+ "latency_ms": 4572,
+ "latency_note": null,
+ "prediction": {
+  "parse_ok": true,
+  "text": "NVIDIA's roughly $4.5 billion charge in Q1 of fiscal 2026 (the quarter ended April 27, 2025) was tied to its H20 data center GPU, which was designed for the China market. In April 2025, the U.S. government told NVIDIA that exporting H20 chips to China and certain other destinations would require a license, with no clear timeline for approval. NVIDIA said that, because of the new requirement and changing demand, it had to record charges for excess H20 inventory and purchase obligations that it no longer expected to use or sell. The company also said it was unable to ship about $2.5 billion of H20 revenue in the quarter and expected a bigger revenue hit in Q2. I recall that NVIDIA later reversed a small portion of the reserve, about $180 million, when it was able to sell some of the previously reserved H20 inventory, but I'm less sure of that detail, so check the Q2 10-Q."
+ },
+ "question_id": "hq_804ee5491dee4faaa512e49ecdfc1dd0",
+ "question_sha": "ae0b2908eca2f088208be266e3101b23ee236d888cca787fccb4cac3d7649503",
+ "raw_output": "NVIDIA's roughly $4.5 billion charge in Q1 of fiscal 2026 (the quarter ended April 27, 2025) was tied to its H20 data center GPU, which was designed for the China market. In April 2025, the U.S. government told NVIDIA that exporting H20 chips to China and certain other destinations would require a license, with no clear timeline for approval. NVIDIA said that, because of the new requirement and changing demand, it had to record charges for excess H20 inventory and purchase obligations that it no longer expected to use or sell. The company also said it was unable to ship about $2.5 billion of H20 revenue in the quarter and expected a bigger revenue hit in Q2. I recall that NVIDIA later reversed a small portion of the reserve, about $180 million, when it was able to sell some of the previously reserved H20 inventory, but I'm less sure of that detail, so check the Q2 10-Q.",
+ "request_ids": [
+  "req_011CgwodwT7faEMzg1PMjPcS"
+ ],
+ "split": "handwritten",
+ "started_at": "2026-11-11T20:53:33.425480+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 92,
+  "output_tokens": 552,
+  "web_searches": 0
+ }
+}

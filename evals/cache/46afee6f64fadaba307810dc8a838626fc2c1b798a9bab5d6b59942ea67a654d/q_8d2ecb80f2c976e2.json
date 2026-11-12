@@ -1,0 +1,47 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": false,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0001018724-26-000004",
+   "0001628280-26-003952"
+  ],
+  "gold_visible": true,
+  "missing_values": [],
+  "question_id": "q_8d2ecb80f2c976e2",
+  "text_sha256": "45e58e41ebbe4e873140ac328f451756703d0f9de5b137a2dace6d14323b7a50",
+  "tokens_est": 4535
+ },
+ "cost_usd": "0.01104800",
+ "error": null,
+ "finished_at": "2026-11-11T21:43:33.020817+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": "AMZN",
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percentage_points",
+  "value": "6.56"
+ },
+ "question_id": "q_8d2ecb80f2c976e2",
+ "question_sha": "94e3cb7ec8655f1e0aa0e8576d6944c15a78630ada50b50a94260ffc6843ac7b",
+ "raw_output": "Amazon's fiscal 2025 operating margin: 79,975 / 716,924 = 11.155%.\n\nTesla's fiscal 2025 operating margin: 4,355 / 94,827 = 4.593%.\n\nThe difference is 11.155 \u2212 4.593 = 6.56 percentage points.\n\nAmazon had the higher operating margin, by about 6.56 percentage points.\n\n{\"value\": 6.56, \"unit\": \"percentage_points\", \"choice\": \"AMZN\", \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-11T21:41:30.293730+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 10213,
+  "output_tokens": 167,
+  "web_searches": 0
+ }
+}

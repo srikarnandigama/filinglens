@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.007742",
+ "finished_at": "2026-11-11T20:41:30.537592+00:00",
+ "latency_ms": 5744,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "39.0"
+ },
+ "question_id": "q_957bc65c36c5eec4",
+ "question_sha": "1dba4574ce241bac373c3e0b82041ad44e4bc807f8ddc54240ce474925f7b721",
+ "raw_output": "I don't have Nike's reported fiscal Q4 2026 results (the quarter ended May 31, 2026), so this is an estimate rather than a reported figure.\n\nFor reference, Nike's gross margin was 40.3% in fiscal Q4 2025, when it was hit by tariffs, higher discounting and other cost pressures. In recent quarters it has stayed in the roughly 40\u201342% range, and tariff costs have continued to weigh on it. On that basis I'd expect fiscal Q4 2026 to come in at about 39%, somewhat below the prior-year quarter.\n\n{\"value\": 39.0, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgwniEEuauFAdhXXERPTj"
+ ],
+ "split": "test",
+ "started_at": "2026-11-11T20:41:24.800914+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 336,
+  "output_tokens": 707,
+  "web_searches": 0
+ }
+}

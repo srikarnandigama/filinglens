@@ -1,0 +1,47 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": false,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0001193125-26-323660",
+   "0001193125-26-191507"
+  ],
+  "gold_visible": true,
+  "missing_values": [],
+  "question_id": "q_af9bf8736ff16435",
+  "text_sha256": "c3e57f9a44c341969345f9276cdc5c9ca02255f1d9837a260a09b3df964e07ca",
+  "tokens_est": 50019
+ },
+ "cost_usd": "0.0897900",
+ "error": null,
+ "finished_at": "2026-11-11T21:43:33.010860+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "60482"
+ },
+ "question_id": "q_af9bf8736ff16435",
+ "question_sha": "3daa75c42ca0f22dfbc58cf786ee575eeb1f92a17feae2129bc3859ffb6601d6",
+ "raw_output": "Fiscal Q4 2026 (the three months ended June 30, 2026) is not reported on its own, so I derived it as the full-year figure minus the nine-month figure.\n\n- Full-year FY2026 gross margin (10-K): $225,465 million\n- Nine months ended March 31, 2026 gross margin (10-Q): $164,983 million\n- Q4 gross margin: 225,465 \u2212 164,983 = $60,482 million\n\nThis equals about $60.48 billion.\n\n{\"value\": 60482, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-11T21:41:30.293730+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 88835,
+  "output_tokens": 191,
+  "web_searches": 0
+ }
+}

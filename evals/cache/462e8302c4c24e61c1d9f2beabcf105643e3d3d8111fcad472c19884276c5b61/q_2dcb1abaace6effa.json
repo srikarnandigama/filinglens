@@ -1,0 +1,34 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.03287700",
+ "error": null,
+ "finished_at": "2026-11-12T02:14:09.028723+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "65.6"
+ },
+ "question_id": "q_2dcb1abaace6effa",
+ "question_sha": "b10eee44969216c5f67d9b7d4d7b4bb981814a564e76eb81d870d7c7cd641ad7",
+ "raw_output": "GAAP operating margin = 53,536 / 81,615 = 65.6%.\n\nNvidia's GAAP operating income for fiscal Q1 2027 (the quarter ended April 26, 2026) was $53,536 million on revenue of $81,615 million. That works out to an operating margin of about 65.6%. On a non-GAAP basis, operating income was $53,783 million, a margin of about 65.9%.\n\n{\"value\": 65.6, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-12T02:10:05.212451+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "462e8302c4c24e61c1d9f2beabcf105643e3d3d8111fcad472c19884276c5b61",
+ "system_id": "b1-sonnet",
+ "system_kind": "b1",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 20792,
+  "output_tokens": 417,
+  "web_searches": 1
+ }
+}

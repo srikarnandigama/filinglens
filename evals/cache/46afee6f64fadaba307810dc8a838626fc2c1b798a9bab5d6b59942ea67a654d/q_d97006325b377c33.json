@@ -1,0 +1,47 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": false,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0001193125-26-323660",
+   "0000320193-25-000079"
+  ],
+  "gold_visible": true,
+  "missing_values": [],
+  "question_id": "q_d97006325b377c33",
+  "text_sha256": "ebddac285ced5f57901d881e5543f5986084a5db9e033bcd05aebc1fbf34dd7f",
+  "tokens_est": 27526
+ },
+ "cost_usd": "0.05051300",
+ "error": null,
+ "finished_at": "2026-11-12T02:09:54.984777+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": "MSFT",
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percentage_points",
+  "value": "21.9"
+ },
+ "question_id": "q_d97006325b377c33",
+ "question_sha": "7c733974a655c7ddbfe23e0a6b8a57c3cef48deac1352a69d035f109d45ee677",
+ "raw_output": "Gross margin percentage in fiscal 2025 (gross margin \u00f7 total revenue):\n\n- Microsoft: 193,893 / 281,724 = 68.82%\n- Apple: 195,201 / 416,161 = 46.91%\n\nDifference: 68.82 \u2212 46.91 \u2248 21.9 percentage points.\n\nMicrosoft's fiscal 2025 figures come from the comparative columns in its filing, which was labeled fiscal 2026.\n\nMicrosoft had the higher gross margin, by about 21.9 percentage points.\n\n{\"value\": 21.9, \"unit\": \"percentage_points\", \"choice\": \"MSFT\", \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-12T02:07:22.538489+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 49413,
+  "output_tokens": 220,
+  "web_searches": 0
+ }
+}

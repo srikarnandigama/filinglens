@@ -1,0 +1,34 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.00890700",
+ "error": null,
+ "finished_at": "2026-11-12T02:14:09.009670+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": "KO",
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percentage_points",
+  "value": "1.38"
+ },
+ "question_id": "q_07f2b541aca0b44e",
+ "question_sha": "649350d3fc43c59cbf9291ca4b0d119a883fe41ce8dbc78f5e1c9bb97e880ac6",
+ "raw_output": "**Coca-Cola had the higher operating margin in fiscal 2024, by about 1.4 percentage points.** I worked from the figures as I remember them from the 10-Ks and didn't check them against the filings.\n\n- **Procter & Gamble (fiscal year ended June 2024):** Operating income was about $18,134M on net sales of about $84,039M. That is an operating margin of about 21.6%.\n- **Coca-Cola (fiscal year ended December 2024):** Operating income was about $10,805M on net operating revenues of about $47,061M. That is an operating margin of about 23.0%.\n\nThe gap is 22.96% minus 21.58%, or about 1.38 percentage points.\n\n{\"value\": 1.38, \"unit\": \"percentage_points\", \"choice\": \"KO\", \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-12T02:10:05.212451+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "462e8302c4c24e61c1d9f2beabcf105643e3d3d8111fcad472c19884276c5b61",
+ "system_id": "b1-sonnet",
+ "system_kind": "b1",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 6322,
+  "output_tokens": 517,
+  "web_searches": 0
+ }
+}

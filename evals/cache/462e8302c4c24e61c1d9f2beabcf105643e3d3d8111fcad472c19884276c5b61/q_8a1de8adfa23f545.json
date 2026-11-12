@@ -1,0 +1,34 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.00818400",
+ "error": null,
+ "finished_at": "2026-11-12T02:14:09.109716+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "-26.3"
+ },
+ "question_id": "q_8a1de8adfa23f545",
+ "question_sha": "155a3e63a5a76dc9d997e3f28b4f01de2530b81cdbad3ae8b34ecc2c3fbcc3ac",
+ "raw_output": "JPMorgan Chase's net income fell about 26.3% from Q1 2023 to Q4 2023. I used figures I remember from the company's earnings reports and did not search to confirm them.\n\n- Q1 2023 net income was about $12,622 million.\n- Q4 2023 net income was about $9,307 million. That quarter included a large FDIC special assessment, which is a one-time charge to rebuild the deposit insurance fund.\n- The change is (9,307 \u2212 12,622) / 12,622 \u2248 \u221226.3%.\n\n{\"value\": -26.3, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-12T02:10:05.212451+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "462e8302c4c24e61c1d9f2beabcf105643e3d3d8111fcad472c19884276c5b61",
+ "system_id": "b1-sonnet",
+ "system_kind": "b1",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 6319,
+  "output_tokens": 373,
+  "web_searches": 0
+ }
+}

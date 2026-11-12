@@ -1,0 +1,46 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": false,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0000034088-26-000045"
+  ],
+  "gold_visible": true,
+  "missing_values": [],
+  "question_id": "q_8e8da1e93064f385",
+  "text_sha256": "bc457fe5ee269e60647cd8f220c6b34f3f2eb7d2a60e38338b55abffcab26c0c",
+  "tokens_est": 3387
+ },
+ "cost_usd": "0.00791100",
+ "error": null,
+ "finished_at": "2026-11-12T02:09:54.936526+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD/share",
+  "value": "7.84"
+ },
+ "question_id": "q_8e8da1e93064f385",
+ "question_sha": "d9c54798f0984f9b76b74af1dbf793002b20a8fc80faa653faaa57dbd748f10c",
+ "raw_output": "ExxonMobil's diluted earnings per share for fiscal 2024 was $7.84, as shown on the consolidated statement of income (\"Earnings (loss) per common share - assuming dilution\"). This matches basic EPS for the year.\n\n{\"value\": 7.84, \"unit\": \"USD/share\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-12T02:07:22.538489+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 7341,
+  "output_tokens": 114,
+  "web_searches": 0
+ }
+}

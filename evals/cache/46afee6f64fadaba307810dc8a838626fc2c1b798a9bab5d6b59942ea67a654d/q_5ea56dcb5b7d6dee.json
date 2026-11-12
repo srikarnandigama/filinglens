@@ -1,0 +1,49 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": false,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0000104169-26-000154",
+   "0000104169-26-000102",
+   "0000104169-26-000055",
+   "0000104169-25-000191"
+  ],
+  "gold_visible": true,
+  "missing_values": [],
+  "question_id": "q_5ea56dcb5b7d6dee",
+  "text_sha256": "96f017704466b9bafe1b90a7fec706a261bac91292c88db44d33445501283630",
+  "tokens_est": 13225
+ },
+ "cost_usd": "0.03139400",
+ "error": null,
+ "finished_at": "2026-11-11T21:43:33.010860+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "6660.5"
+ },
+ "question_id": "q_5ea56dcb5b7d6dee",
+ "question_sha": "372188e35df97aecbe4c0f7923304e84187448f1e69915abbd8bc3b5516ef342",
+ "raw_output": "Walmart's fiscal 2026 ended January 31, 2026. Capital expenditures are the \"Payments for property and equipment\" line in the cash flow statement.\n\nFor the full year, that figure was $26,642 million.\n\nAverage quarterly capex = 26,642 / 4 = $6,660.5 million.\n\nAs a check, the quarterly figures from the filings are:\n- Q1: 4,986\n- Q2: 11,409 \u2212 4,986 = 6,423\n- Q3: 18,627 \u2212 11,409 = 7,218\n- Q4: 26,642 \u2212 18,627 = 8,015\n\nThese sum to 26,642, which matches the annual figure.\n\n**Average quarterly capital expenditures for fiscal 2026 were about $6,660.5 million.**\n\n{\"value\": 6660.5, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-11T21:41:30.293730+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 29974,
+  "output_tokens": 284,
+  "web_searches": 0
+ }
+}

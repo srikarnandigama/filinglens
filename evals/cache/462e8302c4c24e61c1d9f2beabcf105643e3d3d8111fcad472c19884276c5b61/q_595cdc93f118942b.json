@@ -1,0 +1,34 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.11090300",
+ "error": null,
+ "finished_at": "2026-11-12T02:14:08.986140+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "1070"
+ },
+ "question_id": "q_595cdc93f118942b",
+ "question_sha": "4eb53da6f6e9965ea1d7acb43d586a189a0fcee6c8c23df6db7959eb1d8541ab",
+ "raw_output": "Content is short; search more.Nike's fiscal Q4 2026 net income was about $1.07 billion. That is my estimate from the reported EPS, not a figure I found directly.\n\nNike's June 30, 2026 earnings release for the quarter ended May 31, 2026 reports diluted earnings per share of $0.72 for the fourth quarter, including a $0.52 benefit related to the expected recovery of the IEEPA tariffs.\n\nI couldn't retrieve the net income line itself, because the search tool hit its usage limit. I assumed about 1.48 billion diluted shares, which is my own assumption and not a reported figure. At that share count, $0.72 per share works out to roughly $1.07 billion.\n\n{\"value\": 1070, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-12T02:10:05.212451+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "462e8302c4c24e61c1d9f2beabcf105643e3d3d8111fcad472c19884276c5b61",
+ "system_id": "b1-sonnet",
+ "system_kind": "b1",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 72723,
+  "output_tokens": 1636,
+  "web_searches": 3
+ }
+}

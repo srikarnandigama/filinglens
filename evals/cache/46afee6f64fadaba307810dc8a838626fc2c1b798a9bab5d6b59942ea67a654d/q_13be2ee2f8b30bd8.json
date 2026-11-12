@@ -1,0 +1,46 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": false,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0000070858-25-000405"
+  ],
+  "gold_visible": true,
+  "missing_values": [],
+  "question_id": "q_13be2ee2f8b30bd8",
+  "text_sha256": "c094cf80230407584ab9f1165b01138ac1f714f7d34e99688c59f6f60778b5c5",
+  "tokens_est": 25009
+ },
+ "cost_usd": "0.04582600",
+ "error": null,
+ "finished_at": "2026-11-12T02:09:55.003331+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "3403716"
+ },
+ "question_id": "q_13be2ee2f8b30bd8",
+ "question_sha": "83f3c978a2fba2a61fb3ee2a0d5f6208b3126469f79b10a776573b0886f8c720",
+ "raw_output": "Bank of America's total assets at September 30, 2025 were $3,403,716 million, which is about $3.4 trillion. This comes from the balance sheet data in Table 1 of the Q3 2025 10-Q.\n\n{\"value\": 3403716, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-12T02:07:22.538489+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 45291,
+  "output_tokens": 107,
+  "web_searches": 0
+ }
+}

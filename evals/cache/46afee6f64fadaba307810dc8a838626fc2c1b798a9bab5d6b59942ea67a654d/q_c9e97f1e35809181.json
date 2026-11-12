@@ -1,0 +1,46 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": false,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0001628280-26-028802"
+  ],
+  "gold_visible": true,
+  "missing_values": [],
+  "question_id": "q_c9e97f1e35809181",
+  "text_sha256": "10991001202dda2d7024294470e150f13e7683b4f315e6aee339d2a1663f34ef",
+  "tokens_est": 1828
+ },
+ "cost_usd": "0.00470100",
+ "error": null,
+ "finished_at": "2026-11-12T02:09:55.003331+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "6966"
+ },
+ "question_id": "q_c9e97f1e35809181",
+ "question_sha": "a59a6219f689cab6dec1c731720481a760de284c35cfc5157a3f92b91d0da443",
+ "raw_output": "Coca-Cola's gross profit for the three months ended March 28, 2025 (fiscal Q1 2025) was $6,966 million, as shown in the consolidated statements of income. That equals net operating revenues of $11,129 million less cost of goods sold of $4,163 million.\n\n{\"value\": 6966, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-12T02:07:22.538489+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 4066,
+  "output_tokens": 127,
+  "web_searches": 0
+ }
+}

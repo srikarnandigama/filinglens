@@ -1,0 +1,131 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 3,
+  "numeric_valid": 3,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.176266",
+ "error": null,
+ "finished_at": "2026-11-11T20:36:39.327444+00:00",
+ "latency_ms": 21632,
+ "prediction": {
+  "choice": "TSLA",
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percentage_points",
+  "value": "2.776039179317"
+ },
+ "question_id": "q_c75fe9af2ecdc0d5",
+ "question_sha": "f07f1b130c1050fe5d8d86aac967ee5997d712bb98656fbf938bbc2203f34ecb",
+ "raw_output": {
+  "caveats": [
+   "Operating margin is calculated as operating income divided by revenue. Both companies have fiscal years ending Dec 31, so the FY2023 periods line up."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_1"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "1011"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "960"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2023
+    },
+    "text": "Tesla's FY2023 operating margin was about 9.19% (operating income $8.891 billion on revenue $96.773 billion).",
+    "ticker": "TSLA",
+    "unit": "percent",
+    "value": "9.18747997892",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_2"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "706"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "672"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2023
+    },
+    "text": "Amazon's FY2023 operating margin was about 6.41% (operating income $36.852 billion on revenue $574.785 billion).",
+    "ticker": "AMZN",
+    "unit": "percent",
+    "value": "6.411440799603",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value",
+      "kind": "computation",
+      "ref": "cmp_3"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2023
+    },
+    "text": "Tesla's operating margin exceeded Amazon's by about 2.78 percentage points in FY2023.",
+    "ticker": "TSLA",
+    "unit": "percentage_points",
+    "value": "2.776039179317",
+    "value_basis": "computation"
+   }
+  ],
+  "final_claim_id": "c3",
+  "final_unit": "percentage_points",
+  "final_value": "2.776039179317",
+  "status": "answered",
+  "summary": "Tesla had the higher fiscal 2023 operating margin: about 9.19%, against about 6.41% for Amazon. That is a gap of about 2.78 percentage points."
+ },
+ "run_id": "33a04fc1-a017-411a-b957-af82ef1268d4",
+ "run_status": "done",
+ "split": "test",
+ "started_at": "2026-11-11T20:36:17.646356+00:00",
+ "status": "done",
+ "system_config_hash": "2672337d37a1c4749e46b1640e2449249f4b9fce707f2424c3af28481dde7549",
+ "system_id": "system",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 71248,
+  "output_tokens": 3377
+ }
+}

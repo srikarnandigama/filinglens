@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.023",
+ "finished_at": "2026-11-12T02:04:21.272978+00:00",
+ "latency_ms": 6039,
+ "latency_note": null,
+ "prediction": {
+  "choice": "NKE",
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percentage_points",
+  "value": "1.81"
+ },
+ "question_id": "q_bfc9e2daedffdd6e",
+ "question_sha": "2951823f6a4e7c4b63df8d638857e676393ba3833a01a9147c50a557e99518f9",
+ "raw_output": "**Nike had the higher net margin in fiscal 2024, by about 1.81 percentage points.**\n\n- **Nike (fiscal year ended May 31, 2024):** net income of $5,700M on revenue of $51,362M gives a net margin of about 11.10%.\n- **Amazon (fiscal year ended December 31, 2024):** net income of $59,248M on revenue of $637,959M gives a net margin of about 9.29%.\n\nThe gap is 11.10% \u2212 9.29% \u2248 1.81 percentage points. These figures are from memory of the 10-K filings rather than looked up here.\n\n{\"value\": 1.81, \"unit\": \"percentage_points\", \"choice\": \"NKE\", \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgxDL8PyQXMQ7A4W9QeXC"
+ ],
+ "split": "test",
+ "started_at": "2026-11-12T02:04:15.236561+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "16e92aec0cb80aa246423b8803435a393d3c367c6455eb10a9b8212a8828396f",
+ "system_id": "b0-fable",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 350,
+  "output_tokens": 505,
+  "web_searches": 0
+ }
+}

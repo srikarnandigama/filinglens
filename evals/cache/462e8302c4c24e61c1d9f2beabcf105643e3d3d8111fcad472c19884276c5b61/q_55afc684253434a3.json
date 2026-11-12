@@ -1,0 +1,34 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.07605700",
+ "error": null,
+ "finished_at": "2026-11-12T02:14:08.993549+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD billions",
+  "value": "44.4"
+ },
+ "question_id": "q_55afc684253434a3",
+ "question_sha": "01c5a56536445876a8dd80bc9bb58434577a73f3a56f49d5269347569b2d96d2",
+ "raw_output": "I couldn't find Microsoft's fiscal 2026 results. The latest filing I found is the 10-Q for the quarter ended March 31, 2026. Fiscal 2026 ends June 30, 2026, so the fourth quarter appears not to be reported yet. My search tool also hit its usage limit before I could check for a newer filing. The answer below is an estimate.\n\n**Reported so far**\n- The 10-Q shows net cash from operations of $46,679 million for the three months ended March 31, 2026, and $127,494 million for the nine months.\n- Back-solving from the nine-month total and the March quarter, I get about $45,098 million for Q1 and $35,717 million for Q2. Those two figures are my own calculation, not read from the filing.\n\n**Fourth-quarter assumption**\n- The year-ago Q4 was about $42.6 billion. I got that by subtracting the $93,515 million nine-month figure from fiscal 2025's full-year total of roughly $136.2 billion, which I recalled rather than looked up.\n- Q3 operating cash flow grew about 26% year over year. I assumed Q4 comes in around $50 billion.\n\n**Estimate**\n- Full-year fiscal 2026 operating cash flow is about 127.5 + 50 \u2248 $177.5 billion.\n- Divided by four quarters, that is about **$44.4 billion per quarter**.\n- The nine-month average alone is about $42.5 billion per quarter.\n\n{\"value\": 44.4, \"unit\": \"USD billions\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-12T02:10:05.212451+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "462e8302c4c24e61c1d9f2beabcf105643e3d3d8111fcad472c19884276c5b61",
+ "system_id": "b1-sonnet",
+ "system_kind": "b1",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 37397,
+  "output_tokens": 1732,
+  "web_searches": 3
+ }
+}

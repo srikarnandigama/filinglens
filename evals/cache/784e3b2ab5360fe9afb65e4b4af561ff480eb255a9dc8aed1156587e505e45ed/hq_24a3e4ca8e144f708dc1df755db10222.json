@@ -1,0 +1,32 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.009798",
+ "finished_at": "2026-11-11T20:53:25.003955+00:00",
+ "latency_ms": 9140,
+ "latency_note": null,
+ "prediction": {
+  "parse_ok": true,
+  "text": "Amazon has meaningful but not dominant exposure to currency swings. In its 10-K, it says International segment sales were roughly 21-23% of consolidated net sales in recent years. Those sales, and the related expenses, are mostly denominated in euros, British pounds, and Japanese yen. Canada and Mexico, which are reported within North America, add some exposure, and AWS and certain intercompany balances are also exposed.\n\nExchange rates affect Amazon in two main ways:\n\n- **Translation:** A stronger dollar lowers reported International revenue and operating results when they are converted into dollars. Amazon regularly cites FX as a swing factor in its results, for example a multibillion-dollar headwind in 2022.\n- **Remeasurement:** Intercompany balances can produce gains or losses.\n\nBecause costs are largely incurred in the same local currencies as revenue, the effect on operating income is partly offset. Amazon also uses some foreign currency hedges, though it has not described them as eliminating the risk. I'm recalling these figures from memory, so check the latest 10-K's Item 7A and the segment discussion for exact percentages and dollar impacts."
+ },
+ "question_id": "hq_24a3e4ca8e144f708dc1df755db10222",
+ "question_sha": "79aef5de0f20a517b19f2cbaf4a3206aece8d5840693f5981af9a52f39c9ea89",
+ "raw_output": "Amazon has meaningful but not dominant exposure to currency swings. In its 10-K, it says International segment sales were roughly 21-23% of consolidated net sales in recent years. Those sales, and the related expenses, are mostly denominated in euros, British pounds, and Japanese yen. Canada and Mexico, which are reported within North America, add some exposure, and AWS and certain intercompany balances are also exposed.\n\nExchange rates affect Amazon in two main ways:\n\n- **Translation:** A stronger dollar lowers reported International revenue and operating results when they are converted into dollars. Amazon regularly cites FX as a swing factor in its results, for example a multibillion-dollar headwind in 2022.\n- **Remeasurement:** Intercompany balances can produce gains or losses.\n\nBecause costs are largely incurred in the same local currencies as revenue, the effect on operating income is partly offset. Amazon also uses some foreign currency hedges, though it has not described them as eliminating the risk. I'm recalling these figures from memory, so check the latest 10-K's Item 7A and the segment discussion for exact percentages and dollar impacts.",
+ "request_ids": [
+  "req_011CgwoceXN4p96Eqt5GhgoS"
+ ],
+ "split": "handwritten",
+ "started_at": "2026-11-11T20:53:15.864432+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 84,
+  "output_tokens": 963,
+  "web_searches": 0
+ }
+}

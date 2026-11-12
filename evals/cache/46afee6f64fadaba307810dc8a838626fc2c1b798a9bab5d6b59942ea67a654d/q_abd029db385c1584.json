@@ -1,0 +1,46 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": false,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0001744489-26-000057"
+  ],
+  "gold_visible": true,
+  "missing_values": [],
+  "question_id": "q_abd029db385c1584",
+  "text_sha256": "30ae029eeb32b21e8f9c35083e7b68a4015b129690b9e0bab2163840de1fbc08",
+  "tokens_est": 3270
+ },
+ "cost_usd": "0.00892800",
+ "error": null,
+ "finished_at": "2026-11-12T02:09:54.982383+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "10.45"
+ },
+ "question_id": "q_abd029db385c1584",
+ "question_sha": "23d064fd07551e0766110dfba57d997b992d93bab2405d8023606c0b22251840",
+ "raw_output": "Net margin is net income divided by total revenues for the quarter.\n\nThe question doesn't say whether to use net income or net income attributable to Disney. I used net income attributable to Disney, which is the more common basis.\n\n- Net income attributable to Disney: $2,638 million\n- Total revenues: $25,248 million\n- Net margin: 2,638 / 25,248 = 10.449%, or about 10.45%\n\nOn total net income of $2,844 million, the margin would be 11.26%.\n\n**Net margin \u2248 10.45%**\n\n{\"value\": 10.45, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-12T02:07:22.538489+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 7908,
+  "output_tokens": 204,
+  "web_searches": 0
+ }
+}

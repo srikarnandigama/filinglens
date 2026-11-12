@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.003078",
+ "finished_at": "2026-11-11T20:38:10.048271+00:00",
+ "latency_ms": 2053,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "4415"
+ },
+ "question_id": "q_276b2c38eb7274dd",
+ "question_sha": "04bd18411047c609d08202b1a1da6adce1fa6aa31a90d1091d27cdc3e86651bc",
+ "raw_output": "Tesla's fiscal 2023 gross profit was $17,660 million for the full year (revenue $96,773M, cost of revenues $79,113M).\n\nQuarterly gross profit:\n- Q1 2023: $4,511M\n- Q2 2023: $4,533M\n- Q3 2023: $4,178M\n- Q4 2023: $4,438M\n\nThe quarters sum to $17,660M, which matches the annual figure.\n\nAverage quarterly gross profit = 17,660 / 4 = $4,415 million.\n\n**Tesla's average quarterly gross profit over fiscal 2023 was about $4.415 billion.**\n\n{\"value\": 4415, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgwnTiwPn8Yst98gUTGjd"
+ ],
+ "split": "test",
+ "started_at": "2026-11-11T20:38:07.992547+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 339,
+  "output_tokens": 240,
+  "web_searches": 0
+ }
+}

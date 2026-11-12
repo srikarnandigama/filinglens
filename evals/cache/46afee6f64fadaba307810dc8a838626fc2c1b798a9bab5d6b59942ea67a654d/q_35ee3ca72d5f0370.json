@@ -1,0 +1,46 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": false,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0001652044-25-000062"
+  ],
+  "gold_visible": true,
+  "missing_values": [],
+  "question_id": "q_35ee3ca72d5f0370",
+  "text_sha256": "80e1d90c51813de40e2d6149dbd4b7f6d3f9757d128a0a64963a3f145d0f2141",
+  "tokens_est": 2611
+ },
+ "cost_usd": "0.00697100",
+ "error": null,
+ "finished_at": "2026-11-12T02:09:54.926185+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "27.87"
+ },
+ "question_id": "q_35ee3ca72d5f0370",
+ "question_sha": "2f00488a3f1eef38bf4e2f999c6013a132b9d0ce8b1e2c33baacdb94a1104e32",
+ "raw_output": "The column headers show 2024 first and 2025 second, so the Q2 2024 figures are the first column: revenue of $84,742 million and net income of $23,619 million.\n\nNet margin = 23,619 / 84,742 = 27.87%\n\nRounded to two decimals, that is 27.87%.\n\n{\"value\": 27.87, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-12T02:07:22.538489+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 6321,
+  "output_tokens": 130,
+  "web_searches": 0
+ }
+}

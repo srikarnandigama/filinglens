@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.01296",
+ "finished_at": "2026-11-12T02:04:22.511089+00:00",
+ "latency_ms": 2978,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "3.8"
+ },
+ "question_id": "q_b254536a3b07fd42",
+ "question_sha": "2c5c2a236c70acff87ce2720fbd06ba3ba71a7f9baf157f40b8b2926df4164d1",
+ "raw_output": "UnitedHealth's operating margin in fiscal Q3 2025 was about 3.8%, based on my recollection of roughly $4.3 billion in earnings from operations on about $113.2 billion in revenue (\u22483.81% unrounded).\n\n{\"value\": 3.8, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgxDLSkXd3Q1s2aLSubJD"
+ ],
+ "split": "test",
+ "started_at": "2026-11-12T02:04:19.533222+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "16e92aec0cb80aa246423b8803435a393d3c367c6455eb10a9b8212a8828396f",
+ "system_id": "b0-fable",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 340,
+  "output_tokens": 256,
+  "web_searches": 0
+ }
+}

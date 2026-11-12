@@ -1,0 +1,16 @@
+# M5 test run addition (D109): B0 Fable 5.2 (closed book, same protocol and prompt as the other
+# B0s) on the frozen 100-question test sample. Expected $2.91 (B0 Sonnet's measured tokens at
+# $8/$40); $0.40 reserved for 4 in-flight questions.
+name = "m5-test-fable"
+split = "test"
+sample = "sample_100"
+seed = 20261109
+concurrency = 4
+budget = "d109"           # counts toward the $30 ceiling for the rest of M5
+spend_cap_usd = "4.00"
+
+[[systems]]
+id = "b0-fable"
+kind = "b0"
+model_env = "BASELINE_MODELS"
+model_index = 2           # claude-fable-5-2

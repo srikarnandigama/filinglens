@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.020452",
+ "finished_at": "2026-11-11T20:44:09.764936+00:00",
+ "latency_ms": 8613,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "56.8"
+ },
+ "question_id": "q_b1dd7dbbd2417b9c",
+ "question_sha": "82e7c38a7267c68a86283e26175cc78e411f86a047ca93abce914ef836995cf3",
+ "raw_output": "**Nvidia's gross profit rose by roughly 57% from fiscal 2025 to fiscal 2026.** This is an estimate: I could not confirm the fourth quarter of fiscal 2026 from a filing, so that quarter is approximated.\n\n**Fiscal 2025 (ended January 2025):** revenue was about $130.5B and gross profit about $97.9B, a 75.0% margin.\n\n**Fiscal 2026 (ended January 25, 2026), gross profit by quarter:**\n\n| Quarter | Revenue | Gross margin | Gross profit | Source |\n|---|---|---|---|---|\n| Q1 | $44.06B | 60.5% (reduced by the H20 charge) | $26.67B | Reported |\n| Q2 | $46.74B | 72.4% | $33.85B | Reported |\n| Q3 | $57.01B | 73.4% | $41.85B | Reported |\n| Q4 | ~$68.1B | ~75% | ~$51.1B | Estimated |\n| **Total** | | | **\u2248 $153.5B** | |\n\nThe Q4 figures are my approximation, not values I could verify from a filing. Company guidance for Q4 was about $65B in revenue at roughly a 75% margin, and my recollection is that actual revenue was around $68B.\n\n**Change:** $153.5B \u00f7 $97.9B \u2212 1 \u2248 +56.8%.\n\n{\"value\": 56.8, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgwnuknVidDfgqvgXBQtH"
+ ],
+ "split": "test",
+ "started_at": "2026-11-11T20:44:01.155225+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "4c121dace8201ad5984fc587e44ec56860d7e1322cd752ed76724801ac0e3a27",
+ "system_id": "b0-opus",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 348,
+  "output_tokens": 953,
+  "web_searches": 0
+ }
+}

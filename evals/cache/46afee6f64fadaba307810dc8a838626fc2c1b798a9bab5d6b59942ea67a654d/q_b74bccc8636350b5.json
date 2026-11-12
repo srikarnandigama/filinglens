@@ -1,0 +1,47 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": false,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0001628280-26-010047",
+   "0000021344-24-000060"
+  ],
+  "gold_visible": true,
+  "missing_values": [],
+  "question_id": "q_b74bccc8636350b5",
+  "text_sha256": "cf38f22c6d07826b2458c80e0239cc1183433e5cbec190bdc1c035ab9f995835",
+  "tokens_est": 4873
+ },
+ "cost_usd": "0.0120200",
+ "error": null,
+ "finished_at": "2026-11-12T02:09:54.936526+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "6215"
+ },
+ "question_id": "q_b74bccc8636350b5",
+ "question_sha": "e8022aba2b5415febc5c9a80cd3101c1255e1a7bc5f3d58a60c9e31976f1795a",
+ "raw_output": "Q4 2023 gross profit is the full-year 2023 figure less the nine-month figure, both taken from the filings provided.\n\n- Full-year 2023 gross profit: $27,234 million (FY2025 10-K).\n- Nine months ended September 29, 2023: $21,019 million (Q3 2024 10-Q).\n\nQ4 2023 gross profit = 27,234 \u2212 21,019 = $6,215 million.\n\nThe full-year figure comes from the most recent filing, while the nine-month figure comes from the 2024 10-Q. Cost of goods sold gives a consistent check: 18,520 \u2212 13,886 = 4,634, and revenue of 45,754 \u2212 34,905 = 10,849 less 4,634 equals 6,215.\n\n{\"value\": 6215, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-12T02:07:22.538489+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 10620,
+  "output_tokens": 280,
+  "web_searches": 0
+ }
+}

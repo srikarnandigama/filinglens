@@ -1,0 +1,131 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 0,
+  "numeric_valid": 0,
+  "text_pending_judge": [],
+  "text_string_supported": 3,
+  "text_total": 3,
+  "uncited": 0
+ },
+ "cost_usd": "0.0872492",
+ "error": null,
+ "finished_at": "2026-11-11T20:48:49.604357+00:00",
+ "latency_ms": 24399,
+ "prediction": {
+  "parse_ok": true,
+  "text": "Apple's FY2025 10-K (Item 7A) says it applied a Monte Carlo value-at-risk (VAR) model to its foreign currency derivative positions. The model estimates, with 95% confidence, a maximum one-day loss in fair value of $590 million as of September 27, 2025. The comparable figure was $538 million as of September 28, 2024. Apple notes that its underlying foreign currency exposures were excluded from the assessment and generally offset changes in the derivatives' fair values.\nApple applied a value-at-risk (VAR) model to its foreign currency derivative positions to assess the potential impact of exchange-rate fluctuations. The model used a Monte Carlo simulation.\nBased on the model, Apple estimates with 95% confidence a maximum one-day loss in fair value of $590 million as of September 27, 2025, compared with $538 million as of September 28, 2024.\nApple stated that changes in its underlying foreign currency exposures, which were excluded from the assessment, generally offset changes in the fair values of its foreign currency derivatives."
+ },
+ "question_id": "hq_3bc57255183d4bdeabdba814d9c2f4a7",
+ "question_sha": "e22bb516c6878ac8a33bbe6810e8a089bd2bc9c5b6710918846a3e7230333869",
+ "raw_output": {
+  "caveats": [
+   "The VAR figures come from filing text, not structured facts. They cover foreign currency derivative positions only, and underlying exposures are excluded from the model."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_cd18948b6226bce71e1e79e6b61fd7b59ae5fc210c704820112d314152c77b32"
+     }
+    ],
+    "id": "c1",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Apple applied a value-at-risk (VAR) model to its foreign currency derivative positions to assess the potential impact of exchange-rate fluctuations. The model used a Monte Carlo simulation.",
+    "ticker": "AAPL",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_cd18948b6226bce71e1e79e6b61fd7b59ae5fc210c704820112d314152c77b32"
+     }
+    ],
+    "id": "c2",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Based on the model, Apple estimates with 95% confidence a maximum one-day loss in fair value of $590 million as of September 27, 2025, compared with $538 million as of September 28, 2024.",
+    "ticker": "AAPL",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_cd18948b6226bce71e1e79e6b61fd7b59ae5fc210c704820112d314152c77b32"
+     }
+    ],
+    "id": "c3",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Apple stated that changes in its underlying foreign currency exposures, which were excluded from the assessment, generally offset changes in the fair values of its foreign currency derivatives.",
+    "ticker": "AAPL",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   }
+  ],
+  "final_claim_id": null,
+  "final_unit": null,
+  "final_value": null,
+  "status": "answered",
+  "summary": "Apple's FY2025 10-K (Item 7A) says it applied a Monte Carlo value-at-risk (VAR) model to its foreign currency derivative positions. The model estimates, with 95% confidence, a maximum one-day loss in fair value of $590 million as of September 27, 2025. The comparable figure was $538 million as of September 28, 2024. Apple notes that its underlying foreign currency exposures were excluded from the assessment and generally offset changes in the derivatives' fair values."
+ },
+ "retrieval": {
+  "first_search": {
+   "filings:s1": [
+    "chk_cd18948b6226bce71e1e79e6b61fd7b59ae5fc210c704820112d314152c77b32",
+    "chk_2e526343a4a83eb6fb8836ff2a55be535870334b769cabdfcd827bfee31e44fe",
+    "chk_328eeb97079e6e9544487d0d8367dc62854442126945ae15e8ff26eae95b8f8a",
+    "chk_43b69eb223c96eaa34c1dc1445f49616c16e2fb80301fb98972b3151c6378467",
+    "chk_40835a835fb682473342848083c88b689753e7f0d0e6b2d2b918be2de005a5a5",
+    "chk_6327328165af24bf4740157cb5471c41924c625dab77e18589bebac195cac3c8",
+    "chk_585506d0f4376e427a7cc03fdb54b334b7620aa9775458a0f069e440347cd9dd",
+    "chk_b8e69e2531796f55a43329d3ba506917a591ab7e6bbdea7e58ae87bfd99de9f9"
+   ]
+  },
+  "seen": [
+   "chk_cd18948b6226bce71e1e79e6b61fd7b59ae5fc210c704820112d314152c77b32",
+   "chk_2e526343a4a83eb6fb8836ff2a55be535870334b769cabdfcd827bfee31e44fe",
+   "chk_328eeb97079e6e9544487d0d8367dc62854442126945ae15e8ff26eae95b8f8a",
+   "chk_43b69eb223c96eaa34c1dc1445f49616c16e2fb80301fb98972b3151c6378467",
+   "chk_40835a835fb682473342848083c88b689753e7f0d0e6b2d2b918be2de005a5a5",
+   "chk_6327328165af24bf4740157cb5471c41924c625dab77e18589bebac195cac3c8",
+   "chk_585506d0f4376e427a7cc03fdb54b334b7620aa9775458a0f069e440347cd9dd",
+   "chk_b8e69e2531796f55a43329d3ba506917a591ab7e6bbdea7e58ae87bfd99de9f9"
+  ]
+ },
+ "run_id": "0e677cfb-1598-4f7c-afdb-d5fbe39aa92f",
+ "run_status": "done",
+ "split": "handwritten",
+ "started_at": "2026-11-11T20:48:25.131114+00:00",
+ "status": "done",
+ "system_config_hash": "2672337d37a1c4749e46b1640e2449249f4b9fce707f2424c3af28481dde7549",
+ "system_id": "system",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 53540,
+  "output_tokens": 3419
+ }
+}

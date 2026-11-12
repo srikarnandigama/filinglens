@@ -1,0 +1,34 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.04797400",
+ "error": null,
+ "finished_at": "2026-11-12T02:14:09.132890+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD billions",
+  "value": "3403.716"
+ },
+ "question_id": "q_13be2ee2f8b30bd8",
+ "question_sha": "83f3c978a2fba2a61fb3ee2a0d5f6208b3126469f79b10a776573b0886f8c720",
+ "raw_output": "Bank of America's total assets at September 30, 2025 were about **$3,403.7 billion**, or roughly $3.4 trillion. That figure is from the balance sheet in its Q3 2025 10-Q, which shows $3,403,716 million. Macrotrends reports the same number.\n\nThe earnings press release shows a slightly different figure, $3,403,216 million. I used the 10-Q because it is the formal filing.\n\n{\"value\": 3403.716, \"unit\": \"USD billions\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-12T02:10:05.212451+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "462e8302c4c24e61c1d9f2beabcf105643e3d3d8111fcad472c19884276c5b61",
+ "system_id": "b1-sonnet",
+ "system_kind": "b1",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 34559,
+  "output_tokens": 683,
+  "web_searches": 1
+ }
+}

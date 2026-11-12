@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.006938",
+ "finished_at": "2026-11-11T20:41:20.213889+00:00",
+ "latency_ms": 5668,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "not_available",
+  "unit": "USD",
+  "value": null
+ },
+ "question_id": "q_99517a82fb10cb5f",
+ "question_sha": "e09497fc736950b10b4245d46ced0d7d380356da99662dbb008e78494606da07",
+ "raw_output": "I can't give a figure for this. Bank of America doesn't report fiscal Q4 cash flows on their own. Its 10-Qs show year-to-date cash flow statements, and the 10-K shows the full year. A Q4 number would have to be backed out as full-year 2025 less the nine-month figure. I don't have reliable values for those two figures, so I won't estimate it.\n\n{\"value\": null, \"unit\": \"USD\", \"choice\": null, \"status\": \"not_available\"}",
+ "request_ids": [
+  "req_011CgwnhURRRK7Usg2qt7nh6"
+ ],
+ "split": "test",
+ "started_at": "2026-11-11T20:41:14.560085+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 344,
+  "output_tokens": 625,
+  "web_searches": 0
+ }
+}

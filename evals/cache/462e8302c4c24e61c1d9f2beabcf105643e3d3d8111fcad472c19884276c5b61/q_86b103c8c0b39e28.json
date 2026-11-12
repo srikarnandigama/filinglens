@@ -1,0 +1,34 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.03365700",
+ "error": null,
+ "finished_at": "2026-11-12T02:14:09.132890+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "74.9"
+ },
+ "question_id": "q_86b103c8c0b39e28",
+ "question_sha": "c5f626271151688abbb5ee29f23ba923abc4ef48edba95e0ff6d43d3f59c3d45",
+ "raw_output": "Nvidia's GAAP gross margin for fiscal Q1 2027 (quarter ended April 26, 2026) was **74.9%**. That compares with 75.0% in the prior quarter and 60.5% a year earlier. That is about 14.4 points higher than a year ago. The non-GAAP gross margin was 75.0%.\n\n{\"value\": 74.9, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-12T02:10:05.212451+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "462e8302c4c24e61c1d9f2beabcf105643e3d3d8111fcad472c19884276c5b61",
+ "system_id": "b1-sonnet",
+ "system_kind": "b1",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 20872,
+  "output_tokens": 557,
+  "web_searches": 1
+ }
+}

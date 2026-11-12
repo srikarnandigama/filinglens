@@ -1,0 +1,46 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": false,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0001628280-26-049270"
+  ],
+  "gold_visible": true,
+  "missing_values": [],
+  "question_id": "q_4d9e8b0cb88fd33f",
+  "text_sha256": "1247eab15b119cc21cf0eade0ff930abd8c72417bdb27cd47c442c438183257b",
+  "tokens_est": 3420
+ },
+ "cost_usd": "0.00847200",
+ "error": null,
+ "finished_at": "2026-11-12T02:09:54.994450+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "16.83"
+ },
+ "question_id": "q_4d9e8b0cb88fd33f",
+ "question_sha": "75b3c709a703ef9e7a90a23a7eaddd4891b918b80331ca8dff70742626654d30",
+ "raw_output": "Gross margin is gross profit divided by total revenues for the quarter.\n\nQ2 2026 gross profit was $4,751 million on total revenues of $28,236 million.\n\n4,751 / 28,236 = 0.16826, or about 16.83%.\n\nTesla's gross margin in fiscal Q2 2026 was about 16.8%.\n\n{\"value\": 16.83, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-12T02:07:22.538489+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 7747,
+  "output_tokens": 145,
+  "web_searches": 0
+ }
+}

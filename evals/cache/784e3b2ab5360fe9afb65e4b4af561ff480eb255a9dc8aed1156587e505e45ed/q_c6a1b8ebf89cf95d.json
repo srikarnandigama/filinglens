@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.002538",
+ "finished_at": "2026-11-11T20:41:53.020528+00:00",
+ "latency_ms": 1650,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "-0.4"
+ },
+ "question_id": "q_c6a1b8ebf89cf95d",
+ "question_sha": "fd59a837ee069e53bf8ae2bbb1e71c645bf7f55f2ce286a536ded53fadb6f908",
+ "raw_output": "Coca-Cola's diluted EPS was $2.47 in fiscal 2023 and $2.46 in fiscal 2024.\n\nChange = (2.46 \u2212 2.47) / 2.47 = \u22120.40%\n\nFiscal 2023 diluted EPS: net income attributable to shareowners was $10,714M, and diluted EPS was $2.47. Fiscal 2024: net income was $10,631M, and diluted EPS was $2.46.\n\n{\"value\": -0.4, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgwnkBnNxxheaXyhyG8rS"
+ ],
+ "split": "test",
+ "started_at": "2026-11-11T20:41:51.369039+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 354,
+  "output_tokens": 183,
+  "web_searches": 0
+ }
+}

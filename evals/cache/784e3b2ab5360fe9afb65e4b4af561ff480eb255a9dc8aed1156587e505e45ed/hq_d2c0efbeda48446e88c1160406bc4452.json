@@ -1,0 +1,32 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.006702",
+ "finished_at": "2026-11-11T20:54:03.029129+00:00",
+ "latency_ms": 5783,
+ "latency_note": null,
+ "prediction": {
+  "parse_ok": true,
+  "text": "Apple said new tariffs added roughly $800 million to its costs in the June 2025 quarter (fiscal Q3), a bit below the ~$900 million it had guided to in May. It expected about $1.1 billion in the September quarter. Management gave these figures on its earnings calls, not in the 10-Q, so I'm working from memory of those calls. The tariffs fell mainly on products and components imported into the US, and Apple said it was shifting sourcing to reduce the hit, for example by supplying most US-bound iPhones from India and other products from Vietnam. Gross margin was still about 46.5%, helped by mix and other factors. The 10-Q's risk disclosures say tariffs and trade measures could raise costs, pressure margins, or force price changes, and that Apple can't predict how these policies will evolve. Check the exact numbers against the transcript and filing."
+ },
+ "question_id": "hq_d2c0efbeda48446e88c1160406bc4452",
+ "question_sha": "4d2f2bef428417fcd99cadfb1703207d6af11ccb5e8e9085e7ef1a18a49f184f",
+ "raw_output": "Apple said new tariffs added roughly $800 million to its costs in the June 2025 quarter (fiscal Q3), a bit below the ~$900 million it had guided to in May. It expected about $1.1 billion in the September quarter. Management gave these figures on its earnings calls, not in the 10-Q, so I'm working from memory of those calls. The tariffs fell mainly on products and components imported into the US, and Apple said it was shifting sourcing to reduce the hit, for example by supplying most US-bound iPhones from India and other products from Vietnam. Gross margin was still about 46.5%, helped by mix and other factors. The 10-Q's risk disclosures say tariffs and trade measures could raise costs, pressure margins, or force price changes, and that Apple can't predict how these policies will evolve. Check the exact numbers against the transcript and filing.",
+ "request_ids": [
+  "req_011CgwofhT4Pwj9xijKs7qXH"
+ ],
+ "split": "handwritten",
+ "started_at": "2026-11-11T20:53:57.249495+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 86,
+  "output_tokens": 653,
+  "web_searches": 0
+ }
+}

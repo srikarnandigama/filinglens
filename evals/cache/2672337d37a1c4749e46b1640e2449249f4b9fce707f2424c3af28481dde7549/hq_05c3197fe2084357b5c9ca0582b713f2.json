@@ -1,0 +1,158 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 0,
+  "numeric_valid": 0,
+  "text_pending_judge": [],
+  "text_string_supported": 4,
+  "text_total": 4,
+  "uncited": 0
+ },
+ "cost_usd": "0.2297577",
+ "error": null,
+ "finished_at": "2026-11-11T20:48:21.424360+00:00",
+ "latency_ms": 65623,
+ "prediction": {
+  "parse_ok": true,
+  "text": "In June 2025, P&G announced a portfolio and productivity plan. The filing says the plan's purpose is to streamline the company's portfolio and organization to improve its cost structure and competitiveness. P&G expects about $1.5 to $2.0 billion of before-tax restructuring costs over two years. That figure includes the ongoing plan. The plan includes a reduction of up to 7,000 non-manufacturing overhead personnel by the end of fiscal 2027. The passages give only this general rationale and no more specific reason.\nIn June 2025, P&G announced a portfolio and productivity plan (the passages' notes call it the 'Focused Portfolio, Supply Chain and Productivity Plan'). The company said it was to streamline its portfolio and organization to improve its cost structure and competitiveness.\nP&G expects approximately $1.5 to $2.0 billion in before-tax restructuring costs over a two-year period, including costs from this plan and the ongoing plan. The restructuring activities include a plan to reduce up to 7,000 non-manufacturing overhead personnel by the end of fiscal 2027.\nSeparately, P&G's earlier limited market portfolio restructuring, which the company started in fiscal 2024, was primarily in certain Enterprise Markets, including Argentina and Nigeria. P&G said it was meant to address challenging macroeconomic and fiscal conditions. This is not the June 2025 plan.\nIn fiscal 2025, P&G incurred before-tax restructuring costs of $1.1 billion. These include a non-cash charge of $752 million for accumulated foreign currency translation losses due to the substantial liquidation of operations in Argentina."
+ },
+ "question_id": "hq_05c3197fe2084357b5c9ca0582b713f2",
+ "question_sha": "8c72e56a71d2c3e2d1837671731ba9606005dc33caab99c80a338d66c74208b1",
+ "raw_output": {
+  "caveats": [
+   "The passages found give only a general rationale for the June 2025 plan. They do not give a more specific reason.",
+   "The first search covered Items 7 and 8, but the plan's scope and rationale appeared only in the Item 7 MD&A passages found. No further, separate Item 8 search for the plan was run."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_8434e8db3e29fe4c2375a878ee2c348c3adea6aa5645e5cefe470ba434ecb636"
+     }
+    ],
+    "id": "c1",
+    "kind": "textual",
+    "period": null,
+    "text": "In June 2025, P&G announced a portfolio and productivity plan (the passages' notes call it the 'Focused Portfolio, Supply Chain and Productivity Plan'). The company said it was to streamline its portfolio and organization to improve its cost structure and competitiveness.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_8434e8db3e29fe4c2375a878ee2c348c3adea6aa5645e5cefe470ba434ecb636"
+     }
+    ],
+    "id": "c2",
+    "kind": "textual",
+    "period": null,
+    "text": "P&G expects approximately $1.5 to $2.0 billion in before-tax restructuring costs over a two-year period, including costs from this plan and the ongoing plan. The restructuring activities include a plan to reduce up to 7,000 non-manufacturing overhead personnel by the end of fiscal 2027.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_9c9168f2e35df7750f6da84d184ec254f269eea357bc930770eae7f9c19a85e2"
+     }
+    ],
+    "id": "c3",
+    "kind": "textual",
+    "period": null,
+    "text": "Separately, P&G's earlier limited market portfolio restructuring, which the company started in fiscal 2024, was primarily in certain Enterprise Markets, including Argentina and Nigeria. P&G said it was meant to address challenging macroeconomic and fiscal conditions. This is not the June 2025 plan.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_3dd1e4263b324528f58699e0e3e2a178ac2198c06672610afa0898c576366749"
+     }
+    ],
+    "id": "c4",
+    "kind": "textual",
+    "period": null,
+    "text": "In fiscal 2025, P&G incurred before-tax restructuring costs of $1.1 billion. These include a non-cash charge of $752 million for accumulated foreign currency translation losses due to the substantial liquidation of operations in Argentina.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   }
+  ],
+  "final_claim_id": null,
+  "final_unit": null,
+  "final_value": null,
+  "status": "answered",
+  "summary": "In June 2025, P&G announced a portfolio and productivity plan. The filing says the plan's purpose is to streamline the company's portfolio and organization to improve its cost structure and competitiveness. P&G expects about $1.5 to $2.0 billion of before-tax restructuring costs over two years. That figure includes the ongoing plan. The plan includes a reduction of up to 7,000 non-manufacturing overhead personnel by the end of fiscal 2027. The passages give only this general rationale and no more specific reason."
+ },
+ "retrieval": {
+  "first_search": {
+   "filings:s1": [
+    "chk_3dd1e4263b324528f58699e0e3e2a178ac2198c06672610afa0898c576366749",
+    "chk_8434e8db3e29fe4c2375a878ee2c348c3adea6aa5645e5cefe470ba434ecb636",
+    "chk_45f7042086bc043f6f6069d89acf3881a5cdecb4ab8fd5f3aa6e9faec22970c2",
+    "chk_9c9168f2e35df7750f6da84d184ec254f269eea357bc930770eae7f9c19a85e2",
+    "chk_cc0266b85d32065bdd6c76dd1dddc2fc9dcdf41733c8be64118a44607ac24fdf",
+    "chk_bc37419f76b0627d38a6f530f7d922c1f31addf586e990c3ceb6e2913f87a234",
+    "chk_3517220d0f97470660c83990cec59e12c704200467d2c02523a21e0557950d37",
+    "chk_57e8b77177ec5635a7a80955affefc09f0baa49550b0b1b34a9e11d878e8e4f5"
+   ],
+   "filings:s2": [
+    "chk_5ee8e6b60045f94a7154916d353654d04f90dae12c1ab424ffc3f8efc0d1cb46",
+    "chk_81569500d999364fb18936277de12bb63c2dad1681d4513efc966c13ab76e5bd",
+    "chk_7c409b57c7ddf360604dd68ae37eda993c7f89b01db1dcc3b27033484f8b1e91",
+    "chk_be0061b5afe98ce6de97ee42a337338abb9f34c9e98b63f507f9fbcfd43ba0cd",
+    "chk_43a616c341c471cbd9b3acf35666a62036260ab41064eef9cea741c55eb7aef7"
+   ]
+  },
+  "seen": [
+   "chk_3dd1e4263b324528f58699e0e3e2a178ac2198c06672610afa0898c576366749",
+   "chk_8434e8db3e29fe4c2375a878ee2c348c3adea6aa5645e5cefe470ba434ecb636",
+   "chk_45f7042086bc043f6f6069d89acf3881a5cdecb4ab8fd5f3aa6e9faec22970c2",
+   "chk_9c9168f2e35df7750f6da84d184ec254f269eea357bc930770eae7f9c19a85e2",
+   "chk_cc0266b85d32065bdd6c76dd1dddc2fc9dcdf41733c8be64118a44607ac24fdf",
+   "chk_bc37419f76b0627d38a6f530f7d922c1f31addf586e990c3ceb6e2913f87a234",
+   "chk_3517220d0f97470660c83990cec59e12c704200467d2c02523a21e0557950d37",
+   "chk_57e8b77177ec5635a7a80955affefc09f0baa49550b0b1b34a9e11d878e8e4f5",
+   "chk_5ee8e6b60045f94a7154916d353654d04f90dae12c1ab424ffc3f8efc0d1cb46",
+   "chk_81569500d999364fb18936277de12bb63c2dad1681d4513efc966c13ab76e5bd",
+   "chk_7c409b57c7ddf360604dd68ae37eda993c7f89b01db1dcc3b27033484f8b1e91",
+   "chk_be0061b5afe98ce6de97ee42a337338abb9f34c9e98b63f507f9fbcfd43ba0cd",
+   "chk_43a616c341c471cbd9b3acf35666a62036260ab41064eef9cea741c55eb7aef7",
+   "chk_983493f95e3b02c06b1d098ee9fc96973b3f26bede8e92388573eaca884415fc",
+   "chk_9bff24ad388e4fff47417cbfce60cb92121284bd4531a131bf57751a9353a7bf",
+   "chk_b1839a94bc78102059a564e7c2d02069ebc069bdc1f376a84cd7472203c75422",
+   "chk_7c296c35e34c5bb8d67f2655a9e2eda886c57492a4cef1d0d10d4d5190c089fb",
+   "chk_d375d30af3cb8c36e6c719255d96094200bc282c87fb1d9a1174a8f60489540c",
+   "chk_485abed18902b8926bfeb87ef546b63fbab1cb0839fc37a528dced1244cd73dd"
+  ]
+ },
+ "run_id": "140d0c62-040f-40b1-8699-f6dff023c0a8",
+ "run_status": "done",
+ "split": "handwritten",
+ "started_at": "2026-11-11T20:47:15.726274+00:00",
+ "status": "done",
+ "system_config_hash": "2672337d37a1c4749e46b1640e2449249f4b9fce707f2424c3af28481dde7549",
+ "system_id": "system",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 153746,
+  "output_tokens": 10333
+ }
+}

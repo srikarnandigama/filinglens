@@ -1,0 +1,46 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": false,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0000080424-26-000103"
+  ],
+  "gold_visible": true,
+  "missing_values": [],
+  "question_id": "q_b5d8dc1254a0ed35",
+  "text_sha256": "7899bc008eaa171bb0c1ad3b9d9ad5c49445c869b63d00dcb37d76802bde6f98",
+  "tokens_est": 2821
+ },
+ "cost_usd": "0.00770800",
+ "error": null,
+ "finished_at": "2026-11-12T02:09:54.983823+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "-3.44"
+ },
+ "question_id": "q_b5d8dc1254a0ed35",
+ "question_sha": "172729caf9bdeb80196003b41238a6044987347cfe3aa165398dc1120ec0f1f1",
+ "raw_output": "Operating income was $19,748 million in fiscal 2026 and $20,451 million in fiscal 2025.\n\nChange = (19,748 \u2212 20,451) / 20,451 = \u2212703 / 20,451 \u2248 \u22123.44%\n\nOperating income therefore declined about 3.44% from fiscal 2025 to fiscal 2026.\n\n{\"value\": -3.44, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-12T02:07:22.538489+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 6988,
+  "output_tokens": 144,
+  "web_searches": 0
+ }
+}

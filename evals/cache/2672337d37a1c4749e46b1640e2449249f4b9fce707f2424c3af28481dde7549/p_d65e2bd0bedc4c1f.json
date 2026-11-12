@@ -1,0 +1,96 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 0,
+  "numeric_valid": 0,
+  "text_pending_judge": [
+   {
+    "chunk_ids": [
+     "chk_0ad2bf319cba50bc166432a9aa39e04cdfccd6451908e097cf6c4ab63d25d468",
+     "chk_62b522c5bbfb368665cc718528092465121356acd133cb7c268bf45ea16a5070",
+     "chk_decc01b62e94958712a42615a7fcac0e037ea3c6b1fb5fda2db593d78161adff"
+    ],
+    "claim_id": "c1",
+    "text": "Gross profit is not applicable to Bank of America for fiscal Q2 2026. The fact record gives this reason: under the banking applicability policy, gross profit does not apply to this bank's net-interest/noninterest presentation. It was not inferred from absent XBRL tags."
+   }
+  ],
+  "text_string_supported": 0,
+  "text_total": 1,
+  "uncited": 0
+ },
+ "cost_usd": "0.130978",
+ "error": null,
+ "finished_at": "2026-11-11T20:45:59.256400+00:00",
+ "latency_ms": 24205,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "not_applicable",
+  "unit": null,
+  "value": null
+ },
+ "question_id": "p_d65e2bd0bedc4c1f",
+ "question_sha": "e9d485ce3a8ae0bbf580871bb8557e7130d55c92c162f2a0b4d85ef757a6ad0f",
+ "raw_output": {
+  "caveats": [
+   "No filing passages were supplied, so the not-applicable determination rests on the stored fact record and its applicability chunk references."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "na_BAC_gross_profit_2026_Q2"
+     },
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_0ad2bf319cba50bc166432a9aa39e04cdfccd6451908e097cf6c4ab63d25d468"
+     },
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_62b522c5bbfb368665cc718528092465121356acd133cb7c268bf45ea16a5070"
+     },
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_decc01b62e94958712a42615a7fcac0e037ea3c6b1fb5fda2db593d78161adff"
+     }
+    ],
+    "id": "c1",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "Q2",
+     "fiscal_year": 2026
+    },
+    "text": "Gross profit is not applicable to Bank of America for fiscal Q2 2026. The fact record gives this reason: under the banking applicability policy, gross profit does not apply to this bank's net-interest/noninterest presentation. It was not inferred from absent XBRL tags.",
+    "ticker": "BAC",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   }
+  ],
+  "final_claim_id": null,
+  "final_unit": null,
+  "final_value": null,
+  "status": "not_applicable",
+  "summary": "Gross profit is not applicable to Bank of America for fiscal Q2 2026. The evidence record says the metric doesn't fit a bank's net-interest/noninterest income presentation. No other metric or zero value has been substituted."
+ },
+ "run_id": "ec95629c-8311-4c94-8559-d40c20d7209b",
+ "run_status": "done",
+ "split": "probe",
+ "started_at": "2026-11-11T20:45:35.013208+00:00",
+ "status": "done",
+ "system_config_hash": "2672337d37a1c4749e46b1640e2449249f4b9fce707f2424c3af28481dde7549",
+ "system_id": "system",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 52514,
+  "output_tokens": 2595
+ }
+}

@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.011976",
+ "finished_at": "2026-11-11T20:41:06.289914+00:00",
+ "latency_ms": 8816,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD billions",
+  "value": "7.1"
+ },
+ "question_id": "q_d64fd9e2559a9ea5",
+ "question_sha": "c0a0f0fea6fedbf5842c2fdb85ccebae33cfcca6242413df62fba262ae0f2b69",
+ "raw_output": "Chevron's net cash provided by operating activities in fiscal Q1 2023 was about $7.1 billion. This is recalled from memory of the Q1 2023 results, not checked against the filing, so the figure is approximate.\n\n{\"value\": 7.1, \"unit\": \"USD billions\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgwngDQzitSNkZVkLXH6F"
+ ],
+ "split": "test",
+ "started_at": "2026-11-11T20:40:57.462519+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 343,
+  "output_tokens": 1129,
+  "web_searches": 0
+ }
+}

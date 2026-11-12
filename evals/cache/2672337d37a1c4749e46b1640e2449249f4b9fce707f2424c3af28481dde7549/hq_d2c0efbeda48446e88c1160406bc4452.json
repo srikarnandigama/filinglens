@@ -1,0 +1,316 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 8,
+  "numeric_valid": 8,
+  "text_pending_judge": [
+   {
+    "chunk_ids": [
+     "chk_1240c2c2fc2e4299753ad934abf9c27c0e39f4673a883185474dab0bd624874c"
+    ],
+    "claim_id": "c11",
+    "text": "Apple said it believes gross margins will, in general, be subject to volatility and downward pressure, and pointed to its risk factors."
+   }
+  ],
+  "text_string_supported": 2,
+  "text_total": 3,
+  "uncited": 0
+ },
+ "cost_usd": "0.3075237",
+ "error": null,
+ "finished_at": "2026-11-11T20:52:44.332873+00:00",
+ "latency_ms": 54157,
+ "prediction": {
+  "parse_ok": true,
+  "text": "Apple's Q3 FY2025 10-Q (quarter ended June 28, 2025) says tariffs weighed on its products gross margin percentage. It does not put a dollar figure on the tariff cost. Cost of revenue was $50.32 billion, up 9.15% from $46.10 billion a year earlier, but revenue grew faster. Overall gross margin was 46.49%, up about 0.23 percentage points year over year and down about 0.56 points from Q2 FY2025. Management expects gross margins to face volatility and downward pressure.\nApple said that beginning in the second quarter of 2025, new U.S. tariffs were announced on imports, including additional tariffs on imports from China, India, Japan, South Korea, Taiwan, Vietnam and the EU, among others. It said tariffs on its products or components can have a material adverse impact, including on pricing and gross margin.\nApple attributed the Q3 2025 decline in products gross margin percentage versus Q3 2024 primarily to tariffs and a different mix of products, partially offset by favorable costs. Products gross margin dollars still increased, due primarily to product mix and favorable costs, partially offset by tariffs.\nApple's cost of revenue in Q3 FY2025 was about $50.32 billion.\nCost of revenue rose about 9.15% from $46.10 billion in Q3 FY2024 to $50.32 billion in Q3 FY2025.\nQ3 FY2025 gross margin was about 46.49% (gross profit divided by revenue).\nQ2 FY2025 gross margin was about 47.05%.\nQ3 FY2024 gross margin was about 46.26%.\nTotal gross margin was about 0.23 percentage points higher than in Q3 FY2024. Overall margin therefore did not fall year over year, even though tariffs weighed on the products margin percentage.\nTotal gross margin was about 0.56 percentage points lower in Q3 FY2025 than in Q2 FY2025.\nCost of revenue was about $174 million lower in Q3 FY2025 than in Q2 FY2025 ($50.49 billion), so there was no sequential jump in costs.\nApple said it believes gross margins will, in general, be subject to volatility and downward pressure, and pointed to its risk factors."
+ },
+ "question_id": "hq_d2c0efbeda48446e88c1160406bc4452",
+ "question_sha": "4d2f2bef428417fcd99cadfb1703207d6af11ccb5e8e9085e7ef1a18a49f184f",
+ "raw_output": {
+  "caveats": [
+   "The retrieved passages do not quantify the dollar cost of tariffs, so the tariff effect cannot be isolated from product mix, favorable costs and volume.",
+   "Total cost of revenue rose year over year alongside a roughly 9.6% rise in revenue, so the facts alone do not show how much of the increase came from tariffs.",
+   "The Q3 10-Q's risk factor section only cross-references the earlier Q1 and Q2 2025 10-Qs and the 2024 10-K. Those filings were not searched, so any tariff cost detail there is not covered."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_33c2b63c80d1f29032ebbceaf0e67f5e001dbcebd6decaf389802039d0d365c5"
+     }
+    ],
+    "id": "c1",
+    "kind": "textual",
+    "period": null,
+    "text": "Apple said that beginning in the second quarter of 2025, new U.S. tariffs were announced on imports, including additional tariffs on imports from China, India, Japan, South Korea, Taiwan, Vietnam and the EU, among others. It said tariffs on its products or components can have a material adverse impact, including on pricing and gross margin.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_3d85e05939c714cd87006f8069ae553986841af380313df38e715cde0afcd5cc"
+     }
+    ],
+    "id": "c2",
+    "kind": "textual",
+    "period": null,
+    "text": "Apple attributed the Q3 2025 decline in products gross margin percentage versus Q3 2024 primarily to tariffs and a different mix of products, partially offset by favorable costs. Products gross margin dollars still increased, due primarily to product mix and favorable costs, partially offset by tariffs.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "31"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q3",
+     "fiscal_year": 2025
+    },
+    "text": "Apple's cost of revenue in Q3 FY2025 was about $50.32 billion.",
+    "ticker": "AAPL",
+    "unit": "USD",
+    "value": "50318000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_4"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "26"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "31"
+     }
+    ],
+    "id": "c4",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q3",
+     "fiscal_year": 2025
+    },
+    "text": "Cost of revenue rose about 9.15% from $46.10 billion in Q3 FY2024 to $50.32 billion in Q3 FY2025.",
+    "ticker": "AAPL",
+    "unit": "percent",
+    "value": "9.152042343652",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_1"
+     }
+    ],
+    "id": "c5",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q3",
+     "fiscal_year": 2025
+    },
+    "text": "Q3 FY2025 gross margin was about 46.49% (gross profit divided by revenue).",
+    "ticker": "AAPL",
+    "unit": "percent",
+    "value": "46.490705687184",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_2"
+     }
+    ],
+    "id": "c6",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q2",
+     "fiscal_year": 2025
+    },
+    "text": "Q2 FY2025 gross margin was about 47.05%.",
+    "ticker": "AAPL",
+    "unit": "percent",
+    "value": "47.050619238876",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_3"
+     }
+    ],
+    "id": "c7",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q3",
+     "fiscal_year": 2024
+    },
+    "text": "Q3 FY2024 gross margin was about 46.26%.",
+    "ticker": "AAPL",
+    "unit": "percent",
+    "value": "46.257155181459",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value",
+      "kind": "computation",
+      "ref": "cmp_5"
+     }
+    ],
+    "id": "c8",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q3",
+     "fiscal_year": 2025
+    },
+    "text": "Total gross margin was about 0.23 percentage points higher than in Q3 FY2024. Overall margin therefore did not fall year over year, even though tariffs weighed on the products margin percentage.",
+    "ticker": "AAPL",
+    "unit": "percentage_points",
+    "value": "0.233550505725",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value",
+      "kind": "computation",
+      "ref": "cmp_6"
+     }
+    ],
+    "id": "c9",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q3",
+     "fiscal_year": 2025
+    },
+    "text": "Total gross margin was about 0.56 percentage points lower in Q3 FY2025 than in Q2 FY2025.",
+    "ticker": "AAPL",
+    "unit": "percentage_points",
+    "value": "-0.559913551692",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value",
+      "kind": "computation",
+      "ref": "cmp_7"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "30"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "31"
+     }
+    ],
+    "id": "c10",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q3",
+     "fiscal_year": 2025
+    },
+    "text": "Cost of revenue was about $174 million lower in Q3 FY2025 than in Q2 FY2025 ($50.49 billion), so there was no sequential jump in costs.",
+    "ticker": "AAPL",
+    "unit": "USD",
+    "value": "-174000000",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_1240c2c2fc2e4299753ad934abf9c27c0e39f4673a883185474dab0bd624874c"
+     }
+    ],
+    "id": "c11",
+    "kind": "textual",
+    "period": null,
+    "text": "Apple said it believes gross margins will, in general, be subject to volatility and downward pressure, and pointed to its risk factors.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   }
+  ],
+  "final_claim_id": null,
+  "final_unit": null,
+  "final_value": null,
+  "status": "partially_answered",
+  "summary": "Apple's Q3 FY2025 10-Q (quarter ended June 28, 2025) says tariffs weighed on its products gross margin percentage. It does not put a dollar figure on the tariff cost. Cost of revenue was $50.32 billion, up 9.15% from $46.10 billion a year earlier, but revenue grew faster. Overall gross margin was 46.49%, up about 0.23 percentage points year over year and down about 0.56 points from Q2 FY2025. Management expects gross margins to face volatility and downward pressure."
+ },
+ "retrieval": {
+  "first_search": {
+   "filings:s6": [
+    "chk_b43aee80f9fd70b33934c3b60fb0ddedfe09aea15076be2a541630c553539049",
+    "chk_33c2b63c80d1f29032ebbceaf0e67f5e001dbcebd6decaf389802039d0d365c5",
+    "chk_3d85e05939c714cd87006f8069ae553986841af380313df38e715cde0afcd5cc",
+    "chk_1240c2c2fc2e4299753ad934abf9c27c0e39f4673a883185474dab0bd624874c",
+    "chk_b783d58f9ac62dbf11fb0b207faacac1829e2b83f48e6e9bb33dfd2f8612d545",
+    "chk_3a4f2dd46d24a31827552d98d54dd0ce2289b57e47fcf0a7b3940fa3837b39e0",
+    "chk_807096470c10fac40b47839f7cc573d806e444f608aeee76bf18fd5e550142de",
+    "chk_bb088f1432e8b26cccab1403a46e4c7f4c96d58b3991aa6d3d3813296e738708"
+   ],
+   "filings:s7": [
+    "chk_07d8ed963f1c2f3bef9435194f616f28058acda39dcbedd541e6403444206538"
+   ]
+  },
+  "seen": [
+   "chk_b43aee80f9fd70b33934c3b60fb0ddedfe09aea15076be2a541630c553539049",
+   "chk_33c2b63c80d1f29032ebbceaf0e67f5e001dbcebd6decaf389802039d0d365c5",
+   "chk_3d85e05939c714cd87006f8069ae553986841af380313df38e715cde0afcd5cc",
+   "chk_1240c2c2fc2e4299753ad934abf9c27c0e39f4673a883185474dab0bd624874c",
+   "chk_b783d58f9ac62dbf11fb0b207faacac1829e2b83f48e6e9bb33dfd2f8612d545",
+   "chk_3a4f2dd46d24a31827552d98d54dd0ce2289b57e47fcf0a7b3940fa3837b39e0",
+   "chk_807096470c10fac40b47839f7cc573d806e444f608aeee76bf18fd5e550142de",
+   "chk_bb088f1432e8b26cccab1403a46e4c7f4c96d58b3991aa6d3d3813296e738708",
+   "chk_07d8ed963f1c2f3bef9435194f616f28058acda39dcbedd541e6403444206538"
+  ]
+ },
+ "run_id": "30bd57fb-f158-41d1-aa88-52e27d7cedc3",
+ "run_status": "done",
+ "split": "handwritten",
+ "started_at": "2026-11-11T20:51:50.094329+00:00",
+ "status": "done",
+ "system_config_hash": "2672337d37a1c4749e46b1640e2449249f4b9fce707f2424c3af28481dde7549",
+ "system_id": "system",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 162830,
+  "output_tokens": 9905
+ }
+}

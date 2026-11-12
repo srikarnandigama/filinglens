@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.02888",
+ "finished_at": "2026-11-12T02:05:28.024914+00:00",
+ "latency_ms": 7091,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD billions",
+  "value": "222"
+ },
+ "question_id": "q_cca361c0b17c1982",
+ "question_sha": "ed60f9dbead812327f9d59f63ce1e1fec1bbf8bbe83bd063f601c748fffbfa19",
+ "raw_output": "I don't have Microsoft's reported full-year fiscal 2026 results (the year ending June 30, 2026), so this is an estimate rather than a reported figure: roughly $222 billion in gross profit.\n\nThe estimate rests on these assumptions:\n\n- **Fiscal 2025 base:** gross profit was about $193.9 billion on revenue of $281.7 billion, a margin near 69%.\n- **First half of fiscal 2026:** as I recall, gross profit was about $53.6 billion in Q1 and about $55 billion in Q2.\n- **Full year:** I assume revenue of about $325\u2013330 billion and a gross margin near 68%, slightly lower than fiscal 2025 because of rising AI infrastructure costs.\n\nPlease check the actual 10-K for the reported number.\n\n{\"value\": 222, \"unit\": \"USD billions\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgxDQyJRQX6N2pqBc9RyG"
+ ],
+ "split": "test",
+ "started_at": "2026-11-12T02:05:20.924731+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "16e92aec0cb80aa246423b8803435a393d3c367c6455eb10a9b8212a8828396f",
+ "system_id": "b0-fable",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 335,
+  "output_tokens": 655,
+  "web_searches": 0
+ }
+}

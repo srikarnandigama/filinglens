@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.008824",
+ "finished_at": "2026-11-11T20:39:46.609411+00:00",
+ "latency_ms": 6159,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "20"
+ },
+ "question_id": "q_97ad13ef38ef7938",
+ "question_sha": "da110aee4fc8569a0bb0a67d8f66ccb02a3255b2eb136912d402f806d4dcb08b",
+ "raw_output": "I estimate Microsoft's operating income rose about 20% from fiscal 2025 to fiscal 2026. This is an estimate, not a reported figure: I don't have the fiscal 2026 10-K (the year ends June 30, 2026), so I projected the second half from the first half's growth.\n\n- **Fiscal 2025:** operating income was about $128.5 billion.\n- **First half of fiscal 2026:** the Q1 and Q2 filings show about $38.0 billion and $38.3 billion, or roughly $76.3 billion. That is about 22% above the $62.3 billion of the first half of fiscal 2025.\n- **Second half of fiscal 2026 (assumed):** I assumed growth slows to about 17\u201318%. That gives roughly $38 billion in Q3 and $40 billion in Q4.\n\nAdding these gives about $154 billion for fiscal 2026. Against $128.5 billion, that is an increase of about 20%.\n\n{\"value\": 20, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgwnaY7yNtuSgGpr8BgCw"
+ ],
+ "split": "test",
+ "started_at": "2026-11-11T20:39:40.446219+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 347,
+  "output_tokens": 813,
+  "web_searches": 0
+ }
+}

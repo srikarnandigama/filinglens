@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.00476",
+ "finished_at": "2026-11-11T20:46:48.637336+00:00",
+ "latency_ms": 2487,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "not_applicable",
+  "unit": "USD",
+  "value": null
+ },
+ "question_id": "p_26acfe4a59c5a973",
+ "question_sha": "b9754b4575e1f4af4da6a2d5c99ea1140d13347aaa94aafe34ecce4adc4c2af3",
+ "raw_output": "Gross profit is not applicable to Bank of America. Banks do not report revenue minus cost of goods sold. Bank of America's income statement instead shows net interest income plus noninterest income, which make up total revenue net of interest expense, followed by the provision for credit losses and noninterest expense. There is no \"gross profit\" line for fiscal 2024.\n\n{\"value\": null, \"unit\": \"USD\", \"choice\": null, \"status\": \"not_applicable\"}",
+ "request_ids": [
+  "req_011Cgwo7v7uWjirsrYCd34se"
+ ],
+ "split": "probe",
+ "started_at": "2026-11-11T20:46:46.140084+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "4c121dace8201ad5984fc587e44ec56860d7e1322cd752ed76724801ac0e3a27",
+ "system_id": "b0-opus",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 335,
+  "output_tokens": 171,
+  "web_searches": 0
+ }
+}

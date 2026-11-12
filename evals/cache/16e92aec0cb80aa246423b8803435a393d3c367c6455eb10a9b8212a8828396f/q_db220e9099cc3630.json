@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.017848",
+ "finished_at": "2026-11-12T02:05:39.100017+00:00",
+ "latency_ms": 4135,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "23"
+ },
+ "question_id": "q_db220e9099cc3630",
+ "question_sha": "710595a244a04dff5ec9f15ad6f1f84deeded6d00f232413adaeeed033ed5072",
+ "raw_output": "I don't have Johnson & Johnson's fiscal Q2 2026 results (the quarter ending around June 2026), so this is an estimate rather than a reported figure. From memory, Q2 2025 net earnings were about $5.5 billion on sales of about $23.7 billion, a net margin of roughly 23.3%. Assuming a similar level of profitability, my best estimate for Q2 2026 is about 23%.\n\n{\"value\": 23, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgxDS1JWXTM2XUTjfTu1E"
+ ],
+ "split": "test",
+ "started_at": "2026-11-12T02:05:34.960739+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "16e92aec0cb80aa246423b8803435a393d3c367c6455eb10a9b8212a8828396f",
+ "system_id": "b0-fable",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 341,
+  "output_tokens": 378,
+  "web_searches": 0
+ }
+}

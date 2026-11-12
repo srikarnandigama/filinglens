@@ -1,0 +1,49 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": true,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0000034088-26-000067",
+   "0000034088-26-000045",
+   "0000034088-25-000061",
+   "0000034088-25-000042"
+  ],
+  "gold_visible": true,
+  "missing_values": [],
+  "question_id": "q_2a62bf27f04d7ff7",
+  "text_sha256": "11df4cd0df39fbe62f474cdeb6a538cc3dcae44c8e7a52ef0fb7d883f90e19fd",
+  "tokens_est": 50036
+ },
+ "cost_usd": "0.08956800",
+ "error": null,
+ "finished_at": "2026-11-11T21:43:32.925127+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "83059.5"
+ },
+ "question_id": "q_2a62bf27f04d7ff7",
+ "question_sha": "1436cd97916d7c4efda24443327f2c1632beb58f92e5d52cc69f23abab852f8a",
+ "raw_output": "Fiscal 2025 total revenues and other income were $332,238 million (from the 10-K), so the quarterly average is 332,238 / 4 = $83,059.5 million.\n\nCross-check with the quarterly figures:\n- Q1 2025: 83,130\n- Q2 2025: 81,506\n- Q3 2025: 85,294\n- Q4 2025 (implied): 332,238 \u2212 249,930 = 82,308\n\nThese sum to 332,238, which matches.\n\nIf \"total revenue\" were instead taken as sales and other operating revenue, the 2025 figure is 323,905, giving an average of 80,976. I used total revenues and other income because it is the reported \"Total revenues and other income\" line.\n\nThe average quarterly total revenue was about $83,059.5 million.\n\n{\"value\": 83059.5, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-11T21:41:30.293730+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 88128,
+  "output_tokens": 288,
+  "web_searches": 0
+ }
+}

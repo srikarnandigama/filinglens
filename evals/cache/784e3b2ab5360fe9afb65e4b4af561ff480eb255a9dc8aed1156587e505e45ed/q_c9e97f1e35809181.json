@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.00558",
+ "finished_at": "2026-11-11T20:41:47.133339+00:00",
+ "latency_ms": 3523,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "6856"
+ },
+ "question_id": "q_c9e97f1e35809181",
+ "question_sha": "a59a6219f689cab6dec1c731720481a760de284c35cfc5157a3f92b91d0da443",
+ "raw_output": "Coca-Cola's gross profit in fiscal Q1 2025 was about $6.86 billion. This is an estimate from memory of the filing, not a figure I checked against it.\n\n- Net operating revenues were about $11,129 million.\n- Cost of goods sold was about $4,273 million.\n- Gross profit is the difference, about $6,856 million, which is a gross margin of roughly 61.6%.\n\n{\"value\": 6856, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011Cgwnjcd64dDPCGBG5FzaS"
+ ],
+ "split": "test",
+ "started_at": "2026-11-11T20:41:43.612110+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 340,
+  "output_tokens": 490,
+  "web_searches": 0
+ }
+}

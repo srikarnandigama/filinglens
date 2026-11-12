@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.00725",
+ "finished_at": "2026-11-11T20:37:59.935981+00:00",
+ "latency_ms": 6695,
+ "latency_note": null,
+ "prediction": {
+  "choice": "META",
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percentage_points",
+  "value": "26.0"
+ },
+ "question_id": "q_1cc61b1b0ae2696e",
+ "question_sha": "7e1d51f6d551616fc53ca17b2d9dd3dc3291b5483f299f8f70471963ec4ef971",
+ "raw_output": "Meta fiscal 2023: revenue $134,902M, income from operations $46,751M, so the operating margin is 34.7%.\n\nDisney fiscal 2023 (ended Sept 30, 2023): revenue $88,898M. Disney does not report an \"operating income\" line on its income statement. Using income before income taxes of $5,170M plus interest expense net and other items would be one approach. Another is total segment operating income of $12,863M, which gives 14.5%, but that is a non-GAAP measure.\n\nA GAAP-style operating income can be built this way: revenues $88,898M less costs and expenses $79,..., then less restructuring and impairment charges $3,...; this is not reported as a subtotal, though. Income before taxes of $3,... is also not the same thing.\n\nDisney's income before income taxes was $3,...; I'll estimate it from the figures I'm more sure of. Net income attributable to Disney was $2,354M. Income taxes were $1,379M. Noncontrolling interests were $801M. Total pre-tax income was therefore about $4,534M. Add back net interest expense of about $1,...; Disney's interest expense, net was $1,...; equity income was $782M. Pre-tax income of $4,534M plus interest of about $1,...; $4,534 + $1,...; this gives roughly $6,...; subtracting equity income and adding other items gives about $5,...; so operating income is about $7.7B, which is roughly 8.6% of revenue.\n\nCheck: pre-tax income $5,...; I've used approximations, so my best estimate of Disney's operating margin is about 8.6\u20139%. Using 8.7%, the gap is 34.7 \u2212 8.7 = 26.0 points.\n\n**Meta had the higher operating margin, by about 26 percentage points** (Meta \u2248 34.7% vs. Disney \u2248 8.7%, an estimate).\n\n{\"value\": 26.0, \"unit\": \"percentage_points\", \"choice\": \"META\", \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgwnSdt1gJGqt419ehSBp"
+ ],
+ "split": "test",
+ "started_at": "2026-11-11T20:37:53.245486+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 350,
+  "output_tokens": 655,
+  "web_searches": 0
+ }
+}

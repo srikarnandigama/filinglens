@@ -1,0 +1,47 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": false,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0000080424-26-000103",
+   "0000104169-26-000055"
+  ],
+  "gold_visible": true,
+  "missing_values": [],
+  "question_id": "q_cf6f94befc8a05c9",
+  "text_sha256": "c322174404f2b4b08f1ec567b60071724292e2e93837851cccb1031ae302c65c",
+  "tokens_est": 6131
+ },
+ "cost_usd": "0.0154300",
+ "error": null,
+ "finished_at": "2026-11-12T02:09:54.929196+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": "PG",
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percentage_points",
+  "value": "15.4"
+ },
+ "question_id": "q_cf6f94befc8a05c9",
+ "question_sha": "0a29d0a35853f6343260fa5bcff4b458671fa5cdc86bc288a4700db70ba97e66",
+ "raw_output": "Net margin is net income attributable to the company divided by revenue.\n\n**P&G (fiscal 2026):** 16,046 / 87,032 = 18.44%. Using net earnings attributable to P&G over net sales.\n\n**Walmart (fiscal 2026):** 21,893 / 713,163 = 3.07%. Using net income attributable to Walmart over total revenues.\n\n**Difference:** 18.44% \u2212 3.07% = 15.37 percentage points.\n\nProcter & Gamble had the higher net margin, by about 15.4 percentage points.\n\n{\"value\": 15.4, \"unit\": \"percentage_points\", \"choice\": \"PG\", \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-12T02:07:22.538489+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 14330,
+  "output_tokens": 220,
+  "web_searches": 0
+ }
+}

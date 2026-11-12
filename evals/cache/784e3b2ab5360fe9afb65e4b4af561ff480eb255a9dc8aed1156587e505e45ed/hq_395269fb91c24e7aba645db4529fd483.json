@@ -1,0 +1,32 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.007744",
+ "finished_at": "2026-11-11T20:53:28.443271+00:00",
+ "latency_ms": 6608,
+ "latency_note": null,
+ "prediction": {
+  "parse_ok": true,
+  "text": "I can't pull up the exact filing text here, so this is a general summary of what Bank of America has said in its recent 10-Ks and may not be exact. The company describes deposits as its primary, lowest-cost funding source, so a loss of deposits could force it to rely on more expensive wholesale funding or to sell assets. It has pointed to several drivers of outflows: customers moving money into higher-yielding alternatives such as money market funds and Treasuries as interest rates rose, shifts from noninterest-bearing to interest-bearing accounts, and confidence-driven withdrawals of uninsured deposits like those during the March 2023 regional bank failures. It manages this risk with a large pool of Global Liquidity Sources (well over $800 billion in recent years), liquidity stress testing that assumes deposit run-off, and Liquidity Coverage Ratio compliance. It also notes that a credit rating downgrade, market disruption, or unrealized losses on securities that limit their usefulness for raising cash could worsen the effects. For the specific language and figures, check the Liquidity Risk section of the latest 10-K."
+ },
+ "question_id": "hq_395269fb91c24e7aba645db4529fd483",
+ "question_sha": "665f2299d1f2f458518f772d8afa9d688a3a5248b9197773d4c57e14444cbc9f",
+ "raw_output": "I can't pull up the exact filing text here, so this is a general summary of what Bank of America has said in its recent 10-Ks and may not be exact. The company describes deposits as its primary, lowest-cost funding source, so a loss of deposits could force it to rely on more expensive wholesale funding or to sell assets. It has pointed to several drivers of outflows: customers moving money into higher-yielding alternatives such as money market funds and Treasuries as interest rates rose, shifts from noninterest-bearing to interest-bearing accounts, and confidence-driven withdrawals of uninsured deposits like those during the March 2023 regional bank failures. It manages this risk with a large pool of Global Liquidity Sources (well over $800 billion in recent years), liquidity stress testing that assumes deposit run-off, and Liquidity Coverage Ratio compliance. It also notes that a credit rating downgrade, market disruption, or unrealized losses on securities that limit their usefulness for raising cash could worsen the effects. For the specific language and figures, check the Liquidity Risk section of the latest 10-K.",
+ "request_ids": [
+  "req_011Cgwod5sMLpRJ2qUwF7bzR"
+ ],
+ "split": "handwritten",
+ "started_at": "2026-11-11T20:53:21.827000+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 87,
+  "output_tokens": 757,
+  "web_searches": 0
+ }
+}

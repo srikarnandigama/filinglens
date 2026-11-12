@@ -1,0 +1,46 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": false,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0001045810-26-000052"
+  ],
+  "gold_visible": true,
+  "missing_values": [],
+  "question_id": "q_9e87ad2a75898728",
+  "text_sha256": "a65d853b427072461853c6dd146644e8aae27b45dc9cc23ffe45b72cef040022",
+  "tokens_est": 2203
+ },
+ "cost_usd": "0.0055900",
+ "error": null,
+ "finished_at": "2026-11-12T02:09:54.986218+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "20458"
+ },
+ "question_id": "q_9e87ad2a75898728",
+ "question_sha": "d99bc2277046787b739acbccab146ebea5ad67ead2e495fe52405f9ab71e2b7a",
+ "raw_output": "Nvidia's cost of revenue for the three months ended April 26, 2026 (fiscal Q1 2027) was $20,458 million, or about $20.46 billion. This comes from the condensed consolidated statement of income in the 10-Q.\n\n{\"value\": 20458, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-12T02:07:22.538489+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 5015,
+  "output_tokens": 115,
+  "web_searches": 0
+ }
+}

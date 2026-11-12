@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.009672",
+ "finished_at": "2026-11-11T20:39:02.975483+00:00",
+ "latency_ms": 6730,
+ "latency_note": null,
+ "prediction": {
+  "choice": "NKE",
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percentage_points",
+  "value": "24.7"
+ },
+ "question_id": "q_8659a0d2b4d00cc7",
+ "question_sha": "59dbe3ed3c77d8290520e0739dc573aa83a644bf3327042de37b49112d7f7f80",
+ "raw_output": "**Nike had the higher gross margin in fiscal 2025, by about 24.7 percentage points.** These figures are partly from memory, so treat them as estimates.\n\n- **Nike** (fiscal year ended May 31, 2025): revenue of about $46.3B and gross profit of about $19.8B, a gross margin of roughly 42.7%.\n- **Tesla** (calendar 2025): revenue of about $94.8B and gross profit of about $17.1B, a gross margin of roughly 18.0%.\n\nThe gap is 42.7% \u2212 18.0% \u2248 24.7 percentage points.\n\n{\"value\": 24.7, \"unit\": \"percentage_points\", \"choice\": \"NKE\", \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgwnXH8UyBgXKuQRwxJXA"
+ ],
+ "split": "test",
+ "started_at": "2026-11-11T20:38:56.242629+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 351,
+  "output_tokens": 897,
+  "web_searches": 0
+ }
+}

@@ -1,0 +1,111 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 3,
+  "numeric_valid": 3,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.153370",
+ "error": null,
+ "finished_at": "2026-11-11T20:29:43.273592+00:00",
+ "latency_ms": 17923,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "-33.333333333333"
+ },
+ "question_id": "q_434e05dce996267b",
+ "question_sha": "99637bcbefd57d791f7e91714c4fd53837b1c430b3a22b651616166caee16a6c",
+ "raw_output": {
+  "caveats": [
+   "The fiscal Q4 2026 capex figure is derived from the full-year value minus the nine-month year-to-date value, not reported directly as a quarterly figure."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3826"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q1",
+     "fiscal_year": 2026
+    },
+    "text": "Nike's capex in fiscal Q1 2026 was $207 million.",
+    "ticker": "NKE",
+    "unit": "USD",
+    "value": "207000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3829"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q4",
+     "fiscal_year": 2026
+    },
+    "text": "Nike's capex in fiscal Q4 2026 was $138 million. This is derived as full-year capex of $684 million minus nine-month capex of $546 million.",
+    "ticker": "NKE",
+    "unit": "USD",
+    "value": "138000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_1"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q4",
+     "fiscal_year": 2026
+    },
+    "text": "Capex changed by about -33.3% from fiscal Q1 2026 to fiscal Q4 2026, a decline of one third.",
+    "ticker": "NKE",
+    "unit": "percent",
+    "value": "-33.333333333333",
+    "value_basis": "computation"
+   }
+  ],
+  "final_claim_id": "c3",
+  "final_unit": "percent",
+  "final_value": "-33.333333333333",
+  "status": "answered",
+  "summary": "Nike's capital expenditures fell about 33.3%, from $207 million in fiscal Q1 2026 to $138 million in fiscal Q4 2026. The Q4 figure is derived."
+ },
+ "run_id": "5dacd983-38f5-4da1-9ddb-057e8e37f6b4",
+ "run_status": "done",
+ "split": "test",
+ "started_at": "2026-11-11T20:29:25.315886+00:00",
+ "status": "done",
+ "system_config_hash": "2672337d37a1c4749e46b1640e2449249f4b9fce707f2424c3af28481dde7549",
+ "system_id": "system",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 65285,
+  "output_tokens": 2280
+ }
+}

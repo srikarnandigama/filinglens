@@ -1,0 +1,46 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": false,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0000104169-26-000154"
+  ],
+  "gold_visible": true,
+  "missing_values": [],
+  "question_id": "q_b43ac632201ccee8",
+  "text_sha256": "9c7d43db5dae86da10e0cbc91df0ad095d78f76e76cc97d581ef075c0f650873",
+  "tokens_est": 3333
+ },
+ "cost_usd": "0.00874600",
+ "error": null,
+ "finished_at": "2026-11-11T21:43:32.974953+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "3.39"
+ },
+ "question_id": "q_b43ac632201ccee8",
+ "question_sha": "1c314ac6a82543e7bd8b80fafe8e77767de22d62250f38f8cb4aff2932497f6b",
+ "raw_output": "Walmart's fiscal Q2 2027 is the three months ended July 31, 2026.\n\nNet margin is consolidated net income attributable to Walmart divided by total revenues:\n\n6,366 / 187,937 = 3.387%, or about 3.39%.\n\nUsing consolidated net income including the noncontrolling interest instead (6,529 / 187,937) would give 3.47%. I used the figure attributable to Walmart.\n\n{\"value\": 3.39, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-11T21:41:30.293730+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 7886,
+  "output_tokens": 172,
+  "web_searches": 0
+ }
+}

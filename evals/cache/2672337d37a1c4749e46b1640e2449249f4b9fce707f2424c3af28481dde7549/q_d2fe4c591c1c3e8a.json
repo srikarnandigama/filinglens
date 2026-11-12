@@ -1,0 +1,71 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 1,
+  "numeric_valid": 1,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.069138",
+ "error": null,
+ "finished_at": "2026-11-11T20:31:01.738538+00:00",
+ "latency_ms": 11619,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD",
+  "value": "23636000000"
+ },
+ "question_id": "q_d2fe4c591c1c3e8a",
+ "question_sha": "2c7290704c3f6528b4c83ce705b326abf1fe3b4e5585fe86f96f0eeb7cb41310",
+ "raw_output": {
+  "caveats": [
+   "The fact record's source accession is 0000320193-25-000057, which is the filing for the period ended March 29, 2025. It appears to be a later filing that includes the prior-year comparative quarter. The fact is not marked as derived."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "79"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q2",
+     "fiscal_year": 2024
+    },
+    "text": "Apple reported net income of about $23.636 billion ($23,636,000,000) for fiscal Q2 2024, the quarter ended March 30, 2024.",
+    "ticker": "AAPL",
+    "unit": "USD",
+    "value": "23636000000",
+    "value_basis": "fact"
+   }
+  ],
+  "final_claim_id": "c1",
+  "final_unit": "USD",
+  "final_value": "23636000000",
+  "status": "answered",
+  "summary": "Apple's net income for fiscal Q2 2024 (the quarter from 2023-12-31 to 2024-03-30) was $23.636 billion."
+ },
+ "run_id": "5d2ee100-98f8-4d03-9bbb-807b7494c539",
+ "run_status": "done",
+ "split": "test",
+ "started_at": "2026-11-11T20:30:50.073019+00:00",
+ "status": "done",
+ "system_config_hash": "2672337d37a1c4749e46b1640e2449249f4b9fce707f2424c3af28481dde7549",
+ "system_id": "system",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 26849,
+  "output_tokens": 1544
+ }
+}

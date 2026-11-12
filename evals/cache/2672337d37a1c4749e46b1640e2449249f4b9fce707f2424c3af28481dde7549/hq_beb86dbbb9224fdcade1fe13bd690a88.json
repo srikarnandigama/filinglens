@@ -1,0 +1,145 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 0,
+  "numeric_valid": 0,
+  "text_pending_judge": [
+   {
+    "chunk_ids": [
+     "chk_8b90f97a7ea190284f8abad9a2a21557acbec356a3468ce16c2201cc95721053"
+    ],
+    "claim_id": "c2",
+    "text": "Walmart U.S. comparable sales increased 4.8% in fiscal 2025 (5.5% in fiscal 2024), so the 2.9% eCommerce contribution is measured against that total."
+   }
+  ],
+  "text_string_supported": 2,
+  "text_total": 3,
+  "uncited": 0
+ },
+ "cost_usd": "0.0901256",
+ "error": null,
+ "finished_at": "2026-11-11T20:51:50.092262+00:00",
+ "latency_ms": 25500,
+ "prediction": {
+  "parse_ok": true,
+  "text": "Walmart's 10-K says eCommerce added approximately 2.9% to Walmart U.S. comparable sales in fiscal 2025. That compares with approximately 2.6% in fiscal 2024. Walmart U.S. comparable sales rose 4.8% in fiscal 2025.\nWalmart reported that Walmart U.S. eCommerce sales positively contributed approximately 2.9% to comparable sales in fiscal 2025, up from approximately 2.6% in fiscal 2024.\nWalmart U.S. comparable sales increased 4.8% in fiscal 2025 (5.5% in fiscal 2024), so the 2.9% eCommerce contribution is measured against that total.\nWalmart said the eCommerce contribution was primarily driven by store-fulfilled pickup and delivery."
+ },
+ "question_id": "hq_beb86dbbb9224fdcade1fe13bd690a88",
+ "question_sha": "a0911e15dc4d85af73370bbf33fe88f054bd3b1879405ac4f6395104037d24cc",
+ "raw_output": {
+  "caveats": [
+   "The figures come from MD&A text in the 10-K for the fiscal year ended January 31, 2025. They are stated as approximate percentages, and no structured fact records were available.",
+   "The 2.9% is Walmart U.S. only. Sam's Club U.S. eCommerce is reported separately."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_8b90f97a7ea190284f8abad9a2a21557acbec356a3468ce16c2201cc95721053"
+     },
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_bb23dc3aa4e5ac1619a7200a3a4b25128dbabef43aa490386a9fb8ebc1f9834a"
+     }
+    ],
+    "id": "c1",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Walmart reported that Walmart U.S. eCommerce sales positively contributed approximately 2.9% to comparable sales in fiscal 2025, up from approximately 2.6% in fiscal 2024.",
+    "ticker": "WMT",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_8b90f97a7ea190284f8abad9a2a21557acbec356a3468ce16c2201cc95721053"
+     }
+    ],
+    "id": "c2",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Walmart U.S. comparable sales increased 4.8% in fiscal 2025 (5.5% in fiscal 2024), so the 2.9% eCommerce contribution is measured against that total.",
+    "ticker": "WMT",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_bb23dc3aa4e5ac1619a7200a3a4b25128dbabef43aa490386a9fb8ebc1f9834a"
+     }
+    ],
+    "id": "c3",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Walmart said the eCommerce contribution was primarily driven by store-fulfilled pickup and delivery.",
+    "ticker": "WMT",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   }
+  ],
+  "final_claim_id": null,
+  "final_unit": null,
+  "final_value": null,
+  "status": "answered",
+  "summary": "Walmart's 10-K says eCommerce added approximately 2.9% to Walmart U.S. comparable sales in fiscal 2025. That compares with approximately 2.6% in fiscal 2024. Walmart U.S. comparable sales rose 4.8% in fiscal 2025."
+ },
+ "retrieval": {
+  "first_search": {
+   "filings:s1": [
+    "chk_8b90f97a7ea190284f8abad9a2a21557acbec356a3468ce16c2201cc95721053",
+    "chk_bb23dc3aa4e5ac1619a7200a3a4b25128dbabef43aa490386a9fb8ebc1f9834a",
+    "chk_22a8dddff62a2230b88f46027771c421878b4daaacd7d93d8d90d7c31fda95d9",
+    "chk_17ecaf45d9c176ee2d6d7649e7d461fcc35d420d2cb2118063bfdef456ef1f98",
+    "chk_89d30542eb86c998efc352b90cddbc4aaf2e16de10819f8aa9e002c07f951e2b",
+    "chk_ff56fbfda4e20348c9d51a5d31669c9d965cb22551ae270e14060a9c8d878b76",
+    "chk_bf4681dcda50a451165b277b686bcf42db047b685c37b0f9e49fae89925191a8",
+    "chk_d12a7effc417e9144b7bd3b72323dd6321c9cd500d039215b0a6ba55205e5ca9"
+   ]
+  },
+  "seen": [
+   "chk_8b90f97a7ea190284f8abad9a2a21557acbec356a3468ce16c2201cc95721053",
+   "chk_bb23dc3aa4e5ac1619a7200a3a4b25128dbabef43aa490386a9fb8ebc1f9834a",
+   "chk_22a8dddff62a2230b88f46027771c421878b4daaacd7d93d8d90d7c31fda95d9",
+   "chk_17ecaf45d9c176ee2d6d7649e7d461fcc35d420d2cb2118063bfdef456ef1f98",
+   "chk_89d30542eb86c998efc352b90cddbc4aaf2e16de10819f8aa9e002c07f951e2b",
+   "chk_ff56fbfda4e20348c9d51a5d31669c9d965cb22551ae270e14060a9c8d878b76",
+   "chk_bf4681dcda50a451165b277b686bcf42db047b685c37b0f9e49fae89925191a8",
+   "chk_d12a7effc417e9144b7bd3b72323dd6321c9cd500d039215b0a6ba55205e5ca9"
+  ]
+ },
+ "run_id": "ea2935ae-443e-422b-8701-1d10dc09f45b",
+ "run_status": "done",
+ "split": "handwritten",
+ "started_at": "2026-11-11T20:51:24.535649+00:00",
+ "status": "done",
+ "system_config_hash": "2672337d37a1c4749e46b1640e2449249f4b9fce707f2424c3af28481dde7549",
+ "system_id": "system",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 58358,
+  "output_tokens": 3671
+ }
+}

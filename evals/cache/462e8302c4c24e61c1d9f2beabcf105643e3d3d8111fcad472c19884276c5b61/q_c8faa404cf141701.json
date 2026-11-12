@@ -1,0 +1,34 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.00780400",
+ "error": null,
+ "finished_at": "2026-11-12T02:14:08.993549+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD/share",
+  "value": "0.53"
+ },
+ "question_id": "q_c8faa404cf141701",
+ "question_sha": "913aa074ee5ce5b96377cc681df7ea76998e994b6d02f38acfd8eb8bcc88e036",
+ "raw_output": "Tesla's GAAP diluted earnings per share for fiscal Q3 2023 (quarter ended September 30, 2023) was **$0.53**. This comes from my recollection of Tesla's Q3 2023 10-Q, and I did not run a search to confirm it. Net income attributable to common stockholders was about $1.85 billion, spread over roughly 3.48 billion diluted shares.\n\nThe non-GAAP diluted EPS was $0.66, but the GAAP figure is the one reported in the 10-Q.\n\n{\"value\": 0.53, \"unit\": \"USD/share\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-12T02:10:05.212451+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "462e8302c4c24e61c1d9f2beabcf105643e3d3d8111fcad472c19884276c5b61",
+ "system_id": "b1-sonnet",
+ "system_kind": "b1",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 6304,
+  "output_tokens": 300,
+  "web_searches": 0
+ }
+}

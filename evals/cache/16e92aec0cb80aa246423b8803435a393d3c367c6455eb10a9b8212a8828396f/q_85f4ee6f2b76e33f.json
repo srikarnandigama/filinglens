@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.012496",
+ "finished_at": "2026-11-12T02:05:56.437347+00:00",
+ "latency_ms": 4028,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "23697"
+ },
+ "question_id": "q_85f4ee6f2b76e33f",
+ "question_sha": "b55485983f672634a086e350f18344209d4f68d97f9f367e5c57b2cfa1811f12",
+ "raw_output": "Alphabet's operating income in fiscal Q4 2023 (quarter ended December 31, 2023) was about $23.7 billion ($23,697 million). This is from memory; it is consistent with full-year 2023 operating income of $84,293 million less the first three quarters ($17,415 million, $21,838 million and $21,343 million).\n\n{\"value\": 23697, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgxDTHqT3gMAxrLMD1RDu"
+ ],
+ "split": "test",
+ "started_at": "2026-11-12T02:05:52.407531+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "16e92aec0cb80aa246423b8803435a393d3c367c6455eb10a9b8212a8828396f",
+ "system_id": "b0-fable",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 337,
+  "output_tokens": 245,
+  "web_searches": 0
+ }
+}

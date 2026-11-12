@@ -1,0 +1,32 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.008576",
+ "finished_at": "2026-11-11T20:54:10.965187+00:00",
+ "latency_ms": 7925,
+ "latency_note": null,
+ "prediction": {
+  "parse_ok": true,
+  "text": "UnitedHealth said the overshoot came mainly from higher-than-expected care utilization, especially in Medicare Advantage, where seniors used more outpatient and physician services and some hospital care than the company had priced for. It also pointed to cost pressure in Medicaid, where the mix of members and their health needs shifted, and to weakness in some Optum Health value-based care arrangements. Its 2025 pricing and benefit designs hadn't anticipated these trends, so its medical care ratio rose sharply (to roughly 89% in Q2 from the mid-80s a year earlier). That led it to suspend and later reset its guidance, and it said it would raise prices, cut benefits and exit unprofitable plans for 2026. I'm working from memory of the earnings disclosures, so the exact figures and the weight of each factor should be checked against the 2025 10-Qs and the 10-K."
+ },
+ "question_id": "hq_eead0b7f7e3f430589800660cafe8cb1",
+ "question_sha": "7be0276f4adcca3d95691f62253021de46728111e96d6a4c343b95dca86159db",
+ "raw_output": "UnitedHealth said the overshoot came mainly from higher-than-expected care utilization, especially in Medicare Advantage, where seniors used more outpatient and physician services and some hospital care than the company had priced for. It also pointed to cost pressure in Medicaid, where the mix of members and their health needs shifted, and to weakness in some Optum Health value-based care arrangements. Its 2025 pricing and benefit designs hadn't anticipated these trends, so its medical care ratio rose sharply (to roughly 89% in Q2 from the mid-80s a year earlier). That led it to suspend and later reset its guidance, and it said it would raise prices, cut benefits and exit unprofitable plans for 2026. I'm working from memory of the earnings disclosures, so the exact figures and the weight of each factor should be checked against the 2025 10-Qs and the 10-K.",
+ "request_ids": [
+  "req_011Cgwog87NpZj91NAqkmAvE"
+ ],
+ "split": "handwritten",
+ "started_at": "2026-11-11T20:54:03.029129+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 88,
+  "output_tokens": 840,
+  "web_searches": 0
+ }
+}

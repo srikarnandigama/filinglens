@@ -1,0 +1,134 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 3,
+  "numeric_valid": 3,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.222780",
+ "error": null,
+ "finished_at": "2026-11-11T20:33:51.231829+00:00",
+ "latency_ms": 24765,
+ "prediction": {
+  "choice": "NVDA",
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percentage_points",
+  "value": "3.123990986967"
+ },
+ "question_id": "q_f1c75d7d3961bd40",
+ "question_sha": "c70e5fa2b198827d29628012856bf72a11e59eba041b101abfad319d54d3d93b",
+ "raw_output": {
+  "caveats": [
+   "The fiscal years cover different calendar windows. Nvidia's FY2026 ran from 2025-01-27 to 2026-01-25. Microsoft's FY2026 ran from 2025-07-01 to 2026-06-30.",
+   "Gross margin is calculated as gross profit divided by revenue, using the reported FY2026 figures for each company."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_1"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "234"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "204"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2026
+    },
+    "text": "Microsoft's FY2026 gross margin was about 67.94% ($225.465 billion gross profit on $331.839 billion revenue).",
+    "ticker": "MSFT",
+    "unit": "percent",
+    "value": "67.94409337058",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_2"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "394"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "360"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2026
+    },
+    "text": "Nvidia's FY2026 gross margin was about 71.07% ($153.463 billion gross profit on $215.938 billion revenue).",
+    "ticker": "NVDA",
+    "unit": "percent",
+    "value": "71.068084357547",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value",
+      "kind": "computation",
+      "ref": "cmp_3"
+     },
+     {
+      "field": "value",
+      "kind": "computation",
+      "ref": "cmp_5"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": null,
+    "text": "Nvidia's gross margin exceeded Microsoft's by about 3.12 percentage points.",
+    "ticker": null,
+    "unit": "percentage_points",
+    "value": "3.123990986967",
+    "value_basis": "computation"
+   }
+  ],
+  "final_claim_id": "c3",
+  "final_unit": "percentage_points",
+  "final_value": "3.123990986967",
+  "status": "answered",
+  "summary": "Nvidia had the higher gross margin in fiscal 2026: about 71.07%, against about 67.94% for Microsoft. That is a gap of about 3.12 percentage points."
+ },
+ "run_id": "73232cab-c8fe-4f31-a704-b137ffc9b044",
+ "run_status": "done",
+ "split": "test",
+ "started_at": "2026-11-11T20:33:26.428184+00:00",
+ "status": "done",
+ "system_config_hash": "2672337d37a1c4749e46b1640e2449249f4b9fce707f2424c3af28481dde7549",
+ "system_id": "system",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 93215,
+  "output_tokens": 3635
+ }
+}

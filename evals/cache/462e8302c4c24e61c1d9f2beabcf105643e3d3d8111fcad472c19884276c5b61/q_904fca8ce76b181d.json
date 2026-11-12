@@ -1,0 +1,34 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.1073300",
+ "error": null,
+ "finished_at": "2026-11-12T02:14:09.028723+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "777"
+ },
+ "question_id": "q_904fca8ce76b181d",
+ "question_sha": "d2a20af7dd780c6cdb8038d808e05ed5422fae720aab96bb77b58820a0c03486",
+ "raw_output": "Nike's average quarterly net income over fiscal 2026 was about **$777 million**.\n\nNike reported net income of $1,069 million for Q4 and $3,108 million for fiscal 2026. Dividing the full-year figure by four quarters gives $3,108M \u00f7 4 = $777M.\n\nQ4 included a $0.52 per-share benefit from the expected recovery of IEEPA tariffs. That benefit is included in the figures above.\n\n{\"value\": 777, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-12T02:10:05.212451+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "462e8302c4c24e61c1d9f2beabcf105643e3d3d8111fcad472c19884276c5b61",
+ "system_id": "b1-sonnet",
+ "system_kind": "b1",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 79805,
+  "output_tokens": 1505,
+  "web_searches": 2
+ }
+}

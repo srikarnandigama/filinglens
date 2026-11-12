@@ -1,0 +1,32 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.011394",
+ "finished_at": "2026-11-11T20:53:57.249495+00:00",
+ "latency_ms": 8238,
+ "latency_note": null,
+ "prediction": {
+  "parse_ok": true,
+  "text": "I don't have the exact figure from the filing, so treat this as approximate. Walmart U.S. comparable sales (excluding fuel) grew about 4.5% in fiscal 2025, and eCommerce was the largest driver, adding roughly 3 percentage points. Walmart U.S. eCommerce sales grew about 20% in the year. Please check the 10-K's Walmart U.S. segment section, which has a table of the eCommerce contribution to comp sales, for the precise number."
+ },
+ "question_id": "hq_beb86dbbb9224fdcade1fe13bd690a88",
+ "question_sha": "a0911e15dc4d85af73370bbf33fe88f054bd3b1879405ac4f6395104037d24cc",
+ "raw_output": "I don't have the exact figure from the filing, so treat this as approximate. Walmart U.S. comparable sales (excluding fuel) grew about 4.5% in fiscal 2025, and eCommerce was the largest driver, adding roughly 3 percentage points. Walmart U.S. eCommerce sales grew about 20% in the year. Please check the 10-K's Walmart U.S. segment section, which has a table of the eCommerce contribution to comp sales, for the precise number.",
+ "request_ids": [
+  "req_011Cgwof644gzQPu8c9sRb2s"
+ ],
+ "split": "handwritten",
+ "started_at": "2026-11-11T20:53:48.997810+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 97,
+  "output_tokens": 1120,
+  "web_searches": 0
+ }
+}

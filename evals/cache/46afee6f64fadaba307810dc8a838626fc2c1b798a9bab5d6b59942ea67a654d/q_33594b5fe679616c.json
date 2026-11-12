@@ -1,0 +1,46 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": false,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0000104169-26-000055"
+  ],
+  "gold_visible": true,
+  "missing_values": [],
+  "question_id": "q_33594b5fe679616c",
+  "text_sha256": "4ec82ea2400c8d1e210cab541d80e8577867a7a244b672494e1f088b92c75c14",
+  "tokens_est": 3310
+ },
+ "cost_usd": "0.00835200",
+ "error": null,
+ "finished_at": "2026-11-12T02:09:54.934127+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "1.63"
+ },
+ "question_id": "q_33594b5fe679616c",
+ "question_sha": "0704d96ae923098b694817114e3d1337efc69f70f02eab06dc3206eecf88698b",
+ "raw_output": "Operating income was $29,825 million in fiscal 2026 and $29,348 million in fiscal 2025.\n\nChange = (29,825 \u2212 29,348) / 29,348 = 477 / 29,348 \u2248 1.625%\n\nOperating income rose about 1.63%.\n\n{\"value\": 1.63, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-12T02:07:22.538489+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 7732,
+  "output_tokens": 124,
+  "web_searches": 0
+ }
+}

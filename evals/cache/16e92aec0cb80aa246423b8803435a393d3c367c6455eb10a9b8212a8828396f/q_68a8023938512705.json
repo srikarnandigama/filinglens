@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.032648",
+ "finished_at": "2026-11-12T02:04:32.237659+00:00",
+ "latency_ms": 7568,
+ "latency_note": null,
+ "prediction": {
+  "choice": "TSLA",
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percentage_points",
+  "value": "10.2"
+ },
+ "question_id": "q_68a8023938512705",
+ "question_sha": "d978b20a8306bbc7dcd915e63e310f802712fd43cd7c927d1185d4cfc516a82e",
+ "raw_output": "**Tesla had the higher net margin in fiscal 2023, by about 10.20 percentage points.** These figures are from memory of the filings, not looked up.\n\n- **Tesla:** net income attributable to common stockholders of $14,997 million on revenue of $96,773 million gives a net margin of about 15.50%.\n- **Amazon:** net income of $30,425 million on revenue of $574,785 million gives a net margin of about 5.29%.\n\nThe difference is 15.50% \u2212 5.29% \u2248 10.20 percentage points.\n\n{\"value\": 10.20, \"unit\": \"percentage_points\", \"choice\": \"TSLA\", \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgxDLpjsizK4gBjNoME7G"
+ ],
+ "split": "test",
+ "started_at": "2026-11-12T02:04:24.670200+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "16e92aec0cb80aa246423b8803435a393d3c367c6455eb10a9b8212a8828396f",
+ "system_id": "b0-fable",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 351,
+  "output_tokens": 746,
+  "web_searches": 0
+ }
+}

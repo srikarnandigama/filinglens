@@ -1,0 +1,34 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.00888900",
+ "error": null,
+ "finished_at": "2026-11-12T02:14:09.028723+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": "NKE",
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percentage_points",
+  "value": "26.7"
+ },
+ "question_id": "q_d97a77b1f4b8f636",
+ "question_sha": "691b16159c4a203ac8a917196346dce5e53962b984862063098c3fd63689ae88",
+ "raw_output": "**Nike had the higher gross margin in fiscal 2024.** Its margin was about 26.7 percentage points above Tesla's. These figures come from my recollection of the 10-K filings, not from a search.\n\n- **Nike (fiscal year ended May 31, 2024):**\n  - Revenue was about $51,362M and cost of sales about $28,475M, so gross profit was about $22,887M.\n  - That gives a gross margin of about 44.6%.\n- **Tesla (fiscal year ended Dec 31, 2024):**\n  - Revenue was about $97,690M and gross profit about $17,450M.\n  - That gives a gross margin of about 17.9%.\n\nThe difference is 44.56% \u2212 17.86% \u2248 26.7 percentage points.\n\n{\"value\": 26.7, \"unit\": \"percentage_points\", \"choice\": \"NKE\", \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-12T02:10:05.212451+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "462e8302c4c24e61c1d9f2beabcf105643e3d3d8111fcad472c19884276c5b61",
+ "system_id": "b1-sonnet",
+ "system_kind": "b1",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 6314,
+  "output_tokens": 515,
+  "web_searches": 0
+ }
+}

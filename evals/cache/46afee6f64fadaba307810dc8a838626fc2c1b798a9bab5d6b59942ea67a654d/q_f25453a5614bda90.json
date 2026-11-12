@@ -1,0 +1,49 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": true,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0001193125-26-323660",
+   "0001193125-26-191507"
+  ],
+  "gold_visible": false,
+  "missing_values": [
+   "19394000000"
+  ],
+  "question_id": "q_f25453a5614bda90",
+  "text_sha256": "c3e57f9a44c341969345f9276cdc5c9ca02255f1d9837a260a09b3df964e07ca",
+  "tokens_est": 50019
+ },
+ "cost_usd": "0.09241800",
+ "error": null,
+ "finished_at": "2026-11-12T02:09:54.936526+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "84.6"
+ },
+ "question_id": "q_f25453a5614bda90",
+ "question_sha": "ad19fba3e6d5f0e6dfa345ff902add47d62c7c677cae78bf6a1de20fd50d7487",
+ "raw_output": "Microsoft's capital expenditures (additions to property and equipment) rose about 84.6% from fiscal Q1 2026 to fiscal Q4 2026. The Q1 figure is a recalled estimate rather than a number in the excerpts.\n\n**Q4 FY2026:** The full-year figure is $115,948M and the nine-month figure is $80,146M, so Q4 is $115,948M \u2212 $80,146M = $35,802M.\n\n**Q1 FY2026:** The excerpts give only nine-month and Q3 figures. Q1 + Q2 = $80,146M \u2212 $30,876M = $49,270M. I recall Q1 as roughly $19,394M, which is consistent with that Q1 + Q2 total (Q2 would be about $29,876M), but I could not confirm it from the filings provided.\n\n**Change:** $35,802M \u00f7 $19,394M \u2212 1 \u2248 +84.6%.\n\n{\"value\": 84.6, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-12T02:07:22.538489+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 88853,
+  "output_tokens": 713,
+  "web_searches": 0
+ }
+}

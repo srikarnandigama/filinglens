@@ -1,0 +1,111 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 3,
+  "numeric_valid": 3,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.195198",
+ "error": null,
+ "finished_at": "2026-11-11T20:25:12.505592+00:00",
+ "latency_ms": 18687,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "49.822695035461"
+ },
+ "question_id": "q_4d3c2cae4f021bd0",
+ "question_sha": "14d21dde13fb30c6e3a79787e4aad6581b31b71af523449bf74e058886a5ea85",
+ "raw_output": {
+  "caveats": [
+   "The fiscal Q4 2025 capex figure is derived (full-year 2025 minus the nine months ended 2025-09-28), not reported directly as a quarterly value."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3006"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q1",
+     "fiscal_year": 2025
+    },
+    "text": "Pfizer's capital expenditures in fiscal Q1 2025 were $564 million.",
+    "ticker": "PFE",
+    "unit": "USD",
+    "value": "564000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3009"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q4",
+     "fiscal_year": 2025
+    },
+    "text": "Pfizer's capital expenditures in fiscal Q4 2025 were $845 million (derived as full-year $2,629 million minus the nine-month figure of $1,784 million).",
+    "ticker": "PFE",
+    "unit": "USD",
+    "value": "845000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_1"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q4",
+     "fiscal_year": 2025
+    },
+    "text": "Capital expenditures increased by about 49.8% from fiscal Q1 2025 to fiscal Q4 2025.",
+    "ticker": "PFE",
+    "unit": "percent",
+    "value": "49.822695035461",
+    "value_basis": "computation"
+   }
+  ],
+  "final_claim_id": "c3",
+  "final_unit": "percent",
+  "final_value": "49.822695035461",
+  "status": "answered",
+  "summary": "Pfizer's capital expenditures rose about 49.8%, from $564 million in fiscal Q1 2025 to $845 million in fiscal Q4 2025."
+ },
+ "run_id": "b7281911-a50b-4620-b089-f2ba711cdf6e",
+ "run_status": "done",
+ "split": "test",
+ "started_at": "2026-11-11T20:24:53.785549+00:00",
+ "status": "done",
+ "system_config_hash": "2672337d37a1c4749e46b1640e2449249f4b9fce707f2424c3af28481dde7549",
+ "system_id": "system",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 86769,
+  "output_tokens": 2166
+ }
+}

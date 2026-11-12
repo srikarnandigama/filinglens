@@ -1,0 +1,32 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.009298",
+ "finished_at": "2026-11-11T20:53:48.997810+00:00",
+ "latency_ms": 8695,
+ "latency_note": null,
+ "prediction": {
+  "parse_ok": true,
+  "text": "In its fiscal 2025 10-K (year ended January 26, 2025), NVIDIA described U.S. export controls as a significant and growing risk to its business in China. It said the rules, including the October 2023 expansion, require licenses to ship its leading data center products (such as the A100 and H100) to China and certain other regions. It also said the rules had limited its ability to sell there and that it had shifted to modified, lower-performance products. NVIDIA noted that China data center revenue was well below levels before the controls and that China (including Hong Kong) was a smaller share of total revenue than the year before, roughly low-teens percent. It warned that further tightening, including the January 2025 AI \"diffusion\" rule, could materially hurt its revenue, margins, and competitive position. It also said the controls could push Chinese customers toward domestic competitors and give those rivals an advantage, while adding compliance costs and uncertainty about license approvals. I'm confident of the general themes but less sure of the exact figures, so check the filing's risk factors and MD&A for precise wording and numbers."
+ },
+ "question_id": "hq_9e6c0c0dbb5941589c85ed5a923d944e",
+ "question_sha": "01dbb746f8c5773fa96ab2635131b342ab0c28db08e147e6dc2345bfe72dfeba",
+ "raw_output": "In its fiscal 2025 10-K (year ended January 26, 2025), NVIDIA described U.S. export controls as a significant and growing risk to its business in China. It said the rules, including the October 2023 expansion, require licenses to ship its leading data center products (such as the A100 and H100) to China and certain other regions. It also said the rules had limited its ability to sell there and that it had shifted to modified, lower-performance products. NVIDIA noted that China data center revenue was well below levels before the controls and that China (including Hong Kong) was a smaller share of total revenue than the year before, roughly low-teens percent. It warned that further tightening, including the January 2025 AI \"diffusion\" rule, could materially hurt its revenue, margins, and competitive position. It also said the controls could push Chinese customers toward domestic competitors and give those rivals an advantage, while adding compliance costs and uncertainty about license approvals. I'm confident of the general themes but less sure of the exact figures, so check the filing's risk factors and MD&A for precise wording and numbers.",
+ "request_ids": [
+  "req_011CgwoeStRWrtCS7CETdsaW"
+ ],
+ "split": "handwritten",
+ "started_at": "2026-11-11T20:53:40.310807+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 99,
+  "output_tokens": 910,
+  "web_searches": 0
+ }
+}

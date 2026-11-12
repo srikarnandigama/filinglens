@@ -1,0 +1,32 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.009374",
+ "finished_at": "2026-11-11T20:53:23.809269+00:00",
+ "latency_ms": 7947,
+ "latency_note": null,
+ "prediction": {
+  "parse_ok": true,
+  "text": "In June 2025, just before its fiscal 2025 year-end, P&G announced a multi-year restructuring program covering fiscal 2026 and 2027. It would eliminate up to about 7,000 non-manufacturing roles, roughly 6-7% of that workforce, over two years. It would also exit certain brands, categories, and sub-markets in selected countries. The company said the goal was to simplify the organization, with broader roles, clearer accountability, and faster decision-making, and to focus resources on its core businesses and markets to support productivity and growth amid a tough, uncertain consumer and cost environment. P&G also said it expected the program to produce one-time before-tax charges of roughly $1.0-$1.6 billion, mostly severance and some asset write-downs, on top of its usual restructuring spending. I'm going from memory on the exact charge range and breakdown, so check the fiscal 2025 10-K's restructuring note for precise figures."
+ },
+ "question_id": "hq_05c3197fe2084357b5c9ca0582b713f2",
+ "question_sha": "8c72e56a71d2c3e2d1837671731ba9606005dc33caab99c80a338d66c74208b1",
+ "raw_output": "In June 2025, just before its fiscal 2025 year-end, P&G announced a multi-year restructuring program covering fiscal 2026 and 2027. It would eliminate up to about 7,000 non-manufacturing roles, roughly 6-7% of that workforce, over two years. It would also exit certain brands, categories, and sub-markets in selected countries. The company said the goal was to simplify the organization, with broader roles, clearer accountability, and faster decision-making, and to focus resources on its core businesses and markets to support productivity and growth amid a tough, uncertain consumer and cost environment. P&G also said it expected the program to produce one-time before-tax charges of roughly $1.0-$1.6 billion, mostly severance and some asset write-downs, on top of its usual restructuring spending. I'm going from memory on the exact charge range and breakdown, so check the fiscal 2025 10-K's restructuring note for precise figures.",
+ "request_ids": [
+  "req_011CgwoceY71mXnXikxnQRp9"
+ ],
+ "split": "handwritten",
+ "started_at": "2026-11-11T20:53:15.863362+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 92,
+  "output_tokens": 919,
+  "web_searches": 0
+ }
+}

@@ -1,0 +1,48 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": false,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0000093410-26-000078",
+   "0000093410-24-000059",
+   "0000093410-24-000021"
+  ],
+  "gold_visible": true,
+  "missing_values": [],
+  "question_id": "q_ea639bbaa3f01c17",
+  "text_sha256": "4bd5326a4c4eb37ba68998d15d7bb17d39bdff3b5793965ee3be67ebb92d6215",
+  "tokens_est": 32330
+ },
+ "cost_usd": "0.06350600",
+ "error": null,
+ "finished_at": "2026-11-11T21:43:33.010860+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "-7.11"
+ },
+ "question_id": "q_ea639bbaa3f01c17",
+ "question_sha": "f0737c62e60ac75b637f0177d3d15c04f86582c08f3a0f586ca03312de533695",
+ "raw_output": "Chevron's total revenue fell about 7.1% from Q1 2023 to Q4 2023, taking \"total revenue\" to mean Total Revenues and Other Income.\n\nThe filings give Q1 2023 directly, and Q4 2023 has to be derived by subtracting the nine-month figure from the full year.\n\n- **Q1 2023:** Total Revenues and Other Income was $50,793 million (from the Q1 2024 10-Q).\n- **Q4 2023:** The full-year 2023 figure was $200,949 million and the nine months ended September 30, 2023 was $153,769 million. Q4 2023 is therefore $200,949 \u2212 $153,769 = $47,180 million.\n\nThe change is (47,180 \u2212 50,793) / 50,793 = \u22127.11%.\n\nIf \"total revenue\" instead meant Sales and other operating revenues alone, it would be roughly flat: $48,842 million in Q1 versus $48,933 million in Q4 ($196,913 \u2212 $147,980), a gain of about 0.2%.\n\n{\"value\": -7.11, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-11T21:41:30.293730+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 59951,
+  "output_tokens": 711,
+  "web_searches": 0
+ }
+}

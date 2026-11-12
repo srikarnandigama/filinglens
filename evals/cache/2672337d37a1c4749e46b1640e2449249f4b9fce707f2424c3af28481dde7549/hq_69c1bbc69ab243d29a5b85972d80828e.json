@@ -1,0 +1,262 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 6,
+  "numeric_valid": 6,
+  "text_pending_judge": [
+   {
+    "chunk_ids": [
+     "chk_6b373c4d5a9076d69b02f7390c55d4fc9009498c1e1402697980baaef0d4008e"
+    ],
+    "claim_id": "c9",
+    "text": "On the cost side, Tesla said combined cost per unit fell mainly from lower raw material costs, freight and duties, and mix. Higher costs for Cybertruck partially offset those decreases."
+   }
+  ],
+  "text_string_supported": 2,
+  "text_total": 3,
+  "uncited": 0
+ },
+ "cost_usd": "0.1916322",
+ "error": null,
+ "finished_at": "2026-11-11T20:50:04.572082+00:00",
+ "latency_ms": 52326,
+ "prediction": {
+  "parse_ok": true,
+  "text": "Tesla's gross profit fell slightly in 2024, from $17.66 billion to $17.45 billion (-1.19%), even though revenue rose 0.95% to $97.69 billion. Gross margin slipped from about 18.25% to 17.86%. Management said total automotive gross margin fell from 19.4% to 18.4% mainly because of a lower average selling price on its vehicles and the Cybertruck ramp. It said the lower selling price came from price reductions and attractive financing options, plus mix. It also said lower per-unit costs and higher regulatory credit and FSD (Supervised) revenue partly offset the decline.\nTesla's total gross profit was $17.66 billion in FY2023.\nTesla's total gross profit was $17.45 billion in FY2024.\nGross profit declined about 1.19% year over year.\nRevenue rose about 0.95% (from $96.77 billion to $97.69 billion), so the profit decline was not caused by lower total revenue.\nTotal gross margin was about 18.25% in FY2023.\nTotal gross margin was about 17.86% in FY2024, lower than in FY2023.\nTesla said total automotive gross margin decreased from 19.4% to 18.4% in 2024 due to lower average selling price on its vehicles and the Cybertruck ramp. It said these were partially offset by lower average combined cost per unit and increases in regulatory credit and FSD (Supervised) revenue.\nTesla attributed the lower average selling price to overall price reductions and attractive financing options provided in 2024, as well as mix. Automotive sales revenue fell $6.03 billion, or 8%, and Model 3 and Model Y cash deliveries fell by approximately 22,000.\nOn the cost side, Tesla said combined cost per unit fell mainly from lower raw material costs, freight and duties, and mix. Higher costs for Cybertruck partially offset those decreases."
+ },
+ "question_id": "hq_69c1bbc69ab243d29a5b85972d80828e",
+ "question_sha": "b36f7de6fd16f8ff45cf38b83bcfeb2c5a050dc7c3fc4b02bd48f82460dbe3ec",
+ "raw_output": {
+  "caveats": [
+   "The gross profit and margin figures are company-wide totals, not automotive-only. The automotive margin change (19.4% to 18.4%) comes from management's discussion.",
+   "The passages did not include the full sentence opening the cost-of-automotive-sales discussion, so the cost-side drivers are only partly quoted.",
+   "The evidence also noted that regulatory credit revenue rose and partly offset the decline. That passage was not included among the quotes, so no figure is cited for it here."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "994"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2023
+    },
+    "text": "Tesla's total gross profit was $17.66 billion in FY2023.",
+    "ticker": "TSLA",
+    "unit": "USD",
+    "value": "17660000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "999"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "Tesla's total gross profit was $17.45 billion in FY2024.",
+    "ticker": "TSLA",
+    "unit": "USD",
+    "value": "17450000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_3"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "Gross profit declined about 1.19% year over year.",
+    "ticker": "TSLA",
+    "unit": "percent",
+    "value": "-1.18912797282",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_4"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "960"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "965"
+     }
+    ],
+    "id": "c4",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "Revenue rose about 0.95% (from $96.77 billion to $97.69 billion), so the profit decline was not caused by lower total revenue.",
+    "ticker": "TSLA",
+    "unit": "percent",
+    "value": "0.947578353466",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_1"
+     }
+    ],
+    "id": "c5",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2023
+    },
+    "text": "Total gross margin was about 18.25% in FY2023.",
+    "ticker": "TSLA",
+    "unit": "percent",
+    "value": "18.248891736331",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_2"
+     }
+    ],
+    "id": "c6",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "Total gross margin was about 17.86% in FY2024, lower than in FY2023.",
+    "ticker": "TSLA",
+    "unit": "percent",
+    "value": "17.862626676221",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_6b373c4d5a9076d69b02f7390c55d4fc9009498c1e1402697980baaef0d4008e"
+     }
+    ],
+    "id": "c7",
+    "kind": "textual",
+    "period": null,
+    "text": "Tesla said total automotive gross margin decreased from 19.4% to 18.4% in 2024 due to lower average selling price on its vehicles and the Cybertruck ramp. It said these were partially offset by lower average combined cost per unit and increases in regulatory credit and FSD (Supervised) revenue.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_7bd5071fedebcecb4963053053dc0160c18af262b7f7cb6c77f7ad4c9affb275"
+     }
+    ],
+    "id": "c8",
+    "kind": "textual",
+    "period": null,
+    "text": "Tesla attributed the lower average selling price to overall price reductions and attractive financing options provided in 2024, as well as mix. Automotive sales revenue fell $6.03 billion, or 8%, and Model 3 and Model Y cash deliveries fell by approximately 22,000.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_6b373c4d5a9076d69b02f7390c55d4fc9009498c1e1402697980baaef0d4008e"
+     }
+    ],
+    "id": "c9",
+    "kind": "textual",
+    "period": null,
+    "text": "On the cost side, Tesla said combined cost per unit fell mainly from lower raw material costs, freight and duties, and mix. Higher costs for Cybertruck partially offset those decreases.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   }
+  ],
+  "final_claim_id": "c3",
+  "final_unit": "percent",
+  "final_value": "-1.18912797282",
+  "status": "answered",
+  "summary": "Tesla's gross profit fell slightly in 2024, from $17.66 billion to $17.45 billion (-1.19%), even though revenue rose 0.95% to $97.69 billion. Gross margin slipped from about 18.25% to 17.86%. Management said total automotive gross margin fell from 19.4% to 18.4% mainly because of a lower average selling price on its vehicles and the Cybertruck ramp. It said the lower selling price came from price reductions and attractive financing options, plus mix. It also said lower per-unit costs and higher regulatory credit and FSD (Supervised) revenue partly offset the decline."
+ },
+ "retrieval": {
+  "first_search": {
+   "filings:s7": [
+    "chk_4a3b371c59b08e1feb70e5fac8aff12193a60cc212d7d7b9f59de8ab9f995a61",
+    "chk_6b373c4d5a9076d69b02f7390c55d4fc9009498c1e1402697980baaef0d4008e",
+    "chk_efb60ae6c38fe53efffb2c3ba03fc7797d41089a65682f325e4db217f95c90c1",
+    "chk_7bd5071fedebcecb4963053053dc0160c18af262b7f7cb6c77f7ad4c9affb275",
+    "chk_c3dc564f0c76307538d80ec73806adbe74f4c61ad047bdd247f9b064976e842f",
+    "chk_61082d67b295e683770bded105dc984053ade487194a0be6a362a40d459d364e",
+    "chk_df43aefab4079e9800f707746ae308f7507213b567b6b2db2bbe091f16443d13",
+    "chk_ec5dfc76be037ba70f8dcbb338e1f1fa94448bf250cc945060b2328566b49717"
+   ]
+  },
+  "seen": [
+   "chk_4a3b371c59b08e1feb70e5fac8aff12193a60cc212d7d7b9f59de8ab9f995a61",
+   "chk_6b373c4d5a9076d69b02f7390c55d4fc9009498c1e1402697980baaef0d4008e",
+   "chk_efb60ae6c38fe53efffb2c3ba03fc7797d41089a65682f325e4db217f95c90c1",
+   "chk_7bd5071fedebcecb4963053053dc0160c18af262b7f7cb6c77f7ad4c9affb275",
+   "chk_c3dc564f0c76307538d80ec73806adbe74f4c61ad047bdd247f9b064976e842f",
+   "chk_61082d67b295e683770bded105dc984053ade487194a0be6a362a40d459d364e",
+   "chk_df43aefab4079e9800f707746ae308f7507213b567b6b2db2bbe091f16443d13",
+   "chk_ec5dfc76be037ba70f8dcbb338e1f1fa94448bf250cc945060b2328566b49717"
+  ]
+ },
+ "run_id": "38329d70-db98-4bc8-90ba-c24a12b8714f",
+ "run_status": "done",
+ "split": "handwritten",
+ "started_at": "2026-11-11T20:49:12.167674+00:00",
+ "status": "done",
+ "system_config_hash": "2672337d37a1c4749e46b1640e2449249f4b9fce707f2424c3af28481dde7549",
+ "system_id": "system",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 127233,
+  "output_tokens": 8955
+ }
+}

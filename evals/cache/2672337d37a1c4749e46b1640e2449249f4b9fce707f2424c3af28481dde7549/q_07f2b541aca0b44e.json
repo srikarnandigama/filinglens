@@ -1,0 +1,132 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 3,
+  "numeric_valid": 3,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.227014",
+ "error": null,
+ "finished_at": "2026-11-11T20:28:21.156286+00:00",
+ "latency_ms": 22730,
+ "prediction": {
+  "choice": "PG",
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percentage_points",
+  "value": "0.835117477448"
+ },
+ "question_id": "q_07f2b541aca0b44e",
+ "question_sha": "649350d3fc43c59cbf9291ca4b0d119a883fe41ce8dbc78f5e1c9bb97e880ac6",
+ "raw_output": {
+  "caveats": [
+   "The fiscal years differ. P&G's FY2024 ended June 30, 2024. Coca-Cola's FY2024 ended December 31, 2024.",
+   "Operating margin is operating income divided by reported revenue. Each company's own definitions apply."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_1"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3640"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3610"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "P&G's FY2024 operating margin (operating income of $18.545 billion on revenue of $84.039 billion) was about 22.07%.",
+    "ticker": "PG",
+    "unit": "percent",
+    "value": "22.067135496615",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_2"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3512"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3464"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "Coca-Cola's FY2024 operating margin (operating income of $9.992 billion on revenue of $47.061 billion) was about 21.23%.",
+    "ticker": "KO",
+    "unit": "percent",
+    "value": "21.232018019167",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value",
+      "kind": "computation",
+      "ref": "cmp_3"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "P&G's operating margin was higher than Coca-Cola's by about 0.84 percentage points.",
+    "ticker": null,
+    "unit": "percentage_points",
+    "value": "0.835117477448",
+    "value_basis": "computation"
+   }
+  ],
+  "final_claim_id": "c3",
+  "final_unit": "percentage_points",
+  "final_value": "0.835117477448",
+  "status": "answered",
+  "summary": "Procter & Gamble had the higher fiscal 2024 operating margin, at about 22.07%. Coca-Cola's was about 21.23%. P&G's margin was higher by about 0.84 percentage points. The two companies' fiscal years end at different times."
+ },
+ "run_id": "72189887-55c9-45ea-8a1c-6361aa204f90",
+ "run_status": "done",
+ "split": "test",
+ "started_at": "2026-11-11T20:27:58.389581+00:00",
+ "status": "done",
+ "system_config_hash": "2672337d37a1c4749e46b1640e2449249f4b9fce707f2424c3af28481dde7549",
+ "system_id": "system",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 97272,
+  "output_tokens": 3247
+ }
+}

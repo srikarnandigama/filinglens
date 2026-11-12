@@ -1,0 +1,69 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 1,
+  "numeric_valid": 1,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.061298",
+ "error": null,
+ "finished_at": "2026-11-11T20:30:32.610133+00:00",
+ "latency_ms": 8154,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD",
+  "value": "225465000000"
+ },
+ "question_id": "q_cca361c0b17c1982",
+ "question_sha": "ed60f9dbead812327f9d59f63ce1e1fec1bbf8bbe83bd063f601c748fffbfa19",
+ "raw_output": {
+  "caveats": [],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "234"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2026
+    },
+    "text": "Microsoft's gross profit for fiscal year 2026 (ended June 30, 2026) was about $225.465 billion.",
+    "ticker": "MSFT",
+    "unit": "USD",
+    "value": "225465000000",
+    "value_basis": "fact"
+   }
+  ],
+  "final_claim_id": "c1",
+  "final_unit": "USD",
+  "final_value": "225465000000",
+  "status": "answered",
+  "summary": "Microsoft's gross profit for fiscal 2026 (July 1, 2025 to June 30, 2026) was $225.465 billion, per the company's filing."
+ },
+ "run_id": "894804e3-fb6c-4487-b7b9-3bce97695aa0",
+ "run_status": "done",
+ "split": "test",
+ "started_at": "2026-11-11T20:30:24.415473+00:00",
+ "status": "done",
+ "system_config_hash": "2672337d37a1c4749e46b1640e2449249f4b9fce707f2424c3af28481dde7549",
+ "system_id": "system",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 25979,
+  "output_tokens": 934
+ }
+}

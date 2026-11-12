@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.012664",
+ "finished_at": "2026-11-12T02:04:26.795908+00:00",
+ "latency_ms": 4285,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "8.9"
+ },
+ "question_id": "q_09ea8b155ad7ec34",
+ "question_sha": "12157b417dce2729ee3a47c83ca177664df50ee23ea20696f753b542cd2973bf",
+ "raw_output": "Disney's capital expenditures (investments in parks, resorts and other property) rose about 8.9% from fiscal 2023 to fiscal 2024, from roughly $4,969 million to $5,412 million. These figures are from memory of the cash flow statements, not looked up in the filings.\n\nCalculation: (5,412 \u2212 4,969) / 4,969 \u2248 8.9%.\n\n{\"value\": 8.9, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgxDLfUWb6qhuXuKnFyax"
+ ],
+ "split": "test",
+ "started_at": "2026-11-12T02:04:22.513096+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "16e92aec0cb80aa246423b8803435a393d3c367c6455eb10a9b8212a8828396f",
+ "system_id": "b0-fable",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 348,
+  "output_tokens": 247,
+  "web_searches": 0
+ }
+}

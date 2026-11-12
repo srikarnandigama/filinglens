@@ -1,0 +1,46 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": false,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0001326801-24-000081"
+  ],
+  "gold_visible": true,
+  "missing_values": [],
+  "question_id": "q_cbde504659ae6cb6",
+  "text_sha256": "58808b6c568a712870662f218ca1df9d13c7ae8e903d4b3ff5b17c6989cd6ac2",
+  "tokens_est": 2800
+ },
+ "cost_usd": "0.00695900",
+ "error": null,
+ "finished_at": "2026-11-12T02:09:54.975377+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "9241"
+ },
+ "question_id": "q_cbde504659ae6cb6",
+ "question_sha": "6f3aaad2b357f12ac541a3804bf99c836c404a388b05c9305b010e154feabc6d",
+ "raw_output": "Meta's research and development expense for the three months ended September 30, 2023 (fiscal Q3 2023) was $9,241 million, as shown in the condensed consolidated statements of income in the Q3 2024 10-Q.\n\n{\"value\": 9241, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-12T02:07:22.538489+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 6419,
+  "output_tokens": 108,
+  "web_searches": 0
+ }
+}

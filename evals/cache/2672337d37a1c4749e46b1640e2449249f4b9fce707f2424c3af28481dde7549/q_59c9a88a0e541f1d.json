@@ -1,0 +1,69 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 1,
+  "numeric_valid": 1,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.075822",
+ "error": null,
+ "finished_at": "2026-11-11T20:35:58.133825+00:00",
+ "latency_ms": 8203,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD",
+  "value": "57372000000"
+ },
+ "question_id": "q_59c9a88a0e541f1d",
+ "question_sha": "4f9888bcff37113bb2fab8f1ff404820f657756536de465610d88b9330e4547b",
+ "raw_output": {
+  "caveats": [],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "891"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Meta's research and development expense for fiscal 2025 (year ended Dec 31, 2025) was $57.372 billion (about $57.37 billion).",
+    "ticker": "META",
+    "unit": "USD",
+    "value": "57372000000",
+    "value_basis": "fact"
+   }
+  ],
+  "final_claim_id": "c1",
+  "final_unit": "USD",
+  "final_value": "57372000000",
+  "status": "answered",
+  "summary": "Meta's research and development expense in fiscal 2025 was $57.372 billion (about $57.37 billion)."
+ },
+ "run_id": "fd31eda1-b652-435e-a2c1-09b1d5bb0c8f",
+ "run_status": "done",
+ "split": "test",
+ "started_at": "2026-11-11T20:35:49.889247+00:00",
+ "status": "done",
+ "system_config_hash": "2672337d37a1c4749e46b1640e2449249f4b9fce707f2424c3af28481dde7549",
+ "system_id": "system",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 33116,
+  "output_tokens": 959
+ }
+}

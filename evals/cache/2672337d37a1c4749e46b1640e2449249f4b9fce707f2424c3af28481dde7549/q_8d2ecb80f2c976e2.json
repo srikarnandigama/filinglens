@@ -1,0 +1,131 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 3,
+  "numeric_valid": 3,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.174910",
+ "error": null,
+ "finished_at": "2026-11-11T20:37:03.526360+00:00",
+ "latency_ms": 20720,
+ "prediction": {
+  "choice": "AMZN",
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percentage_points",
+  "value": "6.562722950753"
+ },
+ "question_id": "q_8d2ecb80f2c976e2",
+ "question_sha": "94e3cb7ec8655f1e0aa0e8576d6944c15a78630ada50b50a94260ffc6843ac7b",
+ "raw_output": {
+  "caveats": [
+   "Both companies have fiscal years ending Dec 31, so FY2025 covers the same calendar period. Operating margin is operating income divided by reported revenue."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_1"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "716"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "682"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Amazon's FY2025 operating margin was about 11.16% (operating income $79.975 billion on revenue of $716.924 billion).",
+    "ticker": "AMZN",
+    "unit": "percent",
+    "value": "11.155296795755",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_2"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "1021"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "970"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Tesla's FY2025 operating margin was about 4.59% (operating income $4.355 billion on revenue of $94.827 billion).",
+    "ticker": "TSLA",
+    "unit": "percent",
+    "value": "4.592573845002",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value",
+      "kind": "computation",
+      "ref": "cmp_3"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Amazon's operating margin exceeded Tesla's by about 6.56 percentage points in FY2025.",
+    "ticker": null,
+    "unit": "percentage_points",
+    "value": "6.562722950753",
+    "value_basis": "computation"
+   }
+  ],
+  "final_claim_id": "c3",
+  "final_unit": "percentage_points",
+  "final_value": "6.562722950753",
+  "status": "answered",
+  "summary": "Amazon had the higher fiscal 2025 operating margin: about 11.16%, against about 4.59% for Tesla. That is a gap of about 6.56 percentage points."
+ },
+ "run_id": "f2c10dde-d57a-4244-8409-97b314980a2c",
+ "run_status": "done",
+ "split": "test",
+ "started_at": "2026-11-11T20:36:42.772909+00:00",
+ "status": "done",
+ "system_config_hash": "2672337d37a1c4749e46b1640e2449249f4b9fce707f2424c3af28481dde7549",
+ "system_id": "system",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 71525,
+  "output_tokens": 3186
+ }
+}

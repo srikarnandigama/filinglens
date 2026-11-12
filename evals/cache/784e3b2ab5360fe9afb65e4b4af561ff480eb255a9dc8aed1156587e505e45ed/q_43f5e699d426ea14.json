@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.008924",
+ "finished_at": "2026-11-11T20:38:35.558031+00:00",
+ "latency_ms": 6684,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "11000"
+ },
+ "question_id": "q_43f5e699d426ea14",
+ "question_sha": "b9cd168217bcd167ad7606ac459fa1676d33958b33b41c0f2b8ab96c1e5d53b1",
+ "raw_output": "I don't have Apple's reported R&D for fiscal Q3 2026, the quarter ending June 2026, so this is an estimate rather than a reported figure.\n\n- Apple reported R&D of about $8.87 billion in fiscal Q3 2025.\n- My recollection, which I'm not certain of, is that R&D was around $10.9 billion in fiscal Q1 2026, up roughly 30% from a year earlier.\n- If spending stayed near that higher level, fiscal Q3 2026 R&D would be about $11 billion.\n\n{\"value\": 11000, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgwnVG4S6VGpRYzmYkaVh"
+ ],
+ "split": "test",
+ "started_at": "2026-11-11T20:38:28.869242+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 337,
+  "output_tokens": 825,
+  "web_searches": 0
+ }
+}

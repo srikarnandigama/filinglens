@@ -1,0 +1,32 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.007708",
+ "finished_at": "2026-11-11T20:53:31.464173+00:00",
+ "latency_ms": 6457,
+ "latency_note": null,
+ "prediction": {
+  "parse_ok": true,
+  "text": "Meta's 10-K filings describe several ways this could go wrong. The main one is that the spending may never pay off. Reality Labs has lost roughly $13-18 billion a year recently (about $17-18 billion in 2024, from my recollection, so check the filing), on only a couple of billion dollars of revenue, and Meta has said it expects these losses to keep growing. If consumers and developers don't adopt VR/AR headsets, smart glasses, and the metaverse as hoped, Meta could absorb tens of billions in cumulative losses with little return. The filings also flag other risks:\n\n- **Hardware challenges:** Products are costly to build, and Meta depends on supply chains and key component suppliers.\n- **Competition:** Apple, Google, and others are pursuing the same market.\n- **Regulation:** Privacy, safety, and content rules for immersive and wearable devices are uncertain.\n- **Dependence on third-party platforms:** Meta's reliance on others' mobile ecosystems could limit its reach until it controls its own computing platform.\n- **Opportunity cost:** The spending could squeeze profits or divert capital and attention from the core advertising business and from AI investment.\n\nMeta also acknowledges that these long-term bets may not be profitable on the timelines investors expect."
+ },
+ "question_id": "hq_4d5d9efc06f34ddaa145f699ce2c2e4d",
+ "question_sha": "70e61aa84b8b802f354fdc1e5f40f521d2c282bbb9f1badfaa63848c35ea703c",
+ "raw_output": "Meta's 10-K filings describe several ways this could go wrong. The main one is that the spending may never pay off. Reality Labs has lost roughly $13-18 billion a year recently (about $17-18 billion in 2024, from my recollection, so check the filing), on only a couple of billion dollars of revenue, and Meta has said it expects these losses to keep growing. If consumers and developers don't adopt VR/AR headsets, smart glasses, and the metaverse as hoped, Meta could absorb tens of billions in cumulative losses with little return. The filings also flag other risks:\n\n- **Hardware challenges:** Products are costly to build, and Meta depends on supply chains and key component suppliers.\n- **Competition:** Apple, Google, and others are pursuing the same market.\n- **Regulation:** Privacy, safety, and content rules for immersive and wearable devices are uncertain.\n- **Dependence on third-party platforms:** Meta's reliance on others' mobile ecosystems could limit its reach until it controls its own computing platform.\n- **Opportunity cost:** The spending could squeeze profits or divert capital and attention from the core advertising business and from AI investment.\n\nMeta also acknowledges that these long-term bets may not be profitable on the timelines investors expect.",
+ "request_ids": [
+  "req_011CgwodKQvxesAGUduZvZPC"
+ ],
+ "split": "handwritten",
+ "started_at": "2026-11-11T20:53:25.003955+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 89,
+  "output_tokens": 753,
+  "web_searches": 0
+ }
+}

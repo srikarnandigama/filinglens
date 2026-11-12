@@ -1,0 +1,47 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": false,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0001744489-26-000057",
+   "0001744489-25-000155"
+  ],
+  "gold_visible": true,
+  "missing_values": [],
+  "question_id": "q_c6947d28cf1f58a4",
+  "text_sha256": "266d3faa73fb4e61aeb6433cf05461e94c1f8435a65b9922680295bd6dd3ff9c",
+  "tokens_est": 6057
+ },
+ "cost_usd": "0.01531400",
+ "error": null,
+ "finished_at": "2026-11-12T02:09:54.968368+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "1916"
+ },
+ "question_id": "q_c6947d28cf1f58a4",
+ "question_sha": "691c3fd93c73ec86adbe22ee7c0ffbe88f5b845d971f9698f07ec5ff9ef4bcb7",
+ "raw_output": "Disney's fiscal Q4 2025 capital expenditures can be found by subtracting the nine-month figure from the full-year figure. The line used is \"Investments in parks, resorts and other property.\"\n\n- Fiscal 2025 full year: $8,024 million\n- Nine months ended June 28, 2025: $6,108 million\n- Q4 2025: 8,024 \u2212 6,108 = $1,916 million\n\nThe nine-month figure for the prior year comes from the 10-Q, which reports the comparative period as June 28, 2025.\n\n{\"value\": 1916, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-12T02:07:22.538489+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 14279,
+  "output_tokens": 207,
+  "web_searches": 0
+ }
+}

@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.024964",
+ "finished_at": "2026-11-11T20:38:47.583443+00:00",
+ "latency_ms": 19148,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "11000"
+ },
+ "question_id": "q_71adf8d5d92f6f1e",
+ "question_sha": "f0d56d5e043b2f7862d7bb4c489727b8ab0cdc2adfe5db98f1c90212387887da",
+ "raw_output": "Meta's research and development expense in fiscal Q4 2023 was about $11.0 billion (roughly $11,000 million). This is my best estimate from memory, not a figure I could confirm. I backed into it from the full-year 2023 R&D total of about $38.5 billion less the first three quarters, and I am not certain of the exact Q4 number.\n\n{\"value\": 11000, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgwnVEAaZiQ8MXZP1f6aq"
+ ],
+ "split": "test",
+ "started_at": "2026-11-11T20:38:28.434693+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 337,
+  "output_tokens": 2429,
+  "web_searches": 0
+ }
+}

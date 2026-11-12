@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.019688",
+ "finished_at": "2026-11-12T02:04:14.035843+00:00",
+ "latency_ms": 5853,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD billions",
+  "value": "24.7"
+ },
+ "question_id": "q_50b3a95c094c89e8",
+ "question_sha": "8376d57a0011f2987bcbc8b417f72f8cf88fdabbb77a78974c5b4d0d7797862f",
+ "raw_output": "I don't have Disney's reported results for fiscal Q3 2026 (the quarter ending around late June 2026), so this is an estimate rather than a reported figure. Disney's revenue was about $23.65 billion in fiscal Q3 2025, and assuming roughly 4\u20135% year-over-year growth, my best estimate for fiscal Q3 2026 is about $24.7 billion.\n\n{\"value\": 24.7, \"unit\": \"USD billions\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgxDKccb6pRdqHu5G4ca8"
+ ],
+ "split": "test",
+ "started_at": "2026-11-12T02:04:08.182469+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "16e92aec0cb80aa246423b8803435a393d3c367c6455eb10a9b8212a8828396f",
+ "system_id": "b0-fable",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 336,
+  "output_tokens": 425,
+  "web_searches": 0
+ }
+}

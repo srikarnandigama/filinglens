@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.009176",
+ "finished_at": "2026-11-12T02:06:39.053649+00:00",
+ "latency_ms": 2832,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "4997"
+ },
+ "question_id": "q_2cdf8426982610ee",
+ "question_sha": "930212dd2932c6e522ba06183276f12a4763d57f90b2433862b5b42132b0cfe4",
+ "raw_output": "Tesla's gross profit in fiscal Q3 2024 (quarter ended September 30, 2024) was about $4,997 million, on revenue of $25,182 million, a gross margin of roughly 19.8%.\n\n{\"value\": 4997, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgxDWX9ynkoz4DCUEs6fo"
+ ],
+ "split": "test",
+ "started_at": "2026-11-12T02:06:36.221345+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "16e92aec0cb80aa246423b8803435a393d3c367c6455eb10a9b8212a8828396f",
+ "system_id": "b0-fable",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 337,
+  "output_tokens": 162,
+  "web_searches": 0
+ }
+}

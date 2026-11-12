@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.007776",
+ "finished_at": "2026-11-11T20:40:37.140449+00:00",
+ "latency_ms": 4858,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "50.9"
+ },
+ "question_id": "q_b1dd7dbbd2417b9c",
+ "question_sha": "82e7c38a7267c68a86283e26175cc78e411f86a047ca93abce914ef836995cf3",
+ "raw_output": "Nvidia's gross profit rose roughly **51%** from fiscal 2025 to fiscal 2026. This is an estimate: I recalled the fiscal 2026 quarterly figures rather than reading the filing, and I'm least sure of the fourth quarter.\n\n- **Fiscal 2025 (ended Jan 2025):** gross profit was about $97.9B, on revenue of $130.5B.\n- **Fiscal 2026 (ended Jan 2026):** gross profit was about $147.7B, on revenue of about $215.9B. That is the sum of GAAP quarterly gross profit of roughly $26.7B, $28.0B, $41.9B and $51.1B.\n\nThe change is 147.7 / 97.9 \u2212 1 \u2248 50.9%.\n\n{\"value\": 50.9, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgwneMfHHaeDThNNsgzk9"
+ ],
+ "split": "test",
+ "started_at": "2026-11-11T20:40:32.277377+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 348,
+  "output_tokens": 708,
+  "web_searches": 0
+ }
+}

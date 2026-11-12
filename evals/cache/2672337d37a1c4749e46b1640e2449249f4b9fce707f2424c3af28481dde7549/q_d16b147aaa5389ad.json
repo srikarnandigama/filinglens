@@ -1,0 +1,111 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 3,
+  "numeric_valid": 3,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.141332",
+ "error": null,
+ "finished_at": "2026-11-11T20:31:09.225684+00:00",
+ "latency_ms": 16941,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "4.99263050916"
+ },
+ "question_id": "q_d16b147aaa5389ad",
+ "question_sha": "2218edb9d9b557ce7f567d01662263410a921fa68d9cd8f70b40307c3af6194d",
+ "raw_output": {
+  "caveats": [
+   "Operating margin is computed as operating income divided by total revenue (the Revenues concept) for the quarter from 2026-05-01 to 2026-07-31."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3235"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q2",
+     "fiscal_year": 2027
+    },
+    "text": "Walmart's operating income for fiscal Q2 2027 was $9.383 billion.",
+    "ticker": "WMT",
+    "unit": "USD",
+    "value": "9383000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3201"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q2",
+     "fiscal_year": 2027
+    },
+    "text": "Walmart's revenue for fiscal Q2 2027 was $187.937 billion.",
+    "ticker": "WMT",
+    "unit": "USD",
+    "value": "187937000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_1"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q2",
+     "fiscal_year": 2027
+    },
+    "text": "Walmart's operating margin for fiscal Q2 2027 was about 4.99% (operating income divided by revenue).",
+    "ticker": "WMT",
+    "unit": "percent",
+    "value": "4.99263050916",
+    "value_basis": "computation"
+   }
+  ],
+  "final_claim_id": "c3",
+  "final_unit": "percent",
+  "final_value": "4.99263050916",
+  "status": "answered",
+  "summary": "Walmart's fiscal Q2 2027 operating margin (quarter ended July 31, 2026) was about 4.99%. That is operating income of $9.383 billion on revenue of $187.937 billion."
+ },
+ "run_id": "aa7a4c65-b612-4715-9f78-2b82914c1c35",
+ "run_status": "done",
+ "split": "test",
+ "started_at": "2026-11-11T20:30:52.252534+00:00",
+ "status": "done",
+ "system_config_hash": "2672337d37a1c4749e46b1640e2449249f4b9fce707f2424c3af28481dde7549",
+ "system_id": "system",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 59611,
+  "output_tokens": 2211
+ }
+}

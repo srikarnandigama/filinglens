@@ -1,0 +1,47 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": false,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0001628280-26-008131",
+   "0001628280-25-048859"
+  ],
+  "gold_visible": true,
+  "missing_values": [],
+  "question_id": "q_a97c1553c863fc78",
+  "text_sha256": "03f531dd1bca99222dedbe8b0f2ff9f9eaf0728590eb64aa5ee78f1423544a63",
+  "tokens_est": 50019
+ },
+ "cost_usd": "0.08654400",
+ "error": null,
+ "finished_at": "2026-11-12T02:09:54.927194+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "119724"
+ },
+ "question_id": "q_a97c1553c863fc78",
+ "question_sha": "9924f3b62dbcf91c850c2cb410f29a24f1886d8b8e2d52868400358192cb30f7",
+ "raw_output": "Q4 2025 operating cash flow is the full-year figure less the nine-month figure.\n\n- Full year 2025 net cash used in operating activities: $(147,782) million (10-K).\n- Nine months ended September 30, 2025: $(267,506) million (10-Q).\n\nQ4 2025 = (147,782) \u2212 (267,506) = +119,724 million.\n\nThis is $119,724 million of net cash provided by operating activities in Q4 2025, or about $119.7 billion.\n\n{\"value\": 119724, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-12T02:07:22.538489+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 85594,
+  "output_tokens": 190,
+  "web_searches": 0
+ }
+}

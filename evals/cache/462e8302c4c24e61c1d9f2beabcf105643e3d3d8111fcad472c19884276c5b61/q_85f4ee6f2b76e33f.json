@@ -1,0 +1,34 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.007450",
+ "error": null,
+ "finished_at": "2026-11-12T02:14:09.078842+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "23697"
+ },
+ "question_id": "q_85f4ee6f2b76e33f",
+ "question_sha": "b55485983f672634a086e350f18344209d4f68d97f9f367e5c57b2cfa1811f12",
+ "raw_output": "Alphabet's operating income for fiscal Q4 2023 (the quarter ended December 31, 2023) was about $23.7 billion, or $23,697 million. This comes from my memory of the earnings release, and I didn't run a search to check it. On revenue of about $86.3 billion, that is an operating margin of roughly 27%.\n\n{\"value\": 23697, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-12T02:10:05.212451+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "462e8302c4c24e61c1d9f2beabcf105643e3d3d8111fcad472c19884276c5b61",
+ "system_id": "b1-sonnet",
+ "system_kind": "b1",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 6300,
+  "output_tokens": 230,
+  "web_searches": 0
+ }
+}

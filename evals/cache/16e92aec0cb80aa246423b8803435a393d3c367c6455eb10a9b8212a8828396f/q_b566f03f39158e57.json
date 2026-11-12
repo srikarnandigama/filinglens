@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.031512",
+ "finished_at": "2026-11-12T02:04:43.332045+00:00",
+ "latency_ms": 8559,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "9.2"
+ },
+ "question_id": "q_b566f03f39158e57",
+ "question_sha": "04dc64da5a48147f5f6002cb8f0a23cd487eacdc1c4076ad25094bc7e66e4327",
+ "raw_output": "I don't have Johnson & Johnson's fiscal 2025 capital expenditure figure firmly in memory, so this is a best estimate rather than a confirmed value. Fiscal 2024 additions to property, plant and equipment were about $4,424 million. My recollection of fiscal 2025 is roughly $4.8 billion, which implies an increase of about 9%.\n\n{\"value\": 9.2, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgxDMZvAuSNG4iAXFi42j"
+ ],
+ "split": "test",
+ "started_at": "2026-11-12T02:04:34.771419+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "16e92aec0cb80aa246423b8803435a393d3c367c6455eb10a9b8212a8828396f",
+ "system_id": "b0-fable",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 354,
+  "output_tokens": 717,
+  "web_searches": 0
+ }
+}

@@ -1,0 +1,34 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.04167100",
+ "error": null,
+ "finished_at": "2026-11-12T02:14:09.095006+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "67.8"
+ },
+ "question_id": "q_e16a58501499ca1a",
+ "question_sha": "a0b4c352c87f974568290d40bd3d3514d0144796411c6970ebefed9b6de2756e",
+ "raw_output": "J&J's gross margin in fiscal Q2 2023 (the quarter ended July 2, 2023) was about 67.8%. This comes from the company's 10-Q.\n\n- Sales to customers were $25,530 million.\n- Cost of products sold was $8,212 million.\n- Gross profit was therefore $17,318 million, and $17,318 million \u00f7 $25,530 million is 67.8%.\n\nFor comparison, Q2 2022 gross margin was 67.0%.\n\n{\"value\": 67.8, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-12T02:10:05.212451+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "462e8302c4c24e61c1d9f2beabcf105643e3d3d8111fcad472c19884276c5b61",
+ "system_id": "b1-sonnet",
+ "system_kind": "b1",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 28431,
+  "output_tokens": 648,
+  "web_searches": 1
+ }
+}

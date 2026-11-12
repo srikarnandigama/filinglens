@@ -1,0 +1,34 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.07869800",
+ "error": null,
+ "finished_at": "2026-11-12T02:14:09.058675+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "-16.6"
+ },
+ "question_id": "q_aa288b6674118a5b",
+ "question_sha": "2c81f78bb68ba4f8c1318769e809e9cd1e1d0374fa6139e7e80fd7df129bb051",
+ "raw_output": "ExxonMobil's net cash provided by operating activities fell about 16.6% from Q1 2024 to Q4 2024.\n\n- **Q1 2024:** Net cash provided by operating activities was $14,664 million.\n- **Q4 2024:** The 10-K gives $55,022 million for the full year. The 10-Q for the nine months ended September 30, 2024, shows $42,793 million. The difference is $12,229 million for Q4. The Q4 earnings release confirms this, saying cash flow from operating activities was $12.2 billion.\n\nThe change is (12,229 \u2212 14,664) / 14,664 \u2248 \u221216.6%.\n\n{\"value\": -16.6, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-12T02:10:05.212451+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "462e8302c4c24e61c1d9f2beabcf105643e3d3d8111fcad472c19884276c5b61",
+ "system_id": "b1-sonnet",
+ "system_kind": "b1",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 51333,
+  "output_tokens": 1473,
+  "web_searches": 2
+ }
+}

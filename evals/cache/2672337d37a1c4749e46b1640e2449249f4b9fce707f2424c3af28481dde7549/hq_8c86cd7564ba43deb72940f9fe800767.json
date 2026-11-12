@@ -1,0 +1,171 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 0,
+  "numeric_valid": 0,
+  "text_pending_judge": [
+   {
+    "chunk_ids": [
+     "chk_ab110988915bd1748d1769dd9578c8856a6195ecd596ed837f1964b8b2b07380"
+    ],
+    "claim_id": "c2",
+    "text": "On revenue, Disney said subscription fee growth reflected a 10% increase from higher effective rates due to retail pricing increases and 6% from subscriber growth, partly offset by a 2% decrease from an unfavorable foreign exchange impact. Higher advertising revenue reflected a 26% increase from higher impressions, partly offset by a 12% decrease from lower rates."
+   },
+   {
+    "chunk_ids": [
+     "chk_47ab7d71317cc607af1946c01224a09ac07c1a13e028cd02f757d1b79cb967db"
+    ],
+    "claim_id": "c4",
+    "text": "The DTC results table shows total revenues of 22,776 versus 19,886 (up 15%) and operating expenses of 17,748 versus 17,859 (a 1% change shown as favorable). This is the revenue growth alongside slightly lower operating expenses behind the improvement."
+   }
+  ],
+  "text_string_supported": 2,
+  "text_total": 4,
+  "uncited": 0
+ },
+ "cost_usd": "0.1292091",
+ "error": null,
+ "finished_at": "2026-11-11T20:50:38.642959+00:00",
+ "latency_ms": 43472,
+ "prediction": {
+  "parse_ok": true,
+  "text": "Disney said Direct-to-Consumer operating results rose $2,639 million, to operating income of $143 million from an operating loss of $2,496 million, \"due to improved results at Disney+.\" The supporting detail is higher subscription and advertising revenue and lower Disney+ programming costs. These were partly offset by higher cricket programming costs and higher marketing and labor costs.\nDisney's FY2024 10-K MD&A says Direct-to-Consumer operating results increased $2,639 million, to operating income of $143 million from an operating loss of $2,496 million, due to improved results at Disney+.\nOn revenue, Disney said subscription fee growth reflected a 10% increase from higher effective rates due to retail pricing increases and 6% from subscriber growth, partly offset by a 2% decrease from an unfavorable foreign exchange impact. Higher advertising revenue reflected a 26% increase from higher impressions, partly offset by a 12% decrease from lower rates.\nOn costs, Disney attributed the decrease in programming and production costs at Disney+ and other to lower costs for non-sports content on Disney+, partly offset by higher cricket programming costs at Disney+ Hotstar. Selling, general, administrative and other costs rose $406 million, to $4,574 million from $4,168 million, mainly on higher marketing and labor costs.\nThe DTC results table shows total revenues of 22,776 versus 19,886 (up 15%) and operating expenses of 17,748 versus 17,859 (a 1% change shown as favorable). This is the revenue growth alongside slightly lower operating expenses behind the improvement."
+ },
+ "question_id": "hq_8c86cd7564ba43deb72940f9fe800767",
+ "question_sha": "e28cf0db6ea17488d4397a2346f92d6ea555ad0ab913495c948cc37b058af47a",
+ "raw_output": {
+  "caveats": [
+   "The MD&A attributes the overall improvement to Disney+ and lists revenue and cost drivers. It does not give a quantified bridge of the $2,639 million change by driver.",
+   "Table figures are as presented in the filing excerpt, which is assumed to be in millions of USD."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_68e042a888c2a543e262d2e740d40b4717b56d583e1f92493371abb0788dc0ad"
+     }
+    ],
+    "id": "c1",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "Disney's FY2024 10-K MD&A says Direct-to-Consumer operating results increased $2,639 million, to operating income of $143 million from an operating loss of $2,496 million, due to improved results at Disney+.",
+    "ticker": "DIS",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_ab110988915bd1748d1769dd9578c8856a6195ecd596ed837f1964b8b2b07380"
+     }
+    ],
+    "id": "c2",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "On revenue, Disney said subscription fee growth reflected a 10% increase from higher effective rates due to retail pricing increases and 6% from subscriber growth, partly offset by a 2% decrease from an unfavorable foreign exchange impact. Higher advertising revenue reflected a 26% increase from higher impressions, partly offset by a 12% decrease from lower rates.",
+    "ticker": "DIS",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_68e042a888c2a543e262d2e740d40b4717b56d583e1f92493371abb0788dc0ad"
+     }
+    ],
+    "id": "c3",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "On costs, Disney attributed the decrease in programming and production costs at Disney+ and other to lower costs for non-sports content on Disney+, partly offset by higher cricket programming costs at Disney+ Hotstar. Selling, general, administrative and other costs rose $406 million, to $4,574 million from $4,168 million, mainly on higher marketing and labor costs.",
+    "ticker": "DIS",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_47ab7d71317cc607af1946c01224a09ac07c1a13e028cd02f757d1b79cb967db"
+     }
+    ],
+    "id": "c4",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "The DTC results table shows total revenues of 22,776 versus 19,886 (up 15%) and operating expenses of 17,748 versus 17,859 (a 1% change shown as favorable). This is the revenue growth alongside slightly lower operating expenses behind the improvement.",
+    "ticker": "DIS",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   }
+  ],
+  "final_claim_id": null,
+  "final_unit": null,
+  "final_value": null,
+  "status": "answered",
+  "summary": "Disney said Direct-to-Consumer operating results rose $2,639 million, to operating income of $143 million from an operating loss of $2,496 million, \"due to improved results at Disney+.\" The supporting detail is higher subscription and advertising revenue and lower Disney+ programming costs. These were partly offset by higher cricket programming costs and higher marketing and labor costs."
+ },
+ "retrieval": {
+  "first_search": {
+   "filings:s1": [
+    "chk_da954f53ac8d321fca53b57d24ac0030030fe11c00e0b4438e0065f4bd22bede",
+    "chk_47ab7d71317cc607af1946c01224a09ac07c1a13e028cd02f757d1b79cb967db",
+    "chk_b87ee821e9a17b2dea18c19783e0873f71332bbf0b05905a2116cd232f2ebc25",
+    "chk_2e5957816187ced4849d79ee442f5e46e2959844f9186a3c3886e4ddffcfd871",
+    "chk_0f50bafe6fff22a55fe50d6f8a2cbb4d5a4f2547c1f8f998130fd664bf2dc661",
+    "chk_11df2de8f010430b6e7b7fcd97479c43b540fd781ca7d4c17a08f5fd3182f114",
+    "chk_ba24fc902f4f487108a894f7c0821f9b020676bcfc47bd373ce182fd8ae399f4",
+    "chk_68e042a888c2a543e262d2e740d40b4717b56d583e1f92493371abb0788dc0ad"
+   ]
+  },
+  "seen": [
+   "chk_da954f53ac8d321fca53b57d24ac0030030fe11c00e0b4438e0065f4bd22bede",
+   "chk_47ab7d71317cc607af1946c01224a09ac07c1a13e028cd02f757d1b79cb967db",
+   "chk_b87ee821e9a17b2dea18c19783e0873f71332bbf0b05905a2116cd232f2ebc25",
+   "chk_2e5957816187ced4849d79ee442f5e46e2959844f9186a3c3886e4ddffcfd871",
+   "chk_0f50bafe6fff22a55fe50d6f8a2cbb4d5a4f2547c1f8f998130fd664bf2dc661",
+   "chk_11df2de8f010430b6e7b7fcd97479c43b540fd781ca7d4c17a08f5fd3182f114",
+   "chk_ba24fc902f4f487108a894f7c0821f9b020676bcfc47bd373ce182fd8ae399f4",
+   "chk_68e042a888c2a543e262d2e740d40b4717b56d583e1f92493371abb0788dc0ad",
+   "chk_37c86d2c5aefd61c4e0a5c8cebcb0986da1f15a52261c77a354bd4d451d7c62d",
+   "chk_6f383ec84eee396232b5f81115a4f8de910861824f164bc7788b4f76a01451f3",
+   "chk_1f3964a976c6b376b4fe0f5df4b06bb97f20e7675b827ccc8225abe67e7d22ce",
+   "chk_ab110988915bd1748d1769dd9578c8856a6195ecd596ed837f1964b8b2b07380"
+  ]
+ },
+ "run_id": "61c43452-6a73-4b17-b7f7-f28bb8cede15",
+ "run_status": "done",
+ "split": "handwritten",
+ "started_at": "2026-11-11T20:49:55.088503+00:00",
+ "status": "done",
+ "system_config_hash": "2672337d37a1c4749e46b1640e2449249f4b9fce707f2424c3af28481dde7549",
+ "system_id": "system",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 98215,
+  "output_tokens": 6751
+ }
+}

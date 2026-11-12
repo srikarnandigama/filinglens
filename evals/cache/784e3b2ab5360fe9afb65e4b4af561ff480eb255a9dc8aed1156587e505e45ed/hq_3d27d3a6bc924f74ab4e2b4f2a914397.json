@@ -1,0 +1,32 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.012474",
+ "finished_at": "2026-11-11T20:53:33.422272+00:00",
+ "latency_ms": 9607,
+ "latency_note": null,
+ "prediction": {
+  "parse_ok": true,
+  "text": "Pfizer's 10-K attributes the decline mainly to the pandemic shifting to an endemic phase. Demand for COVID-19 vaccines and treatments dropped as infection rates and perceived urgency fell, fewer people sought boosters, and governments that had bought huge volumes in 2022 largely stopped stockpiling. In the U.S., the products also began moving from government-purchased supply to the commercial market in fall 2023, which brought a slower, lower-volume uptake. Comirnaty revenue fell from roughly $38 billion in 2022 to about $11 billion in 2023, and Paxlovid fell by more than half, and that drop was the main driver of total company revenue falling from about $100 billion to about $58 billion. Pfizer also took charges related to excess Paxlovid inventory and unused manufacturing capacity, and started a cost-realignment program in response. I'm confident in the overall picture and the approximate Comirnaty figures, but I'm less sure of the exact Paxlovid numbers, so check the 10-K for precise amounts."
+ },
+ "question_id": "hq_3d27d3a6bc924f74ab4e2b4f2a914397",
+ "question_sha": "e78fc97bc4779285e3d24273e76291d805c580d2e40f80c139d92b82ab3d0e9a",
+ "raw_output": "Pfizer's 10-K attributes the decline mainly to the pandemic shifting to an endemic phase. Demand for COVID-19 vaccines and treatments dropped as infection rates and perceived urgency fell, fewer people sought boosters, and governments that had bought huge volumes in 2022 largely stopped stockpiling. In the U.S., the products also began moving from government-purchased supply to the commercial market in fall 2023, which brought a slower, lower-volume uptake. Comirnaty revenue fell from roughly $38 billion in 2022 to about $11 billion in 2023, and Paxlovid fell by more than half, and that drop was the main driver of total company revenue falling from about $100 billion to about $58 billion. Pfizer also took charges related to excess Paxlovid inventory and unused manufacturing capacity, and started a cost-realignment program in response. I'm confident in the overall picture and the approximate Comirnaty figures, but I'm less sure of the exact Paxlovid numbers, so check the 10-K for precise amounts.",
+ "request_ids": [
+  "req_011CgwodELb82TVg4ubFDSzx"
+ ],
+ "split": "handwritten",
+ "started_at": "2026-11-11T20:53:23.809269+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 92,
+  "output_tokens": 1229,
+  "web_searches": 0
+ }
+}

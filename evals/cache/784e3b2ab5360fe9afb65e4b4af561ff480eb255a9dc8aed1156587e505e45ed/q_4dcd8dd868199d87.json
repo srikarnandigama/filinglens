@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.00268",
+ "finished_at": "2026-11-11T20:41:13.328872+00:00",
+ "latency_ms": 2243,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "1.45"
+ },
+ "question_id": "q_4dcd8dd868199d87",
+ "question_sha": "67db61771d2c65b012db6b13df35a520f8914aa29932d54560b7e1c8456706fd",
+ "raw_output": "ExxonMobil's total revenues and other income:\n- 2023: $344,582 million\n- 2024: $349,585 million\n\nChange = (349,585 \u2212 344,582) / 344,582 = 5,003 / 344,582 \u2248 1.45%\n\nUsing sales and other operating revenue instead:\n- 2023: $334,697 million\n- 2024: $339,247 million\n- Change \u2248 1.36%\n\nTotal revenue is best taken as \"total revenues and other income,\" which gives about 1.5%.\n\n{\"value\": 1.45, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgwnhDdR5GZCrPJxD3X7X"
+ ],
+ "split": "test",
+ "started_at": "2026-11-11T20:41:11.075400+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 350,
+  "output_tokens": 198,
+  "web_searches": 0
+ }
+}

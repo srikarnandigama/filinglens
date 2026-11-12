@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.010996",
+ "finished_at": "2026-11-11T20:41:41.670631+00:00",
+ "latency_ms": 7785,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD billions",
+  "value": "2.7"
+ },
+ "question_id": "q_c57e9ad06fa491f2",
+ "question_sha": "1e7413ea34af84f474f67934e554e2701ea099c70247352d89f415c79b7df47f",
+ "raw_output": "My estimate of Pfizer's average quarterly net income attributable to Pfizer over fiscal 2025 is about $2.7 billion. I'm working from memory of Pfizer's reported results, not from the filings, so the figures are approximate and the fourth quarter is the least certain.\n\n| Quarter | Approx. net income attributable to Pfizer |\n|---|---|\n| Q1 2025 | $3.0 billion |\n| Q2 2025 | $3.3 billion |\n| Q3 2025 | $3.5 billion |\n| Q4 2025 | $1.0 billion |\n| Full year | about $10.8 billion |\n\nDividing the roughly $10.8 billion full-year total by four gives about $2.7 billion per quarter.\n\n{\"value\": 2.7, \"unit\": \"USD billions\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011Cgwniu7W7c9pKV5vofWcp"
+ ],
+ "split": "test",
+ "started_at": "2026-11-11T20:41:33.881914+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 338,
+  "output_tokens": 1032,
+  "web_searches": 0
+ }
+}

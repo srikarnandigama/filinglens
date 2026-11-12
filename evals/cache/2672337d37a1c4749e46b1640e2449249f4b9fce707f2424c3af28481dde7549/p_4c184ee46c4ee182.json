@@ -1,0 +1,78 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 0,
+  "numeric_valid": 0,
+  "text_pending_judge": [
+   {
+    "chunk_ids": [],
+    "claim_id": "c1",
+    "text": "The fact record for JPM operating income in fiscal Q4 2025 is marked unavailable. The stated reason is: \"No compatible standard-taxonomy fact; absence alone does not establish non-applicability.\" No value was reported, and no other metric or period was substituted."
+   }
+  ],
+  "text_string_supported": 0,
+  "text_total": 1,
+  "uncited": 0
+ },
+ "cost_usd": "0.071914",
+ "error": null,
+ "finished_at": "2026-11-11T20:45:49.142577+00:00",
+ "latency_ms": 13511,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "not_available",
+  "unit": null,
+  "value": null
+ },
+ "question_id": "p_4c184ee46c4ee182",
+ "question_sha": "a2d9cb64fe3c5758ebdeff6429d6aa89367eb4a07244445fe25a288b914b5211",
+ "raw_output": {
+  "caveats": [
+   "No filing passages were provided that could show how JPMorgan reports a comparable income measure for Q4 2025.",
+   "The data gap does not prove that operating income is inapplicable to a bank. It only shows that no compatible fact is in the snapshot."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "na_JPM_operating_income_2025_Q4"
+     }
+    ],
+    "id": "c1",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "Q4",
+     "fiscal_year": 2025
+    },
+    "text": "The fact record for JPM operating income in fiscal Q4 2025 is marked unavailable. The stated reason is: \"No compatible standard-taxonomy fact; absence alone does not establish non-applicability.\" No value was reported, and no other metric or period was substituted.",
+    "ticker": "JPM",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   }
+  ],
+  "final_claim_id": null,
+  "final_unit": null,
+  "final_value": null,
+  "status": "not_available",
+  "summary": "JPMorgan Chase's operating income for fiscal Q4 2025 is not available in the snapshot. No compatible standard-taxonomy fact exists for it. The snapshot does not establish that the metric is non-applicable, and no substitute figure is given."
+ },
+ "run_id": "052630de-dbe6-4dae-9864-3657657086d8",
+ "run_status": "done",
+ "split": "probe",
+ "started_at": "2026-11-11T20:45:35.609810+00:00",
+ "status": "done",
+ "system_config_hash": "2672337d37a1c4749e46b1640e2449249f4b9fce707f2424c3af28481dde7549",
+ "system_id": "system",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 28087,
+  "output_tokens": 1574
+ }
+}

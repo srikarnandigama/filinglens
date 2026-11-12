@@ -1,0 +1,47 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": false,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0000320187-26-000088",
+   "0000320187-26-000037"
+  ],
+  "gold_visible": true,
+  "missing_values": [],
+  "question_id": "q_bc98a60bc7ccfd6a",
+  "text_sha256": "ef5969ed297a599752172600c488d70c8e74843330af8dab0a6d39e938551cbe",
+  "tokens_est": 27517
+ },
+ "cost_usd": "0.05353900",
+ "error": null,
+ "finished_at": "2026-11-11T21:43:32.917296+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "5579"
+ },
+ "question_id": "q_bc98a60bc7ccfd6a",
+ "question_sha": "8fb3ba3bc8258876245036f85f6bf4dcc6aabbff7d0385aeedf535f892935512",
+ "raw_output": "Fiscal Q4 2026 is the quarter ended May 31, 2026. Neither filing reports it directly, so I derive it as full-year cost of sales minus the nine-month cost of sales.\n\n- Full-year fiscal 2026 cost of sales (10-K): $26,487 million\n- Nine months ended February 28, 2026 cost of sales (10-Q): $20,908 million\n- Q4 2026 cost of sales = 26,487 \u2212 20,908 = $5,579 million\n\nAs a check, Q4 revenue is 46,398 \u2212 35,426 = $10,972 million. That gives Q4 gross profit of 19,911 \u2212 14,518 = $5,393 million, and 10,972 \u2212 5,393 = 5,579, which matches.\n\n**Nike's cost of revenue in fiscal Q4 2026 was about $5,579 million.**\n\n{\"value\": 5579, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-11T21:41:30.293730+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 51964,
+  "output_tokens": 315,
+  "web_searches": 0
+ }
+}

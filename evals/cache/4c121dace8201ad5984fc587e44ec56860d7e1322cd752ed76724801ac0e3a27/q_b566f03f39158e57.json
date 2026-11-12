@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.013436",
+ "finished_at": "2026-11-11T20:42:50.617564+00:00",
+ "latency_ms": 6125,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "8.5"
+ },
+ "question_id": "q_b566f03f39158e57",
+ "question_sha": "04dc64da5a48147f5f6002cb8f0a23cd487eacdc1c4076ad25094bc7e66e4327",
+ "raw_output": "Johnson & Johnson's capital expenditures rose by roughly **8.5%** from fiscal 2024 to fiscal 2025. This is an estimate: the fiscal 2025 figure is recalled, not confirmed against the filing.\n\n- **Fiscal 2024:** additions to property, plant and equipment were about $4,424 million. I'm fairly confident in this figure.\n- **Fiscal 2025:** about $4.8 billion. I backed this out from recalled figures of roughly $24.5 billion operating cash flow less roughly $19.7 billion free cash flow.\n- **Change:** ($4,800 \u2212 $4,424) \u00f7 $4,424 \u2248 **+8.5%**\n\n{\"value\": 8.5, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011Cgwnp6uofeKTAcLoSysQN"
+ ],
+ "split": "test",
+ "started_at": "2026-11-11T20:42:44.478985+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "4c121dace8201ad5984fc587e44ec56860d7e1322cd752ed76724801ac0e3a27",
+ "system_id": "b0-opus",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 354,
+  "output_tokens": 601,
+  "web_searches": 0
+ }
+}

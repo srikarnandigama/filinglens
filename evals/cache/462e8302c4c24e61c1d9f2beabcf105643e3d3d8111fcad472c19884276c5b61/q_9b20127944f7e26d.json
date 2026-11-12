@@ -1,0 +1,34 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.00865900",
+ "error": null,
+ "finished_at": "2026-11-12T02:14:08.968776+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "-24.29"
+ },
+ "question_id": "q_9b20127944f7e26d",
+ "question_sha": "2d2409e2fa4313c4d8a72cb26d0ccd3fb9c5f62858b14f70ce9e1deb3fce4e6b",
+ "raw_output": "Apple's operating income fell about 24.3% from fiscal Q1 2025 to fiscal Q4 2025. I recalled both figures from Apple's filings and did not look them up, so treat them as unverified.\n\n- **Fiscal Q1 2025** (quarter ended Dec 28, 2024): operating income of about $42,832 million.\n- **Fiscal Q4 2025** (quarter ended Sept 27, 2025): operating income of about $32,427 million.\n\nThe change is (32,427 \u2212 42,832) / 42,832 \u2248 \u221224.3%.\n\n{\"value\": -24.29, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-12T02:10:05.212451+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "462e8302c4c24e61c1d9f2beabcf105643e3d3d8111fcad472c19884276c5b61",
+ "system_id": "b1-sonnet",
+ "system_kind": "b1",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 6314,
+  "output_tokens": 469,
+  "web_searches": 0
+ }
+}

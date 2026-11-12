@@ -1,0 +1,46 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": false,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0001018724-25-000123"
+  ],
+  "gold_visible": true,
+  "missing_values": [],
+  "question_id": "q_b32f0fc65fa794a6",
+  "text_sha256": "85200fe21ac67f2e246e64e4d874dd56295d4c164a59df6234f4f6663ad8485b",
+  "tokens_est": 1392
+ },
+ "cost_usd": "0.00464700",
+ "error": null,
+ "finished_at": "2026-11-12T02:09:54.986218+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "10.96"
+ },
+ "question_id": "q_b32f0fc65fa794a6",
+ "question_sha": "9d995cb7b3bf3a5201f5c667e225a4c2cfb8f0effaef7de97495578e5bf51d7b",
+ "raw_output": "Operating margin is operating income divided by total net sales. The excerpt gives Q3 2024 (three months ended September 30, 2024) figures for both.\n\nOperating income was $17,411 million and total net sales were $158,877 million.\n\n17,411 / 158,877 = 0.10959, or about 10.96%.\n\nThe column headers appear to list 2024 first and 2025 second, and the figures fit that order. Q3 2024 net sales were $158,877 million, which matches Amazon's reported Q3 2024 revenue.\n\n**Amazon's operating margin in fiscal Q3 2024 was about 10.96%.**\n\n{\"value\": 10.96, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-12T02:07:22.538489+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 3472,
+  "output_tokens": 235,
+  "web_searches": 0
+ }
+}

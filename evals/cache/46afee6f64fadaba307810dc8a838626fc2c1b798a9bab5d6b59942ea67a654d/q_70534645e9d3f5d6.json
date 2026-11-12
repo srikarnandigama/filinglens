@@ -1,0 +1,47 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": false,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0001193125-26-323660",
+   "0001045810-26-000021"
+  ],
+  "gold_visible": true,
+  "missing_values": [],
+  "question_id": "q_70534645e9d3f5d6",
+  "text_sha256": "2b52bb715e0c883ac756448e2518353912ba733f243cba12b4ce04d5035fd8e1",
+  "tokens_est": 27736
+ },
+ "cost_usd": "0.05210900",
+ "error": null,
+ "finished_at": "2026-11-11T21:43:32.991684+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": "NVDA",
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percentage_points",
+  "value": "6.17"
+ },
+ "question_id": "q_70534645e9d3f5d6",
+ "question_sha": "d0ca73a17f3a2592fd5200ce6ff98c0b90a5a7c48cf082d1a97f9d376b598326",
+ "raw_output": "Fiscal 2025 gross margin, computed as gross profit divided by revenue:\n\n**Microsoft (FY ended June 30, 2025):** 193,893 / 281,724 = 68.82%\n\n**Nvidia (FY ended Jan 26, 2025):** 97,858 / 130,497 = 74.99%\n\n**Difference:** 74.99% \u2212 68.82% = 6.17 percentage points, with Nvidia higher.\n\nThe first division gives 0.68821. Check: 281,724 \u00d7 0.688 = 193,825, and the remainder of 68 / 281,724 is 0.00024, so the ratio is 0.68824 and the margin is 68.82%.\n\nThe second division gives 0.74989. Check: 130,497 \u00d7 0.75 = 97,872.75, which is 14.75 above 97,858, and 14.75 / 130,497 is 0.000113, so the ratio is 0.749887 and the margin is 74.99%.\n\nSubtracting: 74.989 \u2212 68.824 = 6.165, which rounds to 6.17 percentage points.\n\nNvidia had the higher gross margin in fiscal 2025, by about 6.2 percentage points.\n\n{\"value\": 6.17, \"unit\": \"percentage_points\", \"choice\": \"NVDA\", \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-11T21:41:30.293730+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 49984,
+  "output_tokens": 425,
+  "web_searches": 0
+ }
+}

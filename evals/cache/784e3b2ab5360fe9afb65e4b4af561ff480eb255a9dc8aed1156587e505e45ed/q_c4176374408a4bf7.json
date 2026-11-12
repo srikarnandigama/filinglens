@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.006956",
+ "finished_at": "2026-11-11T20:39:54.799230+00:00",
+ "latency_ms": 5086,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "-9"
+ },
+ "question_id": "q_c4176374408a4bf7",
+ "question_sha": "4b04be7b1e94b3e77141123af3d5c6efbba93c1ed7180fc05b9ffa56053a26a3",
+ "raw_output": "I don't have Nike's fiscal 2026 results (year ended May 31, 2026), so this is an estimate, not a reported figure.\n\n- **Fiscal 2025:** From memory, Nike's additions to property, plant and equipment were about $547 million.\n- **Fiscal 2026:** I'm assuming roughly $500 million, which is my own guess. Nike has been holding capital spending down.\n\nOn those numbers, capital expenditures would have fallen by about 9%, calculated as ($500M \u2212 $547M) / $547M. The result depends entirely on my fiscal 2026 assumption, so please check it against the actual 10-K.\n\n{\"value\": -9, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgwnbDgUmUvXYYLfymzCi"
+ ],
+ "split": "test",
+ "started_at": "2026-11-11T20:39:49.710993+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 348,
+  "output_tokens": 626,
+  "web_searches": 0
+ }
+}

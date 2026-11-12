@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.01177",
+ "finished_at": "2026-11-11T20:38:25.199175+00:00",
+ "latency_ms": 8187,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "6460"
+ },
+ "question_id": "q_b74bccc8636350b5",
+ "question_sha": "e8022aba2b5415febc5c9a80cd3101c1255e1a7bc5f3d58a60c9e31976f1795a",
+ "raw_output": "Coca-Cola's gross profit in fiscal Q4 2023 was about $6.46 billion. This is an estimate: the Q4 revenue and the full-year 2023 figures are from memory, and the quarterly cost of goods sold figures are recalled approximately.\n\n- Net operating revenues were about $10,850 million.\n- Cost of goods sold was about $4,39 billion, based on full-year cost of goods sold of $18,520 million less the first three quarters.\n- Gross profit is therefore about $10,850 million \u2212 $4,390 million \u2248 $6,460 million, a gross margin of roughly 59.5%.\n\n{\"value\": 6460, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgwnUPNh34aqpvcg3Z987"
+ ],
+ "split": "test",
+ "started_at": "2026-11-11T20:38:17.011227+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 340,
+  "output_tokens": 1109,
+  "web_searches": 0
+ }
+}

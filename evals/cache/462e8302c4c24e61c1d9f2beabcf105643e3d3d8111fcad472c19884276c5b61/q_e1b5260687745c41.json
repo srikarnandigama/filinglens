@@ -1,0 +1,34 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.05369300",
+ "error": null,
+ "finished_at": "2026-11-12T02:14:09.009670+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "10840.5"
+ },
+ "question_id": "q_e1b5260687745c41",
+ "question_sha": "e1d451cf23fa377b6805957246f5206897f2fede3de458fc371f1b34f7276e04",
+ "raw_output": "P&G's average quarterly cost of revenue (cost of products sold) over fiscal 2026 (year ended June 30, 2026) was about $10.84 billion.\n\nThe full-year cost of products sold was $43,362 million. Dividing by four quarters gives $10,840.5 million per quarter.\n\nThe quarterly figures are consistent with that total:\n- **Q2 (October\u2013December):** $10,834 million.\n- **Q3 (January\u2013March):** $10,722 million.\n- **Q4 (April\u2013June):** $10,920 million.\n- **Q1 (July\u2013September):** $10,886 million. I didn't find this one directly. I backed it out by subtracting the other three quarters from the annual total.\n\n{\"value\": 10840.5, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-12T02:10:05.212451+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "462e8302c4c24e61c1d9f2beabcf105643e3d3d8111fcad472c19884276c5b61",
+ "system_id": "b1-sonnet",
+ "system_kind": "b1",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 39003,
+  "output_tokens": 938,
+  "web_searches": 1
+ }
+}

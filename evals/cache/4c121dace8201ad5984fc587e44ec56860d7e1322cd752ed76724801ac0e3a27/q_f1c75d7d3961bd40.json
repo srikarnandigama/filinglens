@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.020116",
+ "finished_at": "2026-11-11T20:43:27.675142+00:00",
+ "latency_ms": 7913,
+ "latency_note": null,
+ "prediction": {
+  "choice": "NVDA",
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percentage_points",
+  "value": "2.8"
+ },
+ "question_id": "q_f1c75d7d3961bd40",
+ "question_sha": "c70e5fa2b198827d29628012856bf72a11e59eba041b101abfad319d54d3d93b",
+ "raw_output": "**Nvidia had the higher fiscal 2026 gross margin, by an estimated ~2.8 percentage points (about 71.1% vs. about 68.3%).** This is an estimate, not a reported figure: I don't have Microsoft's full fiscal 2026 results, and some of Nvidia's figures are from memory. The two fiscal years also cover different periods.\n\n**Nvidia (fiscal 2026, ended January 2026): about 71.1% GAAP gross margin**\n\n| Quarter | Revenue | Gross margin | Gross profit |\n|---|---|---|---|\n| Q1 | $44.1B | 60.5% (cut by the H20 export-restriction charge) | $26.7B |\n| Q2 | $46.7B | 72.4% | $33.9B |\n| Q3 | $57.0B | 73.4% | $41.9B |\n| Q4 | about $68.1B (recalled, not confirmed) | about 75% | about $51.1B |\n| **Full year** | **about $215.9B** | **about 71.1%** | **about $153.5B** |\n\n**Microsoft (fiscal 2026, ending June 2026): about 68.3% gross margin**\n- Q1 (September 2025): revenue $77.7B, gross margin about 69%.\n- Q2 (December 2025): revenue $81.3B, gross margin about 68%.\n- Q3 and Q4: I assumed about 68% each, because AI infrastructure spending is weighing on cloud margins.\n\n{\"value\": 2.8, \"unit\": \"percentage_points\", \"choice\": \"NVDA\", \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgwnrhicUbK9xcRMM3CdH"
+ ],
+ "split": "test",
+ "started_at": "2026-11-11T20:43:19.762073+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "4c121dace8201ad5984fc587e44ec56860d7e1322cd752ed76724801ac0e3a27",
+ "system_id": "b0-opus",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 354,
+  "output_tokens": 935,
+  "web_searches": 0
+ }
+}

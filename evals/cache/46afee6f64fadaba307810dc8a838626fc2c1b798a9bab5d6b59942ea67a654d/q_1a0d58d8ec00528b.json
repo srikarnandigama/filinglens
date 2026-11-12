@@ -1,0 +1,47 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": false,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0001193125-26-323660",
+   "0001045810-26-000021"
+  ],
+  "gold_visible": true,
+  "missing_values": [],
+  "question_id": "q_1a0d58d8ec00528b",
+  "text_sha256": "2b52bb715e0c883ac756448e2518353912ba733f243cba12b4ce04d5035fd8e1",
+  "tokens_est": 27736
+ },
+ "cost_usd": "0.05132900",
+ "error": null,
+ "finished_at": "2026-11-12T02:09:54.966654+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": "NVDA",
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percentage_points",
+  "value": "13.6"
+ },
+ "question_id": "q_1a0d58d8ec00528b",
+ "question_sha": "f009f80c005187254de71732c23e2b3923eeac110ac04c5077123d7f3fb3a3e7",
+ "raw_output": "Operating margin = operating income \u00f7 revenue, using each company's fiscal 2026.\n\n**Microsoft:** 155,237 / 331,839 = 46.78%\n\n**Nvidia:** 130,387 / 215,938 = 60.38%\n\nNvidia's operating income is 130,387 / 215,938 = 0.60384, or 60.38%.\n\nDifference: 60.38 \u2212 46.78 = 13.60 percentage points.\n\nCheck on Microsoft: 331,839 \u00d7 0.4678 = 155,231, which is close to 155,237, so the margin is about 46.78%.\n\nNvidia had the higher operating margin in fiscal 2026, by about 13.6 percentage points.\n\n{\"value\": 13.6, \"unit\": \"percentage_points\", \"choice\": \"NVDA\", \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-12T02:07:22.538489+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 49984,
+  "output_tokens": 269,
+  "web_searches": 0
+ }
+}

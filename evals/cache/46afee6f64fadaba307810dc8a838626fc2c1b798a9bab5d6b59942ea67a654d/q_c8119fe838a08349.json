@@ -1,0 +1,46 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": false,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0000078003-26-000026"
+  ],
+  "gold_visible": true,
+  "missing_values": [],
+  "question_id": "q_c8119fe838a08349",
+  "text_sha256": "c714fb041954aff37bdebdad008c1f0000ee520bd8cbbbd7f14e6849b0253509",
+  "tokens_est": 23619
+ },
+ "cost_usd": "0.03962100",
+ "error": null,
+ "finished_at": "2026-11-11T21:43:32.917296+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "-3.55"
+ },
+ "question_id": "q_c8119fe838a08349",
+ "question_sha": "080afad0f8720d8f0521e1845b22c565c23857f2565323f344729a2915c71c12",
+ "raw_output": "Pfizer's diluted EPS was $1.41 in fiscal 2024 and $1.36 in fiscal 2025 (net income attributable to Pfizer Inc. common shareholders, from the Consolidated Statements of Operations).\n\nPercent change = (1.36 \u2212 1.41) / 1.41 = \u22120.05 / 1.41 \u2248 \u22123.55%\n\nDiluted EPS fell about 3.5% from fiscal 2024 to fiscal 2025.\n\n{\"value\": -3.55, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-11T21:41:30.293730+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 38666,
+  "output_tokens": 191,
+  "web_searches": 0
+ }
+}

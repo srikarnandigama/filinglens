@@ -1,0 +1,132 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 3,
+  "numeric_valid": 3,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.175086",
+ "error": null,
+ "finished_at": "2026-11-11T20:32:43.029644+00:00",
+ "latency_ms": 20697,
+ "prediction": {
+  "choice": "MSFT",
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percentage_points",
+  "value": "21.918578279005"
+ },
+ "question_id": "q_d97006325b377c33",
+ "question_sha": "7c733974a655c7ddbfe23e0a6b8a57c3cef48deac1352a69d035f109d45ee677",
+ "raw_output": {
+  "caveats": [
+   "The two fiscal years end at different times: Microsoft's ended June 30, 2025 and Apple's ended September 27, 2025. The periods are not the same twelve months.",
+   "Gross margin is calculated as gross profit divided by revenue, using the revenue-from-contracts-with-customers figure for each company."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_1"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "229"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "199"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Microsoft's FY2025 gross margin was about 68.8% (gross profit $193.893 billion on revenue $281.724 billion).",
+    "ticker": "MSFT",
+    "unit": "percent",
+    "value": "68.823742386165",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_2"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "51"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "15"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Apple's FY2025 gross margin was about 46.9% (gross profit $195.201 billion on revenue $416.161 billion).",
+    "ticker": "AAPL",
+    "unit": "percent",
+    "value": "46.90516410716",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value",
+      "kind": "computation",
+      "ref": "cmp_3"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Microsoft's gross margin was about 21.9 percentage points higher than Apple's.",
+    "ticker": "MSFT",
+    "unit": "percentage_points",
+    "value": "21.918578279005",
+    "value_basis": "computation"
+   }
+  ],
+  "final_claim_id": "c3",
+  "final_unit": "percentage_points",
+  "final_value": "21.918578279005",
+  "status": "answered",
+  "summary": "Microsoft had the higher gross margin in fiscal 2025: about 68.8%, against about 46.9% for Apple. That is a gap of about 21.9 percentage points."
+ },
+ "run_id": "4a37bd67-4127-4193-9ec9-e5814b2b14df",
+ "run_status": "done",
+ "split": "test",
+ "started_at": "2026-11-11T20:32:22.297896+00:00",
+ "status": "done",
+ "system_config_hash": "2672337d37a1c4749e46b1640e2449249f4b9fce707f2424c3af28481dde7549",
+ "system_id": "system",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 70543,
+  "output_tokens": 3400
+ }
+}

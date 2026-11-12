@@ -1,0 +1,47 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": false,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0001018724-26-000004",
+   "0001628280-26-003952"
+  ],
+  "gold_visible": true,
+  "missing_values": [],
+  "question_id": "q_68a8023938512705",
+  "text_sha256": "45e58e41ebbe4e873140ac328f451756703d0f9de5b137a2dace6d14323b7a50",
+  "tokens_est": 4535
+ },
+ "cost_usd": "0.01129700",
+ "error": null,
+ "finished_at": "2026-11-11T21:43:32.925127+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": "TSLA",
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percentage_points",
+  "value": "10.18"
+ },
+ "question_id": "q_68a8023938512705",
+ "question_sha": "d978b20a8306bbc7dcd915e63e310f802712fd43cd7c927d1185d4cfc516a82e",
+ "raw_output": "Net margin for fiscal 2023 is net income divided by total revenue.\n\n**Tesla:** 14,974 / 96,773 = 15.47%. I used net income of 14,974. Using the 14,997 attributable to common stockholders would give 15.50%.\n\n**Amazon:** 30,425 / 574,785 = 5.293%.\n\n**Difference:** 15.47 \u2212 5.29 \u2248 10.18 percentage points.\n\nTesla had the higher net margin in fiscal 2023, by about 10.2 percentage points.\n\n{\"value\": 10.18, \"unit\": \"percentage_points\", \"choice\": \"TSLA\", \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-11T21:41:30.293730+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 10212,
+  "output_tokens": 217,
+  "web_searches": 0
+ }
+}

@@ -1,0 +1,34 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.00793300",
+ "error": null,
+ "finished_at": "2026-11-12T02:14:08.993549+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "96.4"
+ },
+ "question_id": "q_ff8e57b25a4bd01f",
+ "question_sha": "eb4d333c760cc25485e6cf881c23fbbc87dd08f43c5ac733b263f183a2aac0bc",
+ "raw_output": "Nvidia's cost of revenue rose about 96.4% from fiscal 2024 to fiscal 2025. I used figures I remember from Nvidia's 10-K filings and did not search to confirm them.\n\n- Fiscal 2024 (year ended January 28, 2024): about $16,621 million\n- Fiscal 2025 (year ended January 26, 2025): about $32,639 million\n\nThe calculation is (32,639 \u2212 16,621) / 16,621 \u2248 96.4%.\n\n{\"value\": 96.4, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-12T02:10:05.212451+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "462e8302c4c24e61c1d9f2beabcf105643e3d3d8111fcad472c19884276c5b61",
+ "system_id": "b1-sonnet",
+ "system_kind": "b1",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 6313,
+  "output_tokens": 324,
+  "web_searches": 0
+ }
+}

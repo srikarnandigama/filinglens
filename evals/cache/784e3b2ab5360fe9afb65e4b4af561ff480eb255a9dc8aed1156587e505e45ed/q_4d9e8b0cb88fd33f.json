@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.004514",
+ "finished_at": "2026-11-11T20:41:01.362820+00:00",
+ "latency_ms": 3594,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "19.0"
+ },
+ "question_id": "q_4d9e8b0cb88fd33f",
+ "question_sha": "75b3c709a703ef9e7a90a23a7eaddd4891b918b80331ca8dff70742626654d30",
+ "raw_output": "I don't have Tesla's fiscal Q2 2026 results (the quarter ending June 30, 2026), so I can't give a reported figure. This is an estimate based on recent trends. Tesla's total gross margin was about 18% in Q3 2025 and about 20% in Q4 2025. If it stays near those levels, Q2 2026 would be roughly 19%.\n\n{\"value\": 19.0, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgwngEdfsFhTaDZ8ns5Qd"
+ ],
+ "split": "test",
+ "started_at": "2026-11-11T20:40:57.760008+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 337,
+  "output_tokens": 384,
+  "web_searches": 0
+ }
+}

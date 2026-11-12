@@ -1,0 +1,46 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": false,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0000070858-24-000208"
+  ],
+  "gold_visible": true,
+  "missing_values": [],
+  "question_id": "q_82af2932d61de137",
+  "text_sha256": "dd14e0edeb6c1235d8ca7ade8e8d18fba045905e473acb50cc7753a07946b799",
+  "tokens_est": 25009
+ },
+ "cost_usd": "0.04660600",
+ "error": null,
+ "finished_at": "2026-11-11T21:43:32.974953+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "29.4"
+ },
+ "question_id": "q_82af2932d61de137",
+ "question_sha": "91a0cb240263d74c7bf89409c9c65ec3f5dffd0a54050f7364e1a338c5617e84",
+ "raw_output": "Net margin is net income divided by total revenue, net of interest expense.\n\nFor Q2 2023, net income was $7,408 million and total revenue, net of interest expense, was $25,197 million.\n\n7,408 / 25,197 = 0.29400, or about 29.4%.\n\nI used net income rather than net income applicable to common shareholders ($7,102 million), since net margin is normally based on net income.\n\n{\"value\": 29.4, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-11T21:41:30.293730+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 45806,
+  "output_tokens": 160,
+  "web_searches": 0
+ }
+}

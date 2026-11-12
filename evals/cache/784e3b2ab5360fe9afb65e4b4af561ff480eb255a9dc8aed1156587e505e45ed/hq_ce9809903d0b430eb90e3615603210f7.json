@@ -1,0 +1,32 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.008568",
+ "finished_at": "2026-11-11T20:54:03.885248+00:00",
+ "latency_ms": 7339,
+ "latency_note": null,
+ "prediction": {
+  "parse_ok": true,
+  "text": "In its 10-K business overview (I'm working from memory of the fiscal 2024 filing, so exact wording may differ), Microsoft presents AI as central to its strategy. It describes its mission as making digital technology and AI broadly available, and it says it is building AI into every layer of its technology stack.\n\nIt describes Copilot as a family of AI assistants embedded across its products, including Microsoft 365 Copilot, GitHub Copilot, Copilot for Security, Copilot in Dynamics 365 (sales, service, finance), Copilot Studio for building custom copilots, and the consumer Copilot in Windows, Edge, and Bing. On the infrastructure and platform side, it highlights Azure AI services, including Azure OpenAI Service, Azure AI Studio, and Azure Machine Learning, and its partnership with OpenAI. Microsoft also stresses responsible AI, and its risk factors discuss AI-related legal, ethical, and competitive uncertainties and the heavy capital investment in AI infrastructure.\n\nFor precise language, check the \"Item 1: Business\" section of the specific 10-K year you care about, since the product names and emphasis change from year to year."
+ },
+ "question_id": "hq_ce9809903d0b430eb90e3615603210f7",
+ "question_sha": "4fe95213196a459581da8f81a3466a57cbe80657fa942a9e6d7cfd8fd224452b",
+ "raw_output": "In its 10-K business overview (I'm working from memory of the fiscal 2024 filing, so exact wording may differ), Microsoft presents AI as central to its strategy. It describes its mission as making digital technology and AI broadly available, and it says it is building AI into every layer of its technology stack.\n\nIt describes Copilot as a family of AI assistants embedded across its products, including Microsoft 365 Copilot, GitHub Copilot, Copilot for Security, Copilot in Dynamics 365 (sales, service, finance), Copilot Studio for building custom copilots, and the consumer Copilot in Windows, Edge, and Bing. On the infrastructure and platform side, it highlights Azure AI services, including Azure OpenAI Service, Azure AI Studio, and Azure Machine Learning, and its partnership with OpenAI. Microsoft also stresses responsible AI, and its risk factors discuss AI-related legal, ethical, and competitive uncertainties and the heavy capital investment in AI infrastructure.\n\nFor precise language, check the \"Item 1: Business\" section of the specific 10-K year you care about, since the product names and emphasis change from year to year.",
+ "request_ids": [
+  "req_011CgwofeMGxSwpdAHSVktdH"
+ ],
+ "split": "handwritten",
+ "started_at": "2026-11-11T20:53:56.546779+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 89,
+  "output_tokens": 839,
+  "web_searches": 0
+ }
+}

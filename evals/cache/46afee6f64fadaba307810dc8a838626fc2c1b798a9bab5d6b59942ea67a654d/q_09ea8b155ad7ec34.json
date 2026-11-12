@@ -1,0 +1,46 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": false,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0001744489-25-000155"
+  ],
+  "gold_visible": true,
+  "missing_values": [],
+  "question_id": "q_09ea8b155ad7ec34",
+  "text_sha256": "ac9f259fba4407a4991d426bb23404f0ec7d022a81bf601aa6a21f21a8d775cb",
+  "tokens_est": 2787
+ },
+ "cost_usd": "0.0076600",
+ "error": null,
+ "finished_at": "2026-11-11T21:43:32.925127+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "8.9"
+ },
+ "question_id": "q_09ea8b155ad7ec34",
+ "question_sha": "12157b417dce2729ee3a47c83ca177664df50ee23ea20696f753b542cd2973bf",
+ "raw_output": "Disney's capital expenditures are the \"Investments in parks, resorts and other property\" line in the cash flow statement.\n\n- Fiscal 2023: $4,969 million\n- Fiscal 2024: $5,412 million\n\nChange = (5,412 \u2212 4,969) / 4,969 = 443 / 4,969 \u2248 8.92%\n\nCapital expenditures rose about 8.9% from fiscal 2023 to fiscal 2024.\n\n{\"value\": 8.9, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-11T21:41:30.293730+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 6765,
+  "output_tokens": 179,
+  "web_searches": 0
+ }
+}

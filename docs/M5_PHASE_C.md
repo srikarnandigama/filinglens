@@ -1,8 +1,8 @@
 # M5 Phase C: preflight, dev pilot and the cost gate
 
-Status (2026-11-11): question set and 180-question subset frozen; dev pilot done; scope and caps
-approved (Option C, D104-D106); **test run not started**, waiting on the student's go-ahead on
-the final projection (end of this file). No prompt or system-behavior change in M5.
+Status (2026-11-11): superseded by [M5_STATUS.md](M5_STATUS.md). The test run is done; the scope
+grew under D109 (B0 Fable, and B1/B2 on all 180 questions). The plan below is kept as
+provenance. No prompt or system-behavior change in M5.
 
 ## Frozen set
 

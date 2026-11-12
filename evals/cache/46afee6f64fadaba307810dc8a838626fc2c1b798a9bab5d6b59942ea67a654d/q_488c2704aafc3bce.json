@@ -1,0 +1,49 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": false,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0000909832-26-000093",
+   "0000909832-26-000051",
+   "0000909832-26-000029",
+   "0000909832-25-000169"
+  ],
+  "gold_visible": true,
+  "missing_values": [],
+  "question_id": "q_488c2704aafc3bce",
+  "text_sha256": "77e4a6c5caea33fa20f994596c7a410f5a6256b075e05cc673dd0361d6b26ea6",
+  "tokens_est": 10634
+ },
+ "cost_usd": "0.02608100",
+ "error": null,
+ "finished_at": "2026-11-12T02:09:54.970384+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "1608.75"
+ },
+ "question_id": "q_488c2704aafc3bce",
+ "question_sha": "71a3b800f11ed79f3413ce9015576559df11b5504360c48af95206221c906a3b",
+ "raw_output": "Costco's fiscal 2026 capital expenditures are the \"Additions to property and equipment\" line in the cash flow statement, which total $6,435 million for the year.\n\nAveraging over four quarters: 6,435 / 4 = 1,608.75, or about $1,609 million per quarter.\n\nFiscal 2026 has 52 weeks, so it has four quarters (three of 12 weeks and a final 16-week quarter). A simple average across four quarters is therefore the right measure.\n\nAs a cross-check, the quarterly figures from the filings are:\n\n| Period | Capex ($M) |\n|---|---|\n| Q1 | 1,526 |\n| Q2 (24-week cumulative 2,815 less Q1) | 1,289 |\n| Q3 (36-week cumulative 4,228 less 24-week) | 1,413 |\n| Q4 (6,435 less 4,228) | 2,207 |\n\nThese sum to 6,435, which matches the annual total.\n\n**Average quarterly capital expenditures: about $1,608.75 million**\n\n{\"value\": 1608.75, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-12T02:07:22.538489+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 24196,
+  "output_tokens": 377,
+  "web_searches": 0
+ }
+}

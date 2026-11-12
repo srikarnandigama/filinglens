@@ -1,0 +1,34 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.07496900",
+ "error": null,
+ "finished_at": "2026-11-12T02:14:08.993549+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "-2.56"
+ },
+ "question_id": "q_b6b89d1da9c41d5e",
+ "question_sha": "97e732ea3ce5a17514849d704867e260d197bab8c338a6771a041c862bff3c89",
+ "raw_output": "Results are a string apparently; parse.ExxonMobil's total revenue fell about 2.6% from Q1 2023 to Q4 2023. I used the \"Total revenues and other income\" line from its earnings releases.\n\n- Q1 2023: $86,564 million\n- Q4 2023: $84,344 million\n\nThe change is (84,344 \u2212 86,564) / 86,564 \u2248 \u22122.56%.\n\nIf you meant sales and other operating revenue only, the figures are $83,644 million in Q1 and $81,688 million in Q4. That is a decline of about 2.3%.\n\n{\"value\": -2.56, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-12T02:10:05.212451+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "462e8302c4c24e61c1d9f2beabcf105643e3d3d8111fcad472c19884276c5b61",
+ "system_id": "b1-sonnet",
+ "system_kind": "b1",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 47944,
+  "output_tokens": 1405,
+  "web_searches": 2
+ }
+}

@@ -1,0 +1,34 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.03444400",
+ "error": null,
+ "finished_at": "2026-11-12T02:14:08.991535+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "7192"
+ },
+ "question_id": "q_7ea8e272359085fd",
+ "question_sha": "f56cf86f8ed90b17d3c1d0758e104b0d84f773585bf51ec7bcee697e446db9ec",
+ "raw_output": "Disney's cash and cash equivalents were $7,192 million at the end of fiscal Q1 2024 (December 30, 2023). That figure comes from the cash reconciliation in its 10-Q. The balance was $14,182 million at September 30, 2023.\n\nCash, cash equivalents and restricted cash together were $7,247 million, because $55 million of restricted cash sits in other assets. The question asks for cash and cash equivalents alone, so the answer is $7,192 million.\n\n{\"value\": 7192, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-12T02:10:05.212451+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "462e8302c4c24e61c1d9f2beabcf105643e3d3d8111fcad472c19884276c5b61",
+ "system_id": "b1-sonnet",
+ "system_kind": "b1",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 21169,
+  "output_tokens": 655,
+  "web_searches": 1
+ }
+}

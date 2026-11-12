@@ -1,0 +1,46 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": false,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0000909832-26-000093"
+  ],
+  "gold_visible": true,
+  "missing_values": [],
+  "question_id": "q_e2c722dfe2d02437",
+  "text_sha256": "46fa5b018cee7e7359411758ce5df53da4fda1fe7d57bbd8473eb00900539e0c",
+  "tokens_est": 2466
+ },
+ "cost_usd": "0.00713400",
+ "error": null,
+ "finished_at": "2026-11-11T21:43:33.004831+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "10.17"
+ },
+ "question_id": "q_e2c722dfe2d02437",
+ "question_sha": "54524c2a62604d77e628f76f27ef72993eba4746686a46d72ccdd40eb1e6e23a",
+ "raw_output": "Cost of revenue is taken as merchandise costs: $264,279 million in fiscal 2026 and $239,886 million in fiscal 2025.\n\nChange = (264,279 \u2212 239,886) / 239,886 = 24,393 / 239,886 \u2248 10.17%\n\nChecking the division: 239,886 \u00d7 0.10 = 23,988.6, leaving 404.4, and 404.4 / 239,886 \u2248 0.001686. That gives 10.169%, or about 10.17%.\n\nMerchandise costs rose about 10.2% from fiscal 2025 to fiscal 2026.\n\n{\"value\": 10.17, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-11T21:41:30.293730+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 5974,
+  "output_tokens": 232,
+  "web_searches": 0
+ }
+}

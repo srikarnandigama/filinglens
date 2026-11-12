@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.013808",
+ "finished_at": "2026-11-11T20:42:49.735899+00:00",
+ "latency_ms": 5643,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD billions",
+  "value": "83.06"
+ },
+ "question_id": "q_2a62bf27f04d7ff7",
+ "question_sha": "1436cd97916d7c4efda24443327f2c1632beb58f92e5d52cc69f23abab852f8a",
+ "raw_output": "ExxonMobil's average quarterly total revenue for fiscal 2025 was about **$83.1 billion**. This is an estimate built from recalled quarterly figures, not checked against the filings. The fourth-quarter number in particular is uncertain.\n\nThe figures below use \"total revenues and other income\":\n\n| Quarter | Total revenues and other income |\n|---|---|\n| Q1 2025 | \u2248 $83.13B |\n| Q2 2025 | \u2248 $81.51B |\n| Q3 2025 | \u2248 $85.29B |\n| Q4 2025 | \u2248 $82.3B (approximate) |\n| **Full year** | **\u2248 $332.2B** |\n\nAverage quarterly revenue = $332.2B \u00f7 4 \u2248 **$83.1 billion**.\n\nIf the narrower \"sales and other operating revenue\" line were used instead, the average would be roughly $2 billion lower.\n\n{\"value\": 83.06, \"unit\": \"USD billions\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011Cgwnp5HKEUkHeSCDC1SvQ"
+ ],
+ "split": "test",
+ "started_at": "2026-11-11T20:42:44.091542+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "4c121dace8201ad5984fc587e44ec56860d7e1322cd752ed76724801ac0e3a27",
+ "system_id": "b0-opus",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 342,
+  "output_tokens": 622,
+  "web_searches": 0
+ }
+}

@@ -1,0 +1,132 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 3,
+  "numeric_valid": 3,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.260488",
+ "error": null,
+ "finished_at": "2026-11-11T20:31:13.648805+00:00",
+ "latency_ms": 34408,
+ "prediction": {
+  "choice": "KO",
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percentage_points",
+  "value": "24.396478223567"
+ },
+ "question_id": "q_56337b8ae2a13a99",
+ "question_sha": "b8638bfa9d36e8c2e9c8b0f70719918081a45fe8f1f6dad4f9fc92510255435b",
+ "raw_output": {
+  "caveats": [
+   "The two companies have different fiscal year ends. Walmart's fiscal 2025 ended 2025-01-31, and Coca-Cola's ended 2025-12-31. The periods are therefore offset by about 11 months.",
+   "Operating margin is operating income divided by reported revenue. The calculation uses the revenue facts supplied and does not adjust for differences in business model."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_1"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3228"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3194"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Walmart's fiscal 2025 operating margin (year ended 2025-01-31) was about 4.31%, from operating income of $29.348 billion on revenue of $680.985 billion.",
+    "ticker": "WMT",
+    "unit": "percent",
+    "value": "4.309639713063",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_2"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3517"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3469"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Coca-Cola's fiscal 2025 operating margin (year ended 2025-12-31) was about 28.71%, from operating income of $13.762 billion on revenue of $47.941 billion.",
+    "ticker": "KO",
+    "unit": "percent",
+    "value": "28.70611793663",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value",
+      "kind": "computation",
+      "ref": "cmp_3"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Coca-Cola's operating margin was higher than Walmart's by about 24.4 percentage points.",
+    "ticker": "KO",
+    "unit": "percentage_points",
+    "value": "24.396478223567",
+    "value_basis": "computation"
+   }
+  ],
+  "final_claim_id": "c3",
+  "final_unit": "percentage_points",
+  "final_value": "24.396478223567",
+  "status": "answered",
+  "summary": "Coca-Cola had the higher fiscal 2025 operating margin, at about 28.71%. Walmart's was about 4.31%. The gap is about 24.4 percentage points."
+ },
+ "run_id": "852e0af5-e969-4963-9c70-c65108fd1a9b",
+ "run_status": "done",
+ "split": "test",
+ "started_at": "2026-11-11T20:30:39.190945+00:00",
+ "status": "done",
+ "system_config_hash": "2672337d37a1c4749e46b1640e2449249f4b9fce707f2424c3af28481dde7549",
+ "system_id": "system",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 104769,
+  "output_tokens": 5095
+ }
+}

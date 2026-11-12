@@ -1,0 +1,46 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": false,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0000093410-24-000021"
+  ],
+  "gold_visible": true,
+  "missing_values": [],
+  "question_id": "q_04c993b79118dfcb",
+  "text_sha256": "9e47c0dd7ce647c85e57eea414e08e5fe61b4e6af045dd2c5467d60c05d3886e",
+  "tokens_est": 3101
+ },
+ "cost_usd": "0.00761200",
+ "error": null,
+ "finished_at": "2026-11-11T21:43:33.020817+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "6278"
+ },
+ "question_id": "q_04c993b79118dfcb",
+ "question_sha": "81a41df927a52e1ac594c516c89dbb91ca1b54bf1f2f92ea86af16fbece86015",
+ "raw_output": "Chevron reported cash and cash equivalents of $6,278 million on its balance sheet at March 31, 2024.\n\nThe $7,212 million figure in the cash flow statement is different. It also includes restricted cash, so it is not the balance sheet cash line.\n\n{\"value\": 6278, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-11T21:41:30.293730+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 7022,
+  "output_tokens": 118,
+  "web_searches": 0
+ }
+}

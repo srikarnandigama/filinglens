@@ -1,0 +1,131 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 3,
+  "numeric_valid": 3,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.235032",
+ "error": null,
+ "finished_at": "2026-11-11T20:26:31.222476+00:00",
+ "latency_ms": 24860,
+ "prediction": {
+  "choice": "NKE",
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percentage_points",
+  "value": "1.810581490559"
+ },
+ "question_id": "q_bfc9e2daedffdd6e",
+ "question_sha": "2951823f6a4e7c4b63df8d638857e676393ba3833a01a9147c50a557e99518f9",
+ "raw_output": {
+  "caveats": [
+   "Nike's fiscal 2024 ran June 1, 2023 to May 31, 2024. Amazon's fiscal 2024 ran January 1 to December 31, 2024. The two periods are not aligned."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_1"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3775"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3727"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "Nike's FY2024 net margin (fiscal year ended May 31, 2024) was about 11.10%.",
+    "ticker": "NKE",
+    "unit": "percent",
+    "value": "11.097698687746",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_2"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "728"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "677"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "Amazon's FY2024 net margin (calendar year 2024) was about 9.29%.",
+    "ticker": "AMZN",
+    "unit": "percent",
+    "value": "9.287117197187",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value",
+      "kind": "computation",
+      "ref": "cmp_3"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "Nike's net margin was higher than Amazon's by about 1.81 percentage points.",
+    "ticker": "NKE",
+    "unit": "percentage_points",
+    "value": "1.810581490559",
+    "value_basis": "computation"
+   }
+  ],
+  "final_claim_id": "c3",
+  "final_unit": "percentage_points",
+  "final_value": "1.810581490559",
+  "status": "answered",
+  "summary": "Nike had the higher net margin in fiscal 2024: about 11.10%, against about 9.29% for Amazon. That is a gap of about 1.81 percentage points. The two companies' fiscal years cover different calendar windows."
+ },
+ "run_id": "9f0d2ef2-380e-4119-82ba-b03088bb65ce",
+ "run_status": "done",
+ "split": "test",
+ "started_at": "2026-11-11T20:26:06.313860+00:00",
+ "status": "done",
+ "system_config_hash": "2672337d37a1c4749e46b1640e2449249f4b9fce707f2424c3af28481dde7549",
+ "system_id": "system",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 98851,
+  "output_tokens": 3733
+ }
+}

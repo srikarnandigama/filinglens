@@ -1,0 +1,34 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.05319300",
+ "error": null,
+ "finished_at": "2026-11-12T02:14:08.976974+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "1.6"
+ },
+ "question_id": "q_33594b5fe679616c",
+ "question_sha": "0704d96ae923098b694817114e3d1337efc69f70f02eab06dc3206eecf88698b",
+ "raw_output": "Walmart's consolidated operating income rose about 1.6% from fiscal 2025 to fiscal 2026. It went from $29,348 million to $29,825 million. The change is +$477 million, and 477 \u00f7 29,348 is about 1.63%.\n\n{\"value\": 1.6, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-12T02:10:05.212451+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "462e8302c4c24e61c1d9f2beabcf105643e3d3d8111fcad472c19884276c5b61",
+ "system_id": "b1-sonnet",
+ "system_kind": "b1",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 39033,
+  "output_tokens": 832,
+  "web_searches": 1
+ }
+}

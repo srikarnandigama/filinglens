@@ -1,0 +1,34 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.05252900",
+ "error": null,
+ "finished_at": "2026-11-12T02:14:09.067803+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "-3.44"
+ },
+ "question_id": "q_b5d8dc1254a0ed35",
+ "question_sha": "172729caf9bdeb80196003b41238a6044987347cfe3aa165398dc1120ec0f1f1",
+ "raw_output": "P&G's operating income fell about 3.4% from fiscal 2025 to fiscal 2026.\n\nFigures from the fiscal 2026 10-K:\n- Fiscal 2026 operating income was $19,748 million.\n- Fiscal 2025 operating income was $20,451 million.\n- The change is $19,748M \u2212 $20,451M = \u2212$703M, which is \u2212703 / 20,451 \u2248 \u22123.44%.\n\nThe company's own filing rounds this to a 3% decrease.\n\n{\"value\": -3.44, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-12T02:10:05.212451+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "462e8302c4c24e61c1d9f2beabcf105643e3d3d8111fcad472c19884276c5b61",
+ "system_id": "b1-sonnet",
+ "system_kind": "b1",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 38664,
+  "output_tokens": 773,
+  "web_searches": 1
+ }
+}

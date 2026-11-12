@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.020568",
+ "finished_at": "2026-11-11T20:44:43.298516+00:00",
+ "latency_ms": 9816,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "3.8"
+ },
+ "question_id": "q_72cde095e3b8921f",
+ "question_sha": "42ade4c413940401703f044fd852cc0c32db6660c03608c20aa8fc6dcc3a247e",
+ "raw_output": "**Johnson & Johnson's gross profit grew about 3.8% from fiscal 2024 to fiscal 2025.** The 2024 figure is from the reported results; the 2025 figure is an estimate, because I could not confirm the full-year 2025 cost of products sold.\n\n**Fiscal 2024 (reported)**\n- Sales were $88,821M and cost of products sold was $27,471M.\n- Gross profit was therefore $61,350M, a margin of about 69.1%.\n\n**Fiscal 2025 (estimated)**\n- Sales were about $94.2B, as I recall from J&J's full-year announcement.\n- I estimated cost of products sold by summing quarterly figures recalled from memory: about $7.08B, $7.95B, $7.73B and $7.74B. The fourth-quarter figure is the least certain.\n- That gives cost of products sold of about $30.5B and gross profit of about $63.7B, a margin of roughly 67.6%.\n- The lower margin is consistent with higher amortization, product mix and tariffs.\n\n**Change**\n- $63.7B \u00f7 $61.35B \u2212 1 \u2248 3.8%.\n\nGross profit grew more slowly than sales (about 6%) because the margin fell.\n\n{\"value\": 3.8, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011Cgwnx8xJM3fgPMHUeuuUg"
+ ],
+ "split": "test",
+ "started_at": "2026-11-11T20:44:33.481990+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "4c121dace8201ad5984fc587e44ec56860d7e1322cd752ed76724801ac0e3a27",
+ "system_id": "b0-opus",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 352,
+  "output_tokens": 958,
+  "web_searches": 0
+ }
+}

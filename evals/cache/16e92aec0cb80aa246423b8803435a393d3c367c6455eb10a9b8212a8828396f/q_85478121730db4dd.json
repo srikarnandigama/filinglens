@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.019896",
+ "finished_at": "2026-11-12T02:04:19.530202+00:00",
+ "latency_ms": 5493,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "6701"
+ },
+ "question_id": "q_85478121730db4dd",
+ "question_sha": "edc7240df76832d3fa9ecdd19b0e46522dbbf1a40519f148fd2be0e1c34e7a3c",
+ "raw_output": "Johnson & Johnson's average quarterly net income over fiscal 2025 was about $6,701 million, based on quarterly figures recalled from memory rather than checked against the filings.\n\n| Quarter | Net income (USD millions) |\n|---|---|\n| Q1 | 10,999 |\n| Q2 | 5,537 |\n| Q3 | 5,152 |\n| Q4 | 5,116 |\n| **Full year** | **26,804** |\n\nAverage: 26,804 \u00f7 4 \u2248 6,701.\n\n{\"value\": 6701, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgxDL3FuqKaUQ31SHVvVh"
+ ],
+ "split": "test",
+ "started_at": "2026-11-12T02:04:14.037819+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "16e92aec0cb80aa246423b8803435a393d3c367c6455eb10a9b8212a8828396f",
+ "system_id": "b0-fable",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 342,
+  "output_tokens": 429,
+  "web_searches": 0
+ }
+}

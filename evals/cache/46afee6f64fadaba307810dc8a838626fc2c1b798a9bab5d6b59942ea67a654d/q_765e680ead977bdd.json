@@ -1,0 +1,46 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": false,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0000093410-25-000019"
+  ],
+  "gold_visible": true,
+  "missing_values": [],
+  "question_id": "q_765e680ead977bdd",
+  "text_sha256": "db8e1989702a5adfda0a576c9c4817d91aff09b1fe9952e891f38cb032ecf485",
+  "tokens_est": 3096
+ },
+ "cost_usd": "0.0084200",
+ "error": null,
+ "finished_at": "2026-11-12T02:09:54.957515+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "11.29"
+ },
+ "question_id": "q_765e680ead977bdd",
+ "question_sha": "59d8b2368e0ad390c1d6341926296830e02bca8d77c4ce71f926c19c95cfa6d9",
+ "raw_output": "Net margin is net income divided by revenue. I use net income attributable to Chevron for Q1 2024 and total revenues and other income as the revenue base.\n\nNet income attributable to Chevron was $5,501M. The sales and other operating revenues figure is $46,580M, and total revenues and other income is $48,716M.\n\nThe two possible bases give:\n- On sales and other operating revenues: 5,501 / 46,580 = 11.81%.\n- On total revenues and other income: 5,501 / 48,716 = 11.29%.\n\nTotal revenues and other income is the standard \"Revenues\" line on this statement, so I use it. The net income figure attributable to Chevron is the more common choice for net margin.\n\nNet margin = 5,501 / 48,716 = 11.29%.\n\n{\"value\": 11.29, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-12T02:07:22.538489+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 7005,
+  "output_tokens": 283,
+  "web_searches": 0
+ }
+}

@@ -1,0 +1,50 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": true,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0001193125-26-323660",
+   "0001193125-26-191507"
+  ],
+  "gold_visible": false,
+  "missing_values": [
+   "45057000000",
+   "35758000000"
+  ],
+  "question_id": "q_55afc684253434a3",
+  "text_sha256": "c3e57f9a44c341969345f9276cdc5c9ca02255f1d9837a260a09b3df964e07ca",
+  "tokens_est": 50019
+ },
+ "cost_usd": "0.08954800",
+ "error": null,
+ "finished_at": "2026-11-12T02:09:54.936526+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "45733.75"
+ },
+ "question_id": "q_55afc684253434a3",
+ "question_sha": "01c5a56536445876a8dd80bc9bb58434577a73f3a56f49d5269347569b2d96d2",
+ "raw_output": "Microsoft's net cash from operations for fiscal 2026 (year ended June 30, 2026) was $182,935 million, as shown in the annual cash flow statement.\n\nAverage quarterly net cash from operations = 182,935 / 4 = 45,733.75 million.\n\nThat is about $45.73 billion per quarter.\n\n{\"value\": 45733.75, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-12T02:07:22.538489+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 88843,
+  "output_tokens": 141,
+  "web_searches": 0
+ }
+}

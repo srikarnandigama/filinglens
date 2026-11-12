@@ -1,0 +1,49 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": true,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0001628280-26-008131",
+   "0000019617-24-000611"
+  ],
+  "gold_visible": false,
+  "missing_values": [
+   "12622000000"
+  ],
+  "question_id": "q_8a1de8adfa23f545",
+  "text_sha256": "289d6862a16699fe841d3873b0345a66a30d1ff3af5e896f37358855a6cab88a",
+  "tokens_est": 50019
+ },
+ "cost_usd": "0.08898400",
+ "error": null,
+ "finished_at": "2026-11-12T02:09:55.003331+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "-26.26"
+ },
+ "question_id": "q_8a1de8adfa23f545",
+ "question_sha": "155a3e63a5a76dc9d997e3f28b4f01de2530b81cdbad3ae8b34ecc2c3fbcc3ac",
+ "raw_output": "**JPMorgan Chase's net income fell about 26.3% from Q1 2023 to Q4 2023.**\n\n- **Q4 2023:** Net income was $9,307 million, shown in the quarterly column of the Q3 2024 10-Q. It also equals full-year 2023 ($49,552 million) minus the nine-month figure ($40,245 million).\n- **Q1 2023:** The excerpts do not show this quarter directly. I took $12,622 million from my recollection of the reported Q1 2023 result. It is consistent with the excerpts: $12,622 million, plus about $14,472 million for Q2, plus Q3's $13,151 million, equals the $40,245 million nine-month total.\n- **Change:** (9,307 \u2212 12,622) / 12,622 = \u221226.3%.\n\n{\"value\": -26.26, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-12T02:07:22.538489+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 85424,
+  "output_tokens": 712,
+  "web_searches": 0
+ }
+}

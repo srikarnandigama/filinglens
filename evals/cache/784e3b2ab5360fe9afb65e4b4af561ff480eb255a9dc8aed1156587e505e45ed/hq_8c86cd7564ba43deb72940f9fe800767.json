@@ -1,0 +1,32 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.008174",
+ "finished_at": "2026-11-11T20:53:44.387987+00:00",
+ "latency_ms": 6387,
+ "latency_note": null,
+ "prediction": {
+  "parse_ok": true,
+  "text": "Disney attributed the improvement in Direct-to-Consumer (Entertainment DTC) results in fiscal 2024 mainly to growth in revenue outpacing growth in costs. Operating results moved from a loss of roughly $2.5 billion in fiscal 2023 to small positive income of about $143 million. Disney pointed to higher subscription revenue, driven largely by price increases and, to a lesser extent, subscriber growth at Disney+ and Hulu. It also cited higher advertising revenue, helped by the ad-supported tiers. These gains were partly offset by higher programming and production costs. I'm recalling these figures and drivers from memory rather than the filing text, so check the exact wording and numbers in the MD&A section of the 10-K."
+ },
+ "question_id": "hq_8c86cd7564ba43deb72940f9fe800767",
+ "question_sha": "e28cf0db6ea17488d4397a2346f92d6ea555ad0ab913495c948cc37b058af47a",
+ "raw_output": "Disney attributed the improvement in Direct-to-Consumer (Entertainment DTC) results in fiscal 2024 mainly to growth in revenue outpacing growth in costs. Operating results moved from a loss of roughly $2.5 billion in fiscal 2023 to small positive income of about $143 million. Disney pointed to higher subscription revenue, driven largely by price increases and, to a lesser extent, subscriber growth at Disney+ and Hulu. It also cited higher advertising revenue, helped by the ad-supported tiers. These gains were partly offset by higher programming and production costs. I'm recalling these figures and drivers from memory rather than the filing text, so check the exact wording and numbers in the MD&A section of the 10-K.",
+ "request_ids": [
+  "req_011CgwoeH1MF53JWX5zcibgj"
+ ],
+ "split": "handwritten",
+ "started_at": "2026-11-11T20:53:37.999990+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 97,
+  "output_tokens": 798,
+  "web_searches": 0
+ }
+}

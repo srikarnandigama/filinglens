@@ -1,0 +1,47 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": false,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0000909832-26-000093",
+   "0000909832-26-000051"
+  ],
+  "gold_visible": true,
+  "missing_values": [],
+  "question_id": "q_b88550ce9ee4c4a6",
+  "text_sha256": "dd2220901e98c56335256cfdeb130b3d851ec7f00803a56d866305ca0a0a33f7",
+  "tokens_est": 5451
+ },
+ "cost_usd": "0.01361700",
+ "error": null,
+ "finished_at": "2026-11-11T21:43:32.925127+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "2207"
+ },
+ "question_id": "q_b88550ce9ee4c4a6",
+ "question_sha": "0f9d8a76d3e3959b28b617af1fb65119a6091549da8307e3dd09821aea5f3c29",
+ "raw_output": "Fiscal Q4 2026 capex is the full-year figure less the 36-week year-to-date figure, using \"Additions to property and equipment\" from the cash flow statements:\n\n- Full fiscal year 2026 (52 weeks): $6,435 million\n- First 36 weeks of fiscal 2026 (through May 10, 2026): $4,228 million\n- Q4 (the final 16 weeks): 6,435 \u2212 4,228 = $2,207 million\n\n{\"value\": 2207, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-11T21:41:30.293730+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 12692,
+  "output_tokens": 185,
+  "web_searches": 0
+ }
+}

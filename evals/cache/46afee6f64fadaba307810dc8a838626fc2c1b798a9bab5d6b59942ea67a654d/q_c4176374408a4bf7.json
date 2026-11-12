@@ -1,0 +1,46 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": false,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0000320187-26-000088"
+  ],
+  "gold_visible": true,
+  "missing_values": [],
+  "question_id": "q_c4176374408a4bf7",
+  "text_sha256": "0b276a8d556da7009ae57bbb135cf24aaaba30e885b1bf491dc0d1bb6b8fbc14",
+  "tokens_est": 2507
+ },
+ "cost_usd": "0.0066350",
+ "error": null,
+ "finished_at": "2026-11-12T02:09:54.965653+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "59.07"
+ },
+ "question_id": "q_c4176374408a4bf7",
+ "question_sha": "4b04be7b1e94b3e77141123af3d5c6efbba93c1ed7180fc05b9ffa56053a26a3",
+ "raw_output": "Nike's capital expenditures are the additions to property, plant and equipment in the cash flow statement: $684 million in fiscal 2026 and $430 million in fiscal 2025.\n\nPercent change = (684 \u2212 430) / 430 = 254 / 430 \u2248 59.07%\n\nCapital expenditures rose about 59.1% from fiscal 2025 to fiscal 2026.\n\n{\"value\": 59.07, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-12T02:07:22.538489+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 5830,
+  "output_tokens": 161,
+  "web_searches": 0
+ }
+}

@@ -1,0 +1,48 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": false,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0001652044-26-000018",
+   "0001652044-25-000091",
+   "0001652044-25-000043"
+  ],
+  "gold_visible": true,
+  "missing_values": [],
+  "question_id": "q_21675e8d3f578d7b",
+  "text_sha256": "dc9de69c5ce24486ad22aff4829b3d478dad1cc957e7051ee3bf9aa28a1500ab",
+  "tokens_est": 6589
+ },
+ "cost_usd": "0.01702200",
+ "error": null,
+ "finished_at": "2026-11-12T02:09:54.973375+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "12.15"
+ },
+ "question_id": "q_21675e8d3f578d7b",
+ "question_sha": "51eca8353300357c0d528259d9d6d57fb490b3021a921ce8d1e419e5a69c51de",
+ "raw_output": "Alphabet's net income rose about 12.1% from fiscal Q1 2024 to fiscal Q4 2024. Q4 is not reported directly, so I derived it from the full-year and nine-month figures (USD millions).\n\n- **Q1 2024 net income:** $23,662 million (from the Q1 2025 10-Q's prior-year column).\n- **Q4 2024 net income:** FY2024 net income of $100,118 million minus nine-month 2024 net income of $73,582 million, which is $26,536 million.\n- **Change:** (26,536 \u2212 23,662) / 23,662 = 2,874 / 23,662 \u2248 12.15%.\n\n{\"value\": 12.15, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-12T02:07:22.538489+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 15092,
+  "output_tokens": 386,
+  "web_searches": 0
+ }
+}

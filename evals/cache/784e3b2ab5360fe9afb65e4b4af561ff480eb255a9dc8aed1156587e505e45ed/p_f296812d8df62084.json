@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.009938",
+ "finished_at": "2026-11-11T20:46:26.641228+00:00",
+ "latency_ms": 7328,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "34900"
+ },
+ "question_id": "p_f296812d8df62084",
+ "question_sha": "8f6a1c4d886f658f5437c26ac18351006211d480f920b6416302b33eef97bbf9",
+ "raw_output": "Bank of America doesn't report a line called \"operating income\", so I used pre-tax income as the closest equivalent. For fiscal 2025 I estimate it at about $34.9 billion. This is from memory and not checked against the 10-K.\n\nThe estimate works backward from net income of roughly $30.5 billion for 2025, grossed up for an effective tax rate of about 11\u201312%.\n\nIf you meant a strict \"operating income\" line, the answer would be not_applicable for a bank.\n\n{\"value\": 34900, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011Cgwo5wYC6gCaejgsAcsiR"
+ ],
+ "split": "probe",
+ "started_at": "2026-11-11T20:46:19.312340+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 334,
+  "output_tokens": 927,
+  "web_searches": 0
+ }
+}

@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.025792",
+ "finished_at": "2026-11-12T02:05:05.327867+00:00",
+ "latency_ms": 5911,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD billions",
+  "value": "7.0"
+ },
+ "question_id": "q_82311756d530d633",
+ "question_sha": "ca995319eb1331f452eb0402ce70e4606a394b25aea0b983bb8d9d7a925cc1d2",
+ "raw_output": "I don't have Nike's reported figure for fiscal Q1 2027 (the quarter ending August 31, 2026), because that period is beyond the data I have. My best estimate is about $7.0 billion, based on recent levels as I recall them: roughly $7.5 billion at the end of fiscal 2025 and roughly $7.0 billion at the end of fiscal Q1 2026. Treat this as an estimate, not a reported value.\n\n{\"value\": 7.0, \"unit\": \"USD billions\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgxDPPKz1PU37KCydRgTk"
+ ],
+ "split": "test",
+ "started_at": "2026-11-12T02:04:59.416179+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "16e92aec0cb80aa246423b8803435a393d3c367c6455eb10a9b8212a8828396f",
+ "system_id": "b0-fable",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 344,
+  "output_tokens": 576,
+  "web_searches": 0
+ }
+}

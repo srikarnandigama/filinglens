@@ -1,0 +1,132 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 3,
+  "numeric_valid": 3,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.254684",
+ "error": null,
+ "finished_at": "2026-11-11T20:27:58.388309+00:00",
+ "latency_ms": 28955,
+ "prediction": {
+  "choice": "TSLA",
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percentage_points",
+  "value": "10.203807555193"
+ },
+ "question_id": "q_68a8023938512705",
+ "question_sha": "d978b20a8306bbc7dcd915e63e310f802712fd43cd7c927d1185d4cfc516a82e",
+ "raw_output": {
+  "caveats": [
+   "Net margin is net income divided by revenue. Tesla's revenue is the 'Revenues' concept and Amazon's is 'RevenueFromContractWithCustomerExcludingAssessedTax', so the two revenue definitions differ slightly.",
+   "Both companies' fiscal years end Dec 31, so the periods are directly comparable."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_1"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "1028"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "960"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2023
+    },
+    "text": "Tesla's FY2023 net margin was about 15.50% (net income $14.997 billion on revenue of $96.773 billion).",
+    "ticker": "TSLA",
+    "unit": "percent",
+    "value": "15.497091130791",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_2"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "723"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "672"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2023
+    },
+    "text": "Amazon's FY2023 net margin was about 5.29% (net income $30.425 billion on revenue of $574.785 billion).",
+    "ticker": "AMZN",
+    "unit": "percent",
+    "value": "5.293283575598",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value",
+      "kind": "computation",
+      "ref": "cmp_3"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2023
+    },
+    "text": "Tesla's FY2023 net margin exceeded Amazon's by about 10.2 percentage points.",
+    "ticker": "TSLA",
+    "unit": "percentage_points",
+    "value": "10.203807555193",
+    "value_basis": "computation"
+   }
+  ],
+  "final_claim_id": "c3",
+  "final_unit": "percentage_points",
+  "final_value": "10.203807555193",
+  "status": "answered",
+  "summary": "Tesla had the higher fiscal 2023 net margin: about 15.50%, against about 5.29% for Amazon. That is a gap of about 10.2 percentage points."
+ },
+ "run_id": "9564daa0-d263-406c-9ace-fdd0ececb4b1",
+ "run_status": "done",
+ "split": "test",
+ "started_at": "2026-11-11T20:27:29.392622+00:00",
+ "status": "done",
+ "system_config_hash": "2672337d37a1c4749e46b1640e2449249f4b9fce707f2424c3af28481dde7549",
+ "system_id": "system",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 106177,
+  "output_tokens": 4233
+ }
+}

@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.00726",
+ "finished_at": "2026-11-11T20:44:11.811561+00:00",
+ "latency_ms": 2987,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "6278"
+ },
+ "question_id": "q_04c993b79118dfcb",
+ "question_sha": "81a41df927a52e1ac594c516c89dbb91ca1b54bf1f2f92ea86af16fbece86015",
+ "raw_output": "Chevron's cash and cash equivalents at the end of fiscal Q1 2024 (March 31, 2024) were about **$6,278 million**, or roughly $6.3 billion. That is down from $8,178 million at year-end 2023. Both figures are recalled from Chevron's reported results rather than checked against the 10-Q, so treat them as a best estimate.\n\n{\"value\": 6278, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgwnvKWVkNQshnGHD8buu"
+ ],
+ "split": "test",
+ "started_at": "2026-11-11T20:44:08.829432+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "4c121dace8201ad5984fc587e44ec56860d7e1322cd752ed76724801ac0e3a27",
+ "system_id": "b0-opus",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 345,
+  "output_tokens": 294,
+  "web_searches": 0
+ }
+}

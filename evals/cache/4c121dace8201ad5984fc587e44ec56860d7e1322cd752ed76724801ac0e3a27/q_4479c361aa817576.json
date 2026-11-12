@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.013828",
+ "finished_at": "2026-11-11T20:44:18.260067+00:00",
+ "latency_ms": 6441,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "26.8"
+ },
+ "question_id": "q_4479c361aa817576",
+ "question_sha": "2f3c55093f5f90fde05b3c323267f70aba37f03b40f1675d333f6f1d58dc6f68",
+ "raw_output": "Meta's net cash provided by operating activities rose about **26.8%** from fiscal 2024 to fiscal 2025. The 2025 figure is recalled from Meta's Q4 2025 results release and was not checked against the filing.\n\n| Fiscal year | Net cash from operating activities |\n|---|---|\n| 2024 | \u2248 $91.33 billion |\n| 2025 | \u2248 $115.80 billion |\n\nCalculation: ($115.80B \u2212 $91.33B) / $91.33B \u2248 26.8%.\n\nThe 2025 total is consistent with other figures I recall from that release. Reported free cash flow (\u2248 $43.59B) plus capital expenditures (\u2248 $72.22B) gives about $115.8B. The quarterly operating cash flows (about $24.0B, $25.6B, $30.0B and $36.2B) also add up to it.\n\n{\"value\": 26.8, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgwnvYHCeBp6SR2XJYsBc"
+ ],
+ "split": "test",
+ "started_at": "2026-11-11T20:44:11.817640+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "4c121dace8201ad5984fc587e44ec56860d7e1322cd752ed76724801ac0e3a27",
+ "system_id": "b0-opus",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 352,
+  "output_tokens": 621,
+  "web_searches": 0
+ }
+}

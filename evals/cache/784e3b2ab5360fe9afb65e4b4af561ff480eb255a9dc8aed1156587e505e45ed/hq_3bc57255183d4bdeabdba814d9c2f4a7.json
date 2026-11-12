@@ -1,0 +1,32 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.01142",
+ "finished_at": "2026-11-11T20:53:32.290243+00:00",
+ "latency_ms": 9108,
+ "latency_note": null,
+ "prediction": {
+  "parse_ok": true,
+  "text": "I'm not certain of the exact figures. As I recall, Apple's older 10-Ks (roughly through the late 2010s) described a value-at-risk (VAR) model in the market risk section. It estimated the potential one-day loss in fair value of its foreign currency derivatives and other market-risk-sensitive instruments, using a statistical confidence level (I believe 95%). Apple reported the resulting VAR as a dollar amount, which was small relative to its total financial position.\n\nIn more recent filings, I believe Apple moved away from VAR. It now uses a sensitivity analysis instead, which shows the change in fair value of its foreign currency derivatives from a hypothetical 10% adverse move in exchange rates against the U.S. dollar. I can't confirm the exact year of the change or the dollar amounts, so check Item 7A of the specific 10-K you're interested in."
+ },
+ "question_id": "hq_3bc57255183d4bdeabdba814d9c2f4a7",
+ "question_sha": "e22bb516c6878ac8a33bbe6810e8a089bd2bc9c5b6710918846a3e7230333869",
+ "raw_output": "I'm not certain of the exact figures. As I recall, Apple's older 10-Ks (roughly through the late 2010s) described a value-at-risk (VAR) model in the market risk section. It estimated the potential one-day loss in fair value of its foreign currency derivatives and other market-risk-sensitive instruments, using a statistical confidence level (I believe 95%). Apple reported the resulting VAR as a dollar amount, which was small relative to its total financial position.\n\nIn more recent filings, I believe Apple moved away from VAR. It now uses a sensitivity analysis instead, which shows the change in fair value of its foreign currency derivatives from a hypothetical 10% adverse move in exchange rates against the U.S. dollar. I can't confirm the exact year of the change or the dollar amounts, so check Item 7A of the specific 10-K you're interested in.",
+ "request_ids": [
+  "req_011CgwodBiazC7YSbGrLFSX6"
+ ],
+ "split": "handwritten",
+ "started_at": "2026-11-11T20:53:23.182197+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 90,
+  "output_tokens": 1124,
+  "web_searches": 0
+ }
+}

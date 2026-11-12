@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.007084",
+ "finished_at": "2026-11-11T20:40:19.615647+00:00",
+ "latency_ms": 5361,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "1.0"
+ },
+ "question_id": "q_54668726e0ee102d",
+ "question_sha": "07f1693281b84e9b4a2ff0b3168efae67187d1233af66755f50b0c05fd149d5c",
+ "raw_output": "I don't have P&G's fiscal 2026 results (year ending June 30, 2026), so this is an estimate rather than a reported figure.\n\n- **Fiscal 2025:** net cash provided by operating activities was about $16.8 billion.\n- **Fiscal 2026:** I assumed roughly $17 billion. This rests on P&G's guidance for free cash flow productivity of about 85\u201390% and earnings of roughly $16 billion, which I recalled from memory rather than checked.\n\nThat implies a small increase of about 1%, and the true figure could be a little higher or lower.\n\n{\"value\": 1.0, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011Cgwnd2gzx4EAmVnDwy4Be"
+ ],
+ "split": "test",
+ "started_at": "2026-11-11T20:40:14.252103+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 357,
+  "output_tokens": 637,
+  "web_searches": 0
+ }
+}

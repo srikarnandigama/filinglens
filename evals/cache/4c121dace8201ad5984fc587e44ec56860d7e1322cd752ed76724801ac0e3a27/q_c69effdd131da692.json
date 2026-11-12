@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.013124",
+ "finished_at": "2026-11-11T20:42:58.534577+00:00",
+ "latency_ms": 5424,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "16.6"
+ },
+ "question_id": "q_c69effdd131da692",
+ "question_sha": "c93fdd0b591c99b81e8eacb614b7360d3c072109a3fe23fef2c2b15d832c3e75",
+ "raw_output": "Amazon's operating income rose about **16.6%**, from roughly $68.6 billion in fiscal 2024 to roughly $80.0 billion in fiscal 2025. The 2025 figure is an estimate, not a confirmed reported number.\n\n- **Fiscal 2024:** $68.593 billion, as reported.\n- **Fiscal 2025:** about $79.98 billion, built from my recollection of the quarterly results:\n  - Q1 2025: $18.4 billion\n  - Q2 2025: $19.2 billion\n  - Q3 2025: $17.4 billion, which absorbed a roughly $2.5 billion FTC settlement and $1.8 billion in severance costs\n  - Q4 2025: about $25.0 billion\n- **Change:** 79.98 \u00f7 68.593 \u2248 1.166, an increase of about 16.6%.\n\n{\"value\": 16.6, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgwnpjoaREii8U38uq8eT"
+ ],
+ "split": "test",
+ "started_at": "2026-11-11T20:42:53.111213+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "4c121dace8201ad5984fc587e44ec56860d7e1322cd752ed76724801ac0e3a27",
+ "system_id": "b0-opus",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 346,
+  "output_tokens": 587,
+  "web_searches": 0
+ }
+}

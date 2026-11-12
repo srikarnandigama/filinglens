@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.00789",
+ "finished_at": "2026-11-11T20:39:40.446219+00:00",
+ "latency_ms": 5954,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "31"
+ },
+ "question_id": "q_bdf40dacce1c7661",
+ "question_sha": "4354a665a014feb1315ca45abbbb874011b7c4754267b9de1737ac0f25fb3a3b",
+ "raw_output": "I don't have Meta's reported results for the quarter ended June 30, 2026, so this is an estimate, not a reported figure.\n\nThe estimate rests on these assumptions:\n- Q2 2026 revenue of roughly $60 billion.\n- Quarterly expenses of about $40 billion, in line with Meta's guidance of much higher 2026 costs, which gives an operating margin of about 33%.\n- A tax rate of around 13%, which brings net income to about $18 billion.\n\nThat implies a net margin of roughly 30\u201331%. For comparison, Q2 2025 was about 39%.\n\n{\"value\": 31, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011Cgwna6b4sp9qokBLVU5nc"
+ ],
+ "split": "test",
+ "started_at": "2026-11-11T20:39:34.492790+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "784e3b2ab5360fe9afb65e4b4af561ff480eb255a9dc8aed1156587e505e45ed",
+ "system_id": "b0-sonnet",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 335,
+  "output_tokens": 722,
+  "web_searches": 0
+ }
+}

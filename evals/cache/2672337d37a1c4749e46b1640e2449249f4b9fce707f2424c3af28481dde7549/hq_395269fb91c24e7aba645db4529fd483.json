@@ -1,0 +1,266 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 0,
+  "numeric_valid": 0,
+  "text_pending_judge": [
+   {
+    "chunk_ids": [
+     "chk_8d883132a80f250a76e49a723b1bcefaa31b256200fb8fe014c23145b7f1b03d"
+    ],
+    "claim_id": "c4",
+    "text": "Changes to relationships with funding providers, based on real or perceived changes in the company's risk profile, are listed as another liquidity-adverse factor alongside deposit risk."
+   },
+   {
+    "chunk_ids": [
+     "chk_cdde8d0963db8f887e2bb0639468ae919dda9f94f3eb67f4ae130c22cfb759f2"
+    ],
+    "claim_id": "c7",
+    "text": "At December 31, 2025, deposits totaled $2.02 trillion. Estimated uninsured U.S. deposits were $723.0 billion and uninsured non-U.S. deposits were $134.9 billion. This indicates the size of the portion of deposits that may be more prone to leave."
+   }
+  ],
+  "text_string_supported": 7,
+  "text_total": 9,
+  "uncited": 0
+ },
+ "cost_usd": "0.1624586",
+ "error": null,
+ "finished_at": "2026-11-11T20:49:14.985687+00:00",
+ "latency_ms": 53487,
+ "prediction": {
+  "parse_ok": true,
+  "text": "In its 2025 Form 10-K, Bank of America describes several deposit-outflow liquidity risks. The risk factors cite unexpected simultaneous draws on deposits and the failure to retain client deposits, including large-scale deposit migration. They also cite sudden loss of confidence or bank failures that could cause unforeseen cash outflows. The MD&A includes deposit withdrawals in its stressed-outflow analysis and notes that uninsured deposits were a large part of the $2.02 trillion deposit base. Management also calls a substantial portion of its deposits stable, low-cost and consistent, and says the Q2 2026 10-Q reports no material changes to these risk factors.\nBank of America's 2025 10-K risk factors list \"unexpected simultaneous draws on credit lines or deposits\" and \"the failure to attract or retain client deposits or invested funds, including large-scale deposit migration\" among its liquidity risks. The migration examples include clients seeking higher-yielding deposits or moving to an alternative financial institution perceived to be safer.\nThe 10-K also cites other drivers of deposit outflow: moving balances into digital assets (e.g., stablecoin) or other alternative non-bank financial platforms, and changes to spending behavior due to inflation.\nBank of America says negative views or loss of confidence about the company, the financial services industry or the U.S. monetary system, or a specific news event (e.g., bank failures), could lead to unforeseen outflows of cash, draws on liquidity facilities and reduced financing balances. It adds that this could cause a liquidity shortfall and/or affect its liquidity coverage ratio and net stable funding ratio.\nChanges to relationships with funding providers, based on real or perceived changes in the company's risk profile, are listed as another liquidity-adverse factor alongside deposit risk.\nIn the MD&A, the primary liquidity risk management objective is to meet expected or unexpected cash flow and collateral requirements, including customer deposit withdrawals. Management analyzes and monitors liquidity risk under expected and stressed conditions.\nPotential deposit withdrawals, together with increased draws on loan commitments, liquidity facilities and letters of credit, are listed among the contractual and contingent outflows in the stress analysis. The filing says credit rating downgrades and other market factor changes could negatively affect these outflows, in some cases materially.\nAt December 31, 2025, deposits totaled $2.02 trillion. Estimated uninsured U.S. deposits were $723.0 billion and uninsured non-U.S. deposits were $134.9 billion. This indicates the size of the portion of deposits that may be more prone to leave.\nAs a mitigant, management considers a substantial portion of its deposit base to be a stable, low-cost and consistent source of funding. It believes this deposit funding is generally less sensitive to interest rate changes.\nThe Q2 2026 10-Q states there are no material changes from the risk factors in the 2025 Form 10-K."
+ },
+ "question_id": "hq_395269fb91c24e7aba645db4529fd483",
+ "question_sha": "665f2299d1f2f458518f772d8afa9d688a3a5248b9197773d4c57e14444cbc9f",
+ "raw_output": {
+  "caveats": [
+   "The most recent quarterly filing (Q2 2026 10-Q) only cross-references the 2025 10-K risk factors. Its MD&A liquidity section was not searched, so any updated deposit figures there are not covered.",
+   "Only part of the 10-K was covered. A passage on subsidiary funding limits was seen in search results but not reviewed.",
+   "The passages reviewed do not describe a standalone deposit-run scenario. Deposit withdrawals appear as one item among several stressed outflows."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_2c1d6048db1ee7eca049ba0f30222bd8fca220220525e92da0512189ff1891a1"
+     }
+    ],
+    "id": "c1",
+    "kind": "textual",
+    "period": null,
+    "text": "Bank of America's 2025 10-K risk factors list \"unexpected simultaneous draws on credit lines or deposits\" and \"the failure to attract or retain client deposits or invested funds, including large-scale deposit migration\" among its liquidity risks. The migration examples include clients seeking higher-yielding deposits or moving to an alternative financial institution perceived to be safer.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_2c1d6048db1ee7eca049ba0f30222bd8fca220220525e92da0512189ff1891a1"
+     }
+    ],
+    "id": "c2",
+    "kind": "textual",
+    "period": null,
+    "text": "The 10-K also cites other drivers of deposit outflow: moving balances into digital assets (e.g., stablecoin) or other alternative non-bank financial platforms, and changes to spending behavior due to inflation.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_977dca5f44039ed531f14e8195962690fb531e84390266414c9f8d3a1f76f8e3"
+     }
+    ],
+    "id": "c3",
+    "kind": "textual",
+    "period": null,
+    "text": "Bank of America says negative views or loss of confidence about the company, the financial services industry or the U.S. monetary system, or a specific news event (e.g., bank failures), could lead to unforeseen outflows of cash, draws on liquidity facilities and reduced financing balances. It adds that this could cause a liquidity shortfall and/or affect its liquidity coverage ratio and net stable funding ratio.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_8d883132a80f250a76e49a723b1bcefaa31b256200fb8fe014c23145b7f1b03d"
+     }
+    ],
+    "id": "c4",
+    "kind": "textual",
+    "period": null,
+    "text": "Changes to relationships with funding providers, based on real or perceived changes in the company's risk profile, are listed as another liquidity-adverse factor alongside deposit risk.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_db12b49c80bfdcfe81c298309acb692849e7e77a5c8ddf166513152068fc3513"
+     }
+    ],
+    "id": "c5",
+    "kind": "textual",
+    "period": null,
+    "text": "In the MD&A, the primary liquidity risk management objective is to meet expected or unexpected cash flow and collateral requirements, including customer deposit withdrawals. Management analyzes and monitors liquidity risk under expected and stressed conditions.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_fc91c9c16e7052dae7d988b7f223ce455049fb43bd2493d69fe9c0a339c9dbcd"
+     }
+    ],
+    "id": "c6",
+    "kind": "textual",
+    "period": null,
+    "text": "Potential deposit withdrawals, together with increased draws on loan commitments, liquidity facilities and letters of credit, are listed among the contractual and contingent outflows in the stress analysis. The filing says credit rating downgrades and other market factor changes could negatively affect these outflows, in some cases materially.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_cdde8d0963db8f887e2bb0639468ae919dda9f94f3eb67f4ae130c22cfb759f2"
+     }
+    ],
+    "id": "c7",
+    "kind": "textual",
+    "period": null,
+    "text": "At December 31, 2025, deposits totaled $2.02 trillion. Estimated uninsured U.S. deposits were $723.0 billion and uninsured non-U.S. deposits were $134.9 billion. This indicates the size of the portion of deposits that may be more prone to leave.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_f18727e83cfe12953f28fe956bc9752ea364f1e92e06ba7c94363f3517b13db6"
+     }
+    ],
+    "id": "c8",
+    "kind": "textual",
+    "period": null,
+    "text": "As a mitigant, management considers a substantial portion of its deposit base to be a stable, low-cost and consistent source of funding. It believes this deposit funding is generally less sensitive to interest rate changes.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_3ad5b7ddfd9cef93b5403096c497400f870644cde204f9a2721e6f6f9e279e40"
+     }
+    ],
+    "id": "c9",
+    "kind": "textual",
+    "period": null,
+    "text": "The Q2 2026 10-Q states there are no material changes from the risk factors in the 2025 Form 10-K.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   }
+  ],
+  "final_claim_id": null,
+  "final_unit": null,
+  "final_value": null,
+  "status": "answered",
+  "summary": "In its 2025 Form 10-K, Bank of America describes several deposit-outflow liquidity risks. The risk factors cite unexpected simultaneous draws on deposits and the failure to retain client deposits, including large-scale deposit migration. They also cite sudden loss of confidence or bank failures that could cause unforeseen cash outflows. The MD&A includes deposit withdrawals in its stressed-outflow analysis and notes that uninsured deposits were a large part of the $2.02 trillion deposit base. Management also calls a substantial portion of its deposits stable, low-cost and consistent, and says the Q2 2026 10-Q reports no material changes to these risk factors."
+ },
+ "retrieval": {
+  "first_search": {
+   "filings:s1": [
+    "chk_2c1d6048db1ee7eca049ba0f30222bd8fca220220525e92da0512189ff1891a1",
+    "chk_977dca5f44039ed531f14e8195962690fb531e84390266414c9f8d3a1f76f8e3",
+    "chk_03ad723d7d0e2aa050d68e6cf166c83034a77942361beffdf74e4706b6ef1ac9",
+    "chk_e10df68fa3609855be9dea3d4b2d1754b2505ab09ceff6815609598e17662dbb",
+    "chk_71cbe1be2fd66be0e315818dec78570acb6dcbfcddfc09754fd834aa98009d1b",
+    "chk_0319b4095ec71e59325dc3962dc97411b4aeb8dc4cf8cf5de998faf557e9525f",
+    "chk_3543a5c341d85ee1d4a7d5cb032c89437a7f2e0ee0530d00b15a2aeb8aff6e44",
+    "chk_8d883132a80f250a76e49a723b1bcefaa31b256200fb8fe014c23145b7f1b03d"
+   ],
+   "filings:s2": [
+    "chk_977e2622043f928b5bfc366178752a7b53ff0e6d1e0e8326f231cab8df65d48d",
+    "chk_fc91c9c16e7052dae7d988b7f223ce455049fb43bd2493d69fe9c0a339c9dbcd",
+    "chk_d1b5983304b157d38925a817c7f0b0a378546abadc9ba81a545597f82ad65fb3",
+    "chk_cdde8d0963db8f887e2bb0639468ae919dda9f94f3eb67f4ae130c22cfb759f2",
+    "chk_db12b49c80bfdcfe81c298309acb692849e7e77a5c8ddf166513152068fc3513",
+    "chk_f18727e83cfe12953f28fe956bc9752ea364f1e92e06ba7c94363f3517b13db6",
+    "chk_514e8e167d5b146745b152ba67c4490ab948e64c7cc304b6fbda35ea26393cab",
+    "chk_59db9dc7585a23497d814953b66a331ad0cce3b46bc71e6e5c282f6eab02e015"
+   ],
+   "filings:s3": [
+    "chk_3ad5b7ddfd9cef93b5403096c497400f870644cde204f9a2721e6f6f9e279e40"
+   ]
+  },
+  "seen": [
+   "chk_3ad5b7ddfd9cef93b5403096c497400f870644cde204f9a2721e6f6f9e279e40",
+   "chk_2c1d6048db1ee7eca049ba0f30222bd8fca220220525e92da0512189ff1891a1",
+   "chk_977dca5f44039ed531f14e8195962690fb531e84390266414c9f8d3a1f76f8e3",
+   "chk_03ad723d7d0e2aa050d68e6cf166c83034a77942361beffdf74e4706b6ef1ac9",
+   "chk_e10df68fa3609855be9dea3d4b2d1754b2505ab09ceff6815609598e17662dbb",
+   "chk_71cbe1be2fd66be0e315818dec78570acb6dcbfcddfc09754fd834aa98009d1b",
+   "chk_0319b4095ec71e59325dc3962dc97411b4aeb8dc4cf8cf5de998faf557e9525f",
+   "chk_3543a5c341d85ee1d4a7d5cb032c89437a7f2e0ee0530d00b15a2aeb8aff6e44",
+   "chk_8d883132a80f250a76e49a723b1bcefaa31b256200fb8fe014c23145b7f1b03d",
+   "chk_977e2622043f928b5bfc366178752a7b53ff0e6d1e0e8326f231cab8df65d48d",
+   "chk_fc91c9c16e7052dae7d988b7f223ce455049fb43bd2493d69fe9c0a339c9dbcd",
+   "chk_d1b5983304b157d38925a817c7f0b0a378546abadc9ba81a545597f82ad65fb3",
+   "chk_cdde8d0963db8f887e2bb0639468ae919dda9f94f3eb67f4ae130c22cfb759f2",
+   "chk_db12b49c80bfdcfe81c298309acb692849e7e77a5c8ddf166513152068fc3513",
+   "chk_f18727e83cfe12953f28fe956bc9752ea364f1e92e06ba7c94363f3517b13db6",
+   "chk_514e8e167d5b146745b152ba67c4490ab948e64c7cc304b6fbda35ea26393cab",
+   "chk_59db9dc7585a23497d814953b66a331ad0cce3b46bc71e6e5c282f6eab02e015",
+   "chk_1699c928573df0de3be5f1bba634474f10d27243124647244b36d62f1e4ac705",
+   "chk_fdfc0d804988a3e7479918ebc35f57d5d148fd1289fea0c558a9fc330a201772",
+   "chk_e127c3b50c82236b7f95ee73dba5d3244553175ce6a99cdff39dac71824b8ac6"
+  ]
+ },
+ "run_id": "ef92cefe-b297-4cb8-b6ed-14534fe01cc1",
+ "run_status": "done",
+ "split": "handwritten",
+ "started_at": "2026-11-11T20:48:21.426200+00:00",
+ "status": "done",
+ "system_config_hash": "2672337d37a1c4749e46b1640e2449249f4b9fce707f2424c3af28481dde7549",
+ "system_id": "system",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 126797,
+  "output_tokens": 10868
+ }
+}

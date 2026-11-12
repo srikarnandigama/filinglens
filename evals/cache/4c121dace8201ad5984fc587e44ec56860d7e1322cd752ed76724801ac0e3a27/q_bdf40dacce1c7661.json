@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.01244",
+ "finished_at": "2026-11-11T20:43:29.976342+00:00",
+ "latency_ms": 5675,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "33"
+ },
+ "question_id": "q_bdf40dacce1c7661",
+ "question_sha": "4354a665a014feb1315ca45abbbb874011b7c4754267b9de1737ac0f25fb3a3b",
+ "raw_output": "Meta's fiscal Q2 2026 is the quarter ending June 30, 2026. I don't have reported results for it, so this is an estimate of about **33%**, not a reported figure.\n\nThe estimate rests on three points:\n- **Q2 2025 baseline:** revenue was about $47.5B and net income about $18.3B, a net margin of about 38.6%.\n- **Q4 2025:** net margin stayed near 38%.\n- **2026 outlook:** management guided total 2026 expenses to about $162\u2013169B, a large increase driven by AI infrastructure and talent. That suggests margins compress even as revenue grows.\n\nAssuming Q2 2026 revenue of about $58B and net income of about $19B gives a net margin of roughly 33%.\n\n{\"value\": 33, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011Cgwns37SRJFSzbKULQrRV"
+ ],
+ "split": "test",
+ "started_at": "2026-11-11T20:43:24.299747+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "4c121dace8201ad5984fc587e44ec56860d7e1322cd752ed76724801ac0e3a27",
+ "system_id": "b0-opus",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 335,
+  "output_tokens": 555,
+  "web_searches": 0
+ }
+}

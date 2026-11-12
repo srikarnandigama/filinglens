@@ -1,0 +1,48 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": false,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0000078003-26-000054",
+   "0000078003-26-000026",
+   "0000078003-25-000150"
+  ],
+  "gold_visible": true,
+  "missing_values": [],
+  "question_id": "q_4d3c2cae4f021bd0",
+  "text_sha256": "b3c804a9f98492b01ed6e0ad43b316075bbe1b5f207b1cecc7419953fc153baf",
+  "tokens_est": 31271
+ },
+ "cost_usd": "0.05666100",
+ "error": null,
+ "finished_at": "2026-11-12T02:09:54.932195+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "49.8"
+ },
+ "question_id": "q_4d3c2cae4f021bd0",
+ "question_sha": "14d21dde13fb30c6e3a79787e4aad6581b31b71af523449bf74e058886a5ea85",
+ "raw_output": "Capex (purchases of property, plant and equipment):\n\n- Q1 2025: $564M (three months ended March 30, 2025, from the Q1 2026 10-Q comparative column).\n- Full-year 2025: $2,629M.\n- Nine months ended September 28, 2025: $1,784M.\n- Q4 2025 = 2,629 \u2212 1,784 = $845M.\n\nChange from Q1 to Q4: (845 \u2212 564) / 564 = 281 / 564 = 49.8%.\n\n**Capex rose about 49.8% from Q1 2025 to Q4 2025.**\n\n{\"value\": 49.8, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-12T02:07:22.538489+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 55526,
+  "output_tokens": 227,
+  "web_searches": 0
+ }
+}

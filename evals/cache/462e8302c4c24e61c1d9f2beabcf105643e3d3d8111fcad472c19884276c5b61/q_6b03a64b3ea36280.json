@@ -1,0 +1,34 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.04381100",
+ "error": null,
+ "finished_at": "2026-11-12T02:14:09.069799+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "10887"
+ },
+ "question_id": "q_6b03a64b3ea36280",
+ "question_sha": "534de04a845f44f997c6e32c4ca18a9a7612e0d529f8e80eedeffaba74853cda",
+ "raw_output": "Procter & Gamble's cost of products sold for fiscal Q1 2026 (the three months ended September 30, 2025) was **$10,887 million**, or about $10.89 billion. That compares with $10,421 million in the same quarter a year earlier, an increase of 4%. The figure comes from P&G's Q1 FY2026 earnings release and its 10-Q.\n\n{\"value\": 10887, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-12T02:10:05.212451+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "462e8302c4c24e61c1d9f2beabcf105643e3d3d8111fcad472c19884276c5b61",
+ "system_id": "b1-sonnet",
+ "system_kind": "b1",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 30026,
+  "output_tokens": 757,
+  "web_searches": 1
+ }
+}

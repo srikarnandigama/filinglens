@@ -1,0 +1,34 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.032850",
+ "error": null,
+ "finished_at": "2026-11-12T02:14:09.132890+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "42.8"
+ },
+ "question_id": "q_1b7468ab5a6e8c8d",
+ "question_sha": "d9fe6523292d7a4a60b37c13d19fb144d8086b35de5623e9090f0bb2f22ef9aa",
+ "raw_output": "Nike's gross margin in fiscal Q1 2027 (the quarter ended August 31, 2026) was 42.8%. Nike's earnings release says gross margin expanded 60 basis points to 42.8 percent, mainly because of lower warehousing and logistics costs.\n\n{\"value\": 42.8, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-12T02:10:05.212451+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "462e8302c4c24e61c1d9f2beabcf105643e3d3d8111fcad472c19884276c5b61",
+ "system_id": "b1-sonnet",
+ "system_kind": "b1",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 20680,
+  "output_tokens": 434,
+  "web_searches": 1
+ }
+}

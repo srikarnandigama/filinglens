@@ -1,0 +1,36 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.023656",
+ "finished_at": "2026-11-12T02:06:20.850556+00:00",
+ "latency_ms": 6533,
+ "latency_note": null,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "26.8"
+ },
+ "question_id": "q_4479c361aa817576",
+ "question_sha": "2f3c55093f5f90fde05b3c323267f70aba37f03b40f1675d333f6f1d58dc6f68",
+ "raw_output": "Meta's net cash provided by operating activities rose about 26.8% from fiscal 2024 to fiscal 2025, from $91.33 billion to roughly $115.80 billion.\n\nThe fiscal 2025 figure is from my recollection of the quarterly results (about $24.03B, $25.56B, $30.00B and $36.21B), not checked against the 10-K, so treat the result as a best estimate.\n\nCalculation: 115.80 / 91.328 \u2212 1 \u2248 26.8%.\n\n{\"value\": 26.8, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}",
+ "request_ids": [
+  "req_011CgxDUuYZzGHMwyiHFHdAN"
+ ],
+ "split": "test",
+ "started_at": "2026-11-12T02:06:14.323023+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "16e92aec0cb80aa246423b8803435a393d3c367c6455eb10a9b8212a8828396f",
+ "system_id": "b0-fable",
+ "system_kind": "b0",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 352,
+  "output_tokens": 521,
+  "web_searches": 0
+ }
+}

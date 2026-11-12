@@ -1,0 +1,34 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.0330850",
+ "error": null,
+ "finished_at": "2026-11-12T02:14:09.078842+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "6660.5"
+ },
+ "question_id": "q_5ea56dcb5b7d6dee",
+ "question_sha": "372188e35df97aecbe4c0f7923304e84187448f1e69915abbd8bc3b5516ef342",
+ "raw_output": "Walmart's fiscal 2026 capital expenditures were $26,642 million (payments for property and equipment). That is the figure in its 10-K for the year ended January 31, 2026. Dividing by four quarters gives $6,660.5 million per quarter, or about $6.66 billion.\n\nI did not look up the individual quarterly figures. The average only needs the full-year total.\n\n{\"value\": 6660.5, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-12T02:10:05.212451+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "462e8302c4c24e61c1d9f2beabcf105643e3d3d8111fcad472c19884276c5b61",
+ "system_id": "b1-sonnet",
+ "system_kind": "b1",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 20775,
+  "output_tokens": 462,
+  "web_searches": 1
+ }
+}

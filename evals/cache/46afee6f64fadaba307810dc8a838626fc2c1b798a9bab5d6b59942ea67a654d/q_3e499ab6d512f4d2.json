@@ -1,0 +1,46 @@
+{
+ "attempts": 1,
+ "b2_context": {
+  "context_truncated": false,
+  "extractor_version": "b2-statements-v1",
+  "fallback_filings": [],
+  "filings": [
+   "0001628280-26-003952"
+  ],
+  "gold_visible": true,
+  "missing_values": [],
+  "question_id": "q_3e499ab6d512f4d2",
+  "text_sha256": "ef37a79a1ba1ad0a0d98ec9d44cba0eb59970b02db5d627372f22001593fefcc",
+  "tokens_est": 2812
+ },
+ "cost_usd": "0.0072600",
+ "error": null,
+ "finished_at": "2026-11-12T02:09:55.003331+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "-2.04"
+ },
+ "question_id": "q_3e499ab6d512f4d2",
+ "question_sha": "552c9ad81e4d4e5f6581dc67cff46b2f5040a6ccf562d022adbdd0cd9bde5b32",
+ "raw_output": "Tesla's gross profit was $17,094 million in fiscal 2025 and $17,450 million in fiscal 2024.\n\nThe change is 17,094 \u2212 17,450 = \u2212356 million.\n\nAs a percentage of the 2024 figure: \u2212356 / 17,450 = \u22122.04%.\n\nGross profit fell about 2.04% from fiscal 2024 to fiscal 2025.\n\n```json\n{\"value\": -2.04, \"unit\": \"percent\", \"choice\": null, \"status\": \"answered\"}\n```",
+ "split": "test",
+ "started_at": "2026-11-12T02:07:22.538489+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "46afee6f64fadaba307810dc8a838626fc2c1b798a9bab5d6b59942ea67a654d",
+ "system_id": "b2-sonnet",
+ "system_kind": "b2",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 6440,
+  "output_tokens": 164,
+  "web_searches": 0
+ }
+}

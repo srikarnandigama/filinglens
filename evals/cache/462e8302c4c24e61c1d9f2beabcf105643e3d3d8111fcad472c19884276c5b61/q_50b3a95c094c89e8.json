@@ -1,0 +1,34 @@
+{
+ "attempts": 1,
+ "b2_context": null,
+ "cost_usd": "0.0705200",
+ "error": null,
+ "finished_at": "2026-11-12T02:14:08.961943+00:00",
+ "latency_ms": null,
+ "latency_note": "batch, not comparable",
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD millions",
+  "value": "25248"
+ },
+ "question_id": "q_50b3a95c094c89e8",
+ "question_sha": "8376d57a0011f2987bcbc8b417f72f8cf88fdabbb77a78974c5b4d0d7797862f",
+ "raw_output": "Disney's total revenue for fiscal Q3 2026 was about $25.25 billion ($25,248 million). That is up 7% from $23,650 million in Q3 fiscal 2025. The figure comes from the Q3 earnings release that Disney filed with the SEC on August 5, 2026.\n\n{\"value\": 25248, \"unit\": \"USD millions\", \"choice\": null, \"status\": \"answered\"}",
+ "split": "test",
+ "started_at": "2026-11-12T02:10:05.212451+00:00",
+ "status": "done",
+ "stop_reason": "end_turn",
+ "system_config_hash": "462e8302c4c24e61c1d9f2beabcf105643e3d3d8111fcad472c19884276c5b61",
+ "system_id": "b1-sonnet",
+ "system_kind": "b1",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 46270,
+  "output_tokens": 850,
+  "web_searches": 2
+ }
+}

@@ -1,0 +1,26 @@
+{
+  "seed": 20261112,
+  "source": "judge_calibration_blind.jsonl",
+  "items": {
+    "1": "03b5618e11a82cbd1a497d9016f02656",
+    "2": "a086f1c34f4725aa6455f030a092acf4",
+    "3": "53d36f6694ca166180cd01c0c17c318a",
+    "4": "68e09165f21b845803a07671e6db2c69",
+    "5": "1402e208e57b50ee8854d0ec5e0291a3",
+    "6": "a7b96b39deeec61e90819198dc10f906",
+    "7": "867d3a803fa8acd10539904b7a3d252d",
+    "8": "ca80c1c3a9f920e0a484e9abf0bc1f16",
+    "9": "03c205ac5d19db4f5b88f4bd4bfe7ff7",
+    "10": "23d80aee072a8919500986595846106b",
+    "11": "54b1195ec79868b1bbf8dbd19ecac2e8",
+    "12": "5a58fd86071d96edb0db2effc5752860",
+    "13": "a9d15407ccf6684df72bade365ee23ed",
+    "14": "e7eb2cfcbdc1f5701d05d4ea71ff2050",
+    "15": "71ed8e0b0cffc60358f2b0204c895582",
+    "16": "f559dab7145675c8769dc8bd6dba028b",
+    "17": "8d215a33376e0fc47625e4375b39e9fb",
+    "18": "0494d6a9ba316652dda1819e4ee67a73",
+    "19": "91e41b09d63550ed87798d69a9e92850",
+    "20": "84975b16b6b9daeed1a72190e5ca58b6"
+  }
+}

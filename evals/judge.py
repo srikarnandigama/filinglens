@@ -142,6 +142,12 @@ JUDGE_VERSION = "judge-v1"
 JUDGE_CACHE_DIR = ROOT / "evals" / "cache" / "judge"
 CALIBRATION_JSONL = ROOT / "evals" / "results" / "judge_calibration_blind.jsonl"
 CALIBRATION_MD = ROOT / "docs" / "M5_JUDGE_CALIBRATION.md"
+# v2 (D110): the same 20 answers in a seeded random order under neutral item numbers; v1's
+# order cycled judge scores 2-5. The item -> key map is kept beside the labels.
+CALIBRATION_V2_JSONL = ROOT / "evals" / "results" / "judge_calibration_blind_v2.jsonl"
+CALIBRATION_V2_MD = ROOT / "docs" / "M5_JUDGE_CALIBRATION_v2.md"
+CALIBRATION_V2_MAP = ROOT / "evals" / "results" / "judge_calibration_v2_map.json"
+CALIBRATION_V2_SEED = 20261112
 HANDWRITTEN_CONFIG = ROOT / "evals" / "configs" / "m5_handwritten.toml"
 JUDGED_SYSTEMS = ("system", "b0-sonnet")  # D105: no B0 Opus on the handwritten set
 JUDGE_MODEL_ENV, JUDGE_MODEL_INDEX = "BASELINE_MODELS", 1  # Opus 5.5 (D093)
@@ -309,15 +315,90 @@ def calibration_rows(judged: list[dict[str, Any]]) -> list[dict[str, Any]]:
     ]
 
 
-def calibration_markdown(sample: list[dict[str, Any]], path: Path) -> Path:
+def shuffled_sheet(
+    rows: list[dict[str, Any]], seed: int = CALIBRATION_V2_SEED
+) -> tuple[list[dict[str, Any]], dict[str, str]]:
+    """The v1 rows in a seeded order independent of any score, numbered 1..n without keys."""
+    ranked = sorted(rows, key=lambda r: _sha(f"{seed}|calibration-v2|{r['key']}"))
+    sheet = [
+        {
+            "item": n,
+            "question": r["question"],
+            "reference": r["reference"],
+            "answer": r["answer"],
+            "student_score": None,
+        }
+        for n, r in enumerate(ranked, 1)
+    ]
+    return sheet, {str(n): r["key"] for n, r in enumerate(ranked, 1)}
+
+
+def export_v2(
+    v1: Path = CALIBRATION_JSONL,
+    jsonl: Path = CALIBRATION_V2_JSONL,
+    md: Path = CALIBRATION_V2_MD,
+    map_path: Path = CALIBRATION_V2_MAP,
+    seed: int = CALIBRATION_V2_SEED,
+) -> list[dict[str, Any]]:
+    """Write the v2 sheet, labels file and item map; never overwrites a v2 labels file."""
+    if jsonl.exists():
+        raise FileExistsError(f"{jsonl} exists; refusing to overwrite labels")
+    rows = [json.loads(line) for line in v1.read_text(encoding="utf-8").splitlines()]
+    sheet, items = shuffled_sheet(rows, seed)
+    jsonl.write_text(
+        "".join(json.dumps(r, ensure_ascii=False) + "\n" for r in sheet), encoding="utf-8"
+    )
+    map_path.write_text(
+        json.dumps({"seed": seed, "source": v1.name, "items": items}, indent=2, ensure_ascii=False)
+        + "\n",
+        encoding="utf-8",
+    )
+    calibration_markdown(
+        sheet,
+        md,
+        title="# M5 judge calibration v2: blind labeling sheet",
+        labels_file="evals/results/judge_calibration_blind_v2.jsonl",
+        order_note=(
+            "The items are the same 20 answers as the first sheet, in a seeded random order "
+            f"(seed {seed}, D110) that carries no information about any score."
+        ),
+    )
+    return sheet
+
+
+def load_labels(path: Path, map_path: Path | None = None) -> tuple[list[str], dict[str, int]]:
+    """Sheet order (as keys) and the 1-5 labels entered so far; v2 items map to keys."""
+    if not path.exists():
+        return [], {}
+    items = json.loads(map_path.read_text(encoding="utf-8"))["items"] if map_path else None
+    order: list[str] = []
+    labels: dict[str, int] = {}
+    for line in path.read_text(encoding="utf-8").splitlines():
+        row = json.loads(line)
+        key = items[str(row["item"])] if items is not None else row["key"]
+        order.append(key)
+        if row.get("student_score") in (1, 2, 3, 4, 5):
+            labels[key] = row["student_score"]
+    return order, labels
+
+
+def calibration_markdown(
+    sample: list[dict[str, Any]],
+    path: Path,
+    title: str = "# M5 judge calibration: blind labeling sheet",
+    labels_file: str = "evals/results/judge_calibration_blind.jsonl",
+    order_note: str = "",
+) -> Path:
     """A readable blind sheet: question, reference and answer; no judge score or system."""
+    match = "same item numbers" if sample and "item" in sample[0] else "same keys"
     lines = [
-        "# M5 judge calibration: blind labeling sheet",
+        title,
         "",
         f"Score each of the {len(sample)} answers 1-5 against its reference with the rubric "
         "below, without looking at the judge's scores. Enter each score as `student_score` in "
-        "`evals/results/judge_calibration_blind.jsonl` (same keys).",
+        f"`{labels_file}` ({match}).",
         "",
+        *([order_note, ""] if order_note else []),
         "```",
         RUBRIC.split("Judge only content")[0].strip(),
         "```",
@@ -325,7 +406,7 @@ def calibration_markdown(sample: list[dict[str, Any]], path: Path) -> Path:
     ]
     for n, r in enumerate(sample, 1):
         lines += [
-            f"## {n}. `{r['key']}`",
+            f"## Item {r['item']}" if "item" in r else f"## {n}. `{r['key']}`",
             "",
             f"**Question:** {r['question']}",
             "",
@@ -366,8 +447,14 @@ def main(argv: list[str] | None = None) -> int:
     from filinglens.agents.settings import RuntimeSettings
 
     parser = argparse.ArgumentParser(description="Run the M5 judges or write the blind sheet.")
-    parser.add_argument("command", choices=["run", "calibrate"])
+    parser.add_argument("command", choices=["run", "calibrate", "calibrate-v2"])
     args = parser.parse_args(argv)
+    if args.command == "calibrate-v2":  # no judge scores or API involved (D110)
+        sheet = export_v2()
+        print(f"wrote {CALIBRATION_V2_JSONL} and {CALIBRATION_V2_MD} ({len(sheet)} items)")
+        return 0
+    if args.command == "calibrate" and CALIBRATION_JSONL.exists():
+        raise SystemExit(f"{CALIBRATION_JSONL} exists; refusing to overwrite labels")
     settings = RuntimeSettings()
     judge = r.SystemConfig(
         id="judge", kind="b0", model_env=JUDGE_MODEL_ENV, model_index=JUDGE_MODEL_INDEX

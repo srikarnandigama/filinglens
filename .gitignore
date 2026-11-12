@@ -12,6 +12,10 @@ __pycache__/
 data/
 evals/results/*
 !evals/results/report.md
+!evals/results/report_notes.md
+!evals/results/judge_calibration_blind.jsonl
+!evals/results/judge_calibration_blind_v2.jsonl
+!evals/results/judge_calibration_v2_map.json
 !evals/results/retrieval.md
 !evals/results/retrieval_pre_fix.json
 !evals/results/retrieval.json

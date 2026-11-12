@@ -1,9 +1,17 @@
 # M5 status: eval harness and baselines
 
-Status (2026-11-11): **all approved runs are done; waiting for the student's review and the 20
-blind judge labels.** Nothing from M5 is committed yet. The report is
-[evals/results/report.md](../evals/results/report.md) (generated from the cache with
-`python -m evals.report <configs>`; analysis notes in `evals/results/report_notes.md`).
+Status: **M5 accepted by the student on 2026-11-12.** All approved runs are done and judge
+calibration is complete. Total M5 spend: **$69.48**. No prompt or system-behavior change was
+made in M5. The M5 test-run results were committed in `7e76e6f`; the acceptance update is not
+committed. `.gitignore` has exceptions so both label files, the v2 item map and
+`report_notes.md` are committed as provenance; run summaries stay ignored. The report is
+[evals/results/report.md](../evals/results/report.md), generated from the cache with no API calls:
+
+```
+python -m evals.report evals/configs/m5_test_subset.toml evals/configs/m5_test_opus.toml   evals/configs/m5_test_fable.toml evals/configs/m5_test_b2_subset.toml   evals/configs/m5_test_b1_subset.toml evals/configs/m5_probe.toml evals/configs/m5_handwritten.toml
+```
+
+Analysis notes are in `evals/results/report_notes.md`.
 
 ## Results (test split)
 
@@ -12,7 +20,7 @@ On the frozen 100-question sample (every system answers the same questions):
 | System | Data access | Accuracy [95% CI] | $/question |
 |---|---|---|---:|
 | FilingLens system | XBRL facts + filing passages (MCP tools) | 99.0% [97.0, 100] | $0.157 |
-| B2 Sonnet 5.5 | gold filings' statements in context | 96.0% [92.0, 99.0] | $0.024 (batch) |
+| B2 Sonnet 5.5 | gold filings' statements in context (oracle) | 96.0% [92.0, 99.0] | $0.024 (batch) |
 | B1 Sonnet 5.5 | open web search | 90.0% [84.0, 95.0] | $0.047 (batch) |
 | B0 Fable 5.2 | none (closed book) | 69.0% [60.0, 78.0] | $0.024 |
 | B0 Opus 5.5 | none | 55.0% [45.0, 65.0] | $0.013 |
@@ -31,6 +39,12 @@ Other results:
 - **Abstention probe:** system 10/10, B0 Sonnet 7/10, B0 Opus 7/10.
 - **Handwritten set (Opus judge, 1-5):** system 3.79 over its 24 answers, 3.23 with the 6
   no-answer runs scored 1; B0 Sonnet 3.23 (0 no-answers).
+- **Judge calibration (D110, primary v2):** exact 95% (19/20), within 1 100%,
+  quadratic-weighted κ 0.98 on a shuffled, neutrally numbered sheet (seed 20261112), so judge
+  scores are not marked indicative. The one disagreement: a system answer judged 2 that the
+  student scored 3. The first attempt (v1: exact 100%, κ 1.00) is kept only as contaminated,
+  because its sheet cycled judge scores 2-5. v1 and v2 labels agree on 19/20. No answer was
+  judged 1, so the sample covers judge scores 2-5 only.
 - **System text claims:** 98 of 102 supported (80 by string match, 18 by the judge).
 - **System-level retrieval:** recall@5 0.500, recall@10 0.552.
 
@@ -40,8 +54,12 @@ Other results:
   formatting over correct structured data, not extraction: the gold and the system read the same
   `financial_facts`. The student verified all 20 review-sample golds against the filings
   and/or earnings releases, with no discrepancies.
-- **B2 is the fair comparison, and it is close.** Given the gold filings' statements, Sonnet 5.5
-  answers 95.6-97.2% at about a sixth of the system's cost per question (batch prices).
+- **B2 is an oracle-context baseline, and the system matches it.** B2 is handed the gold
+  filings' financial statements, so it never has to find the company, filing or period. The
+  system locates the data itself and scores 99.4% to B2's 95.6% on the 180 subset (97.2% without
+  the Disney questions; the difference is then not significant). Cost per question: system
+  $0.157 in real time; B2 $0.025 at Batch API prices, about $0.051 in real time. The system costs
+  about 3.1x B2's real-time price.
 - **Closed-book models know pre-cutoff figures surprisingly well** (Fable 90.5% before the cutoff)
   and almost nothing after it (0-8%).
 
@@ -53,7 +71,11 @@ Other results:
 - **The one test abstention (Costco trend_avg) was an error, not a data gap.** The run computed
   the exact gold. Then the planner repeated `list_available_metrics` 6 times and the analyst
   tried 5 times to answer through a nonexistent `json` tool, until the budget ran out.
-- **The Disney operating-income definition is ambiguous** (segment measure, 3 questions).
+- **Disney "operating income" is a gold-definition ambiguity** (3 questions). Disney's income
+  statement has no operating-income line, and the gold uses its total segment operating income.
+  The report shows accuracy and paired tests with and without these questions: system vs B2 is
+  +3.9 pp (p = 0.039) with them and +2.3 pp (p = 0.22) without. This is an M6 data-definition
+  item (D110).
 - **"Gross margin" is ambiguous for Apple and Microsoft,** whose statements use it for the
   dollar line (2 B2 answers).
 - **B1 quotes as-first-reported values** for restated facts (5/6 restated wrong, all matching the
@@ -61,7 +83,30 @@ Other results:
 - **B2 contexts were sized in characters/4,** about 1.9x below real tokens, so the D089 limits
   were looser than stated and B2's first batch overran its cap ($2.42 against $2.00, D109).
 
-## M6 candidates (D106, D108)
+## Key decisions (D083-D110)
+
+- **Benchmark design (D083-D086, D097, D101):** generated question set v1 (400 questions + 10
+  probes, seed 20261109), dev/test split and the frozen 100-question sample, tolerances, units
+  and abstentions, fairness metadata (cutoff buckets, restated, derived Q4), mixed-vintage derived
+  quarters excluded, same-sector comparisons (GICS).
+- **Baselines (D087-D089, D096, D102):** B0 closed book, B1 web search, B2 gold filings'
+  statements in context; model cutoffs and versions; baseline model IDs from RuntimeSettings and
+  a runner preflight.
+- **Harness (D090-D092, D098-D100, D103):** runner, disk cache and spend caps; cache key with
+  the resolved model ID; system adapter and comparison choice; citation validity; system-level
+  retrieval recall; B2 statement detection; one MCP hub per invocation with clean shutdown.
+- **Judging and statistics (D093, D094, D107, D110):** Opus rubric and claim judges (Batch
+  API, cached, capped); bootstrap CIs, exact McNemar with Holm; judge calibration on a
+  shuffled, neutrally numbered blind sheet (now required for any calibration).
+- **Scope and budget (D095, D105, D109):** D082 resolutions; test run on the 180-question
+  subset with caps summing to $60; the remaining scope under a $30 hard ceiling.
+- **Interpretation (D104, D108, D110):** system accuracy measures planning, period mapping,
+  arithmetic and formatting over correct structured data, not extraction; handwritten runs with
+  no answer score 1; B2 is an oracle-context baseline; Disney operating income is a
+  gold-definition ambiguity.
+- **M6 candidates (D106).**
+
+## M6 candidates (D106, D108, D110)
 
 1. Prompt caching.
 2. The trend_avg summary/claim revision loop.
@@ -69,6 +114,10 @@ Other results:
 4. Capping filings-worker passage reading or tokens per worker.
 5. Limiting planner calls.
 6. The analyst answering through a tool instead of the Answer.
+7. Data definition (D110): what "operating income" means for companies without that
+   income-statement line (Disney), stated in the metric or the question.
+(Shuffled, neutrally numbered calibration sheets are a standing requirement under D110, not an
+M6 candidate.)
 
 The 6 no-answer handwritten questions are to be rerun in M6 after the fixes.
 
@@ -93,13 +142,15 @@ student: the handwritten budget errors (D108) and B2's +39% overrun (D109).
 - **Configs:** `evals/configs/` (D105 and D109; caps enforced by tests).
 - **Cache:** `evals/cache/` (all answers and judge results; the report replays it with no API
   calls). Run summaries are in `evals/results/runs/`.
-- **Calibration sheet:** `docs/M5_JUDGE_CALIBRATION.md` and
-  `evals/results/judge_calibration_blind.jsonl`. Enter a 1-5 `student_score` per key; the report
-  then shows agreement and κ.
-- **Decisions:** D083-D109.
+- **Calibration sheets:** v1 `docs/M5_JUDGE_CALIBRATION.md` and
+  `evals/results/judge_calibration_blind.jsonl` (labeled; validated: 20 valid JSON lines, the 20
+  keys and texts unchanged, every score an integer 1-5; unchanged since). v2 (labeled; validated
+  the same way) `docs/M5_JUDGE_CALIBRATION_v2.md`, labels `evals/results/judge_calibration_blind_v2.jsonl`,
+  item map `evals/results/judge_calibration_v2_map.json` (`python -m evals.judge calibrate-v2`,
+  which never overwrites a labels file).
+- **Decisions:** D083-D110.
 
 ## Next
 
-1. The student reviews the report and labels the 20 calibration answers.
-2. Regenerate the report to add judge agreement and κ.
-3. Decide on M5 acceptance and the commit.
+M5 is accepted. M6 (experiments + CI) has not started; it starts only on the student's
+instruction, with a plan first.

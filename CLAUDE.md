@@ -28,7 +28,7 @@ This project is specified in SPEC.md. Read it before doing anything.
 - [x] M2 Parsing, chunking, embeddings, retrieval
 - [x] M3 MCP servers
 - [x] M4 Agent runtime
-- [ ] M5 Eval harness + baselines
+- [x] M5 Eval harness + baselines
 - [ ] M6 Experiments + CI
 - [ ] M7 API, frontend, docs
 - [ ] M8 Deploy + publish (optional)
@@ -39,22 +39,25 @@ M1, M2 (including corpus v2 and Phase C), M3 and M4 are accepted. M3 was
 accepted on 2026-10-22 after Inspector and all five Claude Desktop checks passed;
 the student independently confirmed the Apple FY2026 Q3 values in the source 10-Q.
 M4 (built in Claude Code; M1-M3 were built with Codex) was accepted on 2026-11-09
-after its final acceptance run.
+after its final acceptance run. M5 was accepted on 2026-11-12 (see docs/M5_STATUS.md).
 - NEXT SESSION, FIRST TURN: do not change, run or commit anything. Read CLAUDE.md,
-  docs/M5_STATUS.md, evals/results/report.md and docs/DECISIONS.md D104-D109, summarize
+  docs/M5_STATUS.md, evals/results/report.md and docs/DECISIONS.md D104-D110, summarize
   the M5 state, and wait for the student's instructions.
-- M5 status (2026-11-11): ALL APPROVED RUNS DONE, $69.48 spent in total (dev $15.94,
-  D105 test steps $40.05, D109 $13.47 of its $30 ceiling). Waiting for the student's
-  review and the 20 blind judge labels (docs/M5_JUDGE_CALIBRATION.md; enter
-  student_score in evals/results/judge_calibration_blind.jsonl, then regenerate the
-  report with the 7 configs listed in docs/M5_STATUS.md). Headline (100 sample):
-  system 99%, B2 96%, B1 90%, B0 Fable 69%, Opus 55%, Sonnet 42%. System vs B2 is
-  significant only with 3 ambiguous Disney segment-operating-income questions
-  (p 0.039 -> 0.22 without). 6/30 handwritten runs gave no answer (D108). Frozen:
+- M5 status: ACCEPTED 2026-11-12. $69.48 spent in total (dev $15.94,
+  D105 test steps $40.05, D109 $13.47 of its $30 ceiling). Judge calibration done
+  (D110): v2 shuffled sheet (seed 20261112) exact 95%, within 1 100%, κ 0.98 (primary);
+  v1 (κ 1.00) kept as contaminated because its order cycled judge scores 2-5. M6 has
+  not started. Shuffled neutral sheets are required for any calibration (D110).
+  Regenerate the report with `python -m evals.report` and the 7 configs listed in
+  docs/M5_STATUS.md. Headline (100 sample): system 99%, B2 (oracle context) 96%, B1
+  90%, B0 Fable 69%, Opus 55%, Sonnet 42%. System vs B2 is significant only with 3
+  Disney segment-operating-income questions (gold-definition ambiguity, M6 item D110;
+  p 0.039 -> 0.22 without). 6/30 handwritten runs gave no answer (D108). Frozen:
   questions_v1 (4f270e35...), subset180 (242fbea0...), B2 meta (902e5a7a...,
   087724b6...). .env BASELINE_MODELS now has index 2 = claude-fable-5-2. No
-  prompt/system changes in M5; M6 candidates in D106 and D108. Nothing from M5 is
-  committed yet.
+  prompt/system changes in M5; M6 candidates in D106, D108 and D110. Test-run results
+  committed in 7e76e6f; the D110 and acceptance updates are not committed. .gitignore
+  exceptions now cover both label files, the v2 map and report_notes.md.
 - M1 data: 20 companies, 275 filings, 2,715 facts (563 derived). Ingestion
   cutoff 2026-10-19, inclusive by filing date (America/New_York). Snapshot
   2026-10-19-v1 at data/raw/2026-10-19-v1/ (bodies keyed by URL SHA-256;
@@ -121,6 +124,6 @@ after its final acceptance run.
   On this machine uv needs `--link-mode=copy` (e.g. `uv sync --frozen
   --link-mode=copy`). The CLI uses the Windows selector event loop for Psycopg
   and an IPv4 hint for localhost.
-- See docs/DECISIONS.md (D001-D100) for design history. docs/M1_STATUS.md and
+- See docs/DECISIONS.md (D001-D110) for design history. docs/M1_STATUS.md and
   older pending-verification wording predate acceptance; the acceptances
   recorded here supersede them.

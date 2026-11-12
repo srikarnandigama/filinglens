@@ -6,7 +6,7 @@ Generated from cached run records only (`python -m evals.report`). Accuracy cell
 
 - **What system accuracy measures (D104).** Gold values are computed from the same `financial_facts` table the system's `get_financial_metric` tool reads. System accuracy therefore measures planning, fiscal-period mapping, arithmetic and answer formatting given correct structured data. It does not measure extraction of numbers from filings.
 - **How the gold was checked.** The student verified all 20 review-sample gold values against the original SEC filings and/or the companies' earnings releases, with no discrepancies. The other gold values rest on the same M1 extraction.
-- **Comparisons with equal data access.** B2 (the gold filings' financial statements in context) and B1 (open web search) can reach the same numbers as the system. They are the fair comparisons and are listed first after the system. B0 (closed book) measures what the model knows without any data.
+- **Comparisons with data access.** B2 and B1 can reach the same numbers as the system and are listed first after it. B2 is an oracle-context baseline: it is given the gold filings' financial statements, so it skips finding the company, filing and period, which the system does itself. B1 has open web search. B0 (closed book) measures what the model knows without any data.
 - **Scope (D105, D109).** The system, B0 Sonnet, B1 and B2 run on a frozen 180-question test subset (the 100-question sample plus 80 stratified questions). B0 Opus and B0 Fable 5.2 run on the 100-question sample, where every system answers the same questions and is paired with the system.
 - **B2 context limit (D109).** B2 contexts were capped at 25K tokens per filing and 50K per question (D089), but those caps were measured as characters/4. Financial-statement tables tokenize about 1.9 times denser, so real contexts averaged about 23K tokens and the largest were near 95K.
 - **Cutoff and sample notes.** The test split includes a 20% after-cutoff floor per template (D086), except comparison at 14.5% (8 of 55): the same-sector pool has only 8 after-cutoff pairs (D101). After-cutoff questions concentrate in companies whose fiscal year ends mid-year (NKE, MSFT, PG, COST), so the cutoff breakdown is descriptive. Comparisons pair same-sector companies only (GICS, D101). JPM has no question in the 100-question sample (seeded draw).
@@ -42,6 +42,30 @@ B2 and B1 have data access comparable to the system's; B0 has none (D104).
 | b0-fable | 100 | 30 | 0 | +30.0 pp [+21.0, +39.0] | 0.0000 | 0.0000 |
 | b2-sonnet | 180 | 8 | 1 | +3.9 pp [+1.1, +7.2] | 0.0391 | 0.0391 |
 | b1-sonnet | 180 | 27 | 1 | +14.4 pp [+9.4, +20.0] | 0.0000 | 0.0000 |
+
+## Interpretation
+
+- **B2 is an oracle-context baseline.** It is handed the financial statements of the gold filings, so it never has to find the company, the filing or the fiscal period. The system starts from the question alone and locates the data itself (company resolution, filing and fiscal-period mapping, metric lookup, arithmetic). On the 180 questions both answered, the system scores 99.4% and B2 95.6%: the system matches the oracle-context baseline while locating the data itself. Cost per question: system $0.157 (real time); B2 $0.025 at Batch API prices, about $0.051 in real time, so the system costs 3.1x B2's real-time price.
+- **Disney operating income is a gold-definition ambiguity.** Disney's income statement has no operating-income line; the stored `OperatingIncomeLoss` fact is its total segment operating income from the segment disclosure, and the gold uses it. A reader of the income statement can reasonably build a different figure. Results are shown with and without these questions; the definition is an M6 data-definition item (D110).
+
+| System | Accuracy (all) | Disney segment-OI questions | Accuracy without |
+|---|---|---|---|
+| system | 99.4% [98.3%, 100.0%] n=180 | 3 | 99.4% [98.3%, 100.0%] n=177 |
+| b2-sonnet | 95.6% [92.2%, 98.3%] n=180 | 3 | 97.2% [94.4%, 99.4%] n=177 |
+| b1-sonnet | 85.0% [79.4%, 90.0%] n=180 | 3 | 86.4% [81.4%, 91.5%] n=177 |
+| b0-fable | 69.0% [60.0%, 78.0%] n=100 | 1 | 69.7% [60.6%, 78.8%] n=99 |
+| b0-opus | 55.0% [45.0%, 65.0%] n=100 | 1 | 55.6% [45.5%, 65.7%] n=99 |
+| b0-sonnet | 42.8% [35.6%, 50.0%] n=180 | 3 | 43.5% [36.2%, 50.8%] n=177 |
+
+Paired tests vs the system without the Disney segment-operating-income questions:
+
+| vs | n | system only | other only | Δ accuracy [95% CI] | McNemar p | Holm p |
+|---|---|---|---|---|---|---|
+| b0-sonnet | 177 | 99 | 0 | +55.9 pp [+48.6, +63.3] | 0.0000 | 0.0000 |
+| b0-opus | 99 | 43 | 0 | +43.4 pp [+33.3, +53.5] | 0.0000 | 0.0000 |
+| b0-fable | 99 | 29 | 0 | +29.3 pp [+20.2, +38.4] | 0.0000 | 0.0000 |
+| b2-sonnet | 177 | 5 | 1 | +2.3 pp [+0.0, +5.1] | 0.2188 | 0.2188 |
+| b1-sonnet | 177 | 24 | 1 | +13.0 pp [+7.9, +18.6] | 0.0000 | 0.0000 |
 
 ## Breakdowns (test)
 
@@ -143,7 +167,34 @@ B2 and B1 have data access comparable to the system's; B0 has none (D104).
 | b0-sonnet | 3.23 [3.00, 3.47] | 3.23 [3.00, 3.47] | 0/30 | 0 / 4 / 15 / 11 / 0 | 0 |
 | system | 3.23 [2.73, 3.73] | 3.79 [3.42, 4.17] | 6/30 | 0 / 3 / 5 / 10 / 6 | 0 |
 
-Judge calibration: pending the student's 20 blind labels.
+Judge calibration (primary, v2: shuffled blind sheet, D110) n=20: exact 95.0%, within 1 100.0%, quadratic-weighted κ 0.98.
+
+First attempt (v1, contaminated) n=20: exact 100.0%, within 1 100.0%, quadratic-weighted κ 1.00. The v1 sheet listed answers in a cycle of judge scores (2, 3, 4, 5 repeated), so position matched the judge's score; it is kept as provenance, not as the calibration result (D110).
+
+The calibration sample covers judge scores 2-5 only: no answered output was judged 1, so agreement at the bottom of the scale is untested.
+
+| v2 item | Key | System | Judge | Student v2 | Δ | Student v1 |
+|---|---|---|---|---|---|---|
+| 1 | `03b5618e` | b0-sonnet | 3 | 3 | +0 | 3 |
+| 2 | `a086f1c3` | system | 5 | 5 | +0 | 5 |
+| 3 | `53d36f66` | system | 5 | 5 | +0 | 5 |
+| 4 | `68e09165` | system | 3 | 3 | +0 | 3 |
+| 5 | `1402e208` | system | 5 | 5 | +0 | 5 |
+| 6 | `a7b96b39` | system | 5 | 5 | +0 | 5 |
+| 7 | `867d3a80` | b0-sonnet | 2 | 2 | +0 | 2 |
+| 8 | `ca80c1c3` | b0-sonnet | 3 | 3 | +0 | 3 |
+| 9 | `03c205ac` | system | 4 | 4 | +0 | 4 |
+| 10 | `23d80aee` | b0-sonnet | 2 | 2 | +0 | 2 |
+| 11 | `54b1195e` | system | 2 | 3 | +1 | 2 |
+| 12 | `5a58fd86` | b0-sonnet | 3 | 3 | +0 | 3 |
+| 13 | `a9d15407` | b0-sonnet | 3 | 3 | +0 | 3 |
+| 14 | `e7eb2cfc` | system | 2 | 2 | +0 | 2 |
+| 15 | `71ed8e0b` | b0-sonnet | 2 | 2 | +0 | 2 |
+| 16 | `f559dab7` | b0-sonnet | 4 | 4 | +0 | 4 |
+| 17 | `8d215a33` | b0-sonnet | 4 | 4 | +0 | 4 |
+| 18 | `0494d6a9` | system | 4 | 4 | +0 | 4 |
+| 19 | `91e41b09` | system | 5 | 5 | +0 | 5 |
+| 20 | `84975b16` | b0-sonnet | 4 | 4 | +0 | 4 |
 
 System text claims: 102; supported by string match 80, by the claim judge 18 of 22 judged (96.1% supported).
 
@@ -201,32 +252,39 @@ Six handwritten system runs used up the 200K-token budget before the analyst wro
 were spent on filings-worker passage reads (150-234K tokens, 13-27 passages); in the sixth the
 planner made 8 calls. They are counted as "no answer (token budget)" failures and score 1 in the
 system's judge mean. Over the answered 24, the system's mean score (3.79) is above B0 Sonnet's
-(3.23); with the six scored 1, the means are equal (3.23). Judge calibration is pending the
-student's labels.
+(3.23); with the six scored 1, the means are equal (3.23).
 
-### Disney "operating income" is segment operating income (3 questions)
+### Judge calibration: v1 was contaminated by its order; v2 is the calibration result
+
+The student's first 20 blind labels (v1) match the judge on every item (exact 100%,
+quadratic-weighted κ 1.00). But the v1 sheet listed the answers in the order
+`calibration_sample` drew them, a round-robin over judge scores (2, 3, 4, 5, repeated five
+times). Position therefore matched the judge's score exactly. Neither the judge score nor the
+system was shown, but the agreement holds only to the extent the labels were made independently
+of the order, so v1 is kept as a contaminated first attempt. The v2 sheet has the same 20
+answers in a seeded random order under neutral item numbers (D110); its agreement is the
+primary calibration result: exact 95% (19/20), within 1 100%, quadratic-weighted κ 0.98, so the
+judge scores are not marked indicative. The one disagreement is a system answer the judge
+scored 2 and the student 3. The student's v1 and v2 labels agree on 19 of 20 items. No answered
+output was judged 1, so the sample covers judge scores 2-5 only.
+
+### Disney "operating income" is a gold-definition ambiguity (3 questions)
 
 Disney's income statement has no operating-income line. The stored `OperatingIncomeLoss` fact
 (FY2024: $15.601B) is Disney's total segment operating income from its segment disclosure. Gold
 "operating margin" for Disney is therefore segment operating income divided by revenue. B1 and B2
 both answered the three Disney operating-margin comparisons with a statement-based figure
 instead, and gave the same wrong values. The system agrees with the gold because it reads the
-same fact (D104).
+same fact (D104). This is a question of the gold's definition, not an extraction error, and it is
+an M6 data-definition item (D110): define which figure "operating income" means for companies
+without that income-statement line, and either relabel the metric or state it in the question.
 
-Without those three questions:
-
-| System | Accuracy without them (n=177 or 99) | With them |
-|---|---:|---:|
-| system | 99.4% | 99.4% |
-| b2-sonnet | 97.2% | 95.6% |
-| b1-sonnet | 86.4% | 85.0% |
-| b0-sonnet | 43.5% | 42.8% |
-
-The system's advantage over B2 depends on these questions: +3.9 pp, McNemar p = 0.039 with them;
-+2.3 pp [+0.0, +5.1], p = 0.22 without them (5 system-only vs 1 B2-only correct). The advantage
-over B1 holds either way (+13.0 pp [+7.9, +18.6] without them, p < 0.0001). **On this benchmark,
-the system and B2 are not reliably distinguishable once the ambiguous Disney definition is set
-aside.**
+The with/without results are in the Interpretation section above. The system's advantage over
+B2 depends on these questions: +3.9 pp, McNemar p = 0.039 with them; +2.3 pp [+0.0, +5.1],
+p = 0.22 without them (5 system-only vs 1 B2-only correct). The advantage over B1 holds either
+way (+13.0 pp [+7.9, +18.6] without them, p < 0.0001). **On this benchmark, the system matches
+the oracle-context B2 but is not reliably better than it once the ambiguous Disney definition is
+set aside.**
 
 ### "Gross margin" means a dollar line for Apple and Microsoft (2 B2 answers)
 

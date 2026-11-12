@@ -321,6 +321,7 @@ def test_report_handwritten_section_scores_recall_and_pending_calibration(tmp_pa
     from evals import judge, report
 
     monkeypatch.setattr(judge, "CALIBRATION_JSONL", tmp_path / "none.jsonl")
+    monkeypatch.setattr(judge, "CALIBRATION_V2_JSONL", tmp_path / "none_v2.jsonl")
     rubric = [
         {
             "key": f"{s}{i}",
@@ -352,13 +353,112 @@ def test_report_handwritten_section_scores_recall_and_pending_calibration(tmp_pa
     # (5 + 4 + 4 + 1) / 4 with the no-answer run scored 1; 4.33 over answered; 1 of 2 no answer
     assert "| system | 3.50 [" in text and "| 4.33 [" in text and "| 1/2 |" in text
     assert "| b0-sonnet | 2.00 [" in text and "| 0/3 |" in text
-    assert "pending the student's 20 blind labels" in text
+    assert "v2: shuffled blind sheet, D110): pending" in text and "v1" not in text
     assert "string match 1, by the claim judge 1 of 1 judged (100.0% supported)" in text
     assert "recall@5 0.500, recall@10 1.000 (n=1)" in text
-    labels = tmp_path / "labels.jsonl"
-    labels.write_text(
-        "".join(json.dumps({"key": r["key"], "student_score": 4}) + "\n" for r in rubric),
+    v1 = tmp_path / "v1.jsonl"
+    v1.write_text(
+        "".join(
+            json.dumps({"key": r["key"], "question": "Q", "reference": "R", "answer": "A"}).replace(
+                "}", ', "student_score": 4}'
+            )
+            + "\n"
+            for r in rubric
+        ),
         encoding="utf-8",
     )
-    monkeypatch.setattr(judge, "CALIBRATION_JSONL", labels)
-    assert "Judge calibration (n=6)" in "\n".join(report.handwritten_section(data))
+    monkeypatch.setattr(judge, "CALIBRATION_JSONL", v1)
+    text = "\n".join(report.handwritten_section(data))
+    assert "v1, contaminated) n=6: exact 33.3%" in text and "): pending" in text
+    assert "covers judge scores" not in text  # a judge 1 is in this sample
+    assert "indicative" not in text and "| v2 item |" not in text  # v1 never decides
+    v2, items = tmp_path / "v2.jsonl", tmp_path / "map.json"
+    judge.export_v2(v1, v2, tmp_path / "v2.md", items)
+    monkeypatch.setattr(judge, "CALIBRATION_V2_JSONL", v2)
+    monkeypatch.setattr(judge, "CALIBRATION_V2_MAP", items)
+    item_map = json.loads(items.read_text(encoding="utf-8"))["items"]
+    rows = [json.loads(line) for line in v2.read_text(encoding="utf-8").splitlines()]
+    by_key = {r["key"]: r["result"]["score"] for r in rubric}
+    rows[0]["student_score"] = 2  # partial labels: still pending, no table
+    v2.write_text("".join(json.dumps(r) + "\n" for r in rows), encoding="utf-8")
+    assert "): pending" in "\n".join(report.handwritten_section(data))
+    for r in rows:  # all 2s except the judge's own score on item 1
+        r["student_score"] = 2
+    v2.write_text("".join(json.dumps(r) + "\n" for r in rows), encoding="utf-8")
+    text = "\n".join(report.handwritten_section(data))
+    assert "(primary, v2: shuffled blind sheet, D110) n=6" in text
+    assert "D093) (indicative only)" in text and "claim judge (indicative only)" in text
+    first = item_map["1"]
+    assert f"| 1 | `{first[:8]}` |" in text and f"| {by_key[first]} | 2 |" in text
+    for r in rows:
+        r["student_score"] = by_key[item_map[str(r["item"])]]
+    v2.write_text("".join(json.dumps(r) + "\n" for r in rows), encoding="utf-8")
+    text = "\n".join(report.handwritten_section(data))
+    assert "v2: shuffled blind sheet, D110) n=6: exact 100.0%" in text and "κ 1.00." in text
+    assert "D093) (indicative only)" not in text and "| v2 item |" in text
+
+
+def test_calibration_v2_sheet_is_shuffled_neutral_and_never_overwritten(tmp_path):
+    from evals import judge
+
+    v1 = tmp_path / "v1.jsonl"
+    rows = [
+        {
+            "key": f"k{i:02d}",
+            "question": f"Q{i}",
+            "reference": "R",
+            "answer": "A",
+            "student_score": 3,
+        }
+        for i in range(20)
+    ]
+    v1.write_text("".join(json.dumps(r) + "\n" for r in rows), encoding="utf-8")
+    before = v1.read_bytes()
+    out, md, items = tmp_path / "v2.jsonl", tmp_path / "v2.md", tmp_path / "map.json"
+    sheet = judge.export_v2(v1, out, md, items, seed=7)
+    assert v1.read_bytes() == before  # v1 labels untouched
+    assert [r["item"] for r in sheet] == list(range(1, 21))
+    assert all(
+        set(r) == {"item", "question", "reference", "answer", "student_score"} for r in sheet
+    )
+    assert all(r["student_score"] is None for r in sheet)
+    mapping = json.loads(items.read_text(encoding="utf-8"))
+    assert mapping["seed"] == 7 and sorted(mapping["items"].values()) == [r["key"] for r in rows]
+    assert list(mapping["items"].values()) != [r["key"] for r in rows]  # reordered
+    assert judge.shuffled_sheet(rows, 7) == judge.shuffled_sheet(rows, 7)  # seeded
+    for r in sheet:
+        assert r["question"] == f"Q{mapping['items'][str(r['item'])][1:].lstrip('0') or '0'}"
+    text = md.read_text(encoding="utf-8")
+    assert "## Item 1\n" in text and "k0" not in text and "seed 7" in text
+    assert "judge_calibration_blind_v2.jsonl` (same item numbers)" in text
+    with pytest.raises(FileExistsError):
+        judge.export_v2(v1, out, md, items, seed=7)
+
+
+def test_report_interpretation_b2_oracle_cost_and_disney_sensitivity():
+    from evals import report
+
+    system = _rows([True] * 10)
+    b2 = _rows([True] * 8 + [False] * 2)
+    for rows in (system, b2):
+        for i in (8, 9):  # Disney segment operating income in the gold (D110)
+            rows[f"q{i}"]["question"]["computation"] = {
+                "inputs": [{"ticker": "DIS", "concept": "OperatingIncomeLoss"}]
+            }
+        for x in rows.values():
+            x["record"] = dict(x["record"])
+    for x in b2.values():
+        x["record"] |= {"cost_usd": "0.002", "latency_note": "batch, not comparable"}
+    text = "\n".join(
+        report.interpretation({"system": system, "b2-sonnet": b2}, "system", Decimal("0.5"))
+    )
+    assert "oracle-context baseline" in text and "scores 100.0% and B2 80.0%" in text
+    assert "system $0.010 (real time); B2 $0.002 at Batch API prices, about $0.004" in text
+    assert "2.5x B2's real-time price" in text and "M6 data-definition item" in text
+    assert "| b2-sonnet | 80.0% [" in text and "| 2 | 100.0% [100.0%, 100.0%] n=8* |" in text
+    no_multiplier = "\n".join(
+        report.interpretation({"system": system, "b2-sonnet": b2}, "system", None)
+    )
+    assert (
+        "B2 $0.002 at Batch API prices." in no_multiplier and "real-time price" not in no_multiplier
+    )

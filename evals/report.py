@@ -9,6 +9,7 @@ results, the frozen M2 v2 retrieval table, and an uncategorized failure list (ca
 import argparse
 import asyncio
 import json
+import tomllib
 from collections import Counter, defaultdict
 from decimal import Decimal
 from pathlib import Path
@@ -25,6 +26,7 @@ from evals.scorers import (
     score,
 )
 from filinglens.config import ROOT
+from filinglens.llm.pricing import PRICING_PATH
 
 REPORT_PATH = ROOT / "evals" / "results" / "report.md"
 NOTES_PATH = ROOT / "evals" / "results" / "report_notes.md"
@@ -111,6 +113,22 @@ def headline_row(name: str, rows: dict[str, dict[str, Any]]) -> list[str]:
             else "–"
         ),
     ]
+
+
+def disney_segment_oi(q: dict[str, Any]) -> bool:
+    """Gold reads Disney's OperatingIncomeLoss, its total segment operating income (D110)."""
+    return any(
+        i.get("ticker") == "DIS" and i.get("concept") == "OperatingIncomeLoss"
+        for i in (q.get("computation") or {}).get("inputs", [])
+    )
+
+
+def cost_per_question(rows: dict[str, dict[str, Any]]) -> tuple[Decimal, bool]:
+    """Mean cost per question and whether it was charged at Batch API prices."""
+    items = list(rows.values())
+    total = sum((Decimal(x["record"].get("cost_usd") or 0) for x in items), Decimal(0))
+    batch = any("batch" in (x["record"].get("latency_note") or "") for x in items)
+    return total / len(items), batch
 
 
 def table(header: list[str], rows: list[list[str]]) -> str:
@@ -212,12 +230,27 @@ async def collect(config_paths: list[Path]) -> dict[str, Any]:
 
 def handwritten_section(data: dict[str, Any]) -> list[str]:
     """Judge scores, calibration agreement, text-claim support and system-level recall."""
-    from evals.judge import CALIBRATION_JSONL, agreement
+    from evals import judge as j
     from evals.system_adapter import recall_at
 
     judged = data.get("judge", [])
     rubric = [r for r in judged if r["kind"] == "rubric"]
-    parts = ["## Handwritten explanatory questions (30; Opus 5.5 judge, D093)", ""]
+    by_key = {r["key"]: r for r in rubric}
+    order_v1, labels_v1 = j.load_labels(j.CALIBRATION_JSONL)
+    order, labels = j.load_labels(j.CALIBRATION_V2_JSONL, j.CALIBRATION_V2_MAP)
+    complete = bool(order) and len(labels) == len(order)  # v2 is the primary result (D110)
+    judge_scores = {k: by_key[k]["result"]["score"] for k in order + order_v1 if k in by_key}
+    a = j.agreement(judge_scores, labels) if complete else None
+    a_v1 = j.agreement(judge_scores, labels_v1) if labels_v1 else None
+    indicative = a is not None and a["indicative_only"]
+    mark = " (indicative only)" if indicative else ""
+    parts = [f"## Handwritten explanatory questions (30; Opus 5.5 judge, D093){mark}", ""]
+    if indicative:
+        parts += [
+            "**Judge scores in this section are indicative only:** quadratic-weighted κ against "
+            f"the student's labels is {a['quadratic_kappa']:.2f} (< 0.6).",
+            "",
+        ]
     answers = data.get("handwritten", {})
     rows = []
     for sid in sorted({r["system_id"] for r in rubric}):
@@ -256,23 +289,59 @@ def handwritten_section(data: dict[str, Any]) -> list[str]:
         ),
         "",
     ]
-    labels = {}
-    if CALIBRATION_JSONL.exists():
-        for line in CALIBRATION_JSONL.read_text(encoding="utf-8").splitlines():
-            row = json.loads(line)
-            if row.get("student_score") in (1, 2, 3, 4, 5):
-                labels[row["key"]] = row["student_score"]
-    if labels:
-        judge_scores = {r["key"]: r["result"]["score"] for r in rubric if r["key"] in labels}
-        a = agreement(judge_scores, labels)
+
+    def stats(x: dict[str, Any]) -> str:
+        return (
+            f"n={x['n']}: exact {pct(x['exact'])}, within 1 {pct(x['within_1'])}, "
+            f"quadratic-weighted κ {x['quadratic_kappa']:.2f}"
+        )
+
+    if a is not None:
         parts += [
-            f"Judge calibration (n={a['n']}): exact {pct(a['exact'])}, within 1 "
-            f"{pct(a['within_1'])}, quadratic-weighted κ {a['quadratic_kappa']:.2f}"
+            f"Judge calibration (primary, v2: shuffled blind sheet, D110) {stats(a)}"
             + (" — the judge is indicative only (κ < 0.6)." if a["indicative_only"] else "."),
             "",
         ]
     else:
-        parts += ["Judge calibration: pending the student's 20 blind labels.", ""]
+        parts += [
+            "Judge calibration (primary, v2: shuffled blind sheet, D110): pending the "
+            "student's labels.",
+            "",
+        ]
+    if a_v1 is not None:
+        parts += [
+            f"First attempt (v1, contaminated) {stats(a_v1)}. The v1 sheet listed answers in a "
+            "cycle of judge scores (2, 3, 4, 5 repeated), so position matched the judge's score; "
+            "it is kept as provenance, not as the calibration result (D110).",
+            "",
+        ]
+    sampled = [judge_scores[k] for k in order or order_v1 if k in judge_scores]
+    if sampled and 1 not in sampled:
+        parts += [
+            f"The calibration sample covers judge scores {min(sampled)}-{max(sampled)} only: no "
+            "answered output was judged 1, so agreement at the bottom of the scale is untested.",
+            "",
+        ]
+    if a is not None:  # per-item table only once v2 labeling is complete
+        parts += [
+            table(
+                ["v2 item", "Key", "System", "Judge", "Student v2", "Δ", "Student v1"],
+                [
+                    [
+                        str(i),
+                        f"`{k[:8]}`",
+                        by_key[k]["system_id"],
+                        str(judge_scores[k]),
+                        str(labels[k]),
+                        f"{labels[k] - judge_scores[k]:+d}",
+                        str(labels_v1.get(k, "–")),
+                    ]
+                    for i, k in enumerate(order, 1)
+                    if k in judge_scores
+                ],
+            ),
+            "",
+        ]
     system = data.get("handwritten", {}).get("system", {})
     cites = [r.get("citations") or {} for r in system.values()]
     text_total = sum(c.get("text_total", 0) for c in cites)
@@ -281,7 +350,7 @@ def handwritten_section(data: dict[str, Any]) -> list[str]:
     judge_ok = sum(r["result"]["supported"] for r in claims)
     parts += [
         f"System text claims: {text_total}; supported by string match {string_ok}, by the claim "
-        f"judge {judge_ok} of {len(claims)} judged"
+        f"judge{mark} {judge_ok} of {len(claims)} judged"
         + (f" ({pct((string_ok + judge_ok) / text_total)} supported)." if text_total else "."),
         "",
     ]
@@ -312,10 +381,11 @@ METHODOLOGY = [
     "- **How the gold was checked.** The student verified all 20 review-sample gold values "
     "against the original SEC filings and/or the companies' earnings releases, with no "
     "discrepancies. The other gold values rest on the same M1 extraction.",
-    "- **Comparisons with equal data access.** B2 (the gold filings' financial statements in "
-    "context) and B1 (open web search) can reach the same numbers as the system. They are the "
-    "fair comparisons and are listed first after the system. B0 (closed book) measures what "
-    "the model knows without any data.",
+    "- **Comparisons with data access.** B2 and B1 can reach the same numbers as the system and "
+    "are listed first after it. B2 is an oracle-context baseline: it is given the gold filings' "
+    "financial statements, so it skips finding the company, filing and period, which the "
+    "system does itself. B1 has open web search. B0 (closed book) measures what the model knows "
+    "without any data.",
     "- **Scope (D105, D109).** The system, B0 Sonnet, B1 and B2 run on a frozen 180-question "
     "test subset (the 100-question sample plus 80 stratified questions). B0 Opus and B0 Fable "
     "5.2 run on the 100-question sample, where every system answers the same questions and is "
@@ -349,6 +419,74 @@ def ordered(systems: dict[str, Any]) -> list[str]:
     """The system first, then the equal-data-access baselines (B2, B1), then B0 (D104)."""
     rank = {k: i for i, k in enumerate(ORDER)}
     return sorted(systems, key=lambda n: (next((rank[k] for k in ORDER if n.startswith(k)), 9), n))
+
+
+def interpretation(
+    test: dict[str, dict[str, Any]], system_id: str, batch_multiplier: Decimal | None
+) -> list[str]:
+    """B2 as an oracle-context baseline (with costs) and the Disney gold-definition sensitivity."""
+    system = test.get(system_id)
+    b2 = next((test[k] for k in ordered(test) if k.startswith("b2")), None)
+    if not system or not b2:
+        return []
+    common = sorted(set(system) & set(b2))
+    sys_acc = sum(system[q]["score"].correct for q in common) / len(common)
+    b2_acc = sum(b2[q]["score"].correct for q in common) / len(common)
+    sys_cost, _ = cost_per_question({q: system[q] for q in common})
+    b2_cost, b2_batch = cost_per_question({q: b2[q] for q in common})
+    real_time = b2_batch and batch_multiplier is not None
+    b2_real = b2_cost / batch_multiplier if real_time else b2_cost
+    parts = [
+        "## Interpretation",
+        "",
+        "- **B2 is an oracle-context baseline.** It is handed the financial statements of the "
+        "gold filings, so it never has to find the company, the filing or the fiscal period. "
+        "The system starts from the question alone and locates the data itself (company "
+        "resolution, filing and fiscal-period mapping, metric lookup, arithmetic). On the "
+        f"{len(common)} questions both answered, the system scores {pct(sys_acc)} and B2 "
+        f"{pct(b2_acc)}: the system matches the oracle-context baseline while locating the data "
+        f"itself. Cost per question: system ${sys_cost:.3f} (real time); B2 ${b2_cost:.3f}"
+        + (
+            f" at Batch API prices, about ${b2_real:.3f} in real time, so the system costs "
+            f"{sys_cost / b2_real:.1f}x B2's real-time price."
+            if real_time
+            else (" at Batch API prices." if b2_batch else ".")
+        ),
+        "- **Disney operating income is a gold-definition ambiguity.** Disney's income statement "
+        "has no operating-income line; the stored `OperatingIncomeLoss` fact is its total "
+        "segment operating income from the segment disclosure, and the gold uses it. A reader "
+        "of the income statement can reasonably build a different figure. Results are shown "
+        "with and without these questions; the definition is an M6 data-definition item (D110).",
+        "",
+    ]
+    excluded = {q for q, x in system.items() if disney_segment_oi(x["question"])}
+    rows = []
+    for name in ordered(test):
+        v = test[name]
+        kept = [x["score"].correct for q, x in v.items() if q not in excluded]
+        rows.append(
+            [
+                name,
+                ci_cell([x["score"].correct for x in v.values()]),
+                str(sum(q in excluded for q in v)),
+                ci_cell(kept),
+            ]
+        )
+    without = {k: {q: x for q, x in v.items() if q not in excluded} for k, v in test.items()}
+    parts += [
+        table(
+            ["System", "Accuracy (all)", "Disney segment-OI questions", "Accuracy without"], rows
+        ),
+        "",
+        "Paired tests vs the system without the Disney segment-operating-income questions:",
+        "",
+        table(
+            ["vs", "n", "system only", "other only", "Δ accuracy [95% CI]", "McNemar p", "Holm p"],
+            paired(without[system_id], {k: v for k, v in without.items() if k != system_id}),
+        ),
+        "",
+    ]
+    return parts
 
 
 def render(data: dict[str, Any], system_id: str = "system") -> str:
@@ -415,6 +553,8 @@ def render(data: dict[str, Any], system_id: str = "system") -> str:
             ),
             "",
         ]
+        multiplier = data.get("batch_multiplier")  # from pricing.toml [eval], set by main
+        parts += interpretation(test, system_id, Decimal(multiplier) if multiplier else None)
     parts += ["## Breakdowns (test)", ""]
     rows: list[list[str]] = []
     for name in ordered(test):
@@ -498,6 +638,9 @@ def main(argv: list[str] | None = None) -> None:
         RuntimeSettings(),
     )
     data["judge"] = judge.load_judged(model)
+    data["batch_multiplier"] = tomllib.loads(PRICING_PATH.read_text(encoding="utf-8"))["eval"][
+        "batch_multiplier"
+    ]
     REPORT_PATH.write_text(render(data), encoding="utf-8")
     print(f"wrote {REPORT_PATH}")
 

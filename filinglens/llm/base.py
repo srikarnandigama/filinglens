@@ -76,9 +76,13 @@ class LLMRequest(BaseModel):
     temperature: float | None = None
     # "none" only on an agent's final step (D068); unset keeps pre-D068 fingerprints valid.
     tool_choice: Literal["none"] | None = None
+    # Prompt caching (D116); False keeps pre-M6 fingerprints valid.
+    cache: bool = False
 
     def fingerprint(self) -> str:
         exclude = {"tool_choice"} if self.tool_choice is None else set()
+        if not self.cache:
+            exclude.add("cache")
         return canonical_sha256(self.model_dump(mode="json", exclude=exclude))
 
 
@@ -96,6 +100,7 @@ class Provider(Protocol):
         temperature: float | None = None,
         effort: str | None = None,
         tool_choice: Literal["none"] | None = None,
+        cache: bool = False,
     ) -> LLMResponse: ...
 
 

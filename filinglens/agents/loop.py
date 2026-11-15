@@ -64,12 +64,16 @@ async def run_agent[T: BaseModel](
     temperature: float | None = None,
 ) -> T:
     role = role_of(instance)
+    guards = ctx.guards
     await ctx.recorder.emit(role, "agent_start", {"instance": instance, "model": model})
     messages = [Msg(role="user", text=task)]
     sent = 0
     retried = False
+    stalled = 0  # consecutive no-progress tool steps (D115)
+    force_final = False  # set by the D115 guards; cleared by a corrective retry
+    empty_handled = False
     for step in range(max_steps):
-        final_step = toolbox is not None and step == max_steps - 1
+        final_step = force_final or (toolbox is not None and step == max_steps - 1)
         if final_step:  # D068: the last allowed step can only return the final output.
             messages.append(Msg(role="user", text=FINAL_STEP_GUARD))
         request = LLMRequest(
@@ -81,7 +85,8 @@ async def run_agent[T: BaseModel](
             max_tokens=max_tokens,
             effort=effort,
             temperature=temperature,
-            tool_choice="none" if final_step else None,
+            tool_choice="none" if final_step and toolbox is not None else None,
+            cache=role in guards.cache_roles,
         )
         new_messages, sent = messages[sent:], len(messages)
         response = await ctx.gateway.complete(instance, step, request, new_messages)
@@ -108,6 +113,20 @@ async def run_agent[T: BaseModel](
             else:
                 results = await toolbox.call_many(response.tool_calls)
             messages.append(Msg(role="tool_results", tool_results=results))
+            if guards.stall_steps and toolbox is not None:
+                stalled = 0 if toolbox.last_progress else stalled + 1
+                if stalled >= guards.stall_steps and not force_final:
+                    force_final = True
+                    await _guard_event(ctx, role, instance, step, "no_progress", stalled)
+            continue
+        if (
+            guards.empty_reply
+            and not empty_handled
+            and not response.text.strip()
+            and response.stop_reason != "max_tokens"
+        ):  # D115: an empty turn is not a final answer; ask for it without spending the retry
+            empty_handled = force_final = True
+            await _guard_event(ctx, role, instance, step, "empty_reply", stalled)
             continue
         try:
             if response.stop_reason == "max_tokens":
@@ -123,6 +142,7 @@ async def run_agent[T: BaseModel](
                 )
                 raise AgentOutputError(f"{instance}: invalid final output: {feedback}") from exc
             retried = True
+            force_final, stalled = False, 0  # the corrective retry may use tools again
             messages.append(
                 Msg(
                     role="user",
@@ -141,3 +161,11 @@ async def run_agent[T: BaseModel](
         return output
     await ctx.recorder.emit(role, "agent_end", {"instance": instance, "status": "max_steps"})
     raise BudgetExceeded("steps", f"{instance} reached max_steps={max_steps}.")
+
+
+async def _guard_event(ctx: RunContext, role: str, instance: str, step: int, reason: str, n: int):
+    await ctx.recorder.emit(
+        role,
+        "stall_guard",
+        {"instance": instance, "step": step, "reason": reason, "no_progress_steps": n},
+    )

@@ -40,7 +40,11 @@ accepted on 2026-10-22 after Inspector and all five Claude Desktop checks passed
 the student independently confirmed the Apple FY2026 Q3 values in the source 10-Q.
 M4 (built in Claude Code; M1-M3 were built with Codex) was accepted on 2026-11-09
 after its final acceptance run. M5 was accepted on 2026-11-12 (see docs/M5_STATUS.md).
-- NEXT SESSION, FIRST TURN: do not change, run or commit anything. Read CLAUDE.md,
+- M6 IN PROGRESS (2026-11-12): Phase A approved (docs/M6_PHASE_A.md, D111-D124); Phase B
+  done offline (docs/M6_PHASE_B.md): fixes behind RunConfig flags defaulting to M5 behavior,
+  M5 cache keys pinned, 307 passed / 2 skipped, CI dry run 237 passed / 72 skipped. Uncommitted.
+  Waiting on: the D117 summary-rule decision, then Phase C approval. No M6 API spend yet.
+- (M5-era note) NEXT SESSION, FIRST TURN: do not change, run or commit anything. Read CLAUDE.md,
   docs/M5_STATUS.md, evals/results/report.md and docs/DECISIONS.md D104-D110, summarize
   the M5 state, and wait for the student's instructions.
 - M5 status: ACCEPTED 2026-11-12. $69.48 spent in total (dev $15.94,

@@ -12,7 +12,9 @@ from filinglens.agents.orchestrator import (
     RunConfig,
     answer_sha256,
     load_prompts,
+    loop_guards,
     orchestrate,
+    run_budget,
 )
 from filinglens.agents.tracing import MemoryTraceStore, Recorder, TraceEvent, load_run
 from filinglens.llm.base import LLMRequest, LLMResponse, Msg, ToolSpec, canonical_sha256
@@ -154,17 +156,14 @@ async def replay_loaded(run_id: UUID, meta: dict, events: list[TraceEvent]) -> R
     store = MemoryTraceStore()
     store.create_run(run_id, meta["question"], config)
     recorder = Recorder(store, run_id)
-    budget = RunBudget(
-        max_tokens=cfg.max_run_tokens,
-        prices=PriceTable.from_snapshot(config["pricing"]),
-        max_cost_usd=cfg.max_cost_usd,
-    )
+    budget = run_budget(cfg, PriceTable.from_snapshot(config["pricing"]), models)
     gateway = ReplayGateway(events, budget, recorder, meta["error"])
     ctx = RunContext(
         hub=ReplayHub(events, specs, config["servers"]["retrieval_mode"]),
         gateway=gateway,
         recorder=recorder,
         budget=budget,
+        guards=loop_guards(cfg),
     )
     recorded_sha = next(
         (e.payload["answer_sha256"] for e in events if e.event_type == "final"), None

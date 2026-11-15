@@ -1,7 +1,7 @@
 """Deterministic claim checks (D056) followed by the LLM verifier for textual support."""
 
 import re
-from decimal import Decimal, InvalidOperation
+from decimal import ROUND_HALF_UP, Decimal, InvalidOperation
 from typing import Any
 
 from pydantic import BaseModel, Field
@@ -207,14 +207,46 @@ def _summary_numbers(text: str) -> set[str]:
     return numbers
 
 
+SCALES = (Decimal(1), Decimal(10) ** 3, Decimal(10) ** 6, Decimal(10) ** 9)
+
+
+def cited_values(answer: Answer, ledger: Ledger) -> list[Decimal]:
+    """Absolute values of every fact and computation output a claim of this answer cites."""
+    values: list[Decimal] = []
+    for claim in answer.claims:
+        for cit in claim.citations:
+            if cit.kind == "fact" and cit.ref in ledger.facts:
+                number = _dec(ledger.facts[cit.ref].value)
+                values += [abs(number)] if number is not None else []
+            elif cit.kind == "computation" and cit.ref in ledger.computations:
+                record = ledger.computations[cit.ref]
+                values += [abs(n) for n in _numbers(record.output)] if not record.is_error else []
+    return values
+
+
+def rounded_display_of(token: str, values: list[Decimal]) -> Decimal | None:
+    """The cited value that `token` displays when rounded at its own precision in raw,
+    thousand, million or billion scale (D117), or None."""
+    shown = Decimal(token)
+    places = Decimal(1).scaleb(shown.as_tuple().exponent)
+    for value in values:
+        for scale in SCALES:
+            if (value / scale).quantize(places, rounding=ROUND_HALF_UP) == shown:
+                return value
+    return None
+
+
 def deterministic_checks(
-    answer: Answer, ledger: Ledger, use_quant_tools: bool
+    answer: Answer, ledger: Ledger, use_quant_tools: bool, summary_cited_values: bool = False
 ) -> dict[str, CheckResult]:
     results = {c.id: check_claim(c, ledger, use_quant_tools) for c in answer.claims}
     claimed = (
         set().union(*(_summary_numbers(c.text) for c in answer.claims)) if answer.claims else set()
     )
     missing = sorted(_summary_numbers(answer.summary) - claimed)
+    if summary_cited_values and missing:
+        values = cited_values(answer, ledger)
+        missing = [t for t in missing if rounded_display_of(t, values) is None]
     results["summary"] = CheckResult(
         claim_id="summary",
         verdict="needs_revision" if missing else "supported",

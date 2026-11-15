@@ -40,6 +40,7 @@ RUNS_DIR = ROOT / "evals" / "results" / "runs"
 HANDWRITTEN = ROOT / "evals" / "handwritten_v2.jsonl"
 B2_META = ROOT / "evals" / "b2_contexts_v1.meta.jsonl"
 RETRY_DELAYS = (2.0, 4.0, 8.0)
+FREE_TEXT = ("handwritten", "explanatory_dev")  # answered as text, never numerically scored
 # Per-question reservations for the spend cap (D090); the system uses its max_cost_usd.
 DEFAULT_RESERVE = {"b0": Decimal("0.10"), "b1": Decimal("0.40"), "b2": Decimal("0.20")}
 # The frozen Option C test subset (D105): the 100-question sample plus 80 stratified questions.
@@ -129,6 +130,13 @@ def load_questions(cfg: EvalConfig) -> list[dict[str, Any]]:
     if cfg.split == "handwritten":
         rows = [json.loads(line) for line in HANDWRITTEN.read_text(encoding="utf-8").splitlines()]
         return [r | {"template": "handwritten", "split": "handwritten"} for r in rows]
+    if cfg.split == "explanatory_dev":  # D120: free text, no references, mechanics only
+        from evals.m6 import load_explanatory_dev
+
+        rows = load_explanatory_dev()
+        if cfg.ids:
+            rows = [r for r in rows if r["id"] in set(cfg.ids)]
+        return [r | {"template": "explanatory_dev"} for r in rows]
     if cfg.questions == "frozen":
         records = load_frozen(FROZEN_PATH, MANIFEST_PATH)  # hash-checked (D084)
     else:
@@ -141,6 +149,13 @@ def load_questions(cfg: EvalConfig) -> list[dict[str, Any]]:
             raise ValueError("config ids are not all in the requested split")
     elif cfg.sample == "sample_100":
         chosen = [r for r in chosen if r["sample_100"]]
+    elif cfg.sample == "m6_sample_50":  # D121
+        from evals.m6 import load_sample_50
+
+        wanted = load_sample_50()
+        chosen = [r for r in chosen if r["id"] in wanted]
+        if len(chosen) != len(wanted):
+            raise ValueError("m6_sample_50 ids are not all in the requested split")
     elif cfg.sample == "subset_180":
         wanted = subset_ids()
         chosen = [r for r in chosen if r["id"] in wanted]
@@ -397,7 +412,7 @@ class Runner:
 
     async def _answer(self, system: SystemConfig, shash: str, q: dict[str, Any]) -> dict[str, Any]:
         base = self._base(system, shash, q)
-        handwritten = q["template"] == "handwritten"
+        handwritten = q["template"] in FREE_TEXT
         started = datetime.now(UTC).isoformat()
         if system.kind == "system":
             try:
@@ -490,7 +505,7 @@ class Runner:
                 records[q["id"]] = cached | {"cached": True}
                 self.summary["counts"][f"{system.id}:cached"] += 1
             elif self.cap.try_reserve(reserve):
-                spec, params, meta = self._params(system, q, q["template"] == "handwritten")
+                spec, params, meta = self._params(system, q, q["template"] in FREE_TEXT)
                 todo.append((q, spec, params, meta))
             else:
                 records[q["id"]] = self._base(system, shash, q) | {"status": "skipped_spend_cap"}
@@ -504,7 +519,7 @@ class Runner:
             )
             for q, spec, _params, meta in todo:
                 result = results[q["id"]]
-                handwritten = q["template"] == "handwritten"
+                handwritten = q["template"] in FREE_TEXT
                 ok = result.stop_reason is not None and not result.stop_reason.startswith("batch_")
                 cost = (
                     self._cost(spec.model, result.usage, batched=True)
@@ -620,6 +635,15 @@ def preflight(
     models = set(deps.models.values()) | set(deps.system_settings.get("models", {}).values())
     if deps.prices is not None:
         deps.prices.require(models)
+        if any(s.flags.get("prompt_caching") for s in cfg.systems):  # D116
+            unpriced = sorted(
+                m
+                for m in models
+                if deps.prices.prices[m].cache_read_per_mtok is None
+                or deps.prices.prices[m].cache_write_per_mtok is None
+            )
+            if unpriced:
+                raise ValueError(f"prompt caching needs cache prices in pricing.toml: {unpriced}")
     if retrieve is None:
         import anthropic
 

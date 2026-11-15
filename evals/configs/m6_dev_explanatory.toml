@@ -1,0 +1,23 @@
+# C3: M6 system on the 10 explanatory dev prompts, mechanics only (D120). Projection
+# $1.90 at M5 answered-run rates (M6 estimate $1.60) + $1.00 in flight (D123).
+name = "m6-dev-explanatory"
+budget = "m6"
+split = "explanatory_dev"
+sample = "all"
+seed = 20261109
+concurrency = 2
+spend_cap_usd = "3.25"
+
+[[systems]]
+id = "m6"
+kind = "system"
+max_cost_usd = "0.50"
+
+[systems.flags]
+budget_weighting = "input_price"   # D113
+finalize_without_draft = true      # D114
+stall_guard_steps = 2              # D115
+empty_reply_guard = true           # D115
+unknown_tool_hint = true           # D115
+prompt_caching = true              # D116
+# summary_cited_values (D117) is added only if the student keeps the rule after the dev check.

@@ -594,9 +594,9 @@ def test_test_run_caps_fit_the_ceiling_and_cover_their_reservations():
 
     paths = [
         p
-        for p in sorted(Path(r.ROOT / "evals" / "configs").glob("*.toml"))
+        for p in sorted(Path(r.ROOT / "evals" / "configs").glob("m5_*.toml"))
         if p.stem != "m5_dev_pilot"
-    ]
+    ]  # M5 budgets only; M6 caps are tested in test_m6_evals.py (D123)
     budget = {p.stem: tomllib.loads(p.read_text(encoding="utf-8")).get("budget") for p in paths}
     configs = {p.stem: r.load_config(p) for p in paths}
     d105 = [c for k, c in configs.items() if budget[k] is None]

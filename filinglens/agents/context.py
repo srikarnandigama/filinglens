@@ -63,6 +63,7 @@ class LiveGateway:
                 temperature=request.temperature,
                 effort=request.effort,
                 tool_choice=request.tool_choice,
+                cache=request.cache,
             )
         except Exception as exc:
             exc.instance, exc.step = instance, step  # lets replay match the recorded failure
@@ -81,6 +82,16 @@ class LiveGateway:
         return response
 
 
+@dataclass(frozen=True)
+class LoopGuards:
+    """M6 loop and tool guards (D115, D116); the defaults are the accepted M5 behavior."""
+
+    stall_steps: int | None = None  # D115: force the final step after N no-progress steps
+    empty_reply: bool = False  # D115: an empty reply gets the final-step guard, not a retry
+    unknown_tool_hint: bool = False  # D115: say how to answer when a tool name does not exist
+    cache_roles: frozenset[str] = frozenset()  # D116: roles whose requests use prompt caching
+
+
 @dataclass
 class RunContext:
     hub: ToolHub
@@ -88,6 +99,7 @@ class RunContext:
     recorder: Recorder
     budget: RunBudget
     ledger: Ledger = field(default_factory=Ledger)
+    guards: LoopGuards = field(default_factory=LoopGuards)
     tool_counters: dict[str, int] = field(default_factory=lambda: defaultdict(int))
     # Set when a budget stop was turned into a finalized answer (D073); stored in runs.error.
     budget_finalized: dict | None = None

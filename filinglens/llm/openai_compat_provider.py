@@ -107,6 +107,7 @@ class OpenAICompatProvider:
         temperature: float | None = None,
         effort: str | None = None,  # Anthropic-only; ignored here.
         tool_choice: str | None = None,
+        cache: bool = False,  # Anthropic prompt caching (D116); ignored here.
     ) -> LLMResponse:
         params: dict[str, Any] = {
             "model": model,

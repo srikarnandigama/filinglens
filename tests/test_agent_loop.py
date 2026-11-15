@@ -331,7 +331,9 @@ async def test_final_step_disables_tools_and_asks_for_the_final_json():
 def test_request_fingerprint_is_unchanged_without_tool_choice():
     base = {"provider": "anthropic", "model": "m", "system": "s", "messages": [], "max_tokens": 9}
     plain = LLMRequest(**base)
-    legacy = {k: v for k, v in plain.model_dump(mode="json").items() if k != "tool_choice"}
+    legacy = {  # cache (D116) is a later field, excluded when off like tool_choice
+        k: v for k, v in plain.model_dump(mode="json").items() if k not in ("tool_choice", "cache")
+    }
     assert plain.fingerprint() == canonical_sha256(legacy)  # pre-D068 traces still replay
     assert LLMRequest(**base, tool_choice="none").fingerprint() != plain.fingerprint()
 

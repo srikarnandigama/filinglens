@@ -216,6 +216,11 @@ async def collect(config_paths: list[Path]) -> dict[str, Any]:
         questions = load_questions(cfg)
         result = await Runner(cfg, replay_deps(cfg), replay_only=True).run()
         for system_id, records in result["records"].items():
+            if cfg.split == "explanatory_dev":  # D120: mechanics only, never scored
+                out.setdefault("explanatory_dev", {}).setdefault(system_id, {}).update(
+                    {r["question_id"]: r for r in records}
+                )
+                continue
             if cfg.split == "handwritten":  # free text: judged (D093), not numerically scored
                 out.setdefault("handwritten_questions", {}).update({q["id"]: q for q in questions})
                 out.setdefault("handwritten", {}).setdefault(system_id, {}).update(
@@ -619,11 +624,9 @@ def render(data: dict[str, Any], system_id: str = "system") -> str:
     return "\n".join(parts)
 
 
-def main(argv: list[str] | None = None) -> None:
-    parser = argparse.ArgumentParser(description="Render evals/results/report.md from the cache.")
-    parser.add_argument("configs", nargs="+", type=Path)
-    args = parser.parse_args(argv)
-    data = asyncio.run(collect(args.configs))
+def build_report(configs: list[Path]) -> str:
+    """The report text, from cached records and judge results only (no API calls)."""
+    data = asyncio.run(collect(configs))
     from evals import judge
     from evals.runner import SystemConfig, resolve_model
     from filinglens.agents.settings import RuntimeSettings
@@ -641,7 +644,14 @@ def main(argv: list[str] | None = None) -> None:
     data["batch_multiplier"] = tomllib.loads(PRICING_PATH.read_text(encoding="utf-8"))["eval"][
         "batch_multiplier"
     ]
-    REPORT_PATH.write_text(render(data), encoding="utf-8")
+    return render(data)
+
+
+def main(argv: list[str] | None = None) -> None:
+    parser = argparse.ArgumentParser(description="Render evals/results/report.md from the cache.")
+    parser.add_argument("configs", nargs="+", type=Path)
+    args = parser.parse_args(argv)
+    REPORT_PATH.write_text(build_report(args.configs), encoding="utf-8")
     print(f"wrote {REPORT_PATH}")
 
 

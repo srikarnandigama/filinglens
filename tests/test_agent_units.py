@@ -389,6 +389,8 @@ def test_cli_preflight_reports_missing_models_and_prices(monkeypatch, capsys):
     import filinglens.agents.settings as settings_module
     from filinglens.cli import main
 
+    for name in ("PLANNER_MODEL", "WORKER_MODEL", "VERIFIER_MODEL", "OPEN_MODEL"):
+        monkeypatch.delenv(name, raising=False)  # CI sets public model IDs in the environment
     base = RuntimeSettings(_env_file=None, sec_user_agent="FilingLens tests test@example.org")
     monkeypatch.setattr(settings_module, "RuntimeSettings", lambda: base)
     assert main(["ask", "q?"]) == 1

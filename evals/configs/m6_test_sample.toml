@@ -1,0 +1,22 @@
+# D2: M6 system on the frozen 50-question test sample (D121). M6 estimate $4.50 + $1.00.
+name = "m6-test-sample"
+budget = "m6"
+split = "test"
+sample = "m6_sample_50"
+seed = 20261109
+concurrency = 2
+spend_cap_usd = "5.50"
+
+[[systems]]
+id = "m6"
+kind = "system"
+max_cost_usd = "0.50"
+
+[systems.flags]
+budget_weighting = "input_price"   # D113
+finalize_without_draft = true      # D114
+stall_guard_steps = 2              # D115
+empty_reply_guard = true           # D115
+unknown_tool_hint = true           # D115
+prompt_caching = true              # D116
+# summary_cited_values (D117) is added only if the student keeps the rule after the dev check.

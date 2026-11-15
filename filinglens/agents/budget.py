@@ -1,5 +1,6 @@
-"""Run-wide token, cost and step limits shared by every agent instance (D060)."""
+"""Run-wide token, cost and step limits shared by every agent instance (D060, D113)."""
 
+import math
 from decimal import Decimal
 
 from filinglens.agents.tracing import RunTotals
@@ -14,16 +15,28 @@ class BudgetExceeded(RuntimeError):
 
 
 class RunBudget:
-    """Checked before every LLM call and updated after it; overshoot is at most one call."""
+    """Checked before every LLM call and updated after it; overshoot is at most one call.
+
+    With a weight reference model (D113), each call's tokens (all four kinds) count times
+    input_price(call model) / input_price(reference model): calls on the reference model count
+    exactly as before, and a model with 1/20 of its input price counts 1/20. Totals stay raw.
+    """
 
     def __init__(
-        self, *, max_tokens: int, prices: PriceTable, max_cost_usd: Decimal | None = None
+        self,
+        *,
+        max_tokens: int,
+        prices: PriceTable,
+        max_cost_usd: Decimal | None = None,
+        weight_reference: str | None = None,
     ) -> None:
         self.max_tokens = max_tokens
         self.max_cost_usd = max_cost_usd
         self.prices = prices
+        self.weight_reference = weight_reference
         self.totals = RunTotals()
-        # Largest single-call usage (all token kinds) per role, for revision reservations (D072).
+        self.weighted = Decimal(0)
+        # Largest single-call usage (budget units) per role, for revision reservations (D072).
         self.max_call_tokens: dict[str, int] = {}
 
     @property
@@ -32,13 +45,24 @@ class RunBudget:
 
     @property
     def used_tokens(self) -> int:
+        if self.weight_reference is not None:
+            return math.ceil(self.weighted)
         t = self.totals
         return t.input_tokens + t.output_tokens + t.cache_read_tokens + t.cache_write_tokens
 
+    def weight(self, model: str) -> Decimal:
+        if self.weight_reference is None:
+            return Decimal(1)
+        reference = self.prices.prices[self.weight_reference].input_per_mtok
+        return self.prices.prices[model].input_per_mtok / reference
+
     def check_before_call(self) -> None:
         if self.used_tokens >= self.max_tokens:
+            weighted = " price-weighted" if self.weight_reference is not None else ""
             raise BudgetExceeded(
-                "tokens", f"Run used {self.used_tokens} tokens of MAX_RUN_TOKENS={self.max_tokens}."
+                "tokens",
+                f"Run used {self.used_tokens}{weighted} tokens of "
+                f"MAX_RUN_TOKENS={self.max_tokens}.",
             )
         if self.max_cost_usd is not None and self.totals.cost_usd >= self.max_cost_usd:
             raise BudgetExceeded(
@@ -47,8 +71,10 @@ class RunBudget:
 
     def add(self, model: str, usage: Usage, role: str | None = None) -> Decimal:
         cost = self.prices.cost(model, usage)
+        counted = usage.total * self.weight(model)
+        self.weighted += counted
         if role is not None:
-            self.max_call_tokens[role] = max(self.max_call_tokens.get(role, 0), usage.total)
+            self.max_call_tokens[role] = max(self.max_call_tokens.get(role, 0), math.ceil(counted))
         t = self.totals
         t.input_tokens += usage.input_tokens
         t.output_tokens += usage.output_tokens

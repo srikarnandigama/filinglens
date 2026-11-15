@@ -177,13 +177,15 @@ def judge_items(
     records: dict[str, list[dict[str, Any]]],
     passages: dict[str, str],
     model: str,
+    systems: tuple[str, ...] = JUDGED_SYSTEMS,
+    claim_systems: tuple[str, ...] = ("system",),
 ) -> list[dict[str, Any]]:
     """Rubric items for each judged system's handwritten answers, then one claim item per system
     text claim that string matching did not already support (D092). Runs without an answer are
     not judged; the report scores them 1 (D108)."""
     by_q = {q["id"]: q for q in questions}
     items = []
-    for sid in JUDGED_SYSTEMS:
+    for sid in systems:
         for rec in records.get(sid, []):
             q = by_q[rec["question_id"]]
             answer = (rec.get("prediction") or {}).get("text") or ""
@@ -201,7 +203,7 @@ def judge_items(
                     "params": rubric_params(model, q["question"], q["reference_answer"], answer),
                 }
             )
-    for rec in records.get("system", []):
+    for rec in (r for sid in claim_systems for r in records.get(sid, [])):
         for claim in (rec.get("citations") or {}).get("text_pending_judge", []):
             texts = [passages[c] for c in claim["chunk_ids"] if c in passages]
             if not texts:
@@ -448,6 +450,9 @@ def main(argv: list[str] | None = None) -> int:
 
     parser = argparse.ArgumentParser(description="Run the M5 judges or write the blind sheet.")
     parser.add_argument("command", choices=["run", "calibrate", "calibrate-v2"])
+    parser.add_argument(
+        "--plan", type=Path, help="M6 judge plan (TOML: name, spend_cap_usd, configs); D123"
+    )
     args = parser.parse_args(argv)
     if args.command == "calibrate-v2":  # no judge scores or API involved (D110)
         sheet = export_v2()
@@ -470,17 +475,29 @@ def main(argv: list[str] | None = None) -> int:
 
     from filinglens.llm.pricing import PRICING_PATH, PriceTable
 
-    cfg = r.load_config(HANDWRITTEN_CONFIG)
-    questions = r.load_questions(cfg)
-    replayed = asyncio.run(r.Runner(cfg, r.replay_deps(cfg, settings), replay_only=True).run())
-    records = replayed["records"]
-    chunk_ids = {
-        c
-        for rec in records.get("system", [])
-        for claim in (rec.get("citations") or {}).get("text_pending_judge", [])
-        for c in claim["chunk_ids"]
-    }
-    items = judge_items(questions, records, _passages(chunk_ids, settings.database_url), model)
+    plan = (
+        tomllib.loads(args.plan.read_text(encoding="utf-8"))
+        if args.plan
+        else {"name": "m5-judges", "spend_cap_usd": str(JUDGE_SPEND_CAP_USD)}
+    )
+    items = []
+    for path in [ROOT / c for c in plan.get("configs", [])] or [HANDWRITTEN_CONFIG]:
+        cfg = r.load_config(path)
+        questions = r.load_questions(cfg)
+        replayed = asyncio.run(r.Runner(cfg, r.replay_deps(cfg, settings), replay_only=True).run())
+        records = replayed["records"]
+        # M5 judges the system and B0 Sonnet; an M6 plan judges every system run in its configs.
+        system_ids = tuple(s.id for s in cfg.systems if s.kind == "system")
+        systems = JUDGED_SYSTEMS if not args.plan else system_ids
+        chunk_ids = {
+            c
+            for sid in system_ids
+            for rec in records.get(sid, [])
+            for claim in (rec.get("citations") or {}).get("text_pending_judge", [])
+            for c in claim["chunk_ids"]
+        }
+        passages = _passages(chunk_ids, settings.database_url)
+        items += judge_items(questions, records, passages, model, systems, system_ids)
     prices = PriceTable.load()
     prices.require({model})
     extra = tomllib.loads(PRICING_PATH.read_text(encoding="utf-8"))
@@ -494,9 +511,10 @@ def main(argv: list[str] | None = None) -> int:
             model_price=prices.prices[model],
             batch_multiplier=Decimal(extra["eval"]["batch_multiplier"]),
             model=model,
+            cap=Decimal(plan["spend_cap_usd"]),
         )
     )
-    summary = {"name": "m5-judges"} | out["summary"]
+    summary = {"name": plan["name"]} | out["summary"]
     r.write_summary({"summary": summary})
     print(json.dumps(summary, indent=2))
     return 0

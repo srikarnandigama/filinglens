@@ -1,0 +1,720 @@
+{
+ "dev_runs": 100,
+ "drafts_rebuilt": 100,
+ "summary_failures_off": 17,
+ "cleared_on": 16,
+ "partly_cleared_on": 1,
+ "newly_accepted_numbers": [
+  {
+   "question_id": "q_e83eff813fad42ba",
+   "number": "5.48",
+   "matched_cited_value": "5484000000",
+   "summary_context": "UnitedHealth reported net income of about $5.48 billion in fiscal Q2 2026 (April 1 to June 30 2026)."
+  },
+  {
+   "question_id": "q_4be70805a500b4fd",
+   "number": "7.38",
+   "matched_cited_value": "7377500000",
+   "summary_context": "s average quarterly R&D expense over fiscal 2024 was about $7.38 billion. That is the mean of the four quarters: $6.659 bill"
+  },
+  {
+   "question_id": "q_3590cb9aad9a3d24",
+   "number": "25348000000",
+   "matched_cited_value": "25348000000",
+   "summary_context": "al Q4 2025 (Oct 1 to Dec 31 2025) was about $25.35 billion (25348000000 USD). This figure is derived not directly reported."
+  },
+  {
+   "question_id": "q_c4a25f7d0b813cf1",
+   "number": "4.98",
+   "matched_cited_value": "4977750000",
+   "summary_context": " average quarterly gross profit over fiscal 2026 was about $4.98 billion based on quarterly gross profit of $4.943 billion i"
+  },
+  {
+   "question_id": "q_3f343d61390c4876",
+   "number": "6.50",
+   "matched_cited_value": "6501000000",
+   "summary_context": " income in fiscal Q4 2025 (Oct 1 to Dec 31 2025) was about $6.50 billion. This is a derived value: full-year net income of $"
+  },
+  {
+   "question_id": "q_77bcab10ebef85d2",
+   "number": "10.97",
+   "matched_cited_value": "10968000000",
+   "summary_context": "s average quarterly R&D expense over fiscal 2024 was about $10.97 billion (mean of $9.978B $10.537B $11.177B and $12.18B). Ex"
+  },
+  {
+   "question_id": "q_2e3b62ca92707034",
+   "number": "3.982",
+   "matched_cited_value": "3982000000",
+   "summary_context": "e for fiscal Q3 2025 (quarter ended September 26 2025) was $3.982 billion."
+  },
+  {
+   "question_id": "q_b5632fcdd25ad8e6",
+   "number": "5.95",
+   "matched_cited_value": "5945750000",
+   "summary_context": "e quarterly capital expenditures in fiscal 2025 were about $5.95 billion. The four quarters were Q1 $4.676 billion Q2 $5.831"
+  },
+  {
+   "question_id": "q_a3e48fcf36b41d1f",
+   "number": "84.29",
+   "matched_cited_value": "84293000000",
+   "summary_context": "abet's operating income rose about 33.3% from fiscal 2023 ($84.29 billion) to fiscal 2024 ($112.39 billion) an increase of ab"
+  },
+  {
+   "question_id": "q_46900184fdb25501",
+   "number": "67.31",
+   "matched_cited_value": "67307000000",
+   "summary_context": "bout $75.79 billion. This is the mean of four quarters: Q1 $67.31 billion Q2 $69.60 billion Q3 $70.53 billion and a derived Q"
+  },
+  {
+   "question_id": "q_46900184fdb25501",
+   "number": "69.60",
+   "matched_cited_value": "69597000000",
+   "summary_context": "n. This is the mean of four quarters: Q1 $67.31 billion Q2 $69.60 billion Q3 $70.53 billion and a derived Q4 of $95.72 billio"
+  },
+  {
+   "question_id": "q_46900184fdb25501",
+   "number": "70.53",
+   "matched_cited_value": "70527000000",
+   "summary_context": "n of four quarters: Q1 $67.31 billion Q2 $69.60 billion Q3 $70.53 billion and a derived Q4 of $95.72 billion."
+  },
+  {
+   "question_id": "q_46900184fdb25501",
+   "number": "95.72",
+   "matched_cited_value": "95723000000",
+   "summary_context": "on Q2 $69.60 billion Q3 $70.53 billion and a derived Q4 of $95.72 billion."
+  },
+  {
+   "question_id": "q_73858c0e94af95d9",
+   "number": "2.17",
+   "matched_cited_value": "2168500000",
+   "summary_context": "s average quarterly R&D expense over fiscal 2024 was about $2.17 billion ($2168500000). This is the mean of the four quarter"
+  },
+  {
+   "question_id": "q_73858c0e94af95d9",
+   "number": "2168500000",
+   "matched_cited_value": "2168500000",
+   "summary_context": "erly R&D expense over fiscal 2024 was about $2.17 billion ($2168500000). This is the mean of the four quarters: $1.875 billion $2."
+  },
+  {
+   "question_id": "q_3fa4b659e085880f",
+   "number": "10.00",
+   "matched_cited_value": "9997000000",
+   "summary_context": "billion. The four quarters ran from $8.15 billion in Q1 to $10.00 billion in Q4. Their sum is $35.56 billion."
+  },
+  {
+   "question_id": "q_3fa4b659e085880f",
+   "number": "35.56",
+   "matched_cited_value": "35562000000",
+   "summary_context": " $8.15 billion in Q1 to $10.00 billion in Q4. Their sum is $35.56 billion."
+  },
+  {
+   "question_id": "q_3fa4b659e085880f",
+   "number": "8.15",
+   "matched_cited_value": "8146000000",
+   "summary_context": "l 2026 was about $8.89 billion. The four quarters ran from $8.15 billion in Q1 to $10.00 billion in Q4. Their sum is $35.56 "
+  },
+  {
+   "question_id": "q_9098a5c5e1013b89",
+   "number": "6.798",
+   "matched_cited_value": "6798000000",
+   "summary_context": "nue in fiscal Q4 2023 (2023-10-02 to 2023-12-31) was about $6.798 billion. This figure is derived: it is full-year cost of re"
+  },
+  {
+   "question_id": "q_7c60d7be7f66b1ca",
+   "number": "3.15",
+   "matched_cited_value": "3153250000",
+   "summary_context": "rovided by operating activities over fiscal 2025 was about $3.15 billion. The four quarterly values were Q1 -$2.184 billion "
+  },
+  {
+   "question_id": "q_abb9f71b47a16022",
+   "number": "4.01",
+   "matched_cited_value": "4011250000",
+   "summary_context": "'s average quarterly net income over fiscal 2026 was about $4.01 billion. The four quarters were $4.75 billion $4.319 billio"
+  },
+  {
+   "question_id": "q_d871d3c484a483fb",
+   "number": "14.81",
+   "matched_cited_value": "14812000000",
+   "summary_context": "'s average quarterly net income over fiscal 2024 was about $14.81 billion. The four quarters were Q1 $10.431 billion Q2 $13.4"
+  },
+  {
+   "question_id": "q_3c0eb35a27c1c3b7",
+   "number": "20.41",
+   "matched_cited_value": "20406000000",
+   "summary_context": "bout $24.46 billion. This is the mean of four quarters: Q1 $20.41 billion Q2 $22.57 billion Q3 $26.16 billion and Q4 $28.72 b"
+  },
+  {
+   "question_id": "q_3c0eb35a27c1c3b7",
+   "number": "22.57",
+   "matched_cited_value": "22574000000",
+   "summary_context": "n. This is the mean of four quarters: Q1 $20.41 billion Q2 $22.57 billion Q3 $26.16 billion and Q4 $28.72 billion."
+  },
+  {
+   "question_id": "q_3c0eb35a27c1c3b7",
+   "number": "26.16",
+   "matched_cited_value": "26156000000",
+   "summary_context": "n of four quarters: Q1 $20.41 billion Q2 $22.57 billion Q3 $26.16 billion and Q4 $28.72 billion."
+  },
+  {
+   "question_id": "q_3c0eb35a27c1c3b7",
+   "number": "28.72",
+   "matched_cited_value": "28723000000",
+   "summary_context": " $20.41 billion Q2 $22.57 billion Q3 $26.16 billion and Q4 $28.72 billion."
+  }
+ ],
+ "rows": [
+  {
+   "question_id": "q_670744f4c0fe2693",
+   "draft": true,
+   "off": []
+  },
+  {
+   "question_id": "q_9ddf5aa99143fa50",
+   "draft": true,
+   "off": []
+  },
+  {
+   "question_id": "q_e83eff813fad42ba",
+   "draft": true,
+   "off": [
+    "summary numbers ['5.48'] do not appear in any claim"
+   ],
+   "on": []
+  },
+  {
+   "question_id": "q_f8e25d977b3e0861",
+   "draft": true,
+   "off": []
+  },
+  {
+   "question_id": "q_d452cb7e285d9216",
+   "draft": true,
+   "off": []
+  },
+  {
+   "question_id": "q_4be70805a500b4fd",
+   "draft": true,
+   "off": [
+    "summary numbers ['7.38'] do not appear in any claim"
+   ],
+   "on": []
+  },
+  {
+   "question_id": "q_c946f038129561dc",
+   "draft": true,
+   "off": []
+  },
+  {
+   "question_id": "q_46743110976aa105",
+   "draft": true,
+   "off": []
+  },
+  {
+   "question_id": "q_3590cb9aad9a3d24",
+   "draft": true,
+   "off": [
+    "summary numbers ['25348000000'] do not appear in any claim"
+   ],
+   "on": []
+  },
+  {
+   "question_id": "q_ad673c215feeacfa",
+   "draft": true,
+   "off": []
+  },
+  {
+   "question_id": "q_851faf1f3bed1406",
+   "draft": true,
+   "off": []
+  },
+  {
+   "question_id": "q_1bbf56b4aaf27a3c",
+   "draft": true,
+   "off": []
+  },
+  {
+   "question_id": "q_c4a25f7d0b813cf1",
+   "draft": true,
+   "off": [
+    "summary numbers ['4.98'] do not appear in any claim"
+   ],
+   "on": []
+  },
+  {
+   "question_id": "q_07f498bc944afa95",
+   "draft": true,
+   "off": []
+  },
+  {
+   "question_id": "q_e138e80314a99dcf",
+   "draft": true,
+   "off": []
+  },
+  {
+   "question_id": "q_3f343d61390c4876",
+   "draft": true,
+   "off": [
+    "summary numbers ['22.343', '28.844', '6.50'] do not appear in any claim"
+   ],
+   "on": [
+    "summary numbers ['22.343', '28.844'] do not appear in any claim"
+   ]
+  },
+  {
+   "question_id": "q_baac18187113aac1",
+   "draft": true,
+   "off": []
+  },
+  {
+   "question_id": "q_394bab0714da989f",
+   "draft": true,
+   "off": []
+  },
+  {
+   "question_id": "q_3996fe54c6e8acb4",
+   "draft": true,
+   "off": []
+  },
+  {
+   "question_id": "q_77bcab10ebef85d2",
+   "draft": true,
+   "off": [
+    "summary numbers ['10.97'] do not appear in any claim"
+   ],
+   "on": []
+  },
+  {
+   "question_id": "q_719c211db302d547",
+   "draft": true,
+   "off": []
+  },
+  {
+   "question_id": "q_3a6fd3c6896f7334",
+   "draft": true,
+   "off": []
+  },
+  {
+   "question_id": "q_b926340b9c51c5aa",
+   "draft": true,
+   "off": []
+  },
+  {
+   "question_id": "q_2e3b62ca92707034",
+   "draft": true,
+   "off": [
+    "summary numbers ['3.982'] do not appear in any claim"
+   ],
+   "on": []
+  },
+  {
+   "question_id": "q_ef9f92a3e6d7bef1",
+   "draft": true,
+   "off": []
+  },
+  {
+   "question_id": "q_2a8e1647b9917f03",
+   "draft": true,
+   "off": []
+  },
+  {
+   "question_id": "q_b5632fcdd25ad8e6",
+   "draft": true,
+   "off": [
+    "summary numbers ['5.95'] do not appear in any claim"
+   ],
+   "on": []
+  },
+  {
+   "question_id": "q_a3e48fcf36b41d1f",
+   "draft": true,
+   "off": [
+    "summary numbers ['84.29'] do not appear in any claim"
+   ],
+   "on": []
+  },
+  {
+   "question_id": "q_3d4d24ff11b0b383",
+   "draft": true,
+   "off": []
+  },
+  {
+   "question_id": "q_60e40e5060b3e2f4",
+   "draft": true,
+   "off": []
+  },
+  {
+   "question_id": "q_f1e15b3bb08a3e6d",
+   "draft": true,
+   "off": []
+  },
+  {
+   "question_id": "q_e1e3ab1275305d28",
+   "draft": true,
+   "off": []
+  },
+  {
+   "question_id": "q_e493e29a4eb83855",
+   "draft": true,
+   "off": []
+  },
+  {
+   "question_id": "q_46900184fdb25501",
+   "draft": true,
+   "off": [
+    "summary numbers ['67.31', '69.60', '70.53', '95.72'] do not appear in any claim"
+   ],
+   "on": []
+  },
+  {
+   "question_id": "q_1c167361a24a144f",
+   "draft": true,
+   "off": []
+  },
+  {
+   "question_id": "q_7b236044fab17384",
+   "draft": true,
+   "off": []
+  },
+  {
+   "question_id": "q_86d025b5a2decba6",
+   "draft": true,
+   "off": []
+  },
+  {
+   "question_id": "q_55bb20c1a4c4f7dd",
+   "draft": true,
+   "off": []
+  },
+  {
+   "question_id": "q_42b1a3f2a4a33b26",
+   "draft": true,
+   "off": []
+  },
+  {
+   "question_id": "q_03edb50e35c10d9d",
+   "draft": true,
+   "off": []
+  },
+  {
+   "question_id": "q_73858c0e94af95d9",
+   "draft": true,
+   "off": [
+    "summary numbers ['2.17', '2168500000'] do not appear in any claim"
+   ],
+   "on": []
+  },
+  {
+   "question_id": "q_b9e9ac84e80fb875",
+   "draft": true,
+   "off": []
+  },
+  {
+   "question_id": "q_f78148c97dd66452",
+   "draft": true,
+   "off": []
+  },
+  {
+   "question_id": "q_5b1d4e9dd0f99cd2",
+   "draft": true,
+   "off": []
+  },
+  {
+   "question_id": "q_ec5863361bd969ec",
+   "draft": true,
+   "off": []
+  },
+  {
+   "question_id": "q_444721346e1e545a",
+   "draft": true,
+   "off": []
+  },
+  {
+   "question_id": "q_c8df38906175bd9b",
+   "draft": true,
+   "off": []
+  },
+  {
+   "question_id": "q_3fa4b659e085880f",
+   "draft": true,
+   "off": [
+    "summary numbers ['10.00', '35.56', '8.15'] do not appear in any claim"
+   ],
+   "on": []
+  },
+  {
+   "question_id": "q_0b550c55719ea51c",
+   "draft": true,
+   "off": []
+  },
+  {
+   "question_id": "q_e3e4d33105826da6",
+   "draft": true,
+   "off": []
+  },
+  {
+   "question_id": "q_9098a5c5e1013b89",
+   "draft": true,
+   "off": [
+    "summary numbers ['6.798'] do not appear in any claim"
+   ],
+   "on": []
+  },
+  {
+   "question_id": "q_96da66b22e6c7980",
+   "draft": true,
+   "off": []
+  },
+  {
+   "question_id": "q_a55c87278924abc0",
+   "draft": true,
+   "off": []
+  },
+  {
+   "question_id": "q_48ed91a6499c0692",
+   "draft": true,
+   "off": []
+  },
+  {
+   "question_id": "q_7c60d7be7f66b1ca",
+   "draft": true,
+   "off": [
+    "summary numbers ['3.15'] do not appear in any claim"
+   ],
+   "on": []
+  },
+  {
+   "question_id": "q_ffc34cfeed5e806c",
+   "draft": true,
+   "off": []
+  },
+  {
+   "question_id": "q_1b5e88ee6986a52e",
+   "draft": true,
+   "off": []
+  },
+  {
+   "question_id": "q_7ec5fcebfbff06c2",
+   "draft": true,
+   "off": []
+  },
+  {
+   "question_id": "q_36a1a31ec8c5059a",
+   "draft": true,
+   "off": []
+  },
+  {
+   "question_id": "q_af551fb3266d13ca",
+   "draft": true,
+   "off": []
+  },
+  {
+   "question_id": "q_c5b2d0b1b37b0c28",
+   "draft": true,
+   "off": []
+  },
+  {
+   "question_id": "q_3d27c0433d6c37bf",
+   "draft": true,
+   "off": []
+  },
+  {
+   "question_id": "q_765242a77f475262",
+   "draft": true,
+   "off": []
+  },
+  {
+   "question_id": "q_26859f7f306d78a5",
+   "draft": true,
+   "off": []
+  },
+  {
+   "question_id": "q_a0ce3b84e8357738",
+   "draft": true,
+   "off": []
+  },
+  {
+   "question_id": "q_a11e75902fb7dc3e",
+   "draft": true,
+   "off": []
+  },
+  {
+   "question_id": "q_b69515396d29fd65",
+   "draft": true,
+   "off": []
+  },
+  {
+   "question_id": "q_41751b13fc460211",
+   "draft": true,
+   "off": []
+  },
+  {
+   "question_id": "q_a3b73021b0b6fe35",
+   "draft": true,
+   "off": []
+  },
+  {
+   "question_id": "q_d0059e5f9747af21",
+   "draft": true,
+   "off": []
+  },
+  {
+   "question_id": "q_0734cc0c0ec32986",
+   "draft": true,
+   "off": []
+  },
+  {
+   "question_id": "q_884ae329b7bf53df",
+   "draft": true,
+   "off": []
+  },
+  {
+   "question_id": "q_094f0d676a1c9cb6",
+   "draft": true,
+   "off": []
+  },
+  {
+   "question_id": "q_b1071370920b96d5",
+   "draft": true,
+   "off": []
+  },
+  {
+   "question_id": "q_34b30c390e5c3178",
+   "draft": true,
+   "off": []
+  },
+  {
+   "question_id": "q_abb9f71b47a16022",
+   "draft": true,
+   "off": [
+    "summary numbers ['4.01'] do not appear in any claim"
+   ],
+   "on": []
+  },
+  {
+   "question_id": "q_f4ee13ab9c09d854",
+   "draft": true,
+   "off": []
+  },
+  {
+   "question_id": "q_6026c85cf3d26dd3",
+   "draft": true,
+   "off": []
+  },
+  {
+   "question_id": "q_8314891f715b9836",
+   "draft": true,
+   "off": []
+  },
+  {
+   "question_id": "q_151b155207ec6a38",
+   "draft": true,
+   "off": []
+  },
+  {
+   "question_id": "q_322641d86b3f1994",
+   "draft": true,
+   "off": []
+  },
+  {
+   "question_id": "q_419ccfb8600e5b19",
+   "draft": true,
+   "off": []
+  },
+  {
+   "question_id": "q_d871d3c484a483fb",
+   "draft": true,
+   "off": [
+    "summary numbers ['14.81'] do not appear in any claim"
+   ],
+   "on": []
+  },
+  {
+   "question_id": "q_e93dbbc022f405c5",
+   "draft": true,
+   "off": []
+  },
+  {
+   "question_id": "q_5875490e664eece7",
+   "draft": true,
+   "off": []
+  },
+  {
+   "question_id": "q_ca31233b54ba7ab4",
+   "draft": true,
+   "off": []
+  },
+  {
+   "question_id": "q_4c12f14ae2695287",
+   "draft": true,
+   "off": []
+  },
+  {
+   "question_id": "q_b5b05b4ea313ad8f",
+   "draft": true,
+   "off": []
+  },
+  {
+   "question_id": "q_6aebeb0b5f23621c",
+   "draft": true,
+   "off": []
+  },
+  {
+   "question_id": "q_3c0eb35a27c1c3b7",
+   "draft": true,
+   "off": [
+    "summary numbers ['20.41', '22.57', '26.16', '28.72'] do not appear in any claim"
+   ],
+   "on": []
+  },
+  {
+   "question_id": "q_dd1dc41e3efe74ee",
+   "draft": true,
+   "off": []
+  },
+  {
+   "question_id": "q_c3a7af5a9ef432ad",
+   "draft": true,
+   "off": []
+  },
+  {
+   "question_id": "q_a7fbfb09c4514dd0",
+   "draft": true,
+   "off": []
+  },
+  {
+   "question_id": "q_128ed8916a37fb02",
+   "draft": true,
+   "off": []
+  },
+  {
+   "question_id": "q_29dcb9bb771787b1",
+   "draft": true,
+   "off": []
+  },
+  {
+   "question_id": "q_9f3f2589b6a4ddce",
+   "draft": true,
+   "off": []
+  },
+  {
+   "question_id": "q_8c1190cdd2d8d97f",
+   "draft": true,
+   "off": []
+  },
+  {
+   "question_id": "q_7277cf2ff74513ec",
+   "draft": true,
+   "off": []
+  },
+  {
+   "question_id": "q_48beb6bcd53a9d89",
+   "draft": true,
+   "off": []
+  },
+  {
+   "question_id": "q_860cad39f1594176",
+   "draft": true,
+   "off": []
+  }
+ ]
+}

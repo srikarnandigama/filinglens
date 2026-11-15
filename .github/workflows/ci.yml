@@ -1,0 +1,76 @@
+# FilingLens CI (SPEC §14, D122): lint, format, the offline test suite and the replayed eval
+# smoke test. No secrets: there is no API key, database, .env or model download in CI.
+#
+# Tests skipped here by their existing gates: 72 skipped, 237 run (clean-checkout dry run on
+# 2026-11-12, no data/, no .env, no torch/CUDA; see docs/M6_PHASE_B.md):
+#   FILINGLENS_TEST_DB=1 unset (PostgreSQL, real MCP servers) - 46 tests:
+#     test_mcp_edgar 23, test_orchestrator 7, test_database 4, test_mcp_client 3,
+#     test_retrieval_database 2, test_tracing_replay 2, test_chunk_rebuild 1,
+#     test_corpus_v2_database 1, test_embedding_resume 1, test_eval_generate 1, test_eval_runner 1
+#   raw SEC snapshot data/raw absent - test_corpus_v2 21
+#   pinned model tokenizers data/models absent - test_parsing_chunking 3
+#   FILINGLENS_TEST_CORPUS_REPLAY unset (full-corpus replay) - test_chunk_replay 1
+#   FILINGLENS_LIVE_LLM unset (live LLM calls cost money) - live/test_live_smoke 1
+name: ci
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+env:
+  # Public model IDs, not secrets: they are part of the eval cache key (D090, D098), and model
+  # IDs come only from environment variables.
+  PLANNER_MODEL: claude-sonnet-5-5
+  WORKER_MODEL: claude-haiku-5-5
+  VERIFIER_MODEL: claude-sonnet-5-5
+  BASELINE_MODELS: claude-sonnet-5-5,claude-opus-5-5,claude-fable-5-2
+  SEC_USER_AGENT: FilingLens CI ci@example.org  # required by Settings; CI never calls the SEC
+  HF_HUB_OFFLINE: "1"
+  TRANSFORMERS_OFFLINE: "1"
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          version: "0.13.1"
+          enable-cache: true
+      - name: Python 3.12.15
+        run: uv python install 3.12.15
+      - name: Install (locked; without torch and CUDA, which no CI test loads)
+        run: >-
+          uv sync --frozen --python 3.12.15
+          --no-install-package torch
+          --no-install-package triton
+          --no-install-package cuda-bindings
+          --no-install-package cuda-pathfinder
+          --no-install-package cuda-toolkit
+          --no-install-package nvidia-cublas
+          --no-install-package nvidia-cuda-cupti
+          --no-install-package nvidia-cuda-nvrtc
+          --no-install-package nvidia-cuda-runtime
+          --no-install-package nvidia-cudnn-cu13
+          --no-install-package nvidia-cufft
+          --no-install-package nvidia-cufile
+          --no-install-package nvidia-curand
+          --no-install-package nvidia-cusolver
+          --no-install-package nvidia-cusparse
+          --no-install-package nvidia-cusparselt-cu13
+          --no-install-package nvidia-nccl-cu13
+          --no-install-package nvidia-nvjitlink
+          --no-install-package nvidia-nvshmem-cu13
+          --no-install-package nvidia-nvtx
+      - name: ruff check
+        run: uv run --no-sync ruff check .
+      - name: ruff format --check
+        run: uv run --no-sync ruff format --check .
+      - name: pytest (DB, model and live tests skipped by their gates)
+        run: uv run --no-sync pytest -q -rs
+      - name: Eval smoke test (replays committed cache records)
+        run: uv run --no-sync python -m evals.smoke evals/configs/ci_smoke.toml

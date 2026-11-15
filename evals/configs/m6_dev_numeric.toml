@@ -1,0 +1,60 @@
+# C1: M6 system on 35 dev-pilot numeric questions (5 per template, seeded,
+# `python -m evals.m6 dev-ids`), paired with the M5 dev-pilot records. Projection at M5 rates
+# $5.36 (M6 estimate $3.15) + $1.00 in flight (D123).
+name = "m6-dev-numeric"
+budget = "m6"
+split = "dev"
+ids = [
+ "q_1b5e88ee6986a52e",
+ "q_1bbf56b4aaf27a3c",
+ "q_2a8e1647b9917f03",
+ "q_394bab0714da989f",
+ "q_3c0eb35a27c1c3b7",
+ "q_3d4d24ff11b0b383",
+ "q_3fa4b659e085880f",
+ "q_42b1a3f2a4a33b26",
+ "q_46900184fdb25501",
+ "q_48beb6bcd53a9d89",
+ "q_4c12f14ae2695287",
+ "q_55bb20c1a4c4f7dd",
+ "q_60e40e5060b3e2f4",
+ "q_77bcab10ebef85d2",
+ "q_7b236044fab17384",
+ "q_7ec5fcebfbff06c2",
+ "q_860cad39f1594176",
+ "q_9ddf5aa99143fa50",
+ "q_9f3f2589b6a4ddce",
+ "q_a0ce3b84e8357738",
+ "q_af551fb3266d13ca",
+ "q_b1071370920b96d5",
+ "q_b9e9ac84e80fb875",
+ "q_baac18187113aac1",
+ "q_c4a25f7d0b813cf1",
+ "q_c5b2d0b1b37b0c28",
+ "q_c8df38906175bd9b",
+ "q_c946f038129561dc",
+ "q_ca31233b54ba7ab4",
+ "q_dd1dc41e3efe74ee",
+ "q_e138e80314a99dcf",
+ "q_e93dbbc022f405c5",
+ "q_ec5863361bd969ec",
+ "q_f1e15b3bb08a3e6d",
+ "q_f78148c97dd66452"
+]
+seed = 20261109
+concurrency = 2
+spend_cap_usd = "6.50"
+
+[[systems]]
+id = "m6"
+kind = "system"
+max_cost_usd = "0.50"
+
+[systems.flags]
+budget_weighting = "input_price"   # D113
+finalize_without_draft = true      # D114
+stall_guard_steps = 2              # D115
+empty_reply_guard = true           # D115
+unknown_tool_hint = true           # D115
+prompt_caching = true              # D116
+# summary_cited_values (D117) is added only if the student keeps the rule after the dev check.

@@ -1,0 +1,10 @@
+{"id": "xd01", "question": "How did Meta explain the growth in its advertising revenue in 2025?", "split": "explanatory_dev"}
+{"id": "xd02", "question": "According to management, what drove the change in JPMorgan Chase's net interest income in 2025?", "split": "explanatory_dev"}
+{"id": "xd03", "question": "What risks does Tesla's 2025 10-K describe about its dependence on Elon Musk?", "split": "explanatory_dev"}
+{"id": "xd04", "question": "What does Alphabet's 2025 10-K say about the antitrust cases against Google and their possible effects on its business?", "split": "explanatory_dev"}
+{"id": "xd05", "question": "How did Johnson & Johnson explain the change in its MedTech sales in fiscal 2025?", "split": "explanatory_dev"}
+{"id": "xd06", "question": "What did Nike say drove the change in its gross margin in the first quarter of fiscal 2027?", "split": "explanatory_dev"}
+{"id": "xd07", "question": "How did Walmart describe the growth of its advertising business in fiscal 2026?", "split": "explanatory_dev"}
+{"id": "xd08", "question": "How did Disney explain the change in its Experiences segment operating income in fiscal 2025?", "split": "explanatory_dev"}
+{"id": "xd09", "question": "How did Pfizer's risk factors about patent expirations and loss of exclusivity change between its fiscal 2024 and fiscal 2025 10-Ks?", "split": "explanatory_dev"}
+{"id": "xd10", "question": "How did Exxon Mobil and Chevron each explain the change in their upstream earnings in 2025?", "split": "explanatory_dev"}

@@ -1,0 +1,29 @@
+# CI eval smoke test (SPEC §14, D122): `python -m evals.smoke evals/configs/ci_smoke.toml`.
+# Replays committed cached records for 10 questions of the frozen M6 50-question test sample
+# (one per template, then by seeded rank "m6-smoke"); no API key, database or model download.
+# Until the M6 test records exist (Phase D) this replays the accepted M5 system's records; the
+# system entry then switches to the M6 flags and min_accuracy is re-recorded from that replay.
+name = "ci-smoke"
+budget = "none"
+split = "test"
+ids = [
+ "q_1787a5317796857d",
+ "q_1fbc5cdfdda11d47",
+ "q_3baaae1e0112b689",
+ "q_4479c361aa817576",
+ "q_50b3a95c094c89e8",
+ "q_85478121730db4dd",
+ "q_85f4ee6f2b76e33f",
+ "q_bdb92b01c2693e31",
+ "q_bdf40dacce1c7661",
+ "q_f62d2d674eae3a3f",
+]
+seed = 20261109
+concurrency = 1
+spend_cap_usd = "0"
+min_accuracy = "1.0"  # the replayed accuracy when recorded (M5 records: 10/10)
+
+[[systems]]
+id = "system"
+kind = "system"
+max_cost_usd = "0.50"

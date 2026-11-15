@@ -34,6 +34,10 @@ UNTRACED_MESSAGE = (
     "return the Answer now."
 )
 LITERAL = re.compile(r"\d+(?:\.\d+)?")
+UNKNOWN_TOOL_MESSAGE = (  # D115
+    'There is no tool named "{}". Tools only fetch data or calculate. To give your final '
+    "answer, reply with the JSON object as plain text, not as a tool call."
+)
 
 
 def argument_numbers(node: Any, key: str | None = None) -> list[Decimal]:
@@ -105,6 +109,10 @@ class Toolbox:
         # Model-issued successful calls of this agent instance, by (server, tool, canonical
         # args) -> (call_id, computation_id, outcome, part); repeats reuse them (D067).
         self.memo: dict[tuple[str, str, str], tuple[str, str | None, ToolOutcome, Any]] = {}
+        # D115: hashes of successful results this instance received, and whether the last
+        # call_many turn brought anything new (a success that is not a duplicate or a repeat).
+        self.seen_results: set[str] = set()
+        self.last_progress = True
 
     @property
     def specs(self) -> list[ToolSpec]:
@@ -119,6 +127,8 @@ class Toolbox:
         if call.arguments_error:
             return _local_error("INVALID_TOOL_ARGUMENTS", call.arguments_error)
         if call.name not in self.allowed:
+            if self.ctx.guards.unknown_tool_hint and call.name not in self.ctx.hub.specs:
+                return _local_error("TOOL_NOT_ALLOWED", UNKNOWN_TOOL_MESSAGE.format(call.name))
             return _local_error(
                 "TOOL_NOT_ALLOWED", f"{call.name} is not available to the {self.role} role."
             )
@@ -156,10 +166,15 @@ class Toolbox:
         parts: dict[int, ToolResultPart] = {}
         for (index, call, call_id, cid), outcome in zip(prepared, outcomes, strict=True):
             parts[index] = self._finish(call, call_id, cid, outcome)
+        progress = False
         for (index, call, call_id, cid), outcome in zip(prepared, outcomes, strict=True):
             await self._record_result(call, call_id, cid, outcome, parts[index])
             if not outcome.is_error:
                 self.memo[self.memo_key(call)] = (call_id, cid, outcome, parts[index])
+                digest = hashlib.sha256(canonical_json(outcome.structured).encode()).hexdigest()
+                progress = progress or digest not in self.seen_results
+                self.seen_results.add(digest)
+        self.last_progress = progress
         for index, (call_id, key) in sorted(duplicates.items()):
             parts[index] = await self._duplicate(calls[index], call_id, key, first, parts)
         return [parts[index] for index in range(len(calls))]

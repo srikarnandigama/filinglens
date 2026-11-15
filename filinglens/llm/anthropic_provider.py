@@ -23,6 +23,7 @@ STOP_REASONS: dict[str, StopReason] = {
     "max_tokens": "max_tokens",
     "refusal": "refusal",
 }
+EPHEMERAL = {"type": "ephemeral"}  # default 5-minute TTL
 
 
 def to_anthropic_messages(messages: list[Msg]) -> list[dict[str, Any]]:
@@ -98,6 +99,7 @@ class AnthropicProvider:
         temperature: float | None = None,
         effort: str | None = None,
         tool_choice: str | None = None,
+        cache: bool = False,
     ) -> LLMResponse:
         if temperature is not None:
             raise ValueError("API version 2026-10-21 rejects temperature; leave it unset.")
@@ -107,6 +109,11 @@ class AnthropicProvider:
             "messages": to_anthropic_messages(messages),
             "max_tokens": max_tokens,
         }
+        if cache:
+            # D116: an explicit breakpoint after tools + system (shared across runs) and
+            # automatic caching, which moves a breakpoint to the last block as the turn grows.
+            params["system"] = [{"type": "text", "text": system, "cache_control": EPHEMERAL}]
+            params["cache_control"] = EPHEMERAL
         if tools:
             # The tool list stays identical on every step; "none" only forbids new calls (D068).
             params["tools"] = [anthropic_tool(t) for t in tools]

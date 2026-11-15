@@ -1,0 +1,24 @@
+# D5: ablation +rerank (hybrid_rerank, SPEC's full system) on the handwritten 30 (D121).
+# M6 estimate $4.80 + $1.00 in flight.
+name = "m6-handwritten-rerank"
+budget = "m6"
+split = "handwritten"
+sample = "all"
+seed = 20261109
+concurrency = 2
+spend_cap_usd = "6.00"
+
+[[systems]]
+id = "m6-rerank"
+kind = "system"
+max_cost_usd = "0.50"
+
+[systems.flags]
+budget_weighting = "input_price"   # D113
+finalize_without_draft = true      # D114
+stall_guard_steps = 2              # D115
+empty_reply_guard = true           # D115
+unknown_tool_hint = true           # D115
+prompt_caching = true              # D116
+# summary_cited_values (D117) is added only if the student keeps the rule after the dev check.
+retrieval_mode = "hybrid_rerank"

@@ -1,0 +1,24 @@
+# D7 (conditional, D123): ablation -rerank (hybrid) on the handwritten 30; runs only if the
+# re-projected total including it is <= $33 and caps (finished steps at actual spend) stay <= $40.
+name = "m6-handwritten-hybrid"
+budget = "m6-conditional"
+split = "handwritten"
+sample = "all"
+seed = 20261109
+concurrency = 2
+spend_cap_usd = "6.25"
+
+[[systems]]
+id = "m6-hybrid"
+kind = "system"
+max_cost_usd = "0.50"
+
+[systems.flags]
+budget_weighting = "input_price"   # D113
+finalize_without_draft = true      # D114
+stall_guard_steps = 2              # D115
+empty_reply_guard = true           # D115
+unknown_tool_hint = true           # D115
+prompt_caching = true              # D116
+# summary_cited_values (D117) is added only if the student keeps the rule after the dev check.
+retrieval_mode = "hybrid"

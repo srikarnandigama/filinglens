@@ -26,3 +26,4 @@ evals/results/*
 !evals/results/retrieval_v2_pool_inventory.json
 evals/*.draft.json
 evals/*.tmp
+!evals/results/m6_summary_rule_dev.json

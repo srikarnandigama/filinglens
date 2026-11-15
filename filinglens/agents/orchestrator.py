@@ -13,7 +13,7 @@ from uuid import UUID, uuid4
 from pydantic import BaseModel, Field
 
 from filinglens.agents.budget import BudgetExceeded, RunBudget
-from filinglens.agents.context import LiveGateway, RunContext
+from filinglens.agents.context import LiveGateway, LoopGuards, RunContext
 from filinglens.agents.ledger import Ledger
 from filinglens.agents.loop import run_agent
 from filinglens.agents.mcp_client import McpHub, ToolHub
@@ -79,6 +79,14 @@ class RunConfig(BaseModel):
     max_concurrency: int = 4
     revision_rounds: int = 2
     max_passage_reads: int = 4  # get_passage calls per filings worker (D074)
+    # M6 changes (D118): every default reproduces the accepted M5 behavior.
+    budget_weighting: Literal["none", "input_price"] = "none"  # D113
+    finalize_without_draft: bool = False  # D114
+    stall_guard_steps: int | None = Field(default=None, ge=1)  # D115
+    empty_reply_guard: bool = False  # D115
+    unknown_tool_hint: bool = False  # D115
+    prompt_caching: bool = False  # D116
+    summary_cited_values: bool = False  # D117
 
 
 class RunResult(BaseModel):
@@ -117,6 +125,28 @@ def resolve_models(cfg: RunConfig, settings: RuntimeSettings) -> dict[str, str]:
 
 def load_prompts() -> dict[str, tuple[str, str]]:
     return {name: load_prompt(name, model) for name, model in PROMPTS.items()}
+
+
+CACHE_ROLES = frozenset({"planner", "analyst", "filings", "data"})  # D116: not the verifier
+
+
+def loop_guards(cfg: RunConfig) -> LoopGuards:
+    return LoopGuards(
+        stall_steps=cfg.stall_guard_steps,
+        empty_reply=cfg.empty_reply_guard,
+        unknown_tool_hint=cfg.unknown_tool_hint,
+        cache_roles=CACHE_ROLES if cfg.prompt_caching else frozenset(),
+    )
+
+
+def run_budget(cfg: RunConfig, prices: PriceTable, models: dict[str, str]) -> RunBudget:
+    """D113: with input-price weighting, the planner model is the unit (weight 1)."""
+    return RunBudget(
+        max_tokens=cfg.max_run_tokens,
+        prices=prices,
+        max_cost_usd=cfg.max_cost_usd,
+        weight_reference=models["planner"] if cfg.budget_weighting == "input_price" else None,
+    )
 
 
 def answer_sha256(answer: Answer) -> str:
@@ -268,10 +298,15 @@ class Verified:
 
 
 def budget_finalize(
-    answer: Answer, ledger: Ledger, use_quant_tools: bool, verified: Verified, kind: str
+    answer: Answer,
+    ledger: Ledger,
+    use_quant_tools: bool,
+    verified: Verified,
+    kind: str,
+    summary_cited_values: bool = False,
 ) -> tuple[Answer, dict[str, list[str]]]:
     """Keep only what passes Stage 1 now and already passed Stage 2 in its exact form (D073)."""
-    checks = deterministic_checks(answer, ledger, use_quant_tools)
+    checks = deterministic_checks(answer, ledger, use_quant_tools, summary_cited_values)
     unverified = "not verified before the run stopped"
     failures: dict[str, list[str]] = {}
     for claim in answer.claims:
@@ -301,9 +336,82 @@ def budget_finalize(
     return Answer.model_validate(final.model_dump()), failures
 
 
+def stopped_without_draft(kind: str) -> Answer:
+    """D114: the explicit answer for a budget stop before any analyst draft exists."""
+    limit = BUDGET_LIMITS.get(kind, kind)
+    return Answer(
+        status="not_available",
+        summary=f"The run stopped at {limit} before an answer could be drafted.",
+        claims=[],
+        caveats=[f"Research was cut short by {limit}; no answer was drafted."],
+    )
+
+
 async def orchestrate(
     ctx: RunContext, question: str, cfg: RunConfig, models: dict[str, str], prompts
 ) -> tuple[Answer, list[dict]]:
+    rec = ctx.recorder
+    try:
+        drafted = await _first_draft(ctx, question, cfg, models, prompts)
+    except BudgetExceeded as exc:
+        if not cfg.finalize_without_draft:
+            raise  # M5 behavior: a budget stop before any draft is a run error
+        answer = stopped_without_draft(exc.kind)
+        ctx.budget_finalized = {
+            "type": "BudgetExceeded",
+            "kind": exc.kind,
+            "message": str(exc),
+            "handled": "stopped_without_draft",
+        }
+        await rec.emit("orchestrator", "budget_stopped_without_draft", ctx.budget_finalized)
+        await rec.emit("analyst", "final", _final_payload(answer))
+        return answer, []
+    if isinstance(drafted, Answer):  # not answerable: the planner's explicit answer
+        return drafted, []
+    answer, evidence, base_task, analyst = drafted
+    verified = Verified(draft=answer)
+    verification_log: list[dict] = []
+    try:
+        answer = await _verify_and_revise(
+            ctx,
+            cfg,
+            models,
+            prompts,
+            question,
+            evidence,
+            base_task,
+            answer,
+            analyst,
+            verified,
+            verification_log,
+        )
+    except BudgetExceeded as exc:  # D073: never discard a draft; keep only verified content
+        draft = verified.draft
+        answer, dropped = budget_finalize(
+            draft, ctx.ledger, cfg.use_quant_tools, verified, exc.kind, cfg.summary_cited_values
+        )
+        ctx.budget_finalized = {
+            "type": "BudgetExceeded",
+            "kind": exc.kind,
+            "message": str(exc),
+            "handled": "budget_finalized",
+        }
+        await rec.emit(
+            "orchestrator",
+            "budget_finalized",
+            {
+                **ctx.budget_finalized,
+                "dropped": dropped,
+                "removed": removed_items(draft, dropped),
+                "kept": [c.id for c in answer.claims],
+            },
+        )
+    await rec.emit("analyst", "final", _final_payload(answer))
+    return answer, verification_log
+
+
+async def _first_draft(ctx: RunContext, question: str, cfg: RunConfig, models, prompts):
+    """Plan, research and the analyst's first draft; or the planner's not-answerable Answer."""
     rec = ctx.recorder
     plan = await run_agent(
         ctx,
@@ -330,7 +438,7 @@ async def orchestrate(
             caveats=[reason],
         )
         await rec.emit("analyst", "final", _final_payload(answer))
-        return answer, []
+        return answer
     results = await _execute_subtasks(ctx, cfg, models, prompts, plan, question)
     evidence = evidence_pack(ctx, plan, results)
     base_task = _analyst_task(question, plan, evidence)
@@ -358,46 +466,8 @@ async def orchestrate(
             )
         return answer
 
-    answer = await analyst(0, base_task)  # no draft yet: a budget stop here is a run error
-    verified = Verified(draft=answer)
-    verification_log: list[dict] = []
-    try:
-        answer = await _verify_and_revise(
-            ctx,
-            cfg,
-            models,
-            prompts,
-            question,
-            evidence,
-            base_task,
-            answer,
-            analyst,
-            verified,
-            verification_log,
-        )
-    except BudgetExceeded as exc:  # D073: never discard a draft; keep only verified content
-        draft = verified.draft
-        answer, dropped = budget_finalize(
-            draft, ctx.ledger, cfg.use_quant_tools, verified, exc.kind
-        )
-        ctx.budget_finalized = {
-            "type": "BudgetExceeded",
-            "kind": exc.kind,
-            "message": str(exc),
-            "handled": "budget_finalized",
-        }
-        await rec.emit(
-            "orchestrator",
-            "budget_finalized",
-            {
-                **ctx.budget_finalized,
-                "dropped": dropped,
-                "removed": removed_items(draft, dropped),
-                "kept": [c.id for c in answer.claims],
-            },
-        )
-    await rec.emit("analyst", "final", _final_payload(answer))
-    return answer, verification_log
+    answer = await analyst(0, base_task)  # the first draft (D073/D114 boundary)
+    return answer, evidence, base_task, analyst
 
 
 async def _verify_and_revise(
@@ -418,7 +488,9 @@ async def _verify_and_revise(
     supported, supported_summaries = verified.claims, verified.summaries
     supported_caveats = verified.caveats
     for round_no in range(cfg.revision_rounds + 1):
-        checks = deterministic_checks(answer, ctx.ledger, cfg.use_quant_tools)
+        checks = deterministic_checks(
+            answer, ctx.ledger, cfg.use_quant_tools, cfg.summary_cited_values
+        )
         failures = {
             cid: r.reasons
             for cid, r in checks.items()
@@ -640,9 +712,13 @@ async def _run(
     config = build_config(cfg, models, prompts, hub, settings, prices)
     await asyncio.to_thread(store.create_run, run_id, question, config)
     recorder = Recorder(store, run_id)
-    budget = RunBudget(max_tokens=cfg.max_run_tokens, prices=prices, max_cost_usd=cfg.max_cost_usd)
+    budget = run_budget(cfg, prices, models)
     ctx = RunContext(
-        hub=hub, gateway=LiveGateway(providers, budget, recorder), recorder=recorder, budget=budget
+        hub=hub,
+        gateway=LiveGateway(providers, budget, recorder),
+        recorder=recorder,
+        budget=budget,
+        guards=loop_guards(cfg),
     )
     answer, error, status, log = None, None, "done", []
     await recorder.emit(

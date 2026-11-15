@@ -210,6 +210,10 @@ def recall_at(gold: list[str], retrieval: dict[str, Any], k: int) -> float:
     return found / min(k * max(1, len(searches)), len(gold)) if gold else float("nan")
 
 
+def stopped_without_draft(error: dict[str, Any] | None) -> bool:
+    return (error or {}).get("handled") == "stopped_without_draft"
+
+
 async def run_system(
     question: dict[str, Any],
     cfg: Any,
@@ -238,13 +242,15 @@ async def run_system(
         "raw_output": result.answer.model_dump(mode="json") if result.answer else None,
         "citations": citation_summary(result.answer, result.ledger, cfg.use_quant_tools),
     }
+    # D114: a budget stop before any draft returns an explicit Answer but is still "no answer".
+    answered = result.answer is not None and not stopped_without_draft(result.error)
     if handwritten:
         _, events = load_run(settings.database_url, result.run_id)
         out["prediction"] = {
             "text": (result.answer.summary + "\n" + "\n".join(c.text for c in result.answer.claims))
-            if result.answer
+            if answered
             else "",
-            "parse_ok": result.answer is not None,
+            "parse_ok": answered,
         }
         out["retrieval"] = retrieval_from_trace(events)
     else:

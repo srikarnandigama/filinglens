@@ -148,7 +148,23 @@ lists. Highlights:
 
 ## CI
 
-CI_RESULT_PLACEHOLDER
+**Green on GitHub** for `cf4bb5b`:
+[run 43973718784](https://github.com/srikarnandigama/filinglens/actions/runs/43973718784).
+All steps passed: install (locked, without torch/CUDA), ruff check, ruff format --check, pytest
+and the eval smoke test (10/10 M6 records replayed, threshold 1.0).
+
+**History.** The Phase B and C commits had failed CI at pytest. Reproducing the run in a Linux
+container found one real Linux-only failure, a hard-coded Windows interpreter path in a stdio
+test, now fixed (D126).
+
+**Local checks before the push:**
+- full pytest with `FILINGLENS_TEST_DB=1`: 308 passed, 2 skipped (the opt-in live LLM and
+  corpus-replay tests);
+- the same CI commands in `python:3.12-slim`: 238 passed, 72 skipped (the gated DB, model, raw
+  data, corpus-replay and live tests; per-module list in the workflow file); smoke test 10/10.
+
+**One GitHub annotation, a warning, not a failure:** `actions/checkout@v4` and
+`astral-sh/setup-uv@v6` target Node.js 20, which GitHub now runs on Node.js 24.
 
 ## Known limitations and what M6 does not show
 

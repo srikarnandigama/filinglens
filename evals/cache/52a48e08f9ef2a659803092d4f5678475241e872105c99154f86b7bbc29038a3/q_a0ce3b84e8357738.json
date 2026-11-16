@@ -1,0 +1,71 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 1,
+  "numeric_valid": 1,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.0386075",
+ "error": null,
+ "finished_at": "2026-11-15T05:13:51.172990+00:00",
+ "latency_ms": 11397,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD",
+  "value": "7563000000"
+ },
+ "question_id": "q_a0ce3b84e8357738",
+ "question_sha": "c1652f0f8700182db076e03d5b82bd837d72b8d789205de675cdeebc13c4d6fb",
+ "raw_output": {
+  "caveats": [
+   "The Q4 2023 value is derived, not directly reported. It is the FY2023 total (24,954,000,000) minus the value for the period ending 2023-10-01 (17,391,000,000)."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "2934"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q4",
+     "fiscal_year": 2023
+    },
+    "text": "Pfizer's cost of revenue in fiscal Q4 2023 was $7.563 billion (derived as FY2023 $24.954 billion less the nine-month year-to-date $17.391 billion).",
+    "ticker": "PFE",
+    "unit": "USD",
+    "value": "7563000000",
+    "value_basis": "fact"
+   }
+  ],
+  "final_claim_id": "c1",
+  "final_unit": "USD",
+  "final_value": "7563000000",
+  "status": "answered",
+  "summary": "Pfizer's cost of revenue for fiscal Q4 2023 (2023-10-02 to 2023-12-31) was about $7.563 billion. This is a derived figure: full-year cost of revenue minus the nine-month year-to-date amount."
+ },
+ "run_id": "b8c06a51-1c4f-4cfa-aaa9-073f5e618801",
+ "run_status": "done",
+ "split": "dev",
+ "started_at": "2026-11-15T05:13:39.736104+00:00",
+ "status": "done",
+ "system_config_hash": "52a48e08f9ef2a659803092d4f5678475241e872105c99154f86b7bbc29038a3",
+ "system_id": "m6",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 18530,
+  "cache_write_tokens": 5361,
+  "input_tokens": 4646,
+  "output_tokens": 1406
+ }
+}

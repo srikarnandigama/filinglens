@@ -186,7 +186,7 @@ def test_m6_caps_fit_the_ceiling_and_cover_their_reservations():
             flags = system.get("flags", {})
             if name != "m6_dev_explanatory_m5":
                 assert flags["budget_weighting"] == "input_price" and flags["prompt_caching"]
-                assert flags["stall_guard_steps"] == 2
+                assert flags["stall_guard_steps"] == 2 and flags["summary_cited_values"]
     judges = configs["m6_judges"]
     assert all((ROOT / c).exists() for c in judges["configs"])
 

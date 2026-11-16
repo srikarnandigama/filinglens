@@ -1,0 +1,71 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 1,
+  "numeric_valid": 1,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.0339982",
+ "error": null,
+ "finished_at": "2026-11-15T05:10:52.274782+00:00",
+ "latency_ms": 10393,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD",
+  "value": "3548000000"
+ },
+ "question_id": "q_baac18187113aac1",
+ "question_sha": "f7d4387b08bda1fb12f30ba258075f1367b42f456915243c1468e4f8274f82e2",
+ "raw_output": {
+  "caveats": [
+   "The figure uses the XBRL concept CostOfGoodsAndServicesSold as reported in Pfizer's filing for the quarter ended March 29, 2026."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "2946"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q1",
+     "fiscal_year": 2026
+    },
+    "text": "Pfizer's cost of revenue for fiscal Q1 2026 (period ended 2026-03-29) was $3.548 billion.",
+    "ticker": "PFE",
+    "unit": "USD",
+    "value": "3548000000",
+    "value_basis": "fact"
+   }
+  ],
+  "final_claim_id": "c1",
+  "final_unit": "USD",
+  "final_value": "3548000000",
+  "status": "answered",
+  "summary": "Pfizer's cost of revenue for fiscal Q1 2026 (January 1 to March 29, 2026) was $3.548 billion."
+ },
+ "run_id": "d18b1dcc-293c-4a32-a39b-e125c00728e7",
+ "run_status": "done",
+ "split": "dev",
+ "started_at": "2026-11-15T05:10:41.846987+00:00",
+ "status": "done",
+ "system_config_hash": "52a48e08f9ef2a659803092d4f5678475241e872105c99154f86b7bbc29038a3",
+ "system_id": "m6",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 25117,
+  "cache_write_tokens": 4905,
+  "input_tokens": 3902,
+  "output_tokens": 1142
+ }
+}

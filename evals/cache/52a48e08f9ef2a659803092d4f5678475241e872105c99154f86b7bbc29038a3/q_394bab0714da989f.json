@@ -1,0 +1,109 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 3,
+  "numeric_valid": 3,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.0435179",
+ "error": null,
+ "finished_at": "2026-11-15T05:11:01.592456+00:00",
+ "latency_ms": 14575,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "32.6229013773"
+ },
+ "question_id": "q_394bab0714da989f",
+ "question_sha": "7a4bf7f47c3ed5a822d283de9e5df9aed52c07b60e7de2960fa36f8adc588c9d",
+ "raw_output": {
+  "caveats": [],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "72"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q3",
+     "fiscal_year": 2026
+    },
+    "text": "Apple's operating income in fiscal Q3 2026 was $35.695 billion.",
+    "ticker": "AAPL",
+    "unit": "USD",
+    "value": "35695000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "18"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q3",
+     "fiscal_year": 2026
+    },
+    "text": "Apple's revenue in fiscal Q3 2026 was $109.417 billion.",
+    "ticker": "AAPL",
+    "unit": "USD",
+    "value": "109417000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_1"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q3",
+     "fiscal_year": 2026
+    },
+    "text": "Apple's operating margin (operating income divided by revenue) in fiscal Q3 2026 was about 32.6%.",
+    "ticker": "AAPL",
+    "unit": "percent",
+    "value": "32.6229013773",
+    "value_basis": "computation"
+   }
+  ],
+  "final_claim_id": "c3",
+  "final_unit": "percent",
+  "final_value": "32.6229013773",
+  "status": "answered",
+  "summary": "Apple's operating margin in fiscal Q3 2026 (quarter ended 2026-06-27) was about 32.6%. Operating income was $35.695 billion on revenue of $109.417 billion."
+ },
+ "run_id": "7aff5f76-8637-4988-8c98-ff88ab748d04",
+ "run_status": "done",
+ "split": "dev",
+ "started_at": "2026-11-15T05:10:46.977864+00:00",
+ "status": "done",
+ "system_config_hash": "52a48e08f9ef2a659803092d4f5678475241e872105c99154f86b7bbc29038a3",
+ "system_id": "m6",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 33089,
+  "cache_write_tokens": 5410,
+  "input_tokens": 4317,
+  "output_tokens": 1805
+ }
+}

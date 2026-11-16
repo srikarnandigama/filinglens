@@ -1,0 +1,132 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 4,
+  "numeric_valid": 4,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.0715794",
+ "error": null,
+ "finished_at": "2026-11-15T05:14:21.007389+00:00",
+ "latency_ms": 20412,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "2.340597255851"
+ },
+ "question_id": "q_c5b2d0b1b37b0c28",
+ "question_sha": "aa5028b3fbd92f5f020761babcc8047815c8184365a05d380fc792026b0fd817",
+ "raw_output": {
+  "caveats": [
+   "The Q4 FY2025 cost of revenue is a derived value: full-year FY2025 ($50,655,000,000) minus the nine months ended 2025-09-30 ($37,975,000,000).",
+   "No filing passages were provided, so no management explanation for the change is given."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3068"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q1",
+     "fiscal_year": 2025
+    },
+    "text": "UNH cost of revenue in fiscal Q1 2025 was $12.39 billion.",
+    "ticker": "UNH",
+    "unit": "USD",
+    "value": "12390000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3071"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q4",
+     "fiscal_year": 2025
+    },
+    "text": "UNH cost of revenue in fiscal Q4 2025 was $12.68 billion (derived as full-year FY2025 minus the nine months ended 2025-09-30).",
+    "ticker": "UNH",
+    "unit": "USD",
+    "value": "12680000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": "value",
+      "kind": "computation",
+      "ref": "cmp_2"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q4",
+     "fiscal_year": 2025
+    },
+    "text": "The increase in cost of revenue from Q1 2025 to Q4 2025 was $290 million.",
+    "ticker": "UNH",
+    "unit": "USD",
+    "value": "290000000",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_1"
+     }
+    ],
+    "id": "c4",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q4",
+     "fiscal_year": 2025
+    },
+    "text": "Cost of revenue increased by about 2.34% from fiscal Q1 2025 to fiscal Q4 2025.",
+    "ticker": "UNH",
+    "unit": "percent",
+    "value": "2.340597255851",
+    "value_basis": "computation"
+   }
+  ],
+  "final_claim_id": "c4",
+  "final_unit": "percent",
+  "final_value": "2.340597255851",
+  "status": "answered",
+  "summary": "UnitedHealth's cost of revenue rose about 2.34% from fiscal Q1 2025 ($12.39 billion) to fiscal Q4 2025 ($12.68 billion). That is an increase of about $290 million. The Q4 figure is derived from annual and nine-month figures."
+ },
+ "run_id": "8286ade8-c381-49ce-9cbe-73a516761885",
+ "run_status": "done",
+ "split": "dev",
+ "started_at": "2026-11-15T05:14:00.553857+00:00",
+ "status": "done",
+ "system_config_hash": "52a48e08f9ef2a659803092d4f5678475241e872105c99154f86b7bbc29038a3",
+ "system_id": "m6",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 59249,
+  "cache_write_tokens": 10113,
+  "input_tokens": 6976,
+  "output_tokens": 2642
+ }
+}

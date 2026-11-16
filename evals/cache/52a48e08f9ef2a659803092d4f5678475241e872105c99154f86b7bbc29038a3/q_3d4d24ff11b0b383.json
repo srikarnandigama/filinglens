@@ -1,0 +1,131 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 3,
+  "numeric_valid": 3,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.0807116",
+ "error": null,
+ "finished_at": "2026-11-15T05:11:46.290435+00:00",
+ "latency_ms": 21288,
+ "prediction": {
+  "choice": "META",
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percentage_points",
+  "value": "4.975871197977"
+ },
+ "question_id": "q_3d4d24ff11b0b383",
+ "question_sha": "a1be1b792114b69141e6326ed3d7c0968f1e9e3db31c0d49a0bb2e634b14b0b1",
+ "raw_output": {
+  "caveats": [
+   "Net margin is net income divided by reported revenue. Both companies have fiscal years ending Dec 31, so the periods are directly comparable."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_1"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "562"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "511"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2023
+    },
+    "text": "Alphabet's FY2023 net margin was about 24.01% (net income $73.795 billion on revenue $307.394 billion).",
+    "ticker": "GOOGL",
+    "unit": "percent",
+    "value": "24.006649446639",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_2"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "850"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "799"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2023
+    },
+    "text": "Meta's FY2023 net margin was about 28.98% (net income $39.098 billion on revenue $134.902 billion).",
+    "ticker": "META",
+    "unit": "percent",
+    "value": "28.982520644616",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value",
+      "kind": "computation",
+      "ref": "cmp_3"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2023
+    },
+    "text": "Meta's net margin was higher than Alphabet's by about 4.98 percentage points in fiscal 2023.",
+    "ticker": "META",
+    "unit": "percentage_points",
+    "value": "4.975871197977",
+    "value_basis": "computation"
+   }
+  ],
+  "final_claim_id": "c3",
+  "final_unit": "percentage_points",
+  "final_value": "4.975871197977",
+  "status": "answered",
+  "summary": "Meta had the higher fiscal 2023 net margin, at about 28.98%. Alphabet's was about 24.01%. The gap is about 4.98 percentage points in Meta's favor."
+ },
+ "run_id": "f08640d4-49b8-4697-b957-966875dc4402",
+ "run_status": "done",
+ "split": "dev",
+ "started_at": "2026-11-15T05:11:24.968409+00:00",
+ "status": "done",
+ "system_config_hash": "52a48e08f9ef2a659803092d4f5678475241e872105c99154f86b7bbc29038a3",
+ "system_id": "m6",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 60816,
+  "cache_write_tokens": 11188,
+  "input_tokens": 8035,
+  "output_tokens": 3059
+ }
+}

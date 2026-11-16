@@ -1,0 +1,69 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 1,
+  "numeric_valid": 1,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.0301916",
+ "error": null,
+ "finished_at": "2026-11-15T05:12:57.388195+00:00",
+ "latency_ms": 8573,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD",
+  "value": "4798000000"
+ },
+ "question_id": "q_55bb20c1a4c4f7dd",
+ "question_sha": "abefe7e71582ec0a71feea1031d215b2fdd175fe257e632650ca031c9ae77dae",
+ "raw_output": {
+  "caveats": [],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3770"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q1",
+     "fiscal_year": 2027
+    },
+    "text": "Nike reported gross profit of $4.798 billion ($4,798,000,000) for fiscal Q1 2027, the quarter ended August 31, 2026.",
+    "ticker": "NKE",
+    "unit": "USD",
+    "value": "4798000000",
+    "value_basis": "fact"
+   }
+  ],
+  "final_claim_id": "c1",
+  "final_unit": "USD",
+  "final_value": "4798000000",
+  "status": "answered",
+  "summary": "Nike's gross profit in fiscal Q1 2027 (June 1 to August 31, 2026) was $4.798 billion."
+ },
+ "run_id": "a47d4b38-4d43-4e94-ba13-9199305c87e1",
+ "run_status": "done",
+ "split": "dev",
+ "started_at": "2026-11-15T05:12:48.775963+00:00",
+ "status": "done",
+ "system_config_hash": "52a48e08f9ef2a659803092d4f5678475241e872105c99154f86b7bbc29038a3",
+ "system_id": "m6",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 18526,
+  "cache_write_tokens": 4478,
+  "input_tokens": 3427,
+  "output_tokens": 1029
+ }
+}

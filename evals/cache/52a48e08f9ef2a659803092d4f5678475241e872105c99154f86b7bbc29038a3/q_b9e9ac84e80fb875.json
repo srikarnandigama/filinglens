@@ -1,0 +1,131 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 4,
+  "numeric_valid": 4,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.0646106",
+ "error": null,
+ "finished_at": "2026-11-15T05:12:32.749023+00:00",
+ "latency_ms": 18200,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "14.003294892916"
+ },
+ "question_id": "q_b9e9ac84e80fb875",
+ "question_sha": "5e48c2ca5bc8ec35ecc05e67566d11218a3cf10fa984901cc1cd82497284426b",
+ "raw_output": {
+  "caveats": [
+   "Costco's fiscal years end around Aug 31 (FY2025) and Aug 30 (FY2026), so the periods differ slightly in length and end date. No management commentary passages were provided, so the answer does not explain the cause of the change."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3396"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Costco's diluted EPS for fiscal 2025 was $18.21.",
+    "ticker": "COST",
+    "unit": "USD/shares",
+    "value": "18.21",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3400"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2026
+    },
+    "text": "Costco's diluted EPS for fiscal 2026 was $20.76.",
+    "ticker": "COST",
+    "unit": "USD/shares",
+    "value": "20.76",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": "value",
+      "kind": "computation",
+      "ref": "cmp_2"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2026
+    },
+    "text": "Diluted EPS rose by $2.55 per share from fiscal 2025 to fiscal 2026.",
+    "ticker": "COST",
+    "unit": "USD/shares",
+    "value": "2.55",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_1"
+     }
+    ],
+    "id": "c4",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2026
+    },
+    "text": "Diluted EPS grew about 14.0% from fiscal 2025 to fiscal 2026.",
+    "ticker": "COST",
+    "unit": "percent",
+    "value": "14.003294892916",
+    "value_basis": "computation"
+   }
+  ],
+  "final_claim_id": "c4",
+  "final_unit": "percent",
+  "final_value": "14.003294892916",
+  "status": "answered",
+  "summary": "Costco's diluted EPS rose about 14.0% from fiscal 2025 ($18.21) to fiscal 2026 ($20.76), an increase of $2.55 per share."
+ },
+ "run_id": "b8423229-87d5-4b5d-9e15-0757c274b7a2",
+ "run_status": "done",
+ "split": "dev",
+ "started_at": "2026-11-15T05:12:14.508286+00:00",
+ "status": "done",
+ "system_config_hash": "52a48e08f9ef2a659803092d4f5678475241e872105c99154f86b7bbc29038a3",
+ "system_id": "m6",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 50936,
+  "cache_write_tokens": 8902,
+  "input_tokens": 6131,
+  "output_tokens": 2500
+ }
+}

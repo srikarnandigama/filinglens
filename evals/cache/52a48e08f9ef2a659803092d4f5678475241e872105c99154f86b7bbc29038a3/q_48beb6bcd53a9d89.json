@@ -1,0 +1,109 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 3,
+  "numeric_valid": 3,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.0445598",
+ "error": null,
+ "finished_at": "2026-11-15T05:15:11.514790+00:00",
+ "latency_ms": 14857,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "25.229533950079"
+ },
+ "question_id": "q_48beb6bcd53a9d89",
+ "question_sha": "7f324abf5da1ebce869eee58e1e23866ff0ce7485ccbe5320c086af788086463",
+ "raw_output": {
+  "caveats": [],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "829"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q1",
+     "fiscal_year": 2023
+    },
+    "text": "Meta's operating income in fiscal Q1 2023 was $7.227 billion.",
+    "ticker": "META",
+    "unit": "USD",
+    "value": "7227000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "795"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q1",
+     "fiscal_year": 2023
+    },
+    "text": "Meta's revenue in fiscal Q1 2023 was $28.645 billion.",
+    "ticker": "META",
+    "unit": "USD",
+    "value": "28645000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_1"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q1",
+     "fiscal_year": 2023
+    },
+    "text": "Meta's operating margin in fiscal Q1 2023 was about 25.2% (operating income divided by revenue).",
+    "ticker": "META",
+    "unit": "percent",
+    "value": "25.229533950079",
+    "value_basis": "computation"
+   }
+  ],
+  "final_claim_id": "c3",
+  "final_unit": "percent",
+  "final_value": "25.229533950079",
+  "status": "answered",
+  "summary": "Meta's operating margin in fiscal Q1 2023 was about 25.2%. Operating income was $7.227 billion on revenue of $28.645 billion."
+ },
+ "run_id": "c063f743-0f3d-43b7-a323-ebdf118ca7bd",
+ "run_status": "done",
+ "split": "dev",
+ "started_at": "2026-11-15T05:14:56.622435+00:00",
+ "status": "done",
+ "system_config_hash": "52a48e08f9ef2a659803092d4f5678475241e872105c99154f86b7bbc29038a3",
+ "system_id": "m6",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 39643,
+  "cache_write_tokens": 5563,
+  "input_tokens": 4289,
+  "output_tokens": 1811
+ }
+}

@@ -1,0 +1,189 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 3,
+  "numeric_valid": 3,
+  "text_pending_judge": [],
+  "text_string_supported": 2,
+  "text_total": 2,
+  "uncited": 0
+ },
+ "cost_usd": "0.2745505",
+ "error": null,
+ "finished_at": "2026-11-15T05:20:22.579563+00:00",
+ "latency_ms": 53949,
+ "prediction": {
+  "parse_ok": true,
+  "text": "Nike's Q1 FY2027 gross margin was about 42.8% (gross profit $4.798 billion on revenue $11.213 billion). Nike's Q1 FY2026 gross margin was about 42.2% (gross profit $4.943 billion on revenue $11.720 billion). The gross margin change was an increase of about 0.61 percentage points, consistent with management's reported 60 basis points. Nike said consolidated gross margin was 60 basis points higher than the prior year. The first driver it listed was lower warehousing and logistics costs, which increased gross margin by approximately 90 basis points. Nike also listed favorable changes in net foreign currency exchange rates, including hedges, which increased gross margin by approximately 40 basis points.\nNike's Q1 FY2027 gross margin was about 42.8% (gross profit $4.798 billion on revenue $11.213 billion).\nNike's Q1 FY2026 gross margin was about 42.2% (gross profit $4.943 billion on revenue $11.720 billion).\nThe gross margin change was an increase of about 0.61 percentage points, consistent with management's reported 60 basis points.\nNike said consolidated gross margin was 60 basis points higher than the prior year. The first driver it listed was lower warehousing and logistics costs, which increased gross margin by approximately 90 basis points.\nNike also listed favorable changes in net foreign currency exchange rates, including hedges, which increased gross margin by approximately 40 basis points."
+ },
+ "question_id": "xd06",
+ "question_sha": "0077c42525a03126db8afd0ee25a5586db39cb6ab34a891845bbb55b1513ba11",
+ "raw_output": {
+  "caveats": [
+   "The two drivers quoted (about 90 bps from lower warehousing and logistics costs, about 40 bps from favorable FX including hedges) are the first items in a longer list in the filing. They add up to more than the 60 bps total, so other items in the list must have partly offset them.",
+   "The worker summary says higher royalty costs and lower NIKE Brand average selling price were among the offsets. The verified quotes do not include those items or any other remaining drivers, so they are not quantified here.",
+   "Converse and Global Brand Divisions segment-level gross margin discussions were not reviewed.",
+   "Summary rewritten from verified claims."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_1"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3770"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3738"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q1",
+     "fiscal_year": 2027
+    },
+    "text": "Nike's Q1 FY2027 gross margin was about 42.8% (gross profit $4.798 billion on revenue $11.213 billion).",
+    "ticker": "NKE",
+    "unit": "percent",
+    "value": "42.789619192009",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_2"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3765"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3733"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q1",
+     "fiscal_year": 2026
+    },
+    "text": "Nike's Q1 FY2026 gross margin was about 42.2% (gross profit $4.943 billion on revenue $11.720 billion).",
+    "ticker": "NKE",
+    "unit": "percent",
+    "value": "42.175767918089",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value",
+      "kind": "computation",
+      "ref": "cmp_3"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q1",
+     "fiscal_year": 2027
+    },
+    "text": "The gross margin change was an increase of about 0.61 percentage points, consistent with management's reported 60 basis points.",
+    "ticker": "NKE",
+    "unit": "percentage_points",
+    "value": "0.61385127392",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_95ecc2c8c3a51c962e687f78d8e6a4f0bdabed295992d6e9275fbcb9bd5d1ac7"
+     }
+    ],
+    "id": "c4",
+    "kind": "textual",
+    "period": null,
+    "text": "Nike said consolidated gross margin was 60 basis points higher than the prior year. The first driver it listed was lower warehousing and logistics costs, which increased gross margin by approximately 90 basis points.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_95ecc2c8c3a51c962e687f78d8e6a4f0bdabed295992d6e9275fbcb9bd5d1ac7"
+     }
+    ],
+    "id": "c5",
+    "kind": "textual",
+    "period": null,
+    "text": "Nike also listed favorable changes in net foreign currency exchange rates, including hedges, which increased gross margin by approximately 40 basis points.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   }
+  ],
+  "final_claim_id": "c3",
+  "final_unit": "percentage_points",
+  "final_value": "0.61385127392",
+  "status": "partially_answered",
+  "summary": "Nike's Q1 FY2027 gross margin was about 42.8% (gross profit $4.798 billion on revenue $11.213 billion). Nike's Q1 FY2026 gross margin was about 42.2% (gross profit $4.943 billion on revenue $11.720 billion). The gross margin change was an increase of about 0.61 percentage points, consistent with management's reported 60 basis points. Nike said consolidated gross margin was 60 basis points higher than the prior year. The first driver it listed was lower warehousing and logistics costs, which increased gross margin by approximately 90 basis points. Nike also listed favorable changes in net foreign currency exchange rates, including hedges, which increased gross margin by approximately 40 basis points."
+ },
+ "retrieval": {
+  "first_search": {
+   "filings:s4": [
+    "chk_d378d895a9fac6919ba38e103f00ac8b4ef55f06cd37152ba9bf60e1daa12ef8",
+    "chk_95ecc2c8c3a51c962e687f78d8e6a4f0bdabed295992d6e9275fbcb9bd5d1ac7",
+    "chk_345666913ee6d1e97d11b0a8acc6b0f69c99beb1a9bd58489ff0a83bf8cbed50",
+    "chk_d8e495cfda74220271de8d0ae9988173837a3c71b0a931e8ecaef1eb24be91c2",
+    "chk_f28a8e00b2154e4c18e15fca72bdf7e9b609c44a05e13318576ede79d88bc49e",
+    "chk_47e61b0f15e71e7f53a671c2fa8a90aec0f8c351c5db398629123b5afc96484c",
+    "chk_0dca0b02d24b08f5b2e49f454a1de8da0a20bfdf519511ccdfb30ae01386c221",
+    "chk_e382c381eccfb41de830bb483c96d571119b56f7dfc5a44b720c2397ce74af38"
+   ]
+  },
+  "seen": [
+   "chk_d378d895a9fac6919ba38e103f00ac8b4ef55f06cd37152ba9bf60e1daa12ef8",
+   "chk_95ecc2c8c3a51c962e687f78d8e6a4f0bdabed295992d6e9275fbcb9bd5d1ac7",
+   "chk_345666913ee6d1e97d11b0a8acc6b0f69c99beb1a9bd58489ff0a83bf8cbed50",
+   "chk_d8e495cfda74220271de8d0ae9988173837a3c71b0a931e8ecaef1eb24be91c2",
+   "chk_f28a8e00b2154e4c18e15fca72bdf7e9b609c44a05e13318576ede79d88bc49e",
+   "chk_47e61b0f15e71e7f53a671c2fa8a90aec0f8c351c5db398629123b5afc96484c",
+   "chk_0dca0b02d24b08f5b2e49f454a1de8da0a20bfdf519511ccdfb30ae01386c221",
+   "chk_e382c381eccfb41de830bb483c96d571119b56f7dfc5a44b720c2397ce74af38",
+   "chk_0264ccc6c153597ffaefed6db49df1d89c89b9fa67539f6b4863be74cfa7d13a"
+  ]
+ },
+ "run_id": "064b80f0-603b-44e5-a604-24be21543807",
+ "run_status": "done",
+ "split": "explanatory_dev",
+ "started_at": "2026-11-15T05:19:28.546153+00:00",
+ "status": "done",
+ "system_config_hash": "2672337d37a1c4749e46b1640e2449249f4b9fce707f2424c3af28481dde7549",
+ "system_id": "system",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 176445,
+  "output_tokens": 8279
+ }
+}

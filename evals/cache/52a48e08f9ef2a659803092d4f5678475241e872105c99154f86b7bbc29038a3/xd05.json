@@ -1,0 +1,180 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 0,
+  "numeric_valid": 0,
+  "text_pending_judge": [
+   {
+    "chunk_ids": [
+     "chk_fafce85711e82bf64831b68dfd61809d5757138d6425bbd96ff7cceea889be5d"
+    ],
+    "claim_id": "c1",
+    "text": "J&J reported MedTech segment sales in 2025 of $33.8 billion, up 6.1% from 2024. Operational growth was 5.4% and currency had a positive 0.7% impact."
+   }
+  ],
+  "text_string_supported": 4,
+  "text_total": 5,
+  "uncited": 0
+ },
+ "cost_usd": "0.165279525",
+ "error": null,
+ "finished_at": "2026-11-15T05:24:57.317058+00:00",
+ "latency_ms": 79303,
+ "prediction": {
+  "parse_ok": true,
+  "text": "Johnson & Johnson said MedTech segment sales in 2025 were $33.8 billion, up 6.1% from 2024. Operational growth was 5.4% and currency added 0.7%. Acquisitions and divestitures added 1.1% to operational growth, mainly from Shockwave. By franchise, Surgery grew 3.0%, Orthopaedics 1.1% and Vision 6.3%. Management cited growth drivers such as technology penetration, new product launches and Impella adoption. It also cited headwinds: China volume-based procurement, competitive pressures, divestitures and Orthopaedics restructuring disruption.\nJ&J reported MedTech segment sales in 2025 of $33.8 billion, up 6.1% from 2024. Operational growth was 5.4% and currency had a positive 0.7% impact.\nJ&J said the net impact of acquisitions and divestitures on MedTech worldwide operational sales growth was a positive 1.1%, primarily related to the Shockwave acquisition.\nIn Surgery (sales of $10.1 billion, up 3.0%), J&J said growth in General Surgery was primarily driven by technology penetration and upgrades within the differentiated Wound Closure portfolio, partially offset by the impact from divestitures. In the same Surgery discussion, J&J said growth was also partially offset by China volume-based procurement across all platforms and competitive pressures in Energy and Endocutters.\nIn Orthopaedics (sales of $9.3 billion, up 1.1%), J&J said all platforms were negatively impacted by revenue disruption from the previously announced Orthopaedics restructuring, which is now substantially complete. China volume-based procurement and selling days were also negatives. Growth in Hips was primarily due to new product launches.\nIn Vision (sales of $5.5 billion, up 6.3%), J&J said Contact Lenses/Other growth was primarily driven by market growth, continued strong performance in the ACUVUE OASYS 1-Day family (including recent launches) and strategic price actions. In Cardiovascular, Abiomed sales reflected continued strong adoption of Impella 5.5 and Impella CP."
+ },
+ "question_id": "xd05",
+ "question_sha": "f61e2717cf1d65754cc161462b920dd334cf25e6a79a0c2bf6ca6b858349e7b6",
+ "raw_output": {
+  "caveats": [
+   "The figures and explanations are quoted from the MD&A text, not from structured fact records.",
+   "Only selected franchise explanations (Surgery, Orthopaedics, Vision and the Abiomed part of Cardiovascular) are quoted here. This is not a full account of every MedTech franchise driver."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_fafce85711e82bf64831b68dfd61809d5757138d6425bbd96ff7cceea889be5d"
+     }
+    ],
+    "id": "c1",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "J&J reported MedTech segment sales in 2025 of $33.8 billion, up 6.1% from 2024. Operational growth was 5.4% and currency had a positive 0.7% impact.",
+    "ticker": "JNJ",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_fafce85711e82bf64831b68dfd61809d5757138d6425bbd96ff7cceea889be5d"
+     }
+    ],
+    "id": "c2",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "J&J said the net impact of acquisitions and divestitures on MedTech worldwide operational sales growth was a positive 1.1%, primarily related to the Shockwave acquisition.",
+    "ticker": "JNJ",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_ae3adba36e98f4dae4e03fb07cf78c2a6e9ae2571a3e3df73c66f134ffd3f433"
+     }
+    ],
+    "id": "c3",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "In Surgery (sales of $10.1 billion, up 3.0%), J&J said growth in General Surgery was primarily driven by technology penetration and upgrades within the differentiated Wound Closure portfolio, partially offset by the impact from divestitures. In the same Surgery discussion, J&J said growth was also partially offset by China volume-based procurement across all platforms and competitive pressures in Energy and Endocutters.",
+    "ticker": "JNJ",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_fba2ee39f35dff50ba4fc1ce24a7d088bd63f5087cd3a8193ee5486f3e6ea876"
+     }
+    ],
+    "id": "c4",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "In Orthopaedics (sales of $9.3 billion, up 1.1%), J&J said all platforms were negatively impacted by revenue disruption from the previously announced Orthopaedics restructuring, which is now substantially complete. China volume-based procurement and selling days were also negatives. Growth in Hips was primarily due to new product launches.",
+    "ticker": "JNJ",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_1bcd913ca2fccb33b7a60301f47f2a490e51f4b72fecaa293e2d14ef57ca30b4"
+     }
+    ],
+    "id": "c5",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "In Vision (sales of $5.5 billion, up 6.3%), J&J said Contact Lenses/Other growth was primarily driven by market growth, continued strong performance in the ACUVUE OASYS 1-Day family (including recent launches) and strategic price actions. In Cardiovascular, Abiomed sales reflected continued strong adoption of Impella 5.5 and Impella CP.",
+    "ticker": "JNJ",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   }
+  ],
+  "final_claim_id": null,
+  "final_unit": null,
+  "final_value": null,
+  "status": "answered",
+  "summary": "Johnson & Johnson said MedTech segment sales in 2025 were $33.8 billion, up 6.1% from 2024. Operational growth was 5.4% and currency added 0.7%. Acquisitions and divestitures added 1.1% to operational growth, mainly from Shockwave. By franchise, Surgery grew 3.0%, Orthopaedics 1.1% and Vision 6.3%. Management cited growth drivers such as technology penetration, new product launches and Impella adoption. It also cited headwinds: China volume-based procurement, competitive pressures, divestitures and Orthopaedics restructuring disruption."
+ },
+ "retrieval": {
+  "first_search": {
+   "filings:s1": [
+    "chk_fafce85711e82bf64831b68dfd61809d5757138d6425bbd96ff7cceea889be5d",
+    "chk_bb4cffd07918d6bc50d1a3017919918edb95b71d2fc3819dac75ccf21b308f1d",
+    "chk_9ee7fc6bb7aa738bf11d7b3f9b4a0d0d7acb66ad1dfd98af57556bcbe3854cbd",
+    "chk_ae3adba36e98f4dae4e03fb07cf78c2a6e9ae2571a3e3df73c66f134ffd3f433",
+    "chk_8c317d3ef99b7b663f3b81d0378e7be4b75e3e262f2773dfffcb5b06e26b411b",
+    "chk_fba2ee39f35dff50ba4fc1ce24a7d088bd63f5087cd3a8193ee5486f3e6ea876",
+    "chk_1bcd913ca2fccb33b7a60301f47f2a490e51f4b72fecaa293e2d14ef57ca30b4",
+    "chk_2353c3bf3bb3c0f295ef4b4336fea47e6d64ba2af0993350d43152657732e6a8"
+   ]
+  },
+  "seen": [
+   "chk_fafce85711e82bf64831b68dfd61809d5757138d6425bbd96ff7cceea889be5d",
+   "chk_bb4cffd07918d6bc50d1a3017919918edb95b71d2fc3819dac75ccf21b308f1d",
+   "chk_9ee7fc6bb7aa738bf11d7b3f9b4a0d0d7acb66ad1dfd98af57556bcbe3854cbd",
+   "chk_ae3adba36e98f4dae4e03fb07cf78c2a6e9ae2571a3e3df73c66f134ffd3f433",
+   "chk_8c317d3ef99b7b663f3b81d0378e7be4b75e3e262f2773dfffcb5b06e26b411b",
+   "chk_fba2ee39f35dff50ba4fc1ce24a7d088bd63f5087cd3a8193ee5486f3e6ea876",
+   "chk_1bcd913ca2fccb33b7a60301f47f2a490e51f4b72fecaa293e2d14ef57ca30b4",
+   "chk_2353c3bf3bb3c0f295ef4b4336fea47e6d64ba2af0993350d43152657732e6a8"
+  ]
+ },
+ "run_id": "2c098467-3249-44ad-bcb6-34cf9e92ddce",
+ "run_status": "done",
+ "split": "explanatory_dev",
+ "started_at": "2026-11-15T05:23:37.956302+00:00",
+ "status": "done",
+ "system_config_hash": "52a48e08f9ef2a659803092d4f5678475241e872105c99154f86b7bbc29038a3",
+ "system_id": "m6",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 81320,
+  "cache_write_tokens": 32369,
+  "input_tokens": 22328,
+  "output_tokens": 12434
+ }
+}

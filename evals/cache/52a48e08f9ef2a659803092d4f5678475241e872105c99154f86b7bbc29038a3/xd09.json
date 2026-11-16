@@ -1,0 +1,196 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 0,
+  "numeric_valid": 0,
+  "text_pending_judge": [],
+  "text_string_supported": 5,
+  "text_total": 5,
+  "uncited": 0
+ },
+ "cost_usd": "0.178585860",
+ "error": null,
+ "finished_at": "2026-11-15T05:27:09.511824+00:00",
+ "latency_ms": 69418,
+ "prediction": {
+  "parse_ok": true,
+  "text": "Pfizer's core risk language on patent expiries and loss of exclusivity was largely the same in the FY2024 and FY2025 10-Ks. Both years say the company expects reduced revenues from exclusivity expiries in 2026 through 2030. FY2024 called it a \"more significant impact\", and FY2025 calls it a \"significant reduction of revenue\". The clearest new element in the FY2025 passages is the statement that the rate of revenue reduction from expiries is expected to \"significantly accelerate\" over the next few years. The FY2024 passages I retrieved do not contain that language. Both years also carry the same warnings on at-risk launches, biosimilar competition and intellectual property protection.\nFY2024 10-K: Pfizer said it anticipated a more significant impact of reduced revenues from patent-based or regulatory exclusivity expiries in 2026 through 2030, as several in-line products experience these expirations.\nFY2025 10-K: Pfizer said it anticipates a significant reduction of revenue from patent-based or regulatory exclusivity expiries in 2026 through 2030 as several in-line products experience these expirations. It also said certain products have experienced patent-based expirations or loss of regulatory exclusivity in certain markets in the last few years, and that it expects certain products to face new or increased generic competition over the next few years. The 2026-2030 window is the same as in FY2024, and the wording differs only modestly.\nFY2025 10-K adds acceleration language. Pfizer said the rate of the reduction of revenues from patent-based or regulatory exclusivity expiries is expected to significantly accelerate over the next few years. This language does not appear in the FY2024 passages retrieved.\nUnchanged theme, at-risk launches and biosimilars: both years warn that patented products may face generic or biosimilar competition before exclusivity expires, including from \"at-risk\" launches. Both also warn of biosimilar competition against Pfizer's biologics if competitors obtain approval.\nUnchanged theme, intellectual property protection: both years warn that without adequate IP protection Pfizer may be unable to prevent third parties from launching generic or biosimilar versions of its branded products. The FY2025 passage also notes that patent term extensions may not be granted on a timely basis, if at all."
+ },
+ "question_id": "xd09",
+ "question_sha": "40feba62cfa7565cd5af50522d1b3d87d1950424ee1bcfa54e7195adb79e0bf3",
+ "raw_output": {
+  "caveats": [
+   "The comparison rests on a single Item 1A search per year and may not cover every related passage. Language described as new in FY2025 is new only relative to the FY2024 passages retrieved.",
+   "One FY2024 chunk, which describes a moderate impact from 2025 expiries, began mid-sentence and had no verified quote. It is not cited.",
+   "The change from \"more significant impact\" (FY2024) to \"significant reduction of revenue\" (FY2025) is a wording difference. It is not clearly a change in severity.",
+   "The wording comparison is qualitative. No financial figures were compared."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_2f34f0d128b4c78a8424b56ece42ae99631b8f8d8cf20a17a485341af1c41825"
+     }
+    ],
+    "id": "c1",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "FY2024 10-K: Pfizer said it anticipated a more significant impact of reduced revenues from patent-based or regulatory exclusivity expiries in 2026 through 2030, as several in-line products experience these expirations.",
+    "ticker": "PFE",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_ff861ddeae57d97de4a9c0fa8a505658bd1ee0d756d54f97b7335e1725aab948"
+     }
+    ],
+    "id": "c2",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "FY2025 10-K: Pfizer said it anticipates a significant reduction of revenue from patent-based or regulatory exclusivity expiries in 2026 through 2030 as several in-line products experience these expirations. It also said certain products have experienced patent-based expirations or loss of regulatory exclusivity in certain markets in the last few years, and that it expects certain products to face new or increased generic competition over the next few years. The 2026-2030 window is the same as in FY2024, and the wording differs only modestly.",
+    "ticker": "PFE",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_99ed4c0183cd81dd67f7f882592198d806e9dde272e91d023fe298f333713382"
+     }
+    ],
+    "id": "c3",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "FY2025 10-K adds acceleration language. Pfizer said the rate of the reduction of revenues from patent-based or regulatory exclusivity expiries is expected to significantly accelerate over the next few years. This language does not appear in the FY2024 passages retrieved.",
+    "ticker": "PFE",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_2f34f0d128b4c78a8424b56ece42ae99631b8f8d8cf20a17a485341af1c41825"
+     },
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_29e07b6028bb9d91e5813bfd9975e35c8b68f223df26449bcccc8e6122803dcb"
+     }
+    ],
+    "id": "c4",
+    "kind": "textual",
+    "period": null,
+    "text": "Unchanged theme, at-risk launches and biosimilars: both years warn that patented products may face generic or biosimilar competition before exclusivity expires, including from \"at-risk\" launches. Both also warn of biosimilar competition against Pfizer's biologics if competitors obtain approval.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_5e45d99a3b7f4d41adac65183129f665f28b03b19099e1debdb4ea5184b8bbdb"
+     },
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_94f722a9aa0390aaa331cccd378c53ddcd36a9b31dc36defdadde7e5876faa57"
+     }
+    ],
+    "id": "c5",
+    "kind": "textual",
+    "period": null,
+    "text": "Unchanged theme, intellectual property protection: both years warn that without adequate IP protection Pfizer may be unable to prevent third parties from launching generic or biosimilar versions of its branded products. The FY2025 passage also notes that patent term extensions may not be granted on a timely basis, if at all.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   }
+  ],
+  "final_claim_id": null,
+  "final_unit": null,
+  "final_value": null,
+  "status": "answered",
+  "summary": "Pfizer's core risk language on patent expiries and loss of exclusivity was largely the same in the FY2024 and FY2025 10-Ks. Both years say the company expects reduced revenues from exclusivity expiries in 2026 through 2030. FY2024 called it a \"more significant impact\", and FY2025 calls it a \"significant reduction of revenue\". The clearest new element in the FY2025 passages is the statement that the rate of revenue reduction from expiries is expected to \"significantly accelerate\" over the next few years. The FY2024 passages I retrieved do not contain that language. Both years also carry the same warnings on at-risk launches, biosimilar competition and intellectual property protection."
+ },
+ "retrieval": {
+  "first_search": {
+   "filings:s1": [
+    "chk_2f34f0d128b4c78a8424b56ece42ae99631b8f8d8cf20a17a485341af1c41825",
+    "chk_dbc1cfca132713a80d36aee0ff7aa59e338175b3e6165d7bcd33bafcd2b943a2",
+    "chk_f89364afc183fad727e7e9e7f29ef4fc9b614612ddad87af1f7a38359475f2ae",
+    "chk_5e45d99a3b7f4d41adac65183129f665f28b03b19099e1debdb4ea5184b8bbdb",
+    "chk_b30cec1f6a202e01f8ddd9bc66bfc1a95f6ea981c3890c0bae49a6cc13cbd825",
+    "chk_baf9ad50f2e5397423395b39987edd94efdd4aee59c07b30578025da8d0f43d0",
+    "chk_a61b276433a03bca374b0a107bd2820c3db3effdbe5accd9c1d1a7a84fe1a422",
+    "chk_5ac27c1c41c4c8d241d8a78430d995f67e22baf06bfba68d7c6d27c2e4cade47"
+   ],
+   "filings:s2": [
+    "chk_29e07b6028bb9d91e5813bfd9975e35c8b68f223df26449bcccc8e6122803dcb",
+    "chk_99ed4c0183cd81dd67f7f882592198d806e9dde272e91d023fe298f333713382",
+    "chk_94f722a9aa0390aaa331cccd378c53ddcd36a9b31dc36defdadde7e5876faa57",
+    "chk_ee66d1950173e4ef86dcd1bda8962438dd562bf167cc12b4525e8936a589af89",
+    "chk_40eaf4a7dacb6f9ff9593febf92c51c662f8ca817664bee1bbca234d96566a2b",
+    "chk_e9fb52cc20f5a7eb7223ca2bf392d21d4118c3f2c9e73ca597252280cdf4cec4",
+    "chk_ff861ddeae57d97de4a9c0fa8a505658bd1ee0d756d54f97b7335e1725aab948",
+    "chk_3b149ed380f5e96480c1c2dc2977a9c667336704559f5bf16b3f78780df7def6"
+   ]
+  },
+  "seen": [
+   "chk_2f34f0d128b4c78a8424b56ece42ae99631b8f8d8cf20a17a485341af1c41825",
+   "chk_dbc1cfca132713a80d36aee0ff7aa59e338175b3e6165d7bcd33bafcd2b943a2",
+   "chk_f89364afc183fad727e7e9e7f29ef4fc9b614612ddad87af1f7a38359475f2ae",
+   "chk_5e45d99a3b7f4d41adac65183129f665f28b03b19099e1debdb4ea5184b8bbdb",
+   "chk_b30cec1f6a202e01f8ddd9bc66bfc1a95f6ea981c3890c0bae49a6cc13cbd825",
+   "chk_baf9ad50f2e5397423395b39987edd94efdd4aee59c07b30578025da8d0f43d0",
+   "chk_a61b276433a03bca374b0a107bd2820c3db3effdbe5accd9c1d1a7a84fe1a422",
+   "chk_5ac27c1c41c4c8d241d8a78430d995f67e22baf06bfba68d7c6d27c2e4cade47",
+   "chk_29e07b6028bb9d91e5813bfd9975e35c8b68f223df26449bcccc8e6122803dcb",
+   "chk_99ed4c0183cd81dd67f7f882592198d806e9dde272e91d023fe298f333713382",
+   "chk_94f722a9aa0390aaa331cccd378c53ddcd36a9b31dc36defdadde7e5876faa57",
+   "chk_ee66d1950173e4ef86dcd1bda8962438dd562bf167cc12b4525e8936a589af89",
+   "chk_40eaf4a7dacb6f9ff9593febf92c51c662f8ca817664bee1bbca234d96566a2b",
+   "chk_e9fb52cc20f5a7eb7223ca2bf392d21d4118c3f2c9e73ca597252280cdf4cec4",
+   "chk_ff861ddeae57d97de4a9c0fa8a505658bd1ee0d756d54f97b7335e1725aab948",
+   "chk_3b149ed380f5e96480c1c2dc2977a9c667336704559f5bf16b3f78780df7def6"
+  ]
+ },
+ "run_id": "d20ac121-7c94-47fa-9817-ff0e1f860362",
+ "run_status": "done",
+ "split": "explanatory_dev",
+ "started_at": "2026-11-15T05:26:00.004892+00:00",
+ "status": "done",
+ "system_config_hash": "52a48e08f9ef2a659803092d4f5678475241e872105c99154f86b7bbc29038a3",
+ "system_id": "m6",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 61497,
+  "cache_write_tokens": 38742,
+  "input_tokens": 26216,
+  "output_tokens": 12627
+ }
+}

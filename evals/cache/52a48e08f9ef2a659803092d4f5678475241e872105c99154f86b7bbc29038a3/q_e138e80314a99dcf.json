@@ -1,0 +1,132 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 3,
+  "numeric_valid": 3,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.0982411",
+ "error": null,
+ "finished_at": "2026-11-15T05:10:46.976413+00:00",
+ "latency_ms": 23307,
+ "prediction": {
+  "choice": "JNJ",
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percentage_points",
+  "value": "16.03856327144"
+ },
+ "question_id": "q_e138e80314a99dcf",
+ "question_sha": "7900703644f34d163aedcb80c0e745b0d9335f547097ae7858f994cc21bd7a74",
+ "raw_output": {
+  "caveats": [
+   "The fiscal years end on different dates. Pfizer's ended 2025-12-31 and Johnson & Johnson's ended 2025-12-28.",
+   "Net margin here is net income divided by the reported revenue figure. Pfizer's revenue is tagged 'Revenues' and Johnson & Johnson's is tagged 'RevenueFromContractWithCustomerExcludingAssessedTax'."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_1"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "2962"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "2928"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Pfizer's FY2025 net margin was about 12.42% (net income of $7.771 billion on revenue of $62.579 billion).",
+    "ticker": "PFE",
+    "unit": "percent",
+    "value": "12.417903769635",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_2"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "2831"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "2780"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Johnson & Johnson's FY2025 net margin was about 28.46% (net income of $26.804 billion on revenue of $94.193 billion).",
+    "ticker": "JNJ",
+    "unit": "percent",
+    "value": "28.456467041075",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value",
+      "kind": "computation",
+      "ref": "cmp_3"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Johnson & Johnson's net margin exceeded Pfizer's by about 16.04 percentage points in FY2025.",
+    "ticker": null,
+    "unit": "percentage_points",
+    "value": "16.03856327144",
+    "value_basis": "computation"
+   }
+  ],
+  "final_claim_id": "c3",
+  "final_unit": "percentage_points",
+  "final_value": "16.03856327144",
+  "status": "answered",
+  "summary": "Johnson & Johnson had the higher fiscal 2025 net margin. Its margin was about 28.46%, against about 12.42% for Pfizer. That is a gap of about 16.04 percentage points."
+ },
+ "run_id": "b847d409-e61b-4d21-ab5d-93eb1ca6cbf7",
+ "run_status": "done",
+ "split": "dev",
+ "started_at": "2026-11-15T05:10:23.585970+00:00",
+ "status": "done",
+ "system_config_hash": "52a48e08f9ef2a659803092d4f5678475241e872105c99154f86b7bbc29038a3",
+ "system_id": "m6",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 45516,
+  "cache_write_tokens": 17815,
+  "input_tokens": 8256,
+  "output_tokens": 3264
+ }
+}

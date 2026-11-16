@@ -1,0 +1,176 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 0,
+  "numeric_valid": 0,
+  "text_pending_judge": [],
+  "text_string_supported": 6,
+  "text_total": 6,
+  "uncited": 0
+ },
+ "cost_usd": "0.2690934",
+ "error": null,
+ "finished_at": "2026-11-15T05:20:08.814864+00:00",
+ "latency_ms": 90670,
+ "prediction": {
+  "parse_ok": true,
+  "text": "J&J reported 2025 MedTech sales of $33.8 billion, up 6.1%. Operational growth was 5.4% and currency added 0.7%. J&J said acquisitions and divestitures had a net positive 1.1% impact on operational growth, primarily from the Shockwave acquisition. Cardiovascular sales rose 15.8%. J&J said electrophysiology growth came from procedure growth, new product performance and commercial execution, and Shockwave growth came from the Coronary and Peripheral portfolios and new launches. Vision sales rose 6.3%. J&J said growth in Contact Lenses/Other was primarily driven by market growth, ACUVUE OASYS 1-Day performance and strategic price actions. In Orthopaedics, J&J said all platforms were negatively impacted by restructuring disruption, China volume-based procurement and selling days. The franchise still grew 1.1% overall.\nJ&J reported MedTech segment sales in 2025 of $33.8 billion, up 6.1% from 2024. That included operational growth of 5.4% and a positive currency impact of 0.7%.\nJ&J said the net impact of acquisitions and divestitures on MedTech worldwide operational sales growth was a positive 1.1%, primarily related to the Shockwave acquisition.\nInternational MedTech sales were $16.4 billion, up 5.5%. That included operational growth of 4.1% and a positive currency impact of 1.4%.\nCardiovascular sales were $8.9 billion, up 15.8%. J&J said electrophysiology growth was driven by procedure growth, new product performance and commercial execution. It said Shockwave sales growth was driven by the Coronary and Peripheral portfolios and new product launches.\nIn Orthopaedics, J&J said all platforms were negatively impacted by revenue disruption from the previously announced Orthopaedics restructuring, which is now substantially complete. It also cited the negative impact of volume-based procurement in China and selling days. The same MD&A passage also describes positive drivers, and the franchise grew 1.1% overall.\nVision sales were $5.5 billion, up 6.3%. J&J said growth in Contact Lenses/Other specifically was primarily driven by market growth, continued strong performance of the ACUVUE OASYS 1-Day family of products (including recent launches) and strategic price actions."
+ },
+ "question_id": "xd05",
+ "question_sha": "f61e2717cf1d65754cc161462b920dd334cf25e6a79a0c2bf6ca6b858349e7b6",
+ "raw_output": {
+  "caveats": [
+   "The Surgery franchise passage had no verified quotes, so Surgery drivers are not covered here.",
+   "The evidence does not include a single explicit management cause for the overall MedTech change. The explanation rests on the operational, currency and acquisition components and the franchise-level drivers.",
+   "Franchise-level drivers are selective. The Vision drivers quoted apply to Contact Lenses/Other, and the Orthopaedics passage cites other drivers beyond the negative ones quoted here.",
+   "No structured SEC facts or calculations were available. All figures come from the quoted MD&A text."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_fafce85711e82bf64831b68dfd61809d5757138d6425bbd96ff7cceea889be5d"
+     }
+    ],
+    "id": "c1",
+    "kind": "textual",
+    "period": null,
+    "text": "J&J reported MedTech segment sales in 2025 of $33.8 billion, up 6.1% from 2024. That included operational growth of 5.4% and a positive currency impact of 0.7%.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_fafce85711e82bf64831b68dfd61809d5757138d6425bbd96ff7cceea889be5d"
+     }
+    ],
+    "id": "c2",
+    "kind": "textual",
+    "period": null,
+    "text": "J&J said the net impact of acquisitions and divestitures on MedTech worldwide operational sales growth was a positive 1.1%, primarily related to the Shockwave acquisition.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_fafce85711e82bf64831b68dfd61809d5757138d6425bbd96ff7cceea889be5d"
+     }
+    ],
+    "id": "c3",
+    "kind": "textual",
+    "period": null,
+    "text": "International MedTech sales were $16.4 billion, up 5.5%. That included operational growth of 4.1% and a positive currency impact of 1.4%.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_fba2ee39f35dff50ba4fc1ce24a7d088bd63f5087cd3a8193ee5486f3e6ea876"
+     }
+    ],
+    "id": "c4",
+    "kind": "textual",
+    "period": null,
+    "text": "Cardiovascular sales were $8.9 billion, up 15.8%. J&J said electrophysiology growth was driven by procedure growth, new product performance and commercial execution. It said Shockwave sales growth was driven by the Coronary and Peripheral portfolios and new product launches.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_fba2ee39f35dff50ba4fc1ce24a7d088bd63f5087cd3a8193ee5486f3e6ea876"
+     }
+    ],
+    "id": "c5",
+    "kind": "textual",
+    "period": null,
+    "text": "In Orthopaedics, J&J said all platforms were negatively impacted by revenue disruption from the previously announced Orthopaedics restructuring, which is now substantially complete. It also cited the negative impact of volume-based procurement in China and selling days. The same MD&A passage also describes positive drivers, and the franchise grew 1.1% overall.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_1bcd913ca2fccb33b7a60301f47f2a490e51f4b72fecaa293e2d14ef57ca30b4"
+     }
+    ],
+    "id": "c6",
+    "kind": "textual",
+    "period": null,
+    "text": "Vision sales were $5.5 billion, up 6.3%. J&J said growth in Contact Lenses/Other specifically was primarily driven by market growth, continued strong performance of the ACUVUE OASYS 1-Day family of products (including recent launches) and strategic price actions.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   }
+  ],
+  "final_claim_id": null,
+  "final_unit": null,
+  "final_value": null,
+  "status": "answered",
+  "summary": "J&J reported 2025 MedTech sales of $33.8 billion, up 6.1%. Operational growth was 5.4% and currency added 0.7%. J&J said acquisitions and divestitures had a net positive 1.1% impact on operational growth, primarily from the Shockwave acquisition. Cardiovascular sales rose 15.8%. J&J said electrophysiology growth came from procedure growth, new product performance and commercial execution, and Shockwave growth came from the Coronary and Peripheral portfolios and new launches. Vision sales rose 6.3%. J&J said growth in Contact Lenses/Other was primarily driven by market growth, ACUVUE OASYS 1-Day performance and strategic price actions. In Orthopaedics, J&J said all platforms were negatively impacted by restructuring disruption, China volume-based procurement and selling days. The franchise still grew 1.1% overall."
+ },
+ "retrieval": {
+  "first_search": {
+   "filings:s1": [
+    "chk_fafce85711e82bf64831b68dfd61809d5757138d6425bbd96ff7cceea889be5d",
+    "chk_bb4cffd07918d6bc50d1a3017919918edb95b71d2fc3819dac75ccf21b308f1d",
+    "chk_9ee7fc6bb7aa738bf11d7b3f9b4a0d0d7acb66ad1dfd98af57556bcbe3854cbd",
+    "chk_ae3adba36e98f4dae4e03fb07cf78c2a6e9ae2571a3e3df73c66f134ffd3f433",
+    "chk_8c317d3ef99b7b663f3b81d0378e7be4b75e3e262f2773dfffcb5b06e26b411b",
+    "chk_fba2ee39f35dff50ba4fc1ce24a7d088bd63f5087cd3a8193ee5486f3e6ea876",
+    "chk_1bcd913ca2fccb33b7a60301f47f2a490e51f4b72fecaa293e2d14ef57ca30b4",
+    "chk_2353c3bf3bb3c0f295ef4b4336fea47e6d64ba2af0993350d43152657732e6a8"
+   ]
+  },
+  "seen": [
+   "chk_fafce85711e82bf64831b68dfd61809d5757138d6425bbd96ff7cceea889be5d",
+   "chk_bb4cffd07918d6bc50d1a3017919918edb95b71d2fc3819dac75ccf21b308f1d",
+   "chk_9ee7fc6bb7aa738bf11d7b3f9b4a0d0d7acb66ad1dfd98af57556bcbe3854cbd",
+   "chk_ae3adba36e98f4dae4e03fb07cf78c2a6e9ae2571a3e3df73c66f134ffd3f433",
+   "chk_8c317d3ef99b7b663f3b81d0378e7be4b75e3e262f2773dfffcb5b06e26b411b",
+   "chk_fba2ee39f35dff50ba4fc1ce24a7d088bd63f5087cd3a8193ee5486f3e6ea876",
+   "chk_1bcd913ca2fccb33b7a60301f47f2a490e51f4b72fecaa293e2d14ef57ca30b4",
+   "chk_2353c3bf3bb3c0f295ef4b4336fea47e6d64ba2af0993350d43152657732e6a8"
+  ]
+ },
+ "run_id": "160846e7-9a25-4757-8dcc-188091be88bd",
+ "run_status": "done",
+ "split": "explanatory_dev",
+ "started_at": "2026-11-15T05:18:38.098589+00:00",
+ "status": "done",
+ "system_config_hash": "2672337d37a1c4749e46b1640e2449249f4b9fce707f2424c3af28481dde7549",
+ "system_id": "system",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 113479,
+  "output_tokens": 13207
+ }
+}

@@ -20,4 +20,4 @@ stall_guard_steps = 2              # D115
 empty_reply_guard = true           # D115
 unknown_tool_hint = true           # D115
 prompt_caching = true              # D116
-# summary_cited_values (D117) is added only if the student keeps the rule after the dev check.
+summary_cited_values = true         # D117 (kept by the student on dev evidence, 2026-11-15)

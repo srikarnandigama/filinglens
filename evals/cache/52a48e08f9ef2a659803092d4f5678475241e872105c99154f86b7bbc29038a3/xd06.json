@@ -1,0 +1,215 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 3,
+  "numeric_valid": 3,
+  "text_pending_judge": [
+   {
+    "chunk_ids": [
+     "chk_95ecc2c8c3a51c962e687f78d8e6a4f0bdabed295992d6e9275fbcb9bd5d1ac7"
+    ],
+    "claim_id": "c4",
+    "text": "Nike cited lower warehousing and logistics costs as a favorable driver, increasing gross margin approximately 90 basis points."
+   }
+  ],
+  "text_string_supported": 2,
+  "text_total": 3,
+  "uncited": 0
+ },
+ "cost_usd": "0.090535870",
+ "error": null,
+ "finished_at": "2026-11-15T05:25:37.160547+00:00",
+ "latency_ms": 39758,
+ "prediction": {
+  "parse_ok": true,
+  "text": "Nike's gross margin rose to about 42.8% in Q1 FY2027 from about 42.2% in Q1 FY2026, an increase of about 0.61 percentage points. Nike's 10-Q gives lower warehousing and logistics costs as a favorable driver, worth about 90 basis points. Offsetting items were higher other costs, mainly third-party royalties (about 40 basis points), and a lower NIKE Brand average selling price (about 30 basis points).\nNike's Q1 FY2027 gross margin was about 42.79% (gross profit $4.798 billion on revenue $11.213 billion).\nNike's Q1 FY2026 gross margin was about 42.18% (gross profit $4.943 billion on revenue $11.72 billion).\nGross margin expanded by about 0.61 percentage points year over year, so the margin did increase.\nNike cited lower warehousing and logistics costs as a favorable driver, increasing gross margin approximately 90 basis points.\nNike cited higher other costs, primarily due to third-party royalties, as an offset that decreased gross margin approximately 40 basis points.\nNike cited a lower NIKE Brand average selling price as an offset that decreased gross margin approximately 30 basis points, primarily due to higher discounts and channel mix, partially offset by strategic pricing."
+ },
+ "question_id": "xd06",
+ "question_sha": "0077c42525a03126db8afd0ee25a5586db39cb6ab34a891845bbb55b1513ba11",
+ "raw_output": {
+  "caveats": [
+   "Only three of the drivers in Nike's gross margin bridge have verified quotes. The worker notes say the same passage also lists other items: favorable foreign exchange, lower NIKE Brand product costs and lower Converse gross margin. Those items are not quoted here, so they are not itemized.",
+   "The three quoted drivers net to roughly +20 basis points, which is less than the total increase. The other drivers account for the rest.",
+   "Segment-level gross margin commentary (North America, Converse) was not reviewed."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_1"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3770"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3738"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q1",
+     "fiscal_year": 2027
+    },
+    "text": "Nike's Q1 FY2027 gross margin was about 42.79% (gross profit $4.798 billion on revenue $11.213 billion).",
+    "ticker": "NKE",
+    "unit": "percent",
+    "value": "42.789619192009",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_2"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3765"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3733"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q1",
+     "fiscal_year": 2026
+    },
+    "text": "Nike's Q1 FY2026 gross margin was about 42.18% (gross profit $4.943 billion on revenue $11.72 billion).",
+    "ticker": "NKE",
+    "unit": "percent",
+    "value": "42.175767918089",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value",
+      "kind": "computation",
+      "ref": "cmp_3"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q1",
+     "fiscal_year": 2027
+    },
+    "text": "Gross margin expanded by about 0.61 percentage points year over year, so the margin did increase.",
+    "ticker": "NKE",
+    "unit": "percentage_points",
+    "value": "0.61385127392",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_95ecc2c8c3a51c962e687f78d8e6a4f0bdabed295992d6e9275fbcb9bd5d1ac7"
+     }
+    ],
+    "id": "c4",
+    "kind": "textual",
+    "period": null,
+    "text": "Nike cited lower warehousing and logistics costs as a favorable driver, increasing gross margin approximately 90 basis points.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_95ecc2c8c3a51c962e687f78d8e6a4f0bdabed295992d6e9275fbcb9bd5d1ac7"
+     }
+    ],
+    "id": "c5",
+    "kind": "textual",
+    "period": null,
+    "text": "Nike cited higher other costs, primarily due to third-party royalties, as an offset that decreased gross margin approximately 40 basis points.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_95ecc2c8c3a51c962e687f78d8e6a4f0bdabed295992d6e9275fbcb9bd5d1ac7"
+     }
+    ],
+    "id": "c6",
+    "kind": "textual",
+    "period": null,
+    "text": "Nike cited a lower NIKE Brand average selling price as an offset that decreased gross margin approximately 30 basis points, primarily due to higher discounts and channel mix, partially offset by strategic pricing.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   }
+  ],
+  "final_claim_id": null,
+  "final_unit": null,
+  "final_value": null,
+  "status": "answered",
+  "summary": "Nike's gross margin rose to about 42.8% in Q1 FY2027 from about 42.2% in Q1 FY2026, an increase of about 0.61 percentage points. Nike's 10-Q gives lower warehousing and logistics costs as a favorable driver, worth about 90 basis points. Offsetting items were higher other costs, mainly third-party royalties (about 40 basis points), and a lower NIKE Brand average selling price (about 30 basis points)."
+ },
+ "retrieval": {
+  "first_search": {
+   "filings:s4": [
+    "chk_f28a8e00b2154e4c18e15fca72bdf7e9b609c44a05e13318576ede79d88bc49e",
+    "chk_d378d895a9fac6919ba38e103f00ac8b4ef55f06cd37152ba9bf60e1daa12ef8",
+    "chk_3fc93367d1135b8252f878a35e106835beb3c49f27ef1a2ec1e8c487fd073412",
+    "chk_a718307ac6769e4e04d814ca0d378654c5ddb97dfb33a96a4f582d374ebb8440",
+    "chk_47e61b0f15e71e7f53a671c2fa8a90aec0f8c351c5db398629123b5afc96484c",
+    "chk_2343495bf350c3a90a11be8e9eaf422d2298a9aeb8f717f629045bef1f97b02c",
+    "chk_d8e495cfda74220271de8d0ae9988173837a3c71b0a931e8ecaef1eb24be91c2",
+    "chk_e382c381eccfb41de830bb483c96d571119b56f7dfc5a44b720c2397ce74af38"
+   ]
+  },
+  "seen": [
+   "chk_f28a8e00b2154e4c18e15fca72bdf7e9b609c44a05e13318576ede79d88bc49e",
+   "chk_d378d895a9fac6919ba38e103f00ac8b4ef55f06cd37152ba9bf60e1daa12ef8",
+   "chk_3fc93367d1135b8252f878a35e106835beb3c49f27ef1a2ec1e8c487fd073412",
+   "chk_a718307ac6769e4e04d814ca0d378654c5ddb97dfb33a96a4f582d374ebb8440",
+   "chk_47e61b0f15e71e7f53a671c2fa8a90aec0f8c351c5db398629123b5afc96484c",
+   "chk_2343495bf350c3a90a11be8e9eaf422d2298a9aeb8f717f629045bef1f97b02c",
+   "chk_d8e495cfda74220271de8d0ae9988173837a3c71b0a931e8ecaef1eb24be91c2",
+   "chk_e382c381eccfb41de830bb483c96d571119b56f7dfc5a44b720c2397ce74af38",
+   "chk_95ecc2c8c3a51c962e687f78d8e6a4f0bdabed295992d6e9275fbcb9bd5d1ac7",
+   "chk_345666913ee6d1e97d11b0a8acc6b0f69c99beb1a9bd58489ff0a83bf8cbed50",
+   "chk_264ad4f840300da944075bdecb60b4ef0d18c2d73a5fc630c8e2644bd9d88d92"
+  ]
+ },
+ "run_id": "796d387a-042d-4807-95b8-ebbb3a75de3c",
+ "run_status": "done",
+ "split": "explanatory_dev",
+ "started_at": "2026-11-15T05:24:57.318429+00:00",
+ "status": "done",
+ "system_config_hash": "52a48e08f9ef2a659803092d4f5678475241e872105c99154f86b7bbc29038a3",
+ "system_id": "m6",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 101163,
+  "cache_write_tokens": 27106,
+  "input_tokens": 10342,
+  "output_tokens": 6342
+ }
+}

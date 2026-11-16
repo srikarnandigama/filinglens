@@ -1,0 +1,178 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 0,
+  "numeric_valid": 0,
+  "text_pending_judge": [],
+  "text_string_supported": 5,
+  "text_total": 5,
+  "uncited": 0
+ },
+ "cost_usd": "0.1950647",
+ "error": null,
+ "finished_at": "2026-11-15T05:18:38.096806+00:00",
+ "latency_ms": 60501,
+ "prediction": {
+  "parse_ok": true,
+  "text": "Tesla's FY2025 10-K describes several risks tied to Elon Musk. First, Tesla is highly dependent on his services. Second, he does not devote his full time and attention to Tesla, because he holds management positions at other companies. Third, losing key employees could disrupt operations, and none of them has a fixed-term employment agreement. Fourth, sales of Musk's pledged or other shares could push Tesla's stock price down. The filing also says the 2025 CEO Performance Award product goals were designed to incentivize Musk to devote time and energy to certain products and services.\nTesla states: \"We are highly dependent on the services of Elon Musk, Technoking of Tesla and our Chief Executive Officer.\"\nTesla notes that although Mr. Musk spends significant time with Tesla and is highly active in its management, he does not devote his full time and attention to Tesla. He also holds management positions at Space Exploration Technologies Corp., X.AI Holdings Corp. (xAI), Neuralink Corp. and The Boring Company, and is involved in other ventures.\nTesla says the loss of key employees could disrupt operations or delay the development, introduction and ramp of its products and services. It singles out its high dependence on Musk. It also says none of its key employees is bound by an employment agreement for any specific term, and it may not be able to attract and retain the senior leadership needed to grow its business.\nTesla discloses that banking institutions have in the past extended credit to Musk secured by pledges of Tesla stock. He may be forced by those banks to sell shares to satisfy his loan obligations if he could not do so through other means. He may also sell shares to satisfy tax obligations relating to the 2018 CEO Performance Award. Tesla says any such sales could cause its stock price to decline.\nIn discussing the 2025 CEO Performance Award, Tesla says the product goals were designed to incentivize Musk to devote time and energy to development of these products and services, as they are directionally consistent with Mr. Musk's vision for the future of the company."
+ },
+ "question_id": "xd03",
+ "question_sha": "19661ce4598e4c502dae8af7753493b8b14e468de4810744995036c58c5a150d",
+ "raw_output": {
+  "caveats": [
+   "The key-person passage ends with 'For example:', and the bullet examples that follow were not in the indexed text, so they are not covered here.",
+   "The share-pledge passage was read from a search snippet rather than the full text.",
+   "Coverage of Musk's compensation is limited to the 2025 CEO Performance Award and references to the 2018 award. The preceding award discussion was not retrieved. The retrieved passage may frame the award's product goals in a broader context, such as alignment with consumer demand, that is not covered here."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_285d38e245ce916106b3c1920af4a48f37167b78ab5f7273ed71f2ae2584a817"
+     }
+    ],
+    "id": "c1",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Tesla states: \"We are highly dependent on the services of Elon Musk, Technoking of Tesla and our Chief Executive Officer.\"",
+    "ticker": "TSLA",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_285d38e245ce916106b3c1920af4a48f37167b78ab5f7273ed71f2ae2584a817"
+     }
+    ],
+    "id": "c2",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Tesla notes that although Mr. Musk spends significant time with Tesla and is highly active in its management, he does not devote his full time and attention to Tesla. He also holds management positions at Space Exploration Technologies Corp., X.AI Holdings Corp. (xAI), Neuralink Corp. and The Boring Company, and is involved in other ventures.",
+    "ticker": "TSLA",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_a138ad22b5d83448c23c3a2489c04ea2c9e44cf03174c4820a92881f7307627b"
+     }
+    ],
+    "id": "c3",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Tesla says the loss of key employees could disrupt operations or delay the development, introduction and ramp of its products and services. It singles out its high dependence on Musk. It also says none of its key employees is bound by an employment agreement for any specific term, and it may not be able to attract and retain the senior leadership needed to grow its business.",
+    "ticker": "TSLA",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_6f27db3c3d78f54296be2a59528c03fa285e174a45c9d3fbee3a775356769575"
+     },
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_50be8af8d55099d90ae97763b5b4a91f4b10589725a68457c78fde0bf7fca061"
+     }
+    ],
+    "id": "c4",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Tesla discloses that banking institutions have in the past extended credit to Musk secured by pledges of Tesla stock. He may be forced by those banks to sell shares to satisfy his loan obligations if he could not do so through other means. He may also sell shares to satisfy tax obligations relating to the 2018 CEO Performance Award. Tesla says any such sales could cause its stock price to decline.",
+    "ticker": "TSLA",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_50be8af8d55099d90ae97763b5b4a91f4b10589725a68457c78fde0bf7fca061"
+     }
+    ],
+    "id": "c5",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "In discussing the 2025 CEO Performance Award, Tesla says the product goals were designed to incentivize Musk to devote time and energy to development of these products and services, as they are directionally consistent with Mr. Musk's vision for the future of the company.",
+    "ticker": "TSLA",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   }
+  ],
+  "final_claim_id": null,
+  "final_unit": null,
+  "final_value": null,
+  "status": "answered",
+  "summary": "Tesla's FY2025 10-K describes several risks tied to Elon Musk. First, Tesla is highly dependent on his services. Second, he does not devote his full time and attention to Tesla, because he holds management positions at other companies. Third, losing key employees could disrupt operations, and none of them has a fixed-term employment agreement. Fourth, sales of Musk's pledged or other shares could push Tesla's stock price down. The filing also says the 2025 CEO Performance Award product goals were designed to incentivize Musk to devote time and energy to certain products and services."
+ },
+ "retrieval": {
+  "first_search": {
+   "filings:s1": [
+    "chk_a138ad22b5d83448c23c3a2489c04ea2c9e44cf03174c4820a92881f7307627b",
+    "chk_285d38e245ce916106b3c1920af4a48f37167b78ab5f7273ed71f2ae2584a817",
+    "chk_50be8af8d55099d90ae97763b5b4a91f4b10589725a68457c78fde0bf7fca061",
+    "chk_6f27db3c3d78f54296be2a59528c03fa285e174a45c9d3fbee3a775356769575",
+    "chk_293134bc771abbe2ac3afd1194acabf6cfe92ff0a4a0e478d31853e240f9a2fc",
+    "chk_66eb2e296a33f9784b4df062502afe4a71c7fabc3891e7ce910eded48daf726f",
+    "chk_e3ba86acb6d0bfd083e2873e2550426f2893f7fafae058870fa283d7838c1a76",
+    "chk_25dfe51e72f74f457e5bba3220e7550547607fdce00db55611dde74a2a8716f1"
+   ]
+  },
+  "seen": [
+   "chk_a138ad22b5d83448c23c3a2489c04ea2c9e44cf03174c4820a92881f7307627b",
+   "chk_285d38e245ce916106b3c1920af4a48f37167b78ab5f7273ed71f2ae2584a817",
+   "chk_50be8af8d55099d90ae97763b5b4a91f4b10589725a68457c78fde0bf7fca061",
+   "chk_6f27db3c3d78f54296be2a59528c03fa285e174a45c9d3fbee3a775356769575",
+   "chk_293134bc771abbe2ac3afd1194acabf6cfe92ff0a4a0e478d31853e240f9a2fc",
+   "chk_66eb2e296a33f9784b4df062502afe4a71c7fabc3891e7ce910eded48daf726f",
+   "chk_e3ba86acb6d0bfd083e2873e2550426f2893f7fafae058870fa283d7838c1a76",
+   "chk_25dfe51e72f74f457e5bba3220e7550547607fdce00db55611dde74a2a8716f1"
+  ]
+ },
+ "run_id": "67d1efc7-24ac-4264-bb99-16f61cec3cda",
+ "run_status": "done",
+ "split": "explanatory_dev",
+ "started_at": "2026-11-15T05:17:37.537878+00:00",
+ "status": "done",
+ "system_config_hash": "2672337d37a1c4749e46b1640e2449249f4b9fce707f2424c3af28481dde7549",
+ "system_id": "system",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 114822,
+  "output_tokens": 9186
+ }
+}

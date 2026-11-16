@@ -1,0 +1,71 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 1,
+  "numeric_valid": 1,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.0405243",
+ "error": null,
+ "finished_at": "2026-11-15T05:11:43.116807+00:00",
+ "latency_ms": 12504,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD",
+  "value": "10849000000"
+ },
+ "question_id": "q_60e40e5060b3e2f4",
+ "question_sha": "2f85aef5a83f01acc0f11e74abfa6c2f91503eef9e1b9bf6c80911116a49f546",
+ "raw_output": {
+  "caveats": [
+   "The Q4 value is derived. It is full-year 2023 revenue minus revenue for the nine months ended 2023-09-29. It is not a separately reported quarterly figure."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3458"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q4",
+     "fiscal_year": 2023
+    },
+    "text": "Coca-Cola's revenue for fiscal Q4 2023 was $10,849,000,000 (about $10.85 billion). This is a derived value: full-year 2023 revenue of $45,754,000,000 minus nine-month revenue of $34,905,000,000.",
+    "ticker": "KO",
+    "unit": "USD",
+    "value": "10849000000",
+    "value_basis": "fact"
+   }
+  ],
+  "final_claim_id": "c1",
+  "final_unit": "USD",
+  "final_value": "10849000000",
+  "status": "answered",
+  "summary": "Coca-Cola's total revenue for fiscal Q4 2023 (2023-09-30 to 2023-12-31) was about $10.85 billion. This figure is derived, not reported directly."
+ },
+ "run_id": "42171b23-1cee-42d3-9fc0-d4e93c44a951",
+ "run_status": "done",
+ "split": "dev",
+ "started_at": "2026-11-15T05:11:30.576693+00:00",
+ "status": "done",
+ "system_config_hash": "52a48e08f9ef2a659803092d4f5678475241e872105c99154f86b7bbc29038a3",
+ "system_id": "m6",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 31843,
+  "cache_write_tokens": 5732,
+  "input_tokens": 4565,
+  "output_tokens": 1388
+ }
+}

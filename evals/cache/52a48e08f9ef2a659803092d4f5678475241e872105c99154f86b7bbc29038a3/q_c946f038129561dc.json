@@ -1,0 +1,132 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 4,
+  "numeric_valid": 4,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.0592863",
+ "error": null,
+ "finished_at": "2026-11-15T05:11:30.575390+00:00",
+ "latency_ms": 19770,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "21.285858664386"
+ },
+ "question_id": "q_c946f038129561dc",
+ "question_sha": "f51e3a429a4b5d6c0f98f9b80ec49c4eaf943cb7224a15d2f1bdc5529d3a0064",
+ "raw_output": {
+  "caveats": [
+   "No filing passages were provided, so this answer does not explain why operating income changed.",
+   "Both figures are the OperatingIncomeLoss values reported in the same filing. Fiscal 2023 ran 2022-10-02 to 2023-09-30 and fiscal 2024 ran 2023-10-01 to 2024-09-28."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3880"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2023
+    },
+    "text": "Disney's fiscal 2023 operating income was $12.863 billion.",
+    "ticker": "DIS",
+    "unit": "USD",
+    "value": "12863000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3885"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "Disney's fiscal 2024 operating income was $15.601 billion.",
+    "ticker": "DIS",
+    "unit": "USD",
+    "value": "15601000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": "value",
+      "kind": "computation",
+      "ref": "cmp_2"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "Operating income increased by about $2.738 billion from fiscal 2023 to fiscal 2024.",
+    "ticker": "DIS",
+    "unit": "USD",
+    "value": "2738000000",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_1"
+     }
+    ],
+    "id": "c4",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "Disney's operating income rose about 21.29% from fiscal 2023 to fiscal 2024.",
+    "ticker": "DIS",
+    "unit": "percent",
+    "value": "21.285858664386",
+    "value_basis": "computation"
+   }
+  ],
+  "final_claim_id": "c4",
+  "final_unit": "percent",
+  "final_value": "21.285858664386",
+  "status": "answered",
+  "summary": "Disney's operating income rose about 21.29% from fiscal 2023 to fiscal 2024. It went from $12.863 billion to $15.601 billion, an increase of about $2.738 billion."
+ },
+ "run_id": "ba20bef5-537f-4958-95d4-8e8971162ad1",
+ "run_status": "done",
+ "split": "dev",
+ "started_at": "2026-11-15T05:11:10.758421+00:00",
+ "status": "done",
+ "system_config_hash": "52a48e08f9ef2a659803092d4f5678475241e872105c99154f86b7bbc29038a3",
+ "system_id": "m6",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 55443,
+  "cache_write_tokens": 6404,
+  "input_tokens": 6151,
+  "output_tokens": 2543
+ }
+}

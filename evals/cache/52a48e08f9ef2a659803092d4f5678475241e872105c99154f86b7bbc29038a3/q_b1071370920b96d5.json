@@ -1,0 +1,111 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 3,
+  "numeric_valid": 3,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.0491141",
+ "error": null,
+ "finished_at": "2026-11-15T05:14:10.843607+00:00",
+ "latency_ms": 15890,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "67.632652076346"
+ },
+ "question_id": "q_b1071370920b96d5",
+ "question_sha": "c85588b1c452dc71600f835ae3af5f8d2187f903017156d8847a41e4fb5a776f",
+ "raw_output": {
+  "caveats": [
+   "Microsoft's fiscal year ends June 30, so fiscal Q3 2026 covers January 1 to March 31, 2026."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "232"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q3",
+     "fiscal_year": 2026
+    },
+    "text": "Microsoft's gross profit in fiscal Q3 2026 was $56.058 billion.",
+    "ticker": "MSFT",
+    "unit": "USD",
+    "value": "56058000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "202"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q3",
+     "fiscal_year": 2026
+    },
+    "text": "Microsoft's revenue in fiscal Q3 2026 was $82.886 billion.",
+    "ticker": "MSFT",
+    "unit": "USD",
+    "value": "82886000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_1"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q3",
+     "fiscal_year": 2026
+    },
+    "text": "Microsoft's gross margin in fiscal Q3 2026 was about 67.6%, which is gross profit divided by revenue.",
+    "ticker": "MSFT",
+    "unit": "percent",
+    "value": "67.632652076346",
+    "value_basis": "computation"
+   }
+  ],
+  "final_claim_id": "c3",
+  "final_unit": "percent",
+  "final_value": "67.632652076346",
+  "status": "answered",
+  "summary": "Microsoft's gross margin in fiscal Q3 2026 (quarter ended March 31, 2026) was about 67.6%. That comes from gross profit of $56.058 billion on revenue of $82.886 billion."
+ },
+ "run_id": "b1e75b9e-05a6-4ed2-9d54-899a820893e9",
+ "run_status": "done",
+ "split": "dev",
+ "started_at": "2026-11-15T05:13:54.912365+00:00",
+ "status": "done",
+ "system_config_hash": "52a48e08f9ef2a659803092d4f5678475241e872105c99154f86b7bbc29038a3",
+ "system_id": "m6",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 33081,
+  "cache_write_tokens": 5008,
+  "input_tokens": 5543,
+  "output_tokens": 2220
+ }
+}

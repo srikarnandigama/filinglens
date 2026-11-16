@@ -1,0 +1,129 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 4,
+  "numeric_valid": 4,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.0539607",
+ "error": null,
+ "finished_at": "2026-11-15T05:15:39.942504+00:00",
+ "latency_ms": 16991,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "21.688231669747"
+ },
+ "question_id": "q_860cad39f1594176",
+ "question_sha": "f9e9664fa2e82e7e560db2cca23713678e3ec45f91525a1c3aba957ee7270bb0",
+ "raw_output": {
+  "caveats": [],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "1157"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2023
+    },
+    "text": "JPM diluted EPS for fiscal 2023 was $16.23.",
+    "ticker": "JPM",
+    "unit": "USD/shares",
+    "value": "16.23",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "1161"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "JPM diluted EPS for fiscal 2024 was $19.75.",
+    "ticker": "JPM",
+    "unit": "USD/shares",
+    "value": "19.75",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": "value",
+      "kind": "computation",
+      "ref": "cmp_2"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "Diluted EPS increased by $3.52 per share from fiscal 2023 to fiscal 2024.",
+    "ticker": "JPM",
+    "unit": "USD/shares",
+    "value": "3.52",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_1"
+     }
+    ],
+    "id": "c4",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "Diluted EPS grew about 21.69% from fiscal 2023 to fiscal 2024.",
+    "ticker": "JPM",
+    "unit": "percent",
+    "value": "21.688231669747",
+    "value_basis": "computation"
+   }
+  ],
+  "final_claim_id": "c4",
+  "final_unit": "percent",
+  "final_value": "21.688231669747",
+  "status": "answered",
+  "summary": "JPMorgan Chase's diluted EPS rose about 21.69%, from $16.23 in fiscal 2023 to $19.75 in fiscal 2024. That is an increase of $3.52 per share."
+ },
+ "run_id": "6929ce94-09a3-4f21-8c8c-16be6f4a56bd",
+ "run_status": "done",
+ "split": "dev",
+ "started_at": "2026-11-15T05:15:22.909304+00:00",
+ "status": "done",
+ "system_config_hash": "52a48e08f9ef2a659803092d4f5678475241e872105c99154f86b7bbc29038a3",
+ "system_id": "m6",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 41127,
+  "cache_write_tokens": 6992,
+  "input_tokens": 4724,
+  "output_tokens": 2292
+ }
+}

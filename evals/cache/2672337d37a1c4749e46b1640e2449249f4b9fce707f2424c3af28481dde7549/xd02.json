@@ -1,0 +1,181 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 0,
+  "numeric_valid": 0,
+  "text_pending_judge": [],
+  "text_string_supported": 5,
+  "text_total": 5,
+  "uncited": 0
+ },
+ "cost_usd": "0.1125005",
+ "error": null,
+ "finished_at": "2026-11-15T05:17:46.731805+00:00",
+ "latency_ms": 78047,
+ "prediction": {
+  "parse_ok": true,
+  "text": "JPMorgan's 2025 10-K says net interest income increased. Management cited higher Markets net interest income, higher revolving balances in Card Services, higher wholesale deposit balances and the impact of investment securities activity. These gains were largely offset by deposit margin compression and lower rates. Management tied the margin compression to funds transfer pricing (FTP): the FTP benefit for deposits fell more than the rates paid to depositors. The firm's average interest-earning assets were $3.8 trillion, up $297 billion, and the net yield was 2.50%, down 13 bps.\nJPMorgan said net interest income increased in 2025, driven by higher Markets net interest income, higher revolving balances in Card Services, higher wholesale deposit balances, and the impact of investment securities activity.\nManagement said these factors were largely offset by deposit margin compression and the impact of lower rates.\nOn the FTP mechanism, management wrote that lower average interest rates reduced the cost of funding for assets and the funding benefit earned for liabilities. It also said the FTP benefit for deposits decreased more than the rates paid to deposit holders, which produced an overall deposit margin compression.\nManagement reported that average interest-earning assets were $3.8 trillion, up $297 billion, while the yield was 5.05%, down 45 bps. The net yield on these assets, on an FTE basis, was 2.50%, down 13 bps.\nAt the segment level, Consumer & Community Banking NII was $58.2 billion, up 6%, with higher Banking & Wealth Management NII from a higher deposit margin reflecting FTP changes, partly offset by lower average deposit balances. Corporate NII was $6.1 billion, down $3.7 billion, driven by lower rates and FTP changes for consumer deposits, partly offset by investment securities activity."
+ },
+ "question_id": "xd02",
+ "question_sha": "d9105fe4fffa586399b5582e7d0ac7b6680de44c471c8c8819d563762ae3a637",
+ "raw_output": {
+  "caveats": [
+   "The consolidated dollar amount of 2025 net interest income and its change were not located in the retrieved passages, so the size of the firm-wide increase is not quantified.",
+   "The $58.2 billion and $6.1 billion figures are segment-level (Consumer & Community Banking and Corporate), not firm-wide totals.",
+   "Searches covered Item 7 of the FY2025 10-K only."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_42cb0208d9f7d84d518a679a6182e8e4093062700d9cccc22382d5e76f111112"
+     }
+    ],
+    "id": "c1",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "JPMorgan said net interest income increased in 2025, driven by higher Markets net interest income, higher revolving balances in Card Services, higher wholesale deposit balances, and the impact of investment securities activity.",
+    "ticker": "JPM",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_42cb0208d9f7d84d518a679a6182e8e4093062700d9cccc22382d5e76f111112"
+     }
+    ],
+    "id": "c2",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Management said these factors were largely offset by deposit margin compression and the impact of lower rates.",
+    "ticker": "JPM",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_1e02306e0753016cf413c2deb925559f8fea6c03025d99e3adfc1223ec3d54f9"
+     }
+    ],
+    "id": "c3",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "On the FTP mechanism, management wrote that lower average interest rates reduced the cost of funding for assets and the funding benefit earned for liabilities. It also said the FTP benefit for deposits decreased more than the rates paid to deposit holders, which produced an overall deposit margin compression.",
+    "ticker": "JPM",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_42cb0208d9f7d84d518a679a6182e8e4093062700d9cccc22382d5e76f111112"
+     }
+    ],
+    "id": "c4",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Management reported that average interest-earning assets were $3.8 trillion, up $297 billion, while the yield was 5.05%, down 45 bps. The net yield on these assets, on an FTE basis, was 2.50%, down 13 bps.",
+    "ticker": "JPM",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_67c5ae98b306d6c6dfc0ab61f8d8b50833054de378447f924f901b3e3b77acf5"
+     },
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_c19443624c2bbf2e2780ad32a69bb9d9cf93341a4ec4a8eaf530ec170b7c90b2"
+     }
+    ],
+    "id": "c5",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "At the segment level, Consumer & Community Banking NII was $58.2 billion, up 6%, with higher Banking & Wealth Management NII from a higher deposit margin reflecting FTP changes, partly offset by lower average deposit balances. Corporate NII was $6.1 billion, down $3.7 billion, driven by lower rates and FTP changes for consumer deposits, partly offset by investment securities activity.",
+    "ticker": "JPM",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   }
+  ],
+  "final_claim_id": null,
+  "final_unit": null,
+  "final_value": null,
+  "status": "answered",
+  "summary": "JPMorgan's 2025 10-K says net interest income increased. Management cited higher Markets net interest income, higher revolving balances in Card Services, higher wholesale deposit balances and the impact of investment securities activity. These gains were largely offset by deposit margin compression and lower rates. Management tied the margin compression to funds transfer pricing (FTP): the FTP benefit for deposits fell more than the rates paid to depositors. The firm's average interest-earning assets were $3.8 trillion, up $297 billion, and the net yield was 2.50%, down 13 bps."
+ },
+ "retrieval": {
+  "first_search": {
+   "filings:s1": [
+    "chk_42cb0208d9f7d84d518a679a6182e8e4093062700d9cccc22382d5e76f111112",
+    "chk_67c5ae98b306d6c6dfc0ab61f8d8b50833054de378447f924f901b3e3b77acf5",
+    "chk_ddea5f043783c16bdf2fb63d503a614fe187c4a176660cc63a76c3124ad24de5",
+    "chk_db625f689c958a73ebca389c42ab702c58ea5a07ad94d91b12bcbc4c49e6dfba",
+    "chk_1e02306e0753016cf413c2deb925559f8fea6c03025d99e3adfc1223ec3d54f9",
+    "chk_facbb95ef326d102351e7149b469be76efad2aa818eb0e626510ca53f81b6ad5",
+    "chk_2358d031e9ccc67c67be2c55bf9d33b15c87067e3f0ad16f00b2034d2bd030a0",
+    "chk_38852eb3f6741f15b201284d2ead949907d9df7157e1d66b66a29b9c436cb91a"
+   ]
+  },
+  "seen": [
+   "chk_42cb0208d9f7d84d518a679a6182e8e4093062700d9cccc22382d5e76f111112",
+   "chk_67c5ae98b306d6c6dfc0ab61f8d8b50833054de378447f924f901b3e3b77acf5",
+   "chk_ddea5f043783c16bdf2fb63d503a614fe187c4a176660cc63a76c3124ad24de5",
+   "chk_db625f689c958a73ebca389c42ab702c58ea5a07ad94d91b12bcbc4c49e6dfba",
+   "chk_1e02306e0753016cf413c2deb925559f8fea6c03025d99e3adfc1223ec3d54f9",
+   "chk_facbb95ef326d102351e7149b469be76efad2aa818eb0e626510ca53f81b6ad5",
+   "chk_2358d031e9ccc67c67be2c55bf9d33b15c87067e3f0ad16f00b2034d2bd030a0",
+   "chk_38852eb3f6741f15b201284d2ead949907d9df7157e1d66b66a29b9c436cb91a",
+   "chk_9fbba2e69c7c0af9ad91beb042265a2ef41dc3a5ca229edc4e03a0a4a74832a1",
+   "chk_3a5709d976a9b72304a28ffb4e0770769216dc41deda0e1076ebb66e1882bd8c",
+   "chk_c19443624c2bbf2e2780ad32a69bb9d9cf93341a4ec4a8eaf530ec170b7c90b2"
+  ]
+ },
+ "run_id": "dd3266d5-acb9-4694-a79d-96c53d0faa2d",
+ "run_status": "done",
+ "split": "explanatory_dev",
+ "started_at": "2026-11-15T05:16:28.598601+00:00",
+ "status": "done",
+ "system_config_hash": "2672337d37a1c4749e46b1640e2449249f4b9fce707f2424c3af28481dde7549",
+ "system_id": "system",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 91474,
+  "output_tokens": 6412
+ }
+}

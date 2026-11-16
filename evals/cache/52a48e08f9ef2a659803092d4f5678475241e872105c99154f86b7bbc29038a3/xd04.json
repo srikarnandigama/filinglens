@@ -1,0 +1,216 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 0,
+  "numeric_valid": 0,
+  "text_pending_judge": [],
+  "text_string_supported": 8,
+  "text_total": 8,
+  "uncited": 0
+ },
+ "cost_usd": "0.305463570",
+ "error": null,
+ "finished_at": "2026-11-15T05:25:18.500810+00:00",
+ "latency_ms": 142581,
+ "prediction": {
+  "parse_ok": true,
+  "text": "Alphabet's FY2025 10-K says the DOJ, various states and other plaintiffs have filed several antitrust lawsuits. They cover advertising technology, Google Search, and Android and Google Play. The company warns that losing could bring significant remedy-implementation costs and harm its business and results. In Search, a December 2025 final judgment restricts distribution and requires data sharing and syndication, and Alphabet appealed in January 2026. In ad tech, an April 2025 mixed decision was followed by a DOJ structural remedy proposal that Alphabet says could materially harm its business. The EC imposed a \u20ac3.0 billion ad tech fine. In Epic/Google Play, Alphabet is appealing to the Supreme Court and reached a settlement with Epic that is contingent on court approval.\nAlphabet states that the DOJ, various states and other plaintiffs have filed, and may continue to file, several antitrust lawsuits about its advertising technologies, the operation and distribution of Google Search, and Android and Play Store. If it is unsuccessful, it could face significant expenses to implement remedies, and such costs and alterations could harm its business, reputation, financial condition and operating results.\nSearch case: the final judgment (entered December 2025) imposes restrictions on how Alphabet distributes its services and requires it to share certain search data with, and offer syndication services to, certain competitors. In January 2026 Alphabet appealed the final judgment and moved to pause implementation of certain remedies.\nAd tech (DOJ case): in April 2025 the presiding judge issued a mixed decision, ruling that neither Alphabet's advertiser tools nor the DoubleClick and AdMeld acquisitions were anticompetitive, but that its publisher tools unfairly excluded rivals. The DOJ's remedy proposal includes structural remedies that could harm the business. Closing arguments were held in November 2025 and Alphabet is awaiting a final judgment.\nA trial in the state Attorneys General ad tech case in the Eastern District of Texas will take place after a remedies decision in the DOJ ad tech case. Alphabet says it could result in remedies that could harm its business, reputation, financial condition and operating results.\nThe financial statement note says the DOJ's structural remedy proposal could have a material adverse effect on Alphabet's business. After the final judgment, Alphabet plans to appeal the adverse portion of the April 2025 decision and potentially aspects of the remedies decision.\nIn September 2025 the European Commission decided that Google had infringed European competition laws through \"self-preferencing\" in its advertising technology business. It imposed a \u20ac3.0 billion fine and directed Google to cease and desist the practices.\nGoogle Play (state AG) matter: the court preliminarily approved the settlement in November 2025, and final approval remains pending.\nEpic v. Google: Alphabet is appealing to the US Supreme Court and implemented the ordered remedies in October 2025 while the appeal is pending. In October 2025 it reached a settlement with Epic to modify the remedies and resolve certain other Epic lawsuits. The settlement is contingent on the court approving a proposed modified injunction."
+ },
+ "question_id": "xd04",
+ "question_sha": "0c25351c83625ac56f455a5df8392ce657ddf7f6608cafabc05e014c75e8e840",
+ "raw_output": {
+  "caveats": [
+   "The passages cover Risk Factors (Item 1A) and the Antitrust Matters note (Item 8). No MD&A (Item 7) passage on these cases was found.",
+   "Some Note items were not retrieved in full: the Search, Shopping, Android and AdSense entries, the EC Android and AdSense matters, the Japan JFTC order, and the privacy settlement. The Epic passage is quoted from a search snippet.",
+   "The \u20ac3.0 billion EC fine is a euro amount taken from the filing text. It is reported as a textual claim because no structured fact record was available for it.",
+   "The filing's statement that a possible loss cannot be estimated was retrieved only as a truncated fragment. This answer does not say which specific matters it covers, and it does not describe any amounts accrued for individual matters."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_9598baf056a7e88925c2d84c42d954b40a295302f7efab9696814761b15ca533"
+     }
+    ],
+    "id": "c1",
+    "kind": "textual",
+    "period": null,
+    "text": "Alphabet states that the DOJ, various states and other plaintiffs have filed, and may continue to file, several antitrust lawsuits about its advertising technologies, the operation and distribution of Google Search, and Android and Play Store. If it is unsuccessful, it could face significant expenses to implement remedies, and such costs and alterations could harm its business, reputation, financial condition and operating results.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_9598baf056a7e88925c2d84c42d954b40a295302f7efab9696814761b15ca533"
+     }
+    ],
+    "id": "c2",
+    "kind": "textual",
+    "period": null,
+    "text": "Search case: the final judgment (entered December 2025) imposes restrictions on how Alphabet distributes its services and requires it to share certain search data with, and offer syndication services to, certain competitors. In January 2026 Alphabet appealed the final judgment and moved to pause implementation of certain remedies.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_bc94ae1afad94dda738104f1288c3dceade82b3e7d5f0874c81df8466e366723"
+     }
+    ],
+    "id": "c3",
+    "kind": "textual",
+    "period": null,
+    "text": "Ad tech (DOJ case): in April 2025 the presiding judge issued a mixed decision, ruling that neither Alphabet's advertiser tools nor the DoubleClick and AdMeld acquisitions were anticompetitive, but that its publisher tools unfairly excluded rivals. The DOJ's remedy proposal includes structural remedies that could harm the business. Closing arguments were held in November 2025 and Alphabet is awaiting a final judgment.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_bc94ae1afad94dda738104f1288c3dceade82b3e7d5f0874c81df8466e366723"
+     }
+    ],
+    "id": "c4",
+    "kind": "textual",
+    "period": null,
+    "text": "A trial in the state Attorneys General ad tech case in the Eastern District of Texas will take place after a remedies decision in the DOJ ad tech case. Alphabet says it could result in remedies that could harm its business, reputation, financial condition and operating results.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_1ae3f247d64e7511ae394a501be0e8178e85bd75379102d1d6f5e9f1ec84d68c"
+     }
+    ],
+    "id": "c5",
+    "kind": "textual",
+    "period": null,
+    "text": "The financial statement note says the DOJ's structural remedy proposal could have a material adverse effect on Alphabet's business. After the final judgment, Alphabet plans to appeal the adverse portion of the April 2025 decision and potentially aspects of the remedies decision.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_a8a5832341cdec4db047101a5e46fce4d1abecf2d62aa60cbde5343f0ea41ab9"
+     }
+    ],
+    "id": "c6",
+    "kind": "textual",
+    "period": null,
+    "text": "In September 2025 the European Commission decided that Google had infringed European competition laws through \"self-preferencing\" in its advertising technology business. It imposed a \u20ac3.0 billion fine and directed Google to cease and desist the practices.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_a8a5832341cdec4db047101a5e46fce4d1abecf2d62aa60cbde5343f0ea41ab9"
+     }
+    ],
+    "id": "c7",
+    "kind": "textual",
+    "period": null,
+    "text": "Google Play (state AG) matter: the court preliminarily approved the settlement in November 2025, and final approval remains pending.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_c1b6eca1ea2b0de76780807db21f7348aeb038eecb12390046bde0b231ddbbea"
+     }
+    ],
+    "id": "c8",
+    "kind": "textual",
+    "period": null,
+    "text": "Epic v. Google: Alphabet is appealing to the US Supreme Court and implemented the ordered remedies in October 2025 while the appeal is pending. In October 2025 it reached a settlement with Epic to modify the remedies and resolve certain other Epic lawsuits. The settlement is contingent on the court approving a proposed modified injunction.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   }
+  ],
+  "final_claim_id": null,
+  "final_unit": null,
+  "final_value": null,
+  "status": "answered",
+  "summary": "Alphabet's FY2025 10-K says the DOJ, various states and other plaintiffs have filed several antitrust lawsuits. They cover advertising technology, Google Search, and Android and Google Play. The company warns that losing could bring significant remedy-implementation costs and harm its business and results. In Search, a December 2025 final judgment restricts distribution and requires data sharing and syndication, and Alphabet appealed in January 2026. In ad tech, an April 2025 mixed decision was followed by a DOJ structural remedy proposal that Alphabet says could materially harm its business. The EC imposed a \u20ac3.0 billion ad tech fine. In Epic/Google Play, Alphabet is appealing to the Supreme Court and reached a settlement with Epic that is contingent on court approval."
+ },
+ "retrieval": {
+  "first_search": {
+   "filings:s1": [
+    "chk_9598baf056a7e88925c2d84c42d954b40a295302f7efab9696814761b15ca533",
+    "chk_bc94ae1afad94dda738104f1288c3dceade82b3e7d5f0874c81df8466e366723",
+    "chk_1ae3f247d64e7511ae394a501be0e8178e85bd75379102d1d6f5e9f1ec84d68c",
+    "chk_a8a5832341cdec4db047101a5e46fce4d1abecf2d62aa60cbde5343f0ea41ab9",
+    "chk_f6df27df8d25ce2322a1ed13b160e4aa3f1b1ab62887c9380852ec94dc6375d9",
+    "chk_6b0bed95eef87130db9e8fa5e9030ac0c6a1dbe219d6985b84b05082f7d16207",
+    "chk_f71dfb9008fcb1742d459dc2ab63477891d1114739bbb3f84532c56bd050d4d6",
+    "chk_543db4ff9f64edcc40219b45bab43aa0a89717e42ab1aecdf0085fdb0e91c03b",
+    "chk_4557d015bf0f9e95077d3a2427e411b0f088a34a547aa0604768cddbba028603",
+    "chk_1d17d1a93a7ace43e9b8f01b7a27176d9210492cf459d728ca15bfc53c4380e6"
+   ]
+  },
+  "seen": [
+   "chk_9598baf056a7e88925c2d84c42d954b40a295302f7efab9696814761b15ca533",
+   "chk_bc94ae1afad94dda738104f1288c3dceade82b3e7d5f0874c81df8466e366723",
+   "chk_1ae3f247d64e7511ae394a501be0e8178e85bd75379102d1d6f5e9f1ec84d68c",
+   "chk_a8a5832341cdec4db047101a5e46fce4d1abecf2d62aa60cbde5343f0ea41ab9",
+   "chk_f6df27df8d25ce2322a1ed13b160e4aa3f1b1ab62887c9380852ec94dc6375d9",
+   "chk_6b0bed95eef87130db9e8fa5e9030ac0c6a1dbe219d6985b84b05082f7d16207",
+   "chk_f71dfb9008fcb1742d459dc2ab63477891d1114739bbb3f84532c56bd050d4d6",
+   "chk_543db4ff9f64edcc40219b45bab43aa0a89717e42ab1aecdf0085fdb0e91c03b",
+   "chk_4557d015bf0f9e95077d3a2427e411b0f088a34a547aa0604768cddbba028603",
+   "chk_1d17d1a93a7ace43e9b8f01b7a27176d9210492cf459d728ca15bfc53c4380e6",
+   "chk_c1b6eca1ea2b0de76780807db21f7348aeb038eecb12390046bde0b231ddbbea",
+   "chk_74693df71b447676a9f99bb4f1ca8dae61691c1380ec1e3d47b0e365443d9698"
+  ]
+ },
+ "run_id": "75e50d40-efa2-4add-b2ac-05c5e94e40ad",
+ "run_status": "done",
+ "split": "explanatory_dev",
+ "started_at": "2026-11-15T05:22:55.830026+00:00",
+ "status": "done",
+ "system_config_hash": "52a48e08f9ef2a659803092d4f5678475241e872105c99154f86b7bbc29038a3",
+ "system_id": "m6",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 97677,
+  "cache_write_tokens": 46996,
+  "input_tokens": 35536,
+  "output_tokens": 20428
+ }
+}

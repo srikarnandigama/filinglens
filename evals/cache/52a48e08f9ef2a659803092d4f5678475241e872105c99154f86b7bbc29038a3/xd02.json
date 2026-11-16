@@ -1,0 +1,133 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 0,
+  "numeric_valid": 0,
+  "text_pending_judge": [],
+  "text_string_supported": 3,
+  "text_total": 3,
+  "uncited": 0
+ },
+ "cost_usd": "0.082615200",
+ "error": null,
+ "finished_at": "2026-11-15T05:22:47.153098+00:00",
+ "latency_ms": 30865,
+ "prediction": {
+  "parse_ok": true,
+  "text": "JPMorgan's 10-K says net interest income increased in 2025. Management attributed the increase to higher Markets net interest income, higher revolving balances in Card Services, higher wholesale deposit balances, and the impact of investment securities activity. These factors were largely offset by deposit margin compression and the impact of lower rates. Average interest-earning assets were $3.8 trillion, up $297 billion. The yield was 5.05%, down 45 bps. The net yield was 2.50%, down 13 bps.\nManagement said net interest income increased in 2025. It cited four drivers: higher Markets net interest income, higher revolving balances in Card Services, higher wholesale deposit balances, and the impact of investment securities activity.\nAccording to management, these factors were largely offset by deposit margin compression and the impact of lower rates.\nContext from the filing: average interest-earning assets were $3.8 trillion, up $297 billion. The yield was 5.05%, down 45 bps. The net yield on these assets, on an FTE basis, was 2.50%, down 13 bps."
+ },
+ "question_id": "xd02",
+ "question_sha": "d9105fe4fffa586399b5582e7d0ac7b6680de44c471c8c8819d563762ae3a637",
+ "raw_output": {
+  "caveats": [
+   "The retrieved passage began mid-section, so the header and introduction of the net interest income discussion were not retrieved. No dollar figure for the net interest income change was in the evidence, so none is quoted."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_42cb0208d9f7d84d518a679a6182e8e4093062700d9cccc22382d5e76f111112"
+     }
+    ],
+    "id": "c1",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Management said net interest income increased in 2025. It cited four drivers: higher Markets net interest income, higher revolving balances in Card Services, higher wholesale deposit balances, and the impact of investment securities activity.",
+    "ticker": "JPM",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_42cb0208d9f7d84d518a679a6182e8e4093062700d9cccc22382d5e76f111112"
+     }
+    ],
+    "id": "c2",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "According to management, these factors were largely offset by deposit margin compression and the impact of lower rates.",
+    "ticker": "JPM",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_42cb0208d9f7d84d518a679a6182e8e4093062700d9cccc22382d5e76f111112"
+     }
+    ],
+    "id": "c3",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Context from the filing: average interest-earning assets were $3.8 trillion, up $297 billion. The yield was 5.05%, down 45 bps. The net yield on these assets, on an FTE basis, was 2.50%, down 13 bps.",
+    "ticker": "JPM",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   }
+  ],
+  "final_claim_id": null,
+  "final_unit": null,
+  "final_value": null,
+  "status": "answered",
+  "summary": "JPMorgan's 10-K says net interest income increased in 2025. Management attributed the increase to higher Markets net interest income, higher revolving balances in Card Services, higher wholesale deposit balances, and the impact of investment securities activity. These factors were largely offset by deposit margin compression and the impact of lower rates. Average interest-earning assets were $3.8 trillion, up $297 billion. The yield was 5.05%, down 45 bps. The net yield was 2.50%, down 13 bps."
+ },
+ "retrieval": {
+  "first_search": {
+   "filings:s1": [
+    "chk_42cb0208d9f7d84d518a679a6182e8e4093062700d9cccc22382d5e76f111112",
+    "chk_db625f689c958a73ebca389c42ab702c58ea5a07ad94d91b12bcbc4c49e6dfba",
+    "chk_5799e4f172cb0de101a212eee387cc64d985003738500bad82a435a8a22fadb8",
+    "chk_38852eb3f6741f15b201284d2ead949907d9df7157e1d66b66a29b9c436cb91a",
+    "chk_56f7739c8fd65fdb308c7337be758d504bc0b1d0eade2ea4a9e6df15163ce73c",
+    "chk_fcf99aa158426108372695a210702d64469ee88ccfa6f9a6f1804399a856cd6a",
+    "chk_2358d031e9ccc67c67be2c55bf9d33b15c87067e3f0ad16f00b2034d2bd030a0",
+    "chk_417a415a783b835411dc6934ce547b89fc359702a3a60723fae31b0682411fb1"
+   ]
+  },
+  "seen": [
+   "chk_42cb0208d9f7d84d518a679a6182e8e4093062700d9cccc22382d5e76f111112",
+   "chk_db625f689c958a73ebca389c42ab702c58ea5a07ad94d91b12bcbc4c49e6dfba",
+   "chk_5799e4f172cb0de101a212eee387cc64d985003738500bad82a435a8a22fadb8",
+   "chk_38852eb3f6741f15b201284d2ead949907d9df7157e1d66b66a29b9c436cb91a",
+   "chk_56f7739c8fd65fdb308c7337be758d504bc0b1d0eade2ea4a9e6df15163ce73c",
+   "chk_fcf99aa158426108372695a210702d64469ee88ccfa6f9a6f1804399a856cd6a",
+   "chk_2358d031e9ccc67c67be2c55bf9d33b15c87067e3f0ad16f00b2034d2bd030a0",
+   "chk_417a415a783b835411dc6934ce547b89fc359702a3a60723fae31b0682411fb1",
+   "chk_ac4e296062f1061b22ba3626dd359a7e0e72fb07713dc5fdc7c6b0769bfc0354",
+   "chk_fb3f5b1ebccec132807fb48f20c4869b3c34b7c94d0e92c07789dfa0a6f790ab"
+  ]
+ },
+ "run_id": "f4c5d53a-a6cd-492f-bb79-212f6d64f457",
+ "run_status": "done",
+ "split": "explanatory_dev",
+ "started_at": "2026-11-15T05:22:16.224468+00:00",
+ "status": "done",
+ "system_config_hash": "52a48e08f9ef2a659803092d4f5678475241e872105c99154f86b7bbc29038a3",
+ "system_id": "m6",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 34753,
+  "cache_write_tokens": 34273,
+  "input_tokens": 5621,
+  "output_tokens": 3651
+ }
+}

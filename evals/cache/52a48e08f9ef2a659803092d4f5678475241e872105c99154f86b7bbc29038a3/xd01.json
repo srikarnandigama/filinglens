@@ -1,0 +1,185 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 1,
+  "numeric_valid": 1,
+  "text_pending_judge": [],
+  "text_string_supported": 4,
+  "text_total": 4,
+  "uncited": 0
+ },
+ "cost_usd": "0.091484770",
+ "error": null,
+ "finished_at": "2026-11-15T05:22:55.828448+00:00",
+ "latency_ms": 39623,
+ "prediction": {
+  "parse_ok": true,
+  "text": "Meta said advertising revenue rose 22% in 2025 because it delivered more ad impressions and the average price per ad went up. Impressions grew 12% and were strongest in Asia-Pacific, which Meta tied to more users and more engagement. Meta said the higher price per ad came from stronger advertiser demand, which it mostly credits to better ad targeting and measurement tools. Total company revenue rose about 22.17%, from $164.50 billion to $200.97 billion, consistent with this. Total revenue is only a proxy for advertising revenue.\nMeta reported that advertising revenue in 2025 increased $35.54 billion, or 22%, compared to 2024, due to increases in ad impressions delivered and average price per ad.\nAd impressions delivered rose 12% in 2025 (versus 11% in 2024) and grew in all regions, especially Asia-Pacific. Meta said this was driven by increases in users and their engagement on its products.\nMeta said the increase in average price per ad was driven by higher advertising demand, which it believes is mostly due to ongoing improvements in ad performance from its ad targeting and measurement tools. This was partially offset by more impressions delivered in geographies and products, such as Reels, that monetize at lower rates.\nMeta stated that Family of Apps revenue rose 22% in 2025 and that the increase was almost entirely driven by advertising revenue.\nTotal revenue grew about 22.17% in FY2025, from $164.50 billion to $200.97 billion. This is a proxy that is consistent with the reported 22% advertising growth."
+ },
+ "question_id": "xd01",
+ "question_sha": "6e0793cb43eb6d54cb5dcabe5b1a4d3d79a6727d1706d95008c455c2f5c938a6",
+ "raw_output": {
+  "caveats": [
+   "Total revenue growth is used only as a proxy. Advertising revenue figures come from the MD&A text, not from structured facts.",
+   "The Executive Overview section of the 10-K was not read in full, so further management commentary there is unverified."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_182db27c3c6e6da575c53d1dd4a99f072a7b686d53c352d3dbada43769141fde"
+     }
+    ],
+    "id": "c1",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Meta reported that advertising revenue in 2025 increased $35.54 billion, or 22%, compared to 2024, due to increases in ad impressions delivered and average price per ad.",
+    "ticker": "META",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_182db27c3c6e6da575c53d1dd4a99f072a7b686d53c352d3dbada43769141fde"
+     }
+    ],
+    "id": "c2",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Ad impressions delivered rose 12% in 2025 (versus 11% in 2024) and grew in all regions, especially Asia-Pacific. Meta said this was driven by increases in users and their engagement on its products.",
+    "ticker": "META",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_182db27c3c6e6da575c53d1dd4a99f072a7b686d53c352d3dbada43769141fde"
+     }
+    ],
+    "id": "c3",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Meta said the increase in average price per ad was driven by higher advertising demand, which it believes is mostly due to ongoing improvements in ad performance from its ad targeting and measurement tools. This was partially offset by more impressions delivered in geographies and products, such as Reels, that monetize at lower rates.",
+    "ticker": "META",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_16e99b771effeb5ca82fed5619eff1291d09686415f9701106765db34455020a"
+     }
+    ],
+    "id": "c4",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Meta stated that Family of Apps revenue rose 22% in 2025 and that the increase was almost entirely driven by advertising revenue.",
+    "ticker": "META",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_1"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "804"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "809"
+     }
+    ],
+    "id": "c5",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Total revenue grew about 22.17% in FY2025, from $164.50 billion to $200.97 billion. This is a proxy that is consistent with the reported 22% advertising growth.",
+    "ticker": "META",
+    "unit": "percent",
+    "value": "22.167038498246",
+    "value_basis": "computation"
+   }
+  ],
+  "final_claim_id": null,
+  "final_unit": null,
+  "final_value": null,
+  "status": "answered",
+  "summary": "Meta said advertising revenue rose 22% in 2025 because it delivered more ad impressions and the average price per ad went up. Impressions grew 12% and were strongest in Asia-Pacific, which Meta tied to more users and more engagement. Meta said the higher price per ad came from stronger advertiser demand, which it mostly credits to better ad targeting and measurement tools. Total company revenue rose about 22.17%, from $164.50 billion to $200.97 billion, consistent with this. Total revenue is only a proxy for advertising revenue."
+ },
+ "retrieval": {
+  "first_search": {
+   "filings:s1": [
+    "chk_1c97026af8935f52da2867491286cd6e9e72ac21860fe4d779e2b415658f0a7d",
+    "chk_182db27c3c6e6da575c53d1dd4a99f072a7b686d53c352d3dbada43769141fde",
+    "chk_95583d8d6244e5fdf1116fc1ce0f7417c118866b6c707780084c103ebb7677bd",
+    "chk_ae646fad119ab2d2125c23b1ec4d0fef88db7d4f0a16ae283a44250195ae0ba8",
+    "chk_16e99b771effeb5ca82fed5619eff1291d09686415f9701106765db34455020a",
+    "chk_c274a13022081d2229557a24b47d08a5b02b809deee080d76899ff542377864d",
+    "chk_2f2da246e59809942cb76cad96fd32995a45f2f9c40b8aae1d4817c93ce2283d",
+    "chk_769d0d5c77db37773a8bd8d91fa6c6fe17b6ffc1897470e2b85e2f407c6e5b1c"
+   ]
+  },
+  "seen": [
+   "chk_1c97026af8935f52da2867491286cd6e9e72ac21860fe4d779e2b415658f0a7d",
+   "chk_182db27c3c6e6da575c53d1dd4a99f072a7b686d53c352d3dbada43769141fde",
+   "chk_95583d8d6244e5fdf1116fc1ce0f7417c118866b6c707780084c103ebb7677bd",
+   "chk_ae646fad119ab2d2125c23b1ec4d0fef88db7d4f0a16ae283a44250195ae0ba8",
+   "chk_16e99b771effeb5ca82fed5619eff1291d09686415f9701106765db34455020a",
+   "chk_c274a13022081d2229557a24b47d08a5b02b809deee080d76899ff542377864d",
+   "chk_2f2da246e59809942cb76cad96fd32995a45f2f9c40b8aae1d4817c93ce2283d",
+   "chk_769d0d5c77db37773a8bd8d91fa6c6fe17b6ffc1897470e2b85e2f407c6e5b1c",
+   "chk_4c8988975d53d536a471d353993a3a215542dd4f0d160325f0cd806de9fbddc9",
+   "chk_4c33250451e2dd6082d72572bd075f9b754c2a658bc90aafc9dad85deaa2ad26",
+   "chk_28e6e766d2f06cecbf09ba40a5bc66a828113ad17ce7697fcbc87ac6816afa19"
+  ]
+ },
+ "run_id": "8bf6c677-f3fc-4b95-b799-862e38408ba8",
+ "run_status": "done",
+ "split": "explanatory_dev",
+ "started_at": "2026-11-15T05:22:16.123522+00:00",
+ "status": "done",
+ "system_config_hash": "52a48e08f9ef2a659803092d4f5678475241e872105c99154f86b7bbc29038a3",
+ "system_id": "m6",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 64596,
+  "cache_write_tokens": 27991,
+  "input_tokens": 9447,
+  "output_tokens": 5257
+ }
+}

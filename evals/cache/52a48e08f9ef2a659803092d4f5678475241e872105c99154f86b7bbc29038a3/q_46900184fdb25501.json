@@ -1,0 +1,173 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 6,
+  "numeric_valid": 6,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.0751065",
+ "error": null,
+ "finished_at": "2026-11-15T05:13:39.734387+00:00",
+ "latency_ms": 25129,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD",
+  "value": "75788500000"
+ },
+ "question_id": "q_46900184fdb25501",
+ "question_sha": "7a8c6e35c750049c76cc387cc06bf0edb4f36d12d38b5ea9aa2cbc775f7dc67c",
+ "raw_output": {
+  "caveats": [
+   "Q4 FY2026 revenue is derived (annual less nine-month year-to-date), not reported directly as a quarterly figure.",
+   "Q4 is much larger than Q1\u2013Q3. The evidence does not say why, and the quarters may differ in length, so the simple average of four quarters is a mean of unequal periods.",
+   "Q1 and Q2 use the 'Revenues' concept. Q3 and Q4 use 'RevenueFromContractWithCustomerExcludingAssessedTax'."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3339"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q1",
+     "fiscal_year": 2026
+    },
+    "text": "Costco's Q1 FY2026 revenue was $67.307 billion.",
+    "ticker": "COST",
+    "unit": "USD",
+    "value": "67307000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3340"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q2",
+     "fiscal_year": 2026
+    },
+    "text": "Costco's Q2 FY2026 revenue was $69.597 billion.",
+    "ticker": "COST",
+    "unit": "USD",
+    "value": "69597000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3341"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q3",
+     "fiscal_year": 2026
+    },
+    "text": "Costco's Q3 FY2026 revenue was $70.527 billion.",
+    "ticker": "COST",
+    "unit": "USD",
+    "value": "70527000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3342"
+     }
+    ],
+    "id": "c4",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q4",
+     "fiscal_year": 2026
+    },
+    "text": "Costco's derived Q4 FY2026 revenue was $95.723 billion. This is annual revenue of $303.154B minus the $207.431B nine-month figure.",
+    "ticker": "COST",
+    "unit": "USD",
+    "value": "95723000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": "value",
+      "kind": "computation",
+      "ref": "cmp_3"
+     }
+    ],
+    "id": "c5",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2026
+    },
+    "text": "The four quarters sum to $303.154 billion, which matches the FY2026 annual revenue used to derive Q4.",
+    "ticker": "COST",
+    "unit": "USD",
+    "value": "303154000000",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "mean",
+      "kind": "computation",
+      "ref": "cmp_1"
+     }
+    ],
+    "id": "c6",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2026
+    },
+    "text": "Costco's average quarterly total revenue over fiscal 2026 was about $75.79 billion ($75,788,500,000).",
+    "ticker": "COST",
+    "unit": "USD",
+    "value": "75788500000",
+    "value_basis": "computation"
+   }
+  ],
+  "final_claim_id": "c6",
+  "final_unit": "USD",
+  "final_value": "75788500000",
+  "status": "answered",
+  "summary": "Costco's average quarterly total revenue over fiscal 2026 was about $75.79 billion. This is the mean of Q1 ($67.31B), Q2 ($69.60B), Q3 ($70.53B) and a derived Q4 ($95.72B). The four quarters sum to $303.15 billion."
+ },
+ "run_id": "b069b03d-511b-41ca-aef3-7a170ef7e27c",
+ "run_status": "done",
+ "split": "dev",
+ "started_at": "2026-11-15T05:13:14.576748+00:00",
+ "status": "done",
+ "system_config_hash": "52a48e08f9ef2a659803092d4f5678475241e872105c99154f86b7bbc29038a3",
+ "system_id": "m6",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 53170,
+  "cache_write_tokens": 6687,
+  "input_tokens": 8866,
+  "output_tokens": 3534
+ }
+}

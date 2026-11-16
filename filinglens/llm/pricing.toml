@@ -1,7 +1,6 @@
 # FilingLens model prices in USD per million tokens (D060).
 # Fill in one [models."<exact model ID>"] table per configured model, from the
 # provider's official pricing page. See pricing.example.toml for the format.
-# Intentionally empty until the student adds verified prices.
 
 [models."claude-sonnet-5-5"]
 provider = "anthropic"
@@ -9,8 +8,8 @@ input_per_mtok = "2.00"
 output_per_mtok = "10.00"
 cache_read_per_mtok = "0.10"
 cache_write_per_mtok = "2.50"
-source = "https://platform.claude.com/docs/en/models/overview"
-checked = 2026-10-22
+source = "https://docs.claude.com/en/docs/about-claude/pricing"
+checked = 2026-11-16
 
 [models."claude-haiku-5-5"]
 provider = "anthropic"
@@ -18,8 +17,8 @@ input_per_mtok = "0.10"
 output_per_mtok = "0.50"
 cache_read_per_mtok = "0.01"
 cache_write_per_mtok = "0.125"
-source = "https://platform.claude.com/docs/en/models/overview"
-checked = 2026-10-22
+source = "https://docs.claude.com/en/docs/about-claude/pricing"
+checked = 2026-11-16
 
 [models."claude-opus-5-5"]
 provider = "anthropic"

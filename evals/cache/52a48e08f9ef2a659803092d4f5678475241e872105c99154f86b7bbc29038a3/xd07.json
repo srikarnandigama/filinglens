@@ -1,0 +1,122 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 0,
+  "numeric_valid": 0,
+  "text_pending_judge": [],
+  "text_string_supported": 2,
+  "text_total": 2,
+  "uncited": 0
+ },
+ "cost_usd": "0.067264345",
+ "error": null,
+ "finished_at": "2026-11-15T05:26:00.003061+00:00",
+ "latency_ms": 41418,
+ "prediction": {
+  "parse_ok": true,
+  "text": "The retrieved fiscal 2026 10-K passages don't describe how Walmart's advertising business grew. They only list advertising among the offerings through which the business continues to expand. The MD&A passages that were retrieved credit growth in membership and other income to membership fee revenue, not to advertising.\nWalmart's fiscal 2026 10-K Business section says its business \"continues to expand through offerings such as membership, advertising, marketplace and fulfillment services, and financial services.\" This names advertising as an expansion offering. It gives no growth rate or other detail.\nIn the retrieved MD&A passage, Walmart attributed the growth in membership and other income to \"growth in membership fee revenue globally, partially offset by decreases in certain other income items, including a reduction in recycling income in fiscal 2026.\" The passage does not attribute that growth to advertising."
+ },
+ "question_id": "xd07",
+ "question_sha": "6847c383b1cac0fe966965ad86b8808f797f3006ba113d37a535e9380308763a",
+ "raw_output": {
+  "caveats": [
+   "No retrieved passage quantifies or explains advertising growth in fiscal 2026. Walmart Connect and Vizio did not appear in any retrieved passage.",
+   "The workers could not reach a fuller advertising discussion in the filing, such as other parts of Item 7. One may exist, so passage coverage is incomplete.",
+   "Walmart's fiscal 2026 runs from 2025-02-01 to 2026-01-31."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_6c0742b9fa741fcc2de6bbff1833f2ecc98b59803b91379874c434c76fcc3d93"
+     }
+    ],
+    "id": "c1",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2026
+    },
+    "text": "Walmart's fiscal 2026 10-K Business section says its business \"continues to expand through offerings such as membership, advertising, marketplace and fulfillment services, and financial services.\" This names advertising as an expansion offering. It gives no growth rate or other detail.",
+    "ticker": "WMT",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_383a1d58aad36e5ed2b3a2676c874d791b2e38bd5a7876f225f4244e3eac947d"
+     }
+    ],
+    "id": "c2",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2026
+    },
+    "text": "In the retrieved MD&A passage, Walmart attributed the growth in membership and other income to \"growth in membership fee revenue globally, partially offset by decreases in certain other income items, including a reduction in recycling income in fiscal 2026.\" The passage does not attribute that growth to advertising.",
+    "ticker": "WMT",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   }
+  ],
+  "final_claim_id": null,
+  "final_unit": null,
+  "final_value": null,
+  "status": "partially_answered",
+  "summary": "The retrieved fiscal 2026 10-K passages don't describe how Walmart's advertising business grew. They only list advertising among the offerings through which the business continues to expand. The MD&A passages that were retrieved credit growth in membership and other income to membership fee revenue, not to advertising."
+ },
+ "retrieval": {
+  "first_search": {
+   "filings:s1": [
+    "chk_594536fabef323bbd2b4948c318b5045727ac5f7dc81d730db182f35bdfa9f16",
+    "chk_6c0742b9fa741fcc2de6bbff1833f2ecc98b59803b91379874c434c76fcc3d93",
+    "chk_a1632d912ef0abe26383e3c8cec5a76aef6bc049898a9de6ba9305524818aea0",
+    "chk_9fc5a744d66203dacd7b1798d75a8a9ad75dfe77cf7d08ef7d73e618453f6933",
+    "chk_69bcee351c450883d65f3cd64b9867c22814eb4b40c42ed8fd84c561c23b8bb8",
+    "chk_fcb122ab95461e2795806a4212d8414c7df26dcc7f05b652ef0bcb9ef5af50f6",
+    "chk_c64c78b3fefe98d0aa554c034d7f363fa49761eed1b6dd37e8a59fb5c0a34adc",
+    "chk_4e7dd9f8b36e57be393865bb70335bf96302e544b51b4ca667604861e296a8ba"
+   ]
+  },
+  "seen": [
+   "chk_594536fabef323bbd2b4948c318b5045727ac5f7dc81d730db182f35bdfa9f16",
+   "chk_6c0742b9fa741fcc2de6bbff1833f2ecc98b59803b91379874c434c76fcc3d93",
+   "chk_a1632d912ef0abe26383e3c8cec5a76aef6bc049898a9de6ba9305524818aea0",
+   "chk_9fc5a744d66203dacd7b1798d75a8a9ad75dfe77cf7d08ef7d73e618453f6933",
+   "chk_69bcee351c450883d65f3cd64b9867c22814eb4b40c42ed8fd84c561c23b8bb8",
+   "chk_fcb122ab95461e2795806a4212d8414c7df26dcc7f05b652ef0bcb9ef5af50f6",
+   "chk_c64c78b3fefe98d0aa554c034d7f363fa49761eed1b6dd37e8a59fb5c0a34adc",
+   "chk_4e7dd9f8b36e57be393865bb70335bf96302e544b51b4ca667604861e296a8ba",
+   "chk_e9a995df567b65c463feafc641efd5ef28d82a1e53cc598c02bf6796d0498e45",
+   "chk_996d4e863343d6b623f285cbcb653470a01f12c891c190f67e91b3c3494590e9",
+   "chk_cd97e73ad5f45c5ecdc1894eb69332aff4f9bc8449146f75ea5186af2276fdbe",
+   "chk_383a1d58aad36e5ed2b3a2676c874d791b2e38bd5a7876f225f4244e3eac947d",
+   "chk_cc87c486b233b2dc0e7b45d1a37a04129eec96bd88e2308822913e39bba296d9",
+   "chk_ea1795533086963db7f6b1e4d2f7f11e2207d237234669511ac9a4340345fa5d",
+   "chk_c3d3630167e7a849c1cfa38043a81c29145f5780e229076f1cbd228b40c3fe2b",
+   "chk_74a6356f9661a1369a722f6ba5919f4a9196c0a32431923425269a0d10c76d95",
+   "chk_ebe83135a9bdebaacea3a81c2583cab8e3ea3ef3ddd7e28f26202698de99ffa1"
+  ]
+ },
+ "run_id": "e96d5cc0-c3c5-49f7-9754-07bde60fbb4c",
+ "run_status": "done",
+ "split": "explanatory_dev",
+ "started_at": "2026-11-15T05:25:18.502661+00:00",
+ "status": "done",
+ "system_config_hash": "52a48e08f9ef2a659803092d4f5678475241e872105c99154f86b7bbc29038a3",
+ "system_id": "m6",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 83399,
+  "cache_write_tokens": 34275,
+  "input_tokens": 7099,
+  "output_tokens": 6158
+ }
+}

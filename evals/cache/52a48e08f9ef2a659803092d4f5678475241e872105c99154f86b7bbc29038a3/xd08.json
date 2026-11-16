@@ -1,0 +1,147 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 0,
+  "numeric_valid": 0,
+  "text_pending_judge": [
+   {
+    "chunk_ids": [
+     "chk_eb86a2ebc5e0ab33a0cab2e915be91eac9b982d493709ea98179981c6c86cac8",
+     "chk_fd48f1ee5e6e52e0f116c32568e94e75d5bbb77da8ace002a31a7d2bdc003ee7"
+    ],
+    "claim_id": "c2",
+    "text": "The supplemental table shows operating income by component. Domestic was $6,375 million versus $5,878 million (up 8%). International was $1,442 million versus $1,354 million (up 6%). Consumer products was $2,178 million versus $2,040 million (up 7%)."
+   }
+  ],
+  "text_string_supported": 2,
+  "text_total": 3,
+  "uncited": 0
+ },
+ "cost_usd": "0.070322845",
+ "error": null,
+ "finished_at": "2026-11-15T05:26:16.773341+00:00",
+ "latency_ms": 39529,
+ "prediction": {
+  "parse_ok": true,
+  "text": "Disney said Experiences segment operating income rose $723 million, from $9,272 million to $9,995 million in fiscal 2025. It attributed the rise to growth at domestic parks and experiences and, to a lesser extent, consumer products and international parks and experiences. The sub-line figures show domestic at $6,375 million versus $5,878 million, international at $1,442 million versus $1,354 million, and consumer products at $2,178 million versus $2,040 million. Management also noted cost pressures: higher operating labor and infrastructure costs.\nDisney reported that Experiences segment operating income increased $723 million, from $9,272 million to $9,995 million. It attributed the increase to growth at domestic parks and experiences and, to a lesser extent, consumer products and international parks and experiences.\nThe supplemental table shows operating income by component. Domestic was $6,375 million versus $5,878 million (up 8%). International was $1,442 million versus $1,354 million (up 6%). Consumer products was $2,178 million versus $2,040 million (up 7%).\nDisney described cost increases in the segment. It said the increase in operating labor was due to inflation, new guest offerings and higher volumes. It said higher infrastructure costs were primarily attributable to higher technology spending, new guest offerings and an increase in operations support costs, partially offset by cost management initiatives."
+ },
+ "question_id": "xd08",
+ "question_sha": "2328c807b9a3976dc690f9da59760132e941ed4431c886ccb851ccdfe97e2521",
+ "raw_output": {
+  "caveats": [
+   "The passages give no detailed reason for the domestic growth beyond the segment-level attribution and the cost discussion. The neighbouring chunks on Experiences revenue drivers (admissions, resorts and vacations) were not fully quoted in the evidence.",
+   "The cost-driver quote begins mid-sentence in the filing chunk."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_eb86a2ebc5e0ab33a0cab2e915be91eac9b982d493709ea98179981c6c86cac8"
+     }
+    ],
+    "id": "c1",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Disney reported that Experiences segment operating income increased $723 million, from $9,272 million to $9,995 million. It attributed the increase to growth at domestic parks and experiences and, to a lesser extent, consumer products and international parks and experiences.",
+    "ticker": "DIS",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_eb86a2ebc5e0ab33a0cab2e915be91eac9b982d493709ea98179981c6c86cac8"
+     },
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_fd48f1ee5e6e52e0f116c32568e94e75d5bbb77da8ace002a31a7d2bdc003ee7"
+     }
+    ],
+    "id": "c2",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "The supplemental table shows operating income by component. Domestic was $6,375 million versus $5,878 million (up 8%). International was $1,442 million versus $1,354 million (up 6%). Consumer products was $2,178 million versus $2,040 million (up 7%).",
+    "ticker": "DIS",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_ae74239d8404c3b20c6753907e3a51a8e98c1f869f2ae407bd1b554b62ff890c"
+     }
+    ],
+    "id": "c3",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Disney described cost increases in the segment. It said the increase in operating labor was due to inflation, new guest offerings and higher volumes. It said higher infrastructure costs were primarily attributable to higher technology spending, new guest offerings and an increase in operations support costs, partially offset by cost management initiatives.",
+    "ticker": "DIS",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   }
+  ],
+  "final_claim_id": null,
+  "final_unit": null,
+  "final_value": null,
+  "status": "answered",
+  "summary": "Disney said Experiences segment operating income rose $723 million, from $9,272 million to $9,995 million in fiscal 2025. It attributed the rise to growth at domestic parks and experiences and, to a lesser extent, consumer products and international parks and experiences. The sub-line figures show domestic at $6,375 million versus $5,878 million, international at $1,442 million versus $1,354 million, and consumer products at $2,178 million versus $2,040 million. Management also noted cost pressures: higher operating labor and infrastructure costs."
+ },
+ "retrieval": {
+  "first_search": {
+   "filings:s1": [
+    "chk_eb86a2ebc5e0ab33a0cab2e915be91eac9b982d493709ea98179981c6c86cac8",
+    "chk_91973b62e94dc84b19f09b57c854c9de4b337459691cb650b22c5e42bdc3c55d",
+    "chk_a084771afcfbda83cd25765ed0343ab33ebbbe1055305d6fbb17ca887e1f50c5",
+    "chk_8861bd21de81fc101ed3655751239c442fa7ecade0a15172a220109f295fdb7b",
+    "chk_fd48f1ee5e6e52e0f116c32568e94e75d5bbb77da8ace002a31a7d2bdc003ee7",
+    "chk_2e0e97d16d63127e23f38a8d6019e61d7f1266a908f3958b5634cd4eb78e978e",
+    "chk_d74b9e6379cd9f5f8b5d37ac1c36773d5fda1c25a71d63e5fa64f8c1c0e3cc2a",
+    "chk_09d7fdfeb6a7749a02527961dd074042787c439afd1fa55880ce05ad60df140c"
+   ]
+  },
+  "seen": [
+   "chk_eb86a2ebc5e0ab33a0cab2e915be91eac9b982d493709ea98179981c6c86cac8",
+   "chk_91973b62e94dc84b19f09b57c854c9de4b337459691cb650b22c5e42bdc3c55d",
+   "chk_a084771afcfbda83cd25765ed0343ab33ebbbe1055305d6fbb17ca887e1f50c5",
+   "chk_8861bd21de81fc101ed3655751239c442fa7ecade0a15172a220109f295fdb7b",
+   "chk_fd48f1ee5e6e52e0f116c32568e94e75d5bbb77da8ace002a31a7d2bdc003ee7",
+   "chk_2e0e97d16d63127e23f38a8d6019e61d7f1266a908f3958b5634cd4eb78e978e",
+   "chk_d74b9e6379cd9f5f8b5d37ac1c36773d5fda1c25a71d63e5fa64f8c1c0e3cc2a",
+   "chk_09d7fdfeb6a7749a02527961dd074042787c439afd1fa55880ce05ad60df140c",
+   "chk_ae74239d8404c3b20c6753907e3a51a8e98c1f869f2ae407bd1b554b62ff890c"
+  ]
+ },
+ "run_id": "ca281513-3de8-42e0-add2-db9bc170fb41",
+ "run_status": "done",
+ "split": "explanatory_dev",
+ "started_at": "2026-11-15T05:25:37.161807+00:00",
+ "status": "done",
+ "system_config_hash": "52a48e08f9ef2a659803092d4f5678475241e872105c99154f86b7bbc29038a3",
+ "system_id": "m6",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 90459,
+  "cache_write_tokens": 24249,
+  "input_tokens": 8600,
+  "output_tokens": 5660
+ }
+}

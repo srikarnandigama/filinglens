@@ -1,0 +1,182 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 0,
+  "numeric_valid": 0,
+  "text_pending_judge": [],
+  "text_string_supported": 5,
+  "text_total": 5,
+  "uncited": 0
+ },
+ "cost_usd": "0.1721447",
+ "error": null,
+ "finished_at": "2026-11-15T05:22:01.613224+00:00",
+ "latency_ms": 59690,
+ "prediction": {
+  "parse_ok": true,
+  "text": "Both companies reported lower upstream earnings in 2025 and blamed lower prices and realizations. Exxon Mobil said lower realizations cut earnings by $6.1 billion. Higher volumes added $1.9 billion, and other items had smaller effects. Chevron said U.S. upstream earnings fell $1.8 billion and international upstream earnings fell $4.0 billion. It pointed to lower realizations, higher depreciation, depletion and amortization (DD&A), and higher operating expenses in the U.S. Higher sales volumes and liftings partly offset these declines.\nExxon Mobil's largest negative driver for 2025 upstream earnings was price. It said lower realizations decreased earnings by $6.1 billion, primarily driven by lower crude prices as record demand was more than offset by increased industry supply.\nExxon Mobil said advantaged volume growth increased earnings by $1.9 billion, mainly driven by record production in the Permian and Guyana. Expenses decreased earnings by $0.6 billion, primarily higher depreciation from the Tengiz expansion.\nChevron said U.S. upstream earnings decreased by $1.8 billion. It cited lower liquids realizations of $2.4 billion, higher operating expenses of $2.0 billion, and higher DD&A of $1.4 billion. These were partly offset by higher sales volumes of $2.8 billion and higher natural gas realizations of $800 million.\nChevron said international upstream earnings decreased by $4.0 billion. It cited higher DD&A of $2.8 billion, lower realizations of $2.0 billion, an unfavorable foreign currency effect of $803 million, and the absence of prior-year favorable asset sale impacts of $260 million. These were partly offset by higher liftings of $2.2 billion and lower operating expenses of $470 million.\nChevron framed the explanation by noting that upstream segment earnings are closely aligned with industry prices for crude oil, natural gas and NGLs. At the company level, it said higher upstream DD&A, lower upstream realizations, unfavorable foreign exchange and higher operating costs were partly offset by higher upstream sales volumes."
+ },
+ "question_id": "xd10",
+ "question_sha": "f85ddf6e7fc3d83ac400c2005aeb530932909478a2f6e225bebfc6e84a1f194a",
+ "raw_output": {
+  "caveats": [
+   "The Exxon Mobil 'Other', 'Timing Effects' and 'Identified Items' bullets sit in a chunk following the 2025 driver analysis. Their assignment to 2025 is inferred from chunk order, because the chunk's text does not label the year.",
+   "Chevron's passages give the changes in U.S. and international upstream earnings but not the U.S. upstream earnings levels.",
+   "Both companies have fiscal years ending December 31, so FY2025 is comparable. The comparison is 2025 against 2024, as in each company's MD&A.",
+   "1 claim could not be verified and was removed."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_81bf1fdf9530d5fabd1df0ef0587833f5a4f9f5cb0ae2447b6d54ff28599f29e"
+     }
+    ],
+    "id": "c1",
+    "kind": "textual",
+    "period": null,
+    "text": "Exxon Mobil's largest negative driver for 2025 upstream earnings was price. It said lower realizations decreased earnings by $6.1 billion, primarily driven by lower crude prices as record demand was more than offset by increased industry supply.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_81bf1fdf9530d5fabd1df0ef0587833f5a4f9f5cb0ae2447b6d54ff28599f29e"
+     }
+    ],
+    "id": "c2",
+    "kind": "textual",
+    "period": null,
+    "text": "Exxon Mobil said advantaged volume growth increased earnings by $1.9 billion, mainly driven by record production in the Permian and Guyana. Expenses decreased earnings by $0.6 billion, primarily higher depreciation from the Tengiz expansion.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_a487b00369e8bf0b6812be339adcc40e7785e88c0417e24fffad48605b5dd2ef"
+     }
+    ],
+    "id": "c4",
+    "kind": "textual",
+    "period": null,
+    "text": "Chevron said U.S. upstream earnings decreased by $1.8 billion. It cited lower liquids realizations of $2.4 billion, higher operating expenses of $2.0 billion, and higher DD&A of $1.4 billion. These were partly offset by higher sales volumes of $2.8 billion and higher natural gas realizations of $800 million.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_0d2c2558ddb36fd415569dd3bbcc7439ca68ca5acea8ee750bd9cc9a363eb97d"
+     }
+    ],
+    "id": "c5",
+    "kind": "textual",
+    "period": null,
+    "text": "Chevron said international upstream earnings decreased by $4.0 billion. It cited higher DD&A of $2.8 billion, lower realizations of $2.0 billion, an unfavorable foreign currency effect of $803 million, and the absence of prior-year favorable asset sale impacts of $260 million. These were partly offset by higher liftings of $2.2 billion and lower operating expenses of $470 million.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_e0aee23fc97098461d2a3f50c0b5af90b0d799908d65f8032925ae8e77c44f4a"
+     },
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_d6fdebf8f03068a65d654a04fb0f677c4f4c99e3b70439b1280655786edc1a8c"
+     }
+    ],
+    "id": "c6",
+    "kind": "textual",
+    "period": null,
+    "text": "Chevron framed the explanation by noting that upstream segment earnings are closely aligned with industry prices for crude oil, natural gas and NGLs. At the company level, it said higher upstream DD&A, lower upstream realizations, unfavorable foreign exchange and higher operating costs were partly offset by higher upstream sales volumes.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   }
+  ],
+  "final_claim_id": null,
+  "final_unit": null,
+  "final_value": null,
+  "status": "partially_answered",
+  "summary": "Both companies reported lower upstream earnings in 2025 and blamed lower prices and realizations. Exxon Mobil said lower realizations cut earnings by $6.1 billion. Higher volumes added $1.9 billion, and other items had smaller effects. Chevron said U.S. upstream earnings fell $1.8 billion and international upstream earnings fell $4.0 billion. It pointed to lower realizations, higher depreciation, depletion and amortization (DD&A), and higher operating expenses in the U.S. Higher sales volumes and liftings partly offset these declines."
+ },
+ "retrieval": {
+  "first_search": {
+   "filings:s1": [
+    "chk_a45d1e8bf048c1b55467e219d059d636a2c0704a79931d3537554d451bfed59d",
+    "chk_3dc4aa31cb38a6218f41846155e1839cc205d2953b0760a77c82abe4fda73de9",
+    "chk_9bca4d9210df3ac82f9733fdf972045cd96e86d5f339cc9d948f6251bce41cf2",
+    "chk_81bf1fdf9530d5fabd1df0ef0587833f5a4f9f5cb0ae2447b6d54ff28599f29e",
+    "chk_9c5d8e57e2c69a667cce0dfb29778bc54f38b58f093086e5eb853f4e98c7a684",
+    "chk_ee46281ed35f4d053402500cd4a87490c39cfccae60169e7e2fd12418f2128cc",
+    "chk_b0b00818920a22829be49fc57982a5620d4f3c56bb04cde5d83b081ac3749063",
+    "chk_e49ca31f189975e0426d2da0673a3a389461a868fc970ae9fc6d5dc883552de2"
+   ],
+   "filings:s2": [
+    "chk_e6a173622b544ae0b9a3979c3a038e0bb1c3d108f9d9d62ba2f38fad29dbca9e",
+    "chk_d6fdebf8f03068a65d654a04fb0f677c4f4c99e3b70439b1280655786edc1a8c",
+    "chk_0d2c2558ddb36fd415569dd3bbcc7439ca68ca5acea8ee750bd9cc9a363eb97d",
+    "chk_717bc60f1882ae0de8fbb65a72491a4a8dce4515c06b917562bd23c5b5a87381",
+    "chk_6d66e5d38668118c052bf244abb3dd099ad52f74b3d59af3ea8782273e4b91e5",
+    "chk_e0aee23fc97098461d2a3f50c0b5af90b0d799908d65f8032925ae8e77c44f4a",
+    "chk_a487b00369e8bf0b6812be339adcc40e7785e88c0417e24fffad48605b5dd2ef",
+    "chk_90c8d0e2130993b1cc12f64d0f95807b14bfdfa80e9822f238ac5d041dc0a3d5"
+   ]
+  },
+  "seen": [
+   "chk_a45d1e8bf048c1b55467e219d059d636a2c0704a79931d3537554d451bfed59d",
+   "chk_3dc4aa31cb38a6218f41846155e1839cc205d2953b0760a77c82abe4fda73de9",
+   "chk_9bca4d9210df3ac82f9733fdf972045cd96e86d5f339cc9d948f6251bce41cf2",
+   "chk_81bf1fdf9530d5fabd1df0ef0587833f5a4f9f5cb0ae2447b6d54ff28599f29e",
+   "chk_9c5d8e57e2c69a667cce0dfb29778bc54f38b58f093086e5eb853f4e98c7a684",
+   "chk_ee46281ed35f4d053402500cd4a87490c39cfccae60169e7e2fd12418f2128cc",
+   "chk_b0b00818920a22829be49fc57982a5620d4f3c56bb04cde5d83b081ac3749063",
+   "chk_e49ca31f189975e0426d2da0673a3a389461a868fc970ae9fc6d5dc883552de2",
+   "chk_e6a173622b544ae0b9a3979c3a038e0bb1c3d108f9d9d62ba2f38fad29dbca9e",
+   "chk_d6fdebf8f03068a65d654a04fb0f677c4f4c99e3b70439b1280655786edc1a8c",
+   "chk_0d2c2558ddb36fd415569dd3bbcc7439ca68ca5acea8ee750bd9cc9a363eb97d",
+   "chk_717bc60f1882ae0de8fbb65a72491a4a8dce4515c06b917562bd23c5b5a87381",
+   "chk_6d66e5d38668118c052bf244abb3dd099ad52f74b3d59af3ea8782273e4b91e5",
+   "chk_e0aee23fc97098461d2a3f50c0b5af90b0d799908d65f8032925ae8e77c44f4a",
+   "chk_a487b00369e8bf0b6812be339adcc40e7785e88c0417e24fffad48605b5dd2ef",
+   "chk_90c8d0e2130993b1cc12f64d0f95807b14bfdfa80e9822f238ac5d041dc0a3d5"
+  ]
+ },
+ "run_id": "e9f71ea4-3ce8-4e9c-b6cb-4309a85fae01",
+ "run_status": "done",
+ "split": "explanatory_dev",
+ "started_at": "2026-11-15T05:21:01.848226+00:00",
+ "status": "done",
+ "system_config_hash": "2672337d37a1c4749e46b1640e2449249f4b9fce707f2424c3af28481dde7549",
+ "system_id": "system",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 0,
+  "cache_write_tokens": 0,
+  "input_tokens": 166541,
+  "output_tokens": 11697
+ }
+}

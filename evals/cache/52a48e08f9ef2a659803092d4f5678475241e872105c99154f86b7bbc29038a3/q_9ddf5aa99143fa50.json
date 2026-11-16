@@ -1,0 +1,71 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 1,
+  "numeric_valid": 1,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.0900243",
+ "error": null,
+ "finished_at": "2026-11-15T05:10:41.845768+00:00",
+ "latency_ms": 18001,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD",
+  "value": "1023000000"
+ },
+ "question_id": "q_9ddf5aa99143fa50",
+ "question_sha": "a9a9dfd86540e0dda41bdbe819f454f09b5a64925e9c9458faf79d6a47dedd55",
+ "raw_output": {
+  "caveats": [
+   "The Q4 value is derived, not reported directly. It is the full-year figure ($4,409,000,000) minus the nine-month year-to-date figure ($3,386,000,000), taken from two different filings."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": "value",
+      "kind": "fact",
+      "ref": "3709"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q4",
+     "fiscal_year": 2026
+    },
+    "text": "PG's capital expenditures (payments to acquire property, plant and equipment) in fiscal Q4 2026 (2026-04-01 to 2026-06-30) were about $1.023 billion. This is derived from FY2026 capex minus capex for the nine months ended 2026-03-31.",
+    "ticker": "PG",
+    "unit": "USD",
+    "value": "1023000000",
+    "value_basis": "fact"
+   }
+  ],
+  "final_claim_id": "c1",
+  "final_unit": "USD",
+  "final_value": "1023000000",
+  "status": "answered",
+  "summary": "Procter & Gamble's capital expenditures in fiscal Q4 2026 (April 1 to June 30, 2026) were about $1.023 billion. This is a derived figure, not one reported directly."
+ },
+ "run_id": "a090eeed-d24e-476f-b1d0-550d8b603971",
+ "run_status": "done",
+ "split": "dev",
+ "started_at": "2026-11-15T05:10:23.799854+00:00",
+ "status": "done",
+ "system_config_hash": "52a48e08f9ef2a659803092d4f5678475241e872105c99154f86b7bbc29038a3",
+ "system_id": "m6",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 12248,
+  "cache_write_tokens": 18959,
+  "input_tokens": 9406,
+  "output_tokens": 2259
+ }
+}

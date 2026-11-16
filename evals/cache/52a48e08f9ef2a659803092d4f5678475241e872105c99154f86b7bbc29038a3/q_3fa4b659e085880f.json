@@ -1,0 +1,172 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 6,
+  "numeric_valid": 6,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.0721743",
+ "error": null,
+ "finished_at": "2026-11-15T05:14:34.067289+00:00",
+ "latency_ms": 23182,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD",
+  "value": "8890500000"
+ },
+ "question_id": "q_3fa4b659e085880f",
+ "question_sha": "365e33e2dd115dfe1302a433899600c304f2f3e02824a2402c0c4e4c1cfa8bf7",
+ "raw_output": {
+  "caveats": [
+   "The Q4 FY2026 value is derived (full-year minus nine-month year-to-date), not reported directly as a quarterly figure.",
+   "No filing passages were gathered, so this answer gives no management explanation of the trend."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "287"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q1",
+     "fiscal_year": 2026
+    },
+    "text": "Microsoft's Q1 FY2026 R&D expense was $8.146 billion.",
+    "ticker": "MSFT",
+    "unit": "USD",
+    "value": "8146000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "288"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q2",
+     "fiscal_year": 2026
+    },
+    "text": "Microsoft's Q2 FY2026 R&D expense was $8.504 billion.",
+    "ticker": "MSFT",
+    "unit": "USD",
+    "value": "8504000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "289"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q3",
+     "fiscal_year": 2026
+    },
+    "text": "Microsoft's Q3 FY2026 R&D expense was $8.915 billion.",
+    "ticker": "MSFT",
+    "unit": "USD",
+    "value": "8915000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "290"
+     }
+    ],
+    "id": "c4",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q4",
+     "fiscal_year": 2026
+    },
+    "text": "Microsoft's Q4 FY2026 R&D expense was $9.997 billion. This is derived as the full-year $35.562 billion minus the nine-month $25.565 billion.",
+    "ticker": "MSFT",
+    "unit": "USD",
+    "value": "9997000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": "mean",
+      "kind": "computation",
+      "ref": "cmp_1"
+     }
+    ],
+    "id": "c5",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2026
+    },
+    "text": "Average quarterly R&D expense across the four quarters of fiscal 2026 was about $8.89 billion ($8,890,500,000).",
+    "ticker": "MSFT",
+    "unit": "USD",
+    "value": "8890500000",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value",
+      "kind": "computation",
+      "ref": "cmp_2"
+     }
+    ],
+    "id": "c6",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2026
+    },
+    "text": "Total fiscal 2026 R&D expense, the sum of the four quarters, was $35.562 billion.",
+    "ticker": "MSFT",
+    "unit": "USD",
+    "value": "35562000000",
+    "value_basis": "computation"
+   }
+  ],
+  "final_claim_id": "c5",
+  "final_unit": "USD",
+  "final_value": "8890500000",
+  "status": "answered",
+  "summary": "Microsoft's average quarterly R&D expense over fiscal 2026 was about $8.89 billion. That is the mean of four quarters: Q1 $8.146 billion, Q2 $8.504 billion, Q3 $8.915 billion and Q4 $9.997 billion. Q4 is derived from the annual total, not reported directly."
+ },
+ "run_id": "00834592-8ae9-41e4-a0b5-e20e21d43617",
+ "run_status": "done",
+ "split": "dev",
+ "started_at": "2026-11-15T05:14:10.844900+00:00",
+ "status": "done",
+ "system_config_hash": "52a48e08f9ef2a659803092d4f5678475241e872105c99154f86b7bbc29038a3",
+ "system_id": "m6",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 71523,
+  "cache_write_tokens": 6808,
+  "input_tokens": 8526,
+  "output_tokens": 3095
+ }
+}

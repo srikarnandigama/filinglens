@@ -1,0 +1,131 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 3,
+  "numeric_valid": 3,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.0801885",
+ "error": null,
+ "finished_at": "2026-11-15T05:12:54.725445+00:00",
+ "latency_ms": 21938,
+ "prediction": {
+  "choice": "META",
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percentage_points",
+  "value": "10.066258192582"
+ },
+ "question_id": "q_7b236044fab17384",
+ "question_sha": "0aac53ecd03f6636ad5f61d3b94f5525ba9cc73a611aab71fd0868fb98615fa0",
+ "raw_output": {
+  "caveats": [
+   "Operating margin is operating income divided by total revenue. Both companies' fiscal years end Dec 31, so the periods line up."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_1"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "550"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "516"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "Alphabet's FY2024 operating margin was about 32.11% (operating income $112.39 billion on revenue of $350.018 billion).",
+    "ticker": "GOOGL",
+    "unit": "percent",
+    "value": "32.109777211458",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_2"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "838"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "804"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "Meta's FY2024 operating margin was about 42.18% (operating income $69.38 billion on revenue of $164.501 billion).",
+    "ticker": "META",
+    "unit": "percent",
+    "value": "42.17603540404",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value",
+      "kind": "computation",
+      "ref": "cmp_3"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "Meta's operating margin was higher than Alphabet's by about 10.07 percentage points in FY2024.",
+    "ticker": "META",
+    "unit": "percentage_points",
+    "value": "10.066258192582",
+    "value_basis": "computation"
+   }
+  ],
+  "final_claim_id": "c3",
+  "final_unit": "percentage_points",
+  "final_value": "10.066258192582",
+  "status": "answered",
+  "summary": "Meta had the higher fiscal 2024 operating margin. Its margin was about 42.18%, against about 32.11% for Alphabet. That is a gap of about 10.07 percentage points."
+ },
+ "run_id": "77d4d5a1-2287-485f-9205-9f749d3161ae",
+ "run_status": "done",
+ "split": "dev",
+ "started_at": "2026-11-15T05:12:32.750992+00:00",
+ "status": "done",
+ "system_config_hash": "52a48e08f9ef2a659803092d4f5678475241e872105c99154f86b7bbc29038a3",
+ "system_id": "m6",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 51560,
+  "cache_write_tokens": 11117,
+  "input_tokens": 8050,
+  "output_tokens": 3114
+ }
+}

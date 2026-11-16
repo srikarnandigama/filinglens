@@ -1,0 +1,71 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 1,
+  "numeric_valid": 1,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.0454480",
+ "error": null,
+ "finished_at": "2026-11-15T05:12:48.774767+00:00",
+ "latency_ms": 15035,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD",
+  "value": "5518000000"
+ },
+ "question_id": "q_7ec5fcebfbff06c2",
+ "question_sha": "4dd0dbab784d51fc2c1370224fc508cdc9fe3f6ccae20e2dca0b7171c4911503",
+ "raw_output": {
+  "caveats": [
+   "The Q4 value is derived, not directly reported. It equals full-year FY2024 operating cash flow ($13,971,000,000) minus the nine-month year-to-date figure ($8,453,000,000)."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3935"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q4",
+     "fiscal_year": 2024
+    },
+    "text": "Disney's net cash provided by operating activities in fiscal Q4 2024 (2024-06-30 to 2024-09-28) was about $5.518 billion. This is derived as FY2024 operating cash flow of $13.971 billion minus the nine-month figure of $8.453 billion.",
+    "ticker": "DIS",
+    "unit": "USD",
+    "value": "5518000000",
+    "value_basis": "fact"
+   }
+  ],
+  "final_claim_id": "c1",
+  "final_unit": "USD",
+  "final_value": "5518000000",
+  "status": "answered",
+  "summary": "Disney's net cash provided by operating activities in fiscal Q4 2024 (June 30 to September 28, 2024) was about $5.518 billion. This is a derived figure: full-year operating cash flow minus the nine-month figure."
+ },
+ "run_id": "4f2600c8-9635-44e4-b86a-cf890d67ba59",
+ "run_status": "done",
+ "split": "dev",
+ "started_at": "2026-11-15T05:12:33.703118+00:00",
+ "status": "done",
+ "system_config_hash": "52a48e08f9ef2a659803092d4f5678475241e872105c99154f86b7bbc29038a3",
+ "system_id": "m6",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 46465,
+  "cache_write_tokens": 5839,
+  "input_tokens": 4712,
+  "output_tokens": 1678
+ }
+}

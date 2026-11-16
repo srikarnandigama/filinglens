@@ -1,0 +1,172 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 6,
+  "numeric_valid": 6,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.0703010",
+ "error": null,
+ "finished_at": "2026-11-16T20:20:03.853567+00:00",
+ "latency_ms": 23633,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD",
+  "value": "33262500000"
+ },
+ "question_id": "q_3baaae1e0112b689",
+ "question_sha": "62a91a7c20f451245b8e1ca83da80e6e559710c4bb7a7bfdc906c44f91f51eae",
+ "raw_output": {
+  "caveats": [
+   "Q4 FY2025 operating income is derived (full-year operating income minus the nine-month year-to-date figure), not a directly reported quarterly value.",
+   "The mean is a simple average of the four fiscal quarters. Apple's fiscal year ends in late September."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "65"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q1",
+     "fiscal_year": 2025
+    },
+    "text": "Apple's Q1 FY2025 operating income was about $42.83 billion.",
+    "ticker": "AAPL",
+    "unit": "USD",
+    "value": "42832000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "66"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q2",
+     "fiscal_year": 2025
+    },
+    "text": "Apple's Q2 FY2025 operating income was about $29.59 billion.",
+    "ticker": "AAPL",
+    "unit": "USD",
+    "value": "29589000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "67"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q3",
+     "fiscal_year": 2025
+    },
+    "text": "Apple's Q3 FY2025 operating income was about $28.20 billion.",
+    "ticker": "AAPL",
+    "unit": "USD",
+    "value": "28202000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "68"
+     }
+    ],
+    "id": "c4",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q4",
+     "fiscal_year": 2025
+    },
+    "text": "Apple's Q4 FY2025 operating income, derived from the annual figure less the nine-month figure, was about $32.43 billion.",
+    "ticker": "AAPL",
+    "unit": "USD",
+    "value": "32427000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": "value",
+      "kind": "computation",
+      "ref": "cmp_2"
+     }
+    ],
+    "id": "c5",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "The four quarters of fiscal 2025 sum to about $133.05 billion in operating income.",
+    "ticker": "AAPL",
+    "unit": "USD",
+    "value": "133050000000",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "mean",
+      "kind": "computation",
+      "ref": "cmp_1"
+     }
+    ],
+    "id": "c6",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Apple's average quarterly operating income over fiscal 2025 was about $33.26 billion.",
+    "ticker": "AAPL",
+    "unit": "USD",
+    "value": "33262500000",
+    "value_basis": "computation"
+   }
+  ],
+  "final_claim_id": "c6",
+  "final_unit": "USD",
+  "final_value": "33262500000",
+  "status": "answered",
+  "summary": "Apple's average quarterly operating income over fiscal 2025 was about $33.26 billion. This is the mean of the four quarters: $42.83 billion, $29.59 billion, $28.20 billion and $32.43 billion. The four quarters sum to $133.05 billion, which matches the fiscal 2025 annual operating income used to derive Q4."
+ },
+ "run_id": "1ec3aeca-f7ed-4e19-b2d8-764bfa449bf8",
+ "run_status": "done",
+ "split": "test",
+ "started_at": "2026-11-16T20:19:40.178258+00:00",
+ "status": "done",
+ "system_config_hash": "52a48e08f9ef2a659803092d4f5678475241e872105c99154f86b7bbc29038a3",
+ "system_id": "m6",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 52120,
+  "cache_write_tokens": 6774,
+  "input_tokens": 8647,
+  "output_tokens": 3086
+ }
+}

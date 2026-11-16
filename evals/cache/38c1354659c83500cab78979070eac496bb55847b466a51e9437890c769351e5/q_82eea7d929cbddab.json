@@ -1,0 +1,168 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 5,
+  "numeric_valid": 4,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.0634600",
+ "error": null,
+ "finished_at": "2026-11-16T21:18:38.711362+00:00",
+ "latency_ms": 21580,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD",
+  "value": "15337500000"
+ },
+ "question_id": "q_82eea7d929cbddab",
+ "question_sha": "8c217b8f9252519c887b37784748ced8937cf45752a9587b97f8abccf0659385",
+ "raw_output": {
+  "caveats": [
+   "Q4 FY2024 gross profit is derived (full-year minus nine-month year-to-date), not a directly reported quarterly figure.",
+   "JNJ's fiscal 2024 ended 2024-12-29, so quarter end dates differ slightly from calendar quarter ends.",
+   "The average is a simple mean of the four quarters and equals the full-year gross profit of $61.35 billion divided by four."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "2805"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q1",
+     "fiscal_year": 2024
+    },
+    "text": "Q1 FY2024 gross profit was $14.872 billion.",
+    "ticker": "JNJ",
+    "unit": "USD",
+    "value": "14872000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "2806"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q2",
+     "fiscal_year": 2024
+    },
+    "text": "Q2 FY2024 gross profit was $15.578 billion.",
+    "ticker": "JNJ",
+    "unit": "USD",
+    "value": "15578000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "2807"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q3",
+     "fiscal_year": 2024
+    },
+    "text": "Q3 FY2024 gross profit was $15.508 billion.",
+    "ticker": "JNJ",
+    "unit": "USD",
+    "value": "15508000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "2808"
+     }
+    ],
+    "id": "c4",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q4",
+     "fiscal_year": 2024
+    },
+    "text": "Q4 FY2024 gross profit was $15.392 billion. This is derived as FY gross profit of $61,350,000,000 minus nine-month gross profit of $45,958,000,000.",
+    "ticker": "JNJ",
+    "unit": "USD",
+    "value": "15392000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "2805"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "2806"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "2807"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "2808"
+     }
+    ],
+    "id": "c5",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "Average quarterly gross profit for FY2024 = (14,872,000,000 + 15,578,000,000 + 15,508,000,000 + 15,392,000,000) / 4 = 61,350,000,000 / 4 = 15,337,500,000, or about $15.34 billion.",
+    "ticker": "JNJ",
+    "unit": "USD",
+    "value": "15337500000",
+    "value_basis": "model_arithmetic"
+   }
+  ],
+  "final_claim_id": "c5",
+  "final_unit": "USD",
+  "final_value": "15337500000",
+  "status": "answered",
+  "summary": "Johnson & Johnson's average quarterly gross profit over fiscal 2024 was about $15.34 billion ($15,337,500,000). That is the mean of Q1 $14.872 billion, Q2 $15.578 billion, Q3 $15.508 billion and a derived Q4 of $15.392 billion."
+ },
+ "run_id": "cad951f4-66ed-4e26-885f-b1f9f220120e",
+ "run_status": "done",
+ "split": "test",
+ "started_at": "2026-11-16T21:18:17.111778+00:00",
+ "status": "done",
+ "system_config_hash": "38c1354659c83500cab78979070eac496bb55847b466a51e9437890c769351e5",
+ "system_id": "m6-no-quant",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 22045,
+  "cache_write_tokens": 6119,
+  "input_tokens": 7389,
+  "output_tokens": 3118
+ }
+}

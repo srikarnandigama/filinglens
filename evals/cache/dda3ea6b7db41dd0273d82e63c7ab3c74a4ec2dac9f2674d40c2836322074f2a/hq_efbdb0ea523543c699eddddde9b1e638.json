@@ -1,0 +1,229 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 0,
+  "numeric_valid": 0,
+  "text_pending_judge": [],
+  "text_string_supported": 7,
+  "text_total": 7,
+  "uncited": 0
+ },
+ "cost_usd": "0.109177540",
+ "error": null,
+ "finished_at": "2026-11-16T22:04:44.583486+00:00",
+ "latency_ms": 87570,
+ "prediction": {
+  "parse_ok": true,
+  "text": "ExxonMobil's FY2024 10-K says greenhouse gas policies could hurt the business in several ways. They could lower investment returns, make its products more expensive or less competitive, lengthen project timelines, and reduce hydrocarbon demand. They could also raise operating, compliance and reporting costs. Indirect pressure on financing is another risk. Management also says the regulations are evolving, so their business impact is hard to predict.\nIn its Item 1A 'Greenhouse gas restrictions' risk factor, ExxonMobil said that, depending on how policies are formulated and applied, they could negatively affect its investment returns, make its hydrocarbon-based products more expensive or less competitive, lengthen project implementation times, and reduce demand for hydrocarbons while shifting demand toward lower-carbon alternatives.\nExxonMobil also said political and other actors increasingly seek to advance climate objectives indirectly, such as by reducing the availability or increasing the cost of financing and investment in the oil and gas sector.\nAmong the factors affecting supply and demand, ExxonMobil listed government policies, including actions intended to reduce greenhouse gas emissions, that restrict oil and gas production or increase associated production, reporting or compliance costs.\nIn its government and political factors risk, ExxonMobil cited changes in environmental regulations or other laws that penalize it for past or current production of legal and/or permitted products and operations, increase its cost of operation or compliance, or reduce or delay available business opportunities. It also cited changes that require changes in the Company's business or strategy that could result in reduced returns.\nExxonMobil said its net-zero ambition carries risks that the transition, including underlying technologies, government policies and markets, will not be available or develop at the pace or in the manner expected by current net-zero scenarios.\nIn MD&A, ExxonMobil said international accords and underlying regional and national greenhouse gas regulations continue to evolve with uncertain timing and outcome, making it difficult to predict their business impact. Its Outlook assumes a proxy cost on energy-related CO2 emissions that reaches up to $150 per metric ton for OECD nations and up to $100 for non-OECD nations by 2050.\nExxonMobil's forward-looking statements list changes in laws, regulations, taxes or policies as factors that could cause actual results to differ materially. Examples include government policies supporting lower carbon, punitive European taxes on the oil and gas sector, unequal support for different emissions-reduction technologies, and evolving, ambiguous and unharmonized sustainability and GHG reporting standards."
+ },
+ "question_id": "hq_efbdb0ea523543c699eddddde9b1e638",
+ "question_sha": "2e7c69db1cf51cfaa102e803e854925e14aa6b6d69e2f8f441cc568c60225e67",
+ "raw_output": {
+  "caveats": [
+   "The retrieved 'Greenhouse gas restrictions' passage is cut off, so the list of specific policies it describes was not retrieved. Other parts of the filing, such as Item 1, were not searched.",
+   "The government and political factors passage begins mid-list, and its lead-in was not retrieved."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_9e6e81065a45435193fbe6753689a27db1e93b791ea40d5de1cea1e1e085af4b"
+     }
+    ],
+    "id": "c1",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "In its Item 1A 'Greenhouse gas restrictions' risk factor, ExxonMobil said that, depending on how policies are formulated and applied, they could negatively affect its investment returns, make its hydrocarbon-based products more expensive or less competitive, lengthen project implementation times, and reduce demand for hydrocarbons while shifting demand toward lower-carbon alternatives.",
+    "ticker": "XOM",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_9e6e81065a45435193fbe6753689a27db1e93b791ea40d5de1cea1e1e085af4b"
+     }
+    ],
+    "id": "c2",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "ExxonMobil also said political and other actors increasingly seek to advance climate objectives indirectly, such as by reducing the availability or increasing the cost of financing and investment in the oil and gas sector.",
+    "ticker": "XOM",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_b79dde3ca6a9903d2372feaba7406d559f8530651947d4325a14d2c8595027c2"
+     }
+    ],
+    "id": "c3",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "Among the factors affecting supply and demand, ExxonMobil listed government policies, including actions intended to reduce greenhouse gas emissions, that restrict oil and gas production or increase associated production, reporting or compliance costs.",
+    "ticker": "XOM",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_3da17d71d44f0929ba094359a5583c8adadb6a4f9b9eca8497be3e5d907df9f7"
+     }
+    ],
+    "id": "c4",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "In its government and political factors risk, ExxonMobil cited changes in environmental regulations or other laws that penalize it for past or current production of legal and/or permitted products and operations, increase its cost of operation or compliance, or reduce or delay available business opportunities. It also cited changes that require changes in the Company's business or strategy that could result in reduced returns.",
+    "ticker": "XOM",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_66cb5034754e733c5a49994551ef31e28739766a0d3f97a2ac6ffed9ed2daa69"
+     }
+    ],
+    "id": "c5",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "ExxonMobil said its net-zero ambition carries risks that the transition, including underlying technologies, government policies and markets, will not be available or develop at the pace or in the manner expected by current net-zero scenarios.",
+    "ticker": "XOM",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_8445202052fb7b23096465e546dcf9bcd57daac3584463616c152e34d81c2125"
+     }
+    ],
+    "id": "c6",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "In MD&A, ExxonMobil said international accords and underlying regional and national greenhouse gas regulations continue to evolve with uncertain timing and outcome, making it difficult to predict their business impact. Its Outlook assumes a proxy cost on energy-related CO2 emissions that reaches up to $150 per metric ton for OECD nations and up to $100 for non-OECD nations by 2050.",
+    "ticker": "XOM",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_7eb9142eabbd75d3c058b099ec509c66949a94f981fe40333831bb952e33220e"
+     }
+    ],
+    "id": "c7",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "ExxonMobil's forward-looking statements list changes in laws, regulations, taxes or policies as factors that could cause actual results to differ materially. Examples include government policies supporting lower carbon, punitive European taxes on the oil and gas sector, unequal support for different emissions-reduction technologies, and evolving, ambiguous and unharmonized sustainability and GHG reporting standards.",
+    "ticker": "XOM",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   }
+  ],
+  "final_claim_id": null,
+  "final_unit": null,
+  "final_value": null,
+  "status": "answered",
+  "summary": "ExxonMobil's FY2024 10-K says greenhouse gas policies could hurt the business in several ways. They could lower investment returns, make its products more expensive or less competitive, lengthen project timelines, and reduce hydrocarbon demand. They could also raise operating, compliance and reporting costs. Indirect pressure on financing is another risk. Management also says the regulations are evolving, so their business impact is hard to predict."
+ },
+ "retrieval": {
+  "first_search": {
+   "filings:s1": [
+    "chk_9e6e81065a45435193fbe6753689a27db1e93b791ea40d5de1cea1e1e085af4b",
+    "chk_b0f6a3c2d1081a32bf36ca8abec0c71aa7ce70eae056be42e8887f37153d5dc4",
+    "chk_649da38d347e19e78ad87eb11525fd8d492fb146cd85eb80298f451ecb8cd55d",
+    "chk_66cb5034754e733c5a49994551ef31e28739766a0d3f97a2ac6ffed9ed2daa69",
+    "chk_3da17d71d44f0929ba094359a5583c8adadb6a4f9b9eca8497be3e5d907df9f7",
+    "chk_b8d794aaa50dc950b6590385634e3979cc05c867b0161eb1c82abf985b6cecb0",
+    "chk_59595c8a5bc19d2b3de01eed679f1c0caee72118c41336305e74d35dd451c3d2",
+    "chk_b79dde3ca6a9903d2372feaba7406d559f8530651947d4325a14d2c8595027c2"
+   ],
+   "filings:s2": [
+    "chk_8445202052fb7b23096465e546dcf9bcd57daac3584463616c152e34d81c2125",
+    "chk_2ba5d11e69b32601b92afaab5fdb5e4ed1bfe399c935aa4fcef8e125e23236bb",
+    "chk_890dc4a372bacd5e88cc7622e7de534773671e1fce74721ebb4cc5794e80484d",
+    "chk_4283de1ec30cf49cca10b82e41f14156eefe9a17f5f74f071ca0000613f1395e",
+    "chk_b8460e5f7f0a4e1592cdc62d5c7683b0db3a1c6dc5806112fa2c7f6c7ece86aa",
+    "chk_574a50a7c2e21c5cb7880bec299a07d73b53b3fed39b4fbbbb15287d3ac73dc0"
+   ]
+  },
+  "seen": [
+   "chk_8445202052fb7b23096465e546dcf9bcd57daac3584463616c152e34d81c2125",
+   "chk_2ba5d11e69b32601b92afaab5fdb5e4ed1bfe399c935aa4fcef8e125e23236bb",
+   "chk_890dc4a372bacd5e88cc7622e7de534773671e1fce74721ebb4cc5794e80484d",
+   "chk_4283de1ec30cf49cca10b82e41f14156eefe9a17f5f74f071ca0000613f1395e",
+   "chk_b8460e5f7f0a4e1592cdc62d5c7683b0db3a1c6dc5806112fa2c7f6c7ece86aa",
+   "chk_574a50a7c2e21c5cb7880bec299a07d73b53b3fed39b4fbbbb15287d3ac73dc0",
+   "chk_9e6e81065a45435193fbe6753689a27db1e93b791ea40d5de1cea1e1e085af4b",
+   "chk_b0f6a3c2d1081a32bf36ca8abec0c71aa7ce70eae056be42e8887f37153d5dc4",
+   "chk_649da38d347e19e78ad87eb11525fd8d492fb146cd85eb80298f451ecb8cd55d",
+   "chk_66cb5034754e733c5a49994551ef31e28739766a0d3f97a2ac6ffed9ed2daa69",
+   "chk_3da17d71d44f0929ba094359a5583c8adadb6a4f9b9eca8497be3e5d907df9f7",
+   "chk_b8d794aaa50dc950b6590385634e3979cc05c867b0161eb1c82abf985b6cecb0",
+   "chk_59595c8a5bc19d2b3de01eed679f1c0caee72118c41336305e74d35dd451c3d2",
+   "chk_b79dde3ca6a9903d2372feaba7406d559f8530651947d4325a14d2c8595027c2",
+   "chk_de4ebefec8b67788a8c3b628531d912eda4aa05abe253ff9c0d87b7b157e9e41",
+   "chk_7eb9142eabbd75d3c058b099ec509c66949a94f981fe40333831bb952e33220e",
+   "chk_e6145ed691af8fc3e60676f0ee2f10f6eadfcc01d88393bc9582963cac100f02"
+  ]
+ },
+ "run_id": "48357d0d-ce66-4eb6-9928-f373b982e8ad",
+ "run_status": "done",
+ "split": "handwritten",
+ "started_at": "2026-11-16T22:03:16.946643+00:00",
+ "status": "done",
+ "system_config_hash": "dda3ea6b7db41dd0273d82e63c7ab3c74a4ec2dac9f2674d40c2836322074f2a",
+ "system_id": "m6-rerank",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 101382,
+  "cache_write_tokens": 42201,
+  "input_tokens": 13498,
+  "output_tokens": 8270
+ }
+}

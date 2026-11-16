@@ -1,0 +1,203 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 0,
+  "numeric_valid": 0,
+  "text_pending_judge": [
+   {
+    "chunk_ids": [
+     "chk_98befeaaea608307e99dcada998c9f57fd4f1cf32a44d2098613e2e408ed2c57"
+    ],
+    "claim_id": "c2",
+    "text": "Before the deal, Exxon's FY2023 10-K gave a Permian baseline of about 610 koebd in 2023. It described the all-stock Pioneer transaction, valued at $59.5 billion, as more than doubling Exxon's Permian footprint."
+   },
+   {
+    "chunk_ids": [
+     "chk_17f1e3d47ff8fe89dd27df59c9ae699a17bbe36fa98d1317ed8352a7a222cba1"
+    ],
+    "claim_id": "c5",
+    "text": "Exxon said the acquisition transforms its upstream portfolio and creates an industry-leading, high-quality U.S. unconventional inventory position."
+   }
+  ],
+  "text_string_supported": 3,
+  "text_total": 5,
+  "uncited": 0
+ },
+ "cost_usd": "0.114911210",
+ "error": null,
+ "finished_at": "2026-11-16T21:31:44.621833+00:00",
+ "latency_ms": 51679,
+ "prediction": {
+  "parse_ok": true,
+  "text": "Exxon's filing credits the Pioneer acquisition, which closed in May 2024, with record Permian production in 2024. It does not report a Pioneer-only volume. Permian output averaged about 1,185 koebd in 2024, roughly 570 koebd more than the prior year, and a 2023 baseline of about 610 koebd is also cited. Total Upstream production rose 595 thousand oil-equivalent barrels per day to 4.3 million, with Permian and Guyana growth together adding 680 thousand.\nExxon said it closed the Pioneer Natural Resources acquisition in May 2024, which significantly increased its Permian footprint. Management reported Permian production averaging approximately 1,185 koebd in 2024, approximately 570 koebd higher than the previous year.\nBefore the deal, Exxon's FY2023 10-K gave a Permian baseline of about 610 koebd in 2023. It described the all-stock Pioneer transaction, valued at $59.5 billion, as more than doubling Exxon's Permian footprint.\nAt the total company level, Exxon reported that 2024 production of 4.3 million oil-equivalent barrels per day increased 595 thousand barrels per day from 2023. Permian and Guyana production grew by 680 thousand oil-equivalent barrels per day, more than offsetting divestments and entitlements. Excluding entitlements, divestments and curtailments, net production grew by 685 thousand.\nExxon attributed higher volumes from advantaged projects, which increased earnings by $3,760 million, to record Permian production driven by the Pioneer acquisition and growth in the heritage Permian. It also cited record Guyana production driven by the Prosperity FPSO start-up.\nExxon said the acquisition transforms its upstream portfolio and creates an industry-leading, high-quality U.S. unconventional inventory position."
+ },
+ "question_id": "hq_9f2123ab94e5409ba2375e444df03060",
+ "question_sha": "b29d6ab112bed3393c65798eec155e5eea983b70d0142ad194297f5eaef04945",
+ "raw_output": {
+  "caveats": [
+   "The filing does not break out a Pioneer-only production figure. The roughly 570 koebd Permian increase combines Pioneer volumes (from May 3, 2024) with heritage Permian growth.",
+   "The 595 koebd total company increase also includes Guyana growth, divestments, entitlements and curtailments, so it cannot be attributed to Pioneer alone.",
+   "The Pioneer closing date of May 3, 2024 comes from the worker notes on the filing's footnotes; the quoted passage says only May 2024. The 2024 figures reflect partial-year ownership."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_156f73a89a4e1b1801704f1cc5a8f691453b63fa141d1888c3599c6fa2ac3b14"
+     }
+    ],
+    "id": "c1",
+    "kind": "textual",
+    "period": null,
+    "text": "Exxon said it closed the Pioneer Natural Resources acquisition in May 2024, which significantly increased its Permian footprint. Management reported Permian production averaging approximately 1,185 koebd in 2024, approximately 570 koebd higher than the previous year.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_98befeaaea608307e99dcada998c9f57fd4f1cf32a44d2098613e2e408ed2c57"
+     }
+    ],
+    "id": "c2",
+    "kind": "textual",
+    "period": null,
+    "text": "Before the deal, Exxon's FY2023 10-K gave a Permian baseline of about 610 koebd in 2023. It described the all-stock Pioneer transaction, valued at $59.5 billion, as more than doubling Exxon's Permian footprint.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_8da771ec88ae2f387a99c98553dd2a75136020029adcebaa532e2ec8710e58a0"
+     }
+    ],
+    "id": "c3",
+    "kind": "textual",
+    "period": null,
+    "text": "At the total company level, Exxon reported that 2024 production of 4.3 million oil-equivalent barrels per day increased 595 thousand barrels per day from 2023. Permian and Guyana production grew by 680 thousand oil-equivalent barrels per day, more than offsetting divestments and entitlements. Excluding entitlements, divestments and curtailments, net production grew by 685 thousand.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_06b8c6874d6d25654d66805711a3caf0df5079d558d57f2d3fe38766d1a8467b"
+     }
+    ],
+    "id": "c4",
+    "kind": "textual",
+    "period": null,
+    "text": "Exxon attributed higher volumes from advantaged projects, which increased earnings by $3,760 million, to record Permian production driven by the Pioneer acquisition and growth in the heritage Permian. It also cited record Guyana production driven by the Prosperity FPSO start-up.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_17f1e3d47ff8fe89dd27df59c9ae699a17bbe36fa98d1317ed8352a7a222cba1"
+     }
+    ],
+    "id": "c5",
+    "kind": "textual",
+    "period": null,
+    "text": "Exxon said the acquisition transforms its upstream portfolio and creates an industry-leading, high-quality U.S. unconventional inventory position.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   }
+  ],
+  "final_claim_id": null,
+  "final_unit": null,
+  "final_value": null,
+  "status": "partially_answered",
+  "summary": "Exxon's filing credits the Pioneer acquisition, which closed in May 2024, with record Permian production in 2024. It does not report a Pioneer-only volume. Permian output averaged about 1,185 koebd in 2024, roughly 570 koebd more than the prior year, and a 2023 baseline of about 610 koebd is also cited. Total Upstream production rose 595 thousand oil-equivalent barrels per day to 4.3 million, with Permian and Guyana growth together adding 680 thousand."
+ },
+ "retrieval": {
+  "first_search": {
+   "filings:s1": [
+    "chk_96cf998e562c58efce45bb2cce428198a1771d89a1c999c2882d679f5d0f640f",
+    "chk_b281fc2ca71d7680ca7651c9311513cab6589f7958378a65c095857ac48348ee",
+    "chk_ddbebb73e0d2e7962503b1487cad3de4cd417bf607631e0a491cc749a845d34b",
+    "chk_d4576739698e7de9b11ffbcde34fb0a9c7c5f7a1eb79aa453876988e80024cd8",
+    "chk_156f73a89a4e1b1801704f1cc5a8f691453b63fa141d1888c3599c6fa2ac3b14",
+    "chk_06b8c6874d6d25654d66805711a3caf0df5079d558d57f2d3fe38766d1a8467b",
+    "chk_5b75285ba90297bd3f617e1330e5e320940c2715038c88882fa8457f544f32f2",
+    "chk_dfde7ffba0e4156a1e641fd69a181669a13aa90707ded83d7403f6955f9f6a2b"
+   ],
+   "filings:s2": [
+    "chk_39aaaa9dca7867faa8bfd142bdb6d0a9081ba7cb4cad270ed2510a392c30baef",
+    "chk_17f1e3d47ff8fe89dd27df59c9ae699a17bbe36fa98d1317ed8352a7a222cba1",
+    "chk_f139ebb40e7cc6e6a51dadd997a049b6599a53e52b3922bd4e3b909834172666",
+    "chk_d9f5ef44abf3b08e19ee4f36df1d651eeb16d3bb1e8f72412d1b77075c467917"
+   ],
+   "filings:s3": [
+    "chk_98befeaaea608307e99dcada998c9f57fd4f1cf32a44d2098613e2e408ed2c57",
+    "chk_b6fa707dda138065507f092eb3e34426bd824bcc9e9469b33b0804796f8adef3",
+    "chk_c1ab8444a2cc0baf3da0e654528cbf11e35a527c3bd6a02724386cf6cfe63582",
+    "chk_b27cb30420ecc5f077fc57e338217724b2fb5296006c6194d45f2537a838b880",
+    "chk_5e5ef6364aedcc5d2fe8908e4bed8af7112aa9edb54f1878b01626723e70e322",
+    "chk_7c864eb2287c650980339a1ff134cf6e3851d44a5af6a15f364b7ca5160e70f1",
+    "chk_c4a0880acf7f4fa605ec9468cfacbef0f19830f8ff8e389b091f0c13fd14017c",
+    "chk_caf12fa8e7f1ab8ca6d22fe7a6f9b2db8153ce758f1306dbb5ec4449347550e6"
+   ]
+  },
+  "seen": [
+   "chk_96cf998e562c58efce45bb2cce428198a1771d89a1c999c2882d679f5d0f640f",
+   "chk_b281fc2ca71d7680ca7651c9311513cab6589f7958378a65c095857ac48348ee",
+   "chk_ddbebb73e0d2e7962503b1487cad3de4cd417bf607631e0a491cc749a845d34b",
+   "chk_d4576739698e7de9b11ffbcde34fb0a9c7c5f7a1eb79aa453876988e80024cd8",
+   "chk_156f73a89a4e1b1801704f1cc5a8f691453b63fa141d1888c3599c6fa2ac3b14",
+   "chk_06b8c6874d6d25654d66805711a3caf0df5079d558d57f2d3fe38766d1a8467b",
+   "chk_5b75285ba90297bd3f617e1330e5e320940c2715038c88882fa8457f544f32f2",
+   "chk_dfde7ffba0e4156a1e641fd69a181669a13aa90707ded83d7403f6955f9f6a2b",
+   "chk_39aaaa9dca7867faa8bfd142bdb6d0a9081ba7cb4cad270ed2510a392c30baef",
+   "chk_17f1e3d47ff8fe89dd27df59c9ae699a17bbe36fa98d1317ed8352a7a222cba1",
+   "chk_f139ebb40e7cc6e6a51dadd997a049b6599a53e52b3922bd4e3b909834172666",
+   "chk_d9f5ef44abf3b08e19ee4f36df1d651eeb16d3bb1e8f72412d1b77075c467917",
+   "chk_98befeaaea608307e99dcada998c9f57fd4f1cf32a44d2098613e2e408ed2c57",
+   "chk_b6fa707dda138065507f092eb3e34426bd824bcc9e9469b33b0804796f8adef3",
+   "chk_c1ab8444a2cc0baf3da0e654528cbf11e35a527c3bd6a02724386cf6cfe63582",
+   "chk_b27cb30420ecc5f077fc57e338217724b2fb5296006c6194d45f2537a838b880",
+   "chk_5e5ef6364aedcc5d2fe8908e4bed8af7112aa9edb54f1878b01626723e70e322",
+   "chk_7c864eb2287c650980339a1ff134cf6e3851d44a5af6a15f364b7ca5160e70f1",
+   "chk_c4a0880acf7f4fa605ec9468cfacbef0f19830f8ff8e389b091f0c13fd14017c",
+   "chk_caf12fa8e7f1ab8ca6d22fe7a6f9b2db8153ce758f1306dbb5ec4449347550e6",
+   "chk_8da771ec88ae2f387a99c98553dd2a75136020029adcebaa532e2ec8710e58a0",
+   "chk_059ab225b33408ade65e70c9eaf7a69254679ee6716ffbfec4d8c3fd5cc61d15"
+  ]
+ },
+ "run_id": "6e79c132-d3bf-4e01-b352-ec66f93a2784",
+ "run_status": "done",
+ "split": "handwritten",
+ "started_at": "2026-11-16T21:30:52.903069+00:00",
+ "status": "done",
+ "system_config_hash": "52a48e08f9ef2a659803092d4f5678475241e872105c99154f86b7bbc29038a3",
+ "system_id": "m6",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 116107,
+  "cache_write_tokens": 54475,
+  "input_tokens": 14109,
+  "output_tokens": 11293
+ }
+}

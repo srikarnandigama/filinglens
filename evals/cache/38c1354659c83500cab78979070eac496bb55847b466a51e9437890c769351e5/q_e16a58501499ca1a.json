@@ -1,0 +1,117 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 3,
+  "numeric_valid": 2,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.0549696",
+ "error": null,
+ "finished_at": "2026-11-16T20:38:43.683445+00:00",
+ "latency_ms": 21326,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "69.9707"
+ },
+ "question_id": "q_e16a58501499ca1a",
+ "question_sha": "a0b4c352c87f974568290d40bd3d3514d0144796411c6970ebefed9b6de2756e",
+ "raw_output": {
+  "caveats": [
+   "Gross margin was calculated by hand from the gross profit and revenue facts. Both facts are for the same period and come from the same source filing (accession 0000200406-24-000075).",
+   "The result is rounded to four decimal places."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "2801"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q2",
+     "fiscal_year": 2023
+    },
+    "text": "JNJ gross profit for fiscal Q2 2023 (2023-04-03 to 2023-07-02) was $15.057 billion.",
+    "ticker": "JNJ",
+    "unit": "USD",
+    "value": "15057000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "2767"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q2",
+     "fiscal_year": 2023
+    },
+    "text": "JNJ revenue for fiscal Q2 2023 was $21.519 billion.",
+    "ticker": "JNJ",
+    "unit": "USD",
+    "value": "21519000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "2801"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "2767"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q2",
+     "fiscal_year": 2023
+    },
+    "text": "Gross margin = gross profit / revenue = 15,057,000,000 / 21,519,000,000 \u2248 0.69971, or about 69.97%.",
+    "ticker": "JNJ",
+    "unit": "percent",
+    "value": "69.9707",
+    "value_basis": "model_arithmetic"
+   }
+  ],
+  "final_claim_id": "c3",
+  "final_unit": "percent",
+  "final_value": "69.9707",
+  "status": "answered",
+  "summary": "Johnson & Johnson's gross margin in fiscal Q2 2023 was about 69.97%, based on gross profit of $15.057 billion and revenue of $21.519 billion."
+ },
+ "run_id": "84bf8bea-98ef-437b-9693-b8d64f469461",
+ "run_status": "done",
+ "split": "test",
+ "started_at": "2026-11-16T20:38:22.278965+00:00",
+ "status": "done",
+ "system_config_hash": "38c1354659c83500cab78979070eac496bb55847b466a51e9437890c769351e5",
+ "system_id": "m6-no-quant",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 22041,
+  "cache_write_tokens": 5311,
+  "input_tokens": 5254,
+  "output_tokens": 2898
+ }
+}

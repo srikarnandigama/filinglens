@@ -1,0 +1,395 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 2,
+  "numeric_valid": 2,
+  "text_pending_judge": [
+   {
+    "chunk_ids": [
+     "chk_9a45ddf713ae7774b7af7d8b7b16a0a1f76a350f5cabc424a7a35a9790c32e39",
+     "chk_b8d4446562c2e4807f5338bfe4b20a87c059481335a13b71f74e160cc64eea78",
+     "chk_1304563ab427bb1fa252c985e144b7a54361da276eff619181cb8f1cf3c16cc1"
+    ],
+    "claim_id": "c4",
+    "text": "Cumulative direct response costs rose through the year: $593 million in Q1 and $1.4 billion for six months. By nine months they were $1.7 billion. Business disruption impacts were $279 million in Q1, $613 million for six months and $747 million for nine months."
+   },
+   {
+    "chunk_ids": [
+     "chk_9a45ddf713ae7774b7af7d8b7b16a0a1f76a350f5cabc424a7a35a9790c32e39",
+     "chk_b8d4446562c2e4807f5338bfe4b20a87c059481335a13b71f74e160cc64eea78",
+     "chk_1304563ab427bb1fa252c985e144b7a54361da276eff619181cb8f1cf3c16cc1"
+    ],
+    "claim_id": "c5",
+    "text": "UnitedHealth accelerated funding and provided interest-free loans to care providers. These totaled approximately $3.9 billion through March 31, 2024, more than $9 billion through June 30, and nearly $9 billion through September 30."
+   },
+   {
+    "chunk_ids": [
+     "chk_0724a6d4e3f7a86549fe7783b2d53bf9e85c2080f79bc8370bc4c8284e21670e"
+    ],
+    "claim_id": "c7",
+    "text": "In the Q2 2024 10-Q, UnitedHealth said consolidated earnings from operations of $7.9 billion versus $8.1 billion a year earlier were impacted by the cyberattack. It said diluted EPS of $4.54 was impacted by the loss on South American subsidiaries held for sale and by the cyberattack."
+   }
+  ],
+  "text_string_supported": 6,
+  "text_total": 9,
+  "uncited": 0
+ },
+ "cost_usd": "0.204693590",
+ "error": null,
+ "finished_at": "2026-11-16T22:18:01.953883+00:00",
+ "latency_ms": 75750,
+ "prediction": {
+  "parse_ok": true,
+  "text": "UnitedHealth said the 2024 Change Healthcare cyberattack cost it $2.2 billion in direct response costs and an estimated $867 million of lost Optum Insight revenue. It also said the attack added about $640 million of medical costs and led it to provide interest-free loans to care providers. It said the attack reduced operating cash flow and that about 190 million individuals were impacted. Operating income was nearly flat in FY2024, down 0.22% to $32.287 billion. Net income fell 35.64% to $14.405 billion, but the filings do not attribute the full decline to the attack.\nUnitedHealth said it identified on February 21, 2024 that cybercrime threat actors had gained access to certain Change Healthcare IT systems, and that it isolated the impacted systems.\nFor FY2024 UnitedHealth reported $2.2 billion of direct response costs. These included interest-free loans, increased medical care expenditures from suspended care management activities, network restoration and notifications of impacted persons. Optum Insight also had estimated business disruption impacts of $867 million, reflecting lost revenue.\nMedical costs from the temporary suspension of some care management activities, which affected UnitedHealthcare and Optum Health, were approximately $640 million in 2024.\nCumulative direct response costs rose through the year: $593 million in Q1 and $1.4 billion for six months. By nine months they were $1.7 billion. Business disruption impacts were $279 million in Q1, $613 million for six months and $747 million for nine months.\nUnitedHealth accelerated funding and provided interest-free loans to care providers. These totaled approximately $3.9 billion through March 31, 2024, more than $9 billion through June 30, and nearly $9 billion through September 30.\nAt the Optum Insight segment, UnitedHealth said revenues decreased primarily due to business disruption impacts from the cyberattack. It said earnings from operations decreased primarily due to direct response costs and business disruption impacts, partly offset by gains from business portfolio refinement.\nIn the Q2 2024 10-Q, UnitedHealth said consolidated earnings from operations of $7.9 billion versus $8.1 billion a year earlier were impacted by the cyberattack. It said diluted EPS of $4.54 was impacted by the loss on South American subsidiaries held for sale and by the cyberattack.\nOperating income was nearly flat: $32.358 billion in FY2023 versus $32.287 billion in FY2024, a decline of about 0.22%.\nNet income fell about 35.6%, from $22.381 billion in FY2023 to $14.405 billion in FY2024.\nUnitedHealth said decreased operating cash flow in 2024 was primarily driven by CMS Medicare funding reductions, Change Healthcare cyberattack response actions, increased medical costs and changes in working capital accounts. The cyberattack was one of several drivers.\nUnitedHealth determined that approximately 190 million individuals were impacted. It expects to keep incurring direct response costs and business disruption at a lesser extent in 2025. It warned that risks related to impacted data, litigation, reputational harm and regulatory actions could adversely affect its financial condition or results."
+ },
+ "question_id": "hq_cdeefd822cd94dd98c915d26380f37ed",
+ "question_sha": "dae6503850b964e5ad430fd0d155b91ca3accaff2e56abf15b0a1004389166cd",
+ "raw_output": {
+  "caveats": [
+   "The net income decline cannot be attributed wholly to the cyberattack. The filings cite other factors, such as a loss on South American subsidiaries held for sale, and the evidence does not isolate the attack's net earnings impact.",
+   "The Q1\u2013Q3 figures are cumulative year-to-date amounts from the 10-Qs, and the FY2024 figures come from the 10-K.",
+   "The description of Change Healthcare as a 'payment-processing unit' is the question's wording. The filings describe it as a business whose services are reported within Optum Insight.",
+   "Some passages were only seen in search snippets, including the cash-flow passage. The chunk ID for the cash-flow claim, chk_5df6a68461b4a10f757015231563d3900196aab8337fc28652c76e44c5f55f06, was not separately fetched.",
+   "Passage coverage was incomplete: the Q1 medical care ratio passage returned no verified quotes, and some Q2 and Q3 passages were not retrieved."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_a16df41a6c6e779e5fc1f9a6640400dbe2e615eb3f6227029df73f467cd336c0"
+     }
+    ],
+    "id": "c1",
+    "kind": "textual",
+    "period": null,
+    "text": "UnitedHealth said it identified on February 21, 2024 that cybercrime threat actors had gained access to certain Change Healthcare IT systems, and that it isolated the impacted systems.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_588aa6e8bdf22b8611d5b30ef264459875e16eed4fcdcef5ad8b8309d275bc1b"
+     }
+    ],
+    "id": "c2",
+    "kind": "textual",
+    "period": null,
+    "text": "For FY2024 UnitedHealth reported $2.2 billion of direct response costs. These included interest-free loans, increased medical care expenditures from suspended care management activities, network restoration and notifications of impacted persons. Optum Insight also had estimated business disruption impacts of $867 million, reflecting lost revenue.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_1318db945f2fc5213e5c91b3cc5a930df510cb79cf0ebc11bd6c8c2f310a5fce"
+     }
+    ],
+    "id": "c3",
+    "kind": "textual",
+    "period": null,
+    "text": "Medical costs from the temporary suspension of some care management activities, which affected UnitedHealthcare and Optum Health, were approximately $640 million in 2024.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_9a45ddf713ae7774b7af7d8b7b16a0a1f76a350f5cabc424a7a35a9790c32e39"
+     },
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_b8d4446562c2e4807f5338bfe4b20a87c059481335a13b71f74e160cc64eea78"
+     },
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_1304563ab427bb1fa252c985e144b7a54361da276eff619181cb8f1cf3c16cc1"
+     }
+    ],
+    "id": "c4",
+    "kind": "textual",
+    "period": null,
+    "text": "Cumulative direct response costs rose through the year: $593 million in Q1 and $1.4 billion for six months. By nine months they were $1.7 billion. Business disruption impacts were $279 million in Q1, $613 million for six months and $747 million for nine months.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_9a45ddf713ae7774b7af7d8b7b16a0a1f76a350f5cabc424a7a35a9790c32e39"
+     },
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_b8d4446562c2e4807f5338bfe4b20a87c059481335a13b71f74e160cc64eea78"
+     },
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_1304563ab427bb1fa252c985e144b7a54361da276eff619181cb8f1cf3c16cc1"
+     }
+    ],
+    "id": "c5",
+    "kind": "textual",
+    "period": null,
+    "text": "UnitedHealth accelerated funding and provided interest-free loans to care providers. These totaled approximately $3.9 billion through March 31, 2024, more than $9 billion through June 30, and nearly $9 billion through September 30.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_b3511a98524412aa97d27996490312cb06c3fad691e11c06245046fd06fddec7"
+     }
+    ],
+    "id": "c6",
+    "kind": "textual",
+    "period": null,
+    "text": "At the Optum Insight segment, UnitedHealth said revenues decreased primarily due to business disruption impacts from the cyberattack. It said earnings from operations decreased primarily due to direct response costs and business disruption impacts, partly offset by gains from business portfolio refinement.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_0724a6d4e3f7a86549fe7783b2d53bf9e85c2080f79bc8370bc4c8284e21670e"
+     }
+    ],
+    "id": "c7",
+    "kind": "textual",
+    "period": null,
+    "text": "In the Q2 2024 10-Q, UnitedHealth said consolidated earnings from operations of $7.9 billion versus $8.1 billion a year earlier were impacted by the cyberattack. It said diluted EPS of $4.54 was impacted by the loss on South American subsidiaries held for sale and by the cyberattack.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_1"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3079"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3084"
+     }
+    ],
+    "id": "c8",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "Operating income was nearly flat: $32.358 billion in FY2023 versus $32.287 billion in FY2024, a decline of about 0.22%.",
+    "ticker": "UNH",
+    "unit": "percent",
+    "value": "-0.219420236109",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_2"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3096"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3101"
+     }
+    ],
+    "id": "c9",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "Net income fell about 35.6%, from $22.381 billion in FY2023 to $14.405 billion in FY2024.",
+    "ticker": "UNH",
+    "unit": "percent",
+    "value": "-35.637370984317",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_5df6a68461b4a10f757015231563d3900196aab8337fc28652c76e44c5f55f06"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3132"
+     }
+    ],
+    "id": "c10",
+    "kind": "textual",
+    "period": null,
+    "text": "UnitedHealth said decreased operating cash flow in 2024 was primarily driven by CMS Medicare funding reductions, Change Healthcare cyberattack response actions, increased medical costs and changes in working capital accounts. The cyberattack was one of several drivers.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_c509cda1a152b93275a3a43c5a2cd1ce6b342ff6dbe6a0331d946c90f7b6d6c1"
+     }
+    ],
+    "id": "c11",
+    "kind": "textual",
+    "period": null,
+    "text": "UnitedHealth determined that approximately 190 million individuals were impacted. It expects to keep incurring direct response costs and business disruption at a lesser extent in 2025. It warned that risks related to impacted data, litigation, reputational harm and regulatory actions could adversely affect its financial condition or results.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   }
+  ],
+  "final_claim_id": null,
+  "final_unit": null,
+  "final_value": null,
+  "status": "answered",
+  "summary": "UnitedHealth said the 2024 Change Healthcare cyberattack cost it $2.2 billion in direct response costs and an estimated $867 million of lost Optum Insight revenue. It also said the attack added about $640 million of medical costs and led it to provide interest-free loans to care providers. It said the attack reduced operating cash flow and that about 190 million individuals were impacted. Operating income was nearly flat in FY2024, down 0.22% to $32.287 billion. Net income fell 35.64% to $14.405 billion, but the filings do not attribute the full decline to the attack."
+ },
+ "retrieval": {
+  "first_search": {
+   "filings:s10": [
+    "chk_b8d4446562c2e4807f5338bfe4b20a87c059481335a13b71f74e160cc64eea78",
+    "chk_2d17f210b52247febfd6754a899d94218ee34b9a892e1f3b25568197ea49b769",
+    "chk_446e938a16d0bb13ff4d5255bf4ff0dc258a6781f138a28f2c149b79670c5f8b",
+    "chk_f517661128b409454f61f18a22eb3339cd9f464c7da95f6f64636ea7036032ce",
+    "chk_0724a6d4e3f7a86549fe7783b2d53bf9e85c2080f79bc8370bc4c8284e21670e",
+    "chk_e3b539bfca915f96216b6afa5553283bf47a78bd703d9b42f4d405e9c9d88d17"
+   ],
+   "filings:s11": [
+    "chk_1304563ab427bb1fa252c985e144b7a54361da276eff619181cb8f1cf3c16cc1",
+    "chk_1d0c9c4e1805ec9ed456f860ee42d8188dfa5169d66db2f7c5a734b9b7296c8e",
+    "chk_2500a8abd7243d47f605ecc7d060e556eb3835e80479b795cf56510ec17407ea",
+    "chk_a16df41a6c6e779e5fc1f9a6640400dbe2e615eb3f6227029df73f467cd336c0",
+    "chk_4dfdd7a86467c501c386467c0d416205c344f3521550fc9d43f9986f97fd5418",
+    "chk_a25d612ea7778e6eb4e61c07a65e0d1abda49dbbc69e641a9cb270dcd1cd18c1"
+   ],
+   "filings:s7": [
+    "chk_588aa6e8bdf22b8611d5b30ef264459875e16eed4fcdcef5ad8b8309d275bc1b",
+    "chk_c509cda1a152b93275a3a43c5a2cd1ce6b342ff6dbe6a0331d946c90f7b6d6c1",
+    "chk_2be3edbb4d638264cbabb6cb775d896ba34d678371107b0b892e1590e04f8030",
+    "chk_b3511a98524412aa97d27996490312cb06c3fad691e11c06245046fd06fddec7",
+    "chk_1318db945f2fc5213e5c91b3cc5a930df510cb79cf0ebc11bd6c8c2f310a5fce",
+    "chk_5df6a68461b4a10f757015231563d3900196aab8337fc28652c76e44c5f55f06",
+    "chk_3434d90ad8fd8381575e0284f8adfdd4d720c5a6502948addbc42480e82a6f87",
+    "chk_f6dceb2829bede724653b0a6401208d2aacc3b28a0445bb1f71bbaa8b76b7b4d"
+   ],
+   "filings:s8": [
+    "chk_0390242a087e82174b781af62e33ba1ec34da9c69058818b211675c1333ec575",
+    "chk_1726181d5d5941d4a9fdc5fec9484afb3d61137fb96efecdb0f0052c766d9dea",
+    "chk_177e3d455ce57d1eac22bc573dc725edd51385824c6b3bac13227f12037e5564",
+    "chk_55febf3a05661dab127bf91fb97a73c1716723078b3b60be34669d9c0ade2c98",
+    "chk_ac7c9faaff33f0f64bdb55745c95759f8c943b2c2f6b9b16ad9f3984c51681b0",
+    "chk_e7ff583c414909607110256a65c8dd4060f84cf7dd40bc419ed5f0c0c876505a"
+   ],
+   "filings:s9": [
+    "chk_9a45ddf713ae7774b7af7d8b7b16a0a1f76a350f5cabc424a7a35a9790c32e39",
+    "chk_c9550055633e892ae40a69187c7808bd7678366ac876c6ec2ad5b7e4319a1510",
+    "chk_6ffce630089a9ef1d09d1b1a155e8bcef8e0c9efd733347aeba021ea41d63301",
+    "chk_1b8405a8bd11e7d74126f7bf309e0fa041a1d3f3ba2f52a55c0ad52c52d035c6",
+    "chk_9a63a288e9e78a276d9ecc00e9394ee5063af9f558563cd453499d0684372954",
+    "chk_0e59ed07879356c8f9a4bf529039579417e45026679a94bb971ccc1d122f1994"
+   ]
+  },
+  "seen": [
+   "chk_588aa6e8bdf22b8611d5b30ef264459875e16eed4fcdcef5ad8b8309d275bc1b",
+   "chk_c509cda1a152b93275a3a43c5a2cd1ce6b342ff6dbe6a0331d946c90f7b6d6c1",
+   "chk_2be3edbb4d638264cbabb6cb775d896ba34d678371107b0b892e1590e04f8030",
+   "chk_b3511a98524412aa97d27996490312cb06c3fad691e11c06245046fd06fddec7",
+   "chk_1318db945f2fc5213e5c91b3cc5a930df510cb79cf0ebc11bd6c8c2f310a5fce",
+   "chk_5df6a68461b4a10f757015231563d3900196aab8337fc28652c76e44c5f55f06",
+   "chk_3434d90ad8fd8381575e0284f8adfdd4d720c5a6502948addbc42480e82a6f87",
+   "chk_f6dceb2829bede724653b0a6401208d2aacc3b28a0445bb1f71bbaa8b76b7b4d",
+   "chk_b8d4446562c2e4807f5338bfe4b20a87c059481335a13b71f74e160cc64eea78",
+   "chk_2d17f210b52247febfd6754a899d94218ee34b9a892e1f3b25568197ea49b769",
+   "chk_446e938a16d0bb13ff4d5255bf4ff0dc258a6781f138a28f2c149b79670c5f8b",
+   "chk_f517661128b409454f61f18a22eb3339cd9f464c7da95f6f64636ea7036032ce",
+   "chk_0724a6d4e3f7a86549fe7783b2d53bf9e85c2080f79bc8370bc4c8284e21670e",
+   "chk_e3b539bfca915f96216b6afa5553283bf47a78bd703d9b42f4d405e9c9d88d17",
+   "chk_9a45ddf713ae7774b7af7d8b7b16a0a1f76a350f5cabc424a7a35a9790c32e39",
+   "chk_c9550055633e892ae40a69187c7808bd7678366ac876c6ec2ad5b7e4319a1510",
+   "chk_6ffce630089a9ef1d09d1b1a155e8bcef8e0c9efd733347aeba021ea41d63301",
+   "chk_1b8405a8bd11e7d74126f7bf309e0fa041a1d3f3ba2f52a55c0ad52c52d035c6",
+   "chk_9a63a288e9e78a276d9ecc00e9394ee5063af9f558563cd453499d0684372954",
+   "chk_0e59ed07879356c8f9a4bf529039579417e45026679a94bb971ccc1d122f1994",
+   "chk_0390242a087e82174b781af62e33ba1ec34da9c69058818b211675c1333ec575",
+   "chk_1726181d5d5941d4a9fdc5fec9484afb3d61137fb96efecdb0f0052c766d9dea",
+   "chk_177e3d455ce57d1eac22bc573dc725edd51385824c6b3bac13227f12037e5564",
+   "chk_55febf3a05661dab127bf91fb97a73c1716723078b3b60be34669d9c0ade2c98",
+   "chk_ac7c9faaff33f0f64bdb55745c95759f8c943b2c2f6b9b16ad9f3984c51681b0",
+   "chk_e7ff583c414909607110256a65c8dd4060f84cf7dd40bc419ed5f0c0c876505a",
+   "chk_1304563ab427bb1fa252c985e144b7a54361da276eff619181cb8f1cf3c16cc1",
+   "chk_1d0c9c4e1805ec9ed456f860ee42d8188dfa5169d66db2f7c5a734b9b7296c8e",
+   "chk_2500a8abd7243d47f605ecc7d060e556eb3835e80479b795cf56510ec17407ea",
+   "chk_a16df41a6c6e779e5fc1f9a6640400dbe2e615eb3f6227029df73f467cd336c0",
+   "chk_4dfdd7a86467c501c386467c0d416205c344f3521550fc9d43f9986f97fd5418",
+   "chk_a25d612ea7778e6eb4e61c07a65e0d1abda49dbbc69e641a9cb270dcd1cd18c1"
+  ]
+ },
+ "run_id": "33f5ec88-1f95-4602-b79a-18b87ea44b21",
+ "run_status": "done",
+ "split": "handwritten",
+ "started_at": "2026-11-16T22:16:46.124723+00:00",
+ "status": "done",
+ "system_config_hash": "609c0b8d3387b1ce1d168e92bc0af076a1cc5929d1640386326043ecb0c21b67",
+ "system_id": "m6-hybrid",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 115868,
+  "cache_write_tokens": 74054,
+  "input_tokens": 30227,
+  "output_tokens": 18290
+ }
+}

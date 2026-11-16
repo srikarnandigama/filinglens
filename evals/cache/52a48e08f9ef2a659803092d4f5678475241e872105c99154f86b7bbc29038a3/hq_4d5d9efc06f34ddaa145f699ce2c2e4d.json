@@ -1,0 +1,300 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 0,
+  "numeric_valid": 0,
+  "text_pending_judge": [],
+  "text_string_supported": 8,
+  "text_total": 8,
+  "uncited": 0
+ },
+ "cost_usd": "0.277495395",
+ "error": null,
+ "finished_at": "2026-11-16T21:27:13.355951+00:00",
+ "latency_ms": 107941,
+ "prediction": {
+  "parse_ok": true,
+  "text": "Meta's own filings describe several ways its Reality Labs (RL) spending could go wrong. First, the losses are large and are not expected to shrink soon. RL cut 2025 operating profit by about $19.19 billion, and Meta expects 2026 RL losses to be similar. Second, the payoff may be far off or may not come. Management says many RL investments are long-term research for products that may only be fully realized in the next decade. Meta also says it has limited experience with consumer hardware and VR/AR, and that the strategy may not succeed 'in the foreseeable future, or at all'. Third, RL may divert resources and management attention, and it depends on profits from Meta's other businesses. Fourth, Meta has non-cancelable commitments that include RL consumer hardware, and it says it may need outside financing.\nScale of the drag: Meta says its RL segment reduced 2025 overall operating profit by approximately $19.19 billion. It expects 2026 RL operating losses to remain similar to 2025. For the six months ended June 30, 2026, RL reduced operating profit by approximately $8.65 billion. The risk is that large losses continue with no near-term relief.\nLong time horizon: Meta says many RL investments are directed toward long-term, cutting-edge research and development for products that may only be fully realized in the next decade. The payoff may therefore be a long way off.\nExecution risk: Meta says it has relatively limited experience with consumer hardware products and virtual and augmented reality technology. This may adversely affect its ability to successfully develop and market these evolving products and technologies.\nDistraction and dependence on other businesses: Meta warns that its RL efforts may divert resources and management attention from other areas of its business. It also says its ability to support these efforts depends on generating sufficient profits from other areas of its business.\nFailure case: Meta states that its RL strategy and investments may not be successful in the foreseeable future, or at all. That could adversely affect its business, reputation, or financial results. More broadly, Meta says investments in AI and RL reduce cash flows, operating margin and profitability. If they are not successful longer-term, its business and financial performance will be harmed.\nLow payoff from new products: Meta says that if new products fail to engage users, marketers, or developers, or if its business plans are unsuccessful, it may fail to generate sufficient revenue, operating margin, or other value to justify its investments.\nCost drivers and commitments: Meta attributed the 8% rise in 2025 RL loss from operations to higher RL costs and expenses. These included estimated losses on non-cancelable purchase commitments for RL inventory and technology development costs. Its contractual commitments, which include consumer hardware products in Reality Labs, totaled $131.05 billion at year-end 2025, with $30.63 billion due in 2026. Hardware demand that falls short could leave Meta holding obligations it cannot cancel.\nFinancing risk: Meta says it may seek to raise additional capital through debt, equity, or other financing arrangements to support strategic initiatives. It also says that if it cannot obtain adequate financing when needed, its ability to finance its business operations and initiatives could be adversely affected."
+ },
+ "question_id": "hq_4d5d9efc06f34ddaa145f699ce2c2e4d",
+ "question_sha": "70e61aa84b8b802f354fdc1e5f40f521d2c282bbb9f1badfaa63848c35ea703c",
+ "raw_output": {
+  "caveats": [
+   "This answer rests on Meta's risk-factor and MD&A disclosures in the FY2025 10-K and the Q2 2026 10-Q. It describes risks management has flagged, not predictions of outcomes.",
+   "Some Q2 2026 10-Q risk-factor chunks were seen only as search snippets and are not quoted.",
+   "The segment-level RL loss table figures were not quoted. The $19.19 billion and $8.65 billion figures come from management's quoted statements."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_a78e6601606e4d604da8c3ce0dddc07d9dd4713a046394f25984e9bae2c9542b"
+     },
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_806173ef20b30e71933fe38110b86bca669e33663d521e2520d156c26ffe70c2"
+     }
+    ],
+    "id": "c1",
+    "kind": "textual",
+    "period": null,
+    "text": "Scale of the drag: Meta says its RL segment reduced 2025 overall operating profit by approximately $19.19 billion. It expects 2026 RL operating losses to remain similar to 2025. For the six months ended June 30, 2026, RL reduced operating profit by approximately $8.65 billion. The risk is that large losses continue with no near-term relief.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_a78e6601606e4d604da8c3ce0dddc07d9dd4713a046394f25984e9bae2c9542b"
+     },
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_806173ef20b30e71933fe38110b86bca669e33663d521e2520d156c26ffe70c2"
+     }
+    ],
+    "id": "c2",
+    "kind": "textual",
+    "period": null,
+    "text": "Long time horizon: Meta says many RL investments are directed toward long-term, cutting-edge research and development for products that may only be fully realized in the next decade. The payoff may therefore be a long way off.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_329b0480d183fec15246ca521358772eab7f0ebca49fb201ca0f14db82a9a42c"
+     },
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_709c95b55655ee39d75003c364b047199097b978b66ee609080f4047c55903fe"
+     }
+    ],
+    "id": "c3",
+    "kind": "textual",
+    "period": null,
+    "text": "Execution risk: Meta says it has relatively limited experience with consumer hardware products and virtual and augmented reality technology. This may adversely affect its ability to successfully develop and market these evolving products and technologies.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_75531452398df501089540622629b2bbbccfd28d0bafc1a089cf6ea18db41427"
+     },
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_c15a1eab5a68358a8998f949378c8b5eff88a4e8e66c1e6027f7f43405205b3f"
+     }
+    ],
+    "id": "c4",
+    "kind": "textual",
+    "period": null,
+    "text": "Distraction and dependence on other businesses: Meta warns that its RL efforts may divert resources and management attention from other areas of its business. It also says its ability to support these efforts depends on generating sufficient profits from other areas of its business.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_75531452398df501089540622629b2bbbccfd28d0bafc1a089cf6ea18db41427"
+     },
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_9c1f5f796f5f39bf8eba8340de79e3ba07a3096168185ab7988ddeaf42a0dbf1"
+     }
+    ],
+    "id": "c5",
+    "kind": "textual",
+    "period": null,
+    "text": "Failure case: Meta states that its RL strategy and investments may not be successful in the foreseeable future, or at all. That could adversely affect its business, reputation, or financial results. More broadly, Meta says investments in AI and RL reduce cash flows, operating margin and profitability. If they are not successful longer-term, its business and financial performance will be harmed.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_eae224edc7feed481a69051ff4c5a8e4980688460ecb16f68ba4ee4fd281d58d"
+     }
+    ],
+    "id": "c6",
+    "kind": "textual",
+    "period": null,
+    "text": "Low payoff from new products: Meta says that if new products fail to engage users, marketers, or developers, or if its business plans are unsuccessful, it may fail to generate sufficient revenue, operating margin, or other value to justify its investments.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_2950468a10222e72d9c9a7cbba5499e390167af74e61e556d58c254d47be01a6"
+     },
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_aff0f7b0406b395cc95750588c485f0abaaea47ae8208cef6080f4a2934accdd"
+     }
+    ],
+    "id": "c7",
+    "kind": "textual",
+    "period": null,
+    "text": "Cost drivers and commitments: Meta attributed the 8% rise in 2025 RL loss from operations to higher RL costs and expenses. These included estimated losses on non-cancelable purchase commitments for RL inventory and technology development costs. Its contractual commitments, which include consumer hardware products in Reality Labs, totaled $131.05 billion at year-end 2025, with $30.63 billion due in 2026. Hardware demand that falls short could leave Meta holding obligations it cannot cancel.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_7939260ccfed2d336ccca119c3a2d3312954f1296e24da891e5d68b8b65fae28"
+     },
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_c15a1eab5a68358a8998f949378c8b5eff88a4e8e66c1e6027f7f43405205b3f"
+     }
+    ],
+    "id": "c8",
+    "kind": "textual",
+    "period": null,
+    "text": "Financing risk: Meta says it may seek to raise additional capital through debt, equity, or other financing arrangements to support strategic initiatives. It also says that if it cannot obtain adequate financing when needed, its ability to finance its business operations and initiatives could be adversely affected.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   }
+  ],
+  "final_claim_id": null,
+  "final_unit": null,
+  "final_value": null,
+  "status": "answered",
+  "summary": "Meta's own filings describe several ways its Reality Labs (RL) spending could go wrong. First, the losses are large and are not expected to shrink soon. RL cut 2025 operating profit by about $19.19 billion, and Meta expects 2026 RL losses to be similar. Second, the payoff may be far off or may not come. Management says many RL investments are long-term research for products that may only be fully realized in the next decade. Meta also says it has limited experience with consumer hardware and VR/AR, and that the strategy may not succeed 'in the foreseeable future, or at all'. Third, RL may divert resources and management attention, and it depends on profits from Meta's other businesses. Fourth, Meta has non-cancelable commitments that include RL consumer hardware, and it says it may need outside financing."
+ },
+ "retrieval": {
+  "first_search": {
+   "filings:s1": [
+    "chk_75531452398df501089540622629b2bbbccfd28d0bafc1a089cf6ea18db41427",
+    "chk_7939260ccfed2d336ccca119c3a2d3312954f1296e24da891e5d68b8b65fae28",
+    "chk_5753ced16cd25929e0cca7b0b8f9a1f69d43bc1c252bdb062850155cbec36619",
+    "chk_00120da610e020f7f2979887bc7a8294812117c39fa0a1894a6fb220ecdf6d1e",
+    "chk_329b0480d183fec15246ca521358772eab7f0ebca49fb201ca0f14db82a9a42c",
+    "chk_68fa894c4a44e4e2390c56977f769f76468a5483e8db304861307c87c9329902",
+    "chk_8b034a1582a6face339ddf82900c76f9f1b67a1b978efb714f3206262386ca75",
+    "chk_d59123b0a3a2d54ab998c95eb335869a140d26c4fdae8a9ed338fce2914eee4d"
+   ],
+   "filings:s2": [
+    "chk_2950468a10222e72d9c9a7cbba5499e390167af74e61e556d58c254d47be01a6",
+    "chk_77d4fbbf8e2bd0a568fb6e533b57891e41022297969964d3691bcadc0a26a654",
+    "chk_a78e6601606e4d604da8c3ce0dddc07d9dd4713a046394f25984e9bae2c9542b",
+    "chk_95583d8d6244e5fdf1116fc1ce0f7417c118866b6c707780084c103ebb7677bd",
+    "chk_f1f8dafed743fbf4df33b58a779d0c3dfd23ba5db51756346af96ac735077a65",
+    "chk_a67a5dc261a7e89bf11a3bf91ac9d993ecf12bc70ecc0fb1fc92f29271a85d6a",
+    "chk_2f2da246e59809942cb76cad96fd32995a45f2f9c40b8aae1d4817c93ce2283d",
+    "chk_769d0d5c77db37773a8bd8d91fa6c6fe17b6ffc1897470e2b85e2f407c6e5b1c"
+   ],
+   "filings:s3": [
+    "chk_45f132692db5cc560f6df9683baed9fe8b903caabdfc0f7abd7003aa736802d1",
+    "chk_c15a1eab5a68358a8998f949378c8b5eff88a4e8e66c1e6027f7f43405205b3f",
+    "chk_9c1f5f796f5f39bf8eba8340de79e3ba07a3096168185ab7988ddeaf42a0dbf1",
+    "chk_948872536581b78db3d17ba3921a981a722bb47285a07f968399e172b1ca0ac0",
+    "chk_709c95b55655ee39d75003c364b047199097b978b66ee609080f4047c55903fe",
+    "chk_474cf27917690a834fb14676b3eddbaba300af9f95a929af441837411765fdce",
+    "chk_eae224edc7feed481a69051ff4c5a8e4980688460ecb16f68ba4ee4fd281d58d",
+    "chk_890e860c84b4717c5b980de973ec9a3e9d108239674771b0cbe8f052e6d26449"
+   ],
+   "filings:s4": [
+    "chk_a6ba8345d11aab3b4dbf5718eca6bc07223723f98f15d4fca25a2374e2c3eefa",
+    "chk_3da37c45a0269c563840803c5ec88369ed46f9556491b8e1ad24c25ea62f9f4e",
+    "chk_806173ef20b30e71933fe38110b86bca669e33663d521e2520d156c26ffe70c2",
+    "chk_960120791ad2eab2200855b1d1817c9958397ed6c60f3cac2563791239abba6b",
+    "chk_40231bd5e24833d343ff00f9829899136ed64d0eb25fc0350450781fb9490e23",
+    "chk_41d648ea8a94c5dfecea6350c6ca7cbe73610e9abbfd6e79ae41fbb1b635dcf0",
+    "chk_bd86a8eb81f6286333008bcc7f4082bebac2ed8501ef404c4e71cd168bac3d8c",
+    "chk_c8c885399a923fa52fd49365c5b4d4b5183f85aef5124e315868376a11388ca4"
+   ]
+  },
+  "seen": [
+   "chk_75531452398df501089540622629b2bbbccfd28d0bafc1a089cf6ea18db41427",
+   "chk_7939260ccfed2d336ccca119c3a2d3312954f1296e24da891e5d68b8b65fae28",
+   "chk_5753ced16cd25929e0cca7b0b8f9a1f69d43bc1c252bdb062850155cbec36619",
+   "chk_00120da610e020f7f2979887bc7a8294812117c39fa0a1894a6fb220ecdf6d1e",
+   "chk_329b0480d183fec15246ca521358772eab7f0ebca49fb201ca0f14db82a9a42c",
+   "chk_68fa894c4a44e4e2390c56977f769f76468a5483e8db304861307c87c9329902",
+   "chk_8b034a1582a6face339ddf82900c76f9f1b67a1b978efb714f3206262386ca75",
+   "chk_d59123b0a3a2d54ab998c95eb335869a140d26c4fdae8a9ed338fce2914eee4d",
+   "chk_2950468a10222e72d9c9a7cbba5499e390167af74e61e556d58c254d47be01a6",
+   "chk_77d4fbbf8e2bd0a568fb6e533b57891e41022297969964d3691bcadc0a26a654",
+   "chk_a78e6601606e4d604da8c3ce0dddc07d9dd4713a046394f25984e9bae2c9542b",
+   "chk_95583d8d6244e5fdf1116fc1ce0f7417c118866b6c707780084c103ebb7677bd",
+   "chk_f1f8dafed743fbf4df33b58a779d0c3dfd23ba5db51756346af96ac735077a65",
+   "chk_a67a5dc261a7e89bf11a3bf91ac9d993ecf12bc70ecc0fb1fc92f29271a85d6a",
+   "chk_2f2da246e59809942cb76cad96fd32995a45f2f9c40b8aae1d4817c93ce2283d",
+   "chk_769d0d5c77db37773a8bd8d91fa6c6fe17b6ffc1897470e2b85e2f407c6e5b1c",
+   "chk_45f132692db5cc560f6df9683baed9fe8b903caabdfc0f7abd7003aa736802d1",
+   "chk_c15a1eab5a68358a8998f949378c8b5eff88a4e8e66c1e6027f7f43405205b3f",
+   "chk_9c1f5f796f5f39bf8eba8340de79e3ba07a3096168185ab7988ddeaf42a0dbf1",
+   "chk_948872536581b78db3d17ba3921a981a722bb47285a07f968399e172b1ca0ac0",
+   "chk_709c95b55655ee39d75003c364b047199097b978b66ee609080f4047c55903fe",
+   "chk_474cf27917690a834fb14676b3eddbaba300af9f95a929af441837411765fdce",
+   "chk_eae224edc7feed481a69051ff4c5a8e4980688460ecb16f68ba4ee4fd281d58d",
+   "chk_890e860c84b4717c5b980de973ec9a3e9d108239674771b0cbe8f052e6d26449",
+   "chk_a6ba8345d11aab3b4dbf5718eca6bc07223723f98f15d4fca25a2374e2c3eefa",
+   "chk_3da37c45a0269c563840803c5ec88369ed46f9556491b8e1ad24c25ea62f9f4e",
+   "chk_806173ef20b30e71933fe38110b86bca669e33663d521e2520d156c26ffe70c2",
+   "chk_960120791ad2eab2200855b1d1817c9958397ed6c60f3cac2563791239abba6b",
+   "chk_40231bd5e24833d343ff00f9829899136ed64d0eb25fc0350450781fb9490e23",
+   "chk_41d648ea8a94c5dfecea6350c6ca7cbe73610e9abbfd6e79ae41fbb1b635dcf0",
+   "chk_bd86a8eb81f6286333008bcc7f4082bebac2ed8501ef404c4e71cd168bac3d8c",
+   "chk_c8c885399a923fa52fd49365c5b4d4b5183f85aef5124e315868376a11388ca4",
+   "chk_d0aec0f7d5d0ee48a3f03aa30d77150619aac79668fea4da081eb321fddbd88c",
+   "chk_aff0f7b0406b395cc95750588c485f0abaaea47ae8208cef6080f4a2934accdd"
+  ]
+ },
+ "run_id": "efda66f0-6379-45de-a0b4-c565f152078c",
+ "run_status": "done",
+ "split": "handwritten",
+ "started_at": "2026-11-16T21:25:25.331731+00:00",
+ "status": "done",
+ "system_config_hash": "52a48e08f9ef2a659803092d4f5678475241e872105c99154f86b7bbc29038a3",
+ "system_id": "m6",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 126040,
+  "cache_write_tokens": 86366,
+  "input_tokens": 38712,
+  "output_tokens": 21699
+ }
+}

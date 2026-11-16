@@ -1,0 +1,118 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 0,
+  "numeric_valid": 0,
+  "text_pending_judge": [],
+  "text_string_supported": 2,
+  "text_total": 2,
+  "uncited": 0
+ },
+ "cost_usd": "0.05952486",
+ "error": null,
+ "finished_at": "2026-11-16T21:55:34.014006+00:00",
+ "latency_ms": 68824,
+ "prediction": {
+  "parse_ok": true,
+  "text": "Coca-Cola says it has implemented an incidence-based concentrate pricing model in most markets. Under that model, the concentrate price depends on several factors, including bottler pricing, the channels in which the finished products are sold, and package mix. Bottlers must buy their entire requirement of concentrates or syrups for the designated Company Trademark Beverages from Coca-Cola or its authorized suppliers.\nCoca-Cola stated that it has implemented an incidence-based concentrate pricing model in most markets. Under this model, the concentrate price it charges is impacted by a number of factors, including, but not limited to, bottler pricing, the channels in which the finished products produced from the concentrates are sold, and package mix.\nContractually, the bottler is obligated to purchase its entire requirement of concentrates or syrups for the designated Company Trademark Beverages from Coca-Cola or Company-authorized suppliers."
+ },
+ "question_id": "hq_af3da89ebdb6499f84b1103586988fcc",
+ "question_sha": "940f86307f341d4ee2f16767ebf37bef8890b21ba6c464887e2ccc7827acc251",
+ "raw_output": {
+  "caveats": [
+   "The retrieved passages describe pricing qualitatively. They give no numeric price formula or specific price terms.",
+   "Bottler agreements outside the US differ from those inside the US. The detailed terms of that difference were not retrieved.",
+   "The answer is based on the FY2025 10-K, Items 1 and 7, with limited passage coverage."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_bf405013d93aaa8433ed5b0523ac3e1beddd0068c8696ef512d572d84343325f"
+     },
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_73cc2163caa406beea9800c2a17b308dfdf5790aa1af87173382696b7b409dcc"
+     }
+    ],
+    "id": "c1",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Coca-Cola stated that it has implemented an incidence-based concentrate pricing model in most markets. Under this model, the concentrate price it charges is impacted by a number of factors, including, but not limited to, bottler pricing, the channels in which the finished products produced from the concentrates are sold, and package mix.",
+    "ticker": "KO",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_382c61966d0412625cde24b2d01d3187816326985b171f715559b9be3798a97c"
+     }
+    ],
+    "id": "c2",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Contractually, the bottler is obligated to purchase its entire requirement of concentrates or syrups for the designated Company Trademark Beverages from Coca-Cola or Company-authorized suppliers.",
+    "ticker": "KO",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   }
+  ],
+  "final_claim_id": null,
+  "final_unit": null,
+  "final_value": null,
+  "status": "answered",
+  "summary": "Coca-Cola says it has implemented an incidence-based concentrate pricing model in most markets. Under that model, the concentrate price depends on several factors, including bottler pricing, the channels in which the finished products are sold, and package mix. Bottlers must buy their entire requirement of concentrates or syrups for the designated Company Trademark Beverages from Coca-Cola or its authorized suppliers."
+ },
+ "retrieval": {
+  "first_search": {
+   "filings:s1": [
+    "chk_bf405013d93aaa8433ed5b0523ac3e1beddd0068c8696ef512d572d84343325f",
+    "chk_73cc2163caa406beea9800c2a17b308dfdf5790aa1af87173382696b7b409dcc",
+    "chk_4177c0135fee30a1481cae4d07dc61438862853942607da0f3ac1eac386fc09c",
+    "chk_1069eeb02fcad3ac1c9ebb1edf35fa1f8369a21c66c5515eaf553bfb01519121",
+    "chk_56e05bcfe421782598b0fdce18dec61e1b054c573e23004cf0f2bce27124c7e5",
+    "chk_382c61966d0412625cde24b2d01d3187816326985b171f715559b9be3798a97c",
+    "chk_0700d8ad1e584f246681bc6699029daf24e1791b20ced98f853796493b267d79",
+    "chk_95f1df9ee47047dd0719fe4fdc171330f19cd9a9625b2463b4a2990a07f9f5eb"
+   ]
+  },
+  "seen": [
+   "chk_bf405013d93aaa8433ed5b0523ac3e1beddd0068c8696ef512d572d84343325f",
+   "chk_73cc2163caa406beea9800c2a17b308dfdf5790aa1af87173382696b7b409dcc",
+   "chk_4177c0135fee30a1481cae4d07dc61438862853942607da0f3ac1eac386fc09c",
+   "chk_1069eeb02fcad3ac1c9ebb1edf35fa1f8369a21c66c5515eaf553bfb01519121",
+   "chk_56e05bcfe421782598b0fdce18dec61e1b054c573e23004cf0f2bce27124c7e5",
+   "chk_382c61966d0412625cde24b2d01d3187816326985b171f715559b9be3798a97c",
+   "chk_0700d8ad1e584f246681bc6699029daf24e1791b20ced98f853796493b267d79",
+   "chk_95f1df9ee47047dd0719fe4fdc171330f19cd9a9625b2463b4a2990a07f9f5eb"
+  ]
+ },
+ "run_id": "6dfc5cf9-68c1-451e-8490-70b2bc7f5e6c",
+ "run_status": "done",
+ "split": "handwritten",
+ "started_at": "2026-11-16T21:54:25.121922+00:00",
+ "status": "done",
+ "system_config_hash": "dda3ea6b7db41dd0273d82e63c7ab3c74a4ec2dac9f2674d40c2836322074f2a",
+ "system_id": "m6-rerank",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 47204,
+  "cache_write_tokens": 18615,
+  "input_tokens": 7473,
+  "output_tokens": 4042
+ }
+}

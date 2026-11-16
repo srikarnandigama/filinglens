@@ -2,6 +2,7 @@
 
 import asyncio
 import json
+import sys
 from decimal import Decimal, localcontext
 
 import pytest
@@ -148,7 +149,7 @@ def test_series_schema_decimal_precision_and_failure_boundary():
 def test_quant_stdio_smoke(tmp_path):
     async def exercise():
         parameters = StdioServerParameters(
-            command=str(ROOT / ".venv/Scripts/python.exe"),
+            command=sys.executable,  # the venv interpreter on Windows and Linux (CI)
             args=["-m", "mcp_servers.quant_mcp.server"],
             cwd=ROOT,
             env={"PYTHONPATH": str(ROOT), "HF_HUB_OFFLINE": "1", "TRANSFORMERS_OFFLINE": "1"},

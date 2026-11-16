@@ -1,0 +1,111 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 3,
+  "numeric_valid": 3,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.0558757",
+ "error": null,
+ "finished_at": "2026-11-16T20:18:39.156782+00:00",
+ "latency_ms": 18866,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "-2.564576498313"
+ },
+ "question_id": "q_b6b89d1da9c41d5e",
+ "question_sha": "97e732ea3ce5a17514849d704867e260d197bab8c338a6771a041c862bff3c89",
+ "raw_output": {
+  "caveats": [
+   "The Q4 2023 revenue is derived: full-year 2023 revenue ($344.582 billion) minus nine-month revenue ($260.238 billion), not a directly reported quarterly figure."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "2555"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q1",
+     "fiscal_year": 2023
+    },
+    "text": "XOM revenue in fiscal Q1 2023 was $86.564 billion.",
+    "ticker": "XOM",
+    "unit": "USD",
+    "value": "86564000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "2558"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q4",
+     "fiscal_year": 2023
+    },
+    "text": "XOM revenue in fiscal Q4 2023 was $84.344 billion (derived from full-year revenue less nine-month revenue).",
+    "ticker": "XOM",
+    "unit": "USD",
+    "value": "84344000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_1"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q4",
+     "fiscal_year": 2023
+    },
+    "text": "XOM revenue changed by about -2.56% from fiscal Q1 2023 to fiscal Q4 2023.",
+    "ticker": "XOM",
+    "unit": "percent",
+    "value": "-2.564576498313",
+    "value_basis": "computation"
+   }
+  ],
+  "final_claim_id": "c3",
+  "final_unit": "percent",
+  "final_value": "-2.564576498313",
+  "status": "answered",
+  "summary": "ExxonMobil's total revenue fell about 2.56% from fiscal Q1 2023 ($86.564 billion) to fiscal Q4 2023 ($84.344 billion). The Q4 figure is derived."
+ },
+ "run_id": "9198becc-e015-4013-b3ea-2432ec6ab548",
+ "run_status": "done",
+ "split": "test",
+ "started_at": "2026-11-16T20:18:20.269445+00:00",
+ "status": "done",
+ "system_config_hash": "52a48e08f9ef2a659803092d4f5678475241e872105c99154f86b7bbc29038a3",
+ "system_id": "m6",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 47292,
+  "cache_write_tokens": 6953,
+  "input_tokens": 6187,
+  "output_tokens": 2139
+ }
+}

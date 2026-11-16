@@ -1,0 +1,71 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 1,
+  "numeric_valid": 1,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.0366043",
+ "error": null,
+ "finished_at": "2026-11-16T20:21:19.893820+00:00",
+ "latency_ms": 10919,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD",
+  "value": "2908000000"
+ },
+ "question_id": "q_0f05fef0eb150a82",
+ "question_sha": "7a2fcc8b2356268a1f27f3ff14060a47d225bb99d56458e7e3b02d8ee697f3b1",
+ "raw_output": {
+  "caveats": [
+   "The Q4 value is derived (annual figure minus nine-month year-to-date figure), not directly reported as a standalone quarter."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": "value",
+      "kind": "fact",
+      "ref": "150"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q4",
+     "fiscal_year": 2024
+    },
+    "text": "Apple's capital expenditures (payments to acquire property, plant and equipment) in fiscal Q4 2024 were about $2.908 billion, derived as full-year FY2024 capex of $9.447 billion minus nine-month capex of $6.539 billion.",
+    "ticker": "AAPL",
+    "unit": "USD",
+    "value": "2908000000",
+    "value_basis": "fact"
+   }
+  ],
+  "final_claim_id": "c1",
+  "final_unit": "USD",
+  "final_value": "2908000000",
+  "status": "answered",
+  "summary": "Apple's capital expenditures (payments to acquire property, plant and equipment) in fiscal Q4 2024 (June 30 to September 28, 2024) were about $2.908 billion. This figure is derived from annual and nine-month values."
+ },
+ "run_id": "2a79f988-0d6b-4189-bc56-fe710eec20c8",
+ "run_status": "done",
+ "split": "test",
+ "started_at": "2026-11-16T20:21:08.907698+00:00",
+ "status": "done",
+ "system_config_hash": "52a48e08f9ef2a659803092d4f5678475241e872105c99154f86b7bbc29038a3",
+ "system_id": "m6",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 18528,
+  "cache_write_tokens": 4807,
+  "input_tokens": 4672,
+  "output_tokens": 1339
+ }
+}

@@ -1,0 +1,153 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 0,
+  "numeric_valid": 0,
+  "text_pending_judge": [],
+  "text_string_supported": 4,
+  "text_total": 4,
+  "uncited": 0
+ },
+ "cost_usd": "0.125202460",
+ "error": null,
+ "finished_at": "2026-11-16T22:00:50.995206+00:00",
+ "latency_ms": 60577,
+ "prediction": {
+  "parse_ok": true,
+  "text": "In Item 1 of its FY2026 10-K, Microsoft says AI is fundamentally transforming productivity and that its AI offerings span every layer of the technology stack. It presents Microsoft 365 Copilot and agents as productivity tools within an AI-powered Microsoft 365 Commercial platform. It also describes consumer Microsoft Copilot as a digital companion tied to Edge and Bing.\nMicrosoft states that AI is fundamentally transforming productivity for every individual, organization, and industry, and that its AI offerings span every layer of the technology stack.\nAmong its investment priorities, Microsoft lists applying AI and ambient intelligence to revolutionize many types of work and business processes and provide substantive productivity gains using Microsoft 365 Copilot and agents. It also lists providing a unified intelligence layer for enterprise AI to ground AI in an organization's data.\nMicrosoft describes Microsoft 365 Commercial as an AI-powered business and productivity solutions platform that brings together Office, Windows, Microsoft 365 Copilot, and Enterprise Mobility + Security to help organizations empower their employees.\nOn the consumer side, Microsoft describes Microsoft Copilot as a digital companion designed to inform, entertain, and inspire. It calls the Microsoft Edge browser and Bing search engine with Copilot key tools to enable user acquisition and engagement."
+ },
+ "question_id": "hq_ce9809903d0b430eb90e3615603210f7",
+ "question_sha": "4fe95213196a459581da8f81a3466a57cbe80657fa942a9e6d7cfd8fd224452b",
+ "raw_output": {
+  "caveats": [
+   "The worker reached its passage-fetch limit, so three Item 1 chunks were seen only as search snippets and not read in full or quoted: two Azure AI offerings chunks and a Competition-section snippet that mentions Azure AI offerings. Coverage of Azure AI descriptions is therefore incomplete.",
+   "The search snippet for the Search advertising Copilot passage was truncated. The passage itself was read in full, and the claim quotes only its verified text.",
+   "No period was named in the question, so the latest annual 10-K (FY2026) was used."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_25dd84a1d1409bad099abcc7403f9e12be6fe4efc0d8acb258c597964f4bef06"
+     }
+    ],
+    "id": "c1",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2026
+    },
+    "text": "Microsoft states that AI is fundamentally transforming productivity for every individual, organization, and industry, and that its AI offerings span every layer of the technology stack.",
+    "ticker": "MSFT",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_65d11b6a93925ee3f3a23692ea0ce9da4481e18ff0cfd4ad40ca062a2e1b8e5d"
+     }
+    ],
+    "id": "c2",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2026
+    },
+    "text": "Among its investment priorities, Microsoft lists applying AI and ambient intelligence to revolutionize many types of work and business processes and provide substantive productivity gains using Microsoft 365 Copilot and agents. It also lists providing a unified intelligence layer for enterprise AI to ground AI in an organization's data.",
+    "ticker": "MSFT",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_2733b02cfb44a29872ec26b8e5a47a05bec2c1b823ffdc366814eecdc2511a44"
+     }
+    ],
+    "id": "c3",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2026
+    },
+    "text": "Microsoft describes Microsoft 365 Commercial as an AI-powered business and productivity solutions platform that brings together Office, Windows, Microsoft 365 Copilot, and Enterprise Mobility + Security to help organizations empower their employees.",
+    "ticker": "MSFT",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_a8ae8eeed71f128a8cd7be3aa6434f6afbeb7b323007defaa3df4be9e194c44c"
+     }
+    ],
+    "id": "c4",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2026
+    },
+    "text": "On the consumer side, Microsoft describes Microsoft Copilot as a digital companion designed to inform, entertain, and inspire. It calls the Microsoft Edge browser and Bing search engine with Copilot key tools to enable user acquisition and engagement.",
+    "ticker": "MSFT",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   }
+  ],
+  "final_claim_id": null,
+  "final_unit": null,
+  "final_value": null,
+  "status": "answered",
+  "summary": "In Item 1 of its FY2026 10-K, Microsoft says AI is fundamentally transforming productivity and that its AI offerings span every layer of the technology stack. It presents Microsoft 365 Copilot and agents as productivity tools within an AI-powered Microsoft 365 Commercial platform. It also describes consumer Microsoft Copilot as a digital companion tied to Edge and Bing."
+ },
+ "retrieval": {
+  "first_search": {
+   "filings:s1": [
+    "chk_65d11b6a93925ee3f3a23692ea0ce9da4481e18ff0cfd4ad40ca062a2e1b8e5d",
+    "chk_25dd84a1d1409bad099abcc7403f9e12be6fe4efc0d8acb258c597964f4bef06",
+    "chk_2733b02cfb44a29872ec26b8e5a47a05bec2c1b823ffdc366814eecdc2511a44",
+    "chk_a8ae8eeed71f128a8cd7be3aa6434f6afbeb7b323007defaa3df4be9e194c44c",
+    "chk_b48d447874612c5103a63cd4fc3b18fc044f3d088eb8486bf4847eef96306e9d",
+    "chk_18431e8c05515488f1226ec625c79636a2e3dced74a08164fcc252c9363b3baf",
+    "chk_8410bbeed6772b3a5a58713c877be85e578f7fcb3e5ae545b719ca3de296a5ce",
+    "chk_09244c166782d57227c308269811fdb8ec1c9919c6a8ae55c8f79076f731a33e"
+   ]
+  },
+  "seen": [
+   "chk_65d11b6a93925ee3f3a23692ea0ce9da4481e18ff0cfd4ad40ca062a2e1b8e5d",
+   "chk_25dd84a1d1409bad099abcc7403f9e12be6fe4efc0d8acb258c597964f4bef06",
+   "chk_2733b02cfb44a29872ec26b8e5a47a05bec2c1b823ffdc366814eecdc2511a44",
+   "chk_a8ae8eeed71f128a8cd7be3aa6434f6afbeb7b323007defaa3df4be9e194c44c",
+   "chk_b48d447874612c5103a63cd4fc3b18fc044f3d088eb8486bf4847eef96306e9d",
+   "chk_18431e8c05515488f1226ec625c79636a2e3dced74a08164fcc252c9363b3baf",
+   "chk_8410bbeed6772b3a5a58713c877be85e578f7fcb3e5ae545b719ca3de296a5ce",
+   "chk_09244c166782d57227c308269811fdb8ec1c9919c6a8ae55c8f79076f731a33e"
+  ]
+ },
+ "run_id": "653779f2-709f-4b4c-9837-755df33b3d1d",
+ "run_status": "done",
+ "split": "handwritten",
+ "started_at": "2026-11-16T21:59:50.365764+00:00",
+ "status": "done",
+ "system_config_hash": "dda3ea6b7db41dd0273d82e63c7ab3c74a4ec2dac9f2674d40c2836322074f2a",
+ "system_id": "m6-rerank",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 39906,
+  "cache_write_tokens": 23366,
+  "input_tokens": 19796,
+  "output_tokens": 8174
+ }
+}

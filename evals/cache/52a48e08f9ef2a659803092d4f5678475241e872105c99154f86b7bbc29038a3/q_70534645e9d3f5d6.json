@@ -1,0 +1,131 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 3,
+  "numeric_valid": 3,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.0824444",
+ "error": null,
+ "finished_at": "2026-11-16T20:20:28.944417+00:00",
+ "latency_ms": 25036,
+ "prediction": {
+  "choice": "NVDA",
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percentage_points",
+  "value": "6.164954672005"
+ },
+ "question_id": "q_70534645e9d3f5d6",
+ "question_sha": "d0ca73a17f3a2592fd5200ce6ff98c0b90a5a7c48cf082d1a97f9d376b598326",
+ "raw_output": {
+  "caveats": [
+   "The fiscal years cover different calendar spans. Microsoft's FY2025 ran July 1, 2024 to June 30, 2025. Nvidia's FY2025 ran January 29, 2024 to January 26, 2025."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_1"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "229"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "199"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Microsoft's FY2025 gross margin was about 68.82% (gross profit $193.893 billion on revenue of $281.724 billion).",
+    "ticker": "MSFT",
+    "unit": "percent",
+    "value": "68.823742386165",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_2"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "389"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "355"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Nvidia's FY2025 gross margin was about 74.99% (gross profit $97.858 billion on revenue of $130.497 billion).",
+    "ticker": "NVDA",
+    "unit": "percent",
+    "value": "74.98869705817",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value",
+      "kind": "computation",
+      "ref": "cmp_3"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Nvidia's gross margin exceeded Microsoft's by about 6.16 percentage points in fiscal 2025.",
+    "ticker": "NVDA",
+    "unit": "percentage_points",
+    "value": "6.164954672005",
+    "value_basis": "computation"
+   }
+  ],
+  "final_claim_id": "c3",
+  "final_unit": "percentage_points",
+  "final_value": "6.164954672005",
+  "status": "answered",
+  "summary": "Nvidia had the higher gross margin in fiscal 2025. Its margin was about 74.99%, against about 68.82% for Microsoft, a gap of about 6.16 percentage points. The two fiscal years end on different dates: Microsoft's ended June 30, 2025 and Nvidia's ended January 26, 2025."
+ },
+ "run_id": "3b7048e1-9caa-4da6-b408-df747b161a25",
+ "run_status": "done",
+ "split": "test",
+ "started_at": "2026-11-16T20:20:03.856741+00:00",
+ "status": "done",
+ "system_config_hash": "52a48e08f9ef2a659803092d4f5678475241e872105c99154f86b7bbc29038a3",
+ "system_id": "m6",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 44974,
+  "cache_write_tokens": 10490,
+  "input_tokens": 8181,
+  "output_tokens": 3536
+ }
+}

@@ -1,0 +1,312 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 7,
+  "numeric_valid": 7,
+  "text_pending_judge": [
+   {
+    "chunk_ids": [
+     "chk_04946a6a76bc7182083c1c2e0ff49400660cfe29eeb7fcd2cebdea21bd1059ee"
+    ],
+    "claim_id": "c4",
+    "text": "Company-wide cost of revenue increased $13.7 billion or 19%, which Microsoft said was driven by growth in Microsoft Cloud."
+   }
+  ],
+  "text_string_supported": 3,
+  "text_total": 4,
+  "uncited": 0
+ },
+ "cost_usd": "0.219042560",
+ "error": null,
+ "finished_at": "2026-11-16T21:42:40.279658+00:00",
+ "latency_ms": 104156,
+ "prediction": {
+  "parse_ok": true,
+  "text": "Microsoft attributed the lower Microsoft Cloud gross margin in fiscal 2025 to the impact of scaling its AI infrastructure, partly offset by efficiency gains in Azure. Microsoft Cloud revenue rose 23% to $168.9 billion, and cost of revenue grew 19% on Microsoft Cloud growth. Company-wide gross margin fell from about 69.76% to about 68.82%, a drop of about 0.94 percentage points. Company-wide operating margin rose from about 44.64% to about 45.62%. The filing evidence gives no prior-year Microsoft Cloud margin and no quantified split of the drivers.\nMicrosoft Cloud revenue increased 23% to $168.9 billion in fiscal 2025, so cloud sales grew.\nMicrosoft reported that Microsoft Cloud gross margin percentage decreased to 69%, driven by the impact of scaling its AI infrastructure, offset in part by efficiency gains in Azure.\nIn the Intelligent Cloud segment, Microsoft said gross margin percentage decreased for the same reason, the impact of scaling AI infrastructure offset in part by Azure efficiency gains. Segment cost of revenue increased $10.6 billion or 36% driven by growth in Azure.\nCompany-wide cost of revenue increased $13.7 billion or 19%, which Microsoft said was driven by growth in Microsoft Cloud.\nCompany-wide total revenue grew about 14.9% in fiscal 2025, from $245.1 billion to $281.7 billion.\nCompany-wide gross margin was about 69.76% in fiscal 2024.\nCompany-wide gross margin was about 68.82% in fiscal 2025.\nCompany-wide gross margin fell about 0.94 percentage points between fiscal 2024 and fiscal 2025.\nCompany-wide operating margin was about 44.64% in fiscal 2024.\nCompany-wide operating margin was about 45.62% in fiscal 2025, which is higher than the prior year.\nCompany-wide operating margin rose about 0.98 percentage points between fiscal 2024 and fiscal 2025."
+ },
+ "question_id": "hq_19ea90a4eeb84991845ef0f0a3c4d316",
+ "question_sha": "5285faf2d654a4bc66de416e81fa6e7b7d54f6abf81fd47c060eac1798f50cc8",
+ "raw_output": {
+  "caveats": [
+   "The cloud-specific margin cited is Microsoft's reported Microsoft Cloud gross margin percentage (69%). The evidence has no prior-year Microsoft Cloud margin figure, so the size of the cloud margin decline is not quantified here.",
+   "The company-wide gross and operating margins are context only. They cover all of Microsoft, not just the cloud business.",
+   "The filing does not quantify how much of the margin decline came from AI infrastructure costs versus the offset from Azure efficiency gains.",
+   "Company-wide operating margin rose even though company-wide gross margin fell."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_12f4343f4e332b6bb6b3c47e0e12946b4fa1e14f45defa2a82c0bd2ef582f195"
+     }
+    ],
+    "id": "c1",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Microsoft Cloud revenue increased 23% to $168.9 billion in fiscal 2025, so cloud sales grew.",
+    "ticker": "MSFT",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_04946a6a76bc7182083c1c2e0ff49400660cfe29eeb7fcd2cebdea21bd1059ee"
+     }
+    ],
+    "id": "c2",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Microsoft reported that Microsoft Cloud gross margin percentage decreased to 69%, driven by the impact of scaling its AI infrastructure, offset in part by efficiency gains in Azure.",
+    "ticker": "MSFT",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_307f0668d3dca56ac7741fe2819577ddd7bb561645e1fbe7a26390e6ebb23d0a"
+     }
+    ],
+    "id": "c3",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "In the Intelligent Cloud segment, Microsoft said gross margin percentage decreased for the same reason, the impact of scaling AI infrastructure offset in part by Azure efficiency gains. Segment cost of revenue increased $10.6 billion or 36% driven by growth in Azure.",
+    "ticker": "MSFT",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_04946a6a76bc7182083c1c2e0ff49400660cfe29eeb7fcd2cebdea21bd1059ee"
+     }
+    ],
+    "id": "c4",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Company-wide cost of revenue increased $13.7 billion or 19%, which Microsoft said was driven by growth in Microsoft Cloud.",
+    "ticker": "MSFT",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_5"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "194"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "199"
+     }
+    ],
+    "id": "c5",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Company-wide total revenue grew about 14.9% in fiscal 2025, from $245.1 billion to $281.7 billion.",
+    "ticker": "MSFT",
+    "unit": "percent",
+    "value": "14.932156232407",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_1"
+     }
+    ],
+    "id": "c6",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "Company-wide gross margin was about 69.76% in fiscal 2024.",
+    "ticker": "MSFT",
+    "unit": "percent",
+    "value": "69.764443827971",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_2"
+     }
+    ],
+    "id": "c7",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Company-wide gross margin was about 68.82% in fiscal 2025.",
+    "ticker": "MSFT",
+    "unit": "percent",
+    "value": "68.823742386165",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "computation",
+      "ref": "cmp_6"
+     }
+    ],
+    "id": "c8",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Company-wide gross margin fell about 0.94 percentage points between fiscal 2024 and fiscal 2025.",
+    "ticker": "MSFT",
+    "unit": "percentage_points",
+    "value": "-0.940701441806",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_3"
+     }
+    ],
+    "id": "c9",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "Company-wide operating margin was about 44.64% in fiscal 2024.",
+    "ticker": "MSFT",
+    "unit": "percent",
+    "value": "44.644299573274",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_4"
+     }
+    ],
+    "id": "c10",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Company-wide operating margin was about 45.62% in fiscal 2025, which is higher than the prior year.",
+    "ticker": "MSFT",
+    "unit": "percent",
+    "value": "45.62195624086",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "computation",
+      "ref": "cmp_7"
+     }
+    ],
+    "id": "c11",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Company-wide operating margin rose about 0.98 percentage points between fiscal 2024 and fiscal 2025.",
+    "ticker": "MSFT",
+    "unit": "percentage_points",
+    "value": "0.977656667586",
+    "value_basis": "computation"
+   }
+  ],
+  "final_claim_id": null,
+  "final_unit": null,
+  "final_value": null,
+  "status": "answered",
+  "summary": "Microsoft attributed the lower Microsoft Cloud gross margin in fiscal 2025 to the impact of scaling its AI infrastructure, partly offset by efficiency gains in Azure. Microsoft Cloud revenue rose 23% to $168.9 billion, and cost of revenue grew 19% on Microsoft Cloud growth. Company-wide gross margin fell from about 69.76% to about 68.82%, a drop of about 0.94 percentage points. Company-wide operating margin rose from about 44.64% to about 45.62%. The filing evidence gives no prior-year Microsoft Cloud margin and no quantified split of the drivers."
+ },
+ "retrieval": {
+  "first_search": {
+   "filings:s6": [
+    "chk_04946a6a76bc7182083c1c2e0ff49400660cfe29eeb7fcd2cebdea21bd1059ee",
+    "chk_307f0668d3dca56ac7741fe2819577ddd7bb561645e1fbe7a26390e6ebb23d0a",
+    "chk_183fec40e9edf4cc34ae7ceff44cfd7524dc9712a8a6162ec0c9e7bbd9bdcea3",
+    "chk_12f4343f4e332b6bb6b3c47e0e12946b4fa1e14f45defa2a82c0bd2ef582f195",
+    "chk_46370ab35498dcaf191b19deb4d3ea376b8c22c4d9121b92bc304e3ddd3215c3",
+    "chk_5d7cdb66f72b884d398f7ad81c0ca3f3df2f435862490c81deacf5784adc06f7",
+    "chk_0aa2e0de554c9d16f53e923d2e93d71866799c2c6559adc2cfde9ad1b79cbe74",
+    "chk_162d74e85b5a1fc2b28498afc69d9cac85c18c9f7cb9d7de4b5662f2b91cdaba"
+   ]
+  },
+  "seen": [
+   "chk_04946a6a76bc7182083c1c2e0ff49400660cfe29eeb7fcd2cebdea21bd1059ee",
+   "chk_307f0668d3dca56ac7741fe2819577ddd7bb561645e1fbe7a26390e6ebb23d0a",
+   "chk_183fec40e9edf4cc34ae7ceff44cfd7524dc9712a8a6162ec0c9e7bbd9bdcea3",
+   "chk_12f4343f4e332b6bb6b3c47e0e12946b4fa1e14f45defa2a82c0bd2ef582f195",
+   "chk_46370ab35498dcaf191b19deb4d3ea376b8c22c4d9121b92bc304e3ddd3215c3",
+   "chk_5d7cdb66f72b884d398f7ad81c0ca3f3df2f435862490c81deacf5784adc06f7",
+   "chk_0aa2e0de554c9d16f53e923d2e93d71866799c2c6559adc2cfde9ad1b79cbe74",
+   "chk_162d74e85b5a1fc2b28498afc69d9cac85c18c9f7cb9d7de4b5662f2b91cdaba"
+  ]
+ },
+ "run_id": "14d928a7-6cbd-40b1-b481-507eaa619511",
+ "run_status": "done",
+ "split": "handwritten",
+ "started_at": "2026-11-16T21:40:56.052572+00:00",
+ "status": "done",
+ "system_config_hash": "dda3ea6b7db41dd0273d82e63c7ab3c74a4ec2dac9f2674d40c2836322074f2a",
+ "system_id": "m6-rerank",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 97828,
+  "cache_write_tokens": 31864,
+  "input_tokens": 32093,
+  "output_tokens": 11511
+ }
+}

@@ -1,0 +1,152 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 5,
+  "numeric_valid": 5,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.0409930",
+ "error": null,
+ "finished_at": "2026-11-16T20:29:28.341338+00:00",
+ "latency_ms": 15152,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD",
+  "value": "777000000"
+ },
+ "question_id": "q_904fca8ce76b181d",
+ "question_sha": "d2a20af7dd780c6cdb8038d808e05ed5422fae720aab96bb77b58820a0c03486",
+ "raw_output": {
+  "caveats": [
+   "Q4 fiscal 2026 net income is derived (annual figure minus nine-month year-to-date figure), not a directly reported quarterly value.",
+   "The average is a simple arithmetic mean of the four quarterly values and equals the full-year net income of $3,108 million divided by four."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3781"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q1",
+     "fiscal_year": 2026
+    },
+    "text": "Nike's Q1 fiscal 2026 net income was $727 million.",
+    "ticker": "NKE",
+    "unit": "USD",
+    "value": "727000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3782"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q2",
+     "fiscal_year": 2026
+    },
+    "text": "Nike's Q2 fiscal 2026 net income was $792 million.",
+    "ticker": "NKE",
+    "unit": "USD",
+    "value": "792000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3783"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q3",
+     "fiscal_year": 2026
+    },
+    "text": "Nike's Q3 fiscal 2026 net income was $520 million.",
+    "ticker": "NKE",
+    "unit": "USD",
+    "value": "520000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3784"
+     }
+    ],
+    "id": "c4",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q4",
+     "fiscal_year": 2026
+    },
+    "text": "Nike's derived Q4 fiscal 2026 net income was $1,069 million (full-year $3,108 million less nine-month $2,039 million).",
+    "ticker": "NKE",
+    "unit": "USD",
+    "value": "1069000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": "mean",
+      "kind": "computation",
+      "ref": "cmp_1"
+     }
+    ],
+    "id": "c5",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2026
+    },
+    "text": "The average (mean) quarterly net income across the four quarters of fiscal 2026 was $777 million.",
+    "ticker": "NKE",
+    "unit": "USD",
+    "value": "777000000",
+    "value_basis": "computation"
+   }
+  ],
+  "final_claim_id": "c5",
+  "final_unit": "USD",
+  "final_value": "777000000",
+  "status": "answered",
+  "summary": "Nike's average quarterly net income over fiscal 2026 was about $777 million. That is the mean of Q1 $727 million, Q2 $792 million, Q3 $520 million and Q4 $1,069 million. Q4 is derived from annual and nine-month figures."
+ },
+ "run_id": "a57c07bc-d4f8-4e7e-adb5-256614a22d9c",
+ "run_status": "done",
+ "split": "test",
+ "started_at": "2026-11-16T20:29:13.139696+00:00",
+ "status": "done",
+ "system_config_hash": "076d44ae54839bdbe0f6ccf45947a709b3a3d1f851b4bbb7bc21239958ef83cf",
+ "system_id": "m6-no-verifier",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 43095,
+  "cache_write_tokens": 6771,
+  "input_tokens": 18,
+  "output_tokens": 1972
+ }
+}

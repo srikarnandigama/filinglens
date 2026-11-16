@@ -1,0 +1,167 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 5,
+  "numeric_valid": 4,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.0976911",
+ "error": null,
+ "finished_at": "2026-11-16T21:19:14.263822+00:00",
+ "latency_ms": 30659,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD",
+  "value": "7606250000"
+ },
+ "question_id": "q_cc93f22a90fe05e6",
+ "question_sha": "4c2fb6bb6c0ef14ad6551f6218065abc44a1ae5d5e6d647ea49f0c51a92e8e0b",
+ "raw_output": {
+  "caveats": [
+   "Q4 2023 net income is derived (annual minus nine-month year-to-date), not reported directly as a quarterly figure.",
+   "Amazon's fiscal year ends December 31, so the four fiscal 2023 quarters match the calendar quarters."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "719"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q1",
+     "fiscal_year": 2023
+    },
+    "text": "Amazon's Q1 2023 net income was $3.172 billion.",
+    "ticker": "AMZN",
+    "unit": "USD",
+    "value": "3172000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "720"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q2",
+     "fiscal_year": 2023
+    },
+    "text": "Amazon's Q2 2023 net income was $6.75 billion.",
+    "ticker": "AMZN",
+    "unit": "USD",
+    "value": "6750000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "721"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q3",
+     "fiscal_year": 2023
+    },
+    "text": "Amazon's Q3 2023 net income was $9.879 billion.",
+    "ticker": "AMZN",
+    "unit": "USD",
+    "value": "9879000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "722"
+     }
+    ],
+    "id": "c4",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q4",
+     "fiscal_year": 2023
+    },
+    "text": "Amazon's Q4 2023 net income was $10.624 billion. This is derived as full-year $30,425,000,000 minus nine-month $19,801,000,000.",
+    "ticker": "AMZN",
+    "unit": "USD",
+    "value": "10624000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "719"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "720"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "721"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "722"
+     }
+    ],
+    "id": "c5",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2023
+    },
+    "text": "Average quarterly net income for fiscal 2023 = (3,172,000,000 + 6,750,000,000 + 9,879,000,000 + 10,624,000,000) / 4 = 30,425,000,000 / 4 = $7,606,250,000, or about $7.61 billion.",
+    "ticker": "AMZN",
+    "unit": "USD",
+    "value": "7606250000",
+    "value_basis": "model_arithmetic"
+   }
+  ],
+  "final_claim_id": "c5",
+  "final_unit": "USD",
+  "final_value": "7606250000",
+  "status": "answered",
+  "summary": "Amazon's average quarterly net income over fiscal 2023 was about $7.61 billion ($7,606,250,000). That is the mean of Q1 $3.172 billion, Q2 $6.75 billion, Q3 $9.879 billion and Q4 $10.624 billion. Q4 is derived from annual and nine-month figures."
+ },
+ "run_id": "d67d9e94-ab70-4b25-adc6-ca800e393558",
+ "run_status": "done",
+ "split": "test",
+ "started_at": "2026-11-16T21:18:43.567978+00:00",
+ "status": "done",
+ "system_config_hash": "38c1354659c83500cab78979070eac496bb55847b466a51e9437890c769351e5",
+ "system_id": "m6-no-quant",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 24791,
+  "cache_write_tokens": 9832,
+  "input_tokens": 12981,
+  "output_tokens": 4467
+ }
+}

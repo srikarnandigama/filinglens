@@ -1,0 +1,259 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 0,
+  "numeric_valid": 0,
+  "text_pending_judge": [
+   {
+    "chunk_ids": [
+     "chk_539ad4abd5a6aebba6212061aa87fa82247e4865cf91ce27ad7a9806b9379429",
+     "chk_59ed61c15d07f0e7630a96be3d1fdcd581771c37a99276a1ec20f8ea43e5dd59"
+    ],
+    "claim_id": "c1",
+    "text": "Amazon's risk factors say that as it has expanded its international operations, its exposure to exchange rate fluctuations has increased. It repeats this in the Q2 2026 10-Q."
+   },
+   {
+    "chunk_ids": [
+     "chk_539ad4abd5a6aebba6212061aa87fa82247e4865cf91ce27ad7a9806b9379429",
+     "chk_59ed61c15d07f0e7630a96be3d1fdcd581771c37a99276a1ec20f8ea43e5dd59"
+    ],
+    "claim_id": "c2",
+    "text": "Amazon warns that when the U.S. Dollar strengthens against the relevant currencies, its foreign-currency cash equivalents and marketable securities balances, once translated, may be materially less than expected, and vice versa. The Q2 2026 10-Q adds foreign-denominated note balances and payments to this list."
+   },
+   {
+    "chunk_ids": [
+     "chk_5d53f2e3106ac1503ffd5b09ec45f1a54f8ede08c6343f0e7050f9232c9a1c25"
+    ],
+    "claim_id": "c3",
+    "text": "Sensitivity (FY2025 10-K, Item 7A): based on foreign funds of $29.7 billion at December 31, 2025, an assumed 5%, 10% and 20% adverse change in foreign exchange would reduce them by $1.5 billion, $3.0 billion and $5.9 billion."
+   },
+   {
+    "chunk_ids": [
+     "chk_c06e48ad72cf4cbed3df1119be2c7a589ec9c367b9bd48492347028067d28a4d"
+    ],
+    "claim_id": "c5",
+    "text": "FY2025 operating income: the 10-K MD&A reports FX effects of a $204 million negative, a $903 million positive and a $341 million negative impact on operating income in 2025. These are reported across segments, so FX moves can push results in different directions."
+   },
+   {
+    "chunk_ids": [
+     "chk_362013531de90481333928c0f69b7de2b5ea36e6fdd1160642883bb5308b1326"
+    ],
+    "claim_id": "c7",
+    "text": "Amazon provides FX-effect information to show reported operating results as if exchange rates had remained the same as in the comparable prior-year period."
+   }
+  ],
+  "text_string_supported": 2,
+  "text_total": 7,
+  "uncited": 0
+ },
+ "cost_usd": "0.109877405",
+ "error": null,
+ "finished_at": "2026-11-16T22:08:02.990657+00:00",
+ "latency_ms": 64348,
+ "prediction": {
+  "parse_ok": true,
+  "text": "Amazon says its exposure to exchange rates has grown as it has expanded internationally. In 2025, FX raised net sales by $4.4 billion. Its disclosed FX effects on operating income were mixed: $204 million negative, $903 million positive and $341 million negative. A hypothetical 5% adverse FX move would reduce the value of its $29.7 billion of foreign funds by about $1.5 billion, and a 20% move by $5.9 billion. In Q2 2026, FX had no significant effect on net sales. For the six months, it added $3.0 billion.\nAmazon's risk factors say that as it has expanded its international operations, its exposure to exchange rate fluctuations has increased. It repeats this in the Q2 2026 10-Q.\nAmazon warns that when the U.S. Dollar strengthens against the relevant currencies, its foreign-currency cash equivalents and marketable securities balances, once translated, may be materially less than expected, and vice versa. The Q2 2026 10-Q adds foreign-denominated note balances and payments to this list.\nSensitivity (FY2025 10-K, Item 7A): based on foreign funds of $29.7 billion at December 31, 2025, an assumed 5%, 10% and 20% adverse change in foreign exchange would reduce them by $1.5 billion, $3.0 billion and $5.9 billion.\nFY2025 net sales: Amazon reported that changes in foreign exchange rates increased net sales by $4.4 billion in 2025. They reduced North America net sales by $454 million.\nFY2025 operating income: the 10-K MD&A reports FX effects of a $204 million negative, a $903 million positive and a $341 million negative impact on operating income in 2025. These are reported across segments, so FX moves can push results in different directions.\nLatest quarter: Amazon said FX did not significantly impact net sales for Q2 2026 but increased net sales by $3.0 billion for the six months ended June 30, 2026. FX increased North America net sales by $139 million in Q2 2026 and by $485 million for the six months.\nAmazon provides FX-effect information to show reported operating results as if exchange rates had remained the same as in the comparable prior-year period."
+ },
+ "question_id": "hq_24a3e4ca8e144f708dc1df755db10222",
+ "question_sha": "79aef5de0f20a517b19f2cbaf4a3206aece8d5840693f5981af9a52f39c9ea89",
+ "raw_output": {
+  "caveats": [
+   "The quoted FY2025 operating-income passage starts mid-sentence, so the segment labels for the $204 million, $903 million and $341 million effects are not confirmed in the quotes.",
+   "The Q2 2026 FX table for operating income could not be quoted as prose, so no Q2 2026 operating-income figures are reported. Item 7A of the Q2 2026 10-Q was not searched, so updated sensitivity figures are not covered.",
+   "The sensitivity figures cover foreign funds as of December 31, 2025. They are hypothetical and are not a measure of total earnings exposure.",
+   "The structured fact snapshot returned no facts, so the figures come from filing text only."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_539ad4abd5a6aebba6212061aa87fa82247e4865cf91ce27ad7a9806b9379429"
+     },
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_59ed61c15d07f0e7630a96be3d1fdcd581771c37a99276a1ec20f8ea43e5dd59"
+     }
+    ],
+    "id": "c1",
+    "kind": "textual",
+    "period": null,
+    "text": "Amazon's risk factors say that as it has expanded its international operations, its exposure to exchange rate fluctuations has increased. It repeats this in the Q2 2026 10-Q.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_539ad4abd5a6aebba6212061aa87fa82247e4865cf91ce27ad7a9806b9379429"
+     },
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_59ed61c15d07f0e7630a96be3d1fdcd581771c37a99276a1ec20f8ea43e5dd59"
+     }
+    ],
+    "id": "c2",
+    "kind": "textual",
+    "period": null,
+    "text": "Amazon warns that when the U.S. Dollar strengthens against the relevant currencies, its foreign-currency cash equivalents and marketable securities balances, once translated, may be materially less than expected, and vice versa. The Q2 2026 10-Q adds foreign-denominated note balances and payments to this list.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_5d53f2e3106ac1503ffd5b09ec45f1a54f8ede08c6343f0e7050f9232c9a1c25"
+     }
+    ],
+    "id": "c3",
+    "kind": "textual",
+    "period": null,
+    "text": "Sensitivity (FY2025 10-K, Item 7A): based on foreign funds of $29.7 billion at December 31, 2025, an assumed 5%, 10% and 20% adverse change in foreign exchange would reduce them by $1.5 billion, $3.0 billion and $5.9 billion.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_55138e6b5ab4692537dd9936668f333e35a4bba335349e9c7dda5c2e8cbe14f2"
+     }
+    ],
+    "id": "c4",
+    "kind": "textual",
+    "period": null,
+    "text": "FY2025 net sales: Amazon reported that changes in foreign exchange rates increased net sales by $4.4 billion in 2025. They reduced North America net sales by $454 million.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_c06e48ad72cf4cbed3df1119be2c7a589ec9c367b9bd48492347028067d28a4d"
+     }
+    ],
+    "id": "c5",
+    "kind": "textual",
+    "period": null,
+    "text": "FY2025 operating income: the 10-K MD&A reports FX effects of a $204 million negative, a $903 million positive and a $341 million negative impact on operating income in 2025. These are reported across segments, so FX moves can push results in different directions.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_e94230def5b1a9c2c2e9114fb045f488b894690d4b86922fe098409b01dcdbf7"
+     }
+    ],
+    "id": "c6",
+    "kind": "textual",
+    "period": null,
+    "text": "Latest quarter: Amazon said FX did not significantly impact net sales for Q2 2026 but increased net sales by $3.0 billion for the six months ended June 30, 2026. FX increased North America net sales by $139 million in Q2 2026 and by $485 million for the six months.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_362013531de90481333928c0f69b7de2b5ea36e6fdd1160642883bb5308b1326"
+     }
+    ],
+    "id": "c7",
+    "kind": "textual",
+    "period": null,
+    "text": "Amazon provides FX-effect information to show reported operating results as if exchange rates had remained the same as in the comparable prior-year period.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   }
+  ],
+  "final_claim_id": null,
+  "final_unit": null,
+  "final_value": null,
+  "status": "answered",
+  "summary": "Amazon says its exposure to exchange rates has grown as it has expanded internationally. In 2025, FX raised net sales by $4.4 billion. Its disclosed FX effects on operating income were mixed: $204 million negative, $903 million positive and $341 million negative. A hypothetical 5% adverse FX move would reduce the value of its $29.7 billion of foreign funds by about $1.5 billion, and a 20% move by $5.9 billion. In Q2 2026, FX had no significant effect on net sales. For the six months, it added $3.0 billion."
+ },
+ "retrieval": {
+  "first_search": {
+   "filings:s1": [
+    "chk_5d53f2e3106ac1503ffd5b09ec45f1a54f8ede08c6343f0e7050f9232c9a1c25",
+    "chk_c06e48ad72cf4cbed3df1119be2c7a589ec9c367b9bd48492347028067d28a4d",
+    "chk_42f0b1415251558791a7770f87dd8da42e1648b99778b9f263799e6a46586075",
+    "chk_539ad4abd5a6aebba6212061aa87fa82247e4865cf91ce27ad7a9806b9379429",
+    "chk_55138e6b5ab4692537dd9936668f333e35a4bba335349e9c7dda5c2e8cbe14f2",
+    "chk_25297a151e2aee5d0a1ff0417e174cfddad18db8fd3db8fca878d26ea7a95efd",
+    "chk_580cf734214ddc4835ed232158735f94f071da7cd609eb758524985540c09ce5",
+    "chk_ebf5a8a071a67d6a241613618e38a95198e2663d048f03fec4bf13e2fd6c99a7"
+   ],
+   "filings:s2": [
+    "chk_362013531de90481333928c0f69b7de2b5ea36e6fdd1160642883bb5308b1326",
+    "chk_59ed61c15d07f0e7630a96be3d1fdcd581771c37a99276a1ec20f8ea43e5dd59",
+    "chk_e94230def5b1a9c2c2e9114fb045f488b894690d4b86922fe098409b01dcdbf7",
+    "chk_21855b42bcfed6c7f8c02c39911efe12af845d4159de020825d96163a3a703e0",
+    "chk_274570b0bf73fb32a964a6e47a9a8474be54398c6e4c8e3e201fda3683823be3",
+    "chk_19d5857d6cf157036ac067906000cdb67cb49b22576ef1ce7b1dab617d9576f3",
+    "chk_549d8fbc5e2e7ad2d4048b8c32c10f8b6a08a62cf1ca3ded91864cbef36ff710",
+    "chk_e57963fafee6dd5ddbee7e7d4da60e707506ebee6a92fca6774aeef1bc597eee"
+   ]
+  },
+  "seen": [
+   "chk_5d53f2e3106ac1503ffd5b09ec45f1a54f8ede08c6343f0e7050f9232c9a1c25",
+   "chk_c06e48ad72cf4cbed3df1119be2c7a589ec9c367b9bd48492347028067d28a4d",
+   "chk_42f0b1415251558791a7770f87dd8da42e1648b99778b9f263799e6a46586075",
+   "chk_539ad4abd5a6aebba6212061aa87fa82247e4865cf91ce27ad7a9806b9379429",
+   "chk_55138e6b5ab4692537dd9936668f333e35a4bba335349e9c7dda5c2e8cbe14f2",
+   "chk_25297a151e2aee5d0a1ff0417e174cfddad18db8fd3db8fca878d26ea7a95efd",
+   "chk_580cf734214ddc4835ed232158735f94f071da7cd609eb758524985540c09ce5",
+   "chk_ebf5a8a071a67d6a241613618e38a95198e2663d048f03fec4bf13e2fd6c99a7",
+   "chk_362013531de90481333928c0f69b7de2b5ea36e6fdd1160642883bb5308b1326",
+   "chk_59ed61c15d07f0e7630a96be3d1fdcd581771c37a99276a1ec20f8ea43e5dd59",
+   "chk_e94230def5b1a9c2c2e9114fb045f488b894690d4b86922fe098409b01dcdbf7",
+   "chk_21855b42bcfed6c7f8c02c39911efe12af845d4159de020825d96163a3a703e0",
+   "chk_274570b0bf73fb32a964a6e47a9a8474be54398c6e4c8e3e201fda3683823be3",
+   "chk_19d5857d6cf157036ac067906000cdb67cb49b22576ef1ce7b1dab617d9576f3",
+   "chk_549d8fbc5e2e7ad2d4048b8c32c10f8b6a08a62cf1ca3ded91864cbef36ff710",
+   "chk_e57963fafee6dd5ddbee7e7d4da60e707506ebee6a92fca6774aeef1bc597eee"
+  ]
+ },
+ "run_id": "805b1e67-df53-46d5-a4a1-83370f6a5e14",
+ "run_status": "done",
+ "split": "handwritten",
+ "started_at": "2026-11-16T22:06:58.570800+00:00",
+ "status": "done",
+ "system_config_hash": "609c0b8d3387b1ce1d168e92bc0af076a1cc5929d1640386326043ecb0c21b67",
+ "system_id": "m6-hybrid",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 56862,
+  "cache_write_tokens": 35097,
+  "input_tokens": 15367,
+  "output_tokens": 10280
+ }
+}

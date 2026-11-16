@@ -1,0 +1,157 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 0,
+  "numeric_valid": 0,
+  "text_pending_judge": [],
+  "text_string_supported": 5,
+  "text_total": 5,
+  "uncited": 0
+ },
+ "cost_usd": "0.092618830",
+ "error": null,
+ "finished_at": "2026-11-16T21:36:55.267688+00:00",
+ "latency_ms": 40263,
+ "prediction": {
+  "parse_ok": true,
+  "text": "ExxonMobil's 2024 10-K (Item 1A) says greenhouse gas policies could hurt its business in several ways. They could reduce investment returns, make its products more expensive or less competitive, lengthen project timelines, and reduce hydrocarbon demand. The filing also points to higher compliance costs, delays or denials of permits, tighter financing, and the risk that policies supporting low-emission investments fail or are delayed. It also warns that restricting hydrocarbon supply without cutting demand could cause adverse market effects.\nExxonMobil states that, depending on how greenhouse gas policies are formulated and applied, they could negatively affect its investment returns, make its hydrocarbon-based products more expensive or less competitive, lengthen project implementation times, and reduce demand for hydrocarbons. They could also shift demand toward relatively lower-carbon alternatives.\nThe company says political and other actors increasingly try to advance climate objectives indirectly, for example by seeking to reduce the availability or increase the cost of financing and investment in the oil and gas sector.\nExxonMobil lists regulatory changes that could adversely affect it. These include changes in environmental regulations that penalize past or current production of legal products, increase operating or compliance costs, or reduce or delay business opportunities. They also include actions to delay or deny licenses and permits, restrict oil and gas leases or the transportation or export of its products, or reduce or retract government incentives for emissions reductions. Such actions could result in reduced returns.\nExxonMobil warns that failure or delay of supportive policies or markets to materialize or be maintained could adversely impact its investments in areas such as lower-emission businesses. It also says policies that restrict hydrocarbon availability without a commensurate reduction in demand may have unpredictable adverse effects: increased commodity price volatility, periods of significantly higher prices with inflationary pressures, and local or regional energy shortages.\nThe company frames the energy transition as uncertain. Expectations for a net-zero transition derive from hypothetical scenarios with many assumptions, including supportive policy. ExxonMobil says there are risks that technologies, government policies and markets will not be available or develop at the pace or in the manner those scenarios expect."
+ },
+ "question_id": "hq_efbdb0ea523543c699eddddde9b1e638",
+ "question_sha": "2e7c69db1cf51cfaa102e803e854925e14aa6b6d69e2f8f441cc568c60225e67",
+ "raw_output": {
+  "caveats": [
+   "The answer is based on Item 1A of the FY2024 10-K. Not all of the risk-factor text was read; the 'Operational and Other Factors' section was only partly reviewed.",
+   "One passage on demand-side factors (chk_59595c8a...) had no verified quotes, so it is not relied on."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_9e6e81065a45435193fbe6753689a27db1e93b791ea40d5de1cea1e1e085af4b"
+     }
+    ],
+    "id": "c1",
+    "kind": "textual",
+    "period": null,
+    "text": "ExxonMobil states that, depending on how greenhouse gas policies are formulated and applied, they could negatively affect its investment returns, make its hydrocarbon-based products more expensive or less competitive, lengthen project implementation times, and reduce demand for hydrocarbons. They could also shift demand toward relatively lower-carbon alternatives.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_9e6e81065a45435193fbe6753689a27db1e93b791ea40d5de1cea1e1e085af4b"
+     }
+    ],
+    "id": "c2",
+    "kind": "textual",
+    "period": null,
+    "text": "The company says political and other actors increasingly try to advance climate objectives indirectly, for example by seeking to reduce the availability or increase the cost of financing and investment in the oil and gas sector.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_3da17d71d44f0929ba094359a5583c8adadb6a4f9b9eca8497be3e5d907df9f7"
+     }
+    ],
+    "id": "c3",
+    "kind": "textual",
+    "period": null,
+    "text": "ExxonMobil lists regulatory changes that could adversely affect it. These include changes in environmental regulations that penalize past or current production of legal products, increase operating or compliance costs, or reduce or delay business opportunities. They also include actions to delay or deny licenses and permits, restrict oil and gas leases or the transportation or export of its products, or reduce or retract government incentives for emissions reductions. Such actions could result in reduced returns.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_dd9b6139deab4cdcd92f816797e64f6167720c895457faccb904eb29cd7ffd8b"
+     }
+    ],
+    "id": "c4",
+    "kind": "textual",
+    "period": null,
+    "text": "ExxonMobil warns that failure or delay of supportive policies or markets to materialize or be maintained could adversely impact its investments in areas such as lower-emission businesses. It also says policies that restrict hydrocarbon availability without a commensurate reduction in demand may have unpredictable adverse effects: increased commodity price volatility, periods of significantly higher prices with inflationary pressures, and local or regional energy shortages.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_66cb5034754e733c5a49994551ef31e28739766a0d3f97a2ac6ffed9ed2daa69"
+     }
+    ],
+    "id": "c5",
+    "kind": "textual",
+    "period": null,
+    "text": "The company frames the energy transition as uncertain. Expectations for a net-zero transition derive from hypothetical scenarios with many assumptions, including supportive policy. ExxonMobil says there are risks that technologies, government policies and markets will not be available or develop at the pace or in the manner those scenarios expect.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   }
+  ],
+  "final_claim_id": null,
+  "final_unit": null,
+  "final_value": null,
+  "status": "answered",
+  "summary": "ExxonMobil's 2024 10-K (Item 1A) says greenhouse gas policies could hurt its business in several ways. They could reduce investment returns, make its products more expensive or less competitive, lengthen project timelines, and reduce hydrocarbon demand. The filing also points to higher compliance costs, delays or denials of permits, tighter financing, and the risk that policies supporting low-emission investments fail or are delayed. It also warns that restricting hydrocarbon supply without cutting demand could cause adverse market effects."
+ },
+ "retrieval": {
+  "first_search": {
+   "filings:s1": [
+    "chk_9e6e81065a45435193fbe6753689a27db1e93b791ea40d5de1cea1e1e085af4b",
+    "chk_66cb5034754e733c5a49994551ef31e28739766a0d3f97a2ac6ffed9ed2daa69",
+    "chk_3da17d71d44f0929ba094359a5583c8adadb6a4f9b9eca8497be3e5d907df9f7",
+    "chk_4c48e5b3e6cb9a562eb4edcbb1d8137cdc900387c6c2a2ffc4d030bd3268ad5e",
+    "chk_dd9b6139deab4cdcd92f816797e64f6167720c895457faccb904eb29cd7ffd8b",
+    "chk_429ecb415511fa5de705ee3316a544dac6fd0313ff13ec31b05fc1fdc4fb7e1e",
+    "chk_59595c8a5bc19d2b3de01eed679f1c0caee72118c41336305e74d35dd451c3d2",
+    "chk_0cd4d5ff76a40cd9dc8d0eefb11a1fa4543e7d79222990dfe5e9608c00c7aea3"
+   ]
+  },
+  "seen": [
+   "chk_9e6e81065a45435193fbe6753689a27db1e93b791ea40d5de1cea1e1e085af4b",
+   "chk_66cb5034754e733c5a49994551ef31e28739766a0d3f97a2ac6ffed9ed2daa69",
+   "chk_3da17d71d44f0929ba094359a5583c8adadb6a4f9b9eca8497be3e5d907df9f7",
+   "chk_4c48e5b3e6cb9a562eb4edcbb1d8137cdc900387c6c2a2ffc4d030bd3268ad5e",
+   "chk_dd9b6139deab4cdcd92f816797e64f6167720c895457faccb904eb29cd7ffd8b",
+   "chk_429ecb415511fa5de705ee3316a544dac6fd0313ff13ec31b05fc1fdc4fb7e1e",
+   "chk_59595c8a5bc19d2b3de01eed679f1c0caee72118c41336305e74d35dd451c3d2",
+   "chk_0cd4d5ff76a40cd9dc8d0eefb11a1fa4543e7d79222990dfe5e9608c00c7aea3"
+  ]
+ },
+ "run_id": "6936fe8e-4898-4128-8811-291f750af1b7",
+ "run_status": "done",
+ "split": "handwritten",
+ "started_at": "2026-11-16T21:36:14.946450+00:00",
+ "status": "done",
+ "system_config_hash": "52a48e08f9ef2a659803092d4f5678475241e872105c99154f86b7bbc29038a3",
+ "system_id": "m6",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 58215,
+  "cache_write_tokens": 24744,
+  "input_tokens": 10578,
+  "output_tokens": 6231
+ }
+}

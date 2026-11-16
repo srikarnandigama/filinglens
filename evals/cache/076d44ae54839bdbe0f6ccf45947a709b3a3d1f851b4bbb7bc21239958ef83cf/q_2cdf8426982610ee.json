@@ -1,0 +1,71 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 1,
+  "numeric_valid": 1,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.0218203",
+ "error": null,
+ "finished_at": "2026-11-16T20:30:40.458254+00:00",
+ "latency_ms": 7531,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD",
+  "value": "4997000000"
+ },
+ "question_id": "q_2cdf8426982610ee",
+ "question_sha": "930212dd2932c6e522ba06183276f12a4763d57f90b2433862b5b42132b0cfe4",
+ "raw_output": {
+  "caveats": [
+   "The fact is sourced from a later filing (accession 0001628280-25-045968, the filing for the period ended 2025-09-30), which may present Q3 2024 as a comparative period."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": "value",
+      "kind": "fact",
+      "ref": "997"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q3",
+     "fiscal_year": 2024
+    },
+    "text": "Tesla reported gross profit of about $4.997 billion ($4,997,000,000) for fiscal Q3 2024 (quarter ended 2024-09-30).",
+    "ticker": "TSLA",
+    "unit": "USD",
+    "value": "4997000000",
+    "value_basis": "fact"
+   }
+  ],
+  "final_claim_id": "c1",
+  "final_unit": "USD",
+  "final_value": "4997000000",
+  "status": "answered",
+  "summary": "Tesla's gross profit for fiscal Q3 2024 (July 1 to September 30, 2024) was $4.997 billion."
+ },
+ "run_id": "1a59441e-3499-49a8-a68f-0b45400feb60",
+ "run_status": "done",
+ "split": "test",
+ "started_at": "2026-11-16T20:30:32.899921+00:00",
+ "status": "done",
+ "system_config_hash": "076d44ae54839bdbe0f6ccf45947a709b3a3d1f851b4bbb7bc21239958ef83cf",
+ "system_id": "m6-no-verifier",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 25113,
+  "cache_write_tokens": 4518,
+  "input_tokens": 12,
+  "output_tokens": 799
+ }
+}

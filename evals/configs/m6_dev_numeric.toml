@@ -3,6 +3,7 @@
 # $5.36 (M6 estimate $3.15) + $1.00 in flight (D123).
 name = "m6-dev-numeric"
 budget = "m6"
+spent_usd = "2.1670344"  # actual spend of the finished step (D123 re-sum rule)
 split = "dev"
 ids = [
  "q_1b5e88ee6986a52e",

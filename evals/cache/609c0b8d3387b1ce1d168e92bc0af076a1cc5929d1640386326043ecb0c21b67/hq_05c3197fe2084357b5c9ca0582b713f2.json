@@ -1,0 +1,187 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 0,
+  "numeric_valid": 0,
+  "text_pending_judge": [
+   {
+    "chunk_ids": [
+     "chk_8434e8db3e29fe4c2375a878ee2c348c3adea6aa5645e5cefe470ba434ecb636"
+    ],
+    "claim_id": "c1",
+    "text": "In June 2025, P&G announced a portfolio and productivity plan. The worker notes name it the 'Focused Portfolio, Supply Chain and Productivity Plan'."
+   }
+  ],
+  "text_string_supported": 4,
+  "text_total": 5,
+  "uncited": 0
+ },
+ "cost_usd": "0.077765730",
+ "error": null,
+ "finished_at": "2026-11-16T22:06:25.446521+00:00",
+ "latency_ms": 44431,
+ "prediction": {
+  "parse_ok": true,
+  "text": "In June 2025, P&G announced a portfolio and productivity plan. The notes from the filing search call it the 'Focused Portfolio, Supply Chain and Productivity Plan'. P&G said the plan was meant to streamline its portfolio and organization to improve its cost structure and competitiveness. It expects about $1.5 to $2.0 billion in before-tax restructuring costs over two years, and it plans to cut up to 7,000 non-manufacturing overhead personnel by the end of fiscal 2027.\nIn June 2025, P&G announced a portfolio and productivity plan. The worker notes name it the 'Focused Portfolio, Supply Chain and Productivity Plan'.\nP&G stated that the purpose was to streamline its portfolio and organization to improve its cost structure and competitiveness.\nP&G expects about $1.5 to $2.0 billion in before-tax restructuring costs over a two-year period. That range includes costs from this plan and from the ongoing restructuring plan.\nThe restructuring activities include a plan to reduce up to 7,000 non-manufacturing overhead personnel by the end of fiscal 2027.\nAs general context, not specific to this plan, P&G wrote that ongoing productivity improvement is strategic and crucial to delivering its growth, cash generation and value creation objectives. It also wrote that productivity improvements help it manage periods of challenging cost environments."
+ },
+ "question_id": "hq_05c3197fe2084357b5c9ca0582b713f2",
+ "question_sha": "8c72e56a71d2c3e2d1837671731ba9606005dc33caab99c80a338d66c74208b1",
+ "raw_output": {
+  "caveats": [
+   "The MD&A gives the rationale in a single sentence. The productivity passage is general strategy text, not a stated reason for this plan.",
+   "The search covered Item 7 and Items 1A and 1 only. Note 3 (restructuring) was not searched and may add detail.",
+   "The $1.5 to $2.0 billion cost range covers both this plan and the ongoing restructuring plan, so it is not the cost of this plan alone."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_8434e8db3e29fe4c2375a878ee2c348c3adea6aa5645e5cefe470ba434ecb636"
+     }
+    ],
+    "id": "c1",
+    "kind": "textual",
+    "period": null,
+    "text": "In June 2025, P&G announced a portfolio and productivity plan. The worker notes name it the 'Focused Portfolio, Supply Chain and Productivity Plan'.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_8434e8db3e29fe4c2375a878ee2c348c3adea6aa5645e5cefe470ba434ecb636"
+     }
+    ],
+    "id": "c2",
+    "kind": "textual",
+    "period": null,
+    "text": "P&G stated that the purpose was to streamline its portfolio and organization to improve its cost structure and competitiveness.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_8434e8db3e29fe4c2375a878ee2c348c3adea6aa5645e5cefe470ba434ecb636"
+     }
+    ],
+    "id": "c3",
+    "kind": "textual",
+    "period": null,
+    "text": "P&G expects about $1.5 to $2.0 billion in before-tax restructuring costs over a two-year period. That range includes costs from this plan and from the ongoing restructuring plan.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_8434e8db3e29fe4c2375a878ee2c348c3adea6aa5645e5cefe470ba434ecb636"
+     }
+    ],
+    "id": "c4",
+    "kind": "textual",
+    "period": null,
+    "text": "The restructuring activities include a plan to reduce up to 7,000 non-manufacturing overhead personnel by the end of fiscal 2027.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_b1839a94bc78102059a564e7c2d02069ebc069bdc1f376a84cd7472203c75422"
+     }
+    ],
+    "id": "c5",
+    "kind": "textual",
+    "period": null,
+    "text": "As general context, not specific to this plan, P&G wrote that ongoing productivity improvement is strategic and crucial to delivering its growth, cash generation and value creation objectives. It also wrote that productivity improvements help it manage periods of challenging cost environments.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   }
+  ],
+  "final_claim_id": null,
+  "final_unit": null,
+  "final_value": null,
+  "status": "answered",
+  "summary": "In June 2025, P&G announced a portfolio and productivity plan. The notes from the filing search call it the 'Focused Portfolio, Supply Chain and Productivity Plan'. P&G said the plan was meant to streamline its portfolio and organization to improve its cost structure and competitiveness. It expects about $1.5 to $2.0 billion in before-tax restructuring costs over two years, and it plans to cut up to 7,000 non-manufacturing overhead personnel by the end of fiscal 2027."
+ },
+ "retrieval": {
+  "first_search": {
+   "filings:s1": [
+    "chk_3dd1e4263b324528f58699e0e3e2a178ac2198c06672610afa0898c576366749",
+    "chk_8434e8db3e29fe4c2375a878ee2c348c3adea6aa5645e5cefe470ba434ecb636",
+    "chk_9c9168f2e35df7750f6da84d184ec254f269eea357bc930770eae7f9c19a85e2",
+    "chk_bc37419f76b0627d38a6f530f7d922c1f31addf586e990c3ceb6e2913f87a234",
+    "chk_b0301052f95e622e39914f1e560f3915b48135cc16de39a06e4619c6fe11fc49",
+    "chk_8abd29ae7fc697929fa93f21e240aecea5edb11d54698856413411125a36b528",
+    "chk_905da91d636adcb153d7be6c4b9f18c17163ae3aed125d750cd0503df9e053e9",
+    "chk_a4e7604a047fc1126d83539f73b0b17605012f8effc5897b1dd728d00a6220ff"
+   ],
+   "filings:s2": [
+    "chk_983493f95e3b02c06b1d098ee9fc96973b3f26bede8e92388573eaca884415fc",
+    "chk_5ee8e6b60045f94a7154916d353654d04f90dae12c1ab424ffc3f8efc0d1cb46",
+    "chk_fa88d9ae7ff3794b00d3637029b70fe8a0895fec6227eb67fa41d1d3f653999b",
+    "chk_43a616c341c471cbd9b3acf35666a62036260ab41064eef9cea741c55eb7aef7",
+    "chk_71667d89443768a95288f2059b32e07cd71f1a9547c55025f5a3b26d8ced1b8e",
+    "chk_81569500d999364fb18936277de12bb63c2dad1681d4513efc966c13ab76e5bd"
+   ]
+  },
+  "seen": [
+   "chk_3dd1e4263b324528f58699e0e3e2a178ac2198c06672610afa0898c576366749",
+   "chk_8434e8db3e29fe4c2375a878ee2c348c3adea6aa5645e5cefe470ba434ecb636",
+   "chk_9c9168f2e35df7750f6da84d184ec254f269eea357bc930770eae7f9c19a85e2",
+   "chk_bc37419f76b0627d38a6f530f7d922c1f31addf586e990c3ceb6e2913f87a234",
+   "chk_b0301052f95e622e39914f1e560f3915b48135cc16de39a06e4619c6fe11fc49",
+   "chk_8abd29ae7fc697929fa93f21e240aecea5edb11d54698856413411125a36b528",
+   "chk_905da91d636adcb153d7be6c4b9f18c17163ae3aed125d750cd0503df9e053e9",
+   "chk_a4e7604a047fc1126d83539f73b0b17605012f8effc5897b1dd728d00a6220ff",
+   "chk_983493f95e3b02c06b1d098ee9fc96973b3f26bede8e92388573eaca884415fc",
+   "chk_5ee8e6b60045f94a7154916d353654d04f90dae12c1ab424ffc3f8efc0d1cb46",
+   "chk_fa88d9ae7ff3794b00d3637029b70fe8a0895fec6227eb67fa41d1d3f653999b",
+   "chk_43a616c341c471cbd9b3acf35666a62036260ab41064eef9cea741c55eb7aef7",
+   "chk_71667d89443768a95288f2059b32e07cd71f1a9547c55025f5a3b26d8ced1b8e",
+   "chk_81569500d999364fb18936277de12bb63c2dad1681d4513efc966c13ab76e5bd",
+   "chk_7c409b57c7ddf360604dd68ae37eda993c7f89b01db1dcc3b27033484f8b1e91",
+   "chk_9bff24ad388e4fff47417cbfce60cb92121284bd4531a131bf57751a9353a7bf",
+   "chk_accde83667526fc316e9c8e9e04d5d9752728eee0a59334adc333fa4f9abb5bd",
+   "chk_b1839a94bc78102059a564e7c2d02069ebc069bdc1f376a84cd7472203c75422",
+   "chk_0847a123f3f4d868575ce7e7901d7203e35049c7378c0e7814bab1eeba8c713a",
+   "chk_e671b1aeb7a03a25ac7e5cd0e36db98f531387fa57529a311bf5caa2749fb1ce",
+   "chk_49f3e26bba9c02a6e078cc66e10ff345dc72a93c5608985b19ab5c31a134523f"
+  ]
+ },
+ "run_id": "2f8cc013-8680-4611-95e4-042b38c40594",
+ "run_status": "done",
+ "split": "handwritten",
+ "started_at": "2026-11-16T22:05:40.943776+00:00",
+ "status": "done",
+ "system_config_hash": "609c0b8d3387b1ce1d168e92bc0af076a1cc5929d1640386326043ecb0c21b67",
+ "system_id": "m6-hybrid",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 129457,
+  "cache_write_tokens": 41114,
+  "input_tokens": 8639,
+  "output_tokens": 7513
+ }
+}

@@ -1,0 +1,111 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 3,
+  "numeric_valid": 3,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.0511936",
+ "error": null,
+ "finished_at": "2026-11-16T20:22:55.364866+00:00",
+ "latency_ms": 16405,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "67.196995789216"
+ },
+ "question_id": "q_af9bf8736ff16435",
+ "question_sha": "3daa75c42ca0f22dfbc58cf786ee575eeb1f92a17feae2129bc3859ffb6601d6",
+ "raw_output": {
+  "caveats": [
+   "Q4 gross profit and revenue are derived: each is the full-year FY2026 figure minus the nine-month year-to-date figure through March 31, 2026. They are not directly reported quarterly values."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "233"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q4",
+     "fiscal_year": 2026
+    },
+    "text": "Microsoft's derived gross profit for fiscal Q4 2026 was $60.482 billion.",
+    "ticker": "MSFT",
+    "unit": "USD",
+    "value": "60482000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "203"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q4",
+     "fiscal_year": 2026
+    },
+    "text": "Microsoft's derived revenue for fiscal Q4 2026 was $90.007 billion.",
+    "ticker": "MSFT",
+    "unit": "USD",
+    "value": "90007000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_1"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q4",
+     "fiscal_year": 2026
+    },
+    "text": "Microsoft's gross margin for fiscal Q4 2026 was about 67.2% (gross profit divided by revenue).",
+    "ticker": "MSFT",
+    "unit": "percent",
+    "value": "67.196995789216",
+    "value_basis": "computation"
+   }
+  ],
+  "final_claim_id": "c3",
+  "final_unit": "percent",
+  "final_value": "67.196995789216",
+  "status": "answered",
+  "summary": "Microsoft's gross margin in fiscal Q4 2026 (April 1 to June 30, 2026) was about 67.2%. That is gross profit of $60.482 billion divided by revenue of $90.007 billion."
+ },
+ "run_id": "171f6339-2059-42c3-be8c-2187304a308e",
+ "run_status": "done",
+ "split": "test",
+ "started_at": "2026-11-16T20:22:38.915351+00:00",
+ "status": "done",
+ "system_config_hash": "52a48e08f9ef2a659803092d4f5678475241e872105c99154f86b7bbc29038a3",
+ "system_id": "m6",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 34471,
+  "cache_write_tokens": 5705,
+  "input_tokens": 6917,
+  "output_tokens": 1965
+ }
+}

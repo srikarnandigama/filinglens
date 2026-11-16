@@ -1,0 +1,311 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 0,
+  "numeric_valid": 0,
+  "text_pending_judge": [
+   {
+    "chunk_ids": [
+     "chk_88fd6e932a7a6272ec1c3871023a6f6d8667cbc6c7d8e48c3e27f3019f1d318a",
+     "chk_d882ee3576e3bca88c98a3c9fcc72226e291dd899f0acc0c6cf3cfbaa6ae65d8"
+    ],
+    "claim_id": "c8",
+    "text": "In the Q2 and Q3 10-Qs, UnitedHealth said 2025 medical costs were significantly above initial cost trend estimates. It said this adds to the compounding impact of earlier multi-year Medicare Advantage rate shortfalls."
+   }
+  ],
+  "text_string_supported": 7,
+  "text_total": 8,
+  "uncited": 0
+ },
+ "cost_usd": "0.293398265",
+ "error": null,
+ "finished_at": "2026-11-16T21:37:40.158907+00:00",
+ "latency_ms": 96624,
+ "prediction": {
+  "parse_ok": true,
+  "text": "In its FY2025 10-K, UnitedHealth said care patterns ran above what it had expected and priced for. It also cited higher unit costs and service intensity, and a costlier member mix. Other drivers were the Inflation Reduction Act (IRA) changes to Medicare Part D and Medicare Advantage growth. Management said its pricing and health-status assumptions were well short of the medical cost trend. The Q1 2025 10-Q focused on Medicare Advantage care patterns and the IRA's Part D changes. The Q2 and Q3 10-Qs added unit costs, service intensity and member mix.\nUnitedHealth said it observed care patterns above what it expected and had built into pricing and benefits design. In the Q2 and Q3 10-Qs it described these as more notably physician and outpatient care, and to a lesser extent inpatient and emergency room use.\nThe company also cited higher health care unit costs and greater intensity of services. It attributed these to increases in provider pricing and additional services bundled per visit.\nManagement said the member profile of newly added patients under value-based care arrangements, Medicare Advantage members in markets where other plans exited, and people served in its individual exchange business all contributed to higher medical costs.\nIn its results discussion, UnitedHealth said medical costs rose mainly because of the IRA-driven impacts on Medicare Part D plans, elevated medical cost trend, and growth in people served through Medicare Advantage and those with higher acuity needs.\nThe company said the medical care ratio rose because of the revenue effects of Medicare funding reductions, elevated cost trend, and the member profile of newly added value-based care patients. It also cited the acceleration of anticipated 2026 losses on certain Optum Health value-based care contracts, decreased favorable development, the IRA's impact on Part D, and market morbidity changes in individual exchange offerings. The 2024 Change Healthcare cyberattack accommodations partly offset these.\nUnitedHealth stated that for 2025 its pricing trends and patient and member health status assumptions were well short of the medical cost trends incurred, significantly impacting earnings. This is taken from a search snippet only.\nIn the Q1 2025 10-Q, management tied elevated costs to care patterns for Medicare Advantage seniors, mainly physician and outpatient care. It also said the IRA changed the Part D model and benefits, shifting more risk to plans and raising both premiums and medical costs.\nIn the Q2 and Q3 10-Qs, UnitedHealth said 2025 medical costs were significantly above initial cost trend estimates. It said this adds to the compounding impact of earlier multi-year Medicare Advantage rate shortfalls."
+ },
+ "question_id": "hq_eead0b7f7e3f430589800660cafe8cb1",
+ "question_sha": "7be0276f4adcca3d95691f62253021de46728111e96d6a4c343b95dca86159db",
+ "raw_output": {
+  "caveats": [
+   "The filings do not quantify how much each driver contributed.",
+   "The structured cost fact in the snapshot is CostOfGoodsAndServicesSold, about $50.7 billion for FY2025. It is not total medical costs, so I did not use it to measure the rise in medical costs.",
+   "The pricing-trends quote (c6) comes from a search snippet because the full passage could not be fetched. The medical cost trend factors passage was also snippet-only and is not relied on here."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_391052e87f3eff7f8b43ea8dd01ec03f6aabd58f97f739f32253d30e817608a8"
+     },
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_0846296d71b22a2817d1d3573fc905067cb38c778aac80f2be97a52ad7ad6bc8"
+     },
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_31e985bde09212b25cff4c4fa87a59d24ba211c9d413d05ff94d94f80e946c3f"
+     }
+    ],
+    "id": "c1",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "UnitedHealth said it observed care patterns above what it expected and had built into pricing and benefits design. In the Q2 and Q3 10-Qs it described these as more notably physician and outpatient care, and to a lesser extent inpatient and emergency room use.",
+    "ticker": "UNH",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_391052e87f3eff7f8b43ea8dd01ec03f6aabd58f97f739f32253d30e817608a8"
+     }
+    ],
+    "id": "c2",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "The company also cited higher health care unit costs and greater intensity of services. It attributed these to increases in provider pricing and additional services bundled per visit.",
+    "ticker": "UNH",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_391052e87f3eff7f8b43ea8dd01ec03f6aabd58f97f739f32253d30e817608a8"
+     }
+    ],
+    "id": "c3",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Management said the member profile of newly added patients under value-based care arrangements, Medicare Advantage members in markets where other plans exited, and people served in its individual exchange business all contributed to higher medical costs.",
+    "ticker": "UNH",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_271781dd425f4e71846d555091e443cfccf28c4eeefe275ff89e5347415d0905"
+     }
+    ],
+    "id": "c4",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "In its results discussion, UnitedHealth said medical costs rose mainly because of the IRA-driven impacts on Medicare Part D plans, elevated medical cost trend, and growth in people served through Medicare Advantage and those with higher acuity needs.",
+    "ticker": "UNH",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_271781dd425f4e71846d555091e443cfccf28c4eeefe275ff89e5347415d0905"
+     }
+    ],
+    "id": "c5",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "The company said the medical care ratio rose because of the revenue effects of Medicare funding reductions, elevated cost trend, and the member profile of newly added value-based care patients. It also cited the acceleration of anticipated 2026 losses on certain Optum Health value-based care contracts, decreased favorable development, the IRA's impact on Part D, and market morbidity changes in individual exchange offerings. The 2024 Change Healthcare cyberattack accommodations partly offset these.",
+    "ticker": "UNH",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_54a447e9b0d11bf85dcb2e9a0ac60c25842aef5311b288839442b4df70a31906"
+     }
+    ],
+    "id": "c6",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "UnitedHealth stated that for 2025 its pricing trends and patient and member health status assumptions were well short of the medical cost trends incurred, significantly impacting earnings. This is taken from a search snippet only.",
+    "ticker": "UNH",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_6f084952f4f4ef221f6b008f3e8fa2499c54106d4c4625c93ed0013f00a04500"
+     }
+    ],
+    "id": "c7",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "Q1",
+     "fiscal_year": 2025
+    },
+    "text": "In the Q1 2025 10-Q, management tied elevated costs to care patterns for Medicare Advantage seniors, mainly physician and outpatient care. It also said the IRA changed the Part D model and benefits, shifting more risk to plans and raising both premiums and medical costs.",
+    "ticker": "UNH",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_88fd6e932a7a6272ec1c3871023a6f6d8667cbc6c7d8e48c3e27f3019f1d318a"
+     },
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_d882ee3576e3bca88c98a3c9fcc72226e291dd899f0acc0c6cf3cfbaa6ae65d8"
+     }
+    ],
+    "id": "c8",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "Q3",
+     "fiscal_year": 2025
+    },
+    "text": "In the Q2 and Q3 10-Qs, UnitedHealth said 2025 medical costs were significantly above initial cost trend estimates. It said this adds to the compounding impact of earlier multi-year Medicare Advantage rate shortfalls.",
+    "ticker": "UNH",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   }
+  ],
+  "final_claim_id": null,
+  "final_unit": null,
+  "final_value": null,
+  "status": "answered",
+  "summary": "In its FY2025 10-K, UnitedHealth said care patterns ran above what it had expected and priced for. It also cited higher unit costs and service intensity, and a costlier member mix. Other drivers were the Inflation Reduction Act (IRA) changes to Medicare Part D and Medicare Advantage growth. Management said its pricing and health-status assumptions were well short of the medical cost trend. The Q1 2025 10-Q focused on Medicare Advantage care patterns and the IRA's Part D changes. The Q2 and Q3 10-Qs added unit costs, service intensity and member mix."
+ },
+ "retrieval": {
+  "first_search": {
+   "filings:s4": [
+    "chk_5cd9ee1671da21db3bc064e151161fb76293280b4205d47499a2f42869867fe1",
+    "chk_271781dd425f4e71846d555091e443cfccf28c4eeefe275ff89e5347415d0905",
+    "chk_391052e87f3eff7f8b43ea8dd01ec03f6aabd58f97f739f32253d30e817608a8",
+    "chk_3525b21ed20ea3990441897859c5785bdc466135adf3a6d788a30d2e0b190cb2",
+    "chk_54a447e9b0d11bf85dcb2e9a0ac60c25842aef5311b288839442b4df70a31906",
+    "chk_b650d53db26d288d803d0a92b987cf508f3fbce1792239fc31536ee764c496ee",
+    "chk_fa4cebddc1cbd74f39c19601fc897ba27320df8af750d0816afff6018ac81234",
+    "chk_52773ae12dfa2f6a1989f1a9c881eb9f17a787b90c7ed79762295e2c79dcc368"
+   ],
+   "filings:s5": [
+    "chk_6f084952f4f4ef221f6b008f3e8fa2499c54106d4c4625c93ed0013f00a04500",
+    "chk_266dd3264fc6ab1f54e870afe222debf4e26398b22c787f4303200547ec789c8",
+    "chk_f17e84b6df93c311e55a9048829f75e75cc7829d6fc2afbc21926382f6029672",
+    "chk_21f4c03db28152dad6b366946a7ed5b484a0b16ad7a6aae481eb063d7e4c70e0",
+    "chk_992113f3cf35b38db6d052c8dbeb95812fbca07a44ea47667d2897a0b0640620",
+    "chk_3d31ff89aac757a75c188b3be2869d40bf5c4fc6c218d00e04fb51940d1f1fd8",
+    "chk_1f0e997e2656e09c4dc4e7e02cd2c26fe96d16ce3249df612449e4b072f50144",
+    "chk_36017529edbdf9dc8d16ec9676e591de04e15b0031a2e9897e81f2d329287dd1"
+   ],
+   "filings:s6": [
+    "chk_0846296d71b22a2817d1d3573fc905067cb38c778aac80f2be97a52ad7ad6bc8",
+    "chk_affbfcfb1cb09fcb66eaabaa69589bc300f1791d17a3663fbee0c18a62aa23df",
+    "chk_88fd6e932a7a6272ec1c3871023a6f6d8667cbc6c7d8e48c3e27f3019f1d318a",
+    "chk_3200692ac500dabe839c949b64b9cbebb86b9e8da43304a8f2de246aca02c258",
+    "chk_a65b10965da1cea9b2dfb326e8b357877d47e28d1f46ac6c3a17debf3eb20af1",
+    "chk_cf7b2d864ee8fd3dc5f96c012da1c75233572705a59872a065ef39128faecaaf",
+    "chk_596469fd4f7bf794b27a7c71573fcd4a707fa3e478b3056137086cc47edf00db",
+    "chk_8945c6829d3537b37c4f37738b1994489314829b875708e8a2c32fca505f46bf"
+   ],
+   "filings:s7": [
+    "chk_31e985bde09212b25cff4c4fa87a59d24ba211c9d413d05ff94d94f80e946c3f",
+    "chk_d882ee3576e3bca88c98a3c9fcc72226e291dd899f0acc0c6cf3cfbaa6ae65d8",
+    "chk_1984967db73384db7a88012b8109c6ce0173ac6fb8012f152efec5c3d7244438",
+    "chk_227247b62b0d50929f4265e294d06d75c3f0dfb6d9b7152610e550f257de2637",
+    "chk_291f48efb457e1e55bffaf3135deeebe855806481e301ed5986840165946050b",
+    "chk_2f7d6d602789bb862ec3b44b4cd0edd2afa0129e7a9b9a656308a4481c4fdbd3",
+    "chk_6337d9b10885cc5e62d3511e61468675542ae611393d7e9969e1d2e0dddf7838",
+    "chk_89b0220a6897eb1e7cb17b6a17ddd66a1d960bc5b58b5f096fc77b6b089088c6"
+   ]
+  },
+  "seen": [
+   "chk_5cd9ee1671da21db3bc064e151161fb76293280b4205d47499a2f42869867fe1",
+   "chk_271781dd425f4e71846d555091e443cfccf28c4eeefe275ff89e5347415d0905",
+   "chk_391052e87f3eff7f8b43ea8dd01ec03f6aabd58f97f739f32253d30e817608a8",
+   "chk_3525b21ed20ea3990441897859c5785bdc466135adf3a6d788a30d2e0b190cb2",
+   "chk_54a447e9b0d11bf85dcb2e9a0ac60c25842aef5311b288839442b4df70a31906",
+   "chk_b650d53db26d288d803d0a92b987cf508f3fbce1792239fc31536ee764c496ee",
+   "chk_fa4cebddc1cbd74f39c19601fc897ba27320df8af750d0816afff6018ac81234",
+   "chk_52773ae12dfa2f6a1989f1a9c881eb9f17a787b90c7ed79762295e2c79dcc368",
+   "chk_6f084952f4f4ef221f6b008f3e8fa2499c54106d4c4625c93ed0013f00a04500",
+   "chk_266dd3264fc6ab1f54e870afe222debf4e26398b22c787f4303200547ec789c8",
+   "chk_f17e84b6df93c311e55a9048829f75e75cc7829d6fc2afbc21926382f6029672",
+   "chk_21f4c03db28152dad6b366946a7ed5b484a0b16ad7a6aae481eb063d7e4c70e0",
+   "chk_992113f3cf35b38db6d052c8dbeb95812fbca07a44ea47667d2897a0b0640620",
+   "chk_3d31ff89aac757a75c188b3be2869d40bf5c4fc6c218d00e04fb51940d1f1fd8",
+   "chk_1f0e997e2656e09c4dc4e7e02cd2c26fe96d16ce3249df612449e4b072f50144",
+   "chk_36017529edbdf9dc8d16ec9676e591de04e15b0031a2e9897e81f2d329287dd1",
+   "chk_0846296d71b22a2817d1d3573fc905067cb38c778aac80f2be97a52ad7ad6bc8",
+   "chk_affbfcfb1cb09fcb66eaabaa69589bc300f1791d17a3663fbee0c18a62aa23df",
+   "chk_88fd6e932a7a6272ec1c3871023a6f6d8667cbc6c7d8e48c3e27f3019f1d318a",
+   "chk_3200692ac500dabe839c949b64b9cbebb86b9e8da43304a8f2de246aca02c258",
+   "chk_a65b10965da1cea9b2dfb326e8b357877d47e28d1f46ac6c3a17debf3eb20af1",
+   "chk_cf7b2d864ee8fd3dc5f96c012da1c75233572705a59872a065ef39128faecaaf",
+   "chk_596469fd4f7bf794b27a7c71573fcd4a707fa3e478b3056137086cc47edf00db",
+   "chk_8945c6829d3537b37c4f37738b1994489314829b875708e8a2c32fca505f46bf",
+   "chk_31e985bde09212b25cff4c4fa87a59d24ba211c9d413d05ff94d94f80e946c3f",
+   "chk_d882ee3576e3bca88c98a3c9fcc72226e291dd899f0acc0c6cf3cfbaa6ae65d8",
+   "chk_1984967db73384db7a88012b8109c6ce0173ac6fb8012f152efec5c3d7244438",
+   "chk_227247b62b0d50929f4265e294d06d75c3f0dfb6d9b7152610e550f257de2637",
+   "chk_291f48efb457e1e55bffaf3135deeebe855806481e301ed5986840165946050b",
+   "chk_2f7d6d602789bb862ec3b44b4cd0edd2afa0129e7a9b9a656308a4481c4fdbd3",
+   "chk_6337d9b10885cc5e62d3511e61468675542ae611393d7e9969e1d2e0dddf7838",
+   "chk_89b0220a6897eb1e7cb17b6a17ddd66a1d960bc5b58b5f096fc77b6b089088c6"
+  ]
+ },
+ "run_id": "83bc3afc-dcb1-4262-a21f-1cc07e032150",
+ "run_status": "done",
+ "split": "handwritten",
+ "started_at": "2026-11-16T21:36:03.424609+00:00",
+ "status": "done",
+ "system_config_hash": "52a48e08f9ef2a659803092d4f5678475241e872105c99154f86b7bbc29038a3",
+ "system_id": "m6",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 137060,
+  "cache_write_tokens": 81630,
+  "input_tokens": 50544,
+  "output_tokens": 18594
+ }
+}

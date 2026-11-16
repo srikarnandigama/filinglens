@@ -1,0 +1,152 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 5,
+  "numeric_valid": 5,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.0635452",
+ "error": null,
+ "finished_at": "2026-11-16T20:30:21.118100+00:00",
+ "latency_ms": 17559,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD",
+  "value": "3954250000"
+ },
+ "question_id": "q_7efc51f876d501c0",
+ "question_sha": "39c001443640e6b6a00d322ed67a0e52554ca13cdfbedf5c64ffcf99c7094a0d",
+ "raw_output": {
+  "caveats": [
+   "Q2, Q3 and Q4 values are derived by subtracting year-to-date figures, not reported directly as discrete quarters.",
+   "Costco's Q1 is a 12-week quarter and Q4 is a 12- or 13-week quarter, while Q2 and Q3 are 12-week quarters, so the quarters are not equal in length. Q1 is 2025-09-01 to 2025-11-23 and Q4 is 2026-05-11 to 2026-08-30. The simple mean treats all four as equal."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3411"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q1",
+     "fiscal_year": 2026
+    },
+    "text": "Q1 fiscal 2026 net cash provided by operating activities was $4.688 billion.",
+    "ticker": "COST",
+    "unit": "USD",
+    "value": "4688000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3412"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q2",
+     "fiscal_year": 2026
+    },
+    "text": "Q2 fiscal 2026 net cash provided by operating activities was $2.996 billion (derived from the first-half total minus Q1).",
+    "ticker": "COST",
+    "unit": "USD",
+    "value": "2996000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3413"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q3",
+     "fiscal_year": 2026
+    },
+    "text": "Q3 fiscal 2026 net cash provided by operating activities was $3.449 billion (derived from the year-to-date total minus the first half).",
+    "ticker": "COST",
+    "unit": "USD",
+    "value": "3449000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3414"
+     }
+    ],
+    "id": "c4",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q4",
+     "fiscal_year": 2026
+    },
+    "text": "Q4 fiscal 2026 net cash provided by operating activities was $4.684 billion (derived from the full-year total minus the first three quarters).",
+    "ticker": "COST",
+    "unit": "USD",
+    "value": "4684000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": "mean",
+      "kind": "computation",
+      "ref": "cmp_1"
+     }
+    ],
+    "id": "c5",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2026
+    },
+    "text": "The average quarterly net cash provided by operating activities across the four quarters of fiscal 2026 was about $3.954 billion.",
+    "ticker": "COST",
+    "unit": "USD",
+    "value": "3954250000",
+    "value_basis": "computation"
+   }
+  ],
+  "final_claim_id": "c5",
+  "final_unit": "USD",
+  "final_value": "3954250000",
+  "status": "answered",
+  "summary": "Costco's average quarterly net cash provided by operating activities over fiscal 2026 was about $3.954 billion. The four quarters were $4.688 billion (Q1), $2.996 billion (Q2), $3.449 billion (Q3) and $4.684 billion (Q4)."
+ },
+ "run_id": "a6f9ccef-9d62-40ed-8f49-fb9860a00618",
+ "run_status": "done",
+ "split": "test",
+ "started_at": "2026-11-16T20:30:03.494483+00:00",
+ "status": "done",
+ "system_config_hash": "076d44ae54839bdbe0f6ccf45947a709b3a3d1f851b4bbb7bc21239958ef83cf",
+ "system_id": "m6-no-verifier",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 69197,
+  "cache_write_tokens": 14295,
+  "input_tokens": 24,
+  "output_tokens": 2084
+ }
+}

@@ -27,3 +27,4 @@ evals/results/*
 evals/*.draft.json
 evals/*.tmp
 !evals/results/m6_summary_rule_dev.json
+!evals/results/m6_mechanics.json

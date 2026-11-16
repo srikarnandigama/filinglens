@@ -1,0 +1,117 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 3,
+  "numeric_valid": 2,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.0501000",
+ "error": null,
+ "finished_at": "2026-11-16T20:33:01.465196+00:00",
+ "latency_ms": 16259,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "-3.5461"
+ },
+ "question_id": "q_c8119fe838a08349",
+ "question_sha": "080afad0f8720d8f0521e1845b22c565c23857f2565323f344729a2915c71c12",
+ "raw_output": {
+  "caveats": [
+   "Values come from the latest filing in the snapshot (accession 0000078003-26-000026); no management commentary passages were provided, so no explanation for the change is given.",
+   "The percent change was computed manually from the reported EPS figures and rounded to four decimal places."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "2972"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "Pfizer's diluted EPS for FY2024 was $1.41.",
+    "ticker": "PFE",
+    "unit": "USD/shares",
+    "value": "1.41",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "2976"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Pfizer's diluted EPS for FY2025 was $1.36.",
+    "ticker": "PFE",
+    "unit": "USD/shares",
+    "value": "1.36",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "2972"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "2976"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Percent change in diluted EPS = (1.36 - 1.41) / |1.41| * 100 = -0.05 / 1.41 * 100 \u2248 -3.55%, a decrease.",
+    "ticker": "PFE",
+    "unit": "percent",
+    "value": "-3.5461",
+    "value_basis": "model_arithmetic"
+   }
+  ],
+  "final_claim_id": "c3",
+  "final_unit": "percent",
+  "final_value": "-3.5461",
+  "status": "answered",
+  "summary": "Pfizer's diluted EPS fell from $1.41 in fiscal 2024 to $1.36 in fiscal 2025, a decline of about 3.55%."
+ },
+ "run_id": "67ea69a2-bd56-4a16-ba45-d405b0583e18",
+ "run_status": "done",
+ "split": "test",
+ "started_at": "2026-11-16T20:32:45.147570+00:00",
+ "status": "done",
+ "system_config_hash": "38c1354659c83500cab78979070eac496bb55847b466a51e9437890c769351e5",
+ "system_id": "m6-no-quant",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 22050,
+  "cache_write_tokens": 5538,
+  "input_tokens": 5225,
+  "output_tokens": 2360
+ }
+}

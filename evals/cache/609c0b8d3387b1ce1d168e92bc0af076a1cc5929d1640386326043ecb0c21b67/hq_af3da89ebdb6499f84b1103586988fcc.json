@@ -1,0 +1,133 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 0,
+  "numeric_valid": 0,
+  "text_pending_judge": [],
+  "text_string_supported": 3,
+  "text_total": 3,
+  "uncited": 0
+ },
+ "cost_usd": "0.065089160",
+ "error": null,
+ "finished_at": "2026-11-16T22:15:27.599200+00:00",
+ "latency_ms": 33116,
+ "prediction": {
+  "parse_ok": true,
+  "text": "Coca-Cola said it has implemented an incidence-based concentrate pricing model in most markets. Under that model, the concentrate price depends on factors including bottler pricing, the channels where the finished products are sold, and package mix. Its U.S. conversion agreements (CBAs) require mandatory incidence pricing. Revenue timing depends on whether the bottler is consolidated.\nCoca-Cola stated that it has implemented an incidence-based concentrate pricing model in most markets. Under this model, the concentrate price it charges is affected by a number of factors, including, but not limited to, bottler pricing, the channels in which the finished products made from the concentrates are sold, and package mix.\nThe 10-K's description of U.S. bottler agreements refers to requirements for a binding national governance model and mandatory incidence pricing. The worker summary ties this to the conversion agreements (CBAs).\nOn revenue recognition, Coca-Cola said it does not recognize concentrate revenue or concentrate sales volume on sales to consolidated bottling partners until the bottler has sold finished products made from the concentrates or syrups to a third party. For unconsolidated bottling partners, it recognizes them when the concentrates or syrups are sold to the bottler. This concerns when sales are reported, not the price."
+ },
+ "question_id": "hq_af3da89ebdb6499f84b1103586988fcc",
+ "question_sha": "940f86307f341d4ee2f16767ebf37bef8890b21ba6c464887e2ccc7827acc251",
+ "raw_output": {
+  "caveats": [
+   "The retrieved passages describe pricing qualitatively. No numeric price formula was found.",
+   "Legacy U.S. agreement baseline/ceiling pricing formulas adjusted for sweetener prices, and pricing terms for bottler agreements outside the U.S., were not quoted in the verified evidence, so they are not described here.",
+   "The MD&A passage on unconsolidated equity-method eliminations was truncated and not used."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_bf405013d93aaa8433ed5b0523ac3e1beddd0068c8696ef512d572d84343325f"
+     }
+    ],
+    "id": "c1",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Coca-Cola stated that it has implemented an incidence-based concentrate pricing model in most markets. Under this model, the concentrate price it charges is affected by a number of factors, including, but not limited to, bottler pricing, the channels in which the finished products made from the concentrates are sold, and package mix.",
+    "ticker": "KO",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_c2f684fb11f416aab6c14524db7474442292570e13ce1c5afceb84965723ac71"
+     }
+    ],
+    "id": "c2",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "The 10-K's description of U.S. bottler agreements refers to requirements for a binding national governance model and mandatory incidence pricing. The worker summary ties this to the conversion agreements (CBAs).",
+    "ticker": "KO",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_1069eeb02fcad3ac1c9ebb1edf35fa1f8369a21c66c5515eaf553bfb01519121"
+     }
+    ],
+    "id": "c3",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "On revenue recognition, Coca-Cola said it does not recognize concentrate revenue or concentrate sales volume on sales to consolidated bottling partners until the bottler has sold finished products made from the concentrates or syrups to a third party. For unconsolidated bottling partners, it recognizes them when the concentrates or syrups are sold to the bottler. This concerns when sales are reported, not the price.",
+    "ticker": "KO",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   }
+  ],
+  "final_claim_id": null,
+  "final_unit": null,
+  "final_value": null,
+  "status": "answered",
+  "summary": "Coca-Cola said it has implemented an incidence-based concentrate pricing model in most markets. Under that model, the concentrate price depends on factors including bottler pricing, the channels where the finished products are sold, and package mix. Its U.S. conversion agreements (CBAs) require mandatory incidence pricing. Revenue timing depends on whether the bottler is consolidated."
+ },
+ "retrieval": {
+  "first_search": {
+   "filings:s1": [
+    "chk_1069eeb02fcad3ac1c9ebb1edf35fa1f8369a21c66c5515eaf553bfb01519121",
+    "chk_4103c398c905ea9307141f320898b4e9db3a537e24674c52434148e533caf908",
+    "chk_2b9d465f08d4e35239c503d4fdacc10cb2f03523f3d71fc0aa0b23ea82769c8d",
+    "chk_bf405013d93aaa8433ed5b0523ac3e1beddd0068c8696ef512d572d84343325f",
+    "chk_47ca2e659403642aae366b86ce8c3bd5dd07279a44fdb2fa23a5c80d99781792",
+    "chk_16e0105876b1a6b829caca5cbcca7c0e8dbb04c9aa68addfea8c36c903c4ee6e",
+    "chk_56e05bcfe421782598b0fdce18dec61e1b054c573e23004cf0f2bce27124c7e5",
+    "chk_c2f684fb11f416aab6c14524db7474442292570e13ce1c5afceb84965723ac71"
+   ]
+  },
+  "seen": [
+   "chk_1069eeb02fcad3ac1c9ebb1edf35fa1f8369a21c66c5515eaf553bfb01519121",
+   "chk_4103c398c905ea9307141f320898b4e9db3a537e24674c52434148e533caf908",
+   "chk_2b9d465f08d4e35239c503d4fdacc10cb2f03523f3d71fc0aa0b23ea82769c8d",
+   "chk_bf405013d93aaa8433ed5b0523ac3e1beddd0068c8696ef512d572d84343325f",
+   "chk_47ca2e659403642aae366b86ce8c3bd5dd07279a44fdb2fa23a5c80d99781792",
+   "chk_16e0105876b1a6b829caca5cbcca7c0e8dbb04c9aa68addfea8c36c903c4ee6e",
+   "chk_56e05bcfe421782598b0fdce18dec61e1b054c573e23004cf0f2bce27124c7e5",
+   "chk_c2f684fb11f416aab6c14524db7474442292570e13ce1c5afceb84965723ac71"
+  ]
+ },
+ "run_id": "b1851377-34cb-4ab3-a714-57ba7325043b",
+ "run_status": "done",
+ "split": "handwritten",
+ "started_at": "2026-11-16T22:14:54.392460+00:00",
+ "status": "done",
+ "system_config_hash": "609c0b8d3387b1ce1d168e92bc0af076a1cc5929d1640386326043ecb0c21b67",
+ "system_id": "m6-hybrid",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 47209,
+  "cache_write_tokens": 17777,
+  "input_tokens": 8259,
+  "output_tokens": 4427
+ }
+}

@@ -1,0 +1,252 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 0,
+  "numeric_valid": 0,
+  "text_pending_judge": [
+   {
+    "chunk_ids": [
+     "chk_cdde8d0963db8f887e2bb0639468ae919dda9f94f3eb67f4ae130c22cfb759f2"
+    ],
+    "claim_id": "c6",
+    "text": "At December 31, 2025, BAC's deposits totaled $2.02 trillion, of which estimated uninsured U.S. deposits were $723.0 billion and uninsured non-U.S. deposits were $134.9 billion. These bear on the potential for outflows."
+   }
+  ],
+  "text_string_supported": 6,
+  "text_total": 7,
+  "uncited": 0
+ },
+ "cost_usd": "0.104823860",
+ "error": null,
+ "finished_at": "2026-11-16T22:08:25.048842+00:00",
+ "latency_ms": 47743,
+ "prediction": {
+  "parse_ok": true,
+  "text": "Bank of America's FY2025 10-K describes several liquidity risks tied to deposit outflows. They are unexpected simultaneous draws on deposits, failure to attract or retain client deposits, and large-scale deposit migration. Drivers include clients seeking higher yields, moving to perceived-safer banks, shifting into stablecoins or other non-bank platforms, and spending changes. Loss of confidence, such as after bank failures, is also a driver. Management says it stress-tests potential deposit withdrawals and considers much of its deposit base stable. At December 31, 2025, deposits totaled $2.02 trillion, including $723.0 billion of estimated uninsured U.S. deposits and $134.9 billion of uninsured non-U.S. deposits. The Q2 2026 10-Q reports no material changes to these risk factors.\nBAC's FY2025 10-K risk factors say its liquidity or cost of funds may be negatively impacted by unexpected simultaneous draws on credit lines or deposits, and by the failure to attract or retain client deposits or invested funds, including large-scale deposit migration.\nBAC cites as drivers of deposit migration: attrition from clients seeking higher yielding deposits or an alternative institution perceived to be safer, moving balances into digital assets (e.g., stablecoin) or other non-bank platforms, and changes in spending behavior due to inflation, a decline in the economy or other drivers increasing the need for cash.\nBAC's risk factors also point to negative views or loss of confidence about the company, the financial services industry or the U.S. monetary system, or a specific news event such as bank failures, as a source of liquidity pressure.\nIn the MD&A, BAC says its primary liquidity risk management objective is to meet expected or unexpected cash flow and collateral requirements, including customer deposit withdrawals. It uses liquidity stress analysis to size liquidity against contractual and contingent outflows, including potential deposit withdrawals.\nBAC states that it considers a substantial portion of its deposit base a stable, low-cost and consistent funding source, generally less sensitive to interest rate changes, market volatility or credit rating changes than wholesale funding.\nAt December 31, 2025, BAC's deposits totaled $2.02 trillion, of which estimated uninsured U.S. deposits were $723.0 billion and uninsured non-U.S. deposits were $134.9 billion. These bear on the potential for outflows.\nThe Q2 2026 10-Q states there are no material changes from the risk factors in the 2025 Form 10-K."
+ },
+ "question_id": "hq_395269fb91c24e7aba645db4529fd483",
+ "question_sha": "665f2299d1f2f458518f772d8afa9d688a3a5248b9197773d4c57e14444cbc9f",
+ "raw_output": {
+  "caveats": [
+   "The risk factor passage was retrieved starting mid-sentence, so the lead-in text was not seen.",
+   "The liquidity stress analysis quotes come from a search snippet, not the full chunk.",
+   "The filings as retrieved do not quantify expected deposit outflows.",
+   "The Q2 2026 10-Q only incorporates the 2025 10-K risk factors by reference, so the risk description comes from the 10-K."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_2c1d6048db1ee7eca049ba0f30222bd8fca220220525e92da0512189ff1891a1"
+     }
+    ],
+    "id": "c1",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "BAC's FY2025 10-K risk factors say its liquidity or cost of funds may be negatively impacted by unexpected simultaneous draws on credit lines or deposits, and by the failure to attract or retain client deposits or invested funds, including large-scale deposit migration.",
+    "ticker": "BAC",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_2c1d6048db1ee7eca049ba0f30222bd8fca220220525e92da0512189ff1891a1"
+     }
+    ],
+    "id": "c2",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "BAC cites as drivers of deposit migration: attrition from clients seeking higher yielding deposits or an alternative institution perceived to be safer, moving balances into digital assets (e.g., stablecoin) or other non-bank platforms, and changes in spending behavior due to inflation, a decline in the economy or other drivers increasing the need for cash.",
+    "ticker": "BAC",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_977dca5f44039ed531f14e8195962690fb531e84390266414c9f8d3a1f76f8e3"
+     }
+    ],
+    "id": "c3",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "BAC's risk factors also point to negative views or loss of confidence about the company, the financial services industry or the U.S. monetary system, or a specific news event such as bank failures, as a source of liquidity pressure.",
+    "ticker": "BAC",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_db12b49c80bfdcfe81c298309acb692849e7e77a5c8ddf166513152068fc3513"
+     },
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_fc91c9c16e7052dae7d988b7f223ce455049fb43bd2493d69fe9c0a339c9dbcd"
+     }
+    ],
+    "id": "c4",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "In the MD&A, BAC says its primary liquidity risk management objective is to meet expected or unexpected cash flow and collateral requirements, including customer deposit withdrawals. It uses liquidity stress analysis to size liquidity against contractual and contingent outflows, including potential deposit withdrawals.",
+    "ticker": "BAC",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_f18727e83cfe12953f28fe956bc9752ea364f1e92e06ba7c94363f3517b13db6"
+     }
+    ],
+    "id": "c5",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "BAC states that it considers a substantial portion of its deposit base a stable, low-cost and consistent funding source, generally less sensitive to interest rate changes, market volatility or credit rating changes than wholesale funding.",
+    "ticker": "BAC",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_cdde8d0963db8f887e2bb0639468ae919dda9f94f3eb67f4ae130c22cfb759f2"
+     }
+    ],
+    "id": "c6",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "At December 31, 2025, BAC's deposits totaled $2.02 trillion, of which estimated uninsured U.S. deposits were $723.0 billion and uninsured non-U.S. deposits were $134.9 billion. These bear on the potential for outflows.",
+    "ticker": "BAC",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_3ad5b7ddfd9cef93b5403096c497400f870644cde204f9a2721e6f6f9e279e40"
+     }
+    ],
+    "id": "c7",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "Q2",
+     "fiscal_year": 2026
+    },
+    "text": "The Q2 2026 10-Q states there are no material changes from the risk factors in the 2025 Form 10-K.",
+    "ticker": "BAC",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   }
+  ],
+  "final_claim_id": null,
+  "final_unit": null,
+  "final_value": null,
+  "status": "answered",
+  "summary": "Bank of America's FY2025 10-K describes several liquidity risks tied to deposit outflows. They are unexpected simultaneous draws on deposits, failure to attract or retain client deposits, and large-scale deposit migration. Drivers include clients seeking higher yields, moving to perceived-safer banks, shifting into stablecoins or other non-bank platforms, and spending changes. Loss of confidence, such as after bank failures, is also a driver. Management says it stress-tests potential deposit withdrawals and considers much of its deposit base stable. At December 31, 2025, deposits totaled $2.02 trillion, including $723.0 billion of estimated uninsured U.S. deposits and $134.9 billion of uninsured non-U.S. deposits. The Q2 2026 10-Q reports no material changes to these risk factors."
+ },
+ "retrieval": {
+  "first_search": {
+   "filings:s1": [
+    "chk_2c1d6048db1ee7eca049ba0f30222bd8fca220220525e92da0512189ff1891a1",
+    "chk_03ad723d7d0e2aa050d68e6cf166c83034a77942361beffdf74e4706b6ef1ac9",
+    "chk_3543a5c341d85ee1d4a7d5cb032c89437a7f2e0ee0530d00b15a2aeb8aff6e44",
+    "chk_977dca5f44039ed531f14e8195962690fb531e84390266414c9f8d3a1f76f8e3",
+    "chk_210b658ec79cb84441c9a2f2d1c066208a5840a1801d4aa4ea111ff8a77c3fb4",
+    "chk_71cbe1be2fd66be0e315818dec78570acb6dcbfcddfc09754fd834aa98009d1b",
+    "chk_931c7a21938401b8a61f30116d91f9c4c310079c682307b76ac6f2bb940826ff",
+    "chk_533ac4fb7547dc3837ecca5feb94b4633f0f09a43adbbac7c7dac0c935b23ca2"
+   ],
+   "filings:s2": [
+    "chk_db12b49c80bfdcfe81c298309acb692849e7e77a5c8ddf166513152068fc3513",
+    "chk_03a4e84edaab9932ce60c305bfe66b1b693b114e8decc9893d7c0cfdcabfa3b0",
+    "chk_977e2622043f928b5bfc366178752a7b53ff0e6d1e0e8326f231cab8df65d48d",
+    "chk_514e8e167d5b146745b152ba67c4490ab948e64c7cc304b6fbda35ea26393cab",
+    "chk_f18727e83cfe12953f28fe956bc9752ea364f1e92e06ba7c94363f3517b13db6",
+    "chk_cdde8d0963db8f887e2bb0639468ae919dda9f94f3eb67f4ae130c22cfb759f2",
+    "chk_d1b5983304b157d38925a817c7f0b0a378546abadc9ba81a545597f82ad65fb3",
+    "chk_1699c928573df0de3be5f1bba634474f10d27243124647244b36d62f1e4ac705"
+   ],
+   "filings:s3": [
+    "chk_3ad5b7ddfd9cef93b5403096c497400f870644cde204f9a2721e6f6f9e279e40"
+   ]
+  },
+  "seen": [
+   "chk_3ad5b7ddfd9cef93b5403096c497400f870644cde204f9a2721e6f6f9e279e40",
+   "chk_2c1d6048db1ee7eca049ba0f30222bd8fca220220525e92da0512189ff1891a1",
+   "chk_03ad723d7d0e2aa050d68e6cf166c83034a77942361beffdf74e4706b6ef1ac9",
+   "chk_3543a5c341d85ee1d4a7d5cb032c89437a7f2e0ee0530d00b15a2aeb8aff6e44",
+   "chk_977dca5f44039ed531f14e8195962690fb531e84390266414c9f8d3a1f76f8e3",
+   "chk_210b658ec79cb84441c9a2f2d1c066208a5840a1801d4aa4ea111ff8a77c3fb4",
+   "chk_71cbe1be2fd66be0e315818dec78570acb6dcbfcddfc09754fd834aa98009d1b",
+   "chk_931c7a21938401b8a61f30116d91f9c4c310079c682307b76ac6f2bb940826ff",
+   "chk_533ac4fb7547dc3837ecca5feb94b4633f0f09a43adbbac7c7dac0c935b23ca2",
+   "chk_db12b49c80bfdcfe81c298309acb692849e7e77a5c8ddf166513152068fc3513",
+   "chk_03a4e84edaab9932ce60c305bfe66b1b693b114e8decc9893d7c0cfdcabfa3b0",
+   "chk_977e2622043f928b5bfc366178752a7b53ff0e6d1e0e8326f231cab8df65d48d",
+   "chk_514e8e167d5b146745b152ba67c4490ab948e64c7cc304b6fbda35ea26393cab",
+   "chk_f18727e83cfe12953f28fe956bc9752ea364f1e92e06ba7c94363f3517b13db6",
+   "chk_cdde8d0963db8f887e2bb0639468ae919dda9f94f3eb67f4ae130c22cfb759f2",
+   "chk_d1b5983304b157d38925a817c7f0b0a378546abadc9ba81a545597f82ad65fb3",
+   "chk_1699c928573df0de3be5f1bba634474f10d27243124647244b36d62f1e4ac705",
+   "chk_9ffb32a32fc49ce62ec23145fad5f4784a62557e3bcea1d8aef3145796e4797a",
+   "chk_fc91c9c16e7052dae7d988b7f223ce455049fb43bd2493d69fe9c0a339c9dbcd",
+   "chk_e127c3b50c82236b7f95ee73dba5d3244553175ce6a99cdff39dac71824b8ac6"
+  ]
+ },
+ "run_id": "d151d104-2d46-4e74-b8f7-aed2d81b5704",
+ "run_status": "done",
+ "split": "handwritten",
+ "started_at": "2026-11-16T22:07:37.228814+00:00",
+ "status": "done",
+ "system_config_hash": "609c0b8d3387b1ce1d168e92bc0af076a1cc5929d1640386326043ecb0c21b67",
+ "system_id": "m6-hybrid",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 114234,
+  "cache_write_tokens": 43033,
+  "input_tokens": 14558,
+  "output_tokens": 10876
+ }
+}

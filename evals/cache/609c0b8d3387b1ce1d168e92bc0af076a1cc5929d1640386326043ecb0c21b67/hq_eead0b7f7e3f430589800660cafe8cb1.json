@@ -1,0 +1,293 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 2,
+  "numeric_valid": 2,
+  "text_pending_judge": [],
+  "text_string_supported": 5,
+  "text_total": 5,
+  "uncited": 0
+ },
+ "cost_usd": "0.206560965",
+ "error": null,
+ "finished_at": "2026-11-16T22:21:20.085347+00:00",
+ "latency_ms": 80104,
+ "prediction": {
+  "parse_ok": true,
+  "text": "UnitedHealth said its 2025 medical costs ran above what it had priced for. In the FY2025 10-K it said pricing and member-health assumptions were \"well-short\" of the medical cost trends incurred. It listed these drivers: Medicare Part D changes under the IRA, elevated cost trend, and growth in Medicare Advantage and higher-acuity members. It also cited care use above expectations, higher unit costs and service intensity, and the health profile of newly added members. Favorable prior-year reserve development shrank to $140 million from $700 million in 2024. Operating income fell from $32.287 billion to $18.964 billion, a decline of about 41.26%.\nIn its FY2025 10-K, UnitedHealth said medical costs increased primarily due to the IRA-driven impacts on Medicare Part D plans, elevated medical cost trend, and growth in people served through Medicare Advantage and those with higher acuity needs. It said the medical care ratio rose because of the revenue effects of Medicare funding reductions, elevated cost trend, the member profile of newly added patients under value-based care arrangements, decreased favorable development, the IRA's effect on Part D, and market morbidity changes in its individual exchange offerings.\nManagement said it observed increased care patterns above what it expected and contemplated in its pricing and benefits design. It also said health care unit costs and the intensity of services rose, driven by provider pricing increases and additional services bundled per visit. The 10-Qs described the higher care use as most notable in physician and outpatient care, and to a lesser extent inpatient and emergency room use.\nUnitedHealth stated that for 2025 its pricing trends and patient and member health status assumptions were well-short of the medical cost trends incurred, significantly impacting its earnings.\nMedical costs included favorable development related to prior years of $140 million in 2025, compared with $700 million in 2024 and $840 million in 2023. Less favorable reserve development in 2025 offset less of the cost increase.\nThe Q3 2025 10-Q said the member profile of newly added patients under value-based care arrangements, people served in Medicare Advantage in markets where others exited, and people served in the individual exchange business contributed to increased medical costs. The filings also said 2025 medical costs were significantly above initial cost trend estimates, adding to the compounding impact of prior multi-year Medicare Advantage rate shortfalls.\nUnitedHealth's FY2025 operating income was about $18.964 billion, down from $32.287 billion in FY2024.\nOperating income fell about 41.26% from FY2024 to FY2025."
+ },
+ "question_id": "hq_eead0b7f7e3f430589800660cafe8cb1",
+ "question_sha": "7be0276f4adcca3d95691f62253021de46728111e96d6a4c343b95dca86159db",
+ "raw_output": {
+  "caveats": [
+   "Management's explanations are qualitative. The retrieved passages give no numeric bridge of how much each driver added to medical costs.",
+   "I did not compute a medical cost ratio from the 'cost_of_revenue' facts. That tag (CostOfGoodsAndServicesSold) is not shown to be UnitedHealth's total medical costs, and the evidence does not support treating it that way.",
+   "The 10-Q passages describe interim 2025 periods. The FY2025 10-K passages cover the full year.",
+   "The Q3 'Medical Costs and MCR' quote was verified only against a search snippet. One Medicare Advantage rate passage in the FY2025 10-K was not fetched in full."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_271781dd425f4e71846d555091e443cfccf28c4eeefe275ff89e5347415d0905"
+     }
+    ],
+    "id": "c1",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "In its FY2025 10-K, UnitedHealth said medical costs increased primarily due to the IRA-driven impacts on Medicare Part D plans, elevated medical cost trend, and growth in people served through Medicare Advantage and those with higher acuity needs. It said the medical care ratio rose because of the revenue effects of Medicare funding reductions, elevated cost trend, the member profile of newly added patients under value-based care arrangements, decreased favorable development, the IRA's effect on Part D, and market morbidity changes in its individual exchange offerings.",
+    "ticker": "UNH",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_391052e87f3eff7f8b43ea8dd01ec03f6aabd58f97f739f32253d30e817608a8"
+     },
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_0846296d71b22a2817d1d3573fc905067cb38c778aac80f2be97a52ad7ad6bc8"
+     },
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_31e985bde09212b25cff4c4fa87a59d24ba211c9d413d05ff94d94f80e946c3f"
+     }
+    ],
+    "id": "c2",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Management said it observed increased care patterns above what it expected and contemplated in its pricing and benefits design. It also said health care unit costs and the intensity of services rose, driven by provider pricing increases and additional services bundled per visit. The 10-Qs described the higher care use as most notable in physician and outpatient care, and to a lesser extent inpatient and emergency room use.",
+    "ticker": "UNH",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_54a447e9b0d11bf85dcb2e9a0ac60c25842aef5311b288839442b4df70a31906"
+     },
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_227247b62b0d50929f4265e294d06d75c3f0dfb6d9b7152610e550f257de2637"
+     }
+    ],
+    "id": "c3",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "UnitedHealth stated that for 2025 its pricing trends and patient and member health status assumptions were well-short of the medical cost trends incurred, significantly impacting its earnings.",
+    "ticker": "UNH",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_3525b21ed20ea3990441897859c5785bdc466135adf3a6d788a30d2e0b190cb2"
+     }
+    ],
+    "id": "c4",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Medical costs included favorable development related to prior years of $140 million in 2025, compared with $700 million in 2024 and $840 million in 2023. Less favorable reserve development in 2025 offset less of the cost increase.",
+    "ticker": "UNH",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_31e985bde09212b25cff4c4fa87a59d24ba211c9d413d05ff94d94f80e946c3f"
+     },
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_d882ee3576e3bca88c98a3c9fcc72226e291dd899f0acc0c6cf3cfbaa6ae65d8"
+     }
+    ],
+    "id": "c5",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "Q3",
+     "fiscal_year": 2025
+    },
+    "text": "The Q3 2025 10-Q said the member profile of newly added patients under value-based care arrangements, people served in Medicare Advantage in markets where others exited, and people served in the individual exchange business contributed to increased medical costs. The filings also said 2025 medical costs were significantly above initial cost trend estimates, adding to the compounding impact of prior multi-year Medicare Advantage rate shortfalls.",
+    "ticker": "UNH",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3089"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3084"
+     }
+    ],
+    "id": "c6",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "UnitedHealth's FY2025 operating income was about $18.964 billion, down from $32.287 billion in FY2024.",
+    "ticker": "UNH",
+    "unit": "USD",
+    "value": "18964000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_1"
+     }
+    ],
+    "id": "c7",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Operating income fell about 41.26% from FY2024 to FY2025.",
+    "ticker": "UNH",
+    "unit": "percent",
+    "value": "-41.264285935516",
+    "value_basis": "computation"
+   }
+  ],
+  "final_claim_id": null,
+  "final_unit": null,
+  "final_value": null,
+  "status": "answered",
+  "summary": "UnitedHealth said its 2025 medical costs ran above what it had priced for. In the FY2025 10-K it said pricing and member-health assumptions were \"well-short\" of the medical cost trends incurred. It listed these drivers: Medicare Part D changes under the IRA, elevated cost trend, and growth in Medicare Advantage and higher-acuity members. It also cited care use above expectations, higher unit costs and service intensity, and the health profile of newly added members. Favorable prior-year reserve development shrank to $140 million from $700 million in 2024. Operating income fell from $32.287 billion to $18.964 billion, a decline of about 41.26%."
+ },
+ "retrieval": {
+  "first_search": {
+   "filings:s6": [
+    "chk_5cd9ee1671da21db3bc064e151161fb76293280b4205d47499a2f42869867fe1",
+    "chk_271781dd425f4e71846d555091e443cfccf28c4eeefe275ff89e5347415d0905",
+    "chk_391052e87f3eff7f8b43ea8dd01ec03f6aabd58f97f739f32253d30e817608a8",
+    "chk_3525b21ed20ea3990441897859c5785bdc466135adf3a6d788a30d2e0b190cb2",
+    "chk_16fb82b2ef807d3acb26d5a231edcdabcf4677bb3612a8df1c0354bef357a7d8",
+    "chk_54a447e9b0d11bf85dcb2e9a0ac60c25842aef5311b288839442b4df70a31906",
+    "chk_52773ae12dfa2f6a1989f1a9c881eb9f17a787b90c7ed79762295e2c79dcc368",
+    "chk_b650d53db26d288d803d0a92b987cf508f3fbce1792239fc31536ee764c496ee"
+   ],
+   "filings:s7": [
+    "chk_6f084952f4f4ef221f6b008f3e8fa2499c54106d4c4625c93ed0013f00a04500",
+    "chk_266dd3264fc6ab1f54e870afe222debf4e26398b22c787f4303200547ec789c8",
+    "chk_21f4c03db28152dad6b366946a7ed5b484a0b16ad7a6aae481eb063d7e4c70e0",
+    "chk_f17e84b6df93c311e55a9048829f75e75cc7829d6fc2afbc21926382f6029672",
+    "chk_5b7c8360c8f15455d03cf76d505a991fa9e6eb70d1ff4490e4125e5f8d38275f",
+    "chk_992113f3cf35b38db6d052c8dbeb95812fbca07a44ea47667d2897a0b0640620",
+    "chk_1f0e997e2656e09c4dc4e7e02cd2c26fe96d16ce3249df612449e4b072f50144",
+    "chk_d30a56f437c62ac8246bed2ee505da46282fa316dcea45d04ee11917cd416fa4"
+   ],
+   "filings:s8": [
+    "chk_0846296d71b22a2817d1d3573fc905067cb38c778aac80f2be97a52ad7ad6bc8",
+    "chk_88fd6e932a7a6272ec1c3871023a6f6d8667cbc6c7d8e48c3e27f3019f1d318a",
+    "chk_affbfcfb1cb09fcb66eaabaa69589bc300f1791d17a3663fbee0c18a62aa23df",
+    "chk_a65b10965da1cea9b2dfb326e8b357877d47e28d1f46ac6c3a17debf3eb20af1",
+    "chk_3200692ac500dabe839c949b64b9cbebb86b9e8da43304a8f2de246aca02c258",
+    "chk_396c1f5702d9cf0430774858040d399d07dce348940c75b869109c890eb7774a",
+    "chk_596469fd4f7bf794b27a7c71573fcd4a707fa3e478b3056137086cc47edf00db",
+    "chk_ea6cca0fb8e37d4fa308753ea5889b8d2164a3e106a96cc976d87304679a98fb"
+   ],
+   "filings:s9": [
+    "chk_31e985bde09212b25cff4c4fa87a59d24ba211c9d413d05ff94d94f80e946c3f",
+    "chk_d882ee3576e3bca88c98a3c9fcc72226e291dd899f0acc0c6cf3cfbaa6ae65d8",
+    "chk_1984967db73384db7a88012b8109c6ce0173ac6fb8012f152efec5c3d7244438",
+    "chk_227247b62b0d50929f4265e294d06d75c3f0dfb6d9b7152610e550f257de2637",
+    "chk_89b0220a6897eb1e7cb17b6a17ddd66a1d960bc5b58b5f096fc77b6b089088c6",
+    "chk_2f7d6d602789bb862ec3b44b4cd0edd2afa0129e7a9b9a656308a4481c4fdbd3",
+    "chk_291f48efb457e1e55bffaf3135deeebe855806481e301ed5986840165946050b",
+    "chk_feef1092243a8d3e45c3d8b80a50c2afde0e01096dbff29d83b8613962014240"
+   ]
+  },
+  "seen": [
+   "chk_5cd9ee1671da21db3bc064e151161fb76293280b4205d47499a2f42869867fe1",
+   "chk_271781dd425f4e71846d555091e443cfccf28c4eeefe275ff89e5347415d0905",
+   "chk_391052e87f3eff7f8b43ea8dd01ec03f6aabd58f97f739f32253d30e817608a8",
+   "chk_3525b21ed20ea3990441897859c5785bdc466135adf3a6d788a30d2e0b190cb2",
+   "chk_16fb82b2ef807d3acb26d5a231edcdabcf4677bb3612a8df1c0354bef357a7d8",
+   "chk_54a447e9b0d11bf85dcb2e9a0ac60c25842aef5311b288839442b4df70a31906",
+   "chk_52773ae12dfa2f6a1989f1a9c881eb9f17a787b90c7ed79762295e2c79dcc368",
+   "chk_b650d53db26d288d803d0a92b987cf508f3fbce1792239fc31536ee764c496ee",
+   "chk_31e985bde09212b25cff4c4fa87a59d24ba211c9d413d05ff94d94f80e946c3f",
+   "chk_d882ee3576e3bca88c98a3c9fcc72226e291dd899f0acc0c6cf3cfbaa6ae65d8",
+   "chk_1984967db73384db7a88012b8109c6ce0173ac6fb8012f152efec5c3d7244438",
+   "chk_227247b62b0d50929f4265e294d06d75c3f0dfb6d9b7152610e550f257de2637",
+   "chk_89b0220a6897eb1e7cb17b6a17ddd66a1d960bc5b58b5f096fc77b6b089088c6",
+   "chk_2f7d6d602789bb862ec3b44b4cd0edd2afa0129e7a9b9a656308a4481c4fdbd3",
+   "chk_291f48efb457e1e55bffaf3135deeebe855806481e301ed5986840165946050b",
+   "chk_feef1092243a8d3e45c3d8b80a50c2afde0e01096dbff29d83b8613962014240",
+   "chk_6f084952f4f4ef221f6b008f3e8fa2499c54106d4c4625c93ed0013f00a04500",
+   "chk_266dd3264fc6ab1f54e870afe222debf4e26398b22c787f4303200547ec789c8",
+   "chk_21f4c03db28152dad6b366946a7ed5b484a0b16ad7a6aae481eb063d7e4c70e0",
+   "chk_f17e84b6df93c311e55a9048829f75e75cc7829d6fc2afbc21926382f6029672",
+   "chk_5b7c8360c8f15455d03cf76d505a991fa9e6eb70d1ff4490e4125e5f8d38275f",
+   "chk_992113f3cf35b38db6d052c8dbeb95812fbca07a44ea47667d2897a0b0640620",
+   "chk_1f0e997e2656e09c4dc4e7e02cd2c26fe96d16ce3249df612449e4b072f50144",
+   "chk_d30a56f437c62ac8246bed2ee505da46282fa316dcea45d04ee11917cd416fa4",
+   "chk_0846296d71b22a2817d1d3573fc905067cb38c778aac80f2be97a52ad7ad6bc8",
+   "chk_88fd6e932a7a6272ec1c3871023a6f6d8667cbc6c7d8e48c3e27f3019f1d318a",
+   "chk_affbfcfb1cb09fcb66eaabaa69589bc300f1791d17a3663fbee0c18a62aa23df",
+   "chk_a65b10965da1cea9b2dfb326e8b357877d47e28d1f46ac6c3a17debf3eb20af1",
+   "chk_3200692ac500dabe839c949b64b9cbebb86b9e8da43304a8f2de246aca02c258",
+   "chk_396c1f5702d9cf0430774858040d399d07dce348940c75b869109c890eb7774a",
+   "chk_596469fd4f7bf794b27a7c71573fcd4a707fa3e478b3056137086cc47edf00db",
+   "chk_ea6cca0fb8e37d4fa308753ea5889b8d2164a3e106a96cc976d87304679a98fb"
+  ]
+ },
+ "run_id": "3ddc40e9-1c71-4c9d-b93e-035307d8a60a",
+ "run_status": "done",
+ "split": "handwritten",
+ "started_at": "2026-11-16T22:19:59.894385+00:00",
+ "status": "done",
+ "system_config_hash": "609c0b8d3387b1ce1d168e92bc0af076a1cc5929d1640386326043ecb0c21b67",
+ "system_id": "m6-hybrid",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 241045,
+  "cache_write_tokens": 73965,
+  "input_tokens": 28166,
+  "output_tokens": 18474
+ }
+}

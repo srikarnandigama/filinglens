@@ -43,8 +43,11 @@ after its final acceptance run. M5 was accepted on 2026-11-12 (see docs/M5_STATU
 - M6 IN PROGRESS (2026-11-12): Phase A approved (docs/M6_PHASE_A.md, D111-D124); Phase B
   done offline (docs/M6_PHASE_B.md): fixes behind RunConfig flags defaulting to M5 behavior,
   M5 cache keys pinned, 307 passed / 2 skipped, CI dry run 237 passed / 72 skipped. Uncommitted.
-  Phase B committed (651416f). D117 kept (2026-11-15). Phase C done (docs/M6_PHASE_C.md):
-  M6 spend $5.55 of $40; waiting on the student's Phase D go-ahead (D7 hybrid qualifies).
+  Phase B committed (651416f). D117 kept (2026-11-15). Phase C done (docs/M6_PHASE_C.md).
+  Phase D done 2026-11-16 (docs/M6_STATUS.md, D125-D126): M6 spend $29.61 of $40; numeric
+  50-sample M5 49/50 -> M6 50/50 at $0.061/q (caching); handwritten 30 run once: no-answers
+  6 -> 0, judge mean 3.23 -> 3.97 (sign p 0.013). WAITING FOR THE STUDENT'S M6 ACCEPTANCE.
+  Report: `python -m evals.report <7 M5 configs> --m6` (M5 part unchanged, tested).
 - (M5-era note) NEXT SESSION, FIRST TURN: do not change, run or commit anything. Read CLAUDE.md,
   docs/M5_STATUS.md, evals/results/report.md and docs/DECISIONS.md D104-D110, summarize
   the M5 state, and wait for the student's instructions.

@@ -1,0 +1,71 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 1,
+  "numeric_valid": 1,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.0249657",
+ "error": null,
+ "finished_at": "2026-11-16T20:29:43.463621+00:00",
+ "latency_ms": 8615,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD",
+  "value": "845000000"
+ },
+ "question_id": "q_2927f15951d29231",
+ "question_sha": "38e2933483c52033e95560edf2c8017817de812b4160239422c8325a0e82ec6e",
+ "raw_output": {
+  "caveats": [
+   "The Q4 value is derived (full-year 2025 capex less the nine-month year-to-date figure), not directly reported as a standalone quarter."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3009"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q4",
+     "fiscal_year": 2025
+    },
+    "text": "Pfizer's capital expenditures (payments to acquire property, plant and equipment) in fiscal Q4 2025 were about $845 million. This is derived as FY2025 capex of $2,629 million minus capex of $1,784 million for the nine months ended 2025-09-28.",
+    "ticker": "PFE",
+    "unit": "USD",
+    "value": "845000000",
+    "value_basis": "fact"
+   }
+  ],
+  "final_claim_id": "c1",
+  "final_unit": "USD",
+  "final_value": "845000000",
+  "status": "answered",
+  "summary": "Pfizer's capital expenditures in fiscal Q4 2025 (2025-09-29 to 2025-12-31) were about $845 million. This figure is derived from full-year and nine-month figures."
+ },
+ "run_id": "38f37d0e-d48a-4576-a495-f510a8a60030",
+ "run_status": "done",
+ "split": "test",
+ "started_at": "2026-11-16T20:29:34.804782+00:00",
+ "status": "done",
+ "system_config_hash": "076d44ae54839bdbe0f6ccf45947a709b3a3d1f851b4bbb7bc21239958ef83cf",
+ "system_id": "m6-no-verifier",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 25117,
+  "cache_write_tokens": 5264,
+  "input_tokens": 12,
+  "output_tokens": 927
+ }
+}

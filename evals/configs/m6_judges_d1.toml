@@ -1,0 +1,8 @@
+# D6a: Opus rubric and claim judges for D1, the M6 handwritten run (D093 protocol, Batch API,
+# cached): `python -m evals.judge run --plan evals/configs/m6_judges_d1.toml`. The cap covers
+# the judge's per-item reservations ($0.02 rubric, $0.01 claim); expected spend about $0.35 (D125).
+name = "m6-judges-d1"
+budget = "m6"
+spent_usd = "0.40289400"  # actual spend of the finished step (D123 re-sum rule)
+spend_cap_usd = "1.00"
+configs = ["evals/configs/m6_handwritten.toml"]

@@ -1,0 +1,71 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 1,
+  "numeric_valid": 1,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.0346841",
+ "error": null,
+ "finished_at": "2026-11-16T20:19:14.344553+00:00",
+ "latency_ms": 10042,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD",
+  "value": "95723000000"
+ },
+ "question_id": "q_60df7e50a5af2548",
+ "question_sha": "0cfe79e1662670ef3c2448c2d9bc0c0e80122cefc34802f6d08a2148e4fbe547",
+ "raw_output": {
+  "caveats": [
+   "Q4 revenue is a derived value: fiscal-year revenue of $303,154,000,000 minus the 36-week year-to-date revenue of $207,431,000,000 (through 2026-05-10). It is not a separately reported quarterly figure."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3342"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q4",
+     "fiscal_year": 2026
+    },
+    "text": "Costco's total revenue in fiscal Q4 2026 (2026-05-11 to 2026-08-30) was about $95.72 billion ($95,723,000,000).",
+    "ticker": "COST",
+    "unit": "USD",
+    "value": "95723000000",
+    "value_basis": "fact"
+   }
+  ],
+  "final_claim_id": "c1",
+  "final_unit": "USD",
+  "final_value": "95723000000",
+  "status": "answered",
+  "summary": "Costco's total revenue for fiscal Q4 2026 (May 11 to August 30, 2026) was about $95.72 billion. This figure is derived, not directly reported."
+ },
+ "run_id": "6d1e4ca7-b70e-47f0-aae4-25a6abfbdb3f",
+ "run_status": "done",
+ "split": "test",
+ "started_at": "2026-11-16T20:19:04.252535+00:00",
+ "status": "done",
+ "system_config_hash": "52a48e08f9ef2a659803092d4f5678475241e872105c99154f86b7bbc29038a3",
+ "system_id": "m6",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 18526,
+  "cache_write_tokens": 4607,
+  "input_tokens": 4662,
+  "output_tokens": 1199
+ }
+}

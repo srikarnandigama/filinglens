@@ -1,0 +1,201 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 0,
+  "numeric_valid": 0,
+  "text_pending_judge": [
+   {
+    "chunk_ids": [
+     "chk_9074510435f18aa190f3b0e783b63da35add5fd3ebad1f9457ad497690d87864"
+    ],
+    "claim_id": "c1",
+    "text": "In October 2023 Chevron announced a definitive merger agreement with Hess Corporation. The 10-K's MD&A refers readers to Note 30, Agreement to Acquire Hess Corporation, for details."
+   },
+   {
+    "chunk_ids": [
+     "chk_ca4f7131571fb6cc0e22097c6667054384e46bcb74a7ad38fa888d189c1dd93c",
+     "chk_ac40d0b888b22106ef53175cb5c3996f79aa6298dc5fb4cae00b326cb3709543"
+    ],
+    "claim_id": "c5",
+    "text": "The arbitration merits hearing on whether the Stabroek ROFR applies to the merger was scheduled for May 2025. A decision was expected in approximately the following three months. The filing reports no arbitration outcome, so the merger remained pending."
+   }
+  ],
+  "text_string_supported": 3,
+  "text_total": 5,
+  "uncited": 0
+ },
+ "cost_usd": "0.080970590",
+ "error": null,
+ "finished_at": "2026-11-16T22:03:16.943897+00:00",
+ "latency_ms": 60179,
+ "prediction": {
+  "parse_ok": true,
+  "text": "As of Chevron's fiscal 2024 10-K, the Hess acquisition had not closed. Chevron had signed a merger agreement with Hess in October 2023. Hess stockholders approved the merger on May 28, 2024, and the FTC announced on September 30, 2024 that it had voted to accept a consent agreement. The Stabroek right-of-first-refusal arbitration was still ongoing and had no outcome. Chevron said the arbitration had delayed completion. The merits hearing was scheduled for May 2025, and a decision was expected about three months after that.\nIn October 2023 Chevron announced a definitive merger agreement with Hess Corporation. The 10-K's MD&A refers readers to Note 30, Agreement to Acquire Hess Corporation, for details.\nOn May 28, 2024, a majority of Hess stockholders voted to approve the merger.\nOn September 30, 2024, the FTC announced that a majority of the Commission voted to accept a consent agreement among the FTC and the merger parties.\nChevron said the arbitration over the right of first refusal in the Stabroek Block operating agreement had delayed completion of the transaction. The arbitration involves Hess Guyana Exploration Limited, affiliates of Exxon Mobil Corporation, and China National Offshore Oil Corporation (CNOOC). The 10-K said the company expected to close the merger following satisfactory resolution of the ongoing arbitration proceedings. It also noted that a Guyanese approval requirement, if asserted, had not occurred as of the filing date.\nThe arbitration merits hearing on whether the Stabroek ROFR applies to the merger was scheduled for May 2025. A decision was expected in approximately the following three months. The filing reports no arbitration outcome, so the merger remained pending."
+ },
+ "question_id": "hq_e9bf3b51fc6948de9eaa071fdbdb0e46",
+ "question_sha": "63faafe5c7d04a425cca7b2c178e5c61e6d484b200fe9ad6244be0c74b800631",
+ "raw_output": {
+  "caveats": [
+   "Status is as of the FY2024 10-K filing date. Later developments are not covered.",
+   "The Item 1A search was limited to risk factors. The MD&A highlight on the Hess merger was not retrieved in full."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_9074510435f18aa190f3b0e783b63da35add5fd3ebad1f9457ad497690d87864"
+     }
+    ],
+    "id": "c1",
+    "kind": "textual",
+    "period": null,
+    "text": "In October 2023 Chevron announced a definitive merger agreement with Hess Corporation. The 10-K's MD&A refers readers to Note 30, Agreement to Acquire Hess Corporation, for details.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_ac40d0b888b22106ef53175cb5c3996f79aa6298dc5fb4cae00b326cb3709543"
+     }
+    ],
+    "id": "c2",
+    "kind": "textual",
+    "period": null,
+    "text": "On May 28, 2024, a majority of Hess stockholders voted to approve the merger.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_858f588f39d4812454987d19efdfa89cd7c423b111d2e4ea500f043567ddf2ed"
+     }
+    ],
+    "id": "c3",
+    "kind": "textual",
+    "period": null,
+    "text": "On September 30, 2024, the FTC announced that a majority of the Commission voted to accept a consent agreement among the FTC and the merger parties.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_ac40d0b888b22106ef53175cb5c3996f79aa6298dc5fb4cae00b326cb3709543"
+     },
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_858f588f39d4812454987d19efdfa89cd7c423b111d2e4ea500f043567ddf2ed"
+     }
+    ],
+    "id": "c4",
+    "kind": "textual",
+    "period": null,
+    "text": "Chevron said the arbitration over the right of first refusal in the Stabroek Block operating agreement had delayed completion of the transaction. The arbitration involves Hess Guyana Exploration Limited, affiliates of Exxon Mobil Corporation, and China National Offshore Oil Corporation (CNOOC). The 10-K said the company expected to close the merger following satisfactory resolution of the ongoing arbitration proceedings. It also noted that a Guyanese approval requirement, if asserted, had not occurred as of the filing date.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_ca4f7131571fb6cc0e22097c6667054384e46bcb74a7ad38fa888d189c1dd93c"
+     },
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_ac40d0b888b22106ef53175cb5c3996f79aa6298dc5fb4cae00b326cb3709543"
+     }
+    ],
+    "id": "c5",
+    "kind": "textual",
+    "period": null,
+    "text": "The arbitration merits hearing on whether the Stabroek ROFR applies to the merger was scheduled for May 2025. A decision was expected in approximately the following three months. The filing reports no arbitration outcome, so the merger remained pending.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   }
+  ],
+  "final_claim_id": null,
+  "final_unit": null,
+  "final_value": null,
+  "status": "answered",
+  "summary": "As of Chevron's fiscal 2024 10-K, the Hess acquisition had not closed. Chevron had signed a merger agreement with Hess in October 2023. Hess stockholders approved the merger on May 28, 2024, and the FTC announced on September 30, 2024 that it had voted to accept a consent agreement. The Stabroek right-of-first-refusal arbitration was still ongoing and had no outcome. Chevron said the arbitration had delayed completion. The merits hearing was scheduled for May 2025, and a decision was expected about three months after that."
+ },
+ "retrieval": {
+  "first_search": {
+   "filings:s1": [
+    "chk_ac40d0b888b22106ef53175cb5c3996f79aa6298dc5fb4cae00b326cb3709543",
+    "chk_9074510435f18aa190f3b0e783b63da35add5fd3ebad1f9457ad497690d87864",
+    "chk_4c48e12303d1121404da8d451981f221e92b9c39d5abdcb4e3dec91a43fa6f14",
+    "chk_884e4e785292cf33a2bebb1e14e3d66f9db0dd96924449662eae73f5488edea2",
+    "chk_6f6e2970699573ef85b42f514a1f62552055684aaa9fef17767eab815d4a08c2",
+    "chk_c2c1a49eac3399e251941b80e30c985fbef2a862addb759ab503da7201c48097",
+    "chk_a0f3500b9cd68f992d68113291b000b982990efde38ab190aa48ffe8a245abc2",
+    "chk_3b0a113e2a48f233c74e57f24096640731f50b22d96c8738e19a0b48a0d384ee"
+   ],
+   "filings:s2": [
+    "chk_ca4f7131571fb6cc0e22097c6667054384e46bcb74a7ad38fa888d189c1dd93c",
+    "chk_858f588f39d4812454987d19efdfa89cd7c423b111d2e4ea500f043567ddf2ed",
+    "chk_17cb8a2dd62faf850829fc5aaced48bcd3dd2b96cb2c0f00093867c35e6478aa",
+    "chk_244773488cef5633e879a23b79cecb939fc3079f24feadf8228289d65de28bc6",
+    "chk_af570bc762e419a3c2466af802ac647666826e00b55cb02a226f0648c767d04c",
+    "chk_c01c950217fbc97edb0172d09509e1baadc299e03a37feb866f9685919304d22",
+    "chk_f820fde2de49b209baf3c63e1f3bb7f3820a64f2fe8e72068e0e3b46dc566dc1",
+    "chk_d7904da5ff9625e79b6d5348ec4f20cd40753cfdac562ba1effc24205d4aab2c"
+   ]
+  },
+  "seen": [
+   "chk_ac40d0b888b22106ef53175cb5c3996f79aa6298dc5fb4cae00b326cb3709543",
+   "chk_9074510435f18aa190f3b0e783b63da35add5fd3ebad1f9457ad497690d87864",
+   "chk_4c48e12303d1121404da8d451981f221e92b9c39d5abdcb4e3dec91a43fa6f14",
+   "chk_884e4e785292cf33a2bebb1e14e3d66f9db0dd96924449662eae73f5488edea2",
+   "chk_6f6e2970699573ef85b42f514a1f62552055684aaa9fef17767eab815d4a08c2",
+   "chk_c2c1a49eac3399e251941b80e30c985fbef2a862addb759ab503da7201c48097",
+   "chk_a0f3500b9cd68f992d68113291b000b982990efde38ab190aa48ffe8a245abc2",
+   "chk_3b0a113e2a48f233c74e57f24096640731f50b22d96c8738e19a0b48a0d384ee",
+   "chk_ca4f7131571fb6cc0e22097c6667054384e46bcb74a7ad38fa888d189c1dd93c",
+   "chk_858f588f39d4812454987d19efdfa89cd7c423b111d2e4ea500f043567ddf2ed",
+   "chk_17cb8a2dd62faf850829fc5aaced48bcd3dd2b96cb2c0f00093867c35e6478aa",
+   "chk_244773488cef5633e879a23b79cecb939fc3079f24feadf8228289d65de28bc6",
+   "chk_af570bc762e419a3c2466af802ac647666826e00b55cb02a226f0648c767d04c",
+   "chk_c01c950217fbc97edb0172d09509e1baadc299e03a37feb866f9685919304d22",
+   "chk_f820fde2de49b209baf3c63e1f3bb7f3820a64f2fe8e72068e0e3b46dc566dc1",
+   "chk_d7904da5ff9625e79b6d5348ec4f20cd40753cfdac562ba1effc24205d4aab2c"
+  ]
+ },
+ "run_id": "bfb64a4c-3c86-456c-a3ad-c0c9fd12abcd",
+ "run_status": "done",
+ "split": "handwritten",
+ "started_at": "2026-11-16T22:02:16.718928+00:00",
+ "status": "done",
+ "system_config_hash": "dda3ea6b7db41dd0273d82e63c7ab3c74a4ec2dac9f2674d40c2836322074f2a",
+ "system_id": "m6-rerank",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 71523,
+  "cache_write_tokens": 30711,
+  "input_tokens": 10813,
+  "output_tokens": 7094
+ }
+}

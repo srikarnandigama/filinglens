@@ -1,0 +1,71 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 1,
+  "numeric_valid": 1,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.0362930",
+ "error": null,
+ "finished_at": "2026-11-16T20:23:32.265287+00:00",
+ "latency_ms": 11589,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD",
+  "value": "23697000000"
+ },
+ "question_id": "q_85f4ee6f2b76e33f",
+ "question_sha": "b55485983f672634a086e350f18344209d4f68d97f9f367e5c57b2cfa1811f12",
+ "raw_output": {
+  "caveats": [
+   "The Q4 2023 value is derived (annual figure minus the nine-month year-to-date figure), not directly reported as a standalone quarterly fact."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": "value",
+      "kind": "fact",
+      "ref": "544"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q4",
+     "fiscal_year": 2023
+    },
+    "text": "Alphabet's operating income for fiscal Q4 2023 was about $23.70 billion ($23,697,000,000), derived as FY2023 operating income of $84,293,000,000 less nine-month operating income of $60,596,000,000.",
+    "ticker": "GOOGL",
+    "unit": "USD",
+    "value": "23697000000",
+    "value_basis": "fact"
+   }
+  ],
+  "final_claim_id": "c1",
+  "final_unit": "USD",
+  "final_value": "23697000000",
+  "status": "answered",
+  "summary": "Alphabet's operating income in fiscal Q4 2023 (Oct 1 to Dec 31, 2023) was $23.697 billion. This is a derived figure: full-year operating income minus the nine-month year-to-date amount."
+ },
+ "run_id": "e3873695-1908-405f-a402-a91f2c1e8e1f",
+ "run_status": "done",
+ "split": "test",
+ "started_at": "2026-11-16T20:23:20.615157+00:00",
+ "status": "done",
+ "system_config_hash": "52a48e08f9ef2a659803092d4f5678475241e872105c99154f86b7bbc29038a3",
+ "system_id": "m6",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 25115,
+  "cache_write_tokens": 4951,
+  "input_tokens": 4607,
+  "output_tokens": 1219
+ }
+}

@@ -1,0 +1,71 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 1,
+  "numeric_valid": 1,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.0741841",
+ "error": null,
+ "finished_at": "2026-11-16T20:40:17.869747+00:00",
+ "latency_ms": 24488,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD",
+  "value": "6280000000"
+ },
+ "question_id": "q_cf033cfda117bffb",
+ "question_sha": "7de41f370b00f0f14e7c6fe01bb7cae9c08292fbd9fd123efd7cf33ea8534cfc",
+ "raw_output": {
+  "caveats": [
+   "The figure comes from the NetIncomeLoss concept in the filing for the quarter ended 2026-03-31 (accession 0000731766-26-000127)."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3107"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q1",
+     "fiscal_year": 2026
+    },
+    "text": "UnitedHealth's net income for fiscal Q1 2026 (period ended 2026-03-31) was $6.28 billion.",
+    "ticker": "UNH",
+    "unit": "USD",
+    "value": "6280000000",
+    "value_basis": "fact"
+   }
+  ],
+  "final_claim_id": "c1",
+  "final_unit": "USD",
+  "final_value": "6280000000",
+  "status": "answered",
+  "summary": "UnitedHealth reported net income of $6.28 billion for fiscal Q1 2026 (January 1 to March 31, 2026)."
+ },
+ "run_id": "59de3fc4-aeba-4f25-97f4-e9e4ba29aa60",
+ "run_status": "done",
+ "split": "test",
+ "started_at": "2026-11-16T20:39:53.307964+00:00",
+ "status": "done",
+ "system_config_hash": "38c1354659c83500cab78979070eac496bb55847b466a51e9437890c769351e5",
+ "system_id": "m6-no-quant",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 27571,
+  "cache_write_tokens": 7422,
+  "input_tokens": 11656,
+  "output_tokens": 2956
+ }
+}

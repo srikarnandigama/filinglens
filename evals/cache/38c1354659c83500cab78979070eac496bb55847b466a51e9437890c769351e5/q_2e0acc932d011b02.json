@@ -1,0 +1,72 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 1,
+  "numeric_valid": 1,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.0571217",
+ "error": null,
+ "finished_at": "2026-11-16T20:38:30.459382+00:00",
+ "latency_ms": 19105,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD",
+  "value": "17817000000"
+ },
+ "question_id": "q_2e0acc932d011b02",
+ "question_sha": "80083906f344cc83e3c86f4aeb7c03533360d71b5cf61cd878a86765d0f52d86",
+ "raw_output": {
+  "caveats": [
+   "P&G's fiscal year ends June 30, so fiscal 2025 covers July 1, 2024 to June 30, 2025.",
+   "The value is sourced from the filing with accession number 0000080424-26-000103."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3690"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Procter & Gamble reported net cash provided by operating activities of about $17.82 billion ($17,817,000,000) for fiscal 2025 (July 1, 2024 to June 30, 2025).",
+    "ticker": "PG",
+    "unit": "USD",
+    "value": "17817000000",
+    "value_basis": "fact"
+   }
+  ],
+  "final_claim_id": "c1",
+  "final_unit": "USD",
+  "final_value": "17817000000",
+  "status": "answered",
+  "summary": "Procter & Gamble's net cash provided by operating activities in fiscal 2025 (July 1, 2024 to June 30, 2025) was about $17.82 billion."
+ },
+ "run_id": "b7da1680-40aa-46df-92a4-56b41501b3fa",
+ "run_status": "done",
+ "split": "test",
+ "started_at": "2026-11-16T20:38:11.285779+00:00",
+ "status": "done",
+ "system_config_hash": "38c1354659c83500cab78979070eac496bb55847b466a51e9437890c769351e5",
+ "system_id": "m6-no-quant",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 18212,
+  "cache_write_tokens": 5981,
+  "input_tokens": 7954,
+  "output_tokens": 2444
+ }
+}

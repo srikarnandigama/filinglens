@@ -1,0 +1,111 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 3,
+  "numeric_valid": 3,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.0552308",
+ "error": null,
+ "finished_at": "2026-11-16T20:17:27.198689+00:00",
+ "latency_ms": 19263,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "69.013395042499"
+ },
+ "question_id": "q_845568f6d5a2d9a2",
+ "question_sha": "6354bdfd1b0b10dbbe6a3200bfa1275a8775b36921ad60b6a34bc1c42ab986bf",
+ "raw_output": {
+  "caveats": [
+   "The gross margin is calculated from the reported gross profit and revenue facts for the quarter. No filing passages were provided, so there is no management commentary on it."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "2807"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q3",
+     "fiscal_year": 2024
+    },
+    "text": "JNJ gross profit in fiscal Q3 2024 was $15.508 billion.",
+    "ticker": "JNJ",
+    "unit": "USD",
+    "value": "15508000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "2773"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q3",
+     "fiscal_year": 2024
+    },
+    "text": "JNJ revenue in fiscal Q3 2024 was $22.471 billion.",
+    "ticker": "JNJ",
+    "unit": "USD",
+    "value": "22471000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_1"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q3",
+     "fiscal_year": 2024
+    },
+    "text": "JNJ's gross margin in fiscal Q3 2024 was about 69.0% (gross profit divided by revenue).",
+    "ticker": "JNJ",
+    "unit": "percent",
+    "value": "69.013395042499",
+    "value_basis": "computation"
+   }
+  ],
+  "final_claim_id": "c3",
+  "final_unit": "percent",
+  "final_value": "69.013395042499",
+  "status": "answered",
+  "summary": "Johnson & Johnson's gross margin in fiscal Q3 2024 (July 1 to September 29, 2024) was about 69.0%. That comes from gross profit of $15.508 billion on revenue of $22.471 billion."
+ },
+ "run_id": "2cf40734-666d-4843-8fcd-1e7788f97c70",
+ "run_status": "done",
+ "split": "test",
+ "started_at": "2026-11-16T20:17:07.891949+00:00",
+ "status": "done",
+ "system_config_hash": "52a48e08f9ef2a659803092d4f5678475241e872105c99154f86b7bbc29038a3",
+ "system_id": "m6",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 47283,
+  "cache_write_tokens": 6069,
+  "input_tokens": 5565,
+  "output_tokens": 2420
+ }
+}

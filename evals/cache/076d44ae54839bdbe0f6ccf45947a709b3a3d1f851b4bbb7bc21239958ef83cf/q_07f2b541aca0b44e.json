@@ -1,0 +1,132 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 3,
+  "numeric_valid": 3,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.0654427",
+ "error": null,
+ "finished_at": "2026-11-16T20:26:23.806263+00:00",
+ "latency_ms": 21205,
+ "prediction": {
+  "choice": "PG",
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percentage_points",
+  "value": "0.835117477448"
+ },
+ "question_id": "q_07f2b541aca0b44e",
+ "question_sha": "649350d3fc43c59cbf9291ca4b0d119a883fe41ce8dbc78f5e1c9bb97e880ac6",
+ "raw_output": {
+  "caveats": [
+   "The two fiscal years cover different windows. PG's FY2024 ran from July 2023 to June 2024. KO's FY2024 ran from January to December 2024.",
+   "Operating margin is operating income divided by reported revenue."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_1"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3640"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3610"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "PG's FY2024 operating margin was about 22.07% (operating income $18.545 billion on revenue of $84.039 billion).",
+    "ticker": "PG",
+    "unit": "percent",
+    "value": "22.067135496615",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_2"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3512"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3464"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "KO's FY2024 operating margin was about 21.23% (operating income $9.992 billion on revenue of $47.061 billion).",
+    "ticker": "KO",
+    "unit": "percent",
+    "value": "21.232018019167",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value",
+      "kind": "computation",
+      "ref": "cmp_3"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "PG's operating margin exceeded KO's by about 0.84 percentage points.",
+    "ticker": "PG",
+    "unit": "percentage_points",
+    "value": "0.835117477448",
+    "value_basis": "computation"
+   }
+  ],
+  "final_claim_id": "c3",
+  "final_unit": "percentage_points",
+  "final_value": "0.835117477448",
+  "status": "answered",
+  "summary": "Procter & Gamble had the higher fiscal 2024 operating margin, at about 22.07% against Coca-Cola's 21.23%. That is a gap of about 0.84 percentage points."
+ },
+ "run_id": "b1e86d1c-4a52-44b5-90c0-840167ca5f15",
+ "run_status": "done",
+ "split": "test",
+ "started_at": "2026-11-16T20:26:02.539656+00:00",
+ "status": "done",
+ "system_config_hash": "076d44ae54839bdbe0f6ccf45947a709b3a3d1f851b4bbb7bc21239958ef83cf",
+ "system_id": "m6-no-verifier",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 71347,
+  "cache_write_tokens": 11912,
+  "input_tokens": 24,
+  "output_tokens": 2848
+ }
+}

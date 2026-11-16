@@ -1,0 +1,132 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 3,
+  "numeric_valid": 3,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.0818987",
+ "error": null,
+ "finished_at": "2026-11-16T20:21:34.677805+00:00",
+ "latency_ms": 26061,
+ "prediction": {
+  "choice": "PG",
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percentage_points",
+  "value": "20.491979152599"
+ },
+ "question_id": "q_c08bbd2823ca2696",
+ "question_sha": "d41019e714a4dbe4382d3bb0bb12ae08adcddd83747b5673b6455805ffabf377",
+ "raw_output": {
+  "caveats": [
+   "The two companies have different fiscal year ends: PG's fiscal 2025 ended June 30, 2025, and Costco's ended August 31, 2025.",
+   "Operating margin is operating income divided by reported revenue. Costco's revenue is the total reported in the Revenues fact."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_1"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3645"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3615"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "PG's fiscal 2025 operating margin was about 24.26% (operating income $20.451 billion on revenue of $84.284 billion).",
+    "ticker": "PG",
+    "unit": "percent",
+    "value": "24.264391818139",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_2"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3368"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3338"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "COST's fiscal 2025 operating margin was about 3.77% (operating income $10.383 billion on revenue of $275.235 billion).",
+    "ticker": "COST",
+    "unit": "percent",
+    "value": "3.77241266554",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value",
+      "kind": "computation",
+      "ref": "cmp_3"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "PG's operating margin exceeded Costco's by about 20.49 percentage points.",
+    "ticker": "PG",
+    "unit": "percentage_points",
+    "value": "20.491979152599",
+    "value_basis": "computation"
+   }
+  ],
+  "final_claim_id": "c3",
+  "final_unit": "percentage_points",
+  "final_value": "20.491979152599",
+  "status": "answered",
+  "summary": "Procter & Gamble had the higher fiscal 2025 operating margin: about 24.26%, against about 3.77% for Costco. That is a gap of about 20.49 percentage points."
+ },
+ "run_id": "a9525796-a754-4c1a-ae32-f88db5f845a7",
+ "run_status": "done",
+ "split": "test",
+ "started_at": "2026-11-16T20:21:08.568365+00:00",
+ "status": "done",
+ "system_config_hash": "52a48e08f9ef2a659803092d4f5678475241e872105c99154f86b7bbc29038a3",
+ "system_id": "m6",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 51447,
+  "cache_write_tokens": 10880,
+  "input_tokens": 8082,
+  "output_tokens": 3339
+ }
+}

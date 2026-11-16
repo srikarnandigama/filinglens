@@ -1,0 +1,10 @@
+# D6b: judges for the retrieval ablations D5 (+rerank) and D7 (-rerank), run after both (D125).
+# Items already judged (same answer text) are served from the judge cache at no cost.
+name = "m6-judges-ablations"
+budget = "m6"
+spent_usd = "0.84441400"  # actual spend; 21% over its $0.70 projection (D125)
+spend_cap_usd = "1.90"
+configs = [
+ "evals/configs/m6_handwritten_rerank.toml",
+ "evals/configs/m6_handwritten_hybrid.toml",
+]

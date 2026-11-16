@@ -1,0 +1,71 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 1,
+  "numeric_valid": 1,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.0335772",
+ "error": null,
+ "finished_at": "2026-11-16T20:32:13.645333+00:00",
+ "latency_ms": 11288,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD",
+  "value": "25248000000"
+ },
+ "question_id": "q_50b3a95c094c89e8",
+ "question_sha": "8376d57a0011f2987bcbc8b417f72f8cf88fdabbb77a78974c5b4d0d7797862f",
+ "raw_output": {
+  "caveats": [
+   "Value is taken from the filing for the period ended June 27, 2026 (accession 0001744489-26-000057) as reflected in the snapshot."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3875"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q3",
+     "fiscal_year": 2026
+    },
+    "text": "Disney reported total revenue of $25.248 billion (25,248,000,000 USD) for fiscal Q3 2026, the quarter ended June 27, 2026.",
+    "ticker": "DIS",
+    "unit": "USD",
+    "value": "25248000000",
+    "value_basis": "fact"
+   }
+  ],
+  "final_claim_id": "c1",
+  "final_unit": "USD",
+  "final_value": "25248000000",
+  "status": "answered",
+  "summary": "Disney's total revenue for fiscal Q3 2026 (the quarter from March 29, 2026 to June 27, 2026) was $25.248 billion."
+ },
+ "run_id": "a3badc64-ea96-4834-b3d7-16ff444dbccf",
+ "run_status": "done",
+ "split": "test",
+ "started_at": "2026-11-16T20:32:02.277904+00:00",
+ "status": "done",
+ "system_config_hash": "38c1354659c83500cab78979070eac496bb55847b466a51e9437890c769351e5",
+ "system_id": "m6-no-quant",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 22017,
+  "cache_write_tokens": 4927,
+  "input_tokens": 3874,
+  "output_tokens": 1131
+ }
+}

@@ -1,0 +1,232 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 0,
+  "numeric_valid": 0,
+  "text_pending_judge": [
+   {
+    "chunk_ids": [
+     "chk_ac40d0b888b22106ef53175cb5c3996f79aa6298dc5fb4cae00b326cb3709543",
+     "chk_ca4f7131571fb6cc0e22097c6667054384e46bcb74a7ad38fa888d189c1dd93c"
+    ],
+    "claim_id": "c3",
+    "text": "The transaction had not been completed. Chevron states that the arbitration over the Stabroek Block right of first refusal, involving Hess Guyana Exploration Limited, affiliates of Exxon Mobil and CNOOC, has delayed completion."
+   },
+   {
+    "chunk_ids": [
+     "chk_858f588f39d4812454987d19efdfa89cd7c423b111d2e4ea500f043567ddf2ed"
+    ],
+    "claim_id": "c6",
+    "text": "A Guyanese governmental approval condition had not been triggered as of the filing date. It would become a condition only if a Guyanese authority asserts that its approval is required."
+   }
+  ],
+  "text_string_supported": 4,
+  "text_total": 6,
+  "uncited": 0
+ },
+ "cost_usd": "0.088773860",
+ "error": null,
+ "finished_at": "2026-11-16T22:19:59.893254+00:00",
+ "latency_ms": 41191,
+ "prediction": {
+  "parse_ok": true,
+  "text": "As of Chevron's FY2024 10-K, the Hess acquisition had not closed. Hess stockholders approved the merger on May 28, 2024, and the FTC accepted a consent agreement on September 30, 2024. The Stabroek right-of-first-refusal arbitration was still pending and had delayed completion. The merits hearing was scheduled for May 2025, with a decision expected about three months after that. An adverse decision for Hess Guyana would mean the transaction is not completed.\nHess stockholder approval was obtained: Chevron states that on May 28, 2024, a majority of Hess stockholders voted to approve the merger.\nOn September 30, 2024, the FTC announced that a majority of the Commission voted to accept a consent agreement among the FTC, Chevron and Hess, resolving the concerns the FTC identified during its review of the transaction.\nThe transaction had not been completed. Chevron states that the arbitration over the Stabroek Block right of first refusal, involving Hess Guyana Exploration Limited, affiliates of Exxon Mobil and CNOOC, has delayed completion.\nThe arbitration was still pending with no outcome reported. The merits hearing was scheduled for May 2025, with a decision expected in approximately the following three months. An arbitration decision against Hess Guyana and in favor of Exxon Guyana and CNOOC Guyana would cause the transaction not to be completed.\nIf the arbitration does not confirm that the Stabroek ROFR is inapplicable to the merger, and the parties do not otherwise agree on a resolution, a closing condition would fail and the merger would not close. Chevron and Hess say they are maintaining their ability under the Hart-Scott-Rodino Act to close following satisfactory resolution of the arbitration.\nA Guyanese governmental approval condition had not been triggered as of the filing date. It would become a condition only if a Guyanese authority asserts that its approval is required."
+ },
+ "question_id": "hq_e9bf3b51fc6948de9eaa071fdbdb0e46",
+ "question_sha": "63faafe5c7d04a425cca7b2c178e5c61e6d484b200fe9ad6244be0c74b800631",
+ "raw_output": {
+  "caveats": [
+   "The filing does not report an arbitration outcome. Events after the 10-K filing are outside this evidence.",
+   "The Item 7 MD&A passage was found but not quoted."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_ac40d0b888b22106ef53175cb5c3996f79aa6298dc5fb4cae00b326cb3709543"
+     }
+    ],
+    "id": "c1",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "Hess stockholder approval was obtained: Chevron states that on May 28, 2024, a majority of Hess stockholders voted to approve the merger.",
+    "ticker": "CVX",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_ac40d0b888b22106ef53175cb5c3996f79aa6298dc5fb4cae00b326cb3709543"
+     }
+    ],
+    "id": "c2",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "On September 30, 2024, the FTC announced that a majority of the Commission voted to accept a consent agreement among the FTC, Chevron and Hess, resolving the concerns the FTC identified during its review of the transaction.",
+    "ticker": "CVX",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_ac40d0b888b22106ef53175cb5c3996f79aa6298dc5fb4cae00b326cb3709543"
+     },
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_ca4f7131571fb6cc0e22097c6667054384e46bcb74a7ad38fa888d189c1dd93c"
+     }
+    ],
+    "id": "c3",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "The transaction had not been completed. Chevron states that the arbitration over the Stabroek Block right of first refusal, involving Hess Guyana Exploration Limited, affiliates of Exxon Mobil and CNOOC, has delayed completion.",
+    "ticker": "CVX",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_ac40d0b888b22106ef53175cb5c3996f79aa6298dc5fb4cae00b326cb3709543"
+     }
+    ],
+    "id": "c4",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "The arbitration was still pending with no outcome reported. The merits hearing was scheduled for May 2025, with a decision expected in approximately the following three months. An arbitration decision against Hess Guyana and in favor of Exxon Guyana and CNOOC Guyana would cause the transaction not to be completed.",
+    "ticker": "CVX",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_ca4f7131571fb6cc0e22097c6667054384e46bcb74a7ad38fa888d189c1dd93c"
+     },
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_858f588f39d4812454987d19efdfa89cd7c423b111d2e4ea500f043567ddf2ed"
+     }
+    ],
+    "id": "c5",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "If the arbitration does not confirm that the Stabroek ROFR is inapplicable to the merger, and the parties do not otherwise agree on a resolution, a closing condition would fail and the merger would not close. Chevron and Hess say they are maintaining their ability under the Hart-Scott-Rodino Act to close following satisfactory resolution of the arbitration.",
+    "ticker": "CVX",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_858f588f39d4812454987d19efdfa89cd7c423b111d2e4ea500f043567ddf2ed"
+     }
+    ],
+    "id": "c6",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "A Guyanese governmental approval condition had not been triggered as of the filing date. It would become a condition only if a Guyanese authority asserts that its approval is required.",
+    "ticker": "CVX",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   }
+  ],
+  "final_claim_id": null,
+  "final_unit": null,
+  "final_value": null,
+  "status": "answered",
+  "summary": "As of Chevron's FY2024 10-K, the Hess acquisition had not closed. Hess stockholders approved the merger on May 28, 2024, and the FTC accepted a consent agreement on September 30, 2024. The Stabroek right-of-first-refusal arbitration was still pending and had delayed completion. The merits hearing was scheduled for May 2025, with a decision expected about three months after that. An adverse decision for Hess Guyana would mean the transaction is not completed."
+ },
+ "retrieval": {
+  "first_search": {
+   "filings:s1": [
+    "chk_ac40d0b888b22106ef53175cb5c3996f79aa6298dc5fb4cae00b326cb3709543",
+    "chk_ca4f7131571fb6cc0e22097c6667054384e46bcb74a7ad38fa888d189c1dd93c",
+    "chk_858f588f39d4812454987d19efdfa89cd7c423b111d2e4ea500f043567ddf2ed",
+    "chk_17cb8a2dd62faf850829fc5aaced48bcd3dd2b96cb2c0f00093867c35e6478aa",
+    "chk_884e4e785292cf33a2bebb1e14e3d66f9db0dd96924449662eae73f5488edea2",
+    "chk_6f6e2970699573ef85b42f514a1f62552055684aaa9fef17767eab815d4a08c2",
+    "chk_9074510435f18aa190f3b0e783b63da35add5fd3ebad1f9457ad497690d87864",
+    "chk_4c48e12303d1121404da8d451981f221e92b9c39d5abdcb4e3dec91a43fa6f14"
+   ],
+   "filings:s2": [
+    "chk_ac40d0b888b22106ef53175cb5c3996f79aa6298dc5fb4cae00b326cb3709543",
+    "chk_ca4f7131571fb6cc0e22097c6667054384e46bcb74a7ad38fa888d189c1dd93c",
+    "chk_858f588f39d4812454987d19efdfa89cd7c423b111d2e4ea500f043567ddf2ed",
+    "chk_9074510435f18aa190f3b0e783b63da35add5fd3ebad1f9457ad497690d87864",
+    "chk_4c48e12303d1121404da8d451981f221e92b9c39d5abdcb4e3dec91a43fa6f14",
+    "chk_884e4e785292cf33a2bebb1e14e3d66f9db0dd96924449662eae73f5488edea2",
+    "chk_bd551bdc8171770d74b6b267b959f06963a425896478bade41a39b476cf80c1b",
+    "chk_8cfd238e8d0568773642ee9a484d2021ba475c0f816df7b3adbbc5b430476d4f"
+   ]
+  },
+  "seen": [
+   "chk_ac40d0b888b22106ef53175cb5c3996f79aa6298dc5fb4cae00b326cb3709543",
+   "chk_ca4f7131571fb6cc0e22097c6667054384e46bcb74a7ad38fa888d189c1dd93c",
+   "chk_858f588f39d4812454987d19efdfa89cd7c423b111d2e4ea500f043567ddf2ed",
+   "chk_9074510435f18aa190f3b0e783b63da35add5fd3ebad1f9457ad497690d87864",
+   "chk_4c48e12303d1121404da8d451981f221e92b9c39d5abdcb4e3dec91a43fa6f14",
+   "chk_884e4e785292cf33a2bebb1e14e3d66f9db0dd96924449662eae73f5488edea2",
+   "chk_bd551bdc8171770d74b6b267b959f06963a425896478bade41a39b476cf80c1b",
+   "chk_8cfd238e8d0568773642ee9a484d2021ba475c0f816df7b3adbbc5b430476d4f",
+   "chk_17cb8a2dd62faf850829fc5aaced48bcd3dd2b96cb2c0f00093867c35e6478aa",
+   "chk_6f6e2970699573ef85b42f514a1f62552055684aaa9fef17767eab815d4a08c2",
+   "chk_aab70dc6f46457859abe0caea4fafe19dab2c2563933be2eb67b824696055f74",
+   "chk_31f748d33c7f0c8782de084406923e62da6f05b598d4255c1579ee06a3f984ce"
+  ]
+ },
+ "run_id": "0aea2a66-6c76-48cd-89a6-b2e566e0806a",
+ "run_status": "done",
+ "split": "handwritten",
+ "started_at": "2026-11-16T22:19:18.618159+00:00",
+ "status": "done",
+ "system_config_hash": "609c0b8d3387b1ce1d168e92bc0af076a1cc5929d1640386326043ecb0c21b67",
+ "system_id": "m6-hybrid",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 64565,
+  "cache_write_tokens": 39812,
+  "input_tokens": 11469,
+  "output_tokens": 7461
+ }
+}

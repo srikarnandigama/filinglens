@@ -3,6 +3,7 @@
 import asyncio
 import json
 import os
+import sys
 import threading
 from decimal import Decimal
 from uuid import uuid4
@@ -364,7 +365,7 @@ def test_edgar_stdio_smoke(m3_settings, tmp_path):
             "TRANSFORMERS_OFFLINE": "1",
         }
         parameters = StdioServerParameters(
-            command=str(ROOT / ".venv/Scripts/python.exe"),
+            command=sys.executable,  # the venv interpreter on Windows and Linux (CI)
             args=["-m", "mcp_servers.edgar_mcp.server"],
             env=env,
             cwd=ROOT,

@@ -1,0 +1,246 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 4,
+  "numeric_valid": 4,
+  "text_pending_judge": [
+   {
+    "chunk_ids": [
+     "chk_f0e85982ba1636321a2d5335af92718f8f21564b5a737ffcda2050ef4ed5a6c0"
+    ],
+    "claim_id": "c8",
+    "text": "In EMEA, revenues fell 10% currency-neutral on lower Men's, Jordan Brand, Kids' and Women's revenues. Wholesale fell 6%, and NIKE Direct fell 16% as digital sales dropped 30%, partly offset by a 5% rise in store sales."
+   }
+  ],
+  "text_string_supported": 4,
+  "text_total": 5,
+  "uncited": 0
+ },
+ "cost_usd": "0.117411185",
+ "error": null,
+ "finished_at": "2026-11-16T21:23:15.848877+00:00",
+ "latency_ms": 58187,
+ "prediction": {
+  "parse_ok": true,
+  "text": "Nike's revenue did fall in fiscal 2025, from $51.4 billion to $46.3 billion, a decline of about 9.8% (-$5.05 billion). Management's discussion points to lower revenues in North America, EMEA and Greater China, and to falling NIKE Direct (digital) and wholesale sales. Lower ASP per pair, from higher discounts and channel mix, also played a part. The passages retrieved do not give an explicit root cause for the unit-volume declines.\nNike's FY2025 revenue was about $46.3 billion.\nNike's FY2024 revenue was about $51.4 billion.\nRevenue fell about 9.8% year over year, confirming the decline.\nThe revenue decline was about $5.05 billion in dollar terms.\nNike said revenues decreased 10% reported and 9% currency-neutral. On a currency-neutral basis, the decrease was primarily due to lower revenues in North America, EMEA and Greater China, which reduced NIKE, Inc. Revenues by 4, 3 and 2 percentage points, respectively.\nNike said lower ASP per pair was primarily due to higher discounts and changes in channel mix, partially offset by strategic pricing actions.\nIn North America, revenues fell 8% currency-neutral, primarily due to lower revenues in the Jordan Brand, Men's and Women's. Wholesale fell 5%, and NIKE Direct fell 12% on digital sales down 19% and store sales down 1%.\nIn EMEA, revenues fell 10% currency-neutral on lower Men's, Jordan Brand, Kids' and Women's revenues. Wholesale fell 6%, and NIKE Direct fell 16% as digital sales dropped 30%, partly offset by a 5% rise in store sales.\nIn Greater China, wholesale revenues decreased 13%. NIKE Direct revenues decreased 12%, with digital sales down 22% and store sales down 6%."
+ },
+ "question_id": "hq_21f4a3b2e4e044129aee7a3fa547a79b",
+ "question_sha": "d6cda3ec75c214241f68191dea895d06bca66530451083cdc23dc5235f763b0a",
+ "raw_output": {
+  "caveats": [
+   "The retrieved MD&A passages describe what declined by region, channel and product line, along with ASP effects. They do not give a management-stated underlying cause for the unit-volume declines.",
+   "The Asia Pacific & Latin America passage yielded no verified quotes, so that region is not covered.",
+   "The explanation is limited to the passages retrieved and may not cover every driver in the filing."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3732"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Nike's FY2025 revenue was about $46.3 billion.",
+    "ticker": "NKE",
+    "unit": "USD",
+    "value": "46309000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3727"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "Nike's FY2024 revenue was about $51.4 billion.",
+    "ticker": "NKE",
+    "unit": "USD",
+    "value": "51362000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_1"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Revenue fell about 9.8% year over year, confirming the decline.",
+    "ticker": "NKE",
+    "unit": "percent",
+    "value": "-9.838012538453",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value",
+      "kind": "computation",
+      "ref": "cmp_2"
+     }
+    ],
+    "id": "c4",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "The revenue decline was about $5.05 billion in dollar terms.",
+    "ticker": "NKE",
+    "unit": "USD",
+    "value": "-5053000000",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_128e864cd37a84838f19edff4d6d32175e80a6b1c8b3ce6989d889a3e038c450"
+     }
+    ],
+    "id": "c5",
+    "kind": "textual",
+    "period": null,
+    "text": "Nike said revenues decreased 10% reported and 9% currency-neutral. On a currency-neutral basis, the decrease was primarily due to lower revenues in North America, EMEA and Greater China, which reduced NIKE, Inc. Revenues by 4, 3 and 2 percentage points, respectively.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_128e864cd37a84838f19edff4d6d32175e80a6b1c8b3ce6989d889a3e038c450"
+     }
+    ],
+    "id": "c6",
+    "kind": "textual",
+    "period": null,
+    "text": "Nike said lower ASP per pair was primarily due to higher discounts and changes in channel mix, partially offset by strategic pricing actions.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_32f2cf69852d2d95069debcd2967b15e98da4684794244621c004405022b97e4"
+     }
+    ],
+    "id": "c7",
+    "kind": "textual",
+    "period": null,
+    "text": "In North America, revenues fell 8% currency-neutral, primarily due to lower revenues in the Jordan Brand, Men's and Women's. Wholesale fell 5%, and NIKE Direct fell 12% on digital sales down 19% and store sales down 1%.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_f0e85982ba1636321a2d5335af92718f8f21564b5a737ffcda2050ef4ed5a6c0"
+     }
+    ],
+    "id": "c8",
+    "kind": "textual",
+    "period": null,
+    "text": "In EMEA, revenues fell 10% currency-neutral on lower Men's, Jordan Brand, Kids' and Women's revenues. Wholesale fell 6%, and NIKE Direct fell 16% as digital sales dropped 30%, partly offset by a 5% rise in store sales.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_ced4d0cb02f5d17ad6d07e596de2a2727104ca6cbf58e3c9409942e085930f8c"
+     }
+    ],
+    "id": "c9",
+    "kind": "textual",
+    "period": null,
+    "text": "In Greater China, wholesale revenues decreased 13%. NIKE Direct revenues decreased 12%, with digital sales down 22% and store sales down 6%.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   }
+  ],
+  "final_claim_id": "c3",
+  "final_unit": "percent",
+  "final_value": "-9.838012538453",
+  "status": "answered",
+  "summary": "Nike's revenue did fall in fiscal 2025, from $51.4 billion to $46.3 billion, a decline of about 9.8% (-$5.05 billion). Management's discussion points to lower revenues in North America, EMEA and Greater China, and to falling NIKE Direct (digital) and wholesale sales. Lower ASP per pair, from higher discounts and channel mix, also played a part. The passages retrieved do not give an explicit root cause for the unit-volume declines."
+ },
+ "retrieval": {
+  "first_search": {
+   "filings:s4": [
+    "chk_ced4d0cb02f5d17ad6d07e596de2a2727104ca6cbf58e3c9409942e085930f8c",
+    "chk_6f2cc8fbf7da80065f5f821f50f7bc038fa3c058741be415439fd41c1ddc8435",
+    "chk_128e864cd37a84838f19edff4d6d32175e80a6b1c8b3ce6989d889a3e038c450",
+    "chk_cc19432ad0a25c7e6d7056d8396dcf02545cd1c0a170af8b2a28c43863441537",
+    "chk_d2b28f3eaef04f3b99c6b112cbc21848b5e676ae5b44a9e9d28d83cf301b93d9",
+    "chk_32f2cf69852d2d95069debcd2967b15e98da4684794244621c004405022b97e4",
+    "chk_f0e85982ba1636321a2d5335af92718f8f21564b5a737ffcda2050ef4ed5a6c0",
+    "chk_34551a69ea39ff170d4290975de3b86ac8a1b9c850a881155b90258b1e019398"
+   ]
+  },
+  "seen": [
+   "chk_ced4d0cb02f5d17ad6d07e596de2a2727104ca6cbf58e3c9409942e085930f8c",
+   "chk_6f2cc8fbf7da80065f5f821f50f7bc038fa3c058741be415439fd41c1ddc8435",
+   "chk_128e864cd37a84838f19edff4d6d32175e80a6b1c8b3ce6989d889a3e038c450",
+   "chk_cc19432ad0a25c7e6d7056d8396dcf02545cd1c0a170af8b2a28c43863441537",
+   "chk_d2b28f3eaef04f3b99c6b112cbc21848b5e676ae5b44a9e9d28d83cf301b93d9",
+   "chk_32f2cf69852d2d95069debcd2967b15e98da4684794244621c004405022b97e4",
+   "chk_f0e85982ba1636321a2d5335af92718f8f21564b5a737ffcda2050ef4ed5a6c0",
+   "chk_34551a69ea39ff170d4290975de3b86ac8a1b9c850a881155b90258b1e019398"
+  ]
+ },
+ "run_id": "23293dea-72aa-45cf-b519-aec7c67e9a4d",
+ "run_status": "done",
+ "split": "handwritten",
+ "started_at": "2026-11-16T21:22:17.596200+00:00",
+ "status": "done",
+ "system_config_hash": "52a48e08f9ef2a659803092d4f5678475241e872105c99154f86b7bbc29038a3",
+ "system_id": "m6",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 66453,
+  "cache_write_tokens": 27250,
+  "input_tokens": 14438,
+  "output_tokens": 10271
+ }
+}

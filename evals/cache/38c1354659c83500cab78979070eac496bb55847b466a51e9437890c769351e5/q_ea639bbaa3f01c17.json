@@ -1,0 +1,117 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 3,
+  "numeric_valid": 2,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.1087137",
+ "error": null,
+ "finished_at": "2026-11-16T20:39:04.599761+00:00",
+ "latency_ms": 34064,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "-7.1132"
+ },
+ "question_id": "q_ea639bbaa3f01c17",
+ "question_sha": "f0737c62e60ac75b637f0177d3d15c04f86582c08f3a0f586ca03312de533695",
+ "raw_output": {
+  "caveats": [
+   "The Q4 2023 revenue is derived (full-year 2023 less the nine-month year-to-date figure), not directly reported as a standalone quarter.",
+   "The full-year 2023 input to the Q4 derivation comes from a later filing (accession 0000093410-26-000078), while the nine-month input comes from accession 0000093410-24-000059."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "2661"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q1",
+     "fiscal_year": 2023
+    },
+    "text": "Chevron's revenue for fiscal Q1 2023 (2023-01-01 to 2023-03-31) was $50.793 billion.",
+    "ticker": "CVX",
+    "unit": "USD",
+    "value": "50793000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "2664"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q4",
+     "fiscal_year": 2023
+    },
+    "text": "Chevron's derived revenue for fiscal Q4 2023 (2023-10-01 to 2023-12-31) was $47.18 billion, calculated as full-year 2023 revenue of $200.949 billion minus nine-month revenue of $153.769 billion.",
+    "ticker": "CVX",
+    "unit": "USD",
+    "value": "47180000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "2661"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "2664"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q4",
+     "fiscal_year": 2023
+    },
+    "text": "Percent change = (47,180,000,000 - 50,793,000,000) / 50,793,000,000 \u00d7 100 = -3,613,000,000 / 50,793,000,000 \u00d7 100 \u2248 -7.11%, a decline of about 7.1% from Q1 2023 to Q4 2023.",
+    "ticker": "CVX",
+    "unit": "percent",
+    "value": "-7.1132",
+    "value_basis": "model_arithmetic"
+   }
+  ],
+  "final_claim_id": "c3",
+  "final_unit": "percent",
+  "final_value": "-7.1132",
+  "status": "answered",
+  "summary": "Chevron's total revenue fell about 7.11% from fiscal Q1 2023 ($50.793 billion) to fiscal Q4 2023 ($47.18 billion). The Q4 figure is derived from annual and nine-month revenue."
+ },
+ "run_id": "a96ceb8e-dff7-4591-9f60-058f55162e71",
+ "run_status": "done",
+ "split": "test",
+ "started_at": "2026-11-16T20:38:30.462186+00:00",
+ "status": "done",
+ "system_config_hash": "38c1354659c83500cab78979070eac496bb55847b466a51e9437890c769351e5",
+ "system_id": "m6-no-quant",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 46362,
+  "cache_write_tokens": 13411,
+  "input_tokens": 11995,
+  "output_tokens": 4656
+ }
+}

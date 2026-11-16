@@ -1,0 +1,268 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 0,
+  "numeric_valid": 0,
+  "text_pending_judge": [
+   {
+    "chunk_ids": [
+     "chk_83fd053c3d038f23cc6dac1c7981675a6819456cc2656273671dd79cc2814ee8"
+    ],
+    "claim_id": "c1",
+    "text": "Pfizer said that most 2023 demand for its COVID-19 products was met from supply already delivered to governments and recorded as revenue in 2022."
+   },
+   {
+    "chunk_ids": [
+     "chk_503916bb433c1024e5681f816f7137f1b8916a10a1a05ae5a87b1af7953f902c"
+    ],
+    "claim_id": "c3",
+    "text": "Pfizer said Comirnaty moved to traditional U.S. commercial sales in September 2023. The trigger was the expiration of government contracts, and the vaccines bought under them were either depleted or not used after a new variant vaccine was introduced."
+   },
+   {
+    "chunk_ids": [
+     "chk_e67aa046310b98da4badbbfa8bdb79d4710d57add1cc224e8e499165fa1f2e70"
+    ],
+    "claim_id": "c5",
+    "text": "Pfizer sold Paxlovid principally to government agencies in 2023. An amended U.S. government agreement announced on October 13, 2023 moved Paxlovid to traditional commercial markets in November 2023."
+   }
+  ],
+  "text_string_supported": 5,
+  "text_total": 8,
+  "uncited": 0
+ },
+ "cost_usd": "0.247451540",
+ "error": null,
+ "finished_at": "2026-11-16T21:47:32.539922+00:00",
+ "latency_ms": 176849,
+ "prediction": {
+  "parse_ok": true,
+  "text": "Pfizer's filings give several reasons for the fall in Comirnaty and Paxlovid sales in 2023. Most 2023 demand was met from product governments had already received in 2022. Vaccination and infection rates were lower than expected. Both products moved from government contracts to commercial markets, and Pfizer recorded a $3.5 billion non-cash Paxlovid revenue reversal. International contract deliveries also fell. Pfizer also wrote off inventory.\nPfizer said that most 2023 demand for its COVID-19 products was met from supply already delivered to governments and recorded as revenue in 2022.\nFor Comirnaty, Pfizer attributed the decline largely to lower contracted deliveries and demand in international markets and lower U.S. government contracted deliveries. It cited the transition to new variant vaccines in most markets and the move to traditional U.S. commercial market sales that began in September 2023.\nPfizer said Comirnaty moved to traditional U.S. commercial sales in September 2023. The trigger was the expiration of government contracts, and the vaccines bought under them were either depleted or not used after a new variant vaccine was introduced.\nFor Paxlovid, Pfizer cited a $3.5 billion non-cash revenue reversal in Q4 2023. It was tied to the expected return of an estimated 6.5 million treatment courses of EUA-labeled U.S. government inventory, and part of it related to 2022 sales. Pfizer also cited lower contractual deliveries in most international markets. These were partly offset by strong demand in China under the temporary National Reimbursement Drug List in Q1 2023.\nPfizer sold Paxlovid principally to government agencies in 2023. An amended U.S. government agreement announced on October 13, 2023 moved Paxlovid to traditional commercial markets in November 2023.\nIn its Q3 2023 10-Q, Pfizer cut its forecast by about $9 billion ($7 billion for Paxlovid and $2 billion for Comirnaty). It cited an expected $4.2 billion non-cash sales return of EUA-labeled Paxlovid from the U.S. government, lower-than-expected vaccination and infection rates, and delayed U.S. commercialization for Paxlovid.\nPfizer's risk factors say that as the market for COVID-19 products becomes more endemic and seasonal, demand has been and may continue to be reduced. This has led to lower revenues and excess inventory, and to significant inventory write-offs for Paxlovid and Comirnaty in 2023. It also cites challenges in moving to the commercial market.\nThe lower sales cut Pfizer's cost of sales. It cited a $14.2 billion reduction from lower Comirnaty sales. Against that, it recorded non-cash charges of $6.2 billion for inventory write-offs and related charges ($5.0 billion for Paxlovid and $1.2 billion for Comirnaty)."
+ },
+ "question_id": "hq_3d27d3a6bc924f74ab4e2b4f2a914397",
+ "question_sha": "e78fc97bc4779285e3d24273e76291d805c580d2e40f80c139d92b82ab3d0e9a",
+ "raw_output": {
+  "caveats": [
+   "Two Q3 10-Q passages on Paxlovid and inventory write-offs were seen only as search snippets, so they are not quoted.",
+   "The Item 1A risk-factor passages give qualitative drivers only. The quantitative product-level detail comes from MD&A.",
+   "The figures for Comirnaty and Paxlovid revenue and their percentage declines were not independently verified here, so they are not restated as numbers. The explanation relies on management's stated drivers.",
+   "Total company revenue for FY2023 was $59.553 billion (fact 2918). It is not broken out by product in the retrieved facts."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_83fd053c3d038f23cc6dac1c7981675a6819456cc2656273671dd79cc2814ee8"
+     }
+    ],
+    "id": "c1",
+    "kind": "textual",
+    "period": null,
+    "text": "Pfizer said that most 2023 demand for its COVID-19 products was met from supply already delivered to governments and recorded as revenue in 2022.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_0538f0ffa59db400f54d9113d160ab4f0b2363254d9b08d5c09d32cfb2125bc8"
+     }
+    ],
+    "id": "c2",
+    "kind": "textual",
+    "period": null,
+    "text": "For Comirnaty, Pfizer attributed the decline largely to lower contracted deliveries and demand in international markets and lower U.S. government contracted deliveries. It cited the transition to new variant vaccines in most markets and the move to traditional U.S. commercial market sales that began in September 2023.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_503916bb433c1024e5681f816f7137f1b8916a10a1a05ae5a87b1af7953f902c"
+     }
+    ],
+    "id": "c3",
+    "kind": "textual",
+    "period": null,
+    "text": "Pfizer said Comirnaty moved to traditional U.S. commercial sales in September 2023. The trigger was the expiration of government contracts, and the vaccines bought under them were either depleted or not used after a new variant vaccine was introduced.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_fcd076d7c017473505492cb8d10e320b3219e95d536afa56ade72013f5f7b60e"
+     }
+    ],
+    "id": "c4",
+    "kind": "textual",
+    "period": null,
+    "text": "For Paxlovid, Pfizer cited a $3.5 billion non-cash revenue reversal in Q4 2023. It was tied to the expected return of an estimated 6.5 million treatment courses of EUA-labeled U.S. government inventory, and part of it related to 2022 sales. Pfizer also cited lower contractual deliveries in most international markets. These were partly offset by strong demand in China under the temporary National Reimbursement Drug List in Q1 2023.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_e67aa046310b98da4badbbfa8bdb79d4710d57add1cc224e8e499165fa1f2e70"
+     }
+    ],
+    "id": "c5",
+    "kind": "textual",
+    "period": null,
+    "text": "Pfizer sold Paxlovid principally to government agencies in 2023. An amended U.S. government agreement announced on October 13, 2023 moved Paxlovid to traditional commercial markets in November 2023.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_83fd053c3d038f23cc6dac1c7981675a6819456cc2656273671dd79cc2814ee8"
+     }
+    ],
+    "id": "c6",
+    "kind": "textual",
+    "period": null,
+    "text": "In its Q3 2023 10-Q, Pfizer cut its forecast by about $9 billion ($7 billion for Paxlovid and $2 billion for Comirnaty). It cited an expected $4.2 billion non-cash sales return of EUA-labeled Paxlovid from the U.S. government, lower-than-expected vaccination and infection rates, and delayed U.S. commercialization for Paxlovid.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_b0bcfa80fc670ad298f09b9d36b0ec74801a3a73ad30dfefacec082b62d4ee7c"
+     }
+    ],
+    "id": "c7",
+    "kind": "textual",
+    "period": null,
+    "text": "Pfizer's risk factors say that as the market for COVID-19 products becomes more endemic and seasonal, demand has been and may continue to be reduced. This has led to lower revenues and excess inventory, and to significant inventory write-offs for Paxlovid and Comirnaty in 2023. It also cites challenges in moving to the commercial market.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_9753e6cb6022a62153fe23d633eaf5f8459650bcfa6792dfc26443ae1b1af87b"
+     }
+    ],
+    "id": "c8",
+    "kind": "textual",
+    "period": null,
+    "text": "The lower sales cut Pfizer's cost of sales. It cited a $14.2 billion reduction from lower Comirnaty sales. Against that, it recorded non-cash charges of $6.2 billion for inventory write-offs and related charges ($5.0 billion for Paxlovid and $1.2 billion for Comirnaty).",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   }
+  ],
+  "final_claim_id": null,
+  "final_unit": null,
+  "final_value": null,
+  "status": "answered",
+  "summary": "Pfizer's filings give several reasons for the fall in Comirnaty and Paxlovid sales in 2023. Most 2023 demand was met from product governments had already received in 2022. Vaccination and infection rates were lower than expected. Both products moved from government contracts to commercial markets, and Pfizer recorded a $3.5 billion non-cash Paxlovid revenue reversal. International contract deliveries also fell. Pfizer also wrote off inventory."
+ },
+ "retrieval": {
+  "first_search": {
+   "filings:s2": [
+    "chk_446b6cbf31a7dc24ac91c40cfc86db804f2c52647a933eb4e1a28c428f0b76e2",
+    "chk_fcd076d7c017473505492cb8d10e320b3219e95d536afa56ade72013f5f7b60e",
+    "chk_57fb6f8a04b75a49ad50eccfdb5dedd568a168aa5905f5225fb3151ccf9dac3a",
+    "chk_048880d60202b66703ce2d9032eac6862a7a7f771dfb76743e682a00957b1018",
+    "chk_0538f0ffa59db400f54d9113d160ab4f0b2363254d9b08d5c09d32cfb2125bc8",
+    "chk_9753e6cb6022a62153fe23d633eaf5f8459650bcfa6792dfc26443ae1b1af87b",
+    "chk_e67aa046310b98da4badbbfa8bdb79d4710d57add1cc224e8e499165fa1f2e70",
+    "chk_503916bb433c1024e5681f816f7137f1b8916a10a1a05ae5a87b1af7953f902c"
+   ],
+   "filings:s3": [
+    "chk_83fd053c3d038f23cc6dac1c7981675a6819456cc2656273671dd79cc2814ee8",
+    "chk_aaf2af2fab1e1030da77e46106407f113df839d860ea4413de70848fead060f9",
+    "chk_e25d1c1276e4665d291953dfd3ef522398c963e60b7b085ccc5edbf831dfc058",
+    "chk_ba541cda433a185031d57ed6c1dabe5263df7c20425ea4f405bb4ef00285e7a4",
+    "chk_9ffe8a337bd82bd6893ac359f9a0419a264ff2b6b0a80c73491ec01b9ca0424b",
+    "chk_cc058554ad78b78d35dba08df2b33d45a315cbf6ea298e813a2565f4bac01502",
+    "chk_6497753a76fe1ad054f3570f0e7caa46bd7bbda218760f24d93f848b83c544b2",
+    "chk_a200aa23b9e45dd07946b51b4c05dfe475e8a3442f99270c26cf7b4c014554d9"
+   ],
+   "filings:s4": [
+    "chk_b0bcfa80fc670ad298f09b9d36b0ec74801a3a73ad30dfefacec082b62d4ee7c",
+    "chk_71f13c638981802956392e69c025d33ceee2211aea465e178957b7936a2ee346",
+    "chk_8decbfc48629d7de63980de347d46fb8b3ab5798509a00b7cf5984f9f1965f26",
+    "chk_3157d17a5e71a868d9cd7080528f62844d15aa6b5520d90b96efd807aec1705d",
+    "chk_fb07e0beb5781c9c9db4238c983c2ec6dca78d31235848d6eb2ef7f8ed4b87b1",
+    "chk_3019080ab65fb3f274d231e566f497293b53dbd20a111be1fd490c9667304b24"
+   ]
+  },
+  "seen": [
+   "chk_446b6cbf31a7dc24ac91c40cfc86db804f2c52647a933eb4e1a28c428f0b76e2",
+   "chk_fcd076d7c017473505492cb8d10e320b3219e95d536afa56ade72013f5f7b60e",
+   "chk_57fb6f8a04b75a49ad50eccfdb5dedd568a168aa5905f5225fb3151ccf9dac3a",
+   "chk_048880d60202b66703ce2d9032eac6862a7a7f771dfb76743e682a00957b1018",
+   "chk_0538f0ffa59db400f54d9113d160ab4f0b2363254d9b08d5c09d32cfb2125bc8",
+   "chk_9753e6cb6022a62153fe23d633eaf5f8459650bcfa6792dfc26443ae1b1af87b",
+   "chk_e67aa046310b98da4badbbfa8bdb79d4710d57add1cc224e8e499165fa1f2e70",
+   "chk_503916bb433c1024e5681f816f7137f1b8916a10a1a05ae5a87b1af7953f902c",
+   "chk_83fd053c3d038f23cc6dac1c7981675a6819456cc2656273671dd79cc2814ee8",
+   "chk_aaf2af2fab1e1030da77e46106407f113df839d860ea4413de70848fead060f9",
+   "chk_e25d1c1276e4665d291953dfd3ef522398c963e60b7b085ccc5edbf831dfc058",
+   "chk_ba541cda433a185031d57ed6c1dabe5263df7c20425ea4f405bb4ef00285e7a4",
+   "chk_9ffe8a337bd82bd6893ac359f9a0419a264ff2b6b0a80c73491ec01b9ca0424b",
+   "chk_cc058554ad78b78d35dba08df2b33d45a315cbf6ea298e813a2565f4bac01502",
+   "chk_6497753a76fe1ad054f3570f0e7caa46bd7bbda218760f24d93f848b83c544b2",
+   "chk_a200aa23b9e45dd07946b51b4c05dfe475e8a3442f99270c26cf7b4c014554d9",
+   "chk_b0bcfa80fc670ad298f09b9d36b0ec74801a3a73ad30dfefacec082b62d4ee7c",
+   "chk_71f13c638981802956392e69c025d33ceee2211aea465e178957b7936a2ee346",
+   "chk_8decbfc48629d7de63980de347d46fb8b3ab5798509a00b7cf5984f9f1965f26",
+   "chk_3157d17a5e71a868d9cd7080528f62844d15aa6b5520d90b96efd807aec1705d",
+   "chk_fb07e0beb5781c9c9db4238c983c2ec6dca78d31235848d6eb2ef7f8ed4b87b1",
+   "chk_3019080ab65fb3f274d231e566f497293b53dbd20a111be1fd490c9667304b24",
+   "chk_a3924a6d08e2eee6afec8910588fa5d3d539f1abb675883e75c92713c1f65e20",
+   "chk_99599135995bd98c266b459ef564f133349e9ce9fc0df057a7ab08264d897f06",
+   "chk_17d8477799fe7d924fa936d1dfd4abeaa3cc0317986db5ac548a8e9de6bd0031",
+   "chk_c6b34fa75b1ce9407e8ccea22ab869993f0011b01dfa3683e81f351a32e51e5d"
+  ]
+ },
+ "run_id": "83005c7b-9c10-41b6-94d0-916535a0cb85",
+ "run_status": "done",
+ "split": "handwritten",
+ "started_at": "2026-11-16T21:44:35.619633+00:00",
+ "status": "done",
+ "system_config_hash": "dda3ea6b7db41dd0273d82e63c7ab3c74a4ec2dac9f2674d40c2836322074f2a",
+ "system_id": "m6-rerank",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 150660,
+  "cache_write_tokens": 68019,
+  "input_tokens": 29788,
+  "output_tokens": 18400
+ }
+}

@@ -1,7 +1,0 @@
-# D6: Opus rubric and claim judges for the M6 handwritten runs (D093 protocol, Batch API,
-# cached), `python -m evals.judge run --plan evals/configs/m6_judges.toml`. D7's config is
-# added here only if the conditional hybrid ablation runs (D123).
-name = "m6-judges"
-budget = "m6"
-spend_cap_usd = "1.50"
-configs = ["evals/configs/m6_handwritten.toml", "evals/configs/m6_handwritten_rerank.toml"]

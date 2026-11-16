@@ -1,0 +1,71 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 1,
+  "numeric_valid": 1,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.0341858",
+ "error": null,
+ "finished_at": "2026-11-16T20:35:16.724404+00:00",
+ "latency_ms": 11748,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD",
+  "value": "7192000000"
+ },
+ "question_id": "q_7ea8e272359085fd",
+ "question_sha": "f56cf86f8ed90b17d3c1d0758e104b0d84f773585bf51ec7bcee697e446db9ec",
+ "raw_output": {
+  "caveats": [
+   "Value is the balance-sheet instant at 2023-12-30 as reported in the filing within the snapshot (accession 0001744489-24-000081)."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3982"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q1",
+     "fiscal_year": 2024
+    },
+    "text": "Disney reported cash and cash equivalents of $7,192,000,000 (about $7.19 billion) as of December 30, 2023, the end of fiscal Q1 2024.",
+    "ticker": "DIS",
+    "unit": "USD",
+    "value": "7192000000",
+    "value_basis": "fact"
+   }
+  ],
+  "final_claim_id": "c1",
+  "final_unit": "USD",
+  "final_value": "7192000000",
+  "status": "answered",
+  "summary": "Disney's cash and cash equivalents at the end of fiscal Q1 2024 (December 30, 2023) were about $7.19 billion ($7,192,000,000)."
+ },
+ "run_id": "3b5539bf-6eb0-48e0-9c10-c2a3d98788eb",
+ "run_status": "done",
+ "split": "test",
+ "started_at": "2026-11-16T20:35:04.896723+00:00",
+ "status": "done",
+ "system_config_hash": "38c1354659c83500cab78979070eac496bb55847b466a51e9437890c769351e5",
+ "system_id": "m6-no-quant",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 22033,
+  "cache_write_tokens": 4961,
+  "input_tokens": 3910,
+  "output_tokens": 1176
+ }
+}

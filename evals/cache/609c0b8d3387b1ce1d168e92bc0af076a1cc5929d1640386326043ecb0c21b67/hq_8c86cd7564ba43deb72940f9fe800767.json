@@ -1,0 +1,181 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 0,
+  "numeric_valid": 0,
+  "text_pending_judge": [
+   {
+    "chunk_ids": [
+     "chk_ab110988915bd1748d1769dd9578c8856a6195ecd596ed837f1964b8b2b07380"
+    ],
+    "claim_id": "c2",
+    "text": "On revenue, Disney said subscription fee growth reflected a 10% increase from higher effective rates due to retail pricing increases and 6% from subscriber growth. A 2% unfavorable foreign exchange impact partly offset this."
+   },
+   {
+    "chunk_ids": [
+     "chk_ab110988915bd1748d1769dd9578c8856a6195ecd596ed837f1964b8b2b07380"
+    ],
+    "claim_id": "c3",
+    "text": "Disney said higher advertising revenue reflected a 26% increase from higher impressions, partly offset by a 12% decrease from lower rates."
+   },
+   {
+    "chunk_ids": [
+     "chk_68e042a888c2a543e262d2e740d40b4717b56d583e1f92493371abb0788dc0ad"
+    ],
+    "claim_id": "c5",
+    "text": "Selling, general, administrative and other costs rose $406 million, to $4,574 million from $4,168 million. Disney attributed this primarily to increases in marketing and labor costs, which partly offset the improvement."
+   }
+  ],
+  "text_string_supported": 2,
+  "text_total": 5,
+  "uncited": 0
+ },
+ "cost_usd": "0.066535360",
+ "error": null,
+ "finished_at": "2026-11-16T22:14:13.333245+00:00",
+ "latency_ms": 34205,
+ "prediction": {
+  "parse_ok": true,
+  "text": "Disney said Direct-to-Consumer operating results increased $2,639 million, to operating income of $143 million from an operating loss of $2,496 million, \"due to improved results at Disney+.\" The filing points to higher subscription fees and advertising revenue. It also points to lower non-sports programming costs at Disney+, partly offset by cricket programming costs at Disney+ Hotstar.\nDisney reported that Direct-to-Consumer operating results increased $2,639 million, to operating income of $143 million from an operating loss of $2,496 million, and attributed this to improved results at Disney+.\nOn revenue, Disney said subscription fee growth reflected a 10% increase from higher effective rates due to retail pricing increases and 6% from subscriber growth. A 2% unfavorable foreign exchange impact partly offset this.\nDisney said higher advertising revenue reflected a 26% increase from higher impressions, partly offset by a 12% decrease from lower rates.\nOn costs, Disney said the decrease in programming and production costs at Disney+ and other was attributable to lower costs for non-sports content on Disney+. Higher cricket programming costs at Disney+ Hotstar partly offset this.\nSelling, general, administrative and other costs rose $406 million, to $4,574 million from $4,168 million. Disney attributed this primarily to increases in marketing and labor costs, which partly offset the improvement."
+ },
+ "question_id": "hq_8c86cd7564ba43deb72940f9fe800767",
+ "question_sha": "e28cf0db6ea17488d4397a2346f92d6ea555ad0ab913495c948cc37b058af47a",
+ "raw_output": {
+  "caveats": [
+   "The passages do not quantify how much of the $2,639 million improvement came from each driver.",
+   "The revenue-driver percentages come from the filing's MD&A discussion. They are not tied here to a specific sub-line of the segment."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_68e042a888c2a543e262d2e740d40b4717b56d583e1f92493371abb0788dc0ad"
+     }
+    ],
+    "id": "c1",
+    "kind": "textual",
+    "period": null,
+    "text": "Disney reported that Direct-to-Consumer operating results increased $2,639 million, to operating income of $143 million from an operating loss of $2,496 million, and attributed this to improved results at Disney+.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_ab110988915bd1748d1769dd9578c8856a6195ecd596ed837f1964b8b2b07380"
+     }
+    ],
+    "id": "c2",
+    "kind": "textual",
+    "period": null,
+    "text": "On revenue, Disney said subscription fee growth reflected a 10% increase from higher effective rates due to retail pricing increases and 6% from subscriber growth. A 2% unfavorable foreign exchange impact partly offset this.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_ab110988915bd1748d1769dd9578c8856a6195ecd596ed837f1964b8b2b07380"
+     }
+    ],
+    "id": "c3",
+    "kind": "textual",
+    "period": null,
+    "text": "Disney said higher advertising revenue reflected a 26% increase from higher impressions, partly offset by a 12% decrease from lower rates.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_68e042a888c2a543e262d2e740d40b4717b56d583e1f92493371abb0788dc0ad"
+     }
+    ],
+    "id": "c4",
+    "kind": "textual",
+    "period": null,
+    "text": "On costs, Disney said the decrease in programming and production costs at Disney+ and other was attributable to lower costs for non-sports content on Disney+. Higher cricket programming costs at Disney+ Hotstar partly offset this.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_68e042a888c2a543e262d2e740d40b4717b56d583e1f92493371abb0788dc0ad"
+     }
+    ],
+    "id": "c5",
+    "kind": "textual",
+    "period": null,
+    "text": "Selling, general, administrative and other costs rose $406 million, to $4,574 million from $4,168 million. Disney attributed this primarily to increases in marketing and labor costs, which partly offset the improvement.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   }
+  ],
+  "final_claim_id": null,
+  "final_unit": null,
+  "final_value": null,
+  "status": "answered",
+  "summary": "Disney said Direct-to-Consumer operating results increased $2,639 million, to operating income of $143 million from an operating loss of $2,496 million, \"due to improved results at Disney+.\" The filing points to higher subscription fees and advertising revenue. It also points to lower non-sports programming costs at Disney+, partly offset by cricket programming costs at Disney+ Hotstar."
+ },
+ "retrieval": {
+  "first_search": {
+   "filings:s1": [
+    "chk_68e042a888c2a543e262d2e740d40b4717b56d583e1f92493371abb0788dc0ad",
+    "chk_2e5957816187ced4849d79ee442f5e46e2959844f9186a3c3886e4ddffcfd871",
+    "chk_d1b0a7a02ff27397c86eba95c9786da1660f335f7e09b254d2ca0bc52573c8f4",
+    "chk_b87ee821e9a17b2dea18c19783e0873f71332bbf0b05905a2116cd232f2ebc25",
+    "chk_1f3964a976c6b376b4fe0f5df4b06bb97f20e7675b827ccc8225abe67e7d22ce",
+    "chk_0f50bafe6fff22a55fe50d6f8a2cbb4d5a4f2547c1f8f998130fd664bf2dc661",
+    "chk_47ab7d71317cc607af1946c01224a09ac07c1a13e028cd02f757d1b79cb967db",
+    "chk_e120feb6d75965a6fee8e137adddf7946edf379aba928c26ee8850e3f702848f"
+   ]
+  },
+  "seen": [
+   "chk_68e042a888c2a543e262d2e740d40b4717b56d583e1f92493371abb0788dc0ad",
+   "chk_2e5957816187ced4849d79ee442f5e46e2959844f9186a3c3886e4ddffcfd871",
+   "chk_d1b0a7a02ff27397c86eba95c9786da1660f335f7e09b254d2ca0bc52573c8f4",
+   "chk_b87ee821e9a17b2dea18c19783e0873f71332bbf0b05905a2116cd232f2ebc25",
+   "chk_1f3964a976c6b376b4fe0f5df4b06bb97f20e7675b827ccc8225abe67e7d22ce",
+   "chk_0f50bafe6fff22a55fe50d6f8a2cbb4d5a4f2547c1f8f998130fd664bf2dc661",
+   "chk_47ab7d71317cc607af1946c01224a09ac07c1a13e028cd02f757d1b79cb967db",
+   "chk_e120feb6d75965a6fee8e137adddf7946edf379aba928c26ee8850e3f702848f",
+   "chk_ab110988915bd1748d1769dd9578c8856a6195ecd596ed837f1964b8b2b07380",
+   "chk_37c86d2c5aefd61c4e0a5c8cebcb0986da1f15a52261c77a354bd4d451d7c62d"
+  ]
+ },
+ "run_id": "22b8eb8f-c613-4e4d-ae42-3215390113fb",
+ "run_status": "done",
+ "split": "handwritten",
+ "started_at": "2026-11-16T22:13:39.053748+00:00",
+ "status": "done",
+ "system_config_hash": "609c0b8d3387b1ce1d168e92bc0af076a1cc5929d1640386326043ecb0c21b67",
+ "system_id": "m6-hybrid",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 60198,
+  "cache_write_tokens": 25284,
+  "input_tokens": 7895,
+  "output_tokens": 5462
+ }
+}

@@ -1,0 +1,325 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 0,
+  "numeric_valid": 0,
+  "text_pending_judge": [
+   {
+    "chunk_ids": [
+     "chk_539ad4abd5a6aebba6212061aa87fa82247e4865cf91ce27ad7a9806b9379429"
+    ],
+    "claim_id": "c1",
+    "text": "Amazon's FY2025 10-K says the results of operations of its international stores and product and service offerings, and certain intercompany balances, are exposed to foreign exchange rate fluctuations. It adds that as it has expanded internationally, its exposure to exchange rate fluctuations has increased."
+   },
+   {
+    "chunk_ids": [
+     "chk_c1fa9ce83cb6b5c20f0f3fe7b7fc2122717e546c244913c356754cc1a18b00a2"
+    ],
+    "claim_id": "c3",
+    "text": "Amazon says its reporting currency is the U.S. Dollar and that changes in foreign exchange rates significantly affect its reported results and consolidated trends."
+   },
+   {
+    "chunk_ids": [
+     "chk_5d53f2e3106ac1503ffd5b09ec45f1a54f8ede08c6343f0e7050f9232c9a1c25"
+    ],
+    "claim_id": "c5",
+    "text": "Amazon reported that FX fluctuations during the year, compared with prior-year rates, increased International segment net sales by $4.9 billion in FY2025."
+   },
+   {
+    "chunk_ids": [
+     "chk_5d53f2e3106ac1503ffd5b09ec45f1a54f8ede08c6343f0e7050f9232c9a1c25"
+    ],
+    "claim_id": "c6",
+    "text": "Based on foreign funds of $29.7 billion at December 31, 2025, Amazon says an assumed 5%, 10% and 20% adverse change in foreign exchange would reduce them by $1.5 billion, $3.0 billion and $5.9 billion respectively."
+   }
+  ],
+  "text_string_supported": 5,
+  "text_total": 9,
+  "uncited": 0
+ },
+ "cost_usd": "0.200613875",
+ "error": null,
+ "finished_at": "2026-11-16T21:44:35.617429+00:00",
+ "latency_ms": 115255,
+ "prediction": {
+  "parse_ok": true,
+  "text": "Amazon says it is materially exposed to currency swings, and the exposure has grown with its international expansion. Its international stores and AWS results, intercompany balances, and foreign-currency cash and securities are all exposed. In FY2025, FX raised International net sales by $4.9 billion. A 5%, 10% or 20% adverse FX move on $29.7 billion of foreign funds would reduce them by $1.5 billion, $3.0 billion or $5.9 billion. In Q2 2026, FX did not significantly affect net sales. It added $3.0 billion to six-month net sales. The retrieved text does not describe a hedging program.\nAmazon's FY2025 10-K says the results of operations of its international stores and product and service offerings, and certain intercompany balances, are exposed to foreign exchange rate fluctuations. It adds that as it has expanded internationally, its exposure to exchange rate fluctuations has increased.\nItem 7A states that the results of operations of, and certain intercompany balances associated with, Amazon's internationally-focused stores and AWS are exposed to foreign exchange rate fluctuations.\nAmazon says its reporting currency is the U.S. Dollar and that changes in foreign exchange rates significantly affect its reported results and consolidated trends.\nAmazon says that when the U.S. Dollar strengthens against the currencies in which it holds cash equivalents and marketable securities, those balances, when translated, may be materially less than expected, and vice versa.\nAmazon reported that FX fluctuations during the year, compared with prior-year rates, increased International segment net sales by $4.9 billion in FY2025.\nBased on foreign funds of $29.7 billion at December 31, 2025, Amazon says an assumed 5%, 10% and 20% adverse change in foreign exchange would reduce them by $1.5 billion, $3.0 billion and $5.9 billion respectively.\nAmazon's risk factors list limitations on the repatriation and investment of funds and foreign currency exchange restrictions among its international operating risks. They also cite changes in foreign exchange rates as one factor affecting its tax expense and liabilities.\nIn the Q2 2026 10-Q, Amazon said FX changes did not significantly affect net sales for Q2 2026 but increased net sales by $3.0 billion for the six months ended June 30, 2026. Of that, International net sales rose by $2.4 billion and North America net sales by $485 million.\nAmazon's Q3 2026 guidance language says its results are inherently unpredictable and may be materially affected by many factors, such as fluctuations in foreign exchange rates and energy prices."
+ },
+ "question_id": "hq_24a3e4ca8e144f708dc1df755db10222",
+ "question_sha": "79aef5de0f20a517b19f2cbaf4a3206aece8d5840693f5981af9a52f39c9ea89",
+ "raw_output": {
+  "caveats": [
+   "No structured facts were available. The figures above come from verified filing quotes, not computed values.",
+   "The retrieved passages did not show a hedging program or derivative hedges. A search of the Item 8 derivatives note was not run, so this does not show that Amazon has no hedges.",
+   "The FY2025 operating income effects ($903 million positive, $341 million negative and $204 million negative) were retrieved without confirmed segment labels, so they are not attributed to segments here.",
+   "The Q2 2026 operating income FX table was not verified in full text, so Q2 2026 operating income effects are not reported.",
+   "The net sales exchange-rate table row was only partly quoted and its column order is ambiguous, so it was not used."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_539ad4abd5a6aebba6212061aa87fa82247e4865cf91ce27ad7a9806b9379429"
+     }
+    ],
+    "id": "c1",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Amazon's FY2025 10-K says the results of operations of its international stores and product and service offerings, and certain intercompany balances, are exposed to foreign exchange rate fluctuations. It adds that as it has expanded internationally, its exposure to exchange rate fluctuations has increased.",
+    "ticker": "AMZN",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_5d53f2e3106ac1503ffd5b09ec45f1a54f8ede08c6343f0e7050f9232c9a1c25"
+     }
+    ],
+    "id": "c2",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Item 7A states that the results of operations of, and certain intercompany balances associated with, Amazon's internationally-focused stores and AWS are exposed to foreign exchange rate fluctuations.",
+    "ticker": "AMZN",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_c1fa9ce83cb6b5c20f0f3fe7b7fc2122717e546c244913c356754cc1a18b00a2"
+     }
+    ],
+    "id": "c3",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Amazon says its reporting currency is the U.S. Dollar and that changes in foreign exchange rates significantly affect its reported results and consolidated trends.",
+    "ticker": "AMZN",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_539ad4abd5a6aebba6212061aa87fa82247e4865cf91ce27ad7a9806b9379429"
+     }
+    ],
+    "id": "c4",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Amazon says that when the U.S. Dollar strengthens against the currencies in which it holds cash equivalents and marketable securities, those balances, when translated, may be materially less than expected, and vice versa.",
+    "ticker": "AMZN",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_5d53f2e3106ac1503ffd5b09ec45f1a54f8ede08c6343f0e7050f9232c9a1c25"
+     }
+    ],
+    "id": "c5",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Amazon reported that FX fluctuations during the year, compared with prior-year rates, increased International segment net sales by $4.9 billion in FY2025.",
+    "ticker": "AMZN",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_5d53f2e3106ac1503ffd5b09ec45f1a54f8ede08c6343f0e7050f9232c9a1c25"
+     }
+    ],
+    "id": "c6",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Based on foreign funds of $29.7 billion at December 31, 2025, Amazon says an assumed 5%, 10% and 20% adverse change in foreign exchange would reduce them by $1.5 billion, $3.0 billion and $5.9 billion respectively.",
+    "ticker": "AMZN",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_b5c5cbb10015d4cd5faf55780eaaeb281f4570c42ac4d884f6d8562c8cf5ff90"
+     },
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_328db49482dda8e593af90da55ab04a1624577cb804e5b2e54113c64f3781b65"
+     }
+    ],
+    "id": "c7",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Amazon's risk factors list limitations on the repatriation and investment of funds and foreign currency exchange restrictions among its international operating risks. They also cite changes in foreign exchange rates as one factor affecting its tax expense and liabilities.",
+    "ticker": "AMZN",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_e94230def5b1a9c2c2e9114fb045f488b894690d4b86922fe098409b01dcdbf7"
+     }
+    ],
+    "id": "c8",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "Q2",
+     "fiscal_year": 2026
+    },
+    "text": "In the Q2 2026 10-Q, Amazon said FX changes did not significantly affect net sales for Q2 2026 but increased net sales by $3.0 billion for the six months ended June 30, 2026. Of that, International net sales rose by $2.4 billion and North America net sales by $485 million.",
+    "ticker": "AMZN",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_538bad9fd527dd3ac1881692d3ff08bccf6c51eb9c9e545ac3eb4091178c63db"
+     }
+    ],
+    "id": "c9",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "Q2",
+     "fiscal_year": 2026
+    },
+    "text": "Amazon's Q3 2026 guidance language says its results are inherently unpredictable and may be materially affected by many factors, such as fluctuations in foreign exchange rates and energy prices.",
+    "ticker": "AMZN",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   }
+  ],
+  "final_claim_id": null,
+  "final_unit": null,
+  "final_value": null,
+  "status": "answered",
+  "summary": "Amazon says it is materially exposed to currency swings, and the exposure has grown with its international expansion. Its international stores and AWS results, intercompany balances, and foreign-currency cash and securities are all exposed. In FY2025, FX raised International net sales by $4.9 billion. A 5%, 10% or 20% adverse FX move on $29.7 billion of foreign funds would reduce them by $1.5 billion, $3.0 billion or $5.9 billion. In Q2 2026, FX did not significantly affect net sales. It added $3.0 billion to six-month net sales. The retrieved text does not describe a hedging program."
+ },
+ "retrieval": {
+  "first_search": {
+   "filings:s1": [
+    "chk_539ad4abd5a6aebba6212061aa87fa82247e4865cf91ce27ad7a9806b9379429",
+    "chk_e2616e077d65a7d011f34d4d541e96e7b749ee0163902b7f4d746d095ea96416",
+    "chk_b5c5cbb10015d4cd5faf55780eaaeb281f4570c42ac4d884f6d8562c8cf5ff90",
+    "chk_af3ab9e955e74d3e46be60f2b967cf61f418f3d378ce19b9326e5f3d1512acff",
+    "chk_334b79a176221a02eedb583f7bb0427bcfa1afb25a0ecc16eed1cb46f37e559e",
+    "chk_328db49482dda8e593af90da55ab04a1624577cb804e5b2e54113c64f3781b65",
+    "chk_7daa139bc355792f14b8cb7646cf2c4f42fee0756196988e7bcb5f59fce74648",
+    "chk_db8d5695657775577eb2428c7744747b08db0ce387e2658d0e46716c12a33ec7"
+   ],
+   "filings:s2": [
+    "chk_25297a151e2aee5d0a1ff0417e174cfddad18db8fd3db8fca878d26ea7a95efd",
+    "chk_5d53f2e3106ac1503ffd5b09ec45f1a54f8ede08c6343f0e7050f9232c9a1c25",
+    "chk_42f0b1415251558791a7770f87dd8da42e1648b99778b9f263799e6a46586075",
+    "chk_c06e48ad72cf4cbed3df1119be2c7a589ec9c367b9bd48492347028067d28a4d",
+    "chk_580cf734214ddc4835ed232158735f94f071da7cd609eb758524985540c09ce5",
+    "chk_445e817ce3b658e4abf0cfdef500392712e6dad5aac91bf77a236a0c6eae2a0f",
+    "chk_6698ccb798fbe3d16cf220c590d239bb525f04be7875650b3a3b10e5b5e281a8",
+    "chk_c1fa9ce83cb6b5c20f0f3fe7b7fc2122717e546c244913c356754cc1a18b00a2"
+   ],
+   "filings:s3": [
+    "chk_21855b42bcfed6c7f8c02c39911efe12af845d4159de020825d96163a3a703e0",
+    "chk_362013531de90481333928c0f69b7de2b5ea36e6fdd1160642883bb5308b1326",
+    "chk_844a27f648d48e93b3f0553f875439b9a1d5366b344c30f7bf7e5ea644427a96",
+    "chk_e94230def5b1a9c2c2e9114fb045f488b894690d4b86922fe098409b01dcdbf7",
+    "chk_274570b0bf73fb32a964a6e47a9a8474be54398c6e4c8e3e201fda3683823be3",
+    "chk_538bad9fd527dd3ac1881692d3ff08bccf6c51eb9c9e545ac3eb4091178c63db",
+    "chk_28c3e49c43db6a7137b48233d88e8beeceed6363c66744169ca2b8b033f2de9e",
+    "chk_549d8fbc5e2e7ad2d4048b8c32c10f8b6a08a62cf1ca3ded91864cbef36ff710"
+   ]
+  },
+  "seen": [
+   "chk_539ad4abd5a6aebba6212061aa87fa82247e4865cf91ce27ad7a9806b9379429",
+   "chk_e2616e077d65a7d011f34d4d541e96e7b749ee0163902b7f4d746d095ea96416",
+   "chk_b5c5cbb10015d4cd5faf55780eaaeb281f4570c42ac4d884f6d8562c8cf5ff90",
+   "chk_af3ab9e955e74d3e46be60f2b967cf61f418f3d378ce19b9326e5f3d1512acff",
+   "chk_334b79a176221a02eedb583f7bb0427bcfa1afb25a0ecc16eed1cb46f37e559e",
+   "chk_328db49482dda8e593af90da55ab04a1624577cb804e5b2e54113c64f3781b65",
+   "chk_7daa139bc355792f14b8cb7646cf2c4f42fee0756196988e7bcb5f59fce74648",
+   "chk_db8d5695657775577eb2428c7744747b08db0ce387e2658d0e46716c12a33ec7",
+   "chk_21855b42bcfed6c7f8c02c39911efe12af845d4159de020825d96163a3a703e0",
+   "chk_362013531de90481333928c0f69b7de2b5ea36e6fdd1160642883bb5308b1326",
+   "chk_844a27f648d48e93b3f0553f875439b9a1d5366b344c30f7bf7e5ea644427a96",
+   "chk_e94230def5b1a9c2c2e9114fb045f488b894690d4b86922fe098409b01dcdbf7",
+   "chk_274570b0bf73fb32a964a6e47a9a8474be54398c6e4c8e3e201fda3683823be3",
+   "chk_538bad9fd527dd3ac1881692d3ff08bccf6c51eb9c9e545ac3eb4091178c63db",
+   "chk_28c3e49c43db6a7137b48233d88e8beeceed6363c66744169ca2b8b033f2de9e",
+   "chk_549d8fbc5e2e7ad2d4048b8c32c10f8b6a08a62cf1ca3ded91864cbef36ff710",
+   "chk_25297a151e2aee5d0a1ff0417e174cfddad18db8fd3db8fca878d26ea7a95efd",
+   "chk_5d53f2e3106ac1503ffd5b09ec45f1a54f8ede08c6343f0e7050f9232c9a1c25",
+   "chk_42f0b1415251558791a7770f87dd8da42e1648b99778b9f263799e6a46586075",
+   "chk_c06e48ad72cf4cbed3df1119be2c7a589ec9c367b9bd48492347028067d28a4d",
+   "chk_580cf734214ddc4835ed232158735f94f071da7cd609eb758524985540c09ce5",
+   "chk_445e817ce3b658e4abf0cfdef500392712e6dad5aac91bf77a236a0c6eae2a0f",
+   "chk_6698ccb798fbe3d16cf220c590d239bb525f04be7875650b3a3b10e5b5e281a8",
+   "chk_c1fa9ce83cb6b5c20f0f3fe7b7fc2122717e546c244913c356754cc1a18b00a2"
+  ]
+ },
+ "run_id": "dce616d7-1892-4a4c-a448-ea70c7082666",
+ "run_status": "done",
+ "split": "handwritten",
+ "started_at": "2026-11-16T21:42:40.282525+00:00",
+ "status": "done",
+ "system_config_hash": "dda3ea6b7db41dd0273d82e63c7ab3c74a4ec2dac9f2674d40c2836322074f2a",
+ "system_id": "m6-rerank",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 86334,
+  "cache_write_tokens": 48888,
+  "input_tokens": 38315,
+  "output_tokens": 16670
+ }
+}

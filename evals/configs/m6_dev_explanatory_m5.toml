@@ -2,6 +2,7 @@
 # prompts, mechanics only (D120). Projection $1.79 + $1.00 in flight (D123).
 name = "m6-dev-explanatory-m5"
 budget = "m6"
+spent_usd = "1.9303980"  # actual spend of the finished step (D123 re-sum rule)
 split = "explanatory_dev"
 sample = "all"
 seed = 20261109

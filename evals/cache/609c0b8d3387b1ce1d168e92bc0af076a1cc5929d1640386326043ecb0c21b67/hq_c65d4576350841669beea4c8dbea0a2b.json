@@ -1,0 +1,294 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 0,
+  "numeric_valid": 0,
+  "text_pending_judge": [
+   {
+    "chunk_ids": [
+     "chk_63fbfc975f5705abe61baba2542cbc87dd5fbd5a53c7f53594a77403b2033bec"
+    ],
+    "claim_id": "c5",
+    "text": "Commodities: Coke is exposed to price changes mainly in sweeteners, metals, juices, PET and fuels. It manages this primarily through supplier pricing agreements that establish purchase prices for certain inputs, and uses derivatives to further manage commodity risk when deemed appropriate."
+   },
+   {
+    "chunk_ids": [
+     "chk_9c56714a7d482c6be047f8435c12941917319ed7ff99ce7f28fbffebef3b28ed"
+    ],
+    "claim_id": "c6",
+    "text": "The total notional value of Coke's commodity derivatives was $535 million at December 31, 2025, versus $386 million at December 31, 2024."
+   },
+   {
+    "chunk_ids": [
+     "chk_cf028757ef64655b86311659251d8f81f3b75a0f0144a25af495010242e45f8a"
+    ],
+    "claim_id": "c9",
+    "text": "In Q1 2026, Coke cited higher commodity costs as a partial offset to the gross profit margin increase. The retrieved 10-Q text does not describe commodity hedge positions."
+   }
+  ],
+  "text_string_supported": 6,
+  "text_total": 9,
+  "uncited": 0
+ },
+ "cost_usd": "0.341973815",
+ "error": null,
+ "finished_at": "2026-11-16T22:18:18.195545+00:00",
+ "latency_ms": 113206,
+ "prediction": {
+  "parse_ok": true,
+  "text": "Coke says it uses derivatives mainly to reduce its exposure to foreign currency, interest rate and commodity price swings, and it does not use them for trading. For currency, it nets exposures across the company and uses forwards, options and collars. It also uses forwards to offset the earnings effect of remeasuring monetary assets and liabilities, and as net investment hedges. For commodities, it relies first on supplier pricing agreements and uses derivatives \"when deemed appropriate\". It warns that hedging may not fully offset cost increases. In Q1 2026, currency including hedging added 3% to net operating revenues and 4% to operating income, while higher commodity costs were a partial headwind.\nCoke states that it uses derivative financial instruments primarily to reduce its exposure to adverse fluctuations in foreign currency exchange rates, interest rates, commodity prices and other market risks, and does not enter into derivatives for trading purposes.\nCurrency: Coke manages most foreign currency exposures on a consolidated basis, which lets it net certain exposures and take advantage of natural offsets. It enters into forward exchange contracts and buys foreign currency options and collars (principally euro, British pound and Japanese yen) to hedge portions of forecasted cash flows denominated in foreign currencies.\nCoke also uses forward exchange contracts to offset the earnings impact of currency fluctuations on certain monetary assets and liabilities, and as hedges of net investments in foreign operations. Its foreign currency derivatives had total notional values of $21,128 million at December 31, 2025 and $18,442 million at December 31, 2024.\nCoke's risk factors say that, because of the geographic diversity of its operations, weakness in some currencies may be offset by strength in other currencies over time. It also uses derivatives to further reduce its net exposure to exchange rate fluctuations.\nCommodities: Coke is exposed to price changes mainly in sweeteners, metals, juices, PET and fuels. It manages this primarily through supplier pricing agreements that establish purchase prices for certain inputs, and uses derivatives to further manage commodity risk when deemed appropriate.\nThe total notional value of Coke's commodity derivatives was $535 million at December 31, 2025, versus $386 million at December 31, 2024.\nHedging has limits. Coke says the effects of remeasuring certain balance-sheet assets and liabilities are only partially offset by its economic hedging program, and it recorded net foreign currency exchange losses of $48 million in 2025 and $180 million in 2024. Coke also warns it may not be able to offset cost increases through productivity initiatives or its commodity hedging activity.\nLatest update (Q1 2026): Coke says its hedging activities are designed to mitigate, over time, a portion of the impact of exchange rate fluctuations on net income. Including hedging, currency moves raised operating income by 4% and net operating revenues by 3% in the quarter. Based on current spot rates and hedging coverage, Coke expects a favorable currency impact on operating income and operating cash flows through year-end.\nIn Q1 2026, Coke cited higher commodity costs as a partial offset to the gross profit margin increase. The retrieved 10-Q text does not describe commodity hedge positions."
+ },
+ "question_id": "hq_c65d4576350841669beea4c8dbea0a2b",
+ "question_sha": "667beb52e7faa652a48f58e068f03f1e40de2828ccd6e7e201e3d6c230904eb1",
+ "raw_output": {
+  "caveats": [
+   "No structured facts were available. Figures such as notional values are quoted from filing text rather than from fact records.",
+   "The Q1 2026 currency impacts are quarterly figures, not full-year.",
+   "The FY2025 Item 7 foreign exchange passage (chk_02da...) was returned without verified quotes, so it is not relied on.",
+   "The commodity fair-value sensitivity from the 10-K is not presented here; only the commodity derivative notional values are reported."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_27008aeb12bb8eb789f17f76eb474b93948766aeb1f898debf55bbaf73ec6ed3"
+     }
+    ],
+    "id": "c1",
+    "kind": "textual",
+    "period": null,
+    "text": "Coke states that it uses derivative financial instruments primarily to reduce its exposure to adverse fluctuations in foreign currency exchange rates, interest rates, commodity prices and other market risks, and does not enter into derivatives for trading purposes.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_27008aeb12bb8eb789f17f76eb474b93948766aeb1f898debf55bbaf73ec6ed3"
+     }
+    ],
+    "id": "c2",
+    "kind": "textual",
+    "period": null,
+    "text": "Currency: Coke manages most foreign currency exposures on a consolidated basis, which lets it net certain exposures and take advantage of natural offsets. It enters into forward exchange contracts and buys foreign currency options and collars (principally euro, British pound and Japanese yen) to hedge portions of forecasted cash flows denominated in foreign currencies.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_6cb3932405442b5a8a0c8ad8d09091dd431b29237196ed5dcacfbbc209275805"
+     }
+    ],
+    "id": "c3",
+    "kind": "textual",
+    "period": null,
+    "text": "Coke also uses forward exchange contracts to offset the earnings impact of currency fluctuations on certain monetary assets and liabilities, and as hedges of net investments in foreign operations. Its foreign currency derivatives had total notional values of $21,128 million at December 31, 2025 and $18,442 million at December 31, 2024.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_39cf65a1499b98487b9753727c882aba9ea879cd99df578519314d90519e10dc"
+     }
+    ],
+    "id": "c4",
+    "kind": "textual",
+    "period": null,
+    "text": "Coke's risk factors say that, because of the geographic diversity of its operations, weakness in some currencies may be offset by strength in other currencies over time. It also uses derivatives to further reduce its net exposure to exchange rate fluctuations.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_63fbfc975f5705abe61baba2542cbc87dd5fbd5a53c7f53594a77403b2033bec"
+     }
+    ],
+    "id": "c5",
+    "kind": "textual",
+    "period": null,
+    "text": "Commodities: Coke is exposed to price changes mainly in sweeteners, metals, juices, PET and fuels. It manages this primarily through supplier pricing agreements that establish purchase prices for certain inputs, and uses derivatives to further manage commodity risk when deemed appropriate.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_9c56714a7d482c6be047f8435c12941917319ed7ff99ce7f28fbffebef3b28ed"
+     }
+    ],
+    "id": "c6",
+    "kind": "textual",
+    "period": null,
+    "text": "The total notional value of Coke's commodity derivatives was $535 million at December 31, 2025, versus $386 million at December 31, 2024.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_9e84c4e393c14ad7a627ab2e2c9e173d050e749d7f1048c88cbcf5911a3d2afe"
+     },
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_d27abe56c78f2a34d42ec9f6851a1ac25dbfdaf8042035a3e08c6d32072a6017"
+     }
+    ],
+    "id": "c7",
+    "kind": "textual",
+    "period": null,
+    "text": "Hedging has limits. Coke says the effects of remeasuring certain balance-sheet assets and liabilities are only partially offset by its economic hedging program, and it recorded net foreign currency exchange losses of $48 million in 2025 and $180 million in 2024. Coke also warns it may not be able to offset cost increases through productivity initiatives or its commodity hedging activity.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_68c84da3958bdbcd36bcbe6ece5a66920164565579a45019cde6852cea75ca4a"
+     },
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_143002e4e69b0d3157f90e8a5e05db1b14fb8ecc2abdfb356177971110b4a3ef"
+     },
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_2a18d8e6106f042f226588ac427ab5db50d47360fc0a78c3572c7bbe199a9694"
+     }
+    ],
+    "id": "c8",
+    "kind": "textual",
+    "period": null,
+    "text": "Latest update (Q1 2026): Coke says its hedging activities are designed to mitigate, over time, a portion of the impact of exchange rate fluctuations on net income. Including hedging, currency moves raised operating income by 4% and net operating revenues by 3% in the quarter. Based on current spot rates and hedging coverage, Coke expects a favorable currency impact on operating income and operating cash flows through year-end.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_cf028757ef64655b86311659251d8f81f3b75a0f0144a25af495010242e45f8a"
+     }
+    ],
+    "id": "c9",
+    "kind": "textual",
+    "period": null,
+    "text": "In Q1 2026, Coke cited higher commodity costs as a partial offset to the gross profit margin increase. The retrieved 10-Q text does not describe commodity hedge positions.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   }
+  ],
+  "final_claim_id": null,
+  "final_unit": null,
+  "final_value": null,
+  "status": "answered",
+  "summary": "Coke says it uses derivatives mainly to reduce its exposure to foreign currency, interest rate and commodity price swings, and it does not use them for trading. For currency, it nets exposures across the company and uses forwards, options and collars. It also uses forwards to offset the earnings effect of remeasuring monetary assets and liabilities, and as net investment hedges. For commodities, it relies first on supplier pricing agreements and uses derivatives \"when deemed appropriate\". It warns that hedging may not fully offset cost increases. In Q1 2026, currency including hedging added 3% to net operating revenues and 4% to operating income, while higher commodity costs were a partial headwind."
+ },
+ "retrieval": {
+  "first_search": {
+   "filings:s1": [
+    "chk_27008aeb12bb8eb789f17f76eb474b93948766aeb1f898debf55bbaf73ec6ed3",
+    "chk_6cb3932405442b5a8a0c8ad8d09091dd431b29237196ed5dcacfbbc209275805",
+    "chk_63fbfc975f5705abe61baba2542cbc87dd5fbd5a53c7f53594a77403b2033bec",
+    "chk_9c56714a7d482c6be047f8435c12941917319ed7ff99ce7f28fbffebef3b28ed",
+    "chk_2a9bb9fc9909af8c0fffefabaea41d3ed1171f9b4156731561d4ac15e95e062d",
+    "chk_042b071ebd122b77173f6460cb492ceb0641c81f14fa565e978ab22dca6e0020",
+    "chk_02da5e6029ca47db00332a4a3e322bf2bb60582d68a1aca14891520441c6550f",
+    "chk_9e84c4e393c14ad7a627ab2e2c9e173d050e749d7f1048c88cbcf5911a3d2afe"
+   ],
+   "filings:s2": [
+    "chk_39cf65a1499b98487b9753727c882aba9ea879cd99df578519314d90519e10dc",
+    "chk_0094ebc0a73902351f14a64df0c1ff7dcca573499bf61319a12e996a7714a270",
+    "chk_27a2be50520c4788ae0cd48e6d3ffdbf7e681dc7bfb3f32f08cc66b4d4903044",
+    "chk_d27abe56c78f2a34d42ec9f6851a1ac25dbfdaf8042035a3e08c6d32072a6017",
+    "chk_1fe9b537b46194e93e453879f9c82d05f06273e429bfe37480221de1bba7c5e7",
+    "chk_a126684dce3398a81ca8ad21dd40a0203ddec0f03a1e2daec9cc3b886553aea5"
+   ],
+   "filings:s3": [
+    "chk_2a18d8e6106f042f226588ac427ab5db50d47360fc0a78c3572c7bbe199a9694",
+    "chk_143002e4e69b0d3157f90e8a5e05db1b14fb8ecc2abdfb356177971110b4a3ef",
+    "chk_9fa91e29ab8bece921910815b3acf51cb92f3017f8025ef15cc1c39a5fccdf7e",
+    "chk_68c84da3958bdbcd36bcbe6ece5a66920164565579a45019cde6852cea75ca4a",
+    "chk_d69dc87a58adc2ffb2c30a4941ff7f6481e3d9a3e72640eccb273083aa69d39c",
+    "chk_cf028757ef64655b86311659251d8f81f3b75a0f0144a25af495010242e45f8a"
+   ]
+  },
+  "seen": [
+   "chk_39cf65a1499b98487b9753727c882aba9ea879cd99df578519314d90519e10dc",
+   "chk_0094ebc0a73902351f14a64df0c1ff7dcca573499bf61319a12e996a7714a270",
+   "chk_27a2be50520c4788ae0cd48e6d3ffdbf7e681dc7bfb3f32f08cc66b4d4903044",
+   "chk_d27abe56c78f2a34d42ec9f6851a1ac25dbfdaf8042035a3e08c6d32072a6017",
+   "chk_1fe9b537b46194e93e453879f9c82d05f06273e429bfe37480221de1bba7c5e7",
+   "chk_a126684dce3398a81ca8ad21dd40a0203ddec0f03a1e2daec9cc3b886553aea5",
+   "chk_27008aeb12bb8eb789f17f76eb474b93948766aeb1f898debf55bbaf73ec6ed3",
+   "chk_6cb3932405442b5a8a0c8ad8d09091dd431b29237196ed5dcacfbbc209275805",
+   "chk_63fbfc975f5705abe61baba2542cbc87dd5fbd5a53c7f53594a77403b2033bec",
+   "chk_9c56714a7d482c6be047f8435c12941917319ed7ff99ce7f28fbffebef3b28ed",
+   "chk_2a9bb9fc9909af8c0fffefabaea41d3ed1171f9b4156731561d4ac15e95e062d",
+   "chk_042b071ebd122b77173f6460cb492ceb0641c81f14fa565e978ab22dca6e0020",
+   "chk_02da5e6029ca47db00332a4a3e322bf2bb60582d68a1aca14891520441c6550f",
+   "chk_9e84c4e393c14ad7a627ab2e2c9e173d050e749d7f1048c88cbcf5911a3d2afe",
+   "chk_2a18d8e6106f042f226588ac427ab5db50d47360fc0a78c3572c7bbe199a9694",
+   "chk_143002e4e69b0d3157f90e8a5e05db1b14fb8ecc2abdfb356177971110b4a3ef",
+   "chk_9fa91e29ab8bece921910815b3acf51cb92f3017f8025ef15cc1c39a5fccdf7e",
+   "chk_68c84da3958bdbcd36bcbe6ece5a66920164565579a45019cde6852cea75ca4a",
+   "chk_d69dc87a58adc2ffb2c30a4941ff7f6481e3d9a3e72640eccb273083aa69d39c",
+   "chk_cf028757ef64655b86311659251d8f81f3b75a0f0144a25af495010242e45f8a",
+   "chk_f7ac4acb54b5207c49ff4872fc6fcb89cd6e89b779a781dbbc26fe33da044122",
+   "chk_398ac56f7598dce2bf572e29063c71c683c757594cd8ff540c53c93df2829b8f"
+  ]
+ },
+ "run_id": "2b09b102-fe70-44db-ade1-ad02432b6a8b",
+ "run_status": "done",
+ "split": "handwritten",
+ "started_at": "2026-11-16T22:16:24.914318+00:00",
+ "status": "done",
+ "system_config_hash": "609c0b8d3387b1ce1d168e92bc0af076a1cc5929d1640386326043ecb0c21b67",
+ "system_id": "m6-hybrid",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 122064,
+  "cache_write_tokens": 75971,
+  "input_tokens": 61917,
+  "output_tokens": 19553
+ }
+}

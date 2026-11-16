@@ -1,0 +1,117 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 3,
+  "numeric_valid": 2,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.0881196",
+ "error": null,
+ "finished_at": "2026-11-16T20:37:15.297336+00:00",
+ "latency_ms": 33185,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "26.0654"
+ },
+ "question_id": "q_bdf40dacce1c7661",
+ "question_sha": "4354a665a014feb1315ca45abbbb874011b7c4754267b9de1737ac0f25fb3a3b",
+ "raw_output": {
+  "caveats": [
+   "The net margin was computed as model arithmetic from the two reported quarterly figures. The percentage value (26.0654%) is rounded to four decimal places.",
+   "Both input facts (net income and revenue) come from the same SEC filing, accession 0001628280-26-050705."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "862"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q2",
+     "fiscal_year": 2026
+    },
+    "text": "Meta's net income for fiscal Q2 2026 was $15.848 billion.",
+    "ticker": "META",
+    "unit": "USD",
+    "value": "15848000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "811"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q2",
+     "fiscal_year": 2026
+    },
+    "text": "Meta's revenue for fiscal Q2 2026 was $60.801 billion.",
+    "ticker": "META",
+    "unit": "USD",
+    "value": "60801000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "862"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "811"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q2",
+     "fiscal_year": 2026
+    },
+    "text": "Net margin = net income / revenue = 15,848,000,000 / 60,801,000,000 \u2248 0.260654, or about 26.07%.",
+    "ticker": "META",
+    "unit": "percent",
+    "value": "26.0654",
+    "value_basis": "model_arithmetic"
+   }
+  ],
+  "final_claim_id": "c3",
+  "final_unit": "percent",
+  "final_value": "26.0654",
+  "status": "answered",
+  "summary": "Meta's net margin in fiscal Q2 2026 (April 1 to June 30, 2026) was about 26.07%, based on net income of $15.848 billion on revenue of $60.801 billion."
+ },
+ "run_id": "7981de99-6c70-4dd1-bd3e-92b289099c2e",
+ "run_status": "done",
+ "split": "test",
+ "started_at": "2026-11-16T20:36:42.040909+00:00",
+ "status": "done",
+ "system_config_hash": "38c1354659c83500cab78979070eac496bb55847b466a51e9437890c769351e5",
+ "system_id": "m6-no-quant",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 45301,
+  "cache_write_tokens": 8031,
+  "input_tokens": 10396,
+  "output_tokens": 4272
+ }
+}

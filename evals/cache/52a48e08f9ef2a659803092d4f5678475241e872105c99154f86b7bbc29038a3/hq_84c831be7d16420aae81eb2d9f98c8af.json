@@ -1,0 +1,142 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 1,
+  "numeric_valid": 1,
+  "text_pending_judge": [],
+  "text_string_supported": 2,
+  "text_total": 2,
+  "uncited": 0
+ },
+ "cost_usd": "0.06812602",
+ "error": null,
+ "finished_at": "2026-11-16T21:29:55.349389+00:00",
+ "latency_ms": 31601,
+ "prediction": {
+  "parse_ok": true,
+  "text": "Costco said the membership fee increase effective September 1, 2024 accounted for about 40% of membership income growth in fiscal 2025. Membership fee revenue rose 10%, which Costco attributed to new member sign-ups and fee increases. For context, total revenue grew about 8.17%, from $254.45 billion to $275.24 billion.\nCostco reported that membership fee revenue increased 10% in 2025, driven by new member sign-ups and membership fee increases.\nCostco increased its annual membership fees in the U.S. and Canada effective September 1, 2024, and stated that the fee income increase accounted for approximately 40% of membership income growth during 2025.\nFor context, Costco's total revenue grew about 8.17% in fiscal 2025, from $254.45 billion to $275.24 billion."
+ },
+ "question_id": "hq_84c831be7d16420aae81eb2d9f98c8af",
+ "question_sha": "f6cd00e5d1d9ad40e54e6d7758ea484b4ddf08af08455942f4a5903626678411",
+ "raw_output": {
+  "caveats": [
+   "The filing does not give a dollar amount for the fee increase effect alone. The 40% share refers to membership income growth, not to total membership fee income.",
+   "Membership fee income is not a stored metric, so the figures come from the filing text. The total revenue growth is context only, since membership fees are one component of it."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_127ccca98ec08b3cfc26a47b646003e4a62e604e4a34e41b80ebcc1359e4c57b"
+     }
+    ],
+    "id": "c1",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Costco reported that membership fee revenue increased 10% in 2025, driven by new member sign-ups and membership fee increases.",
+    "ticker": "COST",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_127ccca98ec08b3cfc26a47b646003e4a62e604e4a34e41b80ebcc1359e4c57b"
+     }
+    ],
+    "id": "c2",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Costco increased its annual membership fees in the U.S. and Canada effective September 1, 2024, and stated that the fee income increase accounted for approximately 40% of membership income growth during 2025.",
+    "ticker": "COST",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_1"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3333"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3338"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "For context, Costco's total revenue grew about 8.17% in fiscal 2025, from $254.45 billion to $275.24 billion.",
+    "ticker": "COST",
+    "unit": "percent",
+    "value": "8.167323631476",
+    "value_basis": "computation"
+   }
+  ],
+  "final_claim_id": null,
+  "final_unit": null,
+  "final_value": null,
+  "status": "answered",
+  "summary": "Costco said the membership fee increase effective September 1, 2024 accounted for about 40% of membership income growth in fiscal 2025. Membership fee revenue rose 10%, which Costco attributed to new member sign-ups and fee increases. For context, total revenue grew about 8.17%, from $254.45 billion to $275.24 billion."
+ },
+ "retrieval": {
+  "first_search": {
+   "filings:s1": [
+    "chk_1e062ea60b0b432f4890f0ddea7121014af194462672cbe0d70888c2bc64d3a4",
+    "chk_127ccca98ec08b3cfc26a47b646003e4a62e604e4a34e41b80ebcc1359e4c57b",
+    "chk_ad5783ba78cb7cabc69d1af1a7abcc01545561490d56a37fbc4e540423f746cc",
+    "chk_696a1f559d75c2edf4cff20b1311bde8f1da0ce9fd7dd7e7996a8953428d4cfb",
+    "chk_ddf59ca3a6dd11d824b6065467ca3768121cfa3f5b3c950d124207a97f82103d",
+    "chk_6c778e3108587bf8836f56d5f4b9b8b8ed142f9710f098fc169e466d44908741",
+    "chk_ff66f912a75889ae5e29677af98a27ec83ac610a38d84d934378a6a3b26a295e",
+    "chk_0623e691b4c8f785be37d74f9011aa328f72d69add6136c307e68d1e1164c564"
+   ]
+  },
+  "seen": [
+   "chk_1e062ea60b0b432f4890f0ddea7121014af194462672cbe0d70888c2bc64d3a4",
+   "chk_127ccca98ec08b3cfc26a47b646003e4a62e604e4a34e41b80ebcc1359e4c57b",
+   "chk_ad5783ba78cb7cabc69d1af1a7abcc01545561490d56a37fbc4e540423f746cc",
+   "chk_696a1f559d75c2edf4cff20b1311bde8f1da0ce9fd7dd7e7996a8953428d4cfb",
+   "chk_ddf59ca3a6dd11d824b6065467ca3768121cfa3f5b3c950d124207a97f82103d",
+   "chk_6c778e3108587bf8836f56d5f4b9b8b8ed142f9710f098fc169e466d44908741",
+   "chk_ff66f912a75889ae5e29677af98a27ec83ac610a38d84d934378a6a3b26a295e",
+   "chk_0623e691b4c8f785be37d74f9011aa328f72d69add6136c307e68d1e1164c564"
+  ]
+ },
+ "run_id": "306ff9ec-49e4-4a08-914b-3bb04163b51f",
+ "run_status": "done",
+ "split": "handwritten",
+ "started_at": "2026-11-16T21:29:23.678222+00:00",
+ "status": "done",
+ "system_config_hash": "52a48e08f9ef2a659803092d4f5678475241e872105c99154f86b7bbc29038a3",
+ "system_id": "m6",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 42275,
+  "cache_write_tokens": 16672,
+  "input_tokens": 7449,
+  "output_tokens": 4224
+ }
+}

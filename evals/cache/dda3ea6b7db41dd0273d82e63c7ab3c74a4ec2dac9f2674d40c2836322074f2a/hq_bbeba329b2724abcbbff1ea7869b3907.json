@@ -1,0 +1,211 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 0,
+  "numeric_valid": 0,
+  "text_pending_judge": [
+   {
+    "chunk_ids": [
+     "chk_6ca668eee4382d8720f3e48db863d4cf2ec2f14311a37cc7a0a866020063d1ca",
+     "chk_bccc0f584f6bc52bfd88aaa70676df0253695ab41a36f5a29e5c1da29d83f83d"
+    ],
+    "claim_id": "c3",
+    "text": "Pfizer describes the program as a multi-year, enterprise-wide cost realignment program, announced in the fourth quarter of 2023, that aims to realign its costs with its longer-term revenue expectations."
+   }
+  ],
+  "text_string_supported": 4,
+  "text_total": 5,
+  "uncited": 0
+ },
+ "cost_usd": "0.189127400",
+ "error": null,
+ "finished_at": "2026-11-16T21:58:29.454166+00:00",
+ "latency_ms": 140622,
+ "prediction": {
+  "parse_ok": true,
+  "text": "In its FY2025 10-K, Pfizer says the cost realignment program (named \"Realigning Our Cost Base Program\" in the filing) is expected to deliver total net cost savings of approximately $5.7 billion through 2026. Of that, $5.1 billion was achieved through 2025 and about $600 million remains, mainly in SI&A, to be achieved by the end of 2026. For comparison, the FY2024 10-K cited approximately $4.5 billion by the end of 2025. The FY2023 10-K cited at least $4 billion, mainly from 2023 through 2024, for the Realigning our Cost Base Program. The retrieved FY2023 text does not explicitly tie that figure to the cost realignment program, so it is shown only as context.\nPfizer's FY2025 10-K says the Realigning Our Cost Base Program is expected to deliver total net cost savings of approximately $5.7 billion through 2026.\nPfizer states that the $5.7 billion total consists of net cost savings of $5.1 billion achieved through 2025 and remaining anticipated savings of $600 million, primarily in SI&A, expected to be achieved by the end of 2026.\nPfizer describes the program as a multi-year, enterprise-wide cost realignment program, announced in the fourth quarter of 2023, that aims to realign its costs with its longer-term revenue expectations.\nThe FY2024 10-K said the Realigning our Cost Base Program was expected to deliver total net cost savings of approximately $4.5 billion by the end of 2025, most of which was achieved by year-end 2024.\nThe FY2023 10-K said the Realigning our Cost Base Program was expected to deliver net cost savings of at least $4 billion, to be achieved primarily from 2023 through 2024."
+ },
+ "question_id": "hq_bbeba329b2724abcbbff1ea7869b3907",
+ "question_sha": "727c6425e43c2960ae9a06281fcfcb7b668d33c63fef2334b0e80154a4e96e7d",
+ "raw_output": {
+  "caveats": [
+   "The filings call the program the \"Realigning Our Cost Base Program\", not the \"Cost Realignment Program\". The FY2024 and FY2025 MD&A describe it as the multi-year cost realignment program launched in Q4 2023.",
+   "In the FY2023 10-K, the link between the $4 billion savings figure and the cost realignment program is an inference. The retrieved MD&A text does not state it explicitly. The figures from different years use different wording (\"at least\", \"approximately\", different time frames), so they are given as context and not as a like-for-like trend.",
+   "Note 3 (program costs and descriptions) was not retrieved, so this answer covers only the savings figures in MD&A.",
+   "Separate from this program, the MD&A also mentions roughly $500 million of savings from pipeline focus initiatives. That figure is not part of the $5.7 billion."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_56894a34e520fc784e89a6e6131513b8ffc2280025a5f277a6357d29771e0d89"
+     }
+    ],
+    "id": "c1",
+    "kind": "textual",
+    "period": null,
+    "text": "Pfizer's FY2025 10-K says the Realigning Our Cost Base Program is expected to deliver total net cost savings of approximately $5.7 billion through 2026.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_56894a34e520fc784e89a6e6131513b8ffc2280025a5f277a6357d29771e0d89"
+     }
+    ],
+    "id": "c2",
+    "kind": "textual",
+    "period": null,
+    "text": "Pfizer states that the $5.7 billion total consists of net cost savings of $5.1 billion achieved through 2025 and remaining anticipated savings of $600 million, primarily in SI&A, expected to be achieved by the end of 2026.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_6ca668eee4382d8720f3e48db863d4cf2ec2f14311a37cc7a0a866020063d1ca"
+     },
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_bccc0f584f6bc52bfd88aaa70676df0253695ab41a36f5a29e5c1da29d83f83d"
+     }
+    ],
+    "id": "c3",
+    "kind": "textual",
+    "period": null,
+    "text": "Pfizer describes the program as a multi-year, enterprise-wide cost realignment program, announced in the fourth quarter of 2023, that aims to realign its costs with its longer-term revenue expectations.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_ae079441b122aa9c2fe4549aeb78f00e48b7255d4e88fe304b89d5e24aa2347a"
+     }
+    ],
+    "id": "c4",
+    "kind": "textual",
+    "period": null,
+    "text": "The FY2024 10-K said the Realigning our Cost Base Program was expected to deliver total net cost savings of approximately $4.5 billion by the end of 2025, most of which was achieved by year-end 2024.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_0cf2f504677659b5fc725a26e979d03b5a2293bfd9c0f577943b1c815600a7b7"
+     }
+    ],
+    "id": "c5",
+    "kind": "textual",
+    "period": null,
+    "text": "The FY2023 10-K said the Realigning our Cost Base Program was expected to deliver net cost savings of at least $4 billion, to be achieved primarily from 2023 through 2024.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   }
+  ],
+  "final_claim_id": null,
+  "final_unit": null,
+  "final_value": null,
+  "status": "answered",
+  "summary": "In its FY2025 10-K, Pfizer says the cost realignment program (named \"Realigning Our Cost Base Program\" in the filing) is expected to deliver total net cost savings of approximately $5.7 billion through 2026. Of that, $5.1 billion was achieved through 2025 and about $600 million remains, mainly in SI&A, to be achieved by the end of 2026. For comparison, the FY2024 10-K cited approximately $4.5 billion by the end of 2025. The FY2023 10-K cited at least $4 billion, mainly from 2023 through 2024, for the Realigning our Cost Base Program. The retrieved FY2023 text does not explicitly tie that figure to the cost realignment program, so it is shown only as context."
+ },
+ "retrieval": {
+  "first_search": {
+   "filings:s1": [
+    "chk_f4a367b227f15e05bb4f1cae28812eab0c5e4791568ba431221a529ff1df83d1",
+    "chk_6ca668eee4382d8720f3e48db863d4cf2ec2f14311a37cc7a0a866020063d1ca",
+    "chk_3fcf0b2ad996fdbbfb34e4a75c3d1776dc2ab76d5ae24de4555f0a52a79fe6b9",
+    "chk_56894a34e520fc784e89a6e6131513b8ffc2280025a5f277a6357d29771e0d89",
+    "chk_015b58be587a874472587cf8134a099995081e7132daf83eff7b52e7ddf36bcb",
+    "chk_b435432d97f30da1bce3321e552d9ef8fc9f1944674798eefc0efb42cf5900fc",
+    "chk_be67adf88aa6ae1779d3d4effda5fd7891b272af4d2f98dc2cd8ec2863de9262",
+    "chk_200a4b1bc2e2b2a55cd8bf20613b6eda37838c073035032b222c6b13caf9a832"
+   ],
+   "filings:s2": [
+    "chk_ae079441b122aa9c2fe4549aeb78f00e48b7255d4e88fe304b89d5e24aa2347a",
+    "chk_bccc0f584f6bc52bfd88aaa70676df0253695ab41a36f5a29e5c1da29d83f83d",
+    "chk_1fb8642bf82915c3ca29a0109d9619c52e9f2b51b595686e8e957ff6ea534555",
+    "chk_9e03daa86c6159a1f5d70bcae872734f14e0a7bc0a51146bbe7887b192a2ba31",
+    "chk_a0f2273562937706abd0c72753bc9ec358d8abbae763d2ca0324c438036f5f77",
+    "chk_4ac7454829d7d6caadbef0ba485b5b6a8e9524f394d19c53e9c6e661a04f1ff9",
+    "chk_2866f6cf408f2206c7d8624ab685b5574dc815b51254854d14bcf0a440c12bdf",
+    "chk_b7107ede5a32b41594b672194c77c3f17defb41e68a797266e277f478f13c410"
+   ],
+   "filings:s3": [
+    "chk_0cf2f504677659b5fc725a26e979d03b5a2293bfd9c0f577943b1c815600a7b7",
+    "chk_53878796aa12e48ff81d0407fe2208bb14c5a0a83f7f61c93a10eb86aa6e6197",
+    "chk_4437eb7ea478ea85ee3f90d770304d131099f9cfe50b00534ea947a8c79c3f47",
+    "chk_d95885b534bae3653fb4f0660813df11adc25b0ea2fabd0291721b5998d84cd4",
+    "chk_6d54076410ec314d17965e7217fa7b42012958169e97dc54b9ea40cd19a8ea76",
+    "chk_9753e6cb6022a62153fe23d633eaf5f8459650bcfa6792dfc26443ae1b1af87b",
+    "chk_46eaf04f3ce3a24ad2574d2f906b9918623ad12f164db294a3dbd75e49a1c624",
+    "chk_df9bb8ac5cd7cd6869eac9ff005e29e0d91dedabe8eb150cd858f0b67e9e433e"
+   ]
+  },
+  "seen": [
+   "chk_f4a367b227f15e05bb4f1cae28812eab0c5e4791568ba431221a529ff1df83d1",
+   "chk_6ca668eee4382d8720f3e48db863d4cf2ec2f14311a37cc7a0a866020063d1ca",
+   "chk_3fcf0b2ad996fdbbfb34e4a75c3d1776dc2ab76d5ae24de4555f0a52a79fe6b9",
+   "chk_56894a34e520fc784e89a6e6131513b8ffc2280025a5f277a6357d29771e0d89",
+   "chk_015b58be587a874472587cf8134a099995081e7132daf83eff7b52e7ddf36bcb",
+   "chk_b435432d97f30da1bce3321e552d9ef8fc9f1944674798eefc0efb42cf5900fc",
+   "chk_be67adf88aa6ae1779d3d4effda5fd7891b272af4d2f98dc2cd8ec2863de9262",
+   "chk_200a4b1bc2e2b2a55cd8bf20613b6eda37838c073035032b222c6b13caf9a832",
+   "chk_ae079441b122aa9c2fe4549aeb78f00e48b7255d4e88fe304b89d5e24aa2347a",
+   "chk_bccc0f584f6bc52bfd88aaa70676df0253695ab41a36f5a29e5c1da29d83f83d",
+   "chk_1fb8642bf82915c3ca29a0109d9619c52e9f2b51b595686e8e957ff6ea534555",
+   "chk_9e03daa86c6159a1f5d70bcae872734f14e0a7bc0a51146bbe7887b192a2ba31",
+   "chk_a0f2273562937706abd0c72753bc9ec358d8abbae763d2ca0324c438036f5f77",
+   "chk_4ac7454829d7d6caadbef0ba485b5b6a8e9524f394d19c53e9c6e661a04f1ff9",
+   "chk_2866f6cf408f2206c7d8624ab685b5574dc815b51254854d14bcf0a440c12bdf",
+   "chk_b7107ede5a32b41594b672194c77c3f17defb41e68a797266e277f478f13c410",
+   "chk_0cf2f504677659b5fc725a26e979d03b5a2293bfd9c0f577943b1c815600a7b7",
+   "chk_53878796aa12e48ff81d0407fe2208bb14c5a0a83f7f61c93a10eb86aa6e6197",
+   "chk_4437eb7ea478ea85ee3f90d770304d131099f9cfe50b00534ea947a8c79c3f47",
+   "chk_d95885b534bae3653fb4f0660813df11adc25b0ea2fabd0291721b5998d84cd4",
+   "chk_6d54076410ec314d17965e7217fa7b42012958169e97dc54b9ea40cd19a8ea76",
+   "chk_9753e6cb6022a62153fe23d633eaf5f8459650bcfa6792dfc26443ae1b1af87b",
+   "chk_46eaf04f3ce3a24ad2574d2f906b9918623ad12f164db294a3dbd75e49a1c624",
+   "chk_df9bb8ac5cd7cd6869eac9ff005e29e0d91dedabe8eb150cd858f0b67e9e433e",
+   "chk_5dd220565cf642e35b550f110e5ea3e4c690fdcb2ac6e2d3c8005cd9db698abf",
+   "chk_de6dc26d136820d00fbe7e533c3e54bc585752584a76d3f068df0987214eddcc"
+  ]
+ },
+ "run_id": "34372251-8ac3-438d-8d40-5fee33218d3b",
+ "run_status": "done",
+ "split": "handwritten",
+ "started_at": "2026-11-16T21:56:08.746831+00:00",
+ "status": "done",
+ "system_config_hash": "dda3ea6b7db41dd0273d82e63c7ab3c74a4ec2dac9f2674d40c2836322074f2a",
+ "system_id": "m6-rerank",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 109563,
+  "cache_write_tokens": 54921,
+  "input_tokens": 37571,
+  "output_tokens": 11506
+ }
+}

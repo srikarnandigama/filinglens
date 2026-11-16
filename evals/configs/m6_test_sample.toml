@@ -1,6 +1,7 @@
 # D2: M6 system on the frozen 50-question test sample (D121). M6 estimate $4.50 + $1.00.
 name = "m6-test-sample"
 budget = "m6"
+spent_usd = "3.0248147"  # actual spend of the finished step (D123 re-sum rule)
 split = "test"
 sample = "m6_sample_50"
 seed = 20261109

@@ -258,7 +258,9 @@ def handwritten_section(data: dict[str, Any]) -> list[str]:
         ]
     answers = data.get("handwritten", {})
     rows = []
-    for sid in sorted({r["system_id"] for r in rubric}):
+    for sid in sorted(  # the M5 judged systems only; M6 judge records are reported separately
+        s for s in {r["system_id"] for r in rubric} if s in j.JUDGED_SYSTEMS
+    ):
         mine = [r for r in rubric if r["system_id"] == sid]
         scores = [r["result"]["score"] for r in mine if (r.get("result") or {}).get("parse_ok")]
         no_answer = sum(  # D108: no answer (e.g. token budget) is not judged and scores 1
@@ -351,7 +353,13 @@ def handwritten_section(data: dict[str, Any]) -> list[str]:
     cites = [r.get("citations") or {} for r in system.values()]
     text_total = sum(c.get("text_total", 0) for c in cites)
     string_ok = sum(c.get("text_string_supported", 0) for c in cites)
-    claims = [r for r in judged if r["kind"] == "claim" and (r.get("result") or {}).get("parse_ok")]
+    claims = [
+        r
+        for r in judged
+        if r["kind"] == "claim"
+        and r["system_id"] == "system"
+        and (r.get("result") or {}).get("parse_ok")
+    ]
     judge_ok = sum(r["result"]["supported"] for r in claims)
     parts += [
         f"System text claims: {text_total}; supported by string match {string_ok}, by the claim "
@@ -624,8 +632,9 @@ def render(data: dict[str, Any], system_id: str = "system") -> str:
     return "\n".join(parts)
 
 
-def build_report(configs: list[Path]) -> str:
-    """The report text, from cached records and judge results only (no API calls)."""
+def build_report(configs: list[Path], m6: bool = False) -> str:
+    """The report text, from cached records and judge results only (no API calls). With m6,
+    the M6 sections replace the ablations placeholder; the M5 sections are unchanged."""
     data = asyncio.run(collect(configs))
     from evals import judge
     from evals.runner import SystemConfig, resolve_model
@@ -644,14 +653,22 @@ def build_report(configs: list[Path]) -> str:
     data["batch_multiplier"] = tomllib.loads(PRICING_PATH.read_text(encoding="utf-8"))["eval"][
         "batch_multiplier"
     ]
-    return render(data)
+    text = render(data)
+    if m6:
+        from evals.m6_report import sections
+
+        placeholder = "\n## Ablations\n\n_M6._\n"
+        assert text.endswith(placeholder)
+        text = text[: -len(placeholder)] + "\n" + "\n".join(sections(data["judge"]))
+    return text
 
 
 def main(argv: list[str] | None = None) -> None:
     parser = argparse.ArgumentParser(description="Render evals/results/report.md from the cache.")
     parser.add_argument("configs", nargs="+", type=Path)
+    parser.add_argument("--m6", action="store_true", help="add the M6 sections (D111-D125)")
     args = parser.parse_args(argv)
-    REPORT_PATH.write_text(build_report(args.configs), encoding="utf-8")
+    REPORT_PATH.write_text(build_report(args.configs, m6=args.m6), encoding="utf-8")
     print(f"wrote {REPORT_PATH}")
 
 

@@ -1,0 +1,272 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 7,
+  "numeric_valid": 7,
+  "text_pending_judge": [],
+  "text_string_supported": 3,
+  "text_total": 3,
+  "uncited": 0
+ },
+ "cost_usd": "0.182488315",
+ "error": null,
+ "finished_at": "2026-11-16T22:02:16.717285+00:00",
+ "latency_ms": 94508,
+ "prediction": {
+  "parse_ok": true,
+  "text": "Apple's Q3 FY2025 10-Q (quarter ended June 28, 2025) says new U.S. tariffs, announced starting in Q2 2025, weighed on Products gross margin. Apple did not give a dollar figure for the tariff cost in the passages retrieved. Cost of revenue rose 9.15% year over year to $50.318 billion. Total gross margin was 46.49%, against 46.26% a year earlier and 47.05% in Q2 FY2025. Tariffs were partly offset by favorable costs and product mix.\nApple said that beginning in the second quarter of 2025, new tariffs were announced on imports to the U.S., including additional tariffs on imports from China, India, Japan, South Korea, Taiwan, Vietnam and the EU, among others.\nApple said tariffs and other measures applied to its products or components can have a material adverse impact on its business, results of operations and financial condition, including its supply chain, pricing and gross margin.\nApple attributed the Q3 FY2025 decline in Products gross margin percentage versus Q3 FY2024 primarily to tariffs and a different mix of products, partially offset by favorable costs. Products gross margin dollars still rose, with tariffs a partial offset to mix and favorable costs.\nApple's cost of revenue was about $50.32 billion in Q3 FY2025 (quarter ended June 28, 2025).\nCost of revenue grew about 9.15% year over year versus $46.10 billion in Q3 FY2024.\nTotal gross margin was about 46.49% in Q3 FY2025.\nTotal gross margin was about 46.26% in Q3 FY2024.\nTotal gross margin was about 47.05% in Q2 FY2025.\nTotal gross margin was about 0.23 percentage points higher than in Q3 FY2024, so tariffs did not push overall margin below the prior year.\nTotal gross margin was about 0.56 percentage points lower than in Q2 FY2025."
+ },
+ "question_id": "hq_d2c0efbeda48446e88c1160406bc4452",
+ "question_sha": "4d2f2bef428417fcd99cadfb1703207d6af11ccb5e8e9085e7ef1a18a49f184f",
+ "raw_output": {
+  "caveats": [
+   "The retrieved passages give no dollar amount for the tariff cost impact, so it cannot be isolated from other cost and mix effects. The cost of revenue and gross margin figures are totals, not tariff-specific.",
+   "The Q3 10-Q Item 1A passage says it incorporates the Q1 and Q2 2025 10-Q risk factors by reference. Those filings were not retrieved, so their tariff risk language is not covered."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_33c2b63c80d1f29032ebbceaf0e67f5e001dbcebd6decaf389802039d0d365c5"
+     }
+    ],
+    "id": "c1",
+    "kind": "textual",
+    "period": null,
+    "text": "Apple said that beginning in the second quarter of 2025, new tariffs were announced on imports to the U.S., including additional tariffs on imports from China, India, Japan, South Korea, Taiwan, Vietnam and the EU, among others.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_33c2b63c80d1f29032ebbceaf0e67f5e001dbcebd6decaf389802039d0d365c5"
+     }
+    ],
+    "id": "c2",
+    "kind": "textual",
+    "period": null,
+    "text": "Apple said tariffs and other measures applied to its products or components can have a material adverse impact on its business, results of operations and financial condition, including its supply chain, pricing and gross margin.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_3d85e05939c714cd87006f8069ae553986841af380313df38e715cde0afcd5cc"
+     }
+    ],
+    "id": "c3",
+    "kind": "textual",
+    "period": null,
+    "text": "Apple attributed the Q3 FY2025 decline in Products gross margin percentage versus Q3 FY2024 primarily to tariffs and a different mix of products, partially offset by favorable costs. Products gross margin dollars still rose, with tariffs a partial offset to mix and favorable costs.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "31"
+     }
+    ],
+    "id": "c4",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q3",
+     "fiscal_year": 2025
+    },
+    "text": "Apple's cost of revenue was about $50.32 billion in Q3 FY2025 (quarter ended June 28, 2025).",
+    "ticker": "AAPL",
+    "unit": "USD",
+    "value": "50318000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_4"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "26"
+     }
+    ],
+    "id": "c5",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q3",
+     "fiscal_year": 2025
+    },
+    "text": "Cost of revenue grew about 9.15% year over year versus $46.10 billion in Q3 FY2024.",
+    "ticker": "AAPL",
+    "unit": "percent",
+    "value": "9.152042343652",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_3"
+     }
+    ],
+    "id": "c6",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q3",
+     "fiscal_year": 2025
+    },
+    "text": "Total gross margin was about 46.49% in Q3 FY2025.",
+    "ticker": "AAPL",
+    "unit": "percent",
+    "value": "46.490705687184",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_1"
+     }
+    ],
+    "id": "c7",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q3",
+     "fiscal_year": 2024
+    },
+    "text": "Total gross margin was about 46.26% in Q3 FY2024.",
+    "ticker": "AAPL",
+    "unit": "percent",
+    "value": "46.257155181459",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_2"
+     }
+    ],
+    "id": "c8",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q2",
+     "fiscal_year": 2025
+    },
+    "text": "Total gross margin was about 47.05% in Q2 FY2025.",
+    "ticker": "AAPL",
+    "unit": "percent",
+    "value": "47.050619238876",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value",
+      "kind": "computation",
+      "ref": "cmp_5"
+     }
+    ],
+    "id": "c9",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q3",
+     "fiscal_year": 2025
+    },
+    "text": "Total gross margin was about 0.23 percentage points higher than in Q3 FY2024, so tariffs did not push overall margin below the prior year.",
+    "ticker": "AAPL",
+    "unit": "percentage_points",
+    "value": "0.233550505725",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value",
+      "kind": "computation",
+      "ref": "cmp_6"
+     }
+    ],
+    "id": "c10",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q3",
+     "fiscal_year": 2025
+    },
+    "text": "Total gross margin was about 0.56 percentage points lower than in Q2 FY2025.",
+    "ticker": "AAPL",
+    "unit": "percentage_points",
+    "value": "-0.559913551692",
+    "value_basis": "computation"
+   }
+  ],
+  "final_claim_id": null,
+  "final_unit": null,
+  "final_value": null,
+  "status": "answered",
+  "summary": "Apple's Q3 FY2025 10-Q (quarter ended June 28, 2025) says new U.S. tariffs, announced starting in Q2 2025, weighed on Products gross margin. Apple did not give a dollar figure for the tariff cost in the passages retrieved. Cost of revenue rose 9.15% year over year to $50.318 billion. Total gross margin was 46.49%, against 46.26% a year earlier and 47.05% in Q2 FY2025. Tariffs were partly offset by favorable costs and product mix."
+ },
+ "retrieval": {
+  "first_search": {
+   "filings:s1": [
+    "chk_3d85e05939c714cd87006f8069ae553986841af380313df38e715cde0afcd5cc",
+    "chk_33c2b63c80d1f29032ebbceaf0e67f5e001dbcebd6decaf389802039d0d365c5",
+    "chk_b43aee80f9fd70b33934c3b60fb0ddedfe09aea15076be2a541630c553539049",
+    "chk_1240c2c2fc2e4299753ad934abf9c27c0e39f4673a883185474dab0bd624874c",
+    "chk_bb088f1432e8b26cccab1403a46e4c7f4c96d58b3991aa6d3d3813296e738708",
+    "chk_e706eca4268ebf106e5e43a148c4e0abc690ec007c27a2f9d053d12f4da423cf",
+    "chk_a96208944f9fc0927670b637837e2bb75725368ef1c82a8d537a0b15caee8774",
+    "chk_b783d58f9ac62dbf11fb0b207faacac1829e2b83f48e6e9bb33dfd2f8612d545"
+   ],
+   "filings:s2": [
+    "chk_07d8ed963f1c2f3bef9435194f616f28058acda39dcbedd541e6403444206538"
+   ]
+  },
+  "seen": [
+   "chk_3d85e05939c714cd87006f8069ae553986841af380313df38e715cde0afcd5cc",
+   "chk_33c2b63c80d1f29032ebbceaf0e67f5e001dbcebd6decaf389802039d0d365c5",
+   "chk_b43aee80f9fd70b33934c3b60fb0ddedfe09aea15076be2a541630c553539049",
+   "chk_1240c2c2fc2e4299753ad934abf9c27c0e39f4673a883185474dab0bd624874c",
+   "chk_bb088f1432e8b26cccab1403a46e4c7f4c96d58b3991aa6d3d3813296e738708",
+   "chk_e706eca4268ebf106e5e43a148c4e0abc690ec007c27a2f9d053d12f4da423cf",
+   "chk_a96208944f9fc0927670b637837e2bb75725368ef1c82a8d537a0b15caee8774",
+   "chk_b783d58f9ac62dbf11fb0b207faacac1829e2b83f48e6e9bb33dfd2f8612d545",
+   "chk_07d8ed963f1c2f3bef9435194f616f28058acda39dcbedd541e6403444206538"
+  ]
+ },
+ "run_id": "38c54db3-3ea7-4aad-a939-724e620b8b44",
+ "run_status": "done",
+ "split": "handwritten",
+ "started_at": "2026-11-16T22:00:42.138930+00:00",
+ "status": "done",
+ "system_config_hash": "dda3ea6b7db41dd0273d82e63c7ab3c74a4ec2dac9f2674d40c2836322074f2a",
+ "system_id": "m6-rerank",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 118565,
+  "cache_write_tokens": 35677,
+  "input_tokens": 15487,
+  "output_tokens": 11394
+ }
+}

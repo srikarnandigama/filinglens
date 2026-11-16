@@ -1,0 +1,132 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 0,
+  "numeric_valid": 0,
+  "text_pending_judge": [],
+  "text_string_supported": 3,
+  "text_total": 3,
+  "uncited": 0
+ },
+ "cost_usd": "0.051257005",
+ "error": null,
+ "finished_at": "2026-11-16T22:08:27.198095+00:00",
+ "latency_ms": 24142,
+ "prediction": {
+  "parse_ok": true,
+  "text": "Apple's FY2025 10-K says its value-at-risk (VAR) model, a Monte Carlo simulation applied to its foreign currency derivative positions, estimates with 95% confidence a maximum one-day loss in fair value of $590 million as of September 27, 2025. The comparable figure was $538 million as of September 28, 2024. Apple excluded its underlying foreign currency exposures from the assessment.\nApple applied a VAR model, which used a Monte Carlo simulation, to its foreign currency derivative positions to assess the potential impact of fluctuations in exchange rates.\nApple estimates, with 95% confidence, a maximum one-day loss in fair value of $590 million as of September 27, 2025, compared with $538 million as of September 28, 2024.\nApple stated that changes in its underlying foreign currency exposures, which were excluded from the assessment, generally offset changes in the fair values of its foreign currency derivatives."
+ },
+ "question_id": "hq_3bc57255183d4bdeabdba814d9c2f4a7",
+ "question_sha": "e22bb516c6878ac8a33bbe6810e8a089bd2bc9c5b6710918846a3e7230333869",
+ "raw_output": {
+  "caveats": [
+   "The VAR figure covers only foreign currency derivative positions, not the underlying exposures.",
+   "The figures come from filing text. No structured fact records were available."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_cd18948b6226bce71e1e79e6b61fd7b59ae5fc210c704820112d314152c77b32"
+     }
+    ],
+    "id": "c1",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Apple applied a VAR model, which used a Monte Carlo simulation, to its foreign currency derivative positions to assess the potential impact of fluctuations in exchange rates.",
+    "ticker": "AAPL",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_cd18948b6226bce71e1e79e6b61fd7b59ae5fc210c704820112d314152c77b32"
+     }
+    ],
+    "id": "c2",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Apple estimates, with 95% confidence, a maximum one-day loss in fair value of $590 million as of September 27, 2025, compared with $538 million as of September 28, 2024.",
+    "ticker": "AAPL",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_cd18948b6226bce71e1e79e6b61fd7b59ae5fc210c704820112d314152c77b32"
+     }
+    ],
+    "id": "c3",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Apple stated that changes in its underlying foreign currency exposures, which were excluded from the assessment, generally offset changes in the fair values of its foreign currency derivatives.",
+    "ticker": "AAPL",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   }
+  ],
+  "final_claim_id": null,
+  "final_unit": null,
+  "final_value": null,
+  "status": "answered",
+  "summary": "Apple's FY2025 10-K says its value-at-risk (VAR) model, a Monte Carlo simulation applied to its foreign currency derivative positions, estimates with 95% confidence a maximum one-day loss in fair value of $590 million as of September 27, 2025. The comparable figure was $538 million as of September 28, 2024. Apple excluded its underlying foreign currency exposures from the assessment."
+ },
+ "retrieval": {
+  "first_search": {
+   "filings:s1": [
+    "chk_cd18948b6226bce71e1e79e6b61fd7b59ae5fc210c704820112d314152c77b32",
+    "chk_2e526343a4a83eb6fb8836ff2a55be535870334b769cabdfcd827bfee31e44fe",
+    "chk_328eeb97079e6e9544487d0d8367dc62854442126945ae15e8ff26eae95b8f8a",
+    "chk_43b69eb223c96eaa34c1dc1445f49616c16e2fb80301fb98972b3151c6378467",
+    "chk_b8e69e2531796f55a43329d3ba506917a591ab7e6bbdea7e58ae87bfd99de9f9",
+    "chk_c92661a242a5ee59c6064ff470bd418adda8f8af3034af288a112344ec195d34",
+    "chk_585506d0f4376e427a7cc03fdb54b334b7620aa9775458a0f069e440347cd9dd",
+    "chk_77b5512b23b72c8045d84540d4f67be66924be6cef90ab2aa9461d88d7563235"
+   ]
+  },
+  "seen": [
+   "chk_cd18948b6226bce71e1e79e6b61fd7b59ae5fc210c704820112d314152c77b32",
+   "chk_2e526343a4a83eb6fb8836ff2a55be535870334b769cabdfcd827bfee31e44fe",
+   "chk_328eeb97079e6e9544487d0d8367dc62854442126945ae15e8ff26eae95b8f8a",
+   "chk_43b69eb223c96eaa34c1dc1445f49616c16e2fb80301fb98972b3151c6378467",
+   "chk_b8e69e2531796f55a43329d3ba506917a591ab7e6bbdea7e58ae87bfd99de9f9",
+   "chk_c92661a242a5ee59c6064ff470bd418adda8f8af3034af288a112344ec195d34",
+   "chk_585506d0f4376e427a7cc03fdb54b334b7620aa9775458a0f069e440347cd9dd",
+   "chk_77b5512b23b72c8045d84540d4f67be66924be6cef90ab2aa9461d88d7563235"
+  ]
+ },
+ "run_id": "739cab48-2d28-4ff8-8a46-439438cd3eea",
+ "run_status": "done",
+ "split": "handwritten",
+ "started_at": "2026-11-16T22:08:02.992232+00:00",
+ "status": "done",
+ "system_config_hash": "609c0b8d3387b1ce1d168e92bc0af076a1cc5929d1640386326043ecb0c21b67",
+ "system_id": "m6-hybrid",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 45639,
+  "cache_write_tokens": 14795,
+  "input_tokens": 5626,
+  "output_tokens": 3813
+ }
+}

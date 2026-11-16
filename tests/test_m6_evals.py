@@ -175,10 +175,10 @@ def test_dev_numeric_ids_come_from_the_dev_pilot():
 def test_m6_caps_fit_the_ceiling_and_cover_their_reservations():
     configs = m6_configs()
     base = [c for c in configs.values() if c.get("budget") == "m6"]
-    total = sum(Decimal(c["spend_cap_usd"]) for c in base)
-    assert total == Decimal("40.00")  # the student's hard ceiling (D123)
-    conditional = [n for n, c in configs.items() if c.get("budget") == "m6-conditional"]
-    assert conditional == ["m6_handwritten_hybrid"]  # runs only after re-summing at actual spend
+    # D123 re-sum rule: a finished step counts at its recorded actual spend, others at their cap.
+    total = sum(Decimal(c.get("spent_usd", c["spend_cap_usd"])) for c in base)
+    assert total <= Decimal("40.00")  # the student's hard ceiling (D123, D125)
+    assert not [n for n, c in configs.items() if c.get("budget") not in ("m6",)]
     for name, data in configs.items():
         for system in data.get("systems", []):
             reserve = Decimal(system["max_cost_usd"]) * data["concurrency"]
@@ -187,8 +187,9 @@ def test_m6_caps_fit_the_ceiling_and_cover_their_reservations():
             if name != "m6_dev_explanatory_m5":
                 assert flags["budget_weighting"] == "input_price" and flags["prompt_caching"]
                 assert flags["stall_guard_steps"] == 2 and flags["summary_cited_values"]
-    judges = configs["m6_judges"]
-    assert all((ROOT / c).exists() for c in judges["configs"])
+    for plan in ("m6_judges_d1", "m6_judges_ablations"):
+        assert all((ROOT / c).exists() for c in configs[plan]["configs"])
+    assert Decimal(configs["m6_handwritten"]["spend_cap_usd"].split()[0]) >= Decimal("7.875")
 
 
 def test_preflight_requires_cache_prices_for_prompt_caching():
@@ -217,7 +218,7 @@ def test_smoke_replays_committed_records_without_keys_or_database(monkeypatch, t
     monkeypatch.setenv("SEC_USER_AGENT", "FilingLens tests test@example.org")
     monkeypatch.delenv("ANTHROPIC_API_KEY", raising=False)
     out = run_smoke(CONFIGS / "ci_smoke.toml")
-    assert out["systems"]["system"] == {
+    assert out["systems"]["m6"] == {
         "n": 10,
         "scored": 10,
         "correct": 10,
@@ -349,4 +350,32 @@ def test_m5_report_regenerates_byte_for_byte(monkeypatch):
         "m5_handwritten",
     ]
     text = build_report([CONFIGS / f"{n}.toml" for n in names])
+    committed = REPORT_PATH.read_bytes().decode("utf-8").replace("\r\n", "\n")
+    m5_part = committed.split("\n## M6: improvement", 1)[0]  # the M6 sections follow (D118)
+    assert text == m5_part + "\n## Ablations\n\n_M6._\n"
+
+
+def test_m6_report_sections_render_offline_and_keep_the_m5_report(monkeypatch):
+    from evals.m6_report import mean_diff_ci, sign_test
+    from evals.report import REPORT_PATH, build_report
+
+    for key, value in MODELS.items():
+        monkeypatch.setenv(key, value)
+    monkeypatch.setenv("SEC_USER_AGENT", "FilingLens tests test@example.org")
+    names = [
+        "m5_test_subset",
+        "m5_test_opus",
+        "m5_test_fable",
+        "m5_test_b2_subset",
+        "m5_test_b1_subset",
+        "m5_probe",
+        "m5_handwritten",
+    ]
+    text = build_report([CONFIGS / f"{n}.toml" for n in names], m6=True)
     assert text == REPORT_PATH.read_bytes().decode("utf-8").replace("\r\n", "\n")
+    m5_only = build_report([CONFIGS / f"{n}.toml" for n in names])
+    assert text.startswith(m5_only.removesuffix("\n## Ablations\n\n_M6._\n"))
+    for heading in ("### Ablations", "### Failure analysis", "### Handwritten explanatory"):
+        assert heading in text
+    assert sign_test([3, 4, 5], [3, 3, 3]) == (2, 0, 0.5)
+    assert mean_diff_ci([1.0, 2.0], [1.0, 1.0])[0] == 0.5

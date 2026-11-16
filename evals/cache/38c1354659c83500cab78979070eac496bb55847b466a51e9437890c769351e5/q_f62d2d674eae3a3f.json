@@ -1,0 +1,117 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 3,
+  "numeric_valid": 2,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.0829211",
+ "error": null,
+ "finished_at": "2026-11-16T20:37:27.633478+00:00",
+ "latency_ms": 32461,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "-95.83"
+ },
+ "question_id": "q_f62d2d674eae3a3f",
+ "question_sha": "f4542d6f998bb5c8e9bba5e90d621b609649259b744ff4baa5f1257b88c8f82e",
+ "raw_output": {
+  "caveats": [
+   "The Q4 FY2025 operating income is a derived value (full-year minus nine-month figures), not a directly reported quarterly figure.",
+   "No filing passages were provided, so the answer does not explain the drivers of the decline."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3085"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q1",
+     "fiscal_year": 2025
+    },
+    "text": "UNH operating income in fiscal Q1 2025 (2025-01-01 to 2025-03-31) was $9.119 billion.",
+    "ticker": "UNH",
+    "unit": "USD",
+    "value": "9119000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3088"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q4",
+     "fiscal_year": 2025
+    },
+    "text": "UNH operating income in fiscal Q4 2025 (2025-10-01 to 2025-12-31) was $380 million. This is derived: FY2025 operating income of $18,964,000,000 minus nine-month operating income of $18,584,000,000.",
+    "ticker": "UNH",
+    "unit": "USD",
+    "value": "380000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3085"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3088"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q4",
+     "fiscal_year": 2025
+    },
+    "text": "Percent change from Q1 to Q4 FY2025 = (380,000,000 - 9,119,000,000) / 9,119,000,000 \u00d7 100 = -8,739,000,000 / 9,119,000,000 \u00d7 100 \u2248 -95.83%, a decline of about 95.8%.",
+    "ticker": "UNH",
+    "unit": "percent",
+    "value": "-95.83",
+    "value_basis": "model_arithmetic"
+   }
+  ],
+  "final_claim_id": "c3",
+  "final_unit": "percent",
+  "final_value": "-95.83",
+  "status": "answered",
+  "summary": "UnitedHealth's operating income fell about 95.83%, from $9.119 billion in fiscal Q1 2025 to $380 million in fiscal Q4 2025. The Q4 figure is derived from annual and nine-month values."
+ },
+ "run_id": "630faaa3-540c-4f9b-b332-788af785aeb0",
+ "run_status": "done",
+ "split": "test",
+ "started_at": "2026-11-16T20:36:55.114825+00:00",
+ "status": "done",
+ "system_config_hash": "38c1354659c83500cab78979070eac496bb55847b466a51e9437890c769351e5",
+ "system_id": "m6-no-quant",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 24836,
+  "cache_write_tokens": 8799,
+  "input_tokens": 6060,
+  "output_tokens": 4632
+ }
+}

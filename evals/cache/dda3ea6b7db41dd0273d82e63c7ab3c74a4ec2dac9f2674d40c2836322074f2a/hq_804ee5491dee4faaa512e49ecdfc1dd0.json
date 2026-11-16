@@ -1,0 +1,308 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 4,
+  "numeric_valid": 4,
+  "text_pending_judge": [],
+  "text_string_supported": 6,
+  "text_total": 6,
+  "uncited": 0
+ },
+ "cost_usd": "0.169752325",
+ "error": null,
+ "finished_at": "2026-11-16T21:51:28.121524+00:00",
+ "latency_ms": 130641,
+ "prediction": {
+  "parse_ok": true,
+  "text": "NVIDIA described the Q1 FY2026 item as a $4.5 billion charge for H20 excess inventory and purchase obligations, not a write-off. It said the charge followed an April 9, 2025 U.S. government license requirement for H20 exports to China, after which H20 demand diminished. Total inventory and purchase-obligation provisions were $5.3 billion in Q1, and the net effect on gross margin was an unfavorable 11.0%. Gross margin fell from 73.0% in Q4 FY2025 to 60.5% in Q1 FY2026, then recovered to 72.4% in Q2. In Q2, NVIDIA released $180 million of previously reserved H20 inventory.\nNVIDIA said that on April 9, 2025 the U.S. government informed it that a license is required for exports of its H20 products into the China market. The requirement also covers Hong Kong, Macau and D:5 countries.\nNVIDIA said that, as a result of the new requirements, it incurred a $4.5 billion charge in Q1 FY2026 associated with H20 excess inventory and purchase obligations as demand for H20 products diminished. The filing calls this a 'charge' for excess inventory and purchase obligations, not a 'write-off'. It also said the charge was less than initially anticipated because it was able to re-use certain materials.\nIn its risk factors, NVIDIA said export controls restricting sales can result in excess inventory and purchase obligations, 'as we recently experienced with the H20'. It added that reduced demand due to export controls has and could in the future lead to excess inventory or related supply charges.\nTotal provisions for inventory and excess inventory purchase obligations were $5.3 billion in Q1 FY2026, including the $4.5 billion for H20. Their net effect on gross margin was an unfavorable 11.0%, compared with 1.1% in Q1 FY2025.\nNVIDIA attributed the decline in gross margin from a year ago and sequentially primarily to the $4.5 billion H20 charge and the initial ramp of more sophisticated systems within Data Center.\nGross margin was about 73.0% in Q4 FY2025, before the charge. This figure uses derived Q4 values.\nGross margin fell to about 60.5% in Q1 FY2026, the quarter of the H20 charge.\nGross margin recovered to about 72.4% in Q2 FY2026.\nGross margin was about 12.5 percentage points lower in Q1 FY2026 than in Q4 FY2025.\nIn Q2 FY2026, provisions were $1.0 billion, offset in part by a $501 million release from sales of previously reserved inventory and settlements of purchase obligations. NVIDIA reported a $180 million release of previously reserved H20 inventory from sales outside China, and said there were no H20 sales to China-based customers in Q2. The net effect of provisions on Q2 gross margin was an unfavorable 1.1%."
+ },
+ "question_id": "hq_804ee5491dee4faaa512e49ecdfc1dd0",
+ "question_sha": "ae0b2908eca2f088208be266e3101b23ee236d888cca787fccb4cac3d7649503",
+ "raw_output": {
+  "caveats": [
+   "The filings describe a $4.5 billion 'charge' for H20 excess inventory and purchase obligations, not a 'write-off' of chip inventory. The charge covers both inventory and purchase obligations.",
+   "The Q4 FY2025 figures are derived from annual and nine-month figures.",
+   "The 12.5-point gross margin drop compares Q4 FY2025 with Q1 FY2026. It reflects more than the H20 charge, since NVIDIA also cited the initial ramp of Data Center systems.",
+   "The Q2 10-Q gives only the net effect of provisions and releases on gross margin, not the H20 charge's separate effect in Q2."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_c13905a4cc832fbf43b156896e55dddd779ad287cc3beaac75299853328f2012"
+     },
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_8c0c9778ed1cd48652c0aff10b423a9814e3ea1076d76b7c23bb4b310bd3514a"
+     }
+    ],
+    "id": "c1",
+    "kind": "textual",
+    "period": null,
+    "text": "NVIDIA said that on April 9, 2025 the U.S. government informed it that a license is required for exports of its H20 products into the China market. The requirement also covers Hong Kong, Macau and D:5 countries.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_c13905a4cc832fbf43b156896e55dddd779ad287cc3beaac75299853328f2012"
+     },
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_8c0c9778ed1cd48652c0aff10b423a9814e3ea1076d76b7c23bb4b310bd3514a"
+     }
+    ],
+    "id": "c2",
+    "kind": "textual",
+    "period": null,
+    "text": "NVIDIA said that, as a result of the new requirements, it incurred a $4.5 billion charge in Q1 FY2026 associated with H20 excess inventory and purchase obligations as demand for H20 products diminished. The filing calls this a 'charge' for excess inventory and purchase obligations, not a 'write-off'. It also said the charge was less than initially anticipated because it was able to re-use certain materials.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_4c70af60d3a795772b9671d6c48fbc50dc62ae6fcd88b1d86f31c30441a30259"
+     },
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_091ef109314b2ef8dd2f555246da7b20a5a6177b46ff20f66cf447f94897e7da"
+     }
+    ],
+    "id": "c3",
+    "kind": "textual",
+    "period": null,
+    "text": "In its risk factors, NVIDIA said export controls restricting sales can result in excess inventory and purchase obligations, 'as we recently experienced with the H20'. It added that reduced demand due to export controls has and could in the future lead to excess inventory or related supply charges.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_ee830fea55cee0bb828d8a664b2d689b0a5d0862bcd551ca238dba97b04bf437"
+     }
+    ],
+    "id": "c4",
+    "kind": "textual",
+    "period": null,
+    "text": "Total provisions for inventory and excess inventory purchase obligations were $5.3 billion in Q1 FY2026, including the $4.5 billion for H20. Their net effect on gross margin was an unfavorable 11.0%, compared with 1.1% in Q1 FY2025.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_e986c508a545cca6a0a249e22244c794ca0c5bd65cbcbbc59a5ed3e4000a8904"
+     }
+    ],
+    "id": "c5",
+    "kind": "textual",
+    "period": null,
+    "text": "NVIDIA attributed the decline in gross margin from a year ago and sequentially primarily to the $4.5 billion H20 charge and the initial ramp of more sophisticated systems within Data Center.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_1"
+     }
+    ],
+    "id": "c6",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q4",
+     "fiscal_year": 2025
+    },
+    "text": "Gross margin was about 73.0% in Q4 FY2025, before the charge. This figure uses derived Q4 values.",
+    "ticker": "NVDA",
+    "unit": "percent",
+    "value": "73.028908494572",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_2"
+     }
+    ],
+    "id": "c7",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q1",
+     "fiscal_year": 2026
+    },
+    "text": "Gross margin fell to about 60.5% in Q1 FY2026, the quarter of the H20 charge.",
+    "ticker": "NVDA",
+    "unit": "percent",
+    "value": "60.523807362353",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_3"
+     }
+    ],
+    "id": "c8",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q2",
+     "fiscal_year": 2026
+    },
+    "text": "Gross margin recovered to about 72.4% in Q2 FY2026.",
+    "ticker": "NVDA",
+    "unit": "percent",
+    "value": "72.423678411741",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value",
+      "kind": "computation",
+      "ref": "cmp_4"
+     }
+    ],
+    "id": "c9",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q1",
+     "fiscal_year": 2026
+    },
+    "text": "Gross margin was about 12.5 percentage points lower in Q1 FY2026 than in Q4 FY2025.",
+    "ticker": "NVDA",
+    "unit": "percentage_points",
+    "value": "12.505101132219",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_3fee2dad959a6d36c720ce3baa4ef0af3d398607eed3ca00813302eabb9bd90a"
+     },
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_d95dc8df52becc2ef057a2a8d6464720b73e3d43cc2c6881c17cd4c2e72786d1"
+     }
+    ],
+    "id": "c10",
+    "kind": "textual",
+    "period": null,
+    "text": "In Q2 FY2026, provisions were $1.0 billion, offset in part by a $501 million release from sales of previously reserved inventory and settlements of purchase obligations. NVIDIA reported a $180 million release of previously reserved H20 inventory from sales outside China, and said there were no H20 sales to China-based customers in Q2. The net effect of provisions on Q2 gross margin was an unfavorable 1.1%.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   }
+  ],
+  "final_claim_id": null,
+  "final_unit": null,
+  "final_value": null,
+  "status": "answered",
+  "summary": "NVIDIA described the Q1 FY2026 item as a $4.5 billion charge for H20 excess inventory and purchase obligations, not a write-off. It said the charge followed an April 9, 2025 U.S. government license requirement for H20 exports to China, after which H20 demand diminished. Total inventory and purchase-obligation provisions were $5.3 billion in Q1, and the net effect on gross margin was an unfavorable 11.0%. Gross margin fell from 73.0% in Q4 FY2025 to 60.5% in Q1 FY2026, then recovered to 72.4% in Q2. In Q2, NVIDIA released $180 million of previously reserved H20 inventory."
+ },
+ "retrieval": {
+  "first_search": {
+   "filings:s5": [
+    "chk_c13905a4cc832fbf43b156896e55dddd779ad287cc3beaac75299853328f2012",
+    "chk_ee830fea55cee0bb828d8a664b2d689b0a5d0862bcd551ca238dba97b04bf437",
+    "chk_e986c508a545cca6a0a249e22244c794ca0c5bd65cbcbbc59a5ed3e4000a8904",
+    "chk_42c96ba66595832cea08aab10da7649c9902616a91b1a06638acb27280630c60",
+    "chk_cf6f92d8e1a0bbdfe883537d1d1ae48d3f7da07d9b8cc6f9f2a3b1bb73dec4d2",
+    "chk_98dbd4861c98246d74703e3594e6c63088dddd79a140fc2d14b50b805a312632",
+    "chk_8f3d983d63f45bf143345301a190167cd7332c99058587e1afc6145219cdd9a1",
+    "chk_7dc080576e83d6c2e98a74896b4f6ce97bf729a31e8084f76b947941760b181f"
+   ],
+   "filings:s6": [
+    "chk_8c0c9778ed1cd48652c0aff10b423a9814e3ea1076d76b7c23bb4b310bd3514a",
+    "chk_92bd7f89065eaa0272669ac083487a4e4db70ff5514b0259d5f4e5f803488494",
+    "chk_4c70af60d3a795772b9671d6c48fbc50dc62ae6fcd88b1d86f31c30441a30259",
+    "chk_7e5a7142095122d2d9dd93910b857dff03a027426c600457e0fbc090468daf08",
+    "chk_911ab4ee8a28a3bb8b13ac310e8c919327091467249f2aeaa843f0261cfa31a0",
+    "chk_091ef109314b2ef8dd2f555246da7b20a5a6177b46ff20f66cf447f94897e7da"
+   ],
+   "filings:s7": [
+    "chk_3fee2dad959a6d36c720ce3baa4ef0af3d398607eed3ca00813302eabb9bd90a",
+    "chk_8f4319ac63b1541508f8e9e8fbf5d3b3115f0bf768af86c1bb11cc16309d96b2",
+    "chk_57fa5026519dd4e4378b5a0fcec0350d87351b54eaaec76f20a9d41ed11f2694",
+    "chk_a11c7eadcb1698abc1219de5664664e7026eddb7a85021f86ef2254b5caeddd6",
+    "chk_d95dc8df52becc2ef057a2a8d6464720b73e3d43cc2c6881c17cd4c2e72786d1",
+    "chk_22a70c22482c5653cda44b4c189c43a28582c79acfae32e027d1ea8f7b86d6c5",
+    "chk_b5aacede19c8622b0ee76ebc1c25f6ca84b42b4a696ad5f9124ae7d7acd8b9aa",
+    "chk_2e97d86a093507f64292cf6dd2e274a42b1288822abba744f23a5a23d51360a8"
+   ]
+  },
+  "seen": [
+   "chk_c13905a4cc832fbf43b156896e55dddd779ad287cc3beaac75299853328f2012",
+   "chk_ee830fea55cee0bb828d8a664b2d689b0a5d0862bcd551ca238dba97b04bf437",
+   "chk_e986c508a545cca6a0a249e22244c794ca0c5bd65cbcbbc59a5ed3e4000a8904",
+   "chk_42c96ba66595832cea08aab10da7649c9902616a91b1a06638acb27280630c60",
+   "chk_cf6f92d8e1a0bbdfe883537d1d1ae48d3f7da07d9b8cc6f9f2a3b1bb73dec4d2",
+   "chk_98dbd4861c98246d74703e3594e6c63088dddd79a140fc2d14b50b805a312632",
+   "chk_8f3d983d63f45bf143345301a190167cd7332c99058587e1afc6145219cdd9a1",
+   "chk_7dc080576e83d6c2e98a74896b4f6ce97bf729a31e8084f76b947941760b181f",
+   "chk_8c0c9778ed1cd48652c0aff10b423a9814e3ea1076d76b7c23bb4b310bd3514a",
+   "chk_92bd7f89065eaa0272669ac083487a4e4db70ff5514b0259d5f4e5f803488494",
+   "chk_4c70af60d3a795772b9671d6c48fbc50dc62ae6fcd88b1d86f31c30441a30259",
+   "chk_7e5a7142095122d2d9dd93910b857dff03a027426c600457e0fbc090468daf08",
+   "chk_911ab4ee8a28a3bb8b13ac310e8c919327091467249f2aeaa843f0261cfa31a0",
+   "chk_091ef109314b2ef8dd2f555246da7b20a5a6177b46ff20f66cf447f94897e7da",
+   "chk_3fee2dad959a6d36c720ce3baa4ef0af3d398607eed3ca00813302eabb9bd90a",
+   "chk_8f4319ac63b1541508f8e9e8fbf5d3b3115f0bf768af86c1bb11cc16309d96b2",
+   "chk_57fa5026519dd4e4378b5a0fcec0350d87351b54eaaec76f20a9d41ed11f2694",
+   "chk_a11c7eadcb1698abc1219de5664664e7026eddb7a85021f86ef2254b5caeddd6",
+   "chk_d95dc8df52becc2ef057a2a8d6464720b73e3d43cc2c6881c17cd4c2e72786d1",
+   "chk_22a70c22482c5653cda44b4c189c43a28582c79acfae32e027d1ea8f7b86d6c5",
+   "chk_b5aacede19c8622b0ee76ebc1c25f6ca84b42b4a696ad5f9124ae7d7acd8b9aa",
+   "chk_2e97d86a093507f64292cf6dd2e274a42b1288822abba744f23a5a23d51360a8"
+  ]
+ },
+ "run_id": "4eeeca68-974c-46fd-9544-43ec10a7e175",
+ "run_status": "done",
+ "split": "handwritten",
+ "started_at": "2026-11-16T21:49:17.414901+00:00",
+ "status": "done",
+ "system_config_hash": "dda3ea6b7db41dd0273d82e63c7ab3c74a4ec2dac9f2674d40c2836322074f2a",
+ "system_id": "m6-rerank",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 110691,
+  "cache_write_tokens": 48880,
+  "input_tokens": 23267,
+  "output_tokens": 13860
+ }
+}

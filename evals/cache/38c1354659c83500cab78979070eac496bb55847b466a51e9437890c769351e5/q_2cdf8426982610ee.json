@@ -1,0 +1,71 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 1,
+  "numeric_valid": 1,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.0705576",
+ "error": null,
+ "finished_at": "2026-11-16T21:18:08.468054+00:00",
+ "latency_ms": 22214,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD",
+  "value": "4997000000"
+ },
+ "question_id": "q_2cdf8426982610ee",
+ "question_sha": "930212dd2932c6e522ba06183276f12a4763d57f90b2433862b5b42132b0cfe4",
+ "raw_output": {
+  "caveats": [
+   "The fact record's source is the filing with accession 0001628280-25-045968 (tsla-20250930.htm), a filing for a period ending 2025-09-30, rather than a filing for the quarter ended 2024-09-30. The value is what that filing reports for the Q3 2024 period."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "997"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q3",
+     "fiscal_year": 2024
+    },
+    "text": "Tesla reported gross profit of about $4.997 billion (4,997,000,000 USD) for fiscal Q3 2024, the quarter from 2024-07-01 to 2024-09-30.",
+    "ticker": "TSLA",
+    "unit": "USD",
+    "value": "4997000000",
+    "value_basis": "fact"
+   }
+  ],
+  "final_claim_id": "c1",
+  "final_unit": "USD",
+  "final_value": "4997000000",
+  "status": "answered",
+  "summary": "Tesla's gross profit for fiscal Q3 2024 (July 1 to September 30, 2024) was $4.997 billion."
+ },
+ "run_id": "a3e61eb8-13c0-482f-aa0c-42f15b585145",
+ "run_status": "done",
+ "split": "test",
+ "started_at": "2026-11-16T21:17:46.218207+00:00",
+ "status": "done",
+ "system_config_hash": "38c1354659c83500cab78979070eac496bb55847b466a51e9437890c769351e5",
+ "system_id": "m6-no-quant",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 24791,
+  "cache_write_tokens": 5849,
+  "input_tokens": 12518,
+  "output_tokens": 2842
+ }
+}

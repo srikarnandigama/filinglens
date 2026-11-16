@@ -1,0 +1,132 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 4,
+  "numeric_valid": 4,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.0661346",
+ "error": null,
+ "finished_at": "2026-11-16T20:24:12.123452+00:00",
+ "latency_ms": 24558,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "-36.498229803669"
+ },
+ "question_id": "q_2bab6fd3565ceec3",
+ "question_sha": "e4d49f19c23bbb99e4a416cf6f77c3c6702b39add6a0f9d2861c90d2772a249d",
+ "raw_output": {
+  "caveats": [
+   "The Q4 2023 net income is a derived value: full-year 2023 net income minus the nine-month year-to-date figure, not a directly reported quarterly figure.",
+   "No filing passages were provided, so this answer does not explain why net income changed."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": "value",
+      "kind": "fact",
+      "ref": "3519"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q1",
+     "fiscal_year": 2023
+    },
+    "text": "KO net income in fiscal Q1 2023 was $3.107 billion.",
+    "ticker": "KO",
+    "unit": "USD",
+    "value": "3107000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": "value",
+      "kind": "fact",
+      "ref": "3522"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q4",
+     "fiscal_year": 2023
+    },
+    "text": "KO net income in fiscal Q4 2023 was $1.973 billion (derived as full-year 2023 net income of $10.714 billion minus the $8.741 billion for the nine months ended 2023-09-29).",
+    "ticker": "KO",
+    "unit": "USD",
+    "value": "1973000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_1"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q4",
+     "fiscal_year": 2023
+    },
+    "text": "Net income changed by about -36.5% from Q1 2023 to Q4 2023.",
+    "ticker": "KO",
+    "unit": "percent",
+    "value": "-36.498229803669",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value",
+      "kind": "computation",
+      "ref": "cmp_2"
+     }
+    ],
+    "id": "c4",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q4",
+     "fiscal_year": 2023
+    },
+    "text": "The absolute change in net income was a decrease of about $1.134 billion.",
+    "ticker": "KO",
+    "unit": "USD",
+    "value": "-1134000000",
+    "value_basis": "computation"
+   }
+  ],
+  "final_claim_id": "c3",
+  "final_unit": "percent",
+  "final_value": "-36.498229803669",
+  "status": "answered",
+  "summary": "Coca-Cola's net income fell about 36.5% from fiscal Q1 2023 ($3.107 billion) to fiscal Q4 2023 ($1.973 billion). That is a drop of $1.134 billion. The Q4 figure is derived."
+ },
+ "run_id": "dca0074c-f02d-4bc6-906e-707d924230d3",
+ "run_status": "done",
+ "split": "test",
+ "started_at": "2026-11-16T20:23:47.500244+00:00",
+ "status": "done",
+ "system_config_hash": "52a48e08f9ef2a659803092d4f5678475241e872105c99154f86b7bbc29038a3",
+ "system_id": "m6",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 63641,
+  "cache_write_tokens": 7353,
+  "input_tokens": 6854,
+  "output_tokens": 2768
+ }
+}

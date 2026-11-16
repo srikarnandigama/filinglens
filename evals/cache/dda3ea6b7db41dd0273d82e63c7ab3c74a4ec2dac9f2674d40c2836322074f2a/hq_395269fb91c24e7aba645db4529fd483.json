@@ -1,0 +1,178 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 0,
+  "numeric_valid": 0,
+  "text_pending_judge": [],
+  "text_string_supported": 5,
+  "text_total": 5,
+  "uncited": 0
+ },
+ "cost_usd": "0.086799390",
+ "error": null,
+ "finished_at": "2026-11-16T21:44:25.472238+00:00",
+ "latency_ms": 63397,
+ "prediction": {
+  "parse_ok": true,
+  "text": "In its FY2025 10-K risk factors, Bank of America describes several deposit-related liquidity risks. These are unexpected draws on deposits, failure to attract or retain client deposits (including large-scale deposit migration), and sudden confidence-driven events that could cause unforeseen cash outflows and a liquidity shortfall. The Q2 2026 10-Q reports no material changes to these risk factors.\nBank of America states that its liquidity or cost of funds may be negatively impacted by factors including the unwillingness or inability of the Federal Reserve to act as lender of last resort and unexpected simultaneous draws on credit lines or deposits.\nThe company identifies the failure to attract or retain client deposits or invested funds as a liquidity risk, including large-scale deposit migration. Its examples of drivers are clients seeking higher-yielding deposits, moving to an alternative institution perceived to be safer, changing investment preferences, moving balances into digital assets (e.g., stablecoin) or other non-bank platforms, and changes in spending behavior due to inflation or a decline in the economy that increase the need for cash.\nBank of America describes confidence-related risks. Negative views or loss of confidence about the company, the financial services industry or the U.S. monetary system, or a specific news event (e.g., bank failures), could trigger sudden events. It says these could result in an inability to sell assets or redeem investments, unforeseen outflows of cash and draws on liquidity facilities. The consequences could be increased costs, a liquidity shortfall and/or an impact on its liquidity coverage ratio and net stable funding ratio.\nRelated funding-access risk: downgrades of short-term credit ratings of the parent company or bank or broker-dealer subsidiaries could reduce or eliminate access to short-term funding sources such as repo financing, and/or increase the cost of funds and collateral requirements.\nThe Q2 2026 10-Q states there are no material changes from the risk factors in the 2025 Form 10-K, so it adds no updated deposit-outflow language."
+ },
+ "question_id": "hq_395269fb91c24e7aba645db4529fd483",
+ "question_sha": "665f2299d1f2f458518f772d8afa9d688a3a5248b9197773d4c57e14444cbc9f",
+ "raw_output": {
+  "caveats": [
+   "The retrieved passages include one sentence that begins in a prior chunk that was not retrieved. The deposit-outflow description relies on the retrieved text only.",
+   "The Q2 2026 10-Q only cross-references the 2025 10-K risk factors, so all substantive content comes from the 10-K."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_2c1d6048db1ee7eca049ba0f30222bd8fca220220525e92da0512189ff1891a1"
+     }
+    ],
+    "id": "c1",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Bank of America states that its liquidity or cost of funds may be negatively impacted by factors including the unwillingness or inability of the Federal Reserve to act as lender of last resort and unexpected simultaneous draws on credit lines or deposits.",
+    "ticker": "BAC",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_2c1d6048db1ee7eca049ba0f30222bd8fca220220525e92da0512189ff1891a1"
+     }
+    ],
+    "id": "c2",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "The company identifies the failure to attract or retain client deposits or invested funds as a liquidity risk, including large-scale deposit migration. Its examples of drivers are clients seeking higher-yielding deposits, moving to an alternative institution perceived to be safer, changing investment preferences, moving balances into digital assets (e.g., stablecoin) or other non-bank platforms, and changes in spending behavior due to inflation or a decline in the economy that increase the need for cash.",
+    "ticker": "BAC",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_977dca5f44039ed531f14e8195962690fb531e84390266414c9f8d3a1f76f8e3"
+     }
+    ],
+    "id": "c3",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Bank of America describes confidence-related risks. Negative views or loss of confidence about the company, the financial services industry or the U.S. monetary system, or a specific news event (e.g., bank failures), could trigger sudden events. It says these could result in an inability to sell assets or redeem investments, unforeseen outflows of cash and draws on liquidity facilities. The consequences could be increased costs, a liquidity shortfall and/or an impact on its liquidity coverage ratio and net stable funding ratio.",
+    "ticker": "BAC",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_70387f743ed9767768c73d65740a0c2c73c6637a16b01ae6e86c0da0535656b1"
+     }
+    ],
+    "id": "c4",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Related funding-access risk: downgrades of short-term credit ratings of the parent company or bank or broker-dealer subsidiaries could reduce or eliminate access to short-term funding sources such as repo financing, and/or increase the cost of funds and collateral requirements.",
+    "ticker": "BAC",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_3ad5b7ddfd9cef93b5403096c497400f870644cde204f9a2721e6f6f9e279e40"
+     }
+    ],
+    "id": "c5",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "Q2",
+     "fiscal_year": 2026
+    },
+    "text": "The Q2 2026 10-Q states there are no material changes from the risk factors in the 2025 Form 10-K, so it adds no updated deposit-outflow language.",
+    "ticker": "BAC",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   }
+  ],
+  "final_claim_id": null,
+  "final_unit": null,
+  "final_value": null,
+  "status": "answered",
+  "summary": "In its FY2025 10-K risk factors, Bank of America describes several deposit-related liquidity risks. These are unexpected draws on deposits, failure to attract or retain client deposits (including large-scale deposit migration), and sudden confidence-driven events that could cause unforeseen cash outflows and a liquidity shortfall. The Q2 2026 10-Q reports no material changes to these risk factors."
+ },
+ "retrieval": {
+  "first_search": {
+   "filings:s1": [
+    "chk_03bfcb81c096ccd6966ca440ef2426b9fbb9d09036ec40fcec95203af73e4ff2",
+    "chk_210b658ec79cb84441c9a2f2d1c066208a5840a1801d4aa4ea111ff8a77c3fb4",
+    "chk_977dca5f44039ed531f14e8195962690fb531e84390266414c9f8d3a1f76f8e3",
+    "chk_2c1d6048db1ee7eca049ba0f30222bd8fca220220525e92da0512189ff1891a1",
+    "chk_0319b4095ec71e59325dc3962dc97411b4aeb8dc4cf8cf5de998faf557e9525f",
+    "chk_6f7f8a45a6bec153134825590cd8b62c0695f4e891185bec20c884cb245cc702",
+    "chk_ebb9f3c9d8eb4266ccc3e622d6071645da25b23fea38fc4b0caf77bc20070b44",
+    "chk_71cbe1be2fd66be0e315818dec78570acb6dcbfcddfc09754fd834aa98009d1b"
+   ],
+   "filings:s2": [
+    "chk_3ad5b7ddfd9cef93b5403096c497400f870644cde204f9a2721e6f6f9e279e40"
+   ]
+  },
+  "seen": [
+   "chk_03bfcb81c096ccd6966ca440ef2426b9fbb9d09036ec40fcec95203af73e4ff2",
+   "chk_210b658ec79cb84441c9a2f2d1c066208a5840a1801d4aa4ea111ff8a77c3fb4",
+   "chk_977dca5f44039ed531f14e8195962690fb531e84390266414c9f8d3a1f76f8e3",
+   "chk_2c1d6048db1ee7eca049ba0f30222bd8fca220220525e92da0512189ff1891a1",
+   "chk_0319b4095ec71e59325dc3962dc97411b4aeb8dc4cf8cf5de998faf557e9525f",
+   "chk_6f7f8a45a6bec153134825590cd8b62c0695f4e891185bec20c884cb245cc702",
+   "chk_ebb9f3c9d8eb4266ccc3e622d6071645da25b23fea38fc4b0caf77bc20070b44",
+   "chk_71cbe1be2fd66be0e315818dec78570acb6dcbfcddfc09754fd834aa98009d1b",
+   "chk_3ad5b7ddfd9cef93b5403096c497400f870644cde204f9a2721e6f6f9e279e40",
+   "chk_8d883132a80f250a76e49a723b1bcefaa31b256200fb8fe014c23145b7f1b03d",
+   "chk_70387f743ed9767768c73d65740a0c2c73c6637a16b01ae6e86c0da0535656b1"
+  ]
+ },
+ "run_id": "feb9c96d-215c-454e-956d-9315240523c0",
+ "run_status": "done",
+ "split": "handwritten",
+ "started_at": "2026-11-16T21:43:22.027828+00:00",
+ "status": "done",
+ "system_config_hash": "dda3ea6b7db41dd0273d82e63c7ab3c74a4ec2dac9f2674d40c2836322074f2a",
+ "system_id": "m6-rerank",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 81757,
+  "cache_write_tokens": 28192,
+  "input_tokens": 10284,
+  "output_tokens": 7129
+ }
+}

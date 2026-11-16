@@ -1,0 +1,71 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 1,
+  "numeric_valid": 1,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.0250226",
+ "error": null,
+ "finished_at": "2026-11-16T20:26:19.846168+00:00",
+ "latency_ms": 8230,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD",
+  "value": "13209000000"
+ },
+ "question_id": "q_61f1d96329b57b0e",
+ "question_sha": "35d5fd6c94aaf57e36da4823315528b177364b618a19f72460a651da741c5bf0",
+ "raw_output": {
+  "caveats": [
+   "The Q4 value is derived, not reported directly. It is full-year 2023 operating income minus the nine-month year-to-date figure."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "705"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q4",
+     "fiscal_year": 2023
+    },
+    "text": "Amazon's operating income for fiscal Q4 2023 (2023-10-01 to 2023-12-31) was about $13.209 billion, derived as full-year operating income of $36.852 billion minus the nine-month figure of $23.643 billion.",
+    "ticker": "AMZN",
+    "unit": "USD",
+    "value": "13209000000",
+    "value_basis": "fact"
+   }
+  ],
+  "final_claim_id": "c1",
+  "final_unit": "USD",
+  "final_value": "13209000000",
+  "status": "answered",
+  "summary": "Amazon's operating income in fiscal Q4 2023 (October 1 to December 31, 2023) was about $13.209 billion. This is a derived value: full-year operating income minus the nine-month figure."
+ },
+ "run_id": "2f846e08-9a25-4839-b901-998295a0a365",
+ "run_status": "done",
+ "split": "test",
+ "started_at": "2026-11-16T20:26:11.549415+00:00",
+ "status": "done",
+ "system_config_hash": "076d44ae54839bdbe0f6ccf45947a709b3a3d1f851b4bbb7bc21239958ef83cf",
+ "system_id": "m6-no-verifier",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 25111,
+  "cache_write_tokens": 5235,
+  "input_tokens": 12,
+  "output_tokens": 940
+ }
+}

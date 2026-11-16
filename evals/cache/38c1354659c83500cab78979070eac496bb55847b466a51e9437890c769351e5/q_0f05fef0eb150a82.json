@@ -1,0 +1,72 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 1,
+  "numeric_valid": 1,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.0592006",
+ "error": null,
+ "finished_at": "2026-11-16T20:38:11.280869+00:00",
+ "latency_ms": 18222,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD",
+  "value": "2908000000"
+ },
+ "question_id": "q_0f05fef0eb150a82",
+ "question_sha": "7a2fcc8b2356268a1f27f3ff14060a47d225bb99d56458e7e3b02d8ee697f3b1",
+ "raw_output": {
+  "caveats": [
+   "The Q4 value is derived (full-year capex less the nine-month year-to-date figure), not a directly reported quarterly figure.",
+   "The full-year input comes from the filing with accession 0000320193-25-000079; the nine-month input comes from accession 0000320193-25-000073."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "150"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q4",
+     "fiscal_year": 2024
+    },
+    "text": "Apple's fiscal Q4 2024 capital expenditures (payments to acquire property, plant and equipment) were about $2.908 billion, derived as FY2024 $9,447,000,000 minus nine-month $6,539,000,000 = $2,908,000,000.",
+    "ticker": "AAPL",
+    "unit": "USD",
+    "value": "2908000000",
+    "value_basis": "fact"
+   }
+  ],
+  "final_claim_id": "c1",
+  "final_unit": "USD",
+  "final_value": "2908000000",
+  "status": "answered",
+  "summary": "Apple's capital expenditures (payments to acquire property, plant and equipment) in fiscal Q4 2024 (2024-06-30 to 2024-09-28) were about $2.908 billion. This is a derived figure: $9,447,000,000 for the full fiscal year minus $6,539,000,000 for the first nine months."
+ },
+ "run_id": "5e8010eb-2ae4-408f-8b6e-26ac52db5499",
+ "run_status": "done",
+ "split": "test",
+ "started_at": "2026-11-16T20:37:52.977946+00:00",
+ "status": "done",
+ "system_config_hash": "38c1354659c83500cab78979070eac496bb55847b466a51e9437890c769351e5",
+ "system_id": "m6-no-quant",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 18206,
+  "cache_write_tokens": 6544,
+  "input_tokens": 9525,
+  "output_tokens": 2197
+ }
+}

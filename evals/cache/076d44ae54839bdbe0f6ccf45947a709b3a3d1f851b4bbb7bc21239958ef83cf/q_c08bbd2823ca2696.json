@@ -1,0 +1,132 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 3,
+  "numeric_valid": 3,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.0565214",
+ "error": null,
+ "finished_at": "2026-11-16T20:29:00.028234+00:00",
+ "latency_ms": 18119,
+ "prediction": {
+  "choice": "PG",
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percentage_points",
+  "value": "20.491979152599"
+ },
+ "question_id": "q_c08bbd2823ca2696",
+ "question_sha": "d41019e714a4dbe4382d3bb0bb12ae08adcddd83747b5673b6455805ffabf377",
+ "raw_output": {
+  "caveats": [
+   "The two companies have different fiscal year ends: PG's fiscal 2025 ended June 30, 2025, and COST's ended August 31, 2025.",
+   "Margins are operating income divided by the reported Revenues fact for each company."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_1"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3645"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3615"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "PG's fiscal 2025 operating margin was about 24.26% (operating income $20.451 billion on revenue of $84.284 billion).",
+    "ticker": "PG",
+    "unit": "percent",
+    "value": "24.264391818139",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_2"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3368"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3338"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "COST's fiscal 2025 operating margin was about 3.77% (operating income $10.383 billion on revenue of $275.235 billion).",
+    "ticker": "COST",
+    "unit": "percent",
+    "value": "3.77241266554",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value",
+      "kind": "computation",
+      "ref": "cmp_3"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "PG's operating margin exceeded COST's by about 20.49 percentage points in fiscal 2025.",
+    "ticker": "PG",
+    "unit": "percentage_points",
+    "value": "20.491979152599",
+    "value_basis": "computation"
+   }
+  ],
+  "final_claim_id": "c3",
+  "final_unit": "percentage_points",
+  "final_value": "20.491979152599",
+  "status": "answered",
+  "summary": "Procter & Gamble had the higher fiscal 2025 operating margin: about 24.26%, against about 3.77% for Costco. The gap is about 20.49 percentage points."
+ },
+ "run_id": "1f96d9c5-b345-4696-9560-83bb5c1e1424",
+ "run_status": "done",
+ "split": "test",
+ "started_at": "2026-11-16T20:28:41.841763+00:00",
+ "status": "done",
+ "system_config_hash": "076d44ae54839bdbe0f6ccf45947a709b3a3d1f851b4bbb7bc21239958ef83cf",
+ "system_id": "m6-no-verifier",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 51489,
+  "cache_write_tokens": 10769,
+  "input_tokens": 20,
+  "output_tokens": 2441
+ }
+}

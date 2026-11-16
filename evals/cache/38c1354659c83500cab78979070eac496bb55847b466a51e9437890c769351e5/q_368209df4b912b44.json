@@ -1,0 +1,71 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 1,
+  "numeric_valid": 1,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.0349023",
+ "error": null,
+ "finished_at": "2026-11-16T20:33:41.753803+00:00",
+ "latency_ms": 11280,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD",
+  "value": "3148000000"
+ },
+ "question_id": "q_368209df4b912b44",
+ "question_sha": "a74157575a84c48950c5e1a77ffd1b97d0cfb3d81a433f63d1452d30d09014c5",
+ "raw_output": {
+  "caveats": [
+   "Value is the balance-sheet figure at 2023-10-01 from the Q3 2023 filing (accession 0000078003-23-000115) in the snapshot."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3029"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q3",
+     "fiscal_year": 2023
+    },
+    "text": "Pfizer's cash and cash equivalents were about $3.148 billion ($3,148,000,000) as of October 1, 2023, the end of fiscal Q3 2023.",
+    "ticker": "PFE",
+    "unit": "USD",
+    "value": "3148000000",
+    "value_basis": "fact"
+   }
+  ],
+  "final_claim_id": "c1",
+  "final_unit": "USD",
+  "final_value": "3148000000",
+  "status": "answered",
+  "summary": "Pfizer reported cash and cash equivalents of $3.148 billion at the end of fiscal Q3 2023 (October 1, 2023)."
+ },
+ "run_id": "f1931a8b-ce92-4c3d-92a9-dcc8617d9b47",
+ "run_status": "done",
+ "split": "test",
+ "started_at": "2026-11-16T20:33:30.417869+00:00",
+ "status": "done",
+ "system_config_hash": "38c1354659c83500cab78979070eac496bb55847b466a51e9437890c769351e5",
+ "system_id": "m6-no-quant",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 22038,
+  "cache_write_tokens": 4845,
+  "input_tokens": 3908,
+  "output_tokens": 1277
+ }
+}

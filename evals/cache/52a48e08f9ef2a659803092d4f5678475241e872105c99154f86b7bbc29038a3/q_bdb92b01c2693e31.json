@@ -1,0 +1,112 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 3,
+  "numeric_valid": 3,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.0583602",
+ "error": null,
+ "finished_at": "2026-11-16T20:18:36.976172+00:00",
+ "latency_ms": 19019,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "57.286385842013"
+ },
+ "question_id": "q_bdb92b01c2693e31",
+ "question_sha": "55b497685202092d401c84758981adbd6a7c8b334b6a7c728cfcf7fe0df32afc",
+ "raw_output": {
+  "caveats": [
+   "Q4 figures are derived, not reported directly. Each is full-year 2023 less the nine-month year-to-date figure through 2023-09-29.",
+   "The full-year inputs come from the filing with accession 0001628280-26-010047. The nine-month inputs come from accession 0000021344-24-000060."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3490"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q4",
+     "fiscal_year": 2023
+    },
+    "text": "Coca-Cola's derived Q4 2023 gross profit was $6.215 billion.",
+    "ticker": "KO",
+    "unit": "USD",
+    "value": "6215000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3458"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q4",
+     "fiscal_year": 2023
+    },
+    "text": "Coca-Cola's derived Q4 2023 revenue was $10.849 billion.",
+    "ticker": "KO",
+    "unit": "USD",
+    "value": "10849000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_1"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q4",
+     "fiscal_year": 2023
+    },
+    "text": "Coca-Cola's Q4 2023 gross margin was about 57.3% (gross profit divided by revenue).",
+    "ticker": "KO",
+    "unit": "percent",
+    "value": "57.286385842013",
+    "value_basis": "computation"
+   }
+  ],
+  "final_claim_id": "c3",
+  "final_unit": "percent",
+  "final_value": "57.286385842013",
+  "status": "answered",
+  "summary": "Coca-Cola's gross margin in fiscal Q4 2023 was about 57.3%. That is derived Q4 gross profit of $6.215 billion divided by derived Q4 revenue of $10.849 billion."
+ },
+ "run_id": "d4ddfcca-c705-40bc-84a5-ce8cbe6ac10a",
+ "run_status": "done",
+ "split": "test",
+ "started_at": "2026-11-16T20:18:17.934187+00:00",
+ "status": "done",
+ "system_config_hash": "52a48e08f9ef2a659803092d4f5678475241e872105c99154f86b7bbc29038a3",
+ "system_id": "m6",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 47662,
+  "cache_write_tokens": 7016,
+  "input_tokens": 6832,
+  "output_tokens": 2239
+ }
+}

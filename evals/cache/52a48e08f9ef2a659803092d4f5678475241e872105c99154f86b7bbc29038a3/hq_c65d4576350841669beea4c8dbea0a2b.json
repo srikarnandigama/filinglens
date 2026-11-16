@@ -1,0 +1,300 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 0,
+  "numeric_valid": 0,
+  "text_pending_judge": [
+   {
+    "chunk_ids": [
+     "chk_63fbfc975f5705abe61baba2542cbc87dd5fbd5a53c7f53594a77403b2033bec"
+    ],
+    "claim_id": "c5",
+    "text": "For commodities, KO manages its exposure primarily through supplier pricing agreements, which let it establish purchase prices for certain inputs used in manufacturing and distribution. When deemed appropriate, it uses derivative financial instruments to further manage commodity risk."
+   },
+   {
+    "chunk_ids": [
+     "chk_143002e4e69b0d3157f90e8a5e05db1b14fb8ecc2abdfb356177971110b4a3ef",
+     "chk_2a18d8e6106f042f226588ac427ab5db50d47360fc0a78c3572c7bbe199a9694"
+    ],
+    "claim_id": "c10",
+    "text": "In Q1 2026, currency fluctuations including hedging effects favorably affected consolidated net operating revenues by 3%. They favorably affected consolidated operating income by 4%, which KO attributed to a weaker U.S. dollar. Higher commodity costs partially offset the operating income gain."
+   }
+  ],
+  "text_string_supported": 8,
+  "text_total": 10,
+  "uncited": 0
+ },
+ "cost_usd": "0.138592790",
+ "error": null,
+ "finished_at": "2026-11-16T21:33:53.502794+00:00",
+ "latency_ms": 59242,
+ "prediction": {
+  "parse_ok": true,
+  "text": "Coca-Cola (KO) uses derivatives to reduce its exposure to foreign currency, interest rate and commodity risks. For currency, it uses forwards, options and collars, and it hedges net investments in foreign operations. For commodities, it relies first on supplier pricing agreements and uses derivatives \"when deemed appropriate.\" At year-end 2025, foreign currency derivatives had notional values of $21,128 million and commodity derivatives had $535 million. In Q1 2026, KO said hedging is designed to mitigate only \"a portion\" of the currency impact over time. Management also warns that commodity hedging may not offset cost increases.\nKO said it uses derivative financial instruments primarily to reduce its exposure to adverse fluctuations in foreign currency exchange rates, interest rates, commodity prices and other market risks.\nFor currency risk, KO enters into forward exchange contracts and buys foreign currency options and collars (principally euro, British pound and Japanese yen) to hedge certain portions of forecasted cash flows denominated in foreign currencies. It also uses forward exchange contracts as hedges of net investments in foreign operations.\nKO also noted that, because of the geographic diversity of its operations, weakness in some currencies may be offset by strength in other currencies over time. It uses derivatives to further reduce its net exposure to currency fluctuations.\nThe total notional value of KO's foreign currency derivatives was $21,128 million at December 31, 2025, up from $18,442 million a year earlier. For the hedge-accounting portion, KO estimated that a 10% weakening of the U.S. dollar would have cut fair value by $609 million.\nFor commodities, KO manages its exposure primarily through supplier pricing agreements, which let it establish purchase prices for certain inputs used in manufacturing and distribution. When deemed appropriate, it uses derivative financial instruments to further manage commodity risk.\nThe total notional value of KO's commodity derivatives was $535 million at December 31, 2025, up from $386 million a year earlier. Some of these derivatives do not qualify for hedge accounting. KO called them effective economic hedges that help mitigate price risk on purchases and transportation of materials used in manufacturing.\nKO enters into its hedging transactions, including forward contracts, commodity futures contracts, option contracts, collars and swaps, with various financial institutions. This creates counterparty risk.\nKO acknowledges limits to its protection. Many raw materials and supplies are bought in the open market at fluctuating prices, and KO may not be able to offset cost increases through productivity initiatives or its commodity hedging activity.\nIn its Q1 2026 10-Q, KO said its hedging activities are designed to mitigate, over time, a portion of the impact of exchange rate fluctuations on net income. Based on current spot rates and hedging coverage, it expects currency fluctuations to have a favorable impact on operating income and operating cash flows through year-end.\nIn Q1 2026, currency fluctuations including hedging effects favorably affected consolidated net operating revenues by 3%. They favorably affected consolidated operating income by 4%, which KO attributed to a weaker U.S. dollar. Higher commodity costs partially offset the operating income gain."
+ },
+ "question_id": "hq_c65d4576350841669beea4c8dbea0a2b",
+ "question_sha": "667beb52e7faa652a48f58e068f03f1e40de2828ccd6e7e201e3d6c230904eb1",
+ "raw_output": {
+  "caveats": [
+   "Hedging details in Note 5 (derivative instruments) of the FY2025 10-K were not searched. This answer relies on Items 1A and 7A and the Q1 2026 MD&A.",
+   "The Item 7 'Foreign Exchange' passage in the FY2025 10-K was not retrieved in full, so it is not used here.",
+   "The Q1 2026 10-Q passages give only a high-level view of currency hedging and no commodity hedging policy or coverage."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_27008aeb12bb8eb789f17f76eb474b93948766aeb1f898debf55bbaf73ec6ed3"
+     }
+    ],
+    "id": "c1",
+    "kind": "textual",
+    "period": null,
+    "text": "KO said it uses derivative financial instruments primarily to reduce its exposure to adverse fluctuations in foreign currency exchange rates, interest rates, commodity prices and other market risks.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_27008aeb12bb8eb789f17f76eb474b93948766aeb1f898debf55bbaf73ec6ed3"
+     }
+    ],
+    "id": "c2",
+    "kind": "textual",
+    "period": null,
+    "text": "For currency risk, KO enters into forward exchange contracts and buys foreign currency options and collars (principally euro, British pound and Japanese yen) to hedge certain portions of forecasted cash flows denominated in foreign currencies. It also uses forward exchange contracts as hedges of net investments in foreign operations.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_39cf65a1499b98487b9753727c882aba9ea879cd99df578519314d90519e10dc"
+     }
+    ],
+    "id": "c3",
+    "kind": "textual",
+    "period": null,
+    "text": "KO also noted that, because of the geographic diversity of its operations, weakness in some currencies may be offset by strength in other currencies over time. It uses derivatives to further reduce its net exposure to currency fluctuations.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_6cb3932405442b5a8a0c8ad8d09091dd431b29237196ed5dcacfbbc209275805"
+     }
+    ],
+    "id": "c4",
+    "kind": "textual",
+    "period": null,
+    "text": "The total notional value of KO's foreign currency derivatives was $21,128 million at December 31, 2025, up from $18,442 million a year earlier. For the hedge-accounting portion, KO estimated that a 10% weakening of the U.S. dollar would have cut fair value by $609 million.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_63fbfc975f5705abe61baba2542cbc87dd5fbd5a53c7f53594a77403b2033bec"
+     }
+    ],
+    "id": "c5",
+    "kind": "textual",
+    "period": null,
+    "text": "For commodities, KO manages its exposure primarily through supplier pricing agreements, which let it establish purchase prices for certain inputs used in manufacturing and distribution. When deemed appropriate, it uses derivative financial instruments to further manage commodity risk.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_9c56714a7d482c6be047f8435c12941917319ed7ff99ce7f28fbffebef3b28ed"
+     }
+    ],
+    "id": "c6",
+    "kind": "textual",
+    "period": null,
+    "text": "The total notional value of KO's commodity derivatives was $535 million at December 31, 2025, up from $386 million a year earlier. Some of these derivatives do not qualify for hedge accounting. KO called them effective economic hedges that help mitigate price risk on purchases and transportation of materials used in manufacturing.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_c246ebea3474b12b347fe64f01a632c4ff8c3e98186010d8bb2eb928af113ca9"
+     }
+    ],
+    "id": "c7",
+    "kind": "textual",
+    "period": null,
+    "text": "KO enters into its hedging transactions, including forward contracts, commodity futures contracts, option contracts, collars and swaps, with various financial institutions. This creates counterparty risk.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_27a2be50520c4788ae0cd48e6d3ffdbf7e681dc7bfb3f32f08cc66b4d4903044"
+     },
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_d27abe56c78f2a34d42ec9f6851a1ac25dbfdaf8042035a3e08c6d32072a6017"
+     }
+    ],
+    "id": "c8",
+    "kind": "textual",
+    "period": null,
+    "text": "KO acknowledges limits to its protection. Many raw materials and supplies are bought in the open market at fluctuating prices, and KO may not be able to offset cost increases through productivity initiatives or its commodity hedging activity.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_68c84da3958bdbcd36bcbe6ece5a66920164565579a45019cde6852cea75ca4a"
+     }
+    ],
+    "id": "c9",
+    "kind": "textual",
+    "period": null,
+    "text": "In its Q1 2026 10-Q, KO said its hedging activities are designed to mitigate, over time, a portion of the impact of exchange rate fluctuations on net income. Based on current spot rates and hedging coverage, it expects currency fluctuations to have a favorable impact on operating income and operating cash flows through year-end.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_143002e4e69b0d3157f90e8a5e05db1b14fb8ecc2abdfb356177971110b4a3ef"
+     },
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_2a18d8e6106f042f226588ac427ab5db50d47360fc0a78c3572c7bbe199a9694"
+     }
+    ],
+    "id": "c10",
+    "kind": "textual",
+    "period": null,
+    "text": "In Q1 2026, currency fluctuations including hedging effects favorably affected consolidated net operating revenues by 3%. They favorably affected consolidated operating income by 4%, which KO attributed to a weaker U.S. dollar. Higher commodity costs partially offset the operating income gain.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   }
+  ],
+  "final_claim_id": null,
+  "final_unit": null,
+  "final_value": null,
+  "status": "answered",
+  "summary": "Coca-Cola (KO) uses derivatives to reduce its exposure to foreign currency, interest rate and commodity risks. For currency, it uses forwards, options and collars, and it hedges net investments in foreign operations. For commodities, it relies first on supplier pricing agreements and uses derivatives \"when deemed appropriate.\" At year-end 2025, foreign currency derivatives had notional values of $21,128 million and commodity derivatives had $535 million. In Q1 2026, KO said hedging is designed to mitigate only \"a portion\" of the currency impact over time. Management also warns that commodity hedging may not offset cost increases."
+ },
+ "retrieval": {
+  "first_search": {
+   "filings:s1": [
+    "chk_27008aeb12bb8eb789f17f76eb474b93948766aeb1f898debf55bbaf73ec6ed3",
+    "chk_6cb3932405442b5a8a0c8ad8d09091dd431b29237196ed5dcacfbbc209275805",
+    "chk_63fbfc975f5705abe61baba2542cbc87dd5fbd5a53c7f53594a77403b2033bec",
+    "chk_9c56714a7d482c6be047f8435c12941917319ed7ff99ce7f28fbffebef3b28ed",
+    "chk_9e84c4e393c14ad7a627ab2e2c9e173d050e749d7f1048c88cbcf5911a3d2afe",
+    "chk_2a9bb9fc9909af8c0fffefabaea41d3ed1171f9b4156731561d4ac15e95e062d",
+    "chk_6fb04510a39f21b4b5cd051229bed0dc70143565e5a61fbdc523c8fa026ea9d8",
+    "chk_02da5e6029ca47db00332a4a3e322bf2bb60582d68a1aca14891520441c6550f"
+   ],
+   "filings:s2": [
+    "chk_39cf65a1499b98487b9753727c882aba9ea879cd99df578519314d90519e10dc",
+    "chk_27a2be50520c4788ae0cd48e6d3ffdbf7e681dc7bfb3f32f08cc66b4d4903044",
+    "chk_0094ebc0a73902351f14a64df0c1ff7dcca573499bf61319a12e996a7714a270",
+    "chk_fc7ffd933a7d1884fdabca2e1eefe5845d9a296f758b11c8a9e113b74ed6d447",
+    "chk_d27abe56c78f2a34d42ec9f6851a1ac25dbfdaf8042035a3e08c6d32072a6017",
+    "chk_c246ebea3474b12b347fe64f01a632c4ff8c3e98186010d8bb2eb928af113ca9"
+   ],
+   "filings:s3": [
+    "chk_143002e4e69b0d3157f90e8a5e05db1b14fb8ecc2abdfb356177971110b4a3ef",
+    "chk_2a18d8e6106f042f226588ac427ab5db50d47360fc0a78c3572c7bbe199a9694",
+    "chk_68c84da3958bdbcd36bcbe6ece5a66920164565579a45019cde6852cea75ca4a",
+    "chk_d69dc87a58adc2ffb2c30a4941ff7f6481e3d9a3e72640eccb273083aa69d39c",
+    "chk_9fa91e29ab8bece921910815b3acf51cb92f3017f8025ef15cc1c39a5fccdf7e",
+    "chk_afe7d4a350697739ff8ca453949c51708d59d76796bf079cc37ecfc6f515e3f0"
+   ]
+  },
+  "seen": [
+   "chk_39cf65a1499b98487b9753727c882aba9ea879cd99df578519314d90519e10dc",
+   "chk_27a2be50520c4788ae0cd48e6d3ffdbf7e681dc7bfb3f32f08cc66b4d4903044",
+   "chk_0094ebc0a73902351f14a64df0c1ff7dcca573499bf61319a12e996a7714a270",
+   "chk_fc7ffd933a7d1884fdabca2e1eefe5845d9a296f758b11c8a9e113b74ed6d447",
+   "chk_d27abe56c78f2a34d42ec9f6851a1ac25dbfdaf8042035a3e08c6d32072a6017",
+   "chk_c246ebea3474b12b347fe64f01a632c4ff8c3e98186010d8bb2eb928af113ca9",
+   "chk_143002e4e69b0d3157f90e8a5e05db1b14fb8ecc2abdfb356177971110b4a3ef",
+   "chk_2a18d8e6106f042f226588ac427ab5db50d47360fc0a78c3572c7bbe199a9694",
+   "chk_68c84da3958bdbcd36bcbe6ece5a66920164565579a45019cde6852cea75ca4a",
+   "chk_d69dc87a58adc2ffb2c30a4941ff7f6481e3d9a3e72640eccb273083aa69d39c",
+   "chk_9fa91e29ab8bece921910815b3acf51cb92f3017f8025ef15cc1c39a5fccdf7e",
+   "chk_afe7d4a350697739ff8ca453949c51708d59d76796bf079cc37ecfc6f515e3f0",
+   "chk_27008aeb12bb8eb789f17f76eb474b93948766aeb1f898debf55bbaf73ec6ed3",
+   "chk_6cb3932405442b5a8a0c8ad8d09091dd431b29237196ed5dcacfbbc209275805",
+   "chk_63fbfc975f5705abe61baba2542cbc87dd5fbd5a53c7f53594a77403b2033bec",
+   "chk_9c56714a7d482c6be047f8435c12941917319ed7ff99ce7f28fbffebef3b28ed",
+   "chk_9e84c4e393c14ad7a627ab2e2c9e173d050e749d7f1048c88cbcf5911a3d2afe",
+   "chk_2a9bb9fc9909af8c0fffefabaea41d3ed1171f9b4156731561d4ac15e95e062d",
+   "chk_6fb04510a39f21b4b5cd051229bed0dc70143565e5a61fbdc523c8fa026ea9d8",
+   "chk_02da5e6029ca47db00332a4a3e322bf2bb60582d68a1aca14891520441c6550f",
+   "chk_5a3bd0c2fa6fe4546b549208730eadfeda06335c15d2d9d7e523a62819e0afaf",
+   "chk_e3ee4497c09e2fa343f232dd956302b38f10c5446c408552bdba384fd5244cc4",
+   "chk_fe076973c9e13b20fa310df555048d70026b8e1dcd2630109a1bbbdca79842fd"
+  ]
+ },
+ "run_id": "104555c3-5c02-433b-93e1-e0048de26805",
+ "run_status": "done",
+ "split": "handwritten",
+ "started_at": "2026-11-16T21:32:54.202797+00:00",
+ "status": "done",
+ "system_config_hash": "52a48e08f9ef2a659803092d4f5678475241e872105c99154f86b7bbc29038a3",
+ "system_id": "m6",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 89276,
+  "cache_write_tokens": 50991,
+  "input_tokens": 20641,
+  "output_tokens": 12476
+ }
+}

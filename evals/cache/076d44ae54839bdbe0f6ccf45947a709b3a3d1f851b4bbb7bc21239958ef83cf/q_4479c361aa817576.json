@@ -1,0 +1,131 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 4,
+  "numeric_valid": 4,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.0374305",
+ "error": null,
+ "finished_at": "2026-11-16T20:30:22.564483+00:00",
+ "latency_ms": 15164,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "26.795725297828"
+ },
+ "question_id": "q_4479c361aa817576",
+ "question_sha": "2f3c55093f5f90fde05b3c323267f70aba37f03b40f1675d333f6f1d58dc6f68",
+ "raw_output": {
+  "caveats": [
+   "No filing passages were provided, so this answer gives the change but not management's explanation for it."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "903"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "Meta's net cash provided by operating activities was $91.328 billion in fiscal 2024.",
+    "ticker": "META",
+    "unit": "USD",
+    "value": "91328000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "908"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Meta's net cash provided by operating activities was $115.8 billion in fiscal 2025.",
+    "ticker": "META",
+    "unit": "USD",
+    "value": "115800000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": "value",
+      "kind": "computation",
+      "ref": "cmp_2"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Operating cash flow increased by about $24.472 billion from fiscal 2024 to fiscal 2025.",
+    "ticker": "META",
+    "unit": "USD",
+    "value": "24472000000",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_1"
+     }
+    ],
+    "id": "c4",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Meta's net cash provided by operating activities increased by about 26.8% from fiscal 2024 to fiscal 2025.",
+    "ticker": "META",
+    "unit": "percent",
+    "value": "26.795725297828",
+    "value_basis": "computation"
+   }
+  ],
+  "final_claim_id": "c4",
+  "final_unit": "percent",
+  "final_value": "26.795725297828",
+  "status": "answered",
+  "summary": "Meta's net cash provided by operating activities rose about 26.8%, from $91.328 billion in fiscal 2024 to $115.8 billion in fiscal 2025. That is an increase of about $24.472 billion."
+ },
+ "run_id": "d9a475ae-81c3-4cf1-bb37-af5747c7bdc7",
+ "run_status": "done",
+ "split": "test",
+ "started_at": "2026-11-16T20:30:07.364323+00:00",
+ "status": "done",
+ "system_config_hash": "076d44ae54839bdbe0f6ccf45947a709b3a3d1f851b4bbb7bc21239958ef83cf",
+ "system_id": "m6-no-verifier",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 47705,
+  "cache_write_tokens": 5816,
+  "input_tokens": 20,
+  "output_tokens": 1808
+ }
+}

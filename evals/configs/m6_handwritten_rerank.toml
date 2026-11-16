@@ -2,6 +2,7 @@
 # M6 estimate $4.80 + $1.00 in flight.
 name = "m6-handwritten-rerank"
 budget = "m6"
+spent_usd = "4.148478965"  # actual spend of the finished step (D123 re-sum rule)
 split = "handwritten"
 sample = "all"
 seed = 20261109

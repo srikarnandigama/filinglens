@@ -1,0 +1,118 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 3,
+  "numeric_valid": 2,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.0962682",
+ "error": null,
+ "finished_at": "2026-11-16T20:34:14.872419+00:00",
+ "latency_ms": 33041,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "-2.5646"
+ },
+ "question_id": "q_b6b89d1da9c41d5e",
+ "question_sha": "97e732ea3ce5a17514849d704867e260d197bab8c338a6771a041c862bff3c89",
+ "raw_output": {
+  "caveats": [
+   "The Q4 2023 revenue is derived (full-year minus nine-month figures), not directly reported as a quarterly value.",
+   "The Q4 derivation combines a full-year figure from accession 0000034088-26-000045 with a nine-month figure from accession 0000034088-24-000068, while the Q1 figure comes from accession 0000034088-24-000029, so the inputs come from different filings.",
+   "The percent change is rounded to four decimal places."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "2555"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q1",
+     "fiscal_year": 2023
+    },
+    "text": "ExxonMobil's fiscal Q1 2023 revenue was $86.564 billion.",
+    "ticker": "XOM",
+    "unit": "USD",
+    "value": "86564000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "2558"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q4",
+     "fiscal_year": 2023
+    },
+    "text": "ExxonMobil's fiscal Q4 2023 revenue was $84.344 billion. This is a derived value: FY2023 revenue of $344.582 billion minus the nine-month figure of $260.238 billion.",
+    "ticker": "XOM",
+    "unit": "USD",
+    "value": "84344000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "2555"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "2558"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q4",
+     "fiscal_year": 2023
+    },
+    "text": "Percent change = (84,344,000,000 - 86,564,000,000) / 86,564,000,000 \u00d7 100 = -2,220,000,000 / 86,564,000,000 \u00d7 100, or about -2.56%. Revenue decreased from Q1 2023 to Q4 2023.",
+    "ticker": "XOM",
+    "unit": "percent",
+    "value": "-2.5646",
+    "value_basis": "model_arithmetic"
+   }
+  ],
+  "final_claim_id": "c3",
+  "final_unit": "percent",
+  "final_value": "-2.5646",
+  "status": "answered",
+  "summary": "ExxonMobil's revenue fell about 2.56% from fiscal Q1 2023 ($86.564 billion) to fiscal Q4 2023 ($84.344 billion, derived)."
+ },
+ "run_id": "89f32430-354d-4efe-a90e-5afdf9ec078d",
+ "run_status": "done",
+ "split": "test",
+ "started_at": "2026-11-16T20:33:41.758823+00:00",
+ "status": "done",
+ "system_config_hash": "38c1354659c83500cab78979070eac496bb55847b466a51e9437890c769351e5",
+ "system_id": "m6-no-quant",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 31537,
+  "cache_write_tokens": 9413,
+  "input_tokens": 11926,
+  "output_tokens": 4573
+ }
+}

@@ -1,0 +1,71 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 1,
+  "numeric_valid": 1,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.0387962",
+ "error": null,
+ "finished_at": "2026-11-16T20:22:28.951004+00:00",
+ "latency_ms": 12454,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD",
+  "value": "845000000"
+ },
+ "question_id": "q_2927f15951d29231",
+ "question_sha": "38e2933483c52033e95560edf2c8017817de812b4160239422c8325a0e82ec6e",
+ "raw_output": {
+  "caveats": [
+   "The Q4 value is derived, not directly reported. It is computed as full-year 2025 capex minus the nine-month year-to-date figure, which runs through 2025-09-28."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3009"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q4",
+     "fiscal_year": 2025
+    },
+    "text": "Pfizer's capital expenditures (payments to acquire property, plant and equipment) in fiscal Q4 2025 were about $845 million. This is derived as FY2025 of $2,629 million less the nine-month figure of $1,784 million.",
+    "ticker": "PFE",
+    "unit": "USD",
+    "value": "845000000",
+    "value_basis": "fact"
+   }
+  ],
+  "final_claim_id": "c1",
+  "final_unit": "USD",
+  "final_value": "845000000",
+  "status": "answered",
+  "summary": "Pfizer's capital expenditures in fiscal Q4 2025 (2025-09-29 to 2025-12-31) were about $845 million. This is a derived figure: full-year 2025 capex of $2,629 million minus the $1,784 million reported through the first nine months."
+ },
+ "run_id": "0b519c04-3d3a-4d36-bd2b-8aa0790b93d5",
+ "run_status": "done",
+ "split": "test",
+ "started_at": "2026-11-16T20:22:16.441827+00:00",
+ "status": "done",
+ "system_config_hash": "52a48e08f9ef2a659803092d4f5678475241e872105c99154f86b7bbc29038a3",
+ "system_id": "m6",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 25117,
+  "cache_write_tokens": 5261,
+  "input_tokens": 4691,
+  "output_tokens": 1375
+ }
+}

@@ -1,0 +1,134 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 0,
+  "numeric_valid": 0,
+  "text_pending_judge": [],
+  "text_string_supported": 3,
+  "text_total": 3,
+  "uncited": 0
+ },
+ "cost_usd": "0.059661485",
+ "error": null,
+ "finished_at": "2026-11-16T22:05:22.377417+00:00",
+ "latency_ms": 45397,
+ "prediction": {
+  "parse_ok": true,
+  "text": "In its FY2025 10-K risk factors, Johnson & Johnson says the Inflation Reduction Act (IRA) has changed the Medicare Part D benefit design. It also says the IRA has subjected certain of its products to government-established pricing beginning in 2026, and that more products may be subject in the future. J&J warns that failing to follow the government's interpretations of the law while litigation is pending may expose it to penalties. It also says the Part D change could hurt U.S. Innovative Medicine sales. The filing does not quantify the impact in this section. The Q2 FY2026 10-Q snapshot has no separate risk-factor text on this topic.\nJ&J states that the IRA has changed the Medicare Part D benefit design and has subjected certain of the Company's products to government-established pricing beginning in 2026, and may subject additional products in the future.\nJ&J warns that failure to adhere to the government's interpretations of the law, pending ongoing litigation, may expose the Company to penalties.\nJ&J says the change to Medicare Part D could have a negative impact on U.S. Innovative Medicine sales."
+ },
+ "question_id": "hq_f5d53183cdd04505b02cde17b599d44f",
+ "question_sha": "346ab7b3b99eb514d567f4a0924c3d2fa460ef8dd97b1f1dafad7f63e12fdfa6",
+ "raw_output": {
+  "caveats": [
+   "Only one Item 1A chunk in the FY2025 10-K directly addresses the IRA, and it sits within a broader pricing-pressure risk factor. The filing does not quantify the IRA impact in this section.",
+   "The Q2 FY2026 10-Q snapshot has no quarterly Item 1A section. It refers investors to the 10-K risk factors, so no Q2 IRA risk text was found."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_19339c50b6436dd357e65073c63d89e41ae6ca612a9c5f7d56f6f6be8f72f299"
+     }
+    ],
+    "id": "c1",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "J&J states that the IRA has changed the Medicare Part D benefit design and has subjected certain of the Company's products to government-established pricing beginning in 2026, and may subject additional products in the future.",
+    "ticker": "JNJ",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_19339c50b6436dd357e65073c63d89e41ae6ca612a9c5f7d56f6f6be8f72f299"
+     }
+    ],
+    "id": "c2",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "J&J warns that failure to adhere to the government's interpretations of the law, pending ongoing litigation, may expose the Company to penalties.",
+    "ticker": "JNJ",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_19339c50b6436dd357e65073c63d89e41ae6ca612a9c5f7d56f6f6be8f72f299"
+     }
+    ],
+    "id": "c3",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "J&J says the change to Medicare Part D could have a negative impact on U.S. Innovative Medicine sales.",
+    "ticker": "JNJ",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   }
+  ],
+  "final_claim_id": null,
+  "final_unit": null,
+  "final_value": null,
+  "status": "answered",
+  "summary": "In its FY2025 10-K risk factors, Johnson & Johnson says the Inflation Reduction Act (IRA) has changed the Medicare Part D benefit design. It also says the IRA has subjected certain of its products to government-established pricing beginning in 2026, and that more products may be subject in the future. J&J warns that failing to follow the government's interpretations of the law while litigation is pending may expose it to penalties. It also says the Part D change could hurt U.S. Innovative Medicine sales. The filing does not quantify the impact in this section. The Q2 FY2026 10-Q snapshot has no separate risk-factor text on this topic."
+ },
+ "retrieval": {
+  "first_search": {
+   "filings:s1": [
+    "chk_19339c50b6436dd357e65073c63d89e41ae6ca612a9c5f7d56f6f6be8f72f299",
+    "chk_38ad05e3328949dd590447c7fbb1c5ff37d588ac5e59f2f3a2d04b70fcf1e1a0",
+    "chk_1ee3c3f6037ada86c6c344e02ecdf95faa7e24462d99193ab05fb9e2a502728d",
+    "chk_884f03a006c9cdabe2ea0157911a725a4cbf7160467a7041b7877784d9b33ef5",
+    "chk_27de5bf20350fa8c6a05776964ed0be07ea589b40edc67fd68a5f72d7886fe64",
+    "chk_ece124589981b34aa5e02fcc627d0977ebc44a7a063be79d86d54a1740fc7708",
+    "chk_8a9f80b0e4cd3ecbb763c5a5ac0391312a1b39de07b5d4bf627ac7347b14a4b9",
+    "chk_ddbd17305db912f408656f9a3349d99bb4707a5353eac6c45154f093d9d4f4ae"
+   ],
+   "filings:s2": []
+  },
+  "seen": [
+   "chk_19339c50b6436dd357e65073c63d89e41ae6ca612a9c5f7d56f6f6be8f72f299",
+   "chk_38ad05e3328949dd590447c7fbb1c5ff37d588ac5e59f2f3a2d04b70fcf1e1a0",
+   "chk_1ee3c3f6037ada86c6c344e02ecdf95faa7e24462d99193ab05fb9e2a502728d",
+   "chk_884f03a006c9cdabe2ea0157911a725a4cbf7160467a7041b7877784d9b33ef5",
+   "chk_27de5bf20350fa8c6a05776964ed0be07ea589b40edc67fd68a5f72d7886fe64",
+   "chk_ece124589981b34aa5e02fcc627d0977ebc44a7a063be79d86d54a1740fc7708",
+   "chk_8a9f80b0e4cd3ecbb763c5a5ac0391312a1b39de07b5d4bf627ac7347b14a4b9",
+   "chk_ddbd17305db912f408656f9a3349d99bb4707a5353eac6c45154f093d9d4f4ae",
+   "chk_0357f19ebc7ec5aecf3715630a131b0c42257f4d0f202d9e26a67703e240723f"
+  ]
+ },
+ "run_id": "807d2885-718c-4b2e-a607-7b146bd32f47",
+ "run_status": "done",
+ "split": "handwritten",
+ "started_at": "2026-11-16T22:04:36.922623+00:00",
+ "status": "done",
+ "system_config_hash": "dda3ea6b7db41dd0273d82e63c7ab3c74a4ec2dac9f2674d40c2836322074f2a",
+ "system_id": "m6-rerank",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 50122,
+  "cache_write_tokens": 19299,
+  "input_tokens": 6265,
+  "output_tokens": 4634
+ }
+}

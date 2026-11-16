@@ -1,0 +1,152 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 0,
+  "numeric_valid": 0,
+  "text_pending_judge": [],
+  "text_string_supported": 4,
+  "text_total": 4,
+  "uncited": 0
+ },
+ "cost_usd": "0.064542085",
+ "error": null,
+ "finished_at": "2026-11-16T21:34:25.807638+00:00",
+ "latency_ms": 32238,
+ "prediction": {
+  "parse_ok": true,
+  "text": "In the FY2026 10-K business overview, Microsoft says AI is transforming productivity and that its AI offerings span every layer of the technology stack. It names Microsoft 365 Copilot and agents as productivity tools, and it describes Microsoft Copilot as a digital companion. It also describes Azure AI Foundry and GitHub as platforms for AI applications and agents.\nMicrosoft frames AI as transformative, writing that \"AI is fundamentally transforming productivity for every individual, organization, and industry.\" It adds that \"Microsoft's AI offerings span every layer of the technology stack.\"\nMicrosoft's strategy list includes applying AI and ambient intelligence to drive insights, revolutionize many types of work and business processes, and provide substantive productivity gains using Microsoft 365 Copilot and agents. It also lists providing a unified intelligence layer for enterprise AI to ground AI in a continuously evolving understanding of an organization's data.\nIn its search advertising description, Microsoft says \"Microsoft Copilot is a digital companion designed to inform, entertain, and inspire.\" It also says its Microsoft Edge browser and Bing search engine with Copilot are key tools to enable user acquisition and engagement.\nMicrosoft describes Azure AI Foundry as \"a unified platform for developers to design, customize, and manage AI applications and agents.\" It says GitHub provides a collaboration platform for developers to manage code and incorporate AI and agent-based tools across the software development lifecycle."
+ },
+ "question_id": "hq_ce9809903d0b430eb90e3615603210f7",
+ "question_sha": "4fe95213196a459581da8f81a3466a57cbe80657fa942a9e6d7cfd8fd224452b",
+ "raw_output": {
+  "caveats": [
+   "Coverage is incomplete. The Devices passage, which mentions Copilot+ PCs, and the Azure AI passage on custom-built silicon were seen only as search snippets and are not included.",
+   "The Azure AI Foundry and GitHub passage begins mid-sentence, and the preceding text was not retrieved."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_25dd84a1d1409bad099abcc7403f9e12be6fe4efc0d8acb258c597964f4bef06"
+     }
+    ],
+    "id": "c1",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2026
+    },
+    "text": "Microsoft frames AI as transformative, writing that \"AI is fundamentally transforming productivity for every individual, organization, and industry.\" It adds that \"Microsoft's AI offerings span every layer of the technology stack.\"",
+    "ticker": "MSFT",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_65d11b6a93925ee3f3a23692ea0ce9da4481e18ff0cfd4ad40ca062a2e1b8e5d"
+     }
+    ],
+    "id": "c2",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2026
+    },
+    "text": "Microsoft's strategy list includes applying AI and ambient intelligence to drive insights, revolutionize many types of work and business processes, and provide substantive productivity gains using Microsoft 365 Copilot and agents. It also lists providing a unified intelligence layer for enterprise AI to ground AI in a continuously evolving understanding of an organization's data.",
+    "ticker": "MSFT",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_a8ae8eeed71f128a8cd7be3aa6434f6afbeb7b323007defaa3df4be9e194c44c"
+     }
+    ],
+    "id": "c3",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2026
+    },
+    "text": "In its search advertising description, Microsoft says \"Microsoft Copilot is a digital companion designed to inform, entertain, and inspire.\" It also says its Microsoft Edge browser and Bing search engine with Copilot are key tools to enable user acquisition and engagement.",
+    "ticker": "MSFT",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_c638a6fe5764c874985e51e97bef584e8b86e67db2ec0b69604fa89d891fc26c"
+     }
+    ],
+    "id": "c4",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2026
+    },
+    "text": "Microsoft describes Azure AI Foundry as \"a unified platform for developers to design, customize, and manage AI applications and agents.\" It says GitHub provides a collaboration platform for developers to manage code and incorporate AI and agent-based tools across the software development lifecycle.",
+    "ticker": "MSFT",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   }
+  ],
+  "final_claim_id": null,
+  "final_unit": null,
+  "final_value": null,
+  "status": "answered",
+  "summary": "In the FY2026 10-K business overview, Microsoft says AI is transforming productivity and that its AI offerings span every layer of the technology stack. It names Microsoft 365 Copilot and agents as productivity tools, and it describes Microsoft Copilot as a digital companion. It also describes Azure AI Foundry and GitHub as platforms for AI applications and agents."
+ },
+ "retrieval": {
+  "first_search": {
+   "filings:s1": [
+    "chk_65d11b6a93925ee3f3a23692ea0ce9da4481e18ff0cfd4ad40ca062a2e1b8e5d",
+    "chk_a8ae8eeed71f128a8cd7be3aa6434f6afbeb7b323007defaa3df4be9e194c44c",
+    "chk_09244c166782d57227c308269811fdb8ec1c9919c6a8ae55c8f79076f731a33e",
+    "chk_18431e8c05515488f1226ec625c79636a2e3dced74a08164fcc252c9363b3baf",
+    "chk_51863f7454e289f5b18ee0a02593a5d8cab17e25cb114aba878e01f388174591",
+    "chk_8410bbeed6772b3a5a58713c877be85e578f7fcb3e5ae545b719ca3de296a5ce",
+    "chk_25dd84a1d1409bad099abcc7403f9e12be6fe4efc0d8acb258c597964f4bef06",
+    "chk_c638a6fe5764c874985e51e97bef584e8b86e67db2ec0b69604fa89d891fc26c"
+   ]
+  },
+  "seen": [
+   "chk_65d11b6a93925ee3f3a23692ea0ce9da4481e18ff0cfd4ad40ca062a2e1b8e5d",
+   "chk_a8ae8eeed71f128a8cd7be3aa6434f6afbeb7b323007defaa3df4be9e194c44c",
+   "chk_09244c166782d57227c308269811fdb8ec1c9919c6a8ae55c8f79076f731a33e",
+   "chk_18431e8c05515488f1226ec625c79636a2e3dced74a08164fcc252c9363b3baf",
+   "chk_51863f7454e289f5b18ee0a02593a5d8cab17e25cb114aba878e01f388174591",
+   "chk_8410bbeed6772b3a5a58713c877be85e578f7fcb3e5ae545b719ca3de296a5ce",
+   "chk_25dd84a1d1409bad099abcc7403f9e12be6fe4efc0d8acb258c597964f4bef06",
+   "chk_c638a6fe5764c874985e51e97bef584e8b86e67db2ec0b69604fa89d891fc26c"
+  ]
+ },
+ "run_id": "7a96438b-76ee-433c-9747-91b2397ceea1",
+ "run_status": "done",
+ "split": "handwritten",
+ "started_at": "2026-11-16T21:33:53.505037+00:00",
+ "status": "done",
+ "system_config_hash": "52a48e08f9ef2a659803092d4f5678475241e872105c99154f86b7bbc29038a3",
+ "system_id": "m6",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 33871,
+  "cache_write_tokens": 18915,
+  "input_tokens": 9676,
+  "output_tokens": 5004
+ }
+}

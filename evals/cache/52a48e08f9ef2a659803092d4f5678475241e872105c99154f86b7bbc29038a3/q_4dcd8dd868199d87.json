@@ -1,0 +1,131 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 4,
+  "numeric_valid": 4,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.0590537",
+ "error": null,
+ "finished_at": "2026-11-16T20:24:34.343785+00:00",
+ "latency_ms": 22166,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "1.451904046062"
+ },
+ "question_id": "q_4dcd8dd868199d87",
+ "question_sha": "67db61771d2c65b012db6b13df35a520f8914aa29932d54560b7e1c8456706fd",
+ "raw_output": {
+  "caveats": [
+   "Revenue is the reported 'Revenues' concept for each fiscal year (ending Dec 31). No filing passages were provided, so no management explanation for the change is included."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "2559"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2023
+    },
+    "text": "XOM FY2023 revenue was $344.58 billion.",
+    "ticker": "XOM",
+    "unit": "USD",
+    "value": "344582000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "2564"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "XOM FY2024 revenue was $349.59 billion.",
+    "ticker": "XOM",
+    "unit": "USD",
+    "value": "349585000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": "value",
+      "kind": "computation",
+      "ref": "cmp_2"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "The absolute increase in revenue was about $5.00 billion.",
+    "ticker": "XOM",
+    "unit": "USD",
+    "value": "5003000000",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_1"
+     }
+    ],
+    "id": "c4",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "Total revenue increased by about 1.45% from FY2023 to FY2024.",
+    "ticker": "XOM",
+    "unit": "percent",
+    "value": "1.451904046062",
+    "value_basis": "computation"
+   }
+  ],
+  "final_claim_id": "c4",
+  "final_unit": "percent",
+  "final_value": "1.451904046062",
+  "status": "answered",
+  "summary": "ExxonMobil's total revenue rose about 1.45% from fiscal 2023 ($344.58 billion) to fiscal 2024 ($349.59 billion). That is an increase of about $5.00 billion."
+ },
+ "run_id": "6a619c46-c258-44d3-bc8b-22a1bfeaf68f",
+ "run_status": "done",
+ "split": "test",
+ "started_at": "2026-11-16T20:24:12.126886+00:00",
+ "status": "done",
+ "system_config_hash": "52a48e08f9ef2a659803092d4f5678475241e872105c99154f86b7bbc29038a3",
+ "system_id": "m6",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 62472,
+  "cache_write_tokens": 7205,
+  "input_tokens": 6042,
+  "output_tokens": 2271
+ }
+}

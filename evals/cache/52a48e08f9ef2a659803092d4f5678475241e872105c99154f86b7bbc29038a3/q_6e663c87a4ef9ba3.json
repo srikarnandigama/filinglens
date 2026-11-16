@@ -1,0 +1,71 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 1,
+  "numeric_valid": 1,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.0364912",
+ "error": null,
+ "finished_at": "2026-11-16T20:20:20.519020+00:00",
+ "latency_ms": 11565,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD",
+  "value": "12180000000"
+ },
+ "question_id": "q_6e663c87a4ef9ba3",
+ "question_sha": "788f7beb7bdd43b5e20df0d6985e4e57b20472581a3d34e537f99324edf250a1",
+ "raw_output": {
+  "caveats": [
+   "The Q4 2024 value is derived (full-year 2024 less the first nine months), not separately reported as a standalone quarter figure."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "885"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q4",
+     "fiscal_year": 2024
+    },
+    "text": "Meta's research and development expense for fiscal Q4 2024 was about $12.18 billion ($12,180,000,000), derived as FY2024 R&D of $43,873,000,000 minus nine-month R&D of $31,693,000,000.",
+    "ticker": "META",
+    "unit": "USD",
+    "value": "12180000000",
+    "value_basis": "fact"
+   }
+  ],
+  "final_claim_id": "c1",
+  "final_unit": "USD",
+  "final_value": "12180000000",
+  "status": "answered",
+  "summary": "Meta's research and development expense in fiscal Q4 2024 (Oct 1 to Dec 31, 2024) was about $12.18 billion. This is a derived value: full-year 2024 R&D less the nine-month figure."
+ },
+ "run_id": "79a25bc0-0a0d-4137-a391-37ed8031e0ea",
+ "run_status": "done",
+ "split": "test",
+ "started_at": "2026-11-16T20:20:08.917983+00:00",
+ "status": "done",
+ "system_config_hash": "52a48e08f9ef2a659803092d4f5678475241e872105c99154f86b7bbc29038a3",
+ "system_id": "m6",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 25112,
+  "cache_write_tokens": 4952,
+  "input_tokens": 4615,
+  "output_tokens": 1237
+ }
+}

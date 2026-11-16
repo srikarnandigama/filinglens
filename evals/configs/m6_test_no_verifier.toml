@@ -1,6 +1,7 @@
 # D3: ablation -verifier on the 50-question sample (D121). M6 estimate $3.25 + in flight.
 name = "m6-test-no-verifier"
 budget = "m6"
+spent_usd = "1.9683992"  # actual spend of the finished step (D123 re-sum rule)
 split = "test"
 sample = "m6_sample_50"
 seed = 20261109

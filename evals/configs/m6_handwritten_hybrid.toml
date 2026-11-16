@@ -1,7 +1,8 @@
 # D7 (conditional, D123): ablation -rerank (hybrid) on the handwritten 30; runs only if the
 # re-projected total including it is <= $33 and caps (finished steps at actual spend) stay <= $40.
 name = "m6-handwritten-hybrid"
-budget = "m6-conditional"
+budget = "m6"  # conditional D7, approved with Phase D on 2026-11-16
+spent_usd = "4.713575640"  # actual spend of the finished step (D123 re-sum rule)
 split = "handwritten"
 sample = "all"
 seed = 20261109

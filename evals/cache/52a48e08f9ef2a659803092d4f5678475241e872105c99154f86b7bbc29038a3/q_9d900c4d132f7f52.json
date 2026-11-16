@@ -1,0 +1,132 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 4,
+  "numeric_valid": 4,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.1003770",
+ "error": null,
+ "finished_at": "2026-11-16T20:17:38.688192+00:00",
+ "latency_ms": 29819,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "36.526972606983"
+ },
+ "question_id": "q_9d900c4d132f7f52",
+ "question_sha": "917167bca1a1f4fa9d23f4ac0ab6e18084498bddb06946ef22dd54b4b9c4e5e8",
+ "raw_output": {
+  "caveats": [
+   "The Q4 2023 cost of revenue is derived: full-year 2023 ($304.739 billion) minus the nine-month year-to-date figure ($212.186 billion). It is not a directly reported quarterly figure.",
+   "The comparison is between two different quarters. No filing passages were provided to explain the change."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "685"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q1",
+     "fiscal_year": 2023
+    },
+    "text": "Amazon's Q1 2023 cost of revenue was $67.791 billion.",
+    "ticker": "AMZN",
+    "unit": "USD",
+    "value": "67791000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "688"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q4",
+     "fiscal_year": 2023
+    },
+    "text": "Amazon's Q4 2023 cost of revenue was $92.553 billion. This figure is derived from the full-year total minus the nine-month year-to-date figure.",
+    "ticker": "AMZN",
+    "unit": "USD",
+    "value": "92553000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": "value",
+      "kind": "computation",
+      "ref": "cmp_2"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q4",
+     "fiscal_year": 2023
+    },
+    "text": "The dollar increase in cost of revenue from Q1 2023 to Q4 2023 was about $24.762 billion.",
+    "ticker": "AMZN",
+    "unit": "USD",
+    "value": "24762000000",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_1"
+     }
+    ],
+    "id": "c4",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q4",
+     "fiscal_year": 2023
+    },
+    "text": "Cost of revenue increased by about 36.53% from Q1 2023 to Q4 2023.",
+    "ticker": "AMZN",
+    "unit": "percent",
+    "value": "36.526972606983",
+    "value_basis": "computation"
+   }
+  ],
+  "final_claim_id": "c4",
+  "final_unit": "percent",
+  "final_value": "36.526972606983",
+  "status": "answered",
+  "summary": "Amazon's cost of revenue rose about 36.53% from fiscal Q1 2023 ($67.791 billion) to fiscal Q4 2023 ($92.553 billion), an increase of about $24.762 billion."
+ },
+ "run_id": "862f112e-986f-4536-b93a-f527bb323b8c",
+ "run_status": "done",
+ "split": "test",
+ "started_at": "2026-11-16T20:17:08.830480+00:00",
+ "status": "done",
+ "system_config_hash": "52a48e08f9ef2a659803092d4f5678475241e872105c99154f86b7bbc29038a3",
+ "system_id": "m6",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 63150,
+  "cache_write_tokens": 10544,
+  "input_tokens": 13936,
+  "output_tokens": 3983
+ }
+}

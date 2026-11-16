@@ -203,7 +203,7 @@ def judge_items(
                     "params": rubric_params(model, q["question"], q["reference_answer"], answer),
                 }
             )
-    for rec in (r for sid in claim_systems for r in records.get(sid, [])):
+    for owner, rec in ((s, r) for s in claim_systems for r in records.get(s, [])):
         for claim in (rec.get("citations") or {}).get("text_pending_judge", []):
             texts = [passages[c] for c in claim["chunk_ids"] if c in passages]
             if not texts:
@@ -213,7 +213,7 @@ def judge_items(
                 {
                     "key": _sha(key + ",".join(claim["chunk_ids"]))[:32],
                     "kind": "claim",
-                    "system_id": "system",
+                    "system_id": owner,  # the key excludes it, so M5 claim items are unchanged
                     "question_id": rec["question_id"],
                     "claim_id": claim["claim_id"],
                     "params": claim_params(model, claim["text"], texts),

@@ -1,0 +1,156 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 0,
+  "numeric_valid": 0,
+  "text_pending_judge": [],
+  "text_string_supported": 5,
+  "text_total": 5,
+  "uncited": 0
+ },
+ "cost_usd": "0.113844915",
+ "error": null,
+ "finished_at": "2026-11-16T22:20:51.244604+00:00",
+ "latency_ms": 46905,
+ "prediction": {
+  "parse_ok": true,
+  "text": "ExxonMobil's FY2024 10-K (Item 1A) says greenhouse gas and climate policies could hurt the business in several ways. They could lower investment returns, make its products costlier or less competitive, delay projects, and reduce hydrocarbon demand. They could also raise compliance costs, restrict permits, leases and production, and make financing harder or costlier to get. Management also warns that policies restricting supply without a matching fall in demand could cause price volatility. Its low-carbon investments depend on supportive policies.\nExxonMobil states that, depending on how GHG-related policies are formulated and applied, they could negatively affect its investment returns, make its hydrocarbon-based products more expensive or less competitive, lengthen project implementation times, and reduce demand for hydrocarbons while shifting demand toward lower-carbon alternatives.\nThe company also says political and other actors increasingly seek to advance climate objectives indirectly, such as by reducing the availability or raising the cost of financing and investment in the oil and gas sector.\nAmong factors affecting supply and demand, ExxonMobil lists government policies, including actions intended to reduce greenhouse gas emissions, that restrict oil and gas production or increase associated production, reporting or compliance costs.\nIn its government and political factors discussion, ExxonMobil cites changes in environmental regulations that increase its cost of operation or compliance or reduce or delay business opportunities. It also cites actions to delay or deny licenses and permits, restrict oil and gas leases or the transportation or export of its products, or reduce government incentives for emissions reductions, which could result in reduced returns.\nManagement warns that policy actions restricting the availability of hydrocarbon products without a commensurate reduction in demand may have unpredictable adverse effects, including increased commodity price volatility. It adds that failure or delay of supportive policies or markets to materialize or be maintained could adversely impact its low-carbon investments."
+ },
+ "question_id": "hq_efbdb0ea523543c699eddddde9b1e638",
+ "question_sha": "2e7c69db1cf51cfaa102e803e854925e14aa6b6d69e2f8f441cc568c60225e67",
+ "raw_output": {
+  "caveats": [
+   "Based on Item 1A passages only. The introductory text of the 'Climate Change and the Energy Transition' section and one search hit were not fetched, so coverage of the risk factor discussion is incomplete."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_9e6e81065a45435193fbe6753689a27db1e93b791ea40d5de1cea1e1e085af4b"
+     }
+    ],
+    "id": "c1",
+    "kind": "textual",
+    "period": null,
+    "text": "ExxonMobil states that, depending on how GHG-related policies are formulated and applied, they could negatively affect its investment returns, make its hydrocarbon-based products more expensive or less competitive, lengthen project implementation times, and reduce demand for hydrocarbons while shifting demand toward lower-carbon alternatives.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_9e6e81065a45435193fbe6753689a27db1e93b791ea40d5de1cea1e1e085af4b"
+     }
+    ],
+    "id": "c2",
+    "kind": "textual",
+    "period": null,
+    "text": "The company also says political and other actors increasingly seek to advance climate objectives indirectly, such as by reducing the availability or raising the cost of financing and investment in the oil and gas sector.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_b79dde3ca6a9903d2372feaba7406d559f8530651947d4325a14d2c8595027c2"
+     }
+    ],
+    "id": "c3",
+    "kind": "textual",
+    "period": null,
+    "text": "Among factors affecting supply and demand, ExxonMobil lists government policies, including actions intended to reduce greenhouse gas emissions, that restrict oil and gas production or increase associated production, reporting or compliance costs.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_3da17d71d44f0929ba094359a5583c8adadb6a4f9b9eca8497be3e5d907df9f7"
+     }
+    ],
+    "id": "c4",
+    "kind": "textual",
+    "period": null,
+    "text": "In its government and political factors discussion, ExxonMobil cites changes in environmental regulations that increase its cost of operation or compliance or reduce or delay business opportunities. It also cites actions to delay or deny licenses and permits, restrict oil and gas leases or the transportation or export of its products, or reduce government incentives for emissions reductions, which could result in reduced returns.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_dd9b6139deab4cdcd92f816797e64f6167720c895457faccb904eb29cd7ffd8b"
+     }
+    ],
+    "id": "c5",
+    "kind": "textual",
+    "period": null,
+    "text": "Management warns that policy actions restricting the availability of hydrocarbon products without a commensurate reduction in demand may have unpredictable adverse effects, including increased commodity price volatility. It adds that failure or delay of supportive policies or markets to materialize or be maintained could adversely impact its low-carbon investments.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   }
+  ],
+  "final_claim_id": null,
+  "final_unit": null,
+  "final_value": null,
+  "status": "answered",
+  "summary": "ExxonMobil's FY2024 10-K (Item 1A) says greenhouse gas and climate policies could hurt the business in several ways. They could lower investment returns, make its products costlier or less competitive, delay projects, and reduce hydrocarbon demand. They could also raise compliance costs, restrict permits, leases and production, and make financing harder or costlier to get. Management also warns that policies restricting supply without a matching fall in demand could cause price volatility. Its low-carbon investments depend on supportive policies."
+ },
+ "retrieval": {
+  "first_search": {
+   "filings:s1": [
+    "chk_59595c8a5bc19d2b3de01eed679f1c0caee72118c41336305e74d35dd451c3d2",
+    "chk_9e6e81065a45435193fbe6753689a27db1e93b791ea40d5de1cea1e1e085af4b",
+    "chk_66cb5034754e733c5a49994551ef31e28739766a0d3f97a2ac6ffed9ed2daa69",
+    "chk_3da17d71d44f0929ba094359a5583c8adadb6a4f9b9eca8497be3e5d907df9f7",
+    "chk_dd9b6139deab4cdcd92f816797e64f6167720c895457faccb904eb29cd7ffd8b",
+    "chk_429ecb415511fa5de705ee3316a544dac6fd0313ff13ec31b05fc1fdc4fb7e1e",
+    "chk_b0f6a3c2d1081a32bf36ca8abec0c71aa7ce70eae056be42e8887f37153d5dc4",
+    "chk_b79dde3ca6a9903d2372feaba7406d559f8530651947d4325a14d2c8595027c2"
+   ]
+  },
+  "seen": [
+   "chk_59595c8a5bc19d2b3de01eed679f1c0caee72118c41336305e74d35dd451c3d2",
+   "chk_9e6e81065a45435193fbe6753689a27db1e93b791ea40d5de1cea1e1e085af4b",
+   "chk_66cb5034754e733c5a49994551ef31e28739766a0d3f97a2ac6ffed9ed2daa69",
+   "chk_3da17d71d44f0929ba094359a5583c8adadb6a4f9b9eca8497be3e5d907df9f7",
+   "chk_dd9b6139deab4cdcd92f816797e64f6167720c895457faccb904eb29cd7ffd8b",
+   "chk_429ecb415511fa5de705ee3316a544dac6fd0313ff13ec31b05fc1fdc4fb7e1e",
+   "chk_b0f6a3c2d1081a32bf36ca8abec0c71aa7ce70eae056be42e8887f37153d5dc4",
+   "chk_b79dde3ca6a9903d2372feaba7406d559f8530651947d4325a14d2c8595027c2"
+  ]
+ },
+ "run_id": "9aec75c2-cdf1-45bc-b70d-0a60d6c89378",
+ "run_status": "done",
+ "split": "handwritten",
+ "started_at": "2026-11-16T22:20:04.292042+00:00",
+ "status": "done",
+ "system_config_hash": "609c0b8d3387b1ce1d168e92bc0af076a1cc5929d1640386326043ecb0c21b67",
+ "system_id": "m6-hybrid",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 47334,
+  "cache_write_tokens": 20189,
+  "input_tokens": 21866,
+  "output_tokens": 7006
+ }
+}

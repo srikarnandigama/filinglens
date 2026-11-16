@@ -1,0 +1,142 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 4,
+  "numeric_valid": 2,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.0929798",
+ "error": null,
+ "finished_at": "2026-11-16T21:19:11.782727+00:00",
+ "latency_ms": 33049,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "1.4519"
+ },
+ "question_id": "q_4dcd8dd868199d87",
+ "question_sha": "67db61771d2c65b012db6b13df35a520f8914aa29932d54560b7e1c8456706fd",
+ "raw_output": {
+  "caveats": [
+   "The percent change was computed manually from the two annual revenue facts and rounded to four decimal places.",
+   "Both revenue values are taken from the same source filing (accession 0000034088-26-000045)."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "2559"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2023
+    },
+    "text": "XOM fiscal 2023 revenue was $344.582 billion.",
+    "ticker": "XOM",
+    "unit": "USD",
+    "value": "344582000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "2564"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "XOM fiscal 2024 revenue was $349.585 billion.",
+    "ticker": "XOM",
+    "unit": "USD",
+    "value": "349585000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "2559"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "2564"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "Absolute change in revenue = 349,585,000,000 - 344,582,000,000 = $5.003 billion increase.",
+    "ticker": "XOM",
+    "unit": "USD",
+    "value": "5003000000",
+    "value_basis": "model_arithmetic"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "2559"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "2564"
+     }
+    ],
+    "id": "c4",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "Percent change = (349,585,000,000 - 344,582,000,000) / 344,582,000,000 = 5,003,000,000 / 344,582,000,000 \u2248 1.45% increase.",
+    "ticker": "XOM",
+    "unit": "percent",
+    "value": "1.4519",
+    "value_basis": "model_arithmetic"
+   }
+  ],
+  "final_claim_id": "c4",
+  "final_unit": "percent",
+  "final_value": "1.4519",
+  "status": "answered",
+  "summary": "ExxonMobil's total revenue rose about 1.45%, from $344.582 billion in fiscal 2023 to $349.585 billion in fiscal 2024, an increase of about $5.003 billion."
+ },
+ "run_id": "5f5b7294-87a0-4b95-9c25-c56822170ed2",
+ "run_status": "done",
+ "split": "test",
+ "started_at": "2026-11-16T21:18:38.713387+00:00",
+ "status": "done",
+ "system_config_hash": "38c1354659c83500cab78979070eac496bb55847b466a51e9437890c769351e5",
+ "system_id": "m6-no-quant",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 31798,
+  "cache_write_tokens": 9100,
+  "input_tokens": 10790,
+  "output_tokens": 4547
+ }
+}

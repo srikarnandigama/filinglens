@@ -1,0 +1,118 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 3,
+  "numeric_valid": 2,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.0499327",
+ "error": null,
+ "finished_at": "2026-11-16T20:37:46.035954+00:00",
+ "latency_ms": 18328,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "5.04298"
+ },
+ "question_id": "q_35aa944f9f925cde",
+ "question_sha": "b5c36a7d242a6a4a70b069a575783a8e9e720e227187471729e4c37f6348aff3",
+ "raw_output": {
+  "caveats": [
+   "The percent change was calculated manually from the two annual cost of revenue facts; no calculation tool was available.",
+   "Both figures come from the fiscal 2025 Form 10-K (accession 0000320193-25-000079).",
+   "No filing passages were provided, so this answer does not explain the reasons for the change."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "28"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "Apple's fiscal 2024 cost of revenue was $210.352 billion.",
+    "ticker": "AAPL",
+    "unit": "USD",
+    "value": "210352000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "33"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Apple's fiscal 2025 cost of revenue was $220.960 billion.",
+    "ticker": "AAPL",
+    "unit": "USD",
+    "value": "220960000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "28"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "33"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Percent change = (220,960,000,000 - 210,352,000,000) / 210,352,000,000 * 100 = 10,608,000,000 / 210,352,000,000 * 100 \u2248 5.04%, an increase.",
+    "ticker": "AAPL",
+    "unit": "percent",
+    "value": "5.04298",
+    "value_basis": "model_arithmetic"
+   }
+  ],
+  "final_claim_id": "c3",
+  "final_unit": "percent",
+  "final_value": "5.04298",
+  "status": "answered",
+  "summary": "Apple's cost of revenue rose about 5.04%, from $210.352 billion in fiscal 2024 to $220.960 billion in fiscal 2025."
+ },
+ "run_id": "bb6c5f60-c2c4-4828-ace5-a6c0b601721e",
+ "run_status": "done",
+ "split": "test",
+ "started_at": "2026-11-16T20:37:27.637822+00:00",
+ "status": "done",
+ "system_config_hash": "38c1354659c83500cab78979070eac496bb55847b466a51e9437890c769351e5",
+ "system_id": "m6-no-quant",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 15447,
+  "cache_write_tokens": 5056,
+  "input_tokens": 5264,
+  "output_tokens": 2522
+ }
+}

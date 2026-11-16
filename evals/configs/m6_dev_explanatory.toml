@@ -2,6 +2,7 @@
 # $1.90 at M5 answered-run rates (M6 estimate $1.60) + $1.00 in flight (D123).
 name = "m6-dev-explanatory"
 budget = "m6"
+spent_usd = "1.450531370"  # actual spend of the finished step (D123 re-sum rule)
 split = "explanatory_dev"
 sample = "all"
 seed = 20261109

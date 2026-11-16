@@ -1,0 +1,69 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 1,
+  "numeric_valid": 1,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.0199127",
+ "error": null,
+ "finished_at": "2026-11-16T20:28:14.288084+00:00",
+ "latency_ms": 6721,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD",
+  "value": "8866000000"
+ },
+ "question_id": "q_802be49ad4d35fa9",
+ "question_sha": "46407dbd5d439075aad21eec4bbfa26c569f9f27074b7d76fbced928a4f2d027",
+ "raw_output": {
+  "caveats": [],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "118"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q3",
+     "fiscal_year": 2025
+    },
+    "text": "Apple's research and development expense for fiscal Q3 2025 (March 30, 2025 to June 28, 2025) was $8.866 billion.",
+    "ticker": "AAPL",
+    "unit": "USD",
+    "value": "8866000000",
+    "value_basis": "fact"
+   }
+  ],
+  "final_claim_id": "c1",
+  "final_unit": "USD",
+  "final_value": "8866000000",
+  "status": "answered",
+  "summary": "Apple's research and development expense in fiscal Q3 2025 (the quarter ended June 28, 2025) was $8.866 billion."
+ },
+ "run_id": "b45aafce-4e7d-4cd7-b241-3285e6d89ad4",
+ "run_status": "done",
+ "split": "test",
+ "started_at": "2026-11-16T20:28:07.525422+00:00",
+ "status": "done",
+ "system_config_hash": "076d44ae54839bdbe0f6ccf45947a709b3a3d1f851b4bbb7bc21239958ef83cf",
+ "system_id": "m6-no-verifier",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 18527,
+  "cache_write_tokens": 4448,
+  "input_tokens": 10,
+  "output_tokens": 692
+ }
+}

@@ -1,0 +1,193 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 3,
+  "numeric_valid": 3,
+  "text_pending_judge": [],
+  "text_string_supported": 3,
+  "text_total": 3,
+  "uncited": 0
+ },
+ "cost_usd": "0.112249795",
+ "error": null,
+ "finished_at": "2026-11-16T21:43:22.025127+00:00",
+ "latency_ms": 63017,
+ "prediction": {
+  "parse_ok": true,
+  "text": "Nike's revenue did fall in fiscal 2025. It dropped from $51.4 billion to $46.3 billion, a decline of about 9.8%. Nike said that on a currency-neutral basis the decline came mainly from lower revenues in North America, EMEA and Greater China. NIKE Direct fell 13%, with digital sales down 20%. Wholesale revenues were lower in every geography. Nike said lower average selling prices came mainly from higher discounts and changes in channel mix. The filing does not give a separate underlying cause for the weaker demand.\nNike's revenue was $51.362 billion in fiscal 2024.\nNike's revenue was $46.309 billion in fiscal 2025.\nRevenue fell about 9.8% year over year, so the premise holds.\nNike reported that revenues decreased 10% on a reported basis and 9% on a currency-neutral basis. On a currency-neutral basis, it attributed the decrease primarily to lower revenues in North America, EMEA and Greater China, which reduced NIKE, Inc. Revenues by 4, 3 and 2 percentage points, respectively.\nBy channel, NIKE Direct revenues declined 13% from $21.5 billion to $18.8 billion. On a currency-neutral basis, NIKE Brand Digital sales fell 20% from $12.1 billion to $9.6 billion, while NIKE store sales were flat. Wholesale revenues decreased on a currency-neutral basis across all geographies.\nNike said lower average selling price per pair was primarily due to higher discounts and changes in channel mix, partially offset by strategic pricing actions. It gave a similar explanation for EMEA, adding product mix for apparel."
+ },
+ "question_id": "hq_21f4a3b2e4e044129aee7a3fa547a79b",
+ "question_sha": "d6cda3ec75c214241f68191dea895d06bca66530451083cdc23dc5235f763b0a",
+ "raw_output": {
+  "caveats": [
+   "The MD&A passages describe the revenue decline by region, channel and price drivers. They do not give a separate management explanation for the underlying demand weakness.",
+   "Two of the eight search hits (the EMEA and North America segment tables) were not fetched. The Greater China segment tables were seen only in a search snippet, so regional coverage is incomplete."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3727"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "Nike's revenue was $51.362 billion in fiscal 2024.",
+    "ticker": "NKE",
+    "unit": "USD",
+    "value": "51362000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3732"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Nike's revenue was $46.309 billion in fiscal 2025.",
+    "ticker": "NKE",
+    "unit": "USD",
+    "value": "46309000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_1"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Revenue fell about 9.8% year over year, so the premise holds.",
+    "ticker": "NKE",
+    "unit": "percent",
+    "value": "-9.838012538453",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_128e864cd37a84838f19edff4d6d32175e80a6b1c8b3ce6989d889a3e038c450"
+     }
+    ],
+    "id": "c4",
+    "kind": "textual",
+    "period": null,
+    "text": "Nike reported that revenues decreased 10% on a reported basis and 9% on a currency-neutral basis. On a currency-neutral basis, it attributed the decrease primarily to lower revenues in North America, EMEA and Greater China, which reduced NIKE, Inc. Revenues by 4, 3 and 2 percentage points, respectively.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_96ecc255a474f71a105d222833e92c2a6c63dc96b12bfff9dd08800315d10f05"
+     },
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_473cb63d0f4095c8e322bb686d7ff662ffd98ff17e9a1346f347824d6c281a4d"
+     }
+    ],
+    "id": "c5",
+    "kind": "textual",
+    "period": null,
+    "text": "By channel, NIKE Direct revenues declined 13% from $21.5 billion to $18.8 billion. On a currency-neutral basis, NIKE Brand Digital sales fell 20% from $12.1 billion to $9.6 billion, while NIKE store sales were flat. Wholesale revenues decreased on a currency-neutral basis across all geographies.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_128e864cd37a84838f19edff4d6d32175e80a6b1c8b3ce6989d889a3e038c450"
+     },
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_cc19432ad0a25c7e6d7056d8396dcf02545cd1c0a170af8b2a28c43863441537"
+     }
+    ],
+    "id": "c6",
+    "kind": "textual",
+    "period": null,
+    "text": "Nike said lower average selling price per pair was primarily due to higher discounts and changes in channel mix, partially offset by strategic pricing actions. It gave a similar explanation for EMEA, adding product mix for apparel.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   }
+  ],
+  "final_claim_id": "c3",
+  "final_unit": "percent",
+  "final_value": "-9.838012538453",
+  "status": "answered",
+  "summary": "Nike's revenue did fall in fiscal 2025. It dropped from $51.4 billion to $46.3 billion, a decline of about 9.8%. Nike said that on a currency-neutral basis the decline came mainly from lower revenues in North America, EMEA and Greater China. NIKE Direct fell 13%, with digital sales down 20%. Wholesale revenues were lower in every geography. Nike said lower average selling prices came mainly from higher discounts and changes in channel mix. The filing does not give a separate underlying cause for the weaker demand."
+ },
+ "retrieval": {
+  "first_search": {
+   "filings:s4": [
+    "chk_cc19432ad0a25c7e6d7056d8396dcf02545cd1c0a170af8b2a28c43863441537",
+    "chk_96ecc255a474f71a105d222833e92c2a6c63dc96b12bfff9dd08800315d10f05",
+    "chk_128e864cd37a84838f19edff4d6d32175e80a6b1c8b3ce6989d889a3e038c450",
+    "chk_473cb63d0f4095c8e322bb686d7ff662ffd98ff17e9a1346f347824d6c281a4d",
+    "chk_ced4d0cb02f5d17ad6d07e596de2a2727104ca6cbf58e3c9409942e085930f8c",
+    "chk_f0e85982ba1636321a2d5335af92718f8f21564b5a737ffcda2050ef4ed5a6c0",
+    "chk_32f2cf69852d2d95069debcd2967b15e98da4684794244621c004405022b97e4",
+    "chk_cda5e422dd4b975a21f98872d1c6ffde009b37c1e77b78019651e9da914ac889"
+   ]
+  },
+  "seen": [
+   "chk_cc19432ad0a25c7e6d7056d8396dcf02545cd1c0a170af8b2a28c43863441537",
+   "chk_96ecc255a474f71a105d222833e92c2a6c63dc96b12bfff9dd08800315d10f05",
+   "chk_128e864cd37a84838f19edff4d6d32175e80a6b1c8b3ce6989d889a3e038c450",
+   "chk_473cb63d0f4095c8e322bb686d7ff662ffd98ff17e9a1346f347824d6c281a4d",
+   "chk_ced4d0cb02f5d17ad6d07e596de2a2727104ca6cbf58e3c9409942e085930f8c",
+   "chk_f0e85982ba1636321a2d5335af92718f8f21564b5a737ffcda2050ef4ed5a6c0",
+   "chk_32f2cf69852d2d95069debcd2967b15e98da4684794244621c004405022b97e4",
+   "chk_cda5e422dd4b975a21f98872d1c6ffde009b37c1e77b78019651e9da914ac889"
+  ]
+ },
+ "run_id": "7d16497d-4d7f-4729-a64e-d9b33e630306",
+ "run_status": "done",
+ "split": "handwritten",
+ "started_at": "2026-11-16T21:42:18.931042+00:00",
+ "status": "done",
+ "system_config_hash": "dda3ea6b7db41dd0273d82e63c7ab3c74a4ec2dac9f2674d40c2836322074f2a",
+ "system_id": "m6-rerank",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 82124,
+  "cache_write_tokens": 34621,
+  "input_tokens": 13398,
+  "output_tokens": 7279
+ }
+}

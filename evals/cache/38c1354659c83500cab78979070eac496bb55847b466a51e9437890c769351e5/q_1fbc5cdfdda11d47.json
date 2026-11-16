@@ -1,0 +1,118 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 3,
+  "numeric_valid": 2,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.0892197",
+ "error": null,
+ "finished_at": "2026-11-16T20:36:15.650712+00:00",
+ "latency_ms": 30111,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "-11.5617"
+ },
+ "question_id": "q_1fbc5cdfdda11d47",
+ "question_sha": "fd189e36cbac2c04c142c3d835f95158703965deb584a3687d39aa37bc139a31",
+ "raw_output": {
+  "caveats": [
+   "Both values come from the same filing (accession 0000093410-26-000078, cvx-20251231.htm).",
+   "The percent change was calculated manually from the two reported figures and rounded to four decimal places.",
+   "No narrative passages were provided, so this answer does not explain the cause of the decline."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "2733"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2023
+    },
+    "text": "Chevron's net cash provided by operating activities for FY2023 was $35.609 billion.",
+    "ticker": "CVX",
+    "unit": "USD",
+    "value": "35609000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "2738"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "Chevron's net cash provided by operating activities for FY2024 was $31.492 billion.",
+    "ticker": "CVX",
+    "unit": "USD",
+    "value": "31492000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "2733"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "2738"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "Percent change = (31,492,000,000 - 35,609,000,000) / 35,609,000,000 \u00d7 100 = -4,117,000,000 / 35,609,000,000 \u00d7 100 \u2248 -11.56%, a decrease in operating cash flow from FY2023 to FY2024.",
+    "ticker": "CVX",
+    "unit": "percent",
+    "value": "-11.5617",
+    "value_basis": "model_arithmetic"
+   }
+  ],
+  "final_claim_id": "c3",
+  "final_unit": "percent",
+  "final_value": "-11.5617",
+  "status": "answered",
+  "summary": "Chevron's net cash provided by operating activities fell about 11.56% from fiscal 2023 ($35.609 billion) to fiscal 2024 ($31.492 billion)."
+ },
+ "run_id": "fcf2f195-aaf3-4e66-be48-a9e8df40a0a0",
+ "run_status": "done",
+ "split": "test",
+ "started_at": "2026-11-16T20:35:45.467486+00:00",
+ "status": "done",
+ "system_config_hash": "38c1354659c83500cab78979070eac496bb55847b466a51e9437890c769351e5",
+ "system_id": "m6-no-quant",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 24822,
+  "cache_write_tokens": 8447,
+  "input_tokens": 10655,
+  "output_tokens": 4431
+ }
+}

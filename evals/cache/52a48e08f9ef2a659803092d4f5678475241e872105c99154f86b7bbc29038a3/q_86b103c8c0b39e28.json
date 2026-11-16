@@ -1,0 +1,111 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 3,
+  "numeric_valid": 3,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.0490656",
+ "error": null,
+ "finished_at": "2026-11-16T20:23:58.162262+00:00",
+ "latency_ms": 16564,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "74.933529375728"
+ },
+ "question_id": "q_86b103c8c0b39e28",
+ "question_sha": "c5f626271151688abbb5ee29f23ba923abc4ef48edba95e0ff6d43d3f59c3d45",
+ "raw_output": {
+  "caveats": [
+   "Gross margin is calculated from reported gross profit and revenue for the same quarter. No filing passages were provided, so the answer gives no management commentary on the drivers."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "395"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q1",
+     "fiscal_year": 2027
+    },
+    "text": "Nvidia's gross profit in fiscal Q1 2027 was $61.157 billion.",
+    "ticker": "NVDA",
+    "unit": "USD",
+    "value": "61157000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "361"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q1",
+     "fiscal_year": 2027
+    },
+    "text": "Nvidia's revenue in fiscal Q1 2027 was $81.615 billion.",
+    "ticker": "NVDA",
+    "unit": "USD",
+    "value": "81615000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_1"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q1",
+     "fiscal_year": 2027
+    },
+    "text": "Nvidia's gross margin in fiscal Q1 2027 was about 74.9% (gross profit divided by revenue).",
+    "ticker": "NVDA",
+    "unit": "percent",
+    "value": "74.933529375728",
+    "value_basis": "computation"
+   }
+  ],
+  "final_claim_id": "c3",
+  "final_unit": "percent",
+  "final_value": "74.933529375728",
+  "status": "answered",
+  "summary": "Nvidia's gross margin in fiscal Q1 2027 (quarter ended April 26, 2026) was about 74.9%. Gross profit was $61.157 billion on revenue of $81.615 billion."
+ },
+ "run_id": "92649161-83b0-4a92-901c-3500af326fcd",
+ "run_status": "done",
+ "split": "test",
+ "started_at": "2026-11-16T20:23:41.529743+00:00",
+ "status": "done",
+ "system_config_hash": "52a48e08f9ef2a659803092d4f5678475241e872105c99154f86b7bbc29038a3",
+ "system_id": "m6",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 33071,
+  "cache_write_tokens": 5433,
+  "input_tokens": 5513,
+  "output_tokens": 2115
+ }
+}

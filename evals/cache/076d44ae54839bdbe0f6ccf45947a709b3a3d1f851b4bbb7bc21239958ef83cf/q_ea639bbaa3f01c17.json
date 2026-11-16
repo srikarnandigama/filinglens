@@ -1,0 +1,131 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 4,
+  "numeric_valid": 4,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.0413990",
+ "error": null,
+ "finished_at": "2026-11-16T20:29:17.863650+00:00",
+ "latency_ms": 17150,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "-7.113184887681"
+ },
+ "question_id": "q_ea639bbaa3f01c17",
+ "question_sha": "f0737c62e60ac75b637f0177d3d15c04f86582c08f3a0f586ca03312de533695",
+ "raw_output": {
+  "caveats": [
+   "Q4 2023 revenue is derived (full-year 2023 revenue of $200,949,000,000 minus nine-month revenue of $153,769,000,000), not directly reported as a quarterly figure."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "2661"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q1",
+     "fiscal_year": 2023
+    },
+    "text": "Chevron's Q1 2023 revenue was $50.79 billion.",
+    "ticker": "CVX",
+    "unit": "USD",
+    "value": "50793000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "2664"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q4",
+     "fiscal_year": 2023
+    },
+    "text": "Chevron's Q4 2023 revenue was $47.18 billion (derived as full-year revenue minus nine-month revenue).",
+    "ticker": "CVX",
+    "unit": "USD",
+    "value": "47180000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": "value",
+      "kind": "computation",
+      "ref": "cmp_2"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q4",
+     "fiscal_year": 2023
+    },
+    "text": "Revenue changed by about -$3.61 billion from Q1 to Q4 2023.",
+    "ticker": "CVX",
+    "unit": "USD",
+    "value": "-3613000000",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_1"
+     }
+    ],
+    "id": "c4",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q4",
+     "fiscal_year": 2023
+    },
+    "text": "Chevron's total revenue changed by about -7.11% from Q1 2023 to Q4 2023, a decline.",
+    "ticker": "CVX",
+    "unit": "percent",
+    "value": "-7.113184887681",
+    "value_basis": "computation"
+   }
+  ],
+  "final_claim_id": "c4",
+  "final_unit": "percent",
+  "final_value": "-7.113184887681",
+  "status": "answered",
+  "summary": "Chevron's total revenue fell about 7.11% from Q1 2023 ($50.79 billion) to Q4 2023 ($47.18 billion), a drop of about $3.61 billion. The Q4 figure is derived from annual and nine-month revenue."
+ },
+ "run_id": "e9d9f467-5171-449a-83ee-0ab66dfdacf7",
+ "run_status": "done",
+ "split": "test",
+ "started_at": "2026-11-16T20:29:00.650246+00:00",
+ "status": "done",
+ "system_config_hash": "076d44ae54839bdbe0f6ccf45947a709b3a3d1f851b4bbb7bc21239958ef83cf",
+ "system_id": "m6-no-verifier",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 59265,
+  "cache_write_tokens": 6937,
+  "input_tokens": 20,
+  "output_tokens": 1809
+ }
+}

@@ -1,0 +1,147 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 0,
+  "numeric_valid": 0,
+  "text_pending_judge": [],
+  "text_string_supported": 4,
+  "text_total": 4,
+  "uncited": 0
+ },
+ "cost_usd": "0.067605495",
+ "error": null,
+ "finished_at": "2026-11-16T21:42:18.928764+00:00",
+ "latency_ms": 82878,
+ "prediction": {
+  "parse_ok": true,
+  "text": "In June 2025 P&G announced a portfolio and productivity plan. Its stated aim was to streamline the portfolio and organization to improve its cost structure and competitiveness. P&G expects about $1.5 to $2.0 billion in before-tax restructuring costs over two years, including the ongoing plan, and a reduction of up to 7,000 non-manufacturing overhead personnel by the end of fiscal 2027.\nIn June 2025, P&G announced a portfolio and productivity plan to streamline its portfolio and organization.\nP&G stated the reason as improving its cost structure and competitiveness. The filing excerpts give no more specific trigger. Separately, management describes ongoing productivity improvement as strategic and crucial to delivering balanced top- and bottom-line growth, cash generation and value creation, and as helping it manage through challenging cost environments.\nP&G expects to incur approximately $1.5 to $2.0 billion in before-tax restructuring costs over a two-year period, including costs from this plan and the ongoing plan.\nThe restructuring activities include a plan to reduce up to 7,000 non-manufacturing overhead personnel by the end of fiscal 2027."
+ },
+ "question_id": "hq_05c3197fe2084357b5c9ca0582b713f2",
+ "question_sha": "8c72e56a71d2c3e2d1837671731ba9606005dc33caab99c80a338d66c74208b1",
+ "raw_output": {
+  "caveats": [
+   "The Item 8 Note 3 text on the June 2025 plan was not surfaced, so the stated rationale comes only from the MD&A.",
+   "Fiscal 2025 restructuring costs of $1.1 billion, including a $752 million non-cash charge tied to Argentina, relate to the earlier limited market portfolio restructuring, not the June 2025 plan."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_8434e8db3e29fe4c2375a878ee2c348c3adea6aa5645e5cefe470ba434ecb636"
+     }
+    ],
+    "id": "c1",
+    "kind": "textual",
+    "period": null,
+    "text": "In June 2025, P&G announced a portfolio and productivity plan to streamline its portfolio and organization.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_8434e8db3e29fe4c2375a878ee2c348c3adea6aa5645e5cefe470ba434ecb636"
+     },
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_b1839a94bc78102059a564e7c2d02069ebc069bdc1f376a84cd7472203c75422"
+     }
+    ],
+    "id": "c2",
+    "kind": "textual",
+    "period": null,
+    "text": "P&G stated the reason as improving its cost structure and competitiveness. The filing excerpts give no more specific trigger. Separately, management describes ongoing productivity improvement as strategic and crucial to delivering balanced top- and bottom-line growth, cash generation and value creation, and as helping it manage through challenging cost environments.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_8434e8db3e29fe4c2375a878ee2c348c3adea6aa5645e5cefe470ba434ecb636"
+     }
+    ],
+    "id": "c3",
+    "kind": "textual",
+    "period": null,
+    "text": "P&G expects to incur approximately $1.5 to $2.0 billion in before-tax restructuring costs over a two-year period, including costs from this plan and the ongoing plan.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_8434e8db3e29fe4c2375a878ee2c348c3adea6aa5645e5cefe470ba434ecb636"
+     }
+    ],
+    "id": "c4",
+    "kind": "textual",
+    "period": null,
+    "text": "The restructuring activities include a plan to reduce up to 7,000 non-manufacturing overhead personnel by the end of fiscal 2027.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   }
+  ],
+  "final_claim_id": null,
+  "final_unit": null,
+  "final_value": null,
+  "status": "answered",
+  "summary": "In June 2025 P&G announced a portfolio and productivity plan. Its stated aim was to streamline the portfolio and organization to improve its cost structure and competitiveness. P&G expects about $1.5 to $2.0 billion in before-tax restructuring costs over two years, including the ongoing plan, and a reduction of up to 7,000 non-manufacturing overhead personnel by the end of fiscal 2027."
+ },
+ "retrieval": {
+  "first_search": {
+   "filings:s1": [
+    "chk_8434e8db3e29fe4c2375a878ee2c348c3adea6aa5645e5cefe470ba434ecb636",
+    "chk_cc0266b85d32065bdd6c76dd1dddc2fc9dcdf41733c8be64118a44607ac24fdf",
+    "chk_3dd1e4263b324528f58699e0e3e2a178ac2198c06672610afa0898c576366749",
+    "chk_45f7042086bc043f6f6069d89acf3881a5cdecb4ab8fd5f3aa6e9faec22970c2",
+    "chk_d56b2d833c3bca81de083c58f9301bce26b18cacacc3f5d3b6babc030cc01585",
+    "chk_bc37419f76b0627d38a6f530f7d922c1f31addf586e990c3ceb6e2913f87a234",
+    "chk_3517220d0f97470660c83990cec59e12c704200467d2c02523a21e0557950d37",
+    "chk_5bfb015da1e944567dbbcd7c9190d1d4f96dbba5949a79661338758684c1342c"
+   ]
+  },
+  "seen": [
+   "chk_8434e8db3e29fe4c2375a878ee2c348c3adea6aa5645e5cefe470ba434ecb636",
+   "chk_cc0266b85d32065bdd6c76dd1dddc2fc9dcdf41733c8be64118a44607ac24fdf",
+   "chk_3dd1e4263b324528f58699e0e3e2a178ac2198c06672610afa0898c576366749",
+   "chk_45f7042086bc043f6f6069d89acf3881a5cdecb4ab8fd5f3aa6e9faec22970c2",
+   "chk_d56b2d833c3bca81de083c58f9301bce26b18cacacc3f5d3b6babc030cc01585",
+   "chk_bc37419f76b0627d38a6f530f7d922c1f31addf586e990c3ceb6e2913f87a234",
+   "chk_3517220d0f97470660c83990cec59e12c704200467d2c02523a21e0557950d37",
+   "chk_5bfb015da1e944567dbbcd7c9190d1d4f96dbba5949a79661338758684c1342c",
+   "chk_b1839a94bc78102059a564e7c2d02069ebc069bdc1f376a84cd7472203c75422",
+   "chk_07371d2f63993614a57acb605e9e63eaac0415b201fac977f94112f5e05f740d"
+  ]
+ },
+ "run_id": "f15a5b6e-c17c-4c0f-add3-7f08fcc6b3bb",
+ "run_status": "done",
+ "split": "handwritten",
+ "started_at": "2026-11-16T21:40:55.982190+00:00",
+ "status": "done",
+ "system_config_hash": "dda3ea6b7db41dd0273d82e63c7ab3c74a4ec2dac9f2674d40c2836322074f2a",
+ "system_id": "m6-rerank",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 79587,
+  "cache_write_tokens": 23434,
+  "input_tokens": 7776,
+  "output_tokens": 5102
+ }
+}

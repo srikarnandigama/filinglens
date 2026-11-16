@@ -1,0 +1,134 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 0,
+  "numeric_valid": 0,
+  "text_pending_judge": [],
+  "text_string_supported": 3,
+  "text_total": 3,
+  "uncited": 0
+ },
+ "cost_usd": "0.052985730",
+ "error": null,
+ "finished_at": "2026-11-16T21:37:21.618416+00:00",
+ "latency_ms": 26300,
+ "prediction": {
+  "parse_ok": true,
+  "text": "In its FY2025 10-K risk factors, Johnson & Johnson says the Inflation Reduction Act (IRA) has changed Medicare Part D benefit design. It says the IRA has subjected certain of its products to government-established pricing beginning in 2026, and that more products may be subject in the future. J&J also warns of penalty exposure tied to pending litigation, and says Part D changes could hurt U.S. Innovative Medicine sales.\nJohnson & Johnson states that the IRA has changed Medicare Part D benefit design and has subjected certain of the Company's products to government-established pricing beginning in 2026, and may subject additional products in the future.\nJ&J warns that failure to adhere to the government's interpretations of the law, pending ongoing litigation, may expose the Company to penalties.\nJ&J states that change to Medicare Part D could have a negative impact on U.S. Innovative Medicine sales."
+ },
+ "question_id": "hq_f5d53183cdd04505b02cde17b599d44f",
+ "question_sha": "346ab7b3b99eb514d567f4a0924c3d2fa460ef8dd97b1f1dafad7f63e12fdfa6",
+ "raw_output": {
+  "caveats": [
+   "The IRA discussion is a short paragraph within the broader Item 1A pricing and reimbursement risk factor, not a standalone risk factor. It names no specific drugs and gives no quantified impact.",
+   "Only Item 1A of the FY2025 10-K was searched. MD&A and the notes were not reviewed."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_19339c50b6436dd357e65073c63d89e41ae6ca612a9c5f7d56f6f6be8f72f299"
+     }
+    ],
+    "id": "c1",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Johnson & Johnson states that the IRA has changed Medicare Part D benefit design and has subjected certain of the Company's products to government-established pricing beginning in 2026, and may subject additional products in the future.",
+    "ticker": "JNJ",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_19339c50b6436dd357e65073c63d89e41ae6ca612a9c5f7d56f6f6be8f72f299"
+     }
+    ],
+    "id": "c2",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "J&J warns that failure to adhere to the government's interpretations of the law, pending ongoing litigation, may expose the Company to penalties.",
+    "ticker": "JNJ",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_19339c50b6436dd357e65073c63d89e41ae6ca612a9c5f7d56f6f6be8f72f299"
+     }
+    ],
+    "id": "c3",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "J&J states that change to Medicare Part D could have a negative impact on U.S. Innovative Medicine sales.",
+    "ticker": "JNJ",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   }
+  ],
+  "final_claim_id": null,
+  "final_unit": null,
+  "final_value": null,
+  "status": "answered",
+  "summary": "In its FY2025 10-K risk factors, Johnson & Johnson says the Inflation Reduction Act (IRA) has changed Medicare Part D benefit design. It says the IRA has subjected certain of its products to government-established pricing beginning in 2026, and that more products may be subject in the future. J&J also warns of penalty exposure tied to pending litigation, and says Part D changes could hurt U.S. Innovative Medicine sales."
+ },
+ "retrieval": {
+  "first_search": {
+   "filings:s1": [
+    "chk_19339c50b6436dd357e65073c63d89e41ae6ca612a9c5f7d56f6f6be8f72f299",
+    "chk_326371c0a5e859f91c9bc847b2be883da0f2149ec4ddbf5c6ffb1d44825b906e",
+    "chk_3dd00c7b86d3acc3f3e90ff70b99aee4aba2d43537ef697bbbe2ef0fbcf485a2",
+    "chk_ece124589981b34aa5e02fcc627d0977ebc44a7a063be79d86d54a1740fc7708",
+    "chk_baa2a68511949ca2f50118bb358763716df13d2810767f4ece346a8764c8396e",
+    "chk_8a9f80b0e4cd3ecbb763c5a5ac0391312a1b39de07b5d4bf627ac7347b14a4b9",
+    "chk_1c0f5b0aa5cfefe91daf4a66b1d5c175287514957a6e54a8564f9d2d239308f0",
+    "chk_550c66a91ae333ba1e93c24cabe38c91989b71cc87356bcd3fdf869274ebcb4d"
+   ]
+  },
+  "seen": [
+   "chk_19339c50b6436dd357e65073c63d89e41ae6ca612a9c5f7d56f6f6be8f72f299",
+   "chk_326371c0a5e859f91c9bc847b2be883da0f2149ec4ddbf5c6ffb1d44825b906e",
+   "chk_3dd00c7b86d3acc3f3e90ff70b99aee4aba2d43537ef697bbbe2ef0fbcf485a2",
+   "chk_ece124589981b34aa5e02fcc627d0977ebc44a7a063be79d86d54a1740fc7708",
+   "chk_baa2a68511949ca2f50118bb358763716df13d2810767f4ece346a8764c8396e",
+   "chk_8a9f80b0e4cd3ecbb763c5a5ac0391312a1b39de07b5d4bf627ac7347b14a4b9",
+   "chk_1c0f5b0aa5cfefe91daf4a66b1d5c175287514957a6e54a8564f9d2d239308f0",
+   "chk_550c66a91ae333ba1e93c24cabe38c91989b71cc87356bcd3fdf869274ebcb4d",
+   "chk_884f03a006c9cdabe2ea0157911a725a4cbf7160467a7041b7877784d9b33ef5",
+   "chk_27de5bf20350fa8c6a05776964ed0be07ea589b40edc67fd68a5f72d7886fe64"
+  ]
+ },
+ "run_id": "8d0f1061-3792-4fc7-bb84-72f89e78bc17",
+ "run_status": "done",
+ "split": "handwritten",
+ "started_at": "2026-11-16T21:36:55.268973+00:00",
+ "status": "done",
+ "system_config_hash": "52a48e08f9ef2a659803092d4f5678475241e872105c99154f86b7bbc29038a3",
+ "system_id": "m6",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 51569,
+  "cache_write_tokens": 17993,
+  "input_tokens": 5712,
+  "output_tokens": 3730
+ }
+}

@@ -1,0 +1,112 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 3,
+  "numeric_valid": 3,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.0508573",
+ "error": null,
+ "finished_at": "2026-11-16T20:30:07.359865+00:00",
+ "latency_ms": 16590,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "90.948865190046"
+ },
+ "question_id": "q_8a14dc4a020fecb1",
+ "question_sha": "2b419136fbbcac5a4c936600edc7bf4b850fcf94f190f5582e16b6bb0c76a766",
+ "raw_output": {
+  "caveats": [
+   "The Q4 2024 value is derived by subtracting the nine-month year-to-date figure from the full-year figure, not reported directly as a quarterly value.",
+   "Q4 2024 covers 2024-09-30 to 2024-12-29, JNJ's fiscal calendar."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "2857"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q1",
+     "fiscal_year": 2024
+    },
+    "text": "JNJ's Q1 2024 net cash provided by operating activities was $3.657 billion.",
+    "ticker": "JNJ",
+    "unit": "USD",
+    "value": "3657000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "2860"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q4",
+     "fiscal_year": 2024
+    },
+    "text": "JNJ's derived Q4 2024 net cash provided by operating activities was $6.983 billion (FY total of $24.266 billion less the nine-month total of $17.283 billion).",
+    "ticker": "JNJ",
+    "unit": "USD",
+    "value": "6983000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_1"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q4",
+     "fiscal_year": 2024
+    },
+    "text": "Operating cash flow increased by about 90.9% from Q1 2024 to Q4 2024.",
+    "ticker": "JNJ",
+    "unit": "percent",
+    "value": "90.948865190046",
+    "value_basis": "computation"
+   }
+  ],
+  "final_claim_id": "c3",
+  "final_unit": "percent",
+  "final_value": "90.948865190046",
+  "status": "answered",
+  "summary": "JNJ's net cash provided by operating activities rose about 90.9%, from $3.657 billion in fiscal Q1 2024 to $6.983 billion in fiscal Q4 2024. The Q4 figure is derived."
+ },
+ "run_id": "49b70a44-2745-439f-9bc1-6a4fefc16076",
+ "run_status": "done",
+ "split": "test",
+ "started_at": "2026-11-16T20:29:50.734823+00:00",
+ "status": "done",
+ "system_config_hash": "076d44ae54839bdbe0f6ccf45947a709b3a3d1f851b4bbb7bc21239958ef83cf",
+ "system_id": "m6-no-verifier",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 61808,
+  "cache_write_tokens": 10377,
+  "input_tokens": 22,
+  "output_tokens": 1869
+ }
+}

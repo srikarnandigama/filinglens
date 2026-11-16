@@ -1,0 +1,281 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 7,
+  "numeric_valid": 7,
+  "text_pending_judge": [
+   {
+    "chunk_ids": [
+     "chk_4a3b371c59b08e1feb70e5fac8aff12193a60cc212d7d7b9f59de8ab9f995a61"
+    ],
+    "claim_id": "c10",
+    "text": "Cost of automotive sales revenue fell $3.25 billion, or 5%, because of a lower average combined cost per unit. Tesla cited lower raw material costs, freight and duties, and mix. It said the decrease was partially offset by higher costs for Cybertruck."
+   }
+  ],
+  "text_string_supported": 2,
+  "text_total": 3,
+  "uncited": 0
+ },
+ "cost_usd": "0.19268716",
+ "error": null,
+ "finished_at": "2026-11-16T22:11:30.895205+00:00",
+ "latency_ms": 70358,
+ "prediction": {
+  "parse_ok": true,
+  "text": "The evidence supports the premise only as a fall in gross margin. Tesla's total gross profit slipped about 1.19% in 2024, from $17.66 billion to $17.45 billion, and total gross margin fell from about 18.25% to 17.86%. Management said automotive gross margin fell from 19.4% to 18.4%. It cited lower average selling prices on its vehicles and the Cybertruck ramp. Lower cost per unit, regulatory credit revenue and FSD (Supervised) revenue partly offset these. Prices fell because of overall price reductions, attractive financing options and mix. The filing does not quantify each factor.\nTesla's total gross profit was $17.66 billion in FY2023.\nTesla's total gross profit was $17.45 billion in FY2024.\nTotal gross profit declined about 1.19% in FY2024 versus FY2023.\nTotal gross margin was about 18.25% in FY2023.\nTotal gross margin was about 17.86% in FY2024, lower than the prior year.\nTotal revenue rose about 0.95% in FY2024, so the profit decline came from costs rising faster than revenue.\nTotal cost of revenue rose about 1.42% in FY2024.\nTesla said total automotive gross margin decreased from 19.4% to 18.4% in 2024 due to lower average selling price on its vehicles and the Cybertruck ramp. It said these were partially offset by lower average combined cost per unit and increases in regulatory credit and FSD (Supervised) revenue.\nTesla attributed the 8% ($6.03 billion) drop in automotive sales revenue primarily to lower average selling price, driven by overall price reductions and attractive financing options in 2024 as well as mix. It also noted about 22,000 fewer combined Model 3 and Model Y cash deliveries.\nCost of automotive sales revenue fell $3.25 billion, or 5%, because of a lower average combined cost per unit. Tesla cited lower raw material costs, freight and duties, and mix. It said the decrease was partially offset by higher costs for Cybertruck."
+ },
+ "question_id": "hq_69c1bbc69ab243d29a5b85972d80828e",
+ "question_sha": "b36f7de6fd16f8ff45cf38b83bcfeb2c5a050dc7c3fc4b02bd48f82460dbe3ec",
+ "raw_output": {
+  "caveats": [
+   "The gross profit, revenue and cost figures are company-wide totals, not automotive-only. The automotive margin figures (19.4% to 18.4%) come from management's MD&A text.",
+   "The filing does not quantify how much each factor (price cuts, Cybertruck ramp, offsets) contributed to the margin decline.",
+   "The dollar amount of automotive gross profit was not in the evidence. Total gross profit fell only slightly, so the margin decline is the clearer evidence of weaker profitability."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "994"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2023
+    },
+    "text": "Tesla's total gross profit was $17.66 billion in FY2023.",
+    "ticker": "TSLA",
+    "unit": "USD",
+    "value": "17660000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "999"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "Tesla's total gross profit was $17.45 billion in FY2024.",
+    "ticker": "TSLA",
+    "unit": "USD",
+    "value": "17450000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_3"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "Total gross profit declined about 1.19% in FY2024 versus FY2023.",
+    "ticker": "TSLA",
+    "unit": "percent",
+    "value": "-1.18912797282",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_1"
+     }
+    ],
+    "id": "c4",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2023
+    },
+    "text": "Total gross margin was about 18.25% in FY2023.",
+    "ticker": "TSLA",
+    "unit": "percent",
+    "value": "18.248891736331",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_2"
+     }
+    ],
+    "id": "c5",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "Total gross margin was about 17.86% in FY2024, lower than the prior year.",
+    "ticker": "TSLA",
+    "unit": "percent",
+    "value": "17.862626676221",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_4"
+     }
+    ],
+    "id": "c6",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "Total revenue rose about 0.95% in FY2024, so the profit decline came from costs rising faster than revenue.",
+    "ticker": "TSLA",
+    "unit": "percent",
+    "value": "0.947578353466",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_5"
+     }
+    ],
+    "id": "c7",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "Total cost of revenue rose about 1.42% in FY2024.",
+    "ticker": "TSLA",
+    "unit": "percent",
+    "value": "1.424544638681",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_6b373c4d5a9076d69b02f7390c55d4fc9009498c1e1402697980baaef0d4008e"
+     }
+    ],
+    "id": "c8",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "Tesla said total automotive gross margin decreased from 19.4% to 18.4% in 2024 due to lower average selling price on its vehicles and the Cybertruck ramp. It said these were partially offset by lower average combined cost per unit and increases in regulatory credit and FSD (Supervised) revenue.",
+    "ticker": "TSLA",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_7bd5071fedebcecb4963053053dc0160c18af262b7f7cb6c77f7ad4c9affb275"
+     }
+    ],
+    "id": "c9",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "Tesla attributed the 8% ($6.03 billion) drop in automotive sales revenue primarily to lower average selling price, driven by overall price reductions and attractive financing options in 2024 as well as mix. It also noted about 22,000 fewer combined Model 3 and Model Y cash deliveries.",
+    "ticker": "TSLA",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_4a3b371c59b08e1feb70e5fac8aff12193a60cc212d7d7b9f59de8ab9f995a61"
+     }
+    ],
+    "id": "c10",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "Cost of automotive sales revenue fell $3.25 billion, or 5%, because of a lower average combined cost per unit. Tesla cited lower raw material costs, freight and duties, and mix. It said the decrease was partially offset by higher costs for Cybertruck.",
+    "ticker": "TSLA",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   }
+  ],
+  "final_claim_id": null,
+  "final_unit": null,
+  "final_value": null,
+  "status": "answered",
+  "summary": "The evidence supports the premise only as a fall in gross margin. Tesla's total gross profit slipped about 1.19% in 2024, from $17.66 billion to $17.45 billion, and total gross margin fell from about 18.25% to 17.86%. Management said automotive gross margin fell from 19.4% to 18.4%. It cited lower average selling prices on its vehicles and the Cybertruck ramp. Lower cost per unit, regulatory credit revenue and FSD (Supervised) revenue partly offset these. Prices fell because of overall price reductions, attractive financing options and mix. The filing does not quantify each factor."
+ },
+ "retrieval": {
+  "first_search": {
+   "filings:s6": [
+    "chk_4a3b371c59b08e1feb70e5fac8aff12193a60cc212d7d7b9f59de8ab9f995a61",
+    "chk_6b373c4d5a9076d69b02f7390c55d4fc9009498c1e1402697980baaef0d4008e",
+    "chk_df43aefab4079e9800f707746ae308f7507213b567b6b2db2bbe091f16443d13",
+    "chk_7bd5071fedebcecb4963053053dc0160c18af262b7f7cb6c77f7ad4c9affb275",
+    "chk_c3dc564f0c76307538d80ec73806adbe74f4c61ad047bdd247f9b064976e842f",
+    "chk_6a8e8c839277d534f300d1c255a2c58ac0bad2578ed8049d2869af5d76a7f498",
+    "chk_efb60ae6c38fe53efffb2c3ba03fc7797d41089a65682f325e4db217f95c90c1",
+    "chk_560be997e96cef6f7e69d64eb5faa115de5da45e8c141f3fc1c758d140ebddee"
+   ]
+  },
+  "seen": [
+   "chk_4a3b371c59b08e1feb70e5fac8aff12193a60cc212d7d7b9f59de8ab9f995a61",
+   "chk_6b373c4d5a9076d69b02f7390c55d4fc9009498c1e1402697980baaef0d4008e",
+   "chk_df43aefab4079e9800f707746ae308f7507213b567b6b2db2bbe091f16443d13",
+   "chk_7bd5071fedebcecb4963053053dc0160c18af262b7f7cb6c77f7ad4c9affb275",
+   "chk_c3dc564f0c76307538d80ec73806adbe74f4c61ad047bdd247f9b064976e842f",
+   "chk_6a8e8c839277d534f300d1c255a2c58ac0bad2578ed8049d2869af5d76a7f498",
+   "chk_efb60ae6c38fe53efffb2c3ba03fc7797d41089a65682f325e4db217f95c90c1",
+   "chk_560be997e96cef6f7e69d64eb5faa115de5da45e8c141f3fc1c758d140ebddee"
+  ]
+ },
+ "run_id": "6fc42b07-b671-479d-b6b0-b291586524ce",
+ "run_status": "done",
+ "split": "handwritten",
+ "started_at": "2026-11-16T22:10:20.480594+00:00",
+ "status": "done",
+ "system_config_hash": "609c0b8d3387b1ce1d168e92bc0af076a1cc5929d1640386326043ecb0c21b67",
+ "system_id": "m6-hybrid",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 56641,
+  "cache_write_tokens": 29172,
+  "input_tokens": 24061,
+  "output_tokens": 11457
+ }
+}

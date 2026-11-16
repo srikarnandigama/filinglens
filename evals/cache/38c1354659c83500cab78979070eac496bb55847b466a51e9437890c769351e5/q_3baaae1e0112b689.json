@@ -1,0 +1,168 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 5,
+  "numeric_valid": 4,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.1199137",
+ "error": null,
+ "finished_at": "2026-11-16T20:36:12.401316+00:00",
+ "latency_ms": 34702,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD",
+  "value": "33262500000"
+ },
+ "question_id": "q_3baaae1e0112b689",
+ "question_sha": "62a91a7c20f451245b8e1ca83da80e6e559710c4bb7a7bfdc906c44f91f51eae",
+ "raw_output": {
+  "caveats": [
+   "Q4 fiscal 2025 operating income is derived (fiscal-year total minus nine-month year-to-date), not reported directly as a standalone quarter.",
+   "The four quarters sum to the fiscal-year operating income, so the average is exactly one quarter of the annual figure.",
+   "Fiscal 2025 runs from 2024-09-29 to 2025-09-27."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "65"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q1",
+     "fiscal_year": 2025
+    },
+    "text": "Apple's Q1 fiscal 2025 operating income was $42.832 billion.",
+    "ticker": "AAPL",
+    "unit": "USD",
+    "value": "42832000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "66"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q2",
+     "fiscal_year": 2025
+    },
+    "text": "Apple's Q2 fiscal 2025 operating income was $29.589 billion.",
+    "ticker": "AAPL",
+    "unit": "USD",
+    "value": "29589000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "67"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q3",
+     "fiscal_year": 2025
+    },
+    "text": "Apple's Q3 fiscal 2025 operating income was $28.202 billion.",
+    "ticker": "AAPL",
+    "unit": "USD",
+    "value": "28202000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "68"
+     }
+    ],
+    "id": "c4",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q4",
+     "fiscal_year": 2025
+    },
+    "text": "Apple's Q4 fiscal 2025 operating income was $32.427 billion. This is derived as fiscal-year operating income of 133,050,000,000 minus the nine-month figure of 100,623,000,000.",
+    "ticker": "AAPL",
+    "unit": "USD",
+    "value": "32427000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "65"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "66"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "67"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "68"
+     }
+    ],
+    "id": "c5",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Average quarterly operating income for fiscal 2025 = (42,832,000,000 + 29,589,000,000 + 28,202,000,000 + 32,427,000,000) / 4 = 133,050,000,000 ($133.05 billion) / 4 = $33,262,500,000, or about $33.26 billion.",
+    "ticker": "AAPL",
+    "unit": "USD",
+    "value": "33262500000",
+    "value_basis": "model_arithmetic"
+   }
+  ],
+  "final_claim_id": "c5",
+  "final_unit": "USD",
+  "final_value": "33262500000",
+  "status": "answered",
+  "summary": "Apple's average quarterly operating income over fiscal 2025 was about $33.26 billion ($33,262,500,000), which is the four-quarter total of $133.05 billion divided by 4. The quarters were Q1 $42.832 billion, Q2 $29.589 billion, Q3 $28.202 billion and Q4 $32.427 billion. Q4 is derived."
+ },
+ "run_id": "89cabbd2-631f-46b1-8966-abd215f5d6a7",
+ "run_status": "done",
+ "split": "test",
+ "started_at": "2026-11-16T20:35:37.620081+00:00",
+ "status": "done",
+ "system_config_hash": "38c1354659c83500cab78979070eac496bb55847b466a51e9437890c769351e5",
+ "system_id": "m6-no-quant",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 28197,
+  "cache_write_tokens": 13164,
+  "input_tokens": 14907,
+  "output_tokens": 5437
+ }
+}

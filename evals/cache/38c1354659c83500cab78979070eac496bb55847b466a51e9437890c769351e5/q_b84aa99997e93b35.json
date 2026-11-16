@@ -1,0 +1,140 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 3,
+  "numeric_valid": 0,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.2074632",
+ "error": null,
+ "finished_at": "2026-11-16T20:40:10.648064+00:00",
+ "latency_ms": 62739,
+ "prediction": {
+  "choice": "JNJ",
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percentage_points",
+  "value": "37.7211"
+ },
+ "question_id": "q_b84aa99997e93b35",
+ "question_sha": "a8c7a3559480a954e207cfb79ccc36b35b50b2b36aa7b359ddd7e6814f0c737e",
+ "raw_output": {
+  "caveats": [
+   "Net margin is net income divided by revenue, using the net income and revenue facts in the snapshot. Pfizer revenue is the 'Revenues' concept; J&J revenue is 'RevenueFromContractWithCustomerExcludingAssessedTax'.",
+   "Margins were calculated by hand from the exact fact values and rounded to four decimals.",
+   "The FY2023 values come from filings with 2026 accession numbers (0000078003-26-000026 and 0000200406-26-000016), whose source URLs carry 2025 fiscal year-end dates. Whether these figures match those in the original FY2023 10-Ks was not checked.",
+   "The fiscal years differ slightly: Pfizer's 2023 period starts 2023-01-01 and J&J's starts 2023-01-02, and both end 2023-12-31.",
+   "No filing passages were provided, so the answer does not explain the drivers of the difference."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "2952"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "2918"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2023
+    },
+    "text": "Pfizer FY2023 net margin = net income / revenue = 2,119,000,000 / 59,553,000,000 \u2248 3.56%.",
+    "ticker": "PFE",
+    "unit": "percent",
+    "value": "3.5582",
+    "value_basis": "model_arithmetic"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "2821"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "2770"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2023
+    },
+    "text": "Johnson & Johnson FY2023 net margin = net income / revenue = 35,153,000,000 / 85,159,000,000 \u2248 41.28%.",
+    "ticker": "JNJ",
+    "unit": "percent",
+    "value": "41.2793",
+    "value_basis": "model_arithmetic"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "2952"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "2918"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "2821"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "2770"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2023
+    },
+    "text": "Johnson & Johnson's FY2023 net margin was higher than Pfizer's by 41.2793% - 3.5582% \u2248 37.72 percentage points.",
+    "ticker": "JNJ",
+    "unit": "percentage_points",
+    "value": "37.7211",
+    "value_basis": "model_arithmetic"
+   }
+  ],
+  "final_claim_id": "c3",
+  "final_unit": "percentage_points",
+  "final_value": "37.7211",
+  "status": "answered",
+  "summary": "Johnson & Johnson had the higher fiscal 2023 net margin, at about 41.28% versus about 3.56% for Pfizer. That is a gap of about 37.72 percentage points."
+ },
+ "run_id": "1c5a2aee-5010-4e39-9b78-4c38c5c46c9e",
+ "run_status": "done",
+ "split": "test",
+ "started_at": "2026-11-16T20:39:07.833344+00:00",
+ "status": "done",
+ "system_config_hash": "38c1354659c83500cab78979070eac496bb55847b466a51e9437890c769351e5",
+ "system_id": "m6-no-quant",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 42367,
+  "cache_write_tokens": 18973,
+  "input_tokens": 29982,
+  "output_tokens": 9583
+ }
+}

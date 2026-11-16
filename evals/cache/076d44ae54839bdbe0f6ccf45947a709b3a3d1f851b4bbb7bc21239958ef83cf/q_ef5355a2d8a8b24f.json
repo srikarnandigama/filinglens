@@ -1,0 +1,111 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 3,
+  "numeric_valid": 3,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.0346526",
+ "error": null,
+ "finished_at": "2026-11-16T20:27:33.533617+00:00",
+ "latency_ms": 17284,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "40.074548222162"
+ },
+ "question_id": "q_ef5355a2d8a8b24f",
+ "question_sha": "045ecb4c8e636d7907c50a977a62ed29e25617cbe04afdd6b246c71cdfcde11e",
+ "raw_output": {
+  "caveats": [
+   "Operating margin is calculated as operating income divided by revenue, using the reported Q3 2025 figures from the same filing (accession 0001628280-25-047240)."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "841"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q3",
+     "fiscal_year": 2025
+    },
+    "text": "Meta's operating income for fiscal Q3 2025 (July 1 to September 30, 2025) was $20.535 billion.",
+    "ticker": "META",
+    "unit": "USD",
+    "value": "20535000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "807"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q3",
+     "fiscal_year": 2025
+    },
+    "text": "Meta's revenue for fiscal Q3 2025 was $51.242 billion.",
+    "ticker": "META",
+    "unit": "USD",
+    "value": "51242000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_1"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q3",
+     "fiscal_year": 2025
+    },
+    "text": "Meta's operating margin (operating income divided by revenue) for fiscal Q3 2025 was about 40.07%.",
+    "ticker": "META",
+    "unit": "percent",
+    "value": "40.074548222162",
+    "value_basis": "computation"
+   }
+  ],
+  "final_claim_id": "c3",
+  "final_unit": "percent",
+  "final_value": "40.074548222162",
+  "status": "answered",
+  "summary": "Meta's operating margin in fiscal Q3 2025 was about 40.07%. Operating income was $20.535 billion on revenue of $51.242 billion."
+ },
+ "run_id": "7b1ba41a-09d7-4aed-9a9d-f360dcf69225",
+ "run_status": "done",
+ "split": "test",
+ "started_at": "2026-11-16T20:27:16.189805+00:00",
+ "status": "done",
+ "system_config_hash": "076d44ae54839bdbe0f6ccf45947a709b3a3d1f851b4bbb7bc21239958ef83cf",
+ "system_id": "m6-no-verifier",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 47201,
+  "cache_write_tokens": 5857,
+  "input_tokens": 20,
+  "output_tokens": 1525
+ }
+}

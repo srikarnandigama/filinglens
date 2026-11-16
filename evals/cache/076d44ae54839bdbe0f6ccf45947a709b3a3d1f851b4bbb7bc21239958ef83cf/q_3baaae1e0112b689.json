@@ -1,0 +1,152 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 5,
+  "numeric_valid": 5,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.0510148",
+ "error": null,
+ "finished_at": "2026-11-16T20:27:50.232253+00:00",
+ "latency_ms": 16620,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD",
+  "value": "33262500000"
+ },
+ "question_id": "q_3baaae1e0112b689",
+ "question_sha": "62a91a7c20f451245b8e1ca83da80e6e559710c4bb7a7bfdc906c44f91f51eae",
+ "raw_output": {
+  "caveats": [
+   "Q4 FY2025 operating income is derived (annual $133.05 billion minus the nine-month $100.623 billion), not reported directly as a quarterly figure.",
+   "The average is a simple mean of the four quarters. Apple's fiscal quarters end on the dates in the period calendar, not on calendar quarter-ends."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "65"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q1",
+     "fiscal_year": 2025
+    },
+    "text": "Q1 FY2025 operating income was $42.832 billion.",
+    "ticker": "AAPL",
+    "unit": "USD",
+    "value": "42832000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "66"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q2",
+     "fiscal_year": 2025
+    },
+    "text": "Q2 FY2025 operating income was $29.589 billion.",
+    "ticker": "AAPL",
+    "unit": "USD",
+    "value": "29589000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "67"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q3",
+     "fiscal_year": 2025
+    },
+    "text": "Q3 FY2025 operating income was $28.202 billion.",
+    "ticker": "AAPL",
+    "unit": "USD",
+    "value": "28202000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "68"
+     }
+    ],
+    "id": "c4",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q4",
+     "fiscal_year": 2025
+    },
+    "text": "Q4 FY2025 operating income was $32.427 billion. This is a derived value: full-year operating income less the nine-month figure.",
+    "ticker": "AAPL",
+    "unit": "USD",
+    "value": "32427000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": "mean",
+      "kind": "computation",
+      "ref": "cmp_1"
+     }
+    ],
+    "id": "c5",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Average quarterly operating income across the four fiscal 2025 quarters was about $33.26 billion ($33,262,500,000).",
+    "ticker": "AAPL",
+    "unit": "USD",
+    "value": "33262500000",
+    "value_basis": "computation"
+   }
+  ],
+  "final_claim_id": "c5",
+  "final_unit": "USD",
+  "final_value": "33262500000",
+  "status": "answered",
+  "summary": "Apple's average quarterly operating income over fiscal 2025 was about $33.26 billion. This is the mean of the four quarters: Q1 $42.83 billion, Q2 $29.59 billion, Q3 $28.20 billion and Q4 $32.43 billion."
+ },
+ "run_id": "1bd6ce72-759c-49cc-ac42-5cca83e4aa5c",
+ "run_status": "done",
+ "split": "test",
+ "started_at": "2026-11-16T20:27:33.537586+00:00",
+ "status": "done",
+ "system_config_hash": "076d44ae54839bdbe0f6ccf45947a709b3a3d1f851b4bbb7bc21239958ef83cf",
+ "system_id": "m6-no-verifier",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 53348,
+  "cache_write_tokens": 10168,
+  "input_tokens": 20,
+  "output_tokens": 2022
+ }
+}

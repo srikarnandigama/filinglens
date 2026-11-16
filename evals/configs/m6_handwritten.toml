@@ -2,11 +2,12 @@
 # $4.80 + $1.00 in flight; re-projected after Phase C (D123).
 name = "m6-handwritten"
 budget = "m6"
+spent_usd = "4.644503630"  # actual spend of the finished step (D123 re-sum rule)
 split = "handwritten"
 sample = "all"
 seed = 20261109
 concurrency = 2
-spend_cap_usd = "6.00"
+spend_cap_usd = "8.50"  # D125: 1.6x the $5.25 re-projection, so all 30 finish in one run
 
 [[systems]]
 id = "m6"

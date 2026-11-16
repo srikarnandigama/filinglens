@@ -1,0 +1,131 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 4,
+  "numeric_valid": 4,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.0543627",
+ "error": null,
+ "finished_at": "2026-11-16T20:18:58.690516+00:00",
+ "latency_ms": 19501,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "16.593529952036"
+ },
+ "question_id": "q_c69effdd131da692",
+ "question_sha": "c93fdd0b591c99b81e8eacb614b7360d3c072109a3fe23fef2c2b15d832c3e75",
+ "raw_output": {
+  "caveats": [
+   "No filing passages were provided, so this answer gives the change but not management's explanation for it."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "711"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "Amazon's fiscal 2024 operating income was $68.593 billion.",
+    "ticker": "AMZN",
+    "unit": "USD",
+    "value": "68593000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "716"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Amazon's fiscal 2025 operating income was $79.975 billion.",
+    "ticker": "AMZN",
+    "unit": "USD",
+    "value": "79975000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": "value",
+      "kind": "computation",
+      "ref": "cmp_2"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Operating income increased by about $11.38 billion from fiscal 2024 to fiscal 2025.",
+    "ticker": "AMZN",
+    "unit": "USD",
+    "value": "11382000000",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_1"
+     }
+    ],
+    "id": "c4",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Amazon's operating income grew about 16.59% from fiscal 2024 to fiscal 2025.",
+    "ticker": "AMZN",
+    "unit": "percent",
+    "value": "16.593529952036",
+    "value_basis": "computation"
+   }
+  ],
+  "final_claim_id": "c4",
+  "final_unit": "percent",
+  "final_value": "16.593529952036",
+  "status": "answered",
+  "summary": "Amazon's operating income rose about 16.59% from fiscal 2024 ($68.593 billion) to fiscal 2025 ($79.975 billion), an increase of about $11.38 billion."
+ },
+ "run_id": "9f2b2b71-7d1c-4fa3-a937-6d6ab56748c0",
+ "run_status": "done",
+ "split": "test",
+ "started_at": "2026-11-16T20:18:39.160176+00:00",
+ "status": "done",
+ "system_config_hash": "52a48e08f9ef2a659803092d4f5678475241e872105c99154f86b7bbc29038a3",
+ "system_id": "m6",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 47577,
+  "cache_write_tokens": 6058,
+  "input_tokens": 6065,
+  "output_tokens": 2233
+ }
+}

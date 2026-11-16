@@ -1,0 +1,156 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 5,
+  "numeric_valid": 5,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.1130339",
+ "error": null,
+ "finished_at": "2026-11-16T20:24:32.172863+00:00",
+ "latency_ms": 33966,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD",
+  "value": "15337500000"
+ },
+ "question_id": "q_82eea7d929cbddab",
+ "question_sha": "8c217b8f9252519c887b37784748ced8937cf45752a9587b97f8abccf0659385",
+ "raw_output": {
+  "caveats": [
+   "Q4 FY2024 gross profit is derived from full-year ($61.35 billion) and nine-month ($45.958 billion) figures. JNJ did not report it directly as a quarterly value."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "2805"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q1",
+     "fiscal_year": 2024
+    },
+    "text": "JNJ Q1 FY2024 gross profit was $14.872 billion.",
+    "ticker": "JNJ",
+    "unit": "USD",
+    "value": "14872000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "2806"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q2",
+     "fiscal_year": 2024
+    },
+    "text": "JNJ Q2 FY2024 gross profit was $15.578 billion.",
+    "ticker": "JNJ",
+    "unit": "USD",
+    "value": "15578000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "2807"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q3",
+     "fiscal_year": 2024
+    },
+    "text": "JNJ Q3 FY2024 gross profit was $15.508 billion.",
+    "ticker": "JNJ",
+    "unit": "USD",
+    "value": "15508000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "2808"
+     }
+    ],
+    "id": "c4",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q4",
+     "fiscal_year": 2024
+    },
+    "text": "JNJ Q4 FY2024 gross profit was $15.392 billion. This is a derived value: full-year gross profit of $61.35 billion minus nine-month gross profit of $45.958 billion.",
+    "ticker": "JNJ",
+    "unit": "USD",
+    "value": "15392000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": "mean",
+      "kind": "computation",
+      "ref": "cmp_1"
+     },
+     {
+      "field": "value",
+      "kind": "computation",
+      "ref": "cmp_2"
+     }
+    ],
+    "id": "c5",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "The average (mean) quarterly gross profit across the four fiscal 2024 quarters was about $15.3375 billion.",
+    "ticker": "JNJ",
+    "unit": "USD",
+    "value": "15337500000",
+    "value_basis": "computation"
+   }
+  ],
+  "final_claim_id": "c5",
+  "final_unit": "USD",
+  "final_value": "15337500000",
+  "status": "answered",
+  "summary": "Johnson & Johnson's average quarterly gross profit over fiscal 2024 was about $15.34 billion. That is the mean of Q1 ($14.872 billion), Q2 ($15.578 billion), Q3 ($15.508 billion) and a derived Q4 ($15.392 billion)."
+ },
+ "run_id": "294dd170-c960-4cca-900c-176f131d9bde",
+ "run_status": "done",
+ "split": "test",
+ "started_at": "2026-11-16T20:23:58.163639+00:00",
+ "status": "done",
+ "system_config_hash": "52a48e08f9ef2a659803092d4f5678475241e872105c99154f86b7bbc29038a3",
+ "system_id": "m6",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 55854,
+  "cache_write_tokens": 11173,
+  "input_tokens": 16543,
+  "output_tokens": 4643
+ }
+}

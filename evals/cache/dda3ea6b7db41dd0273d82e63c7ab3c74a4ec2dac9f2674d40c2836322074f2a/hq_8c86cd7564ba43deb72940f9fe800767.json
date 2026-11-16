@@ -1,0 +1,163 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 0,
+  "numeric_valid": 0,
+  "text_pending_judge": [
+   {
+    "chunk_ids": [
+     "chk_ab110988915bd1748d1769dd9578c8856a6195ecd596ed837f1964b8b2b07380"
+    ],
+    "claim_id": "c4",
+    "text": "Disney said higher advertising revenue reflected a 26% increase from higher impressions, partially offset by a 12% decrease from lower rates."
+   }
+  ],
+  "text_string_supported": 3,
+  "text_total": 4,
+  "uncited": 0
+ },
+ "cost_usd": "0.064949595",
+ "error": null,
+ "finished_at": "2026-11-16T21:52:58.910404+00:00",
+ "latency_ms": 79677,
+ "prediction": {
+  "parse_ok": true,
+  "text": "Disney attributed the Direct-to-Consumer (DTC) operating income improvement in fiscal 2024 to \"improved results at Disney+\". Operating income was $143 million, against an operating loss of $2,496 million a year earlier. The MD&A gives no separate quantified bridge. It does show subscription fee and advertising revenue growth. It also shows lower non-sports content costs at Disney+.\nDisney reported that DTC operating results increased $2,639 million, to operating income of $143 million from an operating loss of $2,496 million, \"due to improved results at Disney+.\" The MD&A does not give a separate quantified bridge for the change.\nOn the cost side, Disney said the decrease in programming and production costs at Disney+ and other was attributable to lower costs for non-sports content available on Disney+. This was partially offset by higher costs for cricket programming at Disney+ Hotstar.\nOn the revenue side, Disney said subscription fee growth reflected a 10% increase from higher effective rates due to retail pricing increases and 6% from subscriber growth, partially offset by a 2% decrease from an unfavorable Foreign Exchange Impact.\nDisney said higher advertising revenue reflected a 26% increase from higher impressions, partially offset by a 12% decrease from lower rates."
+ },
+ "question_id": "hq_8c86cd7564ba43deb72940f9fe800767",
+ "question_sha": "e28cf0db6ea17488d4397a2346f92d6ea555ad0ab913495c948cc37b058af47a",
+ "raw_output": {
+  "caveats": [
+   "Management attributes the swing only to \"improved results at Disney+\". The revenue and cost drivers above are the supporting explanations in the MD&A, not a quantified attribution of the operating income change.",
+   "The DTC operating expense table chunk was not fully reviewed, so coverage of the cost drivers may be incomplete."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_68e042a888c2a543e262d2e740d40b4717b56d583e1f92493371abb0788dc0ad"
+     }
+    ],
+    "id": "c1",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "Disney reported that DTC operating results increased $2,639 million, to operating income of $143 million from an operating loss of $2,496 million, \"due to improved results at Disney+.\" The MD&A does not give a separate quantified bridge for the change.",
+    "ticker": "DIS",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_68e042a888c2a543e262d2e740d40b4717b56d583e1f92493371abb0788dc0ad"
+     }
+    ],
+    "id": "c2",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "On the cost side, Disney said the decrease in programming and production costs at Disney+ and other was attributable to lower costs for non-sports content available on Disney+. This was partially offset by higher costs for cricket programming at Disney+ Hotstar.",
+    "ticker": "DIS",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_ab110988915bd1748d1769dd9578c8856a6195ecd596ed837f1964b8b2b07380"
+     }
+    ],
+    "id": "c3",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "On the revenue side, Disney said subscription fee growth reflected a 10% increase from higher effective rates due to retail pricing increases and 6% from subscriber growth, partially offset by a 2% decrease from an unfavorable Foreign Exchange Impact.",
+    "ticker": "DIS",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_ab110988915bd1748d1769dd9578c8856a6195ecd596ed837f1964b8b2b07380"
+     }
+    ],
+    "id": "c4",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "Disney said higher advertising revenue reflected a 26% increase from higher impressions, partially offset by a 12% decrease from lower rates.",
+    "ticker": "DIS",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   }
+  ],
+  "final_claim_id": null,
+  "final_unit": null,
+  "final_value": null,
+  "status": "answered",
+  "summary": "Disney attributed the Direct-to-Consumer (DTC) operating income improvement in fiscal 2024 to \"improved results at Disney+\". Operating income was $143 million, against an operating loss of $2,496 million a year earlier. The MD&A gives no separate quantified bridge. It does show subscription fee and advertising revenue growth. It also shows lower non-sports content costs at Disney+."
+ },
+ "retrieval": {
+  "first_search": {
+   "filings:s1": [
+    "chk_47ab7d71317cc607af1946c01224a09ac07c1a13e028cd02f757d1b79cb967db",
+    "chk_1f3964a976c6b376b4fe0f5df4b06bb97f20e7675b827ccc8225abe67e7d22ce",
+    "chk_68e042a888c2a543e262d2e740d40b4717b56d583e1f92493371abb0788dc0ad",
+    "chk_2e5957816187ced4849d79ee442f5e46e2959844f9186a3c3886e4ddffcfd871",
+    "chk_da954f53ac8d321fca53b57d24ac0030030fe11c00e0b4438e0065f4bd22bede",
+    "chk_b87ee821e9a17b2dea18c19783e0873f71332bbf0b05905a2116cd232f2ebc25",
+    "chk_11df2de8f010430b6e7b7fcd97479c43b540fd781ca7d4c17a08f5fd3182f114",
+    "chk_d1b0a7a02ff27397c86eba95c9786da1660f335f7e09b254d2ca0bc52573c8f4"
+   ]
+  },
+  "seen": [
+   "chk_47ab7d71317cc607af1946c01224a09ac07c1a13e028cd02f757d1b79cb967db",
+   "chk_1f3964a976c6b376b4fe0f5df4b06bb97f20e7675b827ccc8225abe67e7d22ce",
+   "chk_68e042a888c2a543e262d2e740d40b4717b56d583e1f92493371abb0788dc0ad",
+   "chk_2e5957816187ced4849d79ee442f5e46e2959844f9186a3c3886e4ddffcfd871",
+   "chk_da954f53ac8d321fca53b57d24ac0030030fe11c00e0b4438e0065f4bd22bede",
+   "chk_b87ee821e9a17b2dea18c19783e0873f71332bbf0b05905a2116cd232f2ebc25",
+   "chk_11df2de8f010430b6e7b7fcd97479c43b540fd781ca7d4c17a08f5fd3182f114",
+   "chk_d1b0a7a02ff27397c86eba95c9786da1660f335f7e09b254d2ca0bc52573c8f4",
+   "chk_37c86d2c5aefd61c4e0a5c8cebcb0986da1f15a52261c77a354bd4d451d7c62d",
+   "chk_ab110988915bd1748d1769dd9578c8856a6195ecd596ed837f1964b8b2b07380",
+   "chk_6f383ec84eee396232b5f81115a4f8de910861824f164bc7788b4f76a01451f3"
+  ]
+ },
+ "run_id": "d8bd8f16-39cb-46e2-a4ce-4b11f070ceaf",
+ "run_status": "done",
+ "split": "handwritten",
+ "started_at": "2026-11-16T21:51:39.172279+00:00",
+ "status": "done",
+ "system_config_hash": "dda3ea6b7db41dd0273d82e63c7ab3c74a4ec2dac9f2674d40c2836322074f2a",
+ "system_id": "m6-rerank",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 61434,
+  "cache_write_tokens": 26282,
+  "input_tokens": 7493,
+  "output_tokens": 5472
+ }
+}

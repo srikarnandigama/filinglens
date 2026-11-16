@@ -1,0 +1,186 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 0,
+  "numeric_valid": 0,
+  "text_pending_judge": [],
+  "text_string_supported": 5,
+  "text_total": 5,
+  "uncited": 0
+ },
+ "cost_usd": "0.158953865",
+ "error": null,
+ "finished_at": "2026-11-16T21:31:42.475205+00:00",
+ "latency_ms": 67290,
+ "prediction": {
+  "parse_ok": true,
+  "text": "In its fiscal 2025 10-K, NVIDIA described U.S. export controls on China sales as a significant and growing risk. It said the controls require licenses for its restricted products and that it had not received any licenses to ship them to China. It said the controls have already harmed its competitive position. It also warned that further tightening could effectively exclude it from all or part of the China market. It said the effects could reach demand in other markets. NVIDIA also said it ramped new China-specific products that need no license. It said its Data Center revenue in China grew in fiscal 2025, but that revenue remains well below pre-October 2023 levels as a share of Data Center revenue.\nNVIDIA said the USG's October 2023 licensing requirements took effect immediately for shipments of A100, A800, H100, H800 and L40S products, and that \"To date, we have not received licenses to ship these restricted products to China.\" It added that Blackwell systems (GB200 NVL 72/NVL 36 and B200) also require a license for shipment to China and Country Groups D1, D4 and D5, excluding Israel.\nNVIDIA warned that export controls \"have been and may again be very broad in scope and application,\" and could prohibit it from exporting its products to any or all customers in one or more markets, including but not limited to China. It said controls on AI-related GPUs and semiconductors \"are increasingly likely to be further tightened,\" which would further restrict its ability to export even though competitors may not face similar restrictions, creating a competitive disadvantage.\nIn MD&A, NVIDIA said its competitive position has been harmed by the existing export controls and may be further harmed if the USG changes the controls. In that event it may be unable to sell its inventory of such products or develop replacement products not subject to the licensing requirements, \"effectively excluding us from all or part of the China market,\" as well as other impacted markets such as the Middle East and \"Tier 2\" countries under the AI Diffusion IFR.\nNVIDIA said the effects extend beyond China. Excessive or shifting controls may negatively impact demand for its products and services in other markets, such as Europe, Latin America and Southeast Asia, and may encourage customers to \"design-out\" certain U.S. semiconductors. Controls on data center GPUs may also reduce demand for its networking products. The possibility of additional controls has negatively impacted demand and benefits competitors offering alternatives less likely to be restricted. Controls could also disrupt its supply chain and distribution channels.\nNVIDIA said it ramped new products designed specifically for China that do not require an export control license. Its Data Center revenue in China grew in fiscal year 2025, but as a percentage of total Data Center revenue it remains well below levels seen before export controls began in October 2023."
+ },
+ "question_id": "hq_9e6c0c0dbb5941589c85ed5a923d944e",
+ "question_sha": "01dbb746f8c5773fa96ab2635131b342ab0c28db08e147e6dc2345bfe72dfeba",
+ "raw_output": {
+  "caveats": [
+   "Two Item 1A passages (on the 2022 controls and licensing process, and on competitive harm to China customers) were seen only as truncated snippets and are not quoted.",
+   "The AI Diffusion IFR passage in MD&A continues into a chunk that was not fetched."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_8863fe6f37e43efd3cc2102a12f9ac815c2348c8af02b775457e31c184d664e5"
+     },
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_7b0a60bc5941db70c3f8d9d772fa434629f04f2a172cb38a2af60b6073e3e6c0"
+     },
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_3cdb28790a3ec9b8507fc2599d8284a7c00eb1a8d477968a132acab38d1f546a"
+     }
+    ],
+    "id": "c1",
+    "kind": "textual",
+    "period": null,
+    "text": "NVIDIA said the USG's October 2023 licensing requirements took effect immediately for shipments of A100, A800, H100, H800 and L40S products, and that \"To date, we have not received licenses to ship these restricted products to China.\" It added that Blackwell systems (GB200 NVL 72/NVL 36 and B200) also require a license for shipment to China and Country Groups D1, D4 and D5, excluding Israel.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_74c219df8f97154136dda76d05bfdd82eb79c6f0ab9d042ff43ff7fc37fa7b53"
+     }
+    ],
+    "id": "c2",
+    "kind": "textual",
+    "period": null,
+    "text": "NVIDIA warned that export controls \"have been and may again be very broad in scope and application,\" and could prohibit it from exporting its products to any or all customers in one or more markets, including but not limited to China. It said controls on AI-related GPUs and semiconductors \"are increasingly likely to be further tightened,\" which would further restrict its ability to export even though competitors may not face similar restrictions, creating a competitive disadvantage.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_c0a854df962265f6f2911abbbbd630fca69e4e130fe5bd83a1a886ad0056e072"
+     }
+    ],
+    "id": "c3",
+    "kind": "textual",
+    "period": null,
+    "text": "In MD&A, NVIDIA said its competitive position has been harmed by the existing export controls and may be further harmed if the USG changes the controls. In that event it may be unable to sell its inventory of such products or develop replacement products not subject to the licensing requirements, \"effectively excluding us from all or part of the China market,\" as well as other impacted markets such as the Middle East and \"Tier 2\" countries under the AI Diffusion IFR.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_13cf546845bf1334fd6bf04663ff4abc26a1a52e2ee20030d6ff97014bbd22e9"
+     },
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_ad744f974ee528663d0a9b383ec0ee4b4d29f99bc27cc5fa76547546ded26938"
+     }
+    ],
+    "id": "c4",
+    "kind": "textual",
+    "period": null,
+    "text": "NVIDIA said the effects extend beyond China. Excessive or shifting controls may negatively impact demand for its products and services in other markets, such as Europe, Latin America and Southeast Asia, and may encourage customers to \"design-out\" certain U.S. semiconductors. Controls on data center GPUs may also reduce demand for its networking products. The possibility of additional controls has negatively impacted demand and benefits competitors offering alternatives less likely to be restricted. Controls could also disrupt its supply chain and distribution channels.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_3cdb28790a3ec9b8507fc2599d8284a7c00eb1a8d477968a132acab38d1f546a"
+     }
+    ],
+    "id": "c5",
+    "kind": "textual",
+    "period": null,
+    "text": "NVIDIA said it ramped new products designed specifically for China that do not require an export control license. Its Data Center revenue in China grew in fiscal year 2025, but as a percentage of total Data Center revenue it remains well below levels seen before export controls began in October 2023.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   }
+  ],
+  "final_claim_id": null,
+  "final_unit": null,
+  "final_value": null,
+  "status": "answered",
+  "summary": "In its fiscal 2025 10-K, NVIDIA described U.S. export controls on China sales as a significant and growing risk. It said the controls require licenses for its restricted products and that it had not received any licenses to ship them to China. It said the controls have already harmed its competitive position. It also warned that further tightening could effectively exclude it from all or part of the China market. It said the effects could reach demand in other markets. NVIDIA also said it ramped new China-specific products that need no license. It said its Data Center revenue in China grew in fiscal 2025, but that revenue remains well below pre-October 2023 levels as a share of Data Center revenue."
+ },
+ "retrieval": {
+  "first_search": {
+   "filings:s1": [
+    "chk_1ec28c3d453e74bd23ce70331081319ca35e0f3316d0911f816f49b87c1ea340",
+    "chk_13cf546845bf1334fd6bf04663ff4abc26a1a52e2ee20030d6ff97014bbd22e9",
+    "chk_9248f4410e4be27328a37aebbbd56effc72f9003f62ecb8b05eb7b85036233f2",
+    "chk_99ab0b427495b87b840404fbeb8e0386f3968a3a68e7b16b55482b30f82be95d",
+    "chk_74c219df8f97154136dda76d05bfdd82eb79c6f0ab9d042ff43ff7fc37fa7b53",
+    "chk_ad744f974ee528663d0a9b383ec0ee4b4d29f99bc27cc5fa76547546ded26938",
+    "chk_a8abfb23fd3a97dbf94ec40bcee72120226501f6d6585070e98350e1393b315e",
+    "chk_8863fe6f37e43efd3cc2102a12f9ac815c2348c8af02b775457e31c184d664e5"
+   ],
+   "filings:s2": [
+    "chk_3cdb28790a3ec9b8507fc2599d8284a7c00eb1a8d477968a132acab38d1f546a",
+    "chk_7b0a60bc5941db70c3f8d9d772fa434629f04f2a172cb38a2af60b6073e3e6c0",
+    "chk_c0a854df962265f6f2911abbbbd630fca69e4e130fe5bd83a1a886ad0056e072",
+    "chk_3bf34a12dfef523288ddaab9f110cb17b8ba5b53f5dba89f610b2851dacf3d50",
+    "chk_0ddc862fc6eee443cba56571e1c4afff75545aa969454f5224d4ee80fd1c7754",
+    "chk_f53a637008241ed56a24f093f20ec4ad931fccfc09fac054004a8b4343666b28"
+   ]
+  },
+  "seen": [
+   "chk_1ec28c3d453e74bd23ce70331081319ca35e0f3316d0911f816f49b87c1ea340",
+   "chk_13cf546845bf1334fd6bf04663ff4abc26a1a52e2ee20030d6ff97014bbd22e9",
+   "chk_9248f4410e4be27328a37aebbbd56effc72f9003f62ecb8b05eb7b85036233f2",
+   "chk_99ab0b427495b87b840404fbeb8e0386f3968a3a68e7b16b55482b30f82be95d",
+   "chk_74c219df8f97154136dda76d05bfdd82eb79c6f0ab9d042ff43ff7fc37fa7b53",
+   "chk_ad744f974ee528663d0a9b383ec0ee4b4d29f99bc27cc5fa76547546ded26938",
+   "chk_a8abfb23fd3a97dbf94ec40bcee72120226501f6d6585070e98350e1393b315e",
+   "chk_8863fe6f37e43efd3cc2102a12f9ac815c2348c8af02b775457e31c184d664e5",
+   "chk_3cdb28790a3ec9b8507fc2599d8284a7c00eb1a8d477968a132acab38d1f546a",
+   "chk_7b0a60bc5941db70c3f8d9d772fa434629f04f2a172cb38a2af60b6073e3e6c0",
+   "chk_c0a854df962265f6f2911abbbbd630fca69e4e130fe5bd83a1a886ad0056e072",
+   "chk_3bf34a12dfef523288ddaab9f110cb17b8ba5b53f5dba89f610b2851dacf3d50",
+   "chk_0ddc862fc6eee443cba56571e1c4afff75545aa969454f5224d4ee80fd1c7754",
+   "chk_f53a637008241ed56a24f093f20ec4ad931fccfc09fac054004a8b4343666b28"
+  ]
+ },
+ "run_id": "cc022bcc-5e73-4aca-aeaf-e6d0ed468e03",
+ "run_status": "done",
+ "split": "handwritten",
+ "started_at": "2026-11-16T21:30:35.061846+00:00",
+ "status": "done",
+ "system_config_hash": "52a48e08f9ef2a659803092d4f5678475241e872105c99154f86b7bbc29038a3",
+ "system_id": "m6",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 66019,
+  "cache_write_tokens": 40149,
+  "input_tokens": 25183,
+  "output_tokens": 10573
+ }
+}

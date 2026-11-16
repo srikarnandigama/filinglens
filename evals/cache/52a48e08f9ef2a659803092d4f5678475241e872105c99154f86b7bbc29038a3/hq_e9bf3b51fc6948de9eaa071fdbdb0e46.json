@@ -1,0 +1,202 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 0,
+  "numeric_valid": 0,
+  "text_pending_judge": [
+   {
+    "chunk_ids": [
+     "chk_ac40d0b888b22106ef53175cb5c3996f79aa6298dc5fb4cae00b326cb3709543"
+    ],
+    "claim_id": "c1",
+    "text": "The Hess merger had not closed as of the FY2024 10-K. Chevron said the arbitration over the Stabroek right of first refusal, filed by affiliates of Exxon and CNOOC against Hess Guyana, had delayed completion of the transaction."
+   }
+  ],
+  "text_string_supported": 4,
+  "text_total": 5,
+  "uncited": 0
+ },
+ "cost_usd": "0.090651375",
+ "error": null,
+ "finished_at": "2026-11-16T21:36:14.943818+00:00",
+ "latency_ms": 45096,
+ "prediction": {
+  "parse_ok": true,
+  "text": "As of Chevron's fiscal 2024 10-K, the Hess acquisition was still pending. Hess stockholders approved the merger on May 28, 2024. The FTC accepted a consent agreement on September 30, 2024. The Stabroek right-of-first-refusal arbitration was ongoing and had delayed completion. The merits hearing was scheduled for May 2025, with a decision expected about three months later. The 10-K reports no arbitration outcome. If the arbitration did not confirm the ROFR was inapplicable and the parties did not otherwise resolve it, the merger would not close.\nThe Hess merger had not closed as of the FY2024 10-K. Chevron said the arbitration over the Stabroek right of first refusal, filed by affiliates of Exxon and CNOOC against Hess Guyana, had delayed completion of the transaction.\nOn May 28, 2024, a majority of Hess stockholders voted to approve the merger.\nOn September 30, 2024, the FTC announced that a majority of the Commission voted to accept a consent agreement among the FTC, Chevron and Hess, resolving the concerns the FTC identified during its review. Chevron and Hess said they would keep taking steps to maintain their ability under the Hart-Scott-Rodino Act to close following satisfactory resolution of the ongoing arbitration. No Guyanese governmental body had asserted that its approval was required as of the filing date.\nHess Guyana Exploration Limited (HGEL), a wholly owned Hess subsidiary, was in arbitration over the Stabroek ROFR in an operating agreement with Exxon affiliates and CNOOC. The merits hearing was scheduled for May 2025, with a decision expected in approximately the following three months. The 10-K reports no outcome.\nChevron said an arbitration decision against Hess Guyana and in favor of Exxon Guyana and CNOOC Guyana would cause the transaction not to be completed. If the arbitration does not confirm that the ROFR is inapplicable and the parties do not otherwise agree on a resolution, a closing condition would fail and the merger would not close."
+ },
+ "question_id": "hq_e9bf3b51fc6948de9eaa071fdbdb0e46",
+ "question_sha": "63faafe5c7d04a425cca7b2c178e5c61e6d484b200fe9ad6244be0c74b800631",
+ "raw_output": {
+  "caveats": [
+   "The status reflects the 10-K as filed. Later events, including the arbitration outcome and deal closing, are not covered by this evidence.",
+   "The retrieved passages do not name the arbitral institution."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_ac40d0b888b22106ef53175cb5c3996f79aa6298dc5fb4cae00b326cb3709543"
+     }
+    ],
+    "id": "c1",
+    "kind": "textual",
+    "period": null,
+    "text": "The Hess merger had not closed as of the FY2024 10-K. Chevron said the arbitration over the Stabroek right of first refusal, filed by affiliates of Exxon and CNOOC against Hess Guyana, had delayed completion of the transaction.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_ac40d0b888b22106ef53175cb5c3996f79aa6298dc5fb4cae00b326cb3709543"
+     }
+    ],
+    "id": "c2",
+    "kind": "textual",
+    "period": null,
+    "text": "On May 28, 2024, a majority of Hess stockholders voted to approve the merger.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_ac40d0b888b22106ef53175cb5c3996f79aa6298dc5fb4cae00b326cb3709543"
+     },
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_858f588f39d4812454987d19efdfa89cd7c423b111d2e4ea500f043567ddf2ed"
+     }
+    ],
+    "id": "c3",
+    "kind": "textual",
+    "period": null,
+    "text": "On September 30, 2024, the FTC announced that a majority of the Commission voted to accept a consent agreement among the FTC, Chevron and Hess, resolving the concerns the FTC identified during its review. Chevron and Hess said they would keep taking steps to maintain their ability under the Hart-Scott-Rodino Act to close following satisfactory resolution of the ongoing arbitration. No Guyanese governmental body had asserted that its approval was required as of the filing date.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_ca4f7131571fb6cc0e22097c6667054384e46bcb74a7ad38fa888d189c1dd93c"
+     },
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_ac40d0b888b22106ef53175cb5c3996f79aa6298dc5fb4cae00b326cb3709543"
+     }
+    ],
+    "id": "c4",
+    "kind": "textual",
+    "period": null,
+    "text": "Hess Guyana Exploration Limited (HGEL), a wholly owned Hess subsidiary, was in arbitration over the Stabroek ROFR in an operating agreement with Exxon affiliates and CNOOC. The merits hearing was scheduled for May 2025, with a decision expected in approximately the following three months. The 10-K reports no outcome.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_ac40d0b888b22106ef53175cb5c3996f79aa6298dc5fb4cae00b326cb3709543"
+     },
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_ca4f7131571fb6cc0e22097c6667054384e46bcb74a7ad38fa888d189c1dd93c"
+     }
+    ],
+    "id": "c5",
+    "kind": "textual",
+    "period": null,
+    "text": "Chevron said an arbitration decision against Hess Guyana and in favor of Exxon Guyana and CNOOC Guyana would cause the transaction not to be completed. If the arbitration does not confirm that the ROFR is inapplicable and the parties do not otherwise agree on a resolution, a closing condition would fail and the merger would not close.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   }
+  ],
+  "final_claim_id": null,
+  "final_unit": null,
+  "final_value": null,
+  "status": "answered",
+  "summary": "As of Chevron's fiscal 2024 10-K, the Hess acquisition was still pending. Hess stockholders approved the merger on May 28, 2024. The FTC accepted a consent agreement on September 30, 2024. The Stabroek right-of-first-refusal arbitration was ongoing and had delayed completion. The merits hearing was scheduled for May 2025, with a decision expected about three months later. The 10-K reports no arbitration outcome. If the arbitration did not confirm the ROFR was inapplicable and the parties did not otherwise resolve it, the merger would not close."
+ },
+ "retrieval": {
+  "first_search": {
+   "filings:s1": [
+    "chk_ca4f7131571fb6cc0e22097c6667054384e46bcb74a7ad38fa888d189c1dd93c",
+    "chk_ac40d0b888b22106ef53175cb5c3996f79aa6298dc5fb4cae00b326cb3709543",
+    "chk_858f588f39d4812454987d19efdfa89cd7c423b111d2e4ea500f043567ddf2ed",
+    "chk_884e4e785292cf33a2bebb1e14e3d66f9db0dd96924449662eae73f5488edea2",
+    "chk_17cb8a2dd62faf850829fc5aaced48bcd3dd2b96cb2c0f00093867c35e6478aa",
+    "chk_9074510435f18aa190f3b0e783b63da35add5fd3ebad1f9457ad497690d87864",
+    "chk_6f6e2970699573ef85b42f514a1f62552055684aaa9fef17767eab815d4a08c2",
+    "chk_e2b79990a70730d60a710f733be21fb9555c1a3bdcbdfcdeeb7d192ec1ded412",
+    "chk_d4a63c4e0d29a0027e200f7ec651021aa56b3646cc48aaff026205d71837a8b9",
+    "chk_a0f3500b9cd68f992d68113291b000b982990efde38ab190aa48ffe8a245abc2"
+   ],
+   "filings:s2": [
+    "chk_ca4f7131571fb6cc0e22097c6667054384e46bcb74a7ad38fa888d189c1dd93c",
+    "chk_ac40d0b888b22106ef53175cb5c3996f79aa6298dc5fb4cae00b326cb3709543",
+    "chk_858f588f39d4812454987d19efdfa89cd7c423b111d2e4ea500f043567ddf2ed",
+    "chk_c2c1a49eac3399e251941b80e30c985fbef2a862addb759ab503da7201c48097",
+    "chk_ff7d604d4ffad6a5e1fb076ea2cf2be34d49159d0696b724a04aadd3cd25ba6b",
+    "chk_bd551bdc8171770d74b6b267b959f06963a425896478bade41a39b476cf80c1b",
+    "chk_9074510435f18aa190f3b0e783b63da35add5fd3ebad1f9457ad497690d87864",
+    "chk_9411c70934c54881a38ecd8b1eb0e683418b516174a47d35a25fe408ed692f6c",
+    "chk_a27cae492994cfc18ba4deffeadbf85458acfbecf7e8b6142b13b698198819f2",
+    "chk_fcff1ccf2f91ca2a2be5654bfd79151a01b7f7e01d99d69706d0d2278a66f47f"
+   ]
+  },
+  "seen": [
+   "chk_ca4f7131571fb6cc0e22097c6667054384e46bcb74a7ad38fa888d189c1dd93c",
+   "chk_ac40d0b888b22106ef53175cb5c3996f79aa6298dc5fb4cae00b326cb3709543",
+   "chk_858f588f39d4812454987d19efdfa89cd7c423b111d2e4ea500f043567ddf2ed",
+   "chk_c2c1a49eac3399e251941b80e30c985fbef2a862addb759ab503da7201c48097",
+   "chk_ff7d604d4ffad6a5e1fb076ea2cf2be34d49159d0696b724a04aadd3cd25ba6b",
+   "chk_bd551bdc8171770d74b6b267b959f06963a425896478bade41a39b476cf80c1b",
+   "chk_9074510435f18aa190f3b0e783b63da35add5fd3ebad1f9457ad497690d87864",
+   "chk_9411c70934c54881a38ecd8b1eb0e683418b516174a47d35a25fe408ed692f6c",
+   "chk_a27cae492994cfc18ba4deffeadbf85458acfbecf7e8b6142b13b698198819f2",
+   "chk_fcff1ccf2f91ca2a2be5654bfd79151a01b7f7e01d99d69706d0d2278a66f47f",
+   "chk_884e4e785292cf33a2bebb1e14e3d66f9db0dd96924449662eae73f5488edea2",
+   "chk_17cb8a2dd62faf850829fc5aaced48bcd3dd2b96cb2c0f00093867c35e6478aa",
+   "chk_6f6e2970699573ef85b42f514a1f62552055684aaa9fef17767eab815d4a08c2",
+   "chk_e2b79990a70730d60a710f733be21fb9555c1a3bdcbdfcdeeb7d192ec1ded412",
+   "chk_d4a63c4e0d29a0027e200f7ec651021aa56b3646cc48aaff026205d71837a8b9",
+   "chk_a0f3500b9cd68f992d68113291b000b982990efde38ab190aa48ffe8a245abc2"
+  ]
+ },
+ "run_id": "6bd03dde-efdd-40e4-a3bf-c391717eca1f",
+ "run_status": "done",
+ "split": "handwritten",
+ "started_at": "2026-11-16T21:35:29.769229+00:00",
+ "status": "done",
+ "system_config_hash": "52a48e08f9ef2a659803092d4f5678475241e872105c99154f86b7bbc29038a3",
+ "system_id": "m6",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 94219,
+  "cache_write_tokens": 42586,
+  "input_tokens": 11297,
+  "output_tokens": 9201
+ }
+}

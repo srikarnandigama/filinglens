@@ -1,0 +1,117 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 3,
+  "numeric_valid": 2,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.0837446",
+ "error": null,
+ "finished_at": "2026-11-16T20:39:35.032228+00:00",
+ "latency_ms": 30358,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "10.16858"
+ },
+ "question_id": "q_e2c722dfe2d02437",
+ "question_sha": "54524c2a62604d77e628f76f27ef72993eba4746686a46d72ccdd40eb1e6e23a",
+ "raw_output": {
+  "caveats": [
+   "The percent change was computed manually from the two reported annual cost of revenue facts; no calculation tool was used.",
+   "No filing passages were provided, so no management explanation for the change is included."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3353"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2025
+    },
+    "text": "Costco's cost of revenue for fiscal 2025 was $239.886 billion.",
+    "ticker": "COST",
+    "unit": "USD",
+    "value": "239886000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3358"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2026
+    },
+    "text": "Costco's cost of revenue for fiscal 2026 was $264.279 billion.",
+    "ticker": "COST",
+    "unit": "USD",
+    "value": "264279000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3353"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3358"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2026
+    },
+    "text": "Percent change = (264,279,000,000 - 239,886,000,000) / 239,886,000,000 \u00d7 100 = 24,393,000,000 / 239,886,000,000 \u00d7 100 \u2248 10.17% increase.",
+    "ticker": "COST",
+    "unit": "percent",
+    "value": "10.16858",
+    "value_basis": "model_arithmetic"
+   }
+  ],
+  "final_claim_id": "c3",
+  "final_unit": "percent",
+  "final_value": "10.16858",
+  "status": "answered",
+  "summary": "Costco's cost of revenue rose about 10.17%, from $239.886 billion in fiscal 2025 to $264.279 billion in fiscal 2026."
+ },
+ "run_id": "a1e6d735-05fa-4507-840b-ff08136c8c71",
+ "run_status": "done",
+ "split": "test",
+ "started_at": "2026-11-16T20:39:04.604004+00:00",
+ "status": "done",
+ "system_config_hash": "38c1354659c83500cab78979070eac496bb55847b466a51e9437890c769351e5",
+ "system_id": "m6-no-quant",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 28286,
+  "cache_write_tokens": 7948,
+  "input_tokens": 9528,
+  "output_tokens": 4199
+ }
+}

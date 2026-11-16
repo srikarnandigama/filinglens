@@ -1,0 +1,71 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 1,
+  "numeric_valid": 1,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.0213501",
+ "error": null,
+ "finished_at": "2026-11-16T20:27:13.682943+00:00",
+ "latency_ms": 6866,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "USD",
+  "value": "95723000000"
+ },
+ "question_id": "q_60df7e50a5af2548",
+ "question_sha": "0cfe79e1662670ef3c2448c2d9bc0c0e80122cefc34802f6d08a2148e4fbe547",
+ "raw_output": {
+  "caveats": [
+   "The Q4 value is derived (full-year revenue minus the 36-week year-to-date revenue), not reported directly as a standalone quarter."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3342"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q4",
+     "fiscal_year": 2026
+    },
+    "text": "Costco's total revenue for fiscal Q4 2026 (2026-05-11 to 2026-08-30) was about $95.72 billion, derived as fiscal-year revenue of $303.154 billion minus the first three quarters' revenue of $207.431 billion.",
+    "ticker": "COST",
+    "unit": "USD",
+    "value": "95723000000",
+    "value_basis": "fact"
+   }
+  ],
+  "final_claim_id": "c1",
+  "final_unit": "USD",
+  "final_value": "95723000000",
+  "status": "answered",
+  "summary": "Costco's total revenue in fiscal Q4 2026 (May 11 to August 30, 2026) was $95.723 billion. This figure is derived from annual and nine-month figures."
+ },
+ "run_id": "ecc0fd9d-8e47-4f83-bf91-c2456ae0dd9c",
+ "run_status": "done",
+ "split": "test",
+ "started_at": "2026-11-16T20:27:06.745471+00:00",
+ "status": "done",
+ "system_config_hash": "076d44ae54839bdbe0f6ccf45947a709b3a3d1f851b4bbb7bc21239958ef83cf",
+ "system_id": "m6-no-verifier",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 18526,
+  "cache_write_tokens": 4615,
+  "input_tokens": 10,
+  "output_tokens": 794
+ }
+}

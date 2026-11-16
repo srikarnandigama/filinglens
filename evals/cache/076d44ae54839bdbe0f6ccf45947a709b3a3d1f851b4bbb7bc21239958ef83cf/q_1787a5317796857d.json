@@ -1,0 +1,132 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 3,
+  "numeric_valid": 3,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.0633715",
+ "error": null,
+ "finished_at": "2026-11-16T20:27:16.184834+00:00",
+ "latency_ms": 20504,
+ "prediction": {
+  "choice": "GOOGL",
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percentage_points",
+  "value": "12.952418557895"
+ },
+ "question_id": "q_1787a5317796857d",
+ "question_sha": "2e11f6bfd0e885a80fa8971cdf0aeefae1575a1dbb199132260c4372fb9a439e",
+ "raw_output": {
+  "caveats": [
+   "The two companies' fiscal years end on different dates. Disney's FY2023 ended 2023-09-30 and Alphabet's ended 2023-12-31.",
+   "Operating margin is operating income divided by reported revenue."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_1"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3880"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3862"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2023
+    },
+    "text": "Disney's FY2023 operating margin (operating income $12.863 billion on revenue of $88.898 billion) was about 14.47%.",
+    "ticker": "DIS",
+    "unit": "percent",
+    "value": "14.469391887332",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value_pct",
+      "kind": "computation",
+      "ref": "cmp_2"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "545"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "511"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2023
+    },
+    "text": "Alphabet's FY2023 operating margin (operating income $84.293 billion on revenue of $307.394 billion) was about 27.42%.",
+    "ticker": "GOOGL",
+    "unit": "percent",
+    "value": "27.421810445227",
+    "value_basis": "computation"
+   },
+   {
+    "citations": [
+     {
+      "field": "value",
+      "kind": "computation",
+      "ref": "cmp_3"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2023
+    },
+    "text": "Alphabet's operating margin exceeded Disney's by about 12.95 percentage points in fiscal 2023.",
+    "ticker": "GOOGL",
+    "unit": "percentage_points",
+    "value": "12.952418557895",
+    "value_basis": "computation"
+   }
+  ],
+  "final_claim_id": "c3",
+  "final_unit": "percentage_points",
+  "final_value": "12.952418557895",
+  "status": "answered",
+  "summary": "Alphabet had the higher fiscal 2023 operating margin: about 27.4%, against about 14.5% for Disney. That is a gap of about 12.95 percentage points."
+ },
+ "run_id": "c4a3cd41-d9b2-42c8-b4c5-332c48f8ee5e",
+ "run_status": "done",
+ "split": "test",
+ "started_at": "2026-11-16T20:26:55.616811+00:00",
+ "status": "done",
+ "system_config_hash": "076d44ae54839bdbe0f6ccf45947a709b3a3d1f851b4bbb7bc21239958ef83cf",
+ "system_id": "m6-no-verifier",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 71800,
+  "cache_write_tokens": 11891,
+  "input_tokens": 22,
+  "output_tokens": 2642
+ }
+}

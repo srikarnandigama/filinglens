@@ -1,0 +1,118 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 3,
+  "numeric_valid": 2,
+  "text_pending_judge": [],
+  "text_string_supported": 0,
+  "text_total": 0,
+  "uncited": 0
+ },
+ "cost_usd": "0.1181061",
+ "error": null,
+ "finished_at": "2026-11-16T20:34:05.730249+00:00",
+ "latency_ms": 34457,
+ "prediction": {
+  "choice": null,
+  "parse_error": null,
+  "parse_ok": true,
+  "status": "answered",
+  "unit": "percent",
+  "value": "57.2864"
+ },
+ "question_id": "q_bdb92b01c2693e31",
+ "question_sha": "55b497685202092d401c84758981adbd6a7c8b334b6a7c728cfcf7fe0df32afc",
+ "raw_output": {
+  "caveats": [
+   "Q4 gross profit and revenue are derived values (full-year figures minus nine-month year-to-date figures), not directly reported quarterly figures.",
+   "The full-year inputs come from accession 0001628280-26-010047, while the nine-month inputs come from accession 0000021344-24-000060.",
+   "The margin was computed manually from the two cited facts and rounded to four decimal places."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3490"
+     }
+    ],
+    "id": "c1",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q4",
+     "fiscal_year": 2023
+    },
+    "text": "KO derived Q4 2023 gross profit was $6.215 billion (FY2023 gross profit of $27.234 billion minus the nine-month figure of $21.019 billion).",
+    "ticker": "KO",
+    "unit": "USD",
+    "value": "6215000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3458"
+     }
+    ],
+    "id": "c2",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q4",
+     "fiscal_year": 2023
+    },
+    "text": "KO derived Q4 2023 revenue was $10.849 billion (FY2023 revenue of $45.754 billion minus the nine-month figure of $34.905 billion).",
+    "ticker": "KO",
+    "unit": "USD",
+    "value": "10849000000",
+    "value_basis": "fact"
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3490"
+     },
+     {
+      "field": null,
+      "kind": "fact",
+      "ref": "3458"
+     }
+    ],
+    "id": "c3",
+    "kind": "numeric",
+    "period": {
+     "fiscal_period": "Q4",
+     "fiscal_year": 2023
+    },
+    "text": "Gross margin = gross profit / revenue = 6,215,000,000 / 10,849,000,000 \u2248 57.29%.",
+    "ticker": "KO",
+    "unit": "percent",
+    "value": "57.2864",
+    "value_basis": "model_arithmetic"
+   }
+  ],
+  "final_claim_id": "c3",
+  "final_unit": "percent",
+  "final_value": "57.2864",
+  "status": "answered",
+  "summary": "Coca-Cola's derived fiscal Q4 2023 gross margin was about 57.29%, which is gross profit of $6.215 billion divided by revenue of $10.849 billion."
+ },
+ "run_id": "4543baeb-8fd6-4bec-b87f-ef884bec79b4",
+ "run_status": "done",
+ "split": "test",
+ "started_at": "2026-11-16T20:33:31.200583+00:00",
+ "status": "done",
+ "system_config_hash": "38c1354659c83500cab78979070eac496bb55847b466a51e9437890c769351e5",
+ "system_id": "m6-no-quant",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 31526,
+  "cache_write_tokens": 9699,
+  "input_tokens": 20683,
+  "output_tokens": 4934
+ }
+}

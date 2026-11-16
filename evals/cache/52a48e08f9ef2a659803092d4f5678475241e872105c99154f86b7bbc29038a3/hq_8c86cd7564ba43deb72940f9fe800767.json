@@ -1,0 +1,177 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 0,
+  "numeric_valid": 0,
+  "text_pending_judge": [],
+  "text_string_supported": 5,
+  "text_total": 5,
+  "uncited": 0
+ },
+ "cost_usd": "0.074126505",
+ "error": null,
+ "finished_at": "2026-11-16T21:30:35.060192+00:00",
+ "latency_ms": 39635,
+ "prediction": {
+  "parse_ok": true,
+  "text": "Disney attributed the Direct-to-Consumer (DTC) improvement to \"improved results at Disney+\". Operating results rose $2,639 million, to operating income of $143 million from an operating loss of $2,496 million. Disney's cost explanation was lower non-sports content costs at Disney+, partly offset by higher cricket programming costs at Disney+ Hotstar. Higher marketing and labor costs partly offset the gain, and higher retail pricing lifted domestic Disney+ average monthly revenue per paid subscriber from $6.97 to $7.89.\nDisney's MD&A said DTC operating results increased $2,639 million, to operating income of $143 million from an operating loss of $2,496 million, \"due to improved results at Disney+.\"\nDisney attributed the decrease in programming and production costs at Disney+ and other to lower costs for non-sports content available on Disney+, partially offset by higher costs for cricket programming at Disney+ Hotstar.\nPartly offsetting the improvement, DTC selling, general, administrative and other costs increased $406 million, to $4,574 million from $4,168 million, primarily attributable to increases in marketing and labor costs.\nOn the revenue side, Disney said domestic Disney+ average monthly revenue per paid subscriber increased from $6.97 to $7.89 due to higher retail pricing, partially offset by a higher mix of subscribers to wholesale offerings.\nAt the segment level, Disney said the increase in Entertainment operating income was due to improved results at Direct-to-Consumer and, to a lesser extent, Content Sales/Licensing and Other, partially offset by a decrease at Linear Networks."
+ },
+ "question_id": "hq_8c86cd7564ba43deb72940f9fe800767",
+ "question_sha": "e28cf0db6ea17488d4397a2346f92d6ea555ad0ab913495c948cc37b058af47a",
+ "raw_output": {
+  "caveats": [
+   "The retrieved MD&A text gives a high-level attribution (improved Disney+ results) and no further itemized breakdown of the operating income change.",
+   "The revenue per subscriber passage is context. The filing text retrieved does not explicitly tie it to the DTC operating income change."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_68e042a888c2a543e262d2e740d40b4717b56d583e1f92493371abb0788dc0ad"
+     }
+    ],
+    "id": "c1",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "Disney's MD&A said DTC operating results increased $2,639 million, to operating income of $143 million from an operating loss of $2,496 million, \"due to improved results at Disney+.\"",
+    "ticker": "DIS",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_68e042a888c2a543e262d2e740d40b4717b56d583e1f92493371abb0788dc0ad"
+     }
+    ],
+    "id": "c2",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "Disney attributed the decrease in programming and production costs at Disney+ and other to lower costs for non-sports content available on Disney+, partially offset by higher costs for cricket programming at Disney+ Hotstar.",
+    "ticker": "DIS",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_68e042a888c2a543e262d2e740d40b4717b56d583e1f92493371abb0788dc0ad"
+     }
+    ],
+    "id": "c3",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "Partly offsetting the improvement, DTC selling, general, administrative and other costs increased $406 million, to $4,574 million from $4,168 million, primarily attributable to increases in marketing and labor costs.",
+    "ticker": "DIS",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_6f383ec84eee396232b5f81115a4f8de910861824f164bc7788b4f76a01451f3"
+     }
+    ],
+    "id": "c4",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "On the revenue side, Disney said domestic Disney+ average monthly revenue per paid subscriber increased from $6.97 to $7.89 due to higher retail pricing, partially offset by a higher mix of subscribers to wholesale offerings.",
+    "ticker": "DIS",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_2e5957816187ced4849d79ee442f5e46e2959844f9186a3c3886e4ddffcfd871"
+     }
+    ],
+    "id": "c5",
+    "kind": "textual",
+    "period": {
+     "fiscal_period": "FY",
+     "fiscal_year": 2024
+    },
+    "text": "At the segment level, Disney said the increase in Entertainment operating income was due to improved results at Direct-to-Consumer and, to a lesser extent, Content Sales/Licensing and Other, partially offset by a decrease at Linear Networks.",
+    "ticker": "DIS",
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   }
+  ],
+  "final_claim_id": null,
+  "final_unit": null,
+  "final_value": null,
+  "status": "answered",
+  "summary": "Disney attributed the Direct-to-Consumer (DTC) improvement to \"improved results at Disney+\". Operating results rose $2,639 million, to operating income of $143 million from an operating loss of $2,496 million. Disney's cost explanation was lower non-sports content costs at Disney+, partly offset by higher cricket programming costs at Disney+ Hotstar. Higher marketing and labor costs partly offset the gain, and higher retail pricing lifted domestic Disney+ average monthly revenue per paid subscriber from $6.97 to $7.89."
+ },
+ "retrieval": {
+  "first_search": {
+   "filings:s1": [
+    "chk_2e5957816187ced4849d79ee442f5e46e2959844f9186a3c3886e4ddffcfd871",
+    "chk_da954f53ac8d321fca53b57d24ac0030030fe11c00e0b4438e0065f4bd22bede",
+    "chk_b87ee821e9a17b2dea18c19783e0873f71332bbf0b05905a2116cd232f2ebc25",
+    "chk_68e042a888c2a543e262d2e740d40b4717b56d583e1f92493371abb0788dc0ad",
+    "chk_1f3964a976c6b376b4fe0f5df4b06bb97f20e7675b827ccc8225abe67e7d22ce",
+    "chk_47ab7d71317cc607af1946c01224a09ac07c1a13e028cd02f757d1b79cb967db",
+    "chk_d1b0a7a02ff27397c86eba95c9786da1660f335f7e09b254d2ca0bc52573c8f4",
+    "chk_11df2de8f010430b6e7b7fcd97479c43b540fd781ca7d4c17a08f5fd3182f114"
+   ]
+  },
+  "seen": [
+   "chk_2e5957816187ced4849d79ee442f5e46e2959844f9186a3c3886e4ddffcfd871",
+   "chk_da954f53ac8d321fca53b57d24ac0030030fe11c00e0b4438e0065f4bd22bede",
+   "chk_b87ee821e9a17b2dea18c19783e0873f71332bbf0b05905a2116cd232f2ebc25",
+   "chk_68e042a888c2a543e262d2e740d40b4717b56d583e1f92493371abb0788dc0ad",
+   "chk_1f3964a976c6b376b4fe0f5df4b06bb97f20e7675b827ccc8225abe67e7d22ce",
+   "chk_47ab7d71317cc607af1946c01224a09ac07c1a13e028cd02f757d1b79cb967db",
+   "chk_d1b0a7a02ff27397c86eba95c9786da1660f335f7e09b254d2ca0bc52573c8f4",
+   "chk_11df2de8f010430b6e7b7fcd97479c43b540fd781ca7d4c17a08f5fd3182f114",
+   "chk_6f383ec84eee396232b5f81115a4f8de910861824f164bc7788b4f76a01451f3",
+   "chk_a8456e833273de8d0a9695c30359602b8c4aa6704c27bdb36bb5b6835e6dcdef",
+   "chk_0f50bafe6fff22a55fe50d6f8a2cbb4d5a4f2547c1f8f998130fd664bf2dc661",
+   "chk_37c86d2c5aefd61c4e0a5c8cebcb0986da1f15a52261c77a354bd4d451d7c62d",
+   "chk_ec9600d3fecfc267beff95b2da9c4a8cef613cda1a7e158d926b867ee682be84"
+  ]
+ },
+ "run_id": "8067b334-61e2-423f-85ff-b42916068bbc",
+ "run_status": "done",
+ "split": "handwritten",
+ "started_at": "2026-11-16T21:29:55.351062+00:00",
+ "status": "done",
+ "system_config_hash": "52a48e08f9ef2a659803092d4f5678475241e872105c99154f86b7bbc29038a3",
+ "system_id": "m6",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 63600,
+  "cache_write_tokens": 28808,
+  "input_tokens": 8975,
+  "output_tokens": 5804
+ }
+}

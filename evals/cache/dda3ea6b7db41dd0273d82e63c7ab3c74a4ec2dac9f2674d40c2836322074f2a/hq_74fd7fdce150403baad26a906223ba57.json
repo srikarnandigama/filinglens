@@ -1,0 +1,329 @@
+{
+ "attempts": 1,
+ "citations": {
+  "numeric_total": 0,
+  "numeric_valid": 0,
+  "text_pending_judge": [
+   {
+    "chunk_ids": [
+     "chk_f5c52cf4492538ce8d606556c71b3253546b688b8655c2639cd427b794f6c41d"
+    ],
+    "claim_id": "c1",
+    "text": "Chevron says crude oil, natural gas and NGL prices are the most significant factor affecting its results, and describes itself as primarily in a commodities business with a history of price volatility."
+   },
+   {
+    "chunk_ids": [
+     "chk_0e523044c9af7bb7e158644edc421f59f5641dc23815d8ab97b1c6054653900f"
+    ],
+    "claim_id": "c14",
+    "text": "The Q2 2026 10-Q says its risk factors do not differ materially from those in the 2025 Form 10-K. The low-price risk language therefore comes from the 2025 10-K."
+   }
+  ],
+  "text_string_supported": 9,
+  "text_total": 11,
+  "uncited": 0
+ },
+ "cost_usd": "0.196380635",
+ "error": null,
+ "finished_at": "2026-11-16T21:51:39.170058+00:00",
+ "latency_ms": 147253,
+ "prediction": {
+  "parse_ok": true,
+  "text": "Chevron says crude oil, natural gas and NGL prices are the most significant factor affecting its results, and describes itself as primarily in a commodities business with a history of price volatility. Chevron states that extended periods of low prices or demand for crude oil, natural gas and NGLs have had, and in the future can have, a material adverse impact on its results of operations, financial condition and liquidity. It says upstream earnings, cash flows and capital expenditure programs, as well as production and proved reserves, could be negatively affected, and upstream assets may become impaired. Chevron warns that a significant or sustained decline in liquidity could adversely affect its credit ratings, potentially increase financing costs and reduce access to capital markets. Management says periods of sustained lower commodity prices could result in the impairment or write-off of specific assets. They could also cause the company to adjust operating expenses, including employee reductions, and capital expenditures, along with other measures intended to improve financial performance. Chevron says a significant downward revision in its crude oil, NGL or natural gas price outlook would trigger impairment reviews for the affected upstream assets. Chevron says upstream earnings depend mostly on the profitability of the upstream segment. The most significant factor for that segment is the price of crude oil, which is set in global markets outside the company's control. In the Q2 2026 10-Q, Chevron says that for every dollar change in Brent crude oil prices, its annual after-tax earnings and cash flow sensitivity is approximately $600 million. In 2025, U.S. upstream earnings decreased by $1.8 billion, primarily due to lower liquids realizations of $2.4 billion and higher operating expenses and DD&A, partly offset by higher sales volumes. Chevron attributed the 2025 operating cash flow increase to higher cash distributions from TCO and contributions from legacy Hess assets, which more than offset the impact of lower commodity prices. During Q2 2026, Chevron said it achieved its structural cost reduction target six months early by capturing $3 billion in annual run-rate savings. The Q2 2026 10-Q says its risk factors do not differ materially from those in the 2025 Form 10-K. The low-price risk language therefore comes from the 2025 10-K.\nChevron says crude oil, natural gas and NGL prices are the most significant factor affecting its results, and describes itself as primarily in a commodities business with a history of price volatility.\nChevron states that extended periods of low prices or demand for crude oil, natural gas and NGLs have had, and in the future can have, a material adverse impact on its results of operations, financial condition and liquidity. It says upstream earnings, cash flows and capital expenditure programs, as well as production and proved reserves, could be negatively affected, and upstream assets may become impaired.\nChevron warns that a significant or sustained decline in liquidity could adversely affect its credit ratings, potentially increase financing costs and reduce access to capital markets.\nManagement says periods of sustained lower commodity prices could result in the impairment or write-off of specific assets. They could also cause the company to adjust operating expenses, including employee reductions, and capital expenditures, along with other measures intended to improve financial performance.\nChevron says a significant downward revision in its crude oil, NGL or natural gas price outlook would trigger impairment reviews for the affected upstream assets.\nChevron says upstream earnings depend mostly on the profitability of the upstream segment. The most significant factor for that segment is the price of crude oil, which is set in global markets outside the company's control.\nIn the Q2 2026 10-Q, Chevron says that for every dollar change in Brent crude oil prices, its annual after-tax earnings and cash flow sensitivity is approximately $600 million.\nIn 2025, U.S. upstream earnings decreased by $1.8 billion, primarily due to lower liquids realizations of $2.4 billion and higher operating expenses and DD&A, partly offset by higher sales volumes.\nChevron attributed the 2025 operating cash flow increase to higher cash distributions from TCO and contributions from legacy Hess assets, which more than offset the impact of lower commodity prices.\nDuring Q2 2026, Chevron said it achieved its structural cost reduction target six months early by capturing $3 billion in annual run-rate savings.\nThe Q2 2026 10-Q says its risk factors do not differ materially from those in the 2025 Form 10-K. The low-price risk language therefore comes from the 2025 10-K."
+ },
+ "question_id": "hq_74fd7fdce150403baad26a906223ba57",
+ "question_sha": "f1fd177c38094a9274160149ef07c9e6a33f992661a9ddd27ed7780e376de372",
+ "raw_output": {
+  "caveats": [
+   "The filings describe the effects of sustained low prices only qualitatively. They give no price threshold, no dollar amount for impairments, no dividend discussion, and no capital budget cut in the retrieved passages.",
+   "The Brent sensitivity of about $600 million per $1 comes from the Q2 2026 10-Q. That filing covers a higher-price period (Brent averaged $92 in H1 2026 vs. $72 in H1 2025), so it does not describe an actual prolonged low-price period.",
+   "The FY2023\u2013FY2025 changes in revenue, net income and cash flow reflect many factors, including the Hess acquisition and TCO distributions. They are not a pure measure of oil-price sensitivity.",
+   "Some retrieved passages had quotes dropped during verification, so passage coverage is incomplete.",
+   "3 claims could not be verified and were removed.",
+   "Summary rewritten from verified claims."
+  ],
+  "claims": [
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_f5c52cf4492538ce8d606556c71b3253546b688b8655c2639cd427b794f6c41d"
+     }
+    ],
+    "id": "c1",
+    "kind": "textual",
+    "period": null,
+    "text": "Chevron says crude oil, natural gas and NGL prices are the most significant factor affecting its results, and describes itself as primarily in a commodities business with a history of price volatility.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_a95bbaa56c0d962ad7662eef4f6d5741777bd2b33dd216693e9d656b6b689e7b"
+     }
+    ],
+    "id": "c2",
+    "kind": "textual",
+    "period": null,
+    "text": "Chevron states that extended periods of low prices or demand for crude oil, natural gas and NGLs have had, and in the future can have, a material adverse impact on its results of operations, financial condition and liquidity. It says upstream earnings, cash flows and capital expenditure programs, as well as production and proved reserves, could be negatively affected, and upstream assets may become impaired.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_a95bbaa56c0d962ad7662eef4f6d5741777bd2b33dd216693e9d656b6b689e7b"
+     }
+    ],
+    "id": "c3",
+    "kind": "textual",
+    "period": null,
+    "text": "Chevron warns that a significant or sustained decline in liquidity could adversely affect its credit ratings, potentially increase financing costs and reduce access to capital markets.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_91f83a98644fb7724d8b8efb0c15eb6fc15ed23e65e3e9839350e173c7ceab04"
+     },
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_87b84bb7b097ef9e9d2cc8dc33f38d01740607ed4ffe99bf1f8cf52bdb84b9ef"
+     }
+    ],
+    "id": "c4",
+    "kind": "textual",
+    "period": null,
+    "text": "Management says periods of sustained lower commodity prices could result in the impairment or write-off of specific assets. They could also cause the company to adjust operating expenses, including employee reductions, and capital expenditures, along with other measures intended to improve financial performance.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_cfc653466228b2c4b81db4edca23a5099fe37dd665434bc5daf4c5e38dd9753c"
+     }
+    ],
+    "id": "c5",
+    "kind": "textual",
+    "period": null,
+    "text": "Chevron says a significant downward revision in its crude oil, NGL or natural gas price outlook would trigger impairment reviews for the affected upstream assets.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_c44b39db97bea866aa2cc548813bd2c35d8e1dfd31c58bf560d9add94df432bd"
+     }
+    ],
+    "id": "c6",
+    "kind": "textual",
+    "period": null,
+    "text": "Chevron says upstream earnings depend mostly on the profitability of the upstream segment. The most significant factor for that segment is the price of crude oil, which is set in global markets outside the company's control.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_65ac27d6c03943393ad90d12f5f3556a62ce294a02870ddf9faa501b6adeefbc"
+     }
+    ],
+    "id": "c7",
+    "kind": "textual",
+    "period": null,
+    "text": "In the Q2 2026 10-Q, Chevron says that for every dollar change in Brent crude oil prices, its annual after-tax earnings and cash flow sensitivity is approximately $600 million.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_a487b00369e8bf0b6812be339adcc40e7785e88c0417e24fffad48605b5dd2ef"
+     }
+    ],
+    "id": "c8",
+    "kind": "textual",
+    "period": null,
+    "text": "In 2025, U.S. upstream earnings decreased by $1.8 billion, primarily due to lower liquids realizations of $2.4 billion and higher operating expenses and DD&A, partly offset by higher sales volumes.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_60ae56b154502cadd8400e4d0803bde8268e4985767c7617172e812b18e6bbd6"
+     }
+    ],
+    "id": "c12",
+    "kind": "textual",
+    "period": null,
+    "text": "Chevron attributed the 2025 operating cash flow increase to higher cash distributions from TCO and contributions from legacy Hess assets, which more than offset the impact of lower commodity prices.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_b2e4f6dba81c982385c9cc10295adf299021148a89a5f782ff8ede5c3313681d"
+     }
+    ],
+    "id": "c13",
+    "kind": "textual",
+    "period": null,
+    "text": "During Q2 2026, Chevron said it achieved its structural cost reduction target six months early by capturing $3 billion in annual run-rate savings.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   },
+   {
+    "citations": [
+     {
+      "field": null,
+      "kind": "chunk",
+      "ref": "chk_0e523044c9af7bb7e158644edc421f59f5641dc23815d8ab97b1c6054653900f"
+     }
+    ],
+    "id": "c14",
+    "kind": "textual",
+    "period": null,
+    "text": "The Q2 2026 10-Q says its risk factors do not differ materially from those in the 2025 Form 10-K. The low-price risk language therefore comes from the 2025 10-K.",
+    "ticker": null,
+    "unit": null,
+    "value": null,
+    "value_basis": null
+   }
+  ],
+  "final_claim_id": null,
+  "final_unit": null,
+  "final_value": null,
+  "status": "partially_answered",
+  "summary": "Chevron says crude oil, natural gas and NGL prices are the most significant factor affecting its results, and describes itself as primarily in a commodities business with a history of price volatility. Chevron states that extended periods of low prices or demand for crude oil, natural gas and NGLs have had, and in the future can have, a material adverse impact on its results of operations, financial condition and liquidity. It says upstream earnings, cash flows and capital expenditure programs, as well as production and proved reserves, could be negatively affected, and upstream assets may become impaired. Chevron warns that a significant or sustained decline in liquidity could adversely affect its credit ratings, potentially increase financing costs and reduce access to capital markets. Management says periods of sustained lower commodity prices could result in the impairment or write-off of specific assets. They could also cause the company to adjust operating expenses, including employee reductions, and capital expenditures, along with other measures intended to improve financial performance. Chevron says a significant downward revision in its crude oil, NGL or natural gas price outlook would trigger impairment reviews for the affected upstream assets. Chevron says upstream earnings depend mostly on the profitability of the upstream segment. The most significant factor for that segment is the price of crude oil, which is set in global markets outside the company's control. In the Q2 2026 10-Q, Chevron says that for every dollar change in Brent crude oil prices, its annual after-tax earnings and cash flow sensitivity is approximately $600 million. In 2025, U.S. upstream earnings decreased by $1.8 billion, primarily due to lower liquids realizations of $2.4 billion and higher operating expenses and DD&A, partly offset by higher sales volumes. Chevron attributed the 2025 operating cash flow increase to higher cash distributions from TCO and contributions from legacy Hess assets, which more than offset the impact of lower commodity prices. During Q2 2026, Chevron said it achieved its structural cost reduction target six months early by capturing $3 billion in annual run-rate savings. The Q2 2026 10-Q says its risk factors do not differ materially from those in the 2025 Form 10-K. The low-price risk language therefore comes from the 2025 10-K."
+ },
+ "retrieval": {
+  "first_search": {
+   "filings:s1": [
+    "chk_a95bbaa56c0d962ad7662eef4f6d5741777bd2b33dd216693e9d656b6b689e7b",
+    "chk_5aafcff01c9095095871051a8145612adaaa7fccc4542d921bebdd473a5bf5c6",
+    "chk_2e2628d4e9431c152f30b6c0a3f90ead7130b101d489964dff6dabd01658fcb1",
+    "chk_f5c52cf4492538ce8d606556c71b3253546b688b8655c2639cd427b794f6c41d",
+    "chk_f2e5261eace55d88cc153f25bc32d9960cbc160dd3d69099570becf4d0fe72d0",
+    "chk_a6d75a5d586cff0ee9005f8a1a08641fdfa3b8b39307ba200650e82bcae4240a",
+    "chk_889cb660e2dcc51f3c5087ce006158a998c87fad8cae00a3cba84607c0ca75a3",
+    "chk_7c25f5ddc7bda131f7f9dcfcc18966092fe49fd42b5d3b06c1694f6f8f1a00a6"
+   ],
+   "filings:s2": [
+    "chk_91f83a98644fb7724d8b8efb0c15eb6fc15ed23e65e3e9839350e173c7ceab04",
+    "chk_c44b39db97bea866aa2cc548813bd2c35d8e1dfd31c58bf560d9add94df432bd",
+    "chk_cfc653466228b2c4b81db4edca23a5099fe37dd665434bc5daf4c5e38dd9753c",
+    "chk_78d0e53267179c32fcc056c7b3ed334b7b605d729048f6752655a8dfdc0eec12",
+    "chk_a57dfd25971c402cacddfc7062bf7fc2ea03a9693e3bb790ec450646a547b121",
+    "chk_fe515dcc7594fd524538daa1a10cd057927d41fd4e58af7c026bc52bcaf546e1",
+    "chk_f668c574ddceff89dff01aa58d4684d3c2f00548c683f5341bd85ae4807fc5b2",
+    "chk_e33f9c269cdf82393f63aeb2273c93ddd21214741bfcd5b3314bbc12a3f64876"
+   ],
+   "filings:s3": [
+    "chk_0e523044c9af7bb7e158644edc421f59f5641dc23815d8ab97b1c6054653900f"
+   ],
+   "filings:s4": [
+    "chk_87b84bb7b097ef9e9d2cc8dc33f38d01740607ed4ffe99bf1f8cf52bdb84b9ef",
+    "chk_7ef4a5aa8841dd404e7f51757001265c478debfdf92277aee916c8bf61461341",
+    "chk_b2e4f6dba81c982385c9cc10295adf299021148a89a5f782ff8ede5c3313681d",
+    "chk_65ac27d6c03943393ad90d12f5f3556a62ce294a02870ddf9faa501b6adeefbc",
+    "chk_394e32757be67ab66ac21fc4f240a1f5347db1382edab222848350c5c4f85901",
+    "chk_086a6637de48e14714fdeb625a08f5825b7ea75ee22706ab5515a424db6f93c2",
+    "chk_c83875930ff9ad0c2ef1623e8b0bbdffba78ac3fcfa999d5d34df9b0d2bab8a7",
+    "chk_37c0c4d66e876c73026ce36d25bc07917b12f7480c4f15857338e76b8835cb8c"
+   ]
+  },
+  "seen": [
+   "chk_a95bbaa56c0d962ad7662eef4f6d5741777bd2b33dd216693e9d656b6b689e7b",
+   "chk_5aafcff01c9095095871051a8145612adaaa7fccc4542d921bebdd473a5bf5c6",
+   "chk_2e2628d4e9431c152f30b6c0a3f90ead7130b101d489964dff6dabd01658fcb1",
+   "chk_f5c52cf4492538ce8d606556c71b3253546b688b8655c2639cd427b794f6c41d",
+   "chk_f2e5261eace55d88cc153f25bc32d9960cbc160dd3d69099570becf4d0fe72d0",
+   "chk_a6d75a5d586cff0ee9005f8a1a08641fdfa3b8b39307ba200650e82bcae4240a",
+   "chk_889cb660e2dcc51f3c5087ce006158a998c87fad8cae00a3cba84607c0ca75a3",
+   "chk_7c25f5ddc7bda131f7f9dcfcc18966092fe49fd42b5d3b06c1694f6f8f1a00a6",
+   "chk_87b84bb7b097ef9e9d2cc8dc33f38d01740607ed4ffe99bf1f8cf52bdb84b9ef",
+   "chk_7ef4a5aa8841dd404e7f51757001265c478debfdf92277aee916c8bf61461341",
+   "chk_b2e4f6dba81c982385c9cc10295adf299021148a89a5f782ff8ede5c3313681d",
+   "chk_65ac27d6c03943393ad90d12f5f3556a62ce294a02870ddf9faa501b6adeefbc",
+   "chk_394e32757be67ab66ac21fc4f240a1f5347db1382edab222848350c5c4f85901",
+   "chk_086a6637de48e14714fdeb625a08f5825b7ea75ee22706ab5515a424db6f93c2",
+   "chk_c83875930ff9ad0c2ef1623e8b0bbdffba78ac3fcfa999d5d34df9b0d2bab8a7",
+   "chk_37c0c4d66e876c73026ce36d25bc07917b12f7480c4f15857338e76b8835cb8c",
+   "chk_0e523044c9af7bb7e158644edc421f59f5641dc23815d8ab97b1c6054653900f",
+   "chk_91f83a98644fb7724d8b8efb0c15eb6fc15ed23e65e3e9839350e173c7ceab04",
+   "chk_c44b39db97bea866aa2cc548813bd2c35d8e1dfd31c58bf560d9add94df432bd",
+   "chk_cfc653466228b2c4b81db4edca23a5099fe37dd665434bc5daf4c5e38dd9753c",
+   "chk_78d0e53267179c32fcc056c7b3ed334b7b605d729048f6752655a8dfdc0eec12",
+   "chk_a57dfd25971c402cacddfc7062bf7fc2ea03a9693e3bb790ec450646a547b121",
+   "chk_fe515dcc7594fd524538daa1a10cd057927d41fd4e58af7c026bc52bcaf546e1",
+   "chk_f668c574ddceff89dff01aa58d4684d3c2f00548c683f5341bd85ae4807fc5b2",
+   "chk_e33f9c269cdf82393f63aeb2273c93ddd21214741bfcd5b3314bbc12a3f64876",
+   "chk_717bc60f1882ae0de8fbb65a72491a4a8dce4515c06b917562bd23c5b5a87381",
+   "chk_a487b00369e8bf0b6812be339adcc40e7785e88c0417e24fffad48605b5dd2ef",
+   "chk_0d2c2558ddb36fd415569dd3bbcc7439ca68ca5acea8ee750bd9cc9a363eb97d",
+   "chk_e6a173622b544ae0b9a3979c3a038e0bb1c3d108f9d9d62ba2f38fad29dbca9e",
+   "chk_60ae56b154502cadd8400e4d0803bde8268e4985767c7617172e812b18e6bbd6",
+   "chk_e0aee23fc97098461d2a3f50c0b5af90b0d799908d65f8032925ae8e77c44f4a"
+  ]
+ },
+ "run_id": "9b5e5e69-5e69-42af-a265-63ec98090347",
+ "run_status": "done",
+ "split": "handwritten",
+ "started_at": "2026-11-16T21:49:11.836797+00:00",
+ "status": "done",
+ "system_config_hash": "dda3ea6b7db41dd0273d82e63c7ab3c74a4ec2dac9f2674d40c2836322074f2a",
+ "system_id": "m6-rerank",
+ "system_kind": "system",
+ "usage": {
+  "cache_read_tokens": 161100,
+  "cache_write_tokens": 64499,
+  "input_tokens": 28528,
+  "output_tokens": 17718
+ }
+}

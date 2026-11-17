@@ -1,7 +1,20 @@
 # M6 status: experiments, improvement and CI
 
-Status: **Phase D complete (2026-11-16); waiting for the student's acceptance.** M7 has not
-started.
+Status: **M6 accepted by the student on 2026-11-17.** M7 has not started; it starts only on the
+student's instruction, with a plan first.
+
+**Final results** (identical questions, paired):
+- **Numeric 50-question test sample:** M5 49/50 → M6 50/50, at $0.061/question vs $0.159.
+  The saving is prompt caching; the other fixes were cost-neutral on dev.
+- **Handwritten 30, run once with the final M6 system:** no-answers 6 → 0; judge mean (no
+  answer = 1) 3.23 → 3.97, a difference of +0.73 [+0.27, +1.23] (sign test p = 0.013). This is
+  not a clean held-out estimate; see the spec deviations below.
+- **Ablations:** −verifier and −quant tools matched the system's accuracy (50/50). −verifier
+  saves 35% of the cost; −quant costs 43% more and leaves 52 of 140 numeric claims uncited.
+  Reranking raised recall@10 (0.52 → 0.60) but not the judge scores.
+- **CI:** green on GitHub.
+
+**Total M6 spend: $29.61** of the $40 hard ceiling (target about $30). Decisions D111-D126.
 
 - **Plan and earlier phases:**
   [M6_PHASE_A.md](M6_PHASE_A.md), [M6_PHASE_B.md](M6_PHASE_B.md) and [M6_PHASE_C.md](M6_PHASE_C.md).
@@ -27,6 +40,24 @@ python -m evals.report evals/configs/m5_test_subset.toml evals/configs/m5_test_o
 | Top 2 failure causes fixed | (a) budget exhaustion before a draft: price-weighted budget plus an explicit no-draft answer (D113, D114); (b) agent stalls and invalid final-answer behavior: no-progress guard, unknown-tool hint, empty-reply guard (D115) |
 | Test re-run; report shows before/after and the ablation table | Done; paired on identical questions; the M5 headline is unchanged |
 | CI green | See "CI" below |
+
+## Deviations from SPEC (explicit)
+
+1. **Open-model swap not run** (SPEC §13.5 item 3: closed vs open model via an
+   OpenAI-compatible endpoint). Deferred by the student's decision; no key or account is needed
+   until it is scheduled (D124).
+2. **Large-vs-small worker swap not run** (SPEC §13.5 item 3). Deferred for budget: Sonnet
+   filings workers would have cost about $10 for the handwritten 30. Under the price-weighted
+   budget (D113) Sonnet worker tokens weigh 1.0, so the comparison would mostly measure the
+   budget rule (D124).
+3. **The handwritten gain is not a clean held-out estimate.** The budget and loop failures behind
+   fixes A and B were found on the M5 test split (the 6 handwritten no-answers and the Costco
+   abstention), so the fixes were partly chosen from M5 test failures. The dev explanatory
+   prompts did not reproduce the budget failure, so the no-answer fix is validated only by the
+   test rerun (D111).
+4. **"≥ 25 failures from dev" is met as failure events, not wrong answers.** The M5 system
+   answered all 100 dev-pilot questions correctly; there were 133 failure events in 74 of the
+   100 runs (D111, D112).
 
 ## Results
 
@@ -165,6 +196,11 @@ test, now fixed (D126).
 
 **One GitHub annotation, a warning, not a failure:** `actions/checkout@v4` and
 `astral-sh/setup-uv@v6` target Node.js 20, which GitHub now runs on Node.js 24.
+
+## M7 to-do (noted at acceptance, not changed now)
+
+- Update `actions/checkout` and `astral-sh/setup-uv` in `.github/workflows/ci.yml` to versions
+  that target Node.js 24, to clear the deprecation warning. The workflow is unchanged in M6.
 
 ## Known limitations and what M6 does not show
 

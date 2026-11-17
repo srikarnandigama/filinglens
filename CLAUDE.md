@@ -29,7 +29,7 @@ This project is specified in SPEC.md. Read it before doing anything.
 - [x] M3 MCP servers
 - [x] M4 Agent runtime
 - [x] M5 Eval harness + baselines
-- [ ] M6 Experiments + CI
+- [x] M6 Experiments + CI
 - [ ] M7 API, frontend, docs
 - [ ] M8 Deploy + publish (optional)
 
@@ -40,14 +40,24 @@ accepted on 2026-10-22 after Inspector and all five Claude Desktop checks passed
 the student independently confirmed the Apple FY2026 Q3 values in the source 10-Q.
 M4 (built in Claude Code; M1-M3 were built with Codex) was accepted on 2026-11-09
 after its final acceptance run. M5 was accepted on 2026-11-12 (see docs/M5_STATUS.md).
-- M6 IN PROGRESS (2026-11-12): Phase A approved (docs/M6_PHASE_A.md, D111-D124); Phase B
-  done offline (docs/M6_PHASE_B.md): fixes behind RunConfig flags defaulting to M5 behavior,
-  M5 cache keys pinned, 307 passed / 2 skipped, CI dry run 237 passed / 72 skipped. Uncommitted.
-  Phase B committed (651416f). D117 kept (2026-11-15). Phase C done (docs/M6_PHASE_C.md).
-  Phase D done 2026-11-16 (docs/M6_STATUS.md, D125-D126): M6 spend $29.61 of $40; numeric
-  50-sample M5 49/50 -> M6 50/50 at $0.061/q (caching); handwritten 30 run once: no-answers
-  6 -> 0, judge mean 3.23 -> 3.97 (sign p 0.013). WAITING FOR THE STUDENT'S M6 ACCEPTANCE.
-  Report: `python -m evals.report <7 M5 configs> --m6` (M5 part unchanged, tested).
+M6 was accepted on 2026-11-17 (see docs/M6_STATUS.md). M7 has not started; it starts only
+on the student's instruction, with a plan first.
+- M6 status: ACCEPTED 2026-11-17. $29.61 spent of the $40 ceiling. Decisions D111-D126.
+  Fixes behind RunConfig flags whose defaults are M5 behavior (D118): price-weighted budget
+  (D113), no-draft answer (D114), stall/unknown-tool/empty-reply guards (D115), prompt
+  caching (D116), summary numbers may round cited values (D117). Numeric 50-sample: M5
+  49/50 -> M6 50/50 at $0.061/q vs $0.159 (saving is caching; other fixes cost-neutral on
+  dev). Handwritten 30 (run once): no-answers 6 -> 0, judge mean 3.23 -> 3.97 (sign p
+  0.013); not a clean held-out estimate (fixes partly chosen from M5 test failures, D111).
+  Ablations: -verifier and -quant matched accuracy (50/50); rerank raised recall, not judge
+  scores. Report: `python -m evals.report <7 M5 configs> --m6` (M5 part unchanged, tested;
+  trace mechanics in evals/results/m6_mechanics.json via `python -m evals.m6_report collect`).
+  CI green on GitHub (ci.yml: ruff, pytest, replay smoke of 10 M6 records). Deferred: the
+  open-model swap (student's decision) and the large-vs-small worker swap (budget), D124.
+  The DB runs in Docker Desktop; start it (and `docker compose up -d db`) if it is down.
+- M7 TO-DO (noted at M6 acceptance, not changed yet): GitHub Actions warns that
+  actions/checkout@v4 and astral-sh/setup-uv@v6 target Node.js 20, now run on Node.js 24;
+  update them to Node 24-compatible versions in .github/workflows/ci.yml during M7.
 - (M5-era note) NEXT SESSION, FIRST TURN: do not change, run or commit anything. Read CLAUDE.md,
   docs/M5_STATUS.md, evals/results/report.md and docs/DECISIONS.md D104-D110, summarize
   the M5 state, and wait for the student's instructions.
@@ -132,6 +142,6 @@ after its final acceptance run. M5 was accepted on 2026-11-12 (see docs/M5_STATU
   On this machine uv needs `--link-mode=copy` (e.g. `uv sync --frozen
   --link-mode=copy`). The CLI uses the Windows selector event loop for Psycopg
   and an IPv4 hint for localhost.
-- See docs/DECISIONS.md (D001-D110) for design history. docs/M1_STATUS.md and
+- See docs/DECISIONS.md (D001-D126) for design history. docs/M1_STATUS.md and
   older pending-verification wording predate acceptance; the acceptances
   recorded here supersede them.
